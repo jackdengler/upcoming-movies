@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Fetches release data from TMDB and writes data/<month>-<year>.json
+// Fetches release data from TMDB and writes data/<month>-<year>.json.
 // Env: TMDB_TOKEN (v4 Read Access Token), MONTH (YYYY-MM, defaults to current month)
 
 import { writeFileSync, mkdirSync, readFileSync } from "fs";

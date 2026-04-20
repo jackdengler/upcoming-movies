@@ -1,0 +1,167 @@
+const REPO = "jackdengler/upcoming-movies";
+const PATH = "data/interests.json";
+const BRANCH = "main";
+const PAT_KEY = "upcoming:gh_pat";
+const DEBOUNCE_MS = 5000;
+
+const LEVELS = ["must", "likely", "potential", "not"];
+
+const state = {
+  marks: {},
+  sha: null,
+  loaded: false,
+  pendingTimer: null,
+  listeners: new Set(),
+};
+
+function emit() {
+  for (const fn of state.listeners) fn(state.marks);
+}
+
+export function onChange(fn) {
+  state.listeners.add(fn);
+  return () => state.listeners.delete(fn);
+}
+
+export function getLevel(key) {
+  return state.marks[key]?.level || null;
+}
+
+export function allMarks() {
+  return { ...state.marks };
+}
+
+export async function load() {
+  try {
+    const r = await fetch(`./${PATH}?t=${Date.now()}`, { cache: "no-cache" });
+    if (r.ok) {
+      const j = await r.json();
+      state.marks = j.marks || {};
+    }
+  } catch {}
+  state.loaded = true;
+  emit();
+}
+
+async function fetchSha() {
+  const pat = getPat();
+  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}?ref=${BRANCH}`, {
+    headers: { Authorization: `Bearer ${pat}`, Accept: "application/vnd.github+json" },
+  });
+  if (!r.ok) throw new Error(`Fetch SHA failed: ${r.status}`);
+  const j = await r.json();
+  return j.sha;
+}
+
+async function commit() {
+  const pat = getPat();
+  if (!pat) return;
+
+  if (!state.sha) state.sha = await fetchSha();
+
+  const payload = {
+    updated: new Date().toISOString(),
+    marks: state.marks,
+  };
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2) + "\n")));
+
+  const body = {
+    message: "Update interests",
+    content,
+    sha: state.sha,
+    branch: BRANCH,
+  };
+
+  setSync("saving");
+  let r = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}`, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${pat}`,
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (r.status === 409 || r.status === 422) {
+    state.sha = await fetchSha();
+    body.sha = state.sha;
+    r = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}`, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${pat}`,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+  }
+
+  if (!r.ok) {
+    setSync("error");
+    throw new Error(`Commit failed: ${r.status}`);
+  }
+  const j = await r.json();
+  state.sha = j.content?.sha || null;
+  setSync("saved");
+  setTimeout(() => setSync(null), 1500);
+}
+
+export function set(key, level, meta = {}) {
+  if (level && !LEVELS.includes(level)) return;
+  if (!level) {
+    delete state.marks[key];
+  } else {
+    state.marks[key] = { level, at: new Date().toISOString(), ...meta };
+  }
+  emit();
+  localStorage.setItem(`${PAT_KEY}:cache`, JSON.stringify(state.marks));
+  scheduleCommit();
+}
+
+function scheduleCommit() {
+  setSync("pending");
+  clearTimeout(state.pendingTimer);
+  state.pendingTimer = setTimeout(() => {
+    commit().catch((e) => console.warn("Interest commit failed:", e.message));
+  }, DEBOUNCE_MS);
+}
+
+export function flush() {
+  if (state.pendingTimer) {
+    clearTimeout(state.pendingTimer);
+    state.pendingTimer = null;
+    return commit().catch(() => {});
+  }
+}
+
+export function getPat() {
+  return localStorage.getItem(PAT_KEY) || null;
+}
+
+export function setPat(token) {
+  if (!token) {
+    localStorage.removeItem(PAT_KEY);
+    state.sha = null;
+    return;
+  }
+  localStorage.setItem(PAT_KEY, token);
+  state.sha = null;
+}
+
+export function hasPat() {
+  return Boolean(getPat());
+}
+
+function setSync(status) {
+  const n = document.getElementById("sync-indicator");
+  if (!n) return;
+  if (!status) { n.hidden = true; n.textContent = ""; return; }
+  n.hidden = false;
+  const map = { pending: "•", saving: "Saving…", saved: "✓ Saved", error: "! Sync failed" };
+  n.textContent = map[status] || "";
+  n.dataset.status = status;
+}
+
+window.addEventListener("beforeunload", () => { flush(); });
+window.addEventListener("visibilitychange", () => { if (document.hidden) flush(); });

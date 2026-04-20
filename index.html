@@ -5,13 +5,12 @@
     <title>Upcoming Movies</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f4f2ee" />
+    <meta name="color-scheme" content="light only" />
     <meta name="description" content="Upcoming movies, at a glance." />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Upcoming" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
@@ -25,16 +24,61 @@
   <body>
     <header class="app-header">
       <div class="app-header__bar">
-        <h1>Upcoming</h1>
-        <span class="app-header__month" id="month-label">May 2026</span>
+        <h1 id="view-title">Upcoming</h1>
+        <span class="app-header__sub" id="view-sub">2026</span>
       </div>
+      <div class="app-header__sync" id="sync-indicator" hidden></div>
     </header>
 
-    <main id="app" class="app-main">
-      <div id="list" class="list" aria-live="polite"></div>
-      <p id="empty" class="empty-state" hidden>No releases yet.</p>
+    <main class="app-main">
+      <section id="tab-year" class="tab-panel" aria-label="Year">
+        <div id="list"></div>
+        <p id="empty-year" class="empty-state" hidden>No releases loaded yet.</p>
+      </section>
+
+      <section id="tab-interests" class="tab-panel" aria-label="Interests" hidden>
+        <div id="interest-list"></div>
+        <p id="empty-interests" class="empty-state" hidden>
+          Swipe any movie on the Year tab to mark interest.
+        </p>
+      </section>
     </main>
 
-    <script src="./app.js" defer></script>
+    <nav class="tab-bar" role="tablist">
+      <button class="tab-bar__btn is-active" data-tab="year" role="tab" aria-selected="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="3"/>
+          <path d="M3 10h18M8 2v4M16 2v4"/>
+        </svg>
+        <span>Year</span>
+      </button>
+      <button class="tab-bar__btn" data-tab="interests" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/>
+        </svg>
+        <span>Interests</span>
+      </button>
+    </nav>
+
+    <dialog id="pat-dialog" class="sheet">
+      <form method="dialog" class="sheet__body" id="pat-form">
+        <h2 class="sheet__title">Connect GitHub</h2>
+        <p class="sheet__copy">
+          Interests are saved to this repo. Paste a fine-grained personal access token with
+          <strong>Contents: Read and write</strong> for
+          <code>jackdengler/upcoming-movies</code>.
+        </p>
+        <input id="pat-input" class="sheet__input" type="password" autocomplete="off"
+               placeholder="github_pat_… or ghp_…" required />
+        <div class="sheet__actions">
+          <button type="button" class="sheet__btn sheet__btn--ghost" id="pat-cancel">Cancel</button>
+          <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
+        </div>
+        <a class="sheet__link" href="https://github.com/settings/personal-access-tokens/new"
+           target="_blank" rel="noopener">Create a token →</a>
+      </form>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
   </body>
 </html>

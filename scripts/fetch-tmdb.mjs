@@ -89,6 +89,7 @@ for (const m of list) {
         .join(", ") || "—";
     const studio = (d.production_companies || [])[0]?.name || "—";
     releases.push({
+      tmdb_id: d.id,
       date,
       title: d.title,
       director,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20T21:57:52.774Z",
+  "updated": "2026-04-20T21:58:03.796Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -252,6 +252,13 @@
       "title": "Hunting Matthew Nichols",
       "date": "2026-04-10",
       "tmdb_id": 1308388
+    },
+    "tmdb:1669929": {
+      "level": "not",
+      "at": "2026-04-20T21:58:01.291Z",
+      "title": "The Gold Trail",
+      "date": "2026-04-13",
+      "tmdb_id": 1669929
     }
   }
 }

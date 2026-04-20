@@ -34,9 +34,11 @@ async function discover() {
       region: "US",
       with_release_type: "2|3",
       without_genres: "99,10402",
+      with_origin_country: "US",
       "primary_release_date.gte": start,
       "primary_release_date.lte": end,
-      sort_by: "primary_release_date.asc",
+      sort_by: "popularity.desc",
+      "vote_count.gte": "0",
       page: String(page),
     });
     const j = await get(`/discover/movie?${q}`);
@@ -45,6 +47,9 @@ async function discover() {
   }
   return out;
 }
+
+const MAX_PER_MONTH = 40;
+const MIN_POPULARITY = 3;
 
 function classify(releaseDates) {
   const us = (releaseDates?.results || []).find((r) => r.iso_3166_1 === "US");
@@ -71,12 +76,19 @@ const list = await discover();
 const releases = [];
 for (const m of list) {
   try {
+    if ((m.popularity || 0) < MIN_POPULARITY) continue;
+
     const d = await get(`/movie/${m.id}?append_to_response=credits,release_dates`);
     const genreIds = (d.genres || []).map((g) => g.id);
     if (genreIds.includes(99) || genreIds.includes(10402)) continue;
+
+    const originUS = (d.origin_country || []).includes("US");
+    if (!originUS) continue;
+
     const cls = classify(d.release_dates);
-    const date = cls.date || d.release_date || m.release_date;
-    if (!date || date.slice(0, 7) !== MONTH) continue;
+    if (!cls.date) continue;
+    const date = cls.date;
+    if (date.slice(0, 7) !== MONTH) continue;
     const director =
       (d.credits?.crew || [])
         .filter((c) => c.job === "Director")
@@ -99,6 +111,7 @@ for (const m of list) {
       genre: (d.genres || []).map((g) => g.name).join(" / ") || "—",
       cast,
       notes: d.tagline || "",
+      _pop: d.popularity || 0,
     });
     await sleep(40);
   } catch (e) {
@@ -106,9 +119,11 @@ for (const m of list) {
   }
 }
 
-releases.sort(
-  (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title)
-);
+releases.sort((a, b) => b._pop - a._pop);
+const top = releases.slice(0, MAX_PER_MONTH);
+top.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
+for (const r of top) delete r._pop;
+const finalReleases = top;
 
 const monthName = new Date(`${start}T12:00:00Z`).toLocaleString("en-US", {
   month: "long",
@@ -117,7 +132,7 @@ const out = {
   month: `${monthName} ${year}`,
   updated: new Date().toISOString().slice(0, 10),
   source: "TMDB",
-  releases,
+  releases: finalReleases,
 };
 
 mkdirSync("data", { recursive: true });
@@ -130,5 +145,5 @@ try {
 } catch {}
 writeFileSync(filename, payload);
 console.log(
-  `${changed ? "Updated" : "Unchanged"} ${filename} (${releases.length} releases)`
+  `${changed ? "Updated" : "Unchanged"} ${filename} (${finalReleases.length} releases)`
 );

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20T21:41:30.206Z",
+  "updated": "2026-04-20T21:41:51.331Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -163,25 +163,46 @@
       "tmdb_id": 1108427
     },
     "tmdb:1212763": {
-      "level": "potential",
-      "at": "2026-04-20T21:33:16.931Z",
+      "level": "likely",
+      "at": "2026-04-20T21:41:46.329Z",
       "title": "Evil Dead Burn",
       "date": "2026-07-10",
       "tmdb_id": 1212763
     },
     "tmdb:1273221": {
-      "level": "potential",
-      "at": "2026-04-20T21:41:15.951Z",
+      "level": "likely",
+      "at": "2026-04-20T21:41:31.687Z",
       "title": "Scary Movie",
       "date": "2026-06-05",
       "tmdb_id": 1273221
     },
     "tmdb:454639": {
-      "level": "potential",
-      "at": "2026-04-20T21:41:25.203Z",
+      "level": "likely",
+      "at": "2026-04-20T21:41:30.752Z",
       "title": "Masters of the Universe",
       "date": "2026-06-05",
       "tmdb_id": 454639
+    },
+    "tmdb:1275779": {
+      "level": "must",
+      "at": "2026-04-20T21:41:34.535Z",
+      "title": "Disclosure Day",
+      "date": "2026-06-12",
+      "tmdb_id": 1275779
+    },
+    "tmdb:1084244": {
+      "level": "must",
+      "at": "2026-04-20T21:41:36.430Z",
+      "title": "Toy Story 5",
+      "date": "2026-06-19",
+      "tmdb_id": 1084244
+    },
+    "tmdb:1081003": {
+      "level": "likely",
+      "at": "2026-04-20T21:41:41.731Z",
+      "title": "Supergirl",
+      "date": "2026-06-26",
+      "tmdb_id": 1081003
     }
   }
 }

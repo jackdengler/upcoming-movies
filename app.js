@@ -24,6 +24,7 @@ const NEXT_MONTH_KEY = (() => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
 })();
 
+const LEVELS = ["must", "likely", "potential", "not"];
 const LEVEL_LABEL = {
   must: "Must",
   likely: "Likely",
@@ -103,106 +104,54 @@ const groupByDate = (rows) => {
 
 const monthKeyOf = (bundle) => bundle.releases[0]?.date.slice(0, 7) || "";
 
-// ---------- Row rendering & swipe ----------
+// ---------- Row rendering ----------
 
-let openSwipeRow = null;
-
-function closeSwipe(row) {
-  if (!row) return;
-  row.classList.remove("is-open");
-  row.style.transform = "";
-  if (openSwipeRow === row) openSwipeRow = null;
-}
-
-function openSwipe(row) {
-  if (openSwipeRow && openSwipeRow !== row) closeSwipe(openSwipeRow);
-  row.classList.add("is-open");
-  row.style.transform = "translateX(-228px)";
-  openSwipeRow = row;
-}
-
-function attachSwipe(wrap, row, movie) {
-  let startX = 0, startY = 0, dx = 0, isHorizontal = null, moved = false;
-  const REVEAL = 228;
-  const OPEN_THRESHOLD = 80;
-
-  const onStart = (e) => {
-    if (e.target.closest(".action-btn")) return;
-    const t = e.touches ? e.touches[0] : e;
-    startX = t.clientX;
-    startY = t.clientY;
-    dx = 0;
-    isHorizontal = null;
-    moved = false;
-    row.style.transition = "none";
-  };
-
-  const onMove = (e) => {
-    const t = e.touches ? e.touches[0] : e;
-    const rawDx = t.clientX - startX;
-    const rawDy = t.clientY - startY;
-
-    if (isHorizontal === null) {
-      if (Math.abs(rawDx) < 8 && Math.abs(rawDy) < 8) return;
-      isHorizontal = Math.abs(rawDx) > Math.abs(rawDy);
-    }
-    if (!isHorizontal) return;
-
-    e.preventDefault();
-    moved = true;
-    const base = row.classList.contains("is-open") ? -REVEAL : 0;
-    dx = Math.max(-REVEAL - 20, Math.min(20, base + rawDx));
-    row.style.transform = `translateX(${dx}px)`;
-  };
-
-  const onEnd = () => {
-    row.style.transition = "";
-    if (!moved) return;
-    const shouldOpen = dx < -OPEN_THRESHOLD;
-    if (shouldOpen) openSwipe(row);
-    else closeSwipe(row);
-  };
-
-  row.addEventListener("touchstart", onStart, { passive: true });
-  row.addEventListener("touchmove", onMove, { passive: false });
-  row.addEventListener("touchend", onEnd);
-  row.addEventListener("touchcancel", onEnd);
-
-  row.addEventListener("click", (e) => {
-    if (row.classList.contains("is-open")) {
-      e.preventDefault();
-      closeSwipe(row);
-    }
-  }, true);
-}
-
-function renderActions(movie) {
-  const current = Interests.getLevel(movieKey(movie));
-  const levels = ["must", "likely", "potential", "not"];
-  return el("div", { class: "row-actions" },
-    ...levels.map((lv) =>
+function renderRatingBar(m) {
+  const key = movieKey(m);
+  const level = Interests.getLevel(key);
+  const bar = el("div", { class: "rating", role: "group", "aria-label": "Interest level" },
+    ...LEVELS.map((lv) =>
       el("button", {
           type: "button",
-          class: `action-btn action-btn--${lv}${current === lv ? " is-active" : ""}`,
+          class: `rating__btn rating__btn--${lv}${level === lv ? " is-active" : ""}`,
           "data-level": lv,
-          "aria-label": LEVEL_LABEL[lv],
+          "aria-pressed": level === lv ? "true" : "false",
         },
-        el("span", { class: "action-btn__icon", "aria-hidden": "true" }),
-        el("span", { class: "action-btn__label", text: LEVEL_LABEL[lv] }),
+        LEVEL_LABEL[lv]
       )
     ),
   );
+
+  bar.addEventListener("click", async (e) => {
+    const btn = e.target.closest(".rating__btn");
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const lvl = btn.dataset.level;
+    if (!Interests.hasPat()) {
+      const saved = await requestPat();
+      if (!saved) return;
+    }
+    const current = Interests.getLevel(key);
+    Interests.set(key, current === lvl ? null : lvl, {
+      title: m.title,
+      date: m.date,
+      tmdb_id: m.tmdb_id || null,
+    });
+  });
+
+  return bar;
 }
 
 function renderRow(m) {
-  const level = Interests.getLevel(movieKey(m));
+  const key = movieKey(m);
+  const level = Interests.getLevel(key);
 
-  const content = el("a", {
-      class: `row${level ? ` row--${level}` : ""}`,
+  const link = el("a", {
+      class: "row__link",
       href: wikipediaUrl(m.title, m.date),
       target: "_blank",
       rel: "noopener noreferrer",
-      dataset: { key: movieKey(m) },
     },
     el("div", { class: "row__title-line" },
       el("h3", { class: "row__title", text: m.title }),
@@ -219,33 +168,13 @@ function renderRow(m) {
     m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
   );
 
-  const wrap = el("div", { class: "row-wrap", dataset: { key: movieKey(m) } },
-    renderActions(m),
-    content,
+  return el("div", {
+      class: `row${level ? ` row--${level}` : ""}`,
+      dataset: { key },
+    },
+    link,
+    renderRatingBar(m),
   );
-
-  wrap.addEventListener("click", async (e) => {
-    const btn = e.target.closest(".action-btn");
-    if (!btn) return;
-    e.preventDefault();
-    e.stopPropagation();
-    const level = btn.dataset.level;
-    const key = movieKey(m);
-    if (!Interests.hasPat()) {
-      const saved = await requestPat();
-      if (!saved) return;
-    }
-    const current = Interests.getLevel(key);
-    Interests.set(key, current === level ? null : level, {
-      title: m.title,
-      date: m.date,
-      tmdb_id: m.tmdb_id || null,
-    });
-    closeSwipe(content);
-  });
-
-  attachSwipe(wrap, content, m);
-  return wrap;
 }
 
 // ---------- Month/date rendering ----------
@@ -313,10 +242,7 @@ function renderInterestsTab(bundles) {
 
   const empty = document.getElementById("empty-interests");
   const total = order.reduce((a, k) => a + grouped[k].length, 0);
-  if (!total) {
-    empty.hidden = false;
-    return;
-  }
+  if (!total) { empty.hidden = false; return; }
   empty.hidden = true;
 
   for (const lv of order) {
@@ -392,12 +318,6 @@ document.querySelectorAll(".tab-bar__btn").forEach((b) => {
   b.addEventListener("click", () => switchTab(b.dataset.tab));
 });
 
-document.addEventListener("click", (e) => {
-  if (!openSwipeRow) return;
-  if (e.target.closest(".row-wrap") === openSwipeRow.parentElement) return;
-  closeSwipe(openSwipeRow);
-});
-
 // ---------- PAT dialog ----------
 
 function requestPat() {
@@ -438,11 +358,13 @@ Interests.onChange(() => {
     row.classList.remove("row--must", "row--likely", "row--potential", "row--not");
     if (lvl) row.classList.add(`row--${lvl}`);
   }
-  for (const btn of document.querySelectorAll(".action-btn")) {
-    const wrap = btn.closest(".row-wrap");
-    if (!wrap) continue;
-    const lvl = Interests.getLevel(wrap.dataset.key);
-    btn.classList.toggle("is-active", btn.dataset.level === lvl);
+  for (const btn of document.querySelectorAll(".rating__btn")) {
+    const row = btn.closest(".row");
+    if (!row) continue;
+    const lvl = Interests.getLevel(row.dataset.key);
+    const isActive = btn.dataset.level === lvl;
+    btn.classList.toggle("is-active", isActive);
+    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
   }
 });
 

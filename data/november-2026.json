@@ -4,6 +4,7 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1671446,
       "date": "2026-11-01",
       "title": "Almost Cupid",
       "director": "Lucas Swangard",
@@ -15,6 +16,7 @@
       "notes": "Do you believe in soulmates?"
     },
     {
+      "tmdb_id": 1522191,
       "date": "2026-11-01",
       "title": "FaceTape",
       "director": "Manny Liotta",
@@ -26,6 +28,7 @@
       "notes": "Plug Out."
     },
     {
+      "tmdb_id": 1610442,
       "date": "2026-11-01",
       "title": "Summer's End",
       "director": "Arthur Siri, George Robson",
@@ -37,6 +40,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1641105,
       "date": "2026-11-01",
       "title": "The Wronged of Juiced",
       "director": "Christian Conti",
@@ -48,6 +52,7 @@
       "notes": "Progress in Pouches?"
     },
     {
+      "tmdb_id": 1649505,
       "date": "2026-11-01",
       "title": "Touken Ranbu the Stage: Hiden Tsuki to Taiyou to Hoshiboshi yo",
       "director": "Kenichi Suemitsu",
@@ -59,6 +64,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1003494,
       "date": "2026-11-04",
       "title": "L’Affaire Marie-Claire",
       "director": "Lauriane Escaffre, Yvo Muller",
@@ -70,6 +76,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1447206,
       "date": "2026-11-05",
       "title": "Geister",
       "director": "Fatih Akin",
@@ -81,6 +88,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1582025,
       "date": "2026-11-05",
       "title": "Jennerwein – Hochsaison",
       "director": "Hannu Salonen",
@@ -92,6 +100,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1623405,
       "date": "2026-11-05",
       "title": "War with the Newts",
       "director": "Aurel Klimt",
@@ -103,6 +112,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1562642,
       "date": "2026-11-06",
       "title": "Archangel",
       "director": "William Eubank",
@@ -114,6 +124,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1512084,
       "date": "2026-11-06",
       "title": "Baby Do Die Do",
       "director": "Nachiket Samant",
@@ -125,6 +136,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1662511,
       "date": "2026-11-06",
       "title": "Daffy Season",
       "director": "Todd Wilderman, Hamish Grieve",
@@ -136,6 +148,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1381071,
       "date": "2026-11-06",
       "title": "Godzilla Minus Zero",
       "director": "Takashi Yamazaki",
@@ -147,6 +160,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1567149,
       "date": "2026-11-06",
       "title": "Kamen Rider Kabuto 20th: ​​The One Who Inherits the Heavens",
       "director": "Hidenori Ishida",
@@ -158,6 +172,7 @@
       "notes": "Will humanity inherit the heavens? Or the Worms?"
     },
     {
+      "tmdb_id": 1495662,
       "date": "2026-11-06",
       "title": "Lakadbaggha 2: The Monkey Business",
       "director": "Anshuman Jha",
@@ -169,6 +184,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1599764,
       "date": "2026-11-06",
       "title": "London",
       "director": "Sebastian Brameshuber",
@@ -180,6 +196,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1601776,
       "date": "2026-11-06",
       "title": "Przepis na święta",
       "director": "Magdalena Nieć",
@@ -191,6 +208,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1371661,
       "date": "2026-11-06",
       "title": "Sacamantecas",
       "director": "David Pérez Sañudo",
@@ -202,6 +220,7 @@
       "notes": "The chilling real character turned into legend"
     },
     {
+      "tmdb_id": 1315380,
       "date": "2026-11-06",
       "title": "The Black Pearl",
       "director": "Ayoub Qanir",
@@ -213,6 +232,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1117898,
       "date": "2026-11-06",
       "title": "The Cat in the Hat",
       "director": "Erica Rivinoja, Alessandro Carloni",
@@ -224,6 +244,7 @@
       "notes": "The cat's out of the bag."
     },
     {
+      "tmdb_id": 1498892,
       "date": "2026-11-06",
       "title": "Tumšā robeža",
       "director": "Andrejs Ēķis",
@@ -235,6 +256,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1601497,
       "date": "2026-11-06",
       "title": "Untitled Abbott Le-Eldred Film",
       "director": "Abbott Le-Eldred",
@@ -246,6 +268,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1446589,
       "date": "2026-11-06",
       "title": "Wanderer",
       "director": "Alex Bragwell",
@@ -257,6 +280,7 @@
       "notes": "One Man. One Bible. One Mission."
     },
     {
+      "tmdb_id": 891621,
       "date": "2026-11-06",
       "title": "Wild Horse Nine",
       "director": "Martin McDonagh",
@@ -268,6 +292,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 656908,
       "date": "2026-11-08",
       "title": "Ramayana",
       "director": "Nitesh Tiwari",
@@ -279,6 +304,7 @@
       "notes": "Our truth. Our history."
     },
     {
+      "tmdb_id": 1575408,
       "date": "2026-11-11",
       "title": "Badinter",
       "director": "Pierre Godeau",
@@ -290,6 +316,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1404713,
       "date": "2026-11-11",
       "title": "Harvested 4",
       "director": "Alex West",
@@ -301,6 +328,7 @@
       "notes": "Be careful what you give thanks for.."
     },
     {
+      "tmdb_id": 1193614,
       "date": "2026-11-11",
       "title": "Il faut brûler maman",
       "director": "Albert Dupontel",
@@ -312,6 +340,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1076902,
       "date": "2026-11-11",
       "title": "Kaamelott: The Second Chapter (Part II)",
       "director": "Alexandre Astier",
@@ -323,6 +352,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1496012,
       "date": "2026-11-11",
       "title": "L’Ordre pourpre",
       "director": "Thomas Ancora",
@@ -334,6 +364,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1396056,
       "date": "2026-11-11",
       "title": "Nasza rewolucja",
       "director": "Piotr Domalewski",
@@ -345,6 +376,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1585733,
       "date": "2026-11-11",
       "title": "The House with Chimaeras",
       "director": "—",
@@ -356,6 +388,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1552261,
       "date": "2026-11-11",
       "title": "Un bon patron",
       "director": "Philippe de Chauveron",
@@ -367,6 +400,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1466007,
       "date": "2026-11-12",
       "title": "Identitti",
       "director": "Randa Chahoud",
@@ -378,6 +412,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1578318,
       "date": "2026-11-12",
       "title": "Santa's Workshop",
       "director": "Rasmus A. Sivertsen, Mette Tange",
@@ -389,6 +424,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 841309,
       "date": "2026-11-12",
       "title": "Scars of Revenge",
       "director": "Juan Carlos Carrasco",
@@ -400,6 +436,7 @@
       "notes": "One has no memory, the other cannot forget."
     },
     {
+      "tmdb_id": 1553591,
       "date": "2026-11-12",
       "title": "Shame and Money",
       "director": "Visar Morina",
@@ -411,6 +448,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1471809,
       "date": "2026-11-12",
       "title": "Лукоморье",
       "director": "Alexander Babaev",
@@ -422,6 +460,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1567605,
       "date": "2026-11-13",
       "title": "Ebenezer: A Christmas Carol",
       "director": "Ti West",
@@ -433,6 +472,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1286656,
       "date": "2026-11-13",
       "title": "I Play Rocky",
       "director": "Peter Farrelly",
@@ -444,6 +484,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1236857,
       "date": "2026-11-13",
       "title": "Liberated from Paradise: Resonance of the Heart",
       "director": "Seiji Mizushima",
@@ -455,6 +496,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1608787,
       "date": "2026-11-13",
       "title": "Plucked",
       "director": "Usher Morgan, Katie Vincent",
@@ -466,6 +508,7 @@
       "notes": "Some things never change-until they do..."
     },
     {
+      "tmdb_id": 1170600,
       "date": "2026-11-13",
       "title": "Return of the Living Dead",
       "director": "Steve Wolsh",
@@ -477,6 +520,7 @@
       "notes": "Tarman is coming to town"
     },
     {
+      "tmdb_id": 1642241,
       "date": "2026-11-13",
       "title": "Super Champions",
       "director": "Jack Williams",
@@ -488,6 +532,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1628639,
       "date": "2026-11-13",
       "title": "The Death of Marion Wayne",
       "director": "Tyler Wright",
@@ -499,6 +544,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1288211,
       "date": "2026-11-13",
       "title": "The Great Beyond",
       "director": "J.J. Abrams",
@@ -510,6 +556,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1477454,
       "date": "2026-11-14",
       "title": "Volcanic vs. Pedex",
       "director": "GabrielMorais",
@@ -521,6 +568,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1427576,
       "date": "2026-11-15",
       "title": "A Time in Eternity",
       "director": "Mehdi Norowzian",
@@ -532,6 +580,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 579849,
       "date": "2026-11-16",
       "title": "Iliya Muromets",
       "director": "Karen Oganesyan",
@@ -543,6 +592,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1613021,
       "date": "2026-11-18",
       "title": "Camembert",
       "director": "Matthieu Rumani, Nicolas Slomka",
@@ -554,6 +604,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1429601,
       "date": "2026-11-18",
       "title": "Greenland",
       "director": "Emmanuel Courcol",
@@ -565,6 +616,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1590846,
       "date": "2026-11-18",
       "title": "V. Shantaram",
       "director": "Abhijeet Deshpande",
@@ -576,6 +628,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1625344,
       "date": "2026-11-19",
       "title": "Der Regenbogenfisch",
       "director": "Florian Moch",
@@ -587,6 +640,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1480276,
       "date": "2026-11-19",
       "title": "Inherit",
       "director": "Banjong Pisanthanakun",
@@ -598,6 +652,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1483625,
       "date": "2026-11-19",
       "title": "Máma a táta jsou Boží",
       "director": "Adam Hobzik, Jan Chramosta",
@@ -609,6 +664,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1586030,
       "date": "2026-11-19",
       "title": "MEN TOO",
       "director": "Rishi Agarwal, Nikunsh Nayyar",
@@ -620,6 +676,7 @@
       "notes": "Strong does not mean silent."
     },
     {
+      "tmdb_id": 1598234,
       "date": "2026-11-19",
       "title": "O projeto",
       "director": "Sabrina Fidalgo, Yvan Rodic",
@@ -631,6 +688,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1612157,
       "date": "2026-11-19",
       "title": "Timeless",
       "director": "Rick van Wijk",
@@ -642,6 +700,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1280115,
       "date": "2026-11-19",
       "title": "Way of the Warrior Kid",
       "director": "McG",
@@ -653,6 +712,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1667739,
       "date": "2026-11-19",
       "title": "Разыскивается Дед Мороз",
       "director": "Давид Зограбян",
@@ -664,6 +724,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1592531,
       "date": "2026-11-19",
       "title": "Турбозавры. Суперфильм",
       "director": "—",
@@ -675,6 +736,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1608012,
       "date": "2026-11-20",
       "title": "Aşk Tesadüfleri Sever 3",
       "director": "Ömer Faruk Sorak",
@@ -686,6 +748,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1665741,
       "date": "2026-11-20",
       "title": "Beparwah",
       "director": "Mandeep Benipal",
@@ -697,6 +760,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1241478,
       "date": "2026-11-20",
       "title": "Jimmy",
       "director": "Aaron Burns",
@@ -708,6 +772,7 @@
       "notes": "America's most-beloved actor, the iconic role that saved him..."
     },
     {
+      "tmdb_id": 1641467,
       "date": "2026-11-20",
       "title": "Ley de vida",
       "director": "Guillermo Faúndez",
@@ -719,6 +784,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1654619,
       "date": "2026-11-20",
       "title": "The Beast of Gevaudan 3",
       "director": "—",
@@ -730,6 +796,7 @@
       "notes": "Again!?"
     },
     {
+      "tmdb_id": 1300968,
       "date": "2026-11-20",
       "title": "The Hunger Games: Sunrise on the Reaping",
       "director": "Francis Lawrence",
@@ -741,6 +808,7 @@
       "notes": "Welcome to the Second Quarter Quell."
     },
     {
+      "tmdb_id": 1644313,
       "date": "2026-11-20",
       "title": "The Tragedy of the Bernalillo County Detectives",
       "director": "Luke Anaya",
@@ -752,6 +820,7 @@
       "notes": "They ripped themselves apart. They were friends too."
     },
     {
+      "tmdb_id": 1307890,
       "date": "2026-11-20",
       "title": "Un Desmadre en 3D",
       "director": "Ian Peláez Franco",
@@ -763,6 +832,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1306291,
       "date": "2026-11-25",
       "title": "Demain, je tombe amoureux",
       "director": "Martin Provost",
@@ -774,6 +844,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1400336,
       "date": "2026-11-25",
       "title": "Focker-In-Law",
       "director": "John Hamburg",
@@ -785,6 +856,7 @@
       "notes": "The circle of trust just got bigger."
     },
     {
+      "tmdb_id": 1538497,
       "date": "2026-11-25",
       "title": "Hexed",
       "director": "Jason Hand, Fawn Veerasunthorn",
@@ -796,6 +868,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1658835,
       "date": "2026-11-26",
       "title": "A December Tale 2: The Lost Letter",
       "director": "Олександр Кирієнко",
@@ -807,6 +880,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1461490,
       "date": "2026-11-26",
       "title": "Hershey",
       "director": "Mark Waters",
@@ -818,6 +892,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1269278,
       "date": "2026-11-26",
       "title": "Knocker",
       "director": "Oleg Gusev",
@@ -829,6 +904,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1131943,
       "date": "2026-11-26",
       "title": "Madden",
       "director": "David O. Russell",
@@ -840,6 +916,7 @@
       "notes": "There is only one John Madden."
     },
     {
+      "tmdb_id": 1592123,
       "date": "2026-11-26",
       "title": "Marido de aluguel",
       "director": "Paulo Fontenelle, Hemily Filgueira Mourão",
@@ -851,6 +928,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1147572,
       "date": "2026-11-26",
       "title": "Narnia",
       "director": "Greta Gerwig",
@@ -862,6 +940,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1061838,
       "date": "2026-11-26",
       "title": "Pirate Mo and the Legend of the Red Ruby",
       "director": "Florian Westermann",
@@ -873,6 +952,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1653298,
       "date": "2026-11-26",
       "title": "Prasert",
       "director": "Kongkiat Khomsiri",
@@ -884,6 +964,7 @@
       "notes": "I did it my way."
     },
     {
+      "tmdb_id": 1660754,
       "date": "2026-11-27",
       "title": "Between Two Lovers",
       "director": "Nanako Hirose",
@@ -895,6 +976,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1595882,
       "date": "2026-11-27",
       "title": "Eureka or (The Quest for Nothing)",
       "director": "Max Vadas",
@@ -906,6 +988,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1674501,
       "date": "2026-11-27",
       "title": "Kyle and Eric's Quest for the Golden Bong",
       "director": "Ian Unbehaun",
@@ -917,6 +1000,7 @@
       "notes": "The fate of weed rests in their hands"
     },
     {
+      "tmdb_id": 1673706,
       "date": "2026-11-27",
       "title": "Nosebleed",
       "director": "Gage Oxley",
@@ -928,6 +1012,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1535189,
       "date": "2026-11-27",
       "title": "Plastic Guns",
       "director": "Naaman Lyon",
@@ -939,6 +1024,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1046771,
       "date": "2026-11-27",
       "title": "Tears of Neon",
       "director": "Karolina Bielawska",
@@ -950,6 +1036,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1606439,
       "date": "2026-11-28",
       "title": "Instrucciones para reparar un sombrero",
       "director": "Sofía Caballero",
@@ -961,6 +1048,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1498522,
       "date": "2026-11-30",
       "title": "Behind Closed Doors",
       "director": "Emilia Neher",
@@ -972,6 +1060,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1652990,
       "date": "2026-11-30",
       "title": "SP-2125",
       "director": "Daniel Mashburn",

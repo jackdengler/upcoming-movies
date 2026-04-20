@@ -4,6 +4,7 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1233111,
       "date": "2026-12-01",
       "title": "Carnaval Zumbi",
       "director": "Hugo Murillo Fontes Schnorrenberger",
@@ -15,6 +16,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1444559,
       "date": "2026-12-01",
       "title": "Motorgasm: a bad movie for bad people",
       "director": "Max Watn",
@@ -26,6 +28,7 @@
       "notes": "The greatest trick the devil ever pulled... was doing a wheelie!"
     },
     {
+      "tmdb_id": 1661297,
       "date": "2026-12-01",
       "title": "Prize",
       "director": "George Bartlett",
@@ -37,6 +40,7 @@
       "notes": "Break every boundary."
     },
     {
+      "tmdb_id": 1598500,
       "date": "2026-12-01",
       "title": "Sun in Lidia",
       "director": "Andrea Boggiano",
@@ -48,6 +52,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1592881,
       "date": "2026-12-01",
       "title": "Yellow Lights",
       "director": "David J Redman",
@@ -59,6 +64,7 @@
       "notes": "Mike, a recovering alcoholic, struggles to earn back his family's trust, only to be blindsided by a sudden tragedy that forces him to confront the very past he's tried to outrun."
     },
     {
+      "tmdb_id": 1084728,
       "date": "2026-12-02",
       "title": "Asterix: The Kingdom of Nubia",
       "director": "Alexandre Heboyan",
@@ -70,6 +76,7 @@
       "notes": "No, Obelix, that is not a boar!"
     },
     {
+      "tmdb_id": 1568223,
       "date": "2026-12-02",
       "title": "Claude",
       "director": "Clément Michel",
@@ -81,6 +88,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1635800,
       "date": "2026-12-02",
       "title": "Ghollak",
       "director": "Seyed Hadi MirshahVelayati",
@@ -92,6 +100,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1462332,
       "date": "2026-12-02",
       "title": "Nirwana Blüte",
       "director": "Mario Schuster",
@@ -103,6 +112,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1403869,
       "date": "2026-12-03",
       "title": "Cabras da Peste 2: Miami Vixe",
       "director": "Vitor Brandt",
@@ -114,6 +124,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1556316,
       "date": "2026-12-03",
       "title": "Chandni Bar",
       "director": "Ajay Bahl",
@@ -125,6 +136,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1382782,
       "date": "2026-12-03",
       "title": "Chili Finger",
       "director": "Edd Benda, Stephen Helstad",
@@ -136,6 +148,7 @@
       "notes": "Sometimes, life gives you the finger."
     },
     {
+      "tmdb_id": 1617101,
       "date": "2026-12-03",
       "title": "O Messias de Canaã",
       "director": "João Quaresma",
@@ -147,6 +160,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1477719,
       "date": "2026-12-03",
       "title": "Photograph 51",
       "director": "Tom Hooper",
@@ -158,6 +172,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1533842,
       "date": "2026-12-03",
       "title": "Umka",
       "director": "Maxim Peshkov",
@@ -169,6 +184,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1609604,
       "date": "2026-12-04",
       "title": "La luz",
       "director": "Fernando Franco",
@@ -180,6 +196,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1389146,
       "date": "2026-12-04",
       "title": "Ranger",
       "director": "Jagan Shakti",
@@ -191,6 +208,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1078446,
       "date": "2026-12-04",
       "title": "Violent Night 2",
       "director": "Tommy Wirkola",
@@ -202,6 +220,7 @@
       "notes": "Big Nick Energy"
     },
     {
+      "tmdb_id": 1418397,
       "date": "2026-12-05",
       "title": "Anchorless",
       "director": "Murillo Campos",
@@ -213,6 +232,7 @@
       "notes": "Two hearts, separated by miles, bound by a love that can't find its way home."
     },
     {
+      "tmdb_id": 797716,
       "date": "2026-12-06",
       "title": "The Magnificent Raiders of Dimension War One",
       "director": "—",
@@ -224,6 +244,7 @@
       "notes": "Hey Buck, got gravity bombs?"
     },
     {
+      "tmdb_id": 1608175,
       "date": "2026-12-09",
       "title": "Big Polio",
       "director": "Thomas Dylan Gracey",
@@ -235,6 +256,7 @@
       "notes": "You need to see him."
     },
     {
+      "tmdb_id": 1421967,
       "date": "2026-12-09",
       "title": "Violette",
       "director": "Jean-Pierre Jeunet",
@@ -246,6 +268,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1667058,
       "date": "2026-12-10",
       "title": "Cunk on Conspiracy",
       "director": "Sam Esmail",
@@ -257,6 +280,7 @@
       "notes": "Questioning everything, whether it's true or not."
     },
     {
+      "tmdb_id": 1655305,
       "date": "2026-12-10",
       "title": "Watkins Law",
       "director": "Niyi Akin",
@@ -268,6 +292,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1644597,
       "date": "2026-12-10",
       "title": "Yolki 13",
       "director": "Zhora Kryzhovnikov, Olga Dolmatovskaya, Yury Korobeynikov",
@@ -279,6 +304,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1250854,
       "date": "2026-12-11",
       "title": "Duped (The Jezbel Experience)",
       "director": "S.V. Henson, Jr.",
@@ -290,6 +316,7 @@
       "notes": "You shall reap what you sow"
     },
     {
+      "tmdb_id": 1501953,
       "date": "2026-12-12",
       "title": "Marrow",
       "director": "Dakota Roth",
@@ -301,6 +328,7 @@
       "notes": "BONE MAKES THE MARROW. MARROW MAKES THE BLOOD. BLOOD MAKES THE LOVE."
     },
     {
+      "tmdb_id": 1654859,
       "date": "2026-12-15",
       "title": "A Man at the End of the World",
       "director": "Zachary Wood",
@@ -312,6 +340,7 @@
       "notes": "Conscious is eternal. Freedom isn't..."
     },
     {
+      "tmdb_id": 1413403,
       "date": "2026-12-15",
       "title": "Playing War",
       "director": "Raúl Díaz Soto",
@@ -323,6 +352,7 @@
       "notes": "Greens vs Yellows"
     },
     {
+      "tmdb_id": 1652448,
       "date": "2026-12-16",
       "title": "Memoona and Sheralam",
       "director": "Abdullah, Ibrahim Gillani",
@@ -334,6 +364,7 @@
       "notes": "A single rumor. A moment of doubt. A lifetime of regret."
     },
     {
+      "tmdb_id": 1200804,
       "date": "2026-12-17",
       "title": "Alice Júnior Summer Break",
       "director": "Gil Baroni",
@@ -345,6 +376,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1676282,
       "date": "2026-12-17",
       "title": "Winter in Prostokvashino",
       "director": "Sarik Andreasyan",
@@ -356,6 +388,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1655898,
       "date": "2026-12-17",
       "title": "Три кота. Вокруг света",
       "director": "—",
@@ -367,6 +400,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1003596,
       "date": "2026-12-18",
       "title": "Avengers: Doomsday",
       "director": "Joe Russo, Anthony Russo",
@@ -378,6 +412,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1170608,
       "date": "2026-12-18",
       "title": "Dune: Part Three",
       "director": "Denis Villeneuve",
@@ -389,6 +424,7 @@
       "notes": "The epic conclusion."
     },
     {
+      "tmdb_id": 1653495,
       "date": "2026-12-18",
       "title": "Ex Situ",
       "director": "Pedro Vilarin",
@@ -400,6 +436,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1530062,
       "date": "2026-12-18",
       "title": "Order of the Dragon",
       "director": "Vjekoslav Katušin",
@@ -411,6 +448,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1621528,
       "date": "2026-12-18",
       "title": "Taste of Ambrosia",
       "director": "—",
@@ -422,6 +460,7 @@
       "notes": "One must imagine Sisyphus violent."
     },
     {
+      "tmdb_id": 1277016,
       "date": "2026-12-18",
       "title": "The Queen of Heaven",
       "director": "Yiannis Stravolaimos",
@@ -433,6 +472,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1583323,
       "date": "2026-12-18",
       "title": "The Tallyman",
       "director": "Ryan J. Diaz",
@@ -444,6 +484,7 @@
       "notes": "Mark it down."
     },
     {
+      "tmdb_id": 1666544,
       "date": "2026-12-18",
       "title": "Without a Trace",
       "director": "Timothy Denison",
@@ -455,6 +496,7 @@
       "notes": "What will it take to escape?"
     },
     {
+      "tmdb_id": 1640315,
       "date": "2026-12-19",
       "title": "Venesterio",
       "director": "María José Jiménez, Pablo Leiva",
@@ -466,6 +508,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1646213,
       "date": "2026-12-20",
       "title": "AMER D'I",
       "director": "Léo Goldenberg",
@@ -477,6 +520,7 @@
       "notes": "Run away from ghosts to become one."
     },
     {
+      "tmdb_id": 1629285,
       "date": "2026-12-20",
       "title": "Classified",
       "director": "Himalaya Joshi",
@@ -488,6 +532,7 @@
       "notes": "Be F.R.I.E.N.Ds again."
     },
     {
+      "tmdb_id": 1533403,
       "date": "2026-12-20",
       "title": "Deadly Silence",
       "director": "Noah Simon",
@@ -499,6 +544,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1361538,
       "date": "2026-12-20",
       "title": "Sophia",
       "director": "Rafael Santin, Henrique Sattin",
@@ -510,6 +556,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1552265,
       "date": "2026-12-23",
       "title": "Avis de tempête",
       "director": "Ludovic Bernard",
@@ -521,6 +568,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1458035,
       "date": "2026-12-23",
       "title": "Kumaari",
       "director": "Rahi Anil Barve",
@@ -532,6 +580,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1300926,
       "date": "2026-12-23",
       "title": "The Angry Birds Movie 3",
       "director": "John Rice",
@@ -543,6 +592,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1667828,
       "date": "2026-12-24",
       "title": "BASTA: Start of the Game",
       "director": "Stas Ivanov",
@@ -554,6 +604,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1354930,
       "date": "2026-12-24",
       "title": "Family Squad",
       "director": "Kostyantyn Fedorov",
@@ -565,6 +616,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1145110,
       "date": "2026-12-24",
       "title": "King",
       "director": "Siddharth Anand",
@@ -576,6 +628,7 @@
       "notes": "Remember There Is Only One KING"
     },
     {
+      "tmdb_id": 1305546,
       "date": "2026-12-24",
       "title": "Los Vaqueros",
       "director": "Eli Zarate",
@@ -587,6 +640,7 @@
       "notes": "Loyalty means everything - or it means nothing."
     },
     {
+      "tmdb_id": 1492730,
       "date": "2026-12-24",
       "title": "Minha Irmã e Eu 2",
       "director": "—",
@@ -598,6 +652,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 659615,
       "date": "2026-12-24",
       "title": "Nick and the Jade Tree",
       "director": "Vage Sargsyan",
@@ -609,6 +664,7 @@
       "notes": "Endless dream in the limited life"
     },
     {
+      "tmdb_id": 1319512,
       "date": "2026-12-24",
       "title": "Riam Fighting Angel 2",
       "director": "Prueksa Amaruji",
@@ -620,6 +676,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1639456,
       "date": "2026-12-24",
       "title": "Scary Forever",
       "director": "Jirawit Kongkan",
@@ -631,6 +688,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1411089,
       "date": "2026-12-24",
       "title": "Shakti Shalini",
       "director": "Aditya Sarpotdar",
@@ -642,6 +700,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1260263,
       "date": "2026-12-24",
       "title": "The Beachnickers 3",
       "director": "Roberto Santucci",
@@ -653,6 +712,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1628731,
       "date": "2026-12-24",
       "title": "The Christmas Rescue: A Big Movie",
       "director": "—",
@@ -664,6 +724,7 @@
       "notes": "The rescue begins"
     },
     {
+      "tmdb_id": 1591264,
       "date": "2026-12-24",
       "title": "Who Killed Artur Falcão?",
       "director": "Guilherme Gomes",
@@ -675,6 +736,7 @@
       "notes": "A crime. Several suspects. Potatoes with cod."
     },
     {
+      "tmdb_id": 1268053,
       "date": "2026-12-24",
       "title": "Winnie-the-Pooh: Blood and Honey 3",
       "director": "Scott Chambers",
@@ -686,6 +748,7 @@
       "notes": "We'll all be back! For you! Christopher Robin!"
     },
     {
+      "tmdb_id": 1661859,
       "date": "2026-12-24",
       "title": "Три богатыря и Гуси-лебеди",
       "director": "Fedor Dmitriev",
@@ -697,6 +760,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1592329,
       "date": "2026-12-25",
       "title": "'Tis the Season",
       "director": "Tyler Nest",
@@ -708,6 +772,7 @@
       "notes": "Season's Beatings"
     },
     {
+      "tmdb_id": 1437882,
       "date": "2026-12-25",
       "title": "A Place in Hell",
       "director": "Chloe Domont",
@@ -719,6 +784,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1657317,
       "date": "2026-12-25",
       "title": "BYE BYE LOVE 探偵はBARにいる",
       "director": "Kazuya Shiraishi",
@@ -730,6 +796,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1642786,
       "date": "2026-12-25",
       "title": "Classy Clown",
       "director": "Dustin Blue",
@@ -741,6 +808,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1605324,
       "date": "2026-12-25",
       "title": "Flying Bee",
       "director": "Alonso Betancourt Cherbowsky",
@@ -752,6 +820,7 @@
       "notes": "HOW FAR WOULD YOU GO FOR REVENGE?"
     },
     {
+      "tmdb_id": 1530151,
       "date": "2026-12-25",
       "title": "Hösten med Göran",
       "director": "Staffan Lindberg",
@@ -763,6 +832,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1260649,
       "date": "2026-12-25",
       "title": "Jumanji: Open World",
       "director": "Jake Kasdan",
@@ -774,6 +844,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 977976,
       "date": "2026-12-25",
       "title": "Mayamrigaya",
       "director": "Subhrajit Mitra",
@@ -785,6 +856,7 @@
       "notes": "The illusive ballet of love and lust"
     },
     {
+      "tmdb_id": 1372443,
       "date": "2026-12-25",
       "title": "Mr. Irrelevant: The John Tuggle Story",
       "director": "Jonathan Levine",
@@ -796,6 +868,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1632174,
       "date": "2026-12-25",
       "title": "Nella gioia e nel dolore",
       "director": "Ferzan Özpetek",
@@ -807,6 +880,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1652778,
       "date": "2026-12-25",
       "title": "Operation Tral",
       "director": "Ratheesh Vegha",
@@ -818,6 +892,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561065,
       "date": "2026-12-25",
       "title": "Rafadan Tayfa 7",
       "director": "—",
@@ -829,6 +904,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1635312,
       "date": "2026-12-25",
       "title": "Red Flag Bhalobasha Beshi",
       "director": "Abhimanyu Mukherjee",
@@ -840,6 +916,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1389373,
       "date": "2026-12-25",
       "title": "Rowdy Janardhana",
       "director": "Ravikiran Kola",
@@ -851,6 +928,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1647071,
       "date": "2026-12-25",
       "title": "Some Other Story",
       "director": "Hayden Brown",
@@ -862,6 +940,7 @@
       "notes": "To new stories!"
     },
     {
+      "tmdb_id": 927334,
       "date": "2026-12-25",
       "title": "Someone Dies Tonight",
       "director": "Vjekoslav Katušin",
@@ -873,6 +952,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1574910,
       "date": "2026-12-25",
       "title": "The Chosen One",
       "director": "Juneau Dubois",
@@ -884,6 +964,7 @@
       "notes": "NEXTA B.V. thanks you for your service."
     },
     {
+      "tmdb_id": 1607851,
       "date": "2026-12-25",
       "title": "Tonic 2",
       "director": "Avijit Sen",
@@ -895,6 +976,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1573319,
       "date": "2026-12-25",
       "title": "Untitled Doctor Who Christmas Special",
       "director": "—",
@@ -906,6 +988,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1421903,
       "date": "2026-12-25",
       "title": "Werwulf",
       "director": "Robert Eggers",
@@ -917,6 +1000,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1555901,
       "date": "2026-12-26",
       "title": "Fireworks Over Yonder",
       "director": "Hamish Holton",
@@ -928,6 +1012,7 @@
       "notes": "When was the last time you looked up at the sky? What if what you saw scared you?"
     },
     {
+      "tmdb_id": 1571521,
       "date": "2026-12-26",
       "title": "ViQueens",
       "director": "Harald Zwart",
@@ -939,6 +1024,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1604487,
       "date": "2026-12-27",
       "title": "The Audition",
       "director": "Manas Shashidharan Jacob",
@@ -950,6 +1036,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1531947,
       "date": "2026-12-28",
       "title": "By the End of the Day",
       "director": "Jelena Maksimović",
@@ -961,6 +1048,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1286030,
       "date": "2026-12-30",
       "title": "Apophis 2029",
       "director": "Jeffrey Schneider",
@@ -972,6 +1060,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1588798,
       "date": "2026-12-30",
       "title": "Logan",
       "director": "Brandon Newbury",
@@ -983,6 +1072,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 951687,
       "date": "2026-12-30",
       "title": "Narayan Pustika 2 - Endless",
       "director": "—",
@@ -994,6 +1084,7 @@
       "notes": "Unrevealed The Revealed Unknown Energy What is open by the unimaginable door"
     },
     {
+      "tmdb_id": 1655265,
       "date": "2026-12-31",
       "title": "El mágico cerebro de un hombre atormentado",
       "director": "Carlos Santos",
@@ -1005,6 +1096,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1666165,
       "date": "2026-12-31",
       "title": "For If Night Leaves Something Undone, the Day Undertakes to Complete It",
       "director": "Mahda Purmehdi",
@@ -1016,6 +1108,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1664241,
       "date": "2026-12-31",
       "title": "Lajna - konečně film!",
       "director": "Vladimír Skórka",
@@ -1027,6 +1120,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1659488,
       "date": "2026-12-31",
       "title": "Les Larmes du Patriarcat",
       "director": "Bernard & Chaplet",
@@ -1038,6 +1132,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1636190,
       "date": "2026-12-31",
       "title": "OSAKAQUEST",
       "director": "ratfaller, Blobbo",
@@ -1049,6 +1144,7 @@
       "notes": "Time travel's a scary thing."
     },
     {
+      "tmdb_id": 1648476,
       "date": "2026-12-31",
       "title": "PARAYANA",
       "director": "Chandra kanth.m, Girish v",
@@ -1060,6 +1156,7 @@
       "notes": "Ba nena nodu"
     },
     {
+      "tmdb_id": 1656298,
       "date": "2026-12-31",
       "title": "Roseto",
       "director": "Aitor F. Navarro",
@@ -1071,6 +1168,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1671241,
       "date": "2026-12-31",
       "title": "The Rental Reaper",
       "director": "Hank Heimlich",
@@ -1082,6 +1180,7 @@
       "notes": "AIRBNBeware!"
     },
     {
+      "tmdb_id": 1654479,
       "date": "2026-12-31",
       "title": "The Waiting Man",
       "director": "Carl Sundström",
@@ -1093,6 +1192,7 @@
       "notes": "You saw him, now it's too late."
     },
     {
+      "tmdb_id": 1652994,
       "date": "2026-12-31",
       "title": "Wings",
       "director": "Adam Rebora",

@@ -4,6 +4,7 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1669191,
       "date": "2026-07-01",
       "title": "'Mr. Paradise'",
       "director": "Robert Lightspeed",
@@ -15,6 +16,7 @@
       "notes": "You Become What You Think About..."
     },
     {
+      "tmdb_id": 1651795,
       "date": "2026-07-01",
       "title": "A Tárcsázó",
       "director": "Kiss-Honti Anna",
@@ -26,6 +28,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1579633,
       "date": "2026-07-01",
       "title": "Absolution",
       "director": "Kharis Dunsby",
@@ -37,6 +40,7 @@
       "notes": "Has anyone else died for you?"
     },
     {
+      "tmdb_id": 1626669,
       "date": "2026-07-01",
       "title": "Burisch",
       "director": "—",
@@ -48,6 +52,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1568027,
       "date": "2026-07-01",
       "title": "Checkout - The Movie",
       "director": "—",
@@ -59,6 +64,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1676113,
       "date": "2026-07-01",
       "title": "Forks",
       "director": "Ilyas Sheikh",
@@ -70,6 +76,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1617367,
       "date": "2026-07-01",
       "title": "Gringo",
       "director": "Calebe Lopes, Klaus Hastenreiter",
@@ -81,6 +88,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 947502,
       "date": "2026-07-01",
       "title": "In Waves",
       "director": "Phuong Mai Nguyen",
@@ -92,6 +100,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1522716,
       "date": "2026-07-01",
       "title": "Levý Hamlet",
       "director": "Zdeněk Troška",
@@ -103,6 +112,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1669180,
       "date": "2026-07-01",
       "title": "Life Coach",
       "director": "James Cunningham",
@@ -114,6 +124,7 @@
       "notes": "He Knows Your Limits."
     },
     {
+      "tmdb_id": 1634820,
       "date": "2026-07-01",
       "title": "Living Corpse",
       "director": "Takeshi Sone",
@@ -125,6 +136,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1665623,
       "date": "2026-07-01",
       "title": "Lupus",
       "director": "Alejandro Herrera",
@@ -136,6 +148,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1351705,
       "date": "2026-07-01",
       "title": "Miss Mermaid",
       "director": "Pauline Brunner, Marion Verlé",
@@ -147,6 +160,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1611912,
       "date": "2026-07-01",
       "title": "Naxos",
       "director": "John Farrelly",
@@ -158,6 +172,7 @@
       "notes": "Every threshold demands a sacrifice"
     },
     {
+      "tmdb_id": 1642122,
       "date": "2026-07-01",
       "title": "No Volveré",
       "director": "Jan Bross",
@@ -169,6 +184,7 @@
       "notes": "The More They Talk With Pedrito... The More They Want Luis"
     },
     {
+      "tmdb_id": 1515519,
       "date": "2026-07-01",
       "title": "The Social Distance",
       "director": "Vienna Skinnell",
@@ -180,6 +196,7 @@
       "notes": "Middle school isn't rocket science."
     },
     {
+      "tmdb_id": 1391083,
       "date": "2026-07-02",
       "title": "Destroy",
       "director": "Md. Iqbal",
@@ -191,6 +208,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1596259,
       "date": "2026-07-02",
       "title": "Grandfather Fomich",
       "director": "Garik Petrosyan, Grigory Sukhov",
@@ -202,6 +220,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1141970,
       "date": "2026-07-02",
       "title": "Morte Cucina",
       "director": "Pen-Ek Ratanaruang",
@@ -213,6 +232,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1160017,
       "date": "2026-07-02",
       "title": "Overman: O Filme",
       "director": "Tomás Portella",
@@ -224,6 +244,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1430698,
       "date": "2026-07-02",
       "title": "The Bay",
       "director": "Phil Volken",
@@ -235,6 +256,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1488184,
       "date": "2026-07-02",
       "title": "Касса невест",
       "director": "Ruslan Baltzer",
@@ -246,6 +268,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1324688,
       "date": "2026-07-03",
       "title": "7G Rainbow Colony 2",
       "director": "Selvaraghavan",
@@ -257,6 +280,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1581313,
       "date": "2026-07-03",
       "title": "Ananya's Call",
       "director": "Gauthaam",
@@ -268,6 +292,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1165369,
       "date": "2026-07-03",
       "title": "De Gaulle: The Sovereign Edge (Film 2)",
       "director": "Antonin Baudry",
@@ -279,6 +304,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1303331,
       "date": "2026-07-03",
       "title": "Dhamaal 4",
       "director": "Indra Kumar",
@@ -290,6 +316,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1658268,
       "date": "2026-07-03",
       "title": "Ice Blood",
       "director": "Eisuke Naito",
@@ -301,6 +328,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1630545,
       "date": "2026-07-03",
       "title": "Le Temps d'une Tartine 2",
       "director": "Louis Gaubert",
@@ -312,6 +340,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1442396,
       "date": "2026-07-03",
       "title": "Nagabandham",
       "director": "Abhishek Nama",
@@ -323,6 +352,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1632375,
       "date": "2026-07-03",
       "title": "SOMEWHERE OVER THE RAINBOW",
       "director": "Jorge Jimenez",
@@ -334,6 +364,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1515714,
       "date": "2026-07-03",
       "title": "The Street Photographer",
       "director": "Rick van Wijk",
@@ -345,6 +376,7 @@
       "notes": "What does art mean to you?"
     },
     {
+      "tmdb_id": 1651166,
       "date": "2026-07-03",
       "title": "Why Wait, Just Die",
       "director": "Junichi Kanai",
@@ -356,6 +388,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1308767,
       "date": "2026-07-03",
       "title": "Young Washington",
       "director": "Jon Erwin",
@@ -367,6 +400,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1672375,
       "date": "2026-07-04",
       "title": "Anfa 8",
       "director": "Karzan Kardozi",
@@ -378,6 +412,7 @@
       "notes": "To control the light, it had to manufacture the dark"
     },
     {
+      "tmdb_id": 1537673,
       "date": "2026-07-04",
       "title": "Eve",
       "director": "Gerson Matias-Ryan",
@@ -389,6 +424,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1654654,
       "date": "2026-07-04",
       "title": "Inevitably Alone",
       "director": "Joe Brooks",
@@ -400,6 +436,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1512393,
       "date": "2026-07-04",
       "title": "Joust",
       "director": "Joel Warren",
@@ -411,6 +448,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1659389,
       "date": "2026-07-05",
       "title": "ONE PIECE HEROINES",
       "director": "Haruka Kamatani",
@@ -422,6 +460,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1667379,
       "date": "2026-07-06",
       "title": "Donnie & Dude: Do Dudley",
       "director": "Alfie Guest, Marshall Rzepkowski",
@@ -433,6 +472,7 @@
       "notes": "Doin’ Dudley This summer."
     },
     {
+      "tmdb_id": 1287805,
       "date": "2026-07-06",
       "title": "Night Comes",
       "director": "Jay Hernandez",
@@ -444,6 +484,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1549191,
       "date": "2026-07-07",
       "title": "Do Stars Know Fear?",
       "director": "M. C. T.",
@@ -455,6 +496,7 @@
       "notes": "00:00:00"
     },
     {
+      "tmdb_id": 1642890,
       "date": "2026-07-07",
       "title": "Red Anorak",
       "director": "Adolfo Arrieta",
@@ -466,6 +508,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1483527,
       "date": "2026-07-08",
       "title": "François.e",
       "director": "Jean-François Asselin",
@@ -477,6 +520,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1482377,
       "date": "2026-07-08",
       "title": "Microstar",
       "director": "Léopold Kraus",
@@ -488,6 +532,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1337438,
       "date": "2026-07-08",
       "title": "Unidentified",
       "director": "Haifaa al-Mansour",
@@ -499,6 +544,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1475375,
       "date": "2026-07-09",
       "title": "402 Rumah Sakit Angker Korea",
       "director": "Anggy Umbara",
@@ -510,6 +556,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1299061,
       "date": "2026-07-09",
       "title": "Home Stories",
       "director": "Eva Trobisch",
@@ -521,6 +568,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1654313,
       "date": "2026-07-09",
       "title": "Unanswered//butterfly",
       "director": "Tadahiro Yoshihira",
@@ -532,6 +580,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1645599,
       "date": "2026-07-09",
       "title": "Трасса «Море — море»",
       "director": "Ilya Khramov",
@@ -543,6 +592,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1122030,
       "date": "2026-07-10",
       "title": "Alpha",
       "director": "Shiv Rawail",
@@ -554,6 +604,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1661252,
       "date": "2026-07-10",
       "title": "Andy",
       "director": "Román Parrado",
@@ -565,6 +616,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1652578,
       "date": "2026-07-10",
       "title": "CONTRAPPOSTO",
       "director": "Laysa Monteiro",
@@ -576,6 +628,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1212763,
       "date": "2026-07-10",
       "title": "Evil Dead Burn",
       "director": "Sébastien Vaniček",
@@ -587,6 +640,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1476682,
       "date": "2026-07-10",
       "title": "Gail Daughtry and the Celebrity Sex Pass",
       "director": "David Wain",
@@ -598,6 +652,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1603464,
       "date": "2026-07-10",
       "title": "Lads Being Lads",
       "director": "Ben Horgan",
@@ -609,6 +664,7 @@
       "notes": "Sure What More Could Ya Want?"
     },
     {
+      "tmdb_id": 1632981,
       "date": "2026-07-10",
       "title": "Lo que nos faltaba",
       "director": "David Marqués",
@@ -620,6 +676,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1646057,
       "date": "2026-07-10",
       "title": "LOVESTRUCK",
       "director": "Jaxon Tabor",
@@ -631,6 +688,7 @@
       "notes": "Get over your ex’s."
     },
     {
+      "tmdb_id": 1108427,
       "date": "2026-07-10",
       "title": "Moana",
       "director": "Thomas Kail",
@@ -642,6 +700,7 @@
       "notes": "The ocean chose her for a reason."
     },
     {
+      "tmdb_id": 1636756,
       "date": "2026-07-10",
       "title": "Mrigaya 1.5: The Hunt Continues",
       "director": "Abhirup Ghosh",
@@ -653,6 +712,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1628752,
       "date": "2026-07-10",
       "title": "Rabbit on a Highway",
       "director": "Bowie Roussel",
@@ -664,6 +724,7 @@
       "notes": "TAKE A LOOK AROUND."
     },
     {
+      "tmdb_id": 1659338,
       "date": "2026-07-10",
       "title": "SHIBOYUGI: Playing Death Games to Put Food on the Table - 44: CLOUDY BEACH",
       "director": "Souta Ueno",
@@ -675,6 +736,7 @@
       "notes": "This is a story about a deranged world."
     },
     {
+      "tmdb_id": 1291867,
       "date": "2026-07-10",
       "title": "The Misadventures of Girth Brooks",
       "director": "Anthony Leroy",
@@ -686,6 +748,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1445813,
       "date": "2026-07-10",
       "title": "Trigger",
       "director": "Joseph Shedd",
@@ -697,6 +760,7 @@
       "notes": "BIG TROUBLE. BIGGER WOODS"
     },
     {
+      "tmdb_id": 1657017,
       "date": "2026-07-10",
       "title": "TROPHY",
       "director": "Son Myong A",
@@ -708,6 +772,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1229939,
       "date": "2026-07-10",
       "title": "Vishwambhara",
       "director": "Malladi Vassishta",
@@ -719,6 +784,7 @@
       "notes": "When Myths Collide, Legends Rise!"
     },
     {
+      "tmdb_id": 1671541,
       "date": "2026-07-10",
       "title": "三国第一部：争洛阳",
       "director": "Xie Junwei",
@@ -730,6 +796,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1658666,
       "date": "2026-07-10",
       "title": "大圣崛起",
       "director": "—",
@@ -741,6 +808,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1616543,
       "date": "2026-07-11",
       "title": "NJPW G1 Climax 36 - Day 1",
       "director": "—",
@@ -752,6 +820,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1570651,
       "date": "2026-07-14",
       "title": "House Party",
       "director": "Robert \"Bobby\" McGowan",
@@ -763,6 +832,7 @@
       "notes": "You're Invited"
     },
     {
+      "tmdb_id": 1462584,
       "date": "2026-07-16",
       "title": "As Dez Vantagens de Morrer Depois de Você",
       "director": "Diego Freitas",
@@ -774,6 +844,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1627053,
       "date": "2026-07-16",
       "title": "Quando Tudo Joga Contra",
       "director": "Otavio Chamorro",
@@ -785,6 +856,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1418967,
       "date": "2026-07-16",
       "title": "Televil",
       "director": "Lertsiri Boonmee, Wuttichai Wongnoppadon, Sathanapong Limwongthong",
@@ -796,6 +868,7 @@
       "notes": "The fear that won’t let you close."
     },
     {
+      "tmdb_id": 1389232,
       "date": "2026-07-16",
       "title": "The Mission 2",
       "director": "Yassin AL-Naimi",
@@ -807,6 +880,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1597659,
       "date": "2026-07-16",
       "title": "To Grandfather's Village 2",
       "director": "Vladimir Kott",
@@ -818,6 +892,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1648388,
       "date": "2026-07-16",
       "title": "Отпуск на всю голову",
       "director": "Karen Arutyunov",
@@ -829,6 +904,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1513133,
       "date": "2026-07-17",
       "title": "28 Hours Later",
       "director": "Evan Wright",
@@ -840,6 +916,7 @@
       "notes": "The Rage has just begun"
     },
     {
+      "tmdb_id": 1616908,
       "date": "2026-07-17",
       "title": "AnyMart",
       "director": "Iwasaki Yusuke",
@@ -851,6 +928,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1451148,
       "date": "2026-07-17",
       "title": "Cut Off",
       "director": "Jonah Hill",
@@ -862,6 +940,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1650856,
       "date": "2026-07-17",
       "title": "Dastaar",
       "director": "Amar Hundal",
@@ -873,6 +952,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1622621,
       "date": "2026-07-17",
       "title": "Kimi to Hanabi to Yakusoku to",
       "director": "Akira Suzuki",
@@ -884,6 +964,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1511675,
       "date": "2026-07-17",
       "title": "Kingdom 5",
       "director": "Shinsuke Sato",
@@ -895,6 +976,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1654791,
       "date": "2026-07-17",
       "title": "Motel Inn",
       "director": "Eythor Isfeld, Jack Donohue, Syd Whalen, Eunju Park",
@@ -906,6 +988,7 @@
       "notes": "One film. Multiple directors. Each room, a different vision."
     },
     {
+      "tmdb_id": 1646895,
       "date": "2026-07-17",
       "title": "Operation Kino",
       "director": "Alexander Kothe",
@@ -917,6 +1000,7 @@
       "notes": "Tickets to the 1:00 p.m. showing sir"
     },
     {
+      "tmdb_id": 1667772,
       "date": "2026-07-17",
       "title": "The Dendrill",
       "director": "Morgan I.P. Fics, Geoffrey Norris",
@@ -928,6 +1012,7 @@
       "notes": "Small as a twig, tall as a redwood"
     },
     {
+      "tmdb_id": 1368337,
       "date": "2026-07-17",
       "title": "The Odyssey",
       "director": "Christopher Nolan",
@@ -939,6 +1024,7 @@
       "notes": "Defy the gods."
     },
     {
+      "tmdb_id": 1641071,
       "date": "2026-07-19",
       "title": "Hallway Monitor",
       "director": "Dakota Nayler",
@@ -950,6 +1036,7 @@
       "notes": "Josie's ok. Josie's ok. Josie's ok."
     },
     {
+      "tmdb_id": 1654365,
       "date": "2026-07-19",
       "title": "The Killer's Game: Marai Mugam",
       "director": "Karthick Ravichandran",
@@ -961,6 +1048,7 @@
       "notes": "Sweet Rogue Killer"
     },
     {
+      "tmdb_id": 1654533,
       "date": "2026-07-20",
       "title": "O que corre em nós",
       "director": "Gê Filho",
@@ -972,6 +1060,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1496491,
       "date": "2026-07-22",
       "title": "Comédie-Française",
       "director": "Bertrand Usclat, Martin Darondeau",
@@ -983,6 +1072,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1151265,
       "date": "2026-07-22",
       "title": "La Fille dans les nuages",
       "director": "Philippe Riche",
@@ -994,6 +1084,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1627696,
       "date": "2026-07-23",
       "title": "\"It's Murder!\"",
       "director": "Tyler Peterfi",
@@ -1005,6 +1096,7 @@
       "notes": "Find out which sin was committed this july"
     },
     {
+      "tmdb_id": 1671183,
       "date": "2026-07-23",
       "title": "Butterfly Effect: Azzam",
       "director": "Ahmed Mounir, Riyadh Yesri",
@@ -1016,6 +1108,7 @@
       "notes": "حين تبدأ الحكاية .. لا تعود كما كانت"
     },
     {
+      "tmdb_id": 1522183,
       "date": "2026-07-23",
       "title": "I Rarely Wake Up Dreaming",
       "director": "Isabelle Stever",
@@ -1027,6 +1120,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1590177,
       "date": "2026-07-23",
       "title": "My Wild Friend: Returning Home",
       "director": "Anna Kurbatova",
@@ -1038,6 +1132,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1610820,
       "date": "2026-07-23",
       "title": "Santo António",
       "director": "Ruben Alves",
@@ -1049,6 +1144,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1361774,
       "date": "2026-07-23",
       "title": "The Dink",
       "director": "Josh Greenbaum",
@@ -1060,6 +1156,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1408162,
       "date": "2026-07-23",
       "title": "Vishwanath & Sons",
       "director": "Venky Atluri",
@@ -1071,6 +1168,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1659696,
       "date": "2026-07-24",
       "title": "Untitled Kamen Rider ZEZTZ Summer Movie",
       "director": "—",
@@ -1082,6 +1180,7 @@
       "notes": "Are you ready?"
     },
     {
+      "tmdb_id": 1659702,
       "date": "2026-07-24",
       "title": "Untitled Super Space Sheriff Gavan Infinity Summer Movie",
       "director": "—",

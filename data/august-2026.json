@@ -4,6 +4,7 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1650100,
       "date": "2026-08-01",
       "title": "A Prince in Paradise: A Royal Wedding",
       "director": "Adrian Powers",
@@ -15,6 +16,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1512014,
       "date": "2026-08-01",
       "title": "Bound By Lies",
       "director": "Dylan Lee Baxter",
@@ -26,6 +28,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1652069,
       "date": "2026-08-01",
       "title": "Ensemble Stars! The Stage -10th Anniversary LIVE-",
       "director": "—",
@@ -37,6 +40,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1465406,
       "date": "2026-08-01",
       "title": "From Corsica to Saint Helena",
       "director": "Jakub Janiszewski",
@@ -48,6 +52,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1544948,
       "date": "2026-08-01",
       "title": "Holy Father",
       "director": "Shravan Tiwari",
@@ -59,6 +64,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1647903,
       "date": "2026-08-01",
       "title": "Interlinked",
       "director": "Samuel Aka-Adou",
@@ -70,6 +76,7 @@
       "notes": "When the mind can’t heal… it rewrites reality."
     },
     {
+      "tmdb_id": 1649946,
       "date": "2026-08-01",
       "title": "Morgen",
       "director": "David Salabè",
@@ -81,6 +88,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1089007,
       "date": "2026-08-01",
       "title": "Pequeno London",
       "director": "Márcio Picoli, Victor Di Marco",
@@ -92,6 +100,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1539450,
       "date": "2026-08-01",
       "title": "Pink and Pastels",
       "director": "Anannop Detaitthiphat",
@@ -103,6 +112,7 @@
       "notes": "A Slice of Mew and Boat Lives"
     },
     {
+      "tmdb_id": 1661050,
       "date": "2026-08-01",
       "title": "Robbed",
       "director": "Luuk Koffeman, Jack McGrath",
@@ -114,6 +124,7 @@
       "notes": "WAS IT WORTH IT?"
     },
     {
+      "tmdb_id": 1650162,
       "date": "2026-08-01",
       "title": "Sincerely, Victor",
       "director": "Caleb Beers, Harmen Stiff",
@@ -125,6 +136,7 @@
       "notes": "Face your past. Accept your future."
     },
     {
+      "tmdb_id": 1353167,
       "date": "2026-08-01",
       "title": "The Mouse Trap: Welcome to the Mickeyverse",
       "director": "Jamie Bailey",
@@ -136,6 +148,7 @@
       "notes": "Welcome to the Mickeyverse."
     },
     {
+      "tmdb_id": 1647652,
       "date": "2026-08-01",
       "title": "Untitled Short Horror Film",
       "director": "Francisco Matus",
@@ -147,6 +160,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1652369,
       "date": "2026-08-03",
       "title": "Blood Mandate",
       "director": "Nasser Azzeh",
@@ -158,6 +172,7 @@
       "notes": "What is a true warrior?"
     },
     {
+      "tmdb_id": 1647044,
       "date": "2026-08-03",
       "title": "Figure 8: The metal is the ruin of our skin",
       "director": "Facundo Carbonelli",
@@ -169,6 +184,7 @@
       "notes": "Once I get going, i don't know how to stop"
     },
     {
+      "tmdb_id": 1608664,
       "date": "2026-08-04",
       "title": "The Cover Story",
       "director": "Sree Nandan Chengannur",
@@ -180,6 +196,7 @@
       "notes": "“You ruled for a moment. I rule forever.”"
     },
     {
+      "tmdb_id": 917242,
       "date": "2026-08-05",
       "title": "Jeweler",
       "director": "Islam Khairy",
@@ -191,6 +208,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1365362,
       "date": "2026-08-05",
       "title": "Kyma, l'onde mystérieuse",
       "director": "Romain Daudet-Jahan",
@@ -202,6 +220,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1472287,
       "date": "2026-08-05",
       "title": "Les Gendarmes",
       "director": "François Prévôt-Leygonie, Stéphan Archinard",
@@ -213,6 +232,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1671297,
       "date": "2026-08-06",
       "title": "6 gramů",
       "director": "Miroslav Ondruš",
@@ -224,6 +244,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1420851,
       "date": "2026-08-06",
       "title": "8 Segundos: O Desafio",
       "director": "Márcio Trigo",
@@ -235,6 +256,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1419034,
       "date": "2026-08-06",
       "title": "First Camping",
       "director": "Banjong Sintanamongkolgul",
@@ -246,6 +268,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1336841,
       "date": "2026-08-06",
       "title": "Flieg steil",
       "director": "Martina Schöne-Radunski, Lana Cooper",
@@ -257,6 +280,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1427128,
       "date": "2026-08-06",
       "title": "KikoRiki: Through the Universes",
       "director": "Andrey Marmontov, Ilya Maksimov",
@@ -268,6 +292,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 964849,
       "date": "2026-08-06",
       "title": "Nightborn",
       "director": "Hanna Bergholm",
@@ -279,6 +304,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1476746,
       "date": "2026-08-06",
       "title": "The Florist",
       "director": "Babak Najafi",
@@ -290,6 +316,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 748681,
       "date": "2026-08-06",
       "title": "The Violinist",
       "director": "Ervin Han, Raúl García",
@@ -301,6 +328,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1476466,
       "date": "2026-08-06",
       "title": "Trial of Hein",
       "director": "Kai Stänicke",
@@ -312,6 +340,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561333,
       "date": "2026-08-07",
       "title": "'a.ni.mal",
       "director": "Dustin Celestino",
@@ -323,6 +352,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561336,
       "date": "2026-08-07",
       "title": "2 Valid IDs",
       "director": "Ma-an Asuncion-Dagñalan",
@@ -334,6 +364,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1568515,
       "date": "2026-08-07",
       "title": "Apol of my Ai",
       "director": "Thop Nazareno",
@@ -345,6 +376,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1568514,
       "date": "2026-08-07",
       "title": "Beast",
       "director": "Lawrence Fajardo",
@@ -356,6 +388,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1623376,
       "date": "2026-08-07",
       "title": "Blue Lock",
       "director": "Yusuke Taki",
@@ -367,6 +400,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561338,
       "date": "2026-08-07",
       "title": "Dangeom",
       "director": "Paul Sta. Ana",
@@ -378,6 +412,7 @@
       "notes": "In every blade, a bloodline. In every dance, a wound unspoken."
     },
     {
+      "tmdb_id": 1568511,
       "date": "2026-08-07",
       "title": "Dead Hungry",
       "director": "Carl Joseph E. Papa, Ian Pangilinan",
@@ -389,6 +424,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1614289,
       "date": "2026-08-07",
       "title": "El último mono",
       "director": "Joaquín Mazón",
@@ -400,6 +436,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1101412,
       "date": "2026-08-07",
       "title": "Fall 2",
       "director": "Michael Spierig, Peter Spierig",
@@ -411,6 +448,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561318,
       "date": "2026-08-07",
       "title": "Ganggang",
       "director": "JL Burgos",
@@ -422,6 +460,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561340,
       "date": "2026-08-07",
       "title": "Hand of God",
       "director": "Mark Duane Angos",
@@ -433,6 +472,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1477712,
       "date": "2026-08-07",
       "title": "Ice Cream Man",
       "director": "Eli Roth",
@@ -444,6 +484,7 @@
       "notes": "Watch out for children."
     },
     {
+      "tmdb_id": 1568509,
       "date": "2026-08-07",
       "title": "Mono No Aware",
       "director": "BC Amparado",
@@ -455,6 +496,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1522380,
       "date": "2026-08-07",
       "title": "Multwoh (Patay na Patay Sa’yo)",
       "director": "Rodina Singh",
@@ -466,6 +508,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1433367,
       "date": "2026-08-07",
       "title": "One Night Only",
       "director": "Will Gluck",
@@ -477,6 +520,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1613693,
       "date": "2026-08-07",
       "title": "Otter",
       "director": "Pizza Chunk",
@@ -488,6 +532,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561347,
       "date": "2026-08-07",
       "title": "Status: Rejected",
       "director": "Vahn Leinard Pascual",
@@ -499,6 +544,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1568517,
       "date": "2026-08-07",
       "title": "Stuck On You",
       "director": "Mikko Baldoza",
@@ -510,6 +556,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 675871,
       "date": "2026-08-07",
       "title": "Super Troopers 3",
       "director": "Jay Chandrasekhar",
@@ -521,6 +568,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561349,
       "date": "2026-08-07",
       "title": "Tayo Lang Ang Nakakaalam",
       "director": "David R. Corpuz",
@@ -532,6 +580,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1240889,
       "date": "2026-08-07",
       "title": "Teenage Sex and Death at Camp Miasma",
       "director": "Jane Schoenbrun",
@@ -543,6 +592,7 @@
       "notes": "A new kind of horror remake."
     },
     {
+      "tmdb_id": 1556571,
       "date": "2026-08-07",
       "title": "The Motel",
       "director": "Niko Zoras",
@@ -554,6 +604,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561345,
       "date": "2026-08-07",
       "title": "The Mothering",
       "director": "Giancarlo Abrahan",
@@ -565,6 +616,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561317,
       "date": "2026-08-07",
       "title": "They Have Tails. They Have Tales.",
       "director": "Alpha Habon",
@@ -576,6 +628,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561354,
       "date": "2026-08-07",
       "title": "To Set Upright",
       "director": "May-i Guia Padilla",
@@ -587,6 +640,7 @@
       "notes": "Huwag Kang Lilingon, Kung Gusto Mong Mabuhay Sa Sariling Bait."
     },
     {
+      "tmdb_id": 1568505,
       "date": "2026-08-07",
       "title": "Wantawsan",
       "director": "Joseph Abello",
@@ -598,6 +652,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1638776,
       "date": "2026-08-07",
       "title": "あの星が降る丘で、君とまた出会いたい。",
       "director": "Takehiko Shinjo",
@@ -609,6 +664,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1643449,
       "date": "2026-08-09",
       "title": "San Expedito",
       "director": "Francisco Carlero",
@@ -620,6 +676,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1233883,
       "date": "2026-08-10",
       "title": "Epitaph",
       "director": "Harley Coleman",
@@ -631,6 +688,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1247047,
       "date": "2026-08-12",
       "title": "Bollywoof",
       "director": "Frederik Du Chau",
@@ -642,6 +700,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1675737,
       "date": "2026-08-12",
       "title": "Every Now and Then, I Fall Apart",
       "director": "Siris Ozra Laing",
@@ -653,6 +712,7 @@
       "notes": "As above, so below."
     },
     {
+      "tmdb_id": 1234139,
       "date": "2026-08-12",
       "title": "Jailer 2",
       "director": "Nelson Dilipkumar",
@@ -664,6 +724,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1552456,
       "date": "2026-08-12",
       "title": "Last Connection",
       "director": "Jirawit Kongkan",
@@ -675,6 +736,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1536008,
       "date": "2026-08-12",
       "title": "The Confession of Shaman",
       "director": "Nattanont Cholumpi",
@@ -686,6 +748,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1564831,
       "date": "2026-08-12",
       "title": "Tombé du ciel",
       "director": "Mohamed Hamidi",
@@ -697,6 +760,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1510556,
       "date": "2026-08-13",
       "title": "Bojovník",
       "director": "Vojtěch Frič, Tomáš Dianiška",
@@ -708,6 +772,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1517064,
       "date": "2026-08-13",
       "title": "Funeral Casino Blues",
       "director": "Roderick Warich",
@@ -719,6 +784,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1513703,
       "date": "2026-08-13",
       "title": "Kolobok",
       "director": "Anton Maslov",
@@ -730,6 +796,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1169537,
       "date": "2026-08-13",
       "title": "Lahore 1947",
       "director": "Rajkumar Santoshi",
@@ -741,6 +808,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1381087,
       "date": "2026-08-13",
       "title": "Monitor",
       "director": "Ryan Polly, Matthew Black",
@@ -752,6 +820,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1401334,
       "date": "2026-08-13",
       "title": "Pecadora",
       "director": "Dainara Toffoli",
@@ -763,6 +832,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1659167,
       "date": "2026-08-13",
       "title": "RECORDING #27 - Short Film",
       "director": "Louis Brassington",
@@ -774,6 +844,7 @@
       "notes": "It’s always been there."
     },
     {
+      "tmdb_id": 1328335,
       "date": "2026-08-13",
       "title": "Steckerlfischfiasko",
       "director": "Ed Herzog",
@@ -785,6 +856,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1280015,
       "date": "2026-08-13",
       "title": "Sunny Dancer",
       "director": "George Jaques",
@@ -796,6 +868,7 @@
       "notes": "Go find yourself."
     },
     {
+      "tmdb_id": 1670546,
       "date": "2026-08-13",
       "title": "Tajemství křišťálové planety",
       "director": "Arsen Anton Ostojić",
@@ -807,6 +880,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1632473,
       "date": "2026-08-13",
       "title": "This, That and Everything in Between",
       "director": "Cholo Laurel",
@@ -818,6 +892,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1218069,
       "date": "2026-08-13",
       "title": "Yugly",
       "director": "Jérémie Degruson, Yanis Belaid",
@@ -829,6 +904,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1444466,
       "date": "2026-08-14",
       "title": "Awarapan 2",
       "director": "Nitin Kakkar",
@@ -840,6 +916,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1603656,
       "date": "2026-08-14",
       "title": "Bike Ambulance Dada",
       "director": "Vinay Mudgil",
@@ -851,6 +928,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1475768,
       "date": "2026-08-14",
       "title": "Maatrubhumi",
       "director": "Apoorva Lakhia",
@@ -862,6 +940,7 @@
       "notes": "May War Rest in Peace"
     },
     {
+      "tmdb_id": 1633790,
       "date": "2026-08-14",
       "title": "Patlabor EZY File 2",
       "director": "Kozo Kaiho",
@@ -873,6 +952,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1185806,
       "date": "2026-08-14",
       "title": "PAW Patrol: The Dino Movie",
       "director": "Cal Brunker",
@@ -884,6 +964,7 @@
       "notes": "Adventure reaches new heights."
     },
     {
+      "tmdb_id": 192139,
       "date": "2026-08-14",
       "title": "The Brink of War",
       "director": "Michael Russell Gunn",
@@ -895,6 +976,7 @@
       "notes": "Not all battles are fought with bullets."
     },
     {
+      "tmdb_id": 1101383,
       "date": "2026-08-14",
       "title": "The End of Oak Street",
       "director": "David Robert Mitchell",
@@ -906,6 +988,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1124142,
       "date": "2026-08-14",
       "title": "The Rivals of Amziah King",
       "director": "Andrew Patterson",
@@ -917,6 +1000,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1472013,
       "date": "2026-08-14",
       "title": "Them Bones",
       "director": "Joseph Shedd",
@@ -928,6 +1012,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1565925,
       "date": "2026-08-15",
       "title": "Cakey Heaven",
       "director": "Florence Caruana",
@@ -939,6 +1024,7 @@
       "notes": "A very merry birthday tail"
     },
     {
+      "tmdb_id": 1465155,
       "date": "2026-08-18",
       "title": "Amityville Alone",
       "director": "Gerardo Preciado",
@@ -950,6 +1036,7 @@
       "notes": "BE CAREFUL WHAT YOU WITCH FOR!"
     },
     {
+      "tmdb_id": 1401459,
       "date": "2026-08-19",
       "title": "Fjord",
       "director": "Cristian Mungiu",
@@ -961,6 +1048,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1566470,
       "date": "2026-08-19",
       "title": "La Nirvana",
       "director": "Hakim Bougheraba",
@@ -972,6 +1060,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1376470,
       "date": "2026-08-19",
       "title": "Look At The Sky, Trust The Mountains",
       "director": "Radu Mihăileanu",
@@ -983,6 +1072,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1459062,
       "date": "2026-08-19",
       "title": "The Condor Daughter",
       "director": "Álvaro Olmos",
@@ -994,6 +1084,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1433048,
       "date": "2026-08-19",
       "title": "When We Were Wild",
       "director": "Lin Yu-wei",
@@ -1005,6 +1096,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1658483,
       "date": "2026-08-20",
       "title": "Elisa and the letter",
       "director": "Florencia Dufou",
@@ -1016,6 +1108,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1620584,
       "date": "2026-08-20",
       "title": "Kuncen",
       "director": "Muhammad Riefqy Ilham Mulyansyah",
@@ -1027,6 +1120,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1657555,
       "date": "2026-08-20",
       "title": "Last Night at the Alamo",
       "director": "Kyle Vannoy",
@@ -1038,6 +1132,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1616146,
       "date": "2026-08-20",
       "title": "The Lights, They Fall",
       "director": "Saša Vajda",
@@ -1049,6 +1144,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1291595,
       "date": "2026-08-21",
       "title": "Insidious: Out of the Further",
       "director": "Jacob Chase",
@@ -1060,6 +1156,7 @@
       "notes": "Evil found a way out."
     },
     {
+      "tmdb_id": 1288445,
       "date": "2026-08-21",
       "title": "Mutiny",
       "director": "Jean-François Richet",
@@ -1071,6 +1168,7 @@
       "notes": "There's blood in the water."
     },
     {
+      "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
       "director": "Jon Lucas, Scott Moore",

@@ -4,6 +4,7 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1586108,
       "date": "2026-10-01",
       "title": "Artificial",
       "director": "Tyler Woods",
@@ -15,6 +16,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1477583,
       "date": "2026-10-01",
       "title": "Corpus Delicti",
       "director": "Lena Stahl",
@@ -26,6 +28,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1642672,
       "date": "2026-10-01",
       "title": "Fiction's Hands",
       "director": "Vouge Ewigeliebe",
@@ -37,6 +40,7 @@
       "notes": "A girl creates a fictional world to cope with being seen."
     },
     {
+      "tmdb_id": 1485702,
       "date": "2026-10-01",
       "title": "GUR: Code \"Sikora\"",
       "director": "Akhtem Seitablaiev",
@@ -48,6 +52,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1664550,
       "date": "2026-10-01",
       "title": "Ícaro",
       "director": "Pedro Dourado",
@@ -59,6 +64,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1628675,
       "date": "2026-10-01",
       "title": "Land of Wonders",
       "director": "Denis Chernov",
@@ -70,6 +76,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1649934,
       "date": "2026-10-01",
       "title": "Mais da Metade do Salário",
       "director": "Luiz Vieira",
@@ -81,6 +88,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1505441,
       "date": "2026-10-01",
       "title": "Nightmares",
       "director": "Gene Fallaize",
@@ -92,6 +100,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 239589,
       "date": "2026-10-01",
       "title": "Pianke",
       "director": "Gunter Friedrich",
@@ -103,6 +112,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1613662,
       "date": "2026-10-01",
       "title": "Red Egg of the Crimson King",
       "director": "Gustave Le Bras",
@@ -114,6 +124,7 @@
       "notes": "There is a presence in the static"
     },
     {
+      "tmdb_id": 1594279,
       "date": "2026-10-01",
       "title": "Robbin' the Hood",
       "director": "Brett Bentman",
@@ -125,6 +136,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1663014,
       "date": "2026-10-01",
       "title": "Rostam",
       "director": "Boston B.",
@@ -136,6 +148,7 @@
       "notes": "Fear Him"
     },
     {
+      "tmdb_id": 1431114,
       "date": "2026-10-01",
       "title": "The Ascent",
       "director": "Adam Green",
@@ -147,6 +160,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1528835,
       "date": "2026-10-01",
       "title": "The Unsmiling Tsarevna",
       "director": "Vasily Rovensky",
@@ -158,6 +172,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1433583,
       "date": "2026-10-01",
       "title": "The Weight",
       "director": "Padraic McKinley",
@@ -169,6 +184,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1592083,
       "date": "2026-10-01",
       "title": "Любопытная Варвара. Тайны востока",
       "director": "Yury Korobeynikov",
@@ -180,6 +196,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1662293,
       "date": "2026-10-01",
       "title": "Приключения мамонтенка. В поисках мамы",
       "director": "Alexander Voitinsky",
@@ -191,6 +208,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1356797,
       "date": "2026-10-02",
       "title": "Bonkey: The Mutated",
       "director": "Anthony Leroy",
@@ -202,6 +220,7 @@
       "notes": "Man's Best Friend. Your Worst Nightmare."
     },
     {
+      "tmdb_id": 1446601,
       "date": "2026-10-02",
       "title": "Deadsight",
       "director": "Sawyer Kelly",
@@ -213,6 +232,7 @@
       "notes": "Every shot's cold blooded."
     },
     {
+      "tmdb_id": 1269325,
       "date": "2026-10-02",
       "title": "Drishyam 3",
       "director": "Abhishek Pathak",
@@ -224,6 +244,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1675219,
       "date": "2026-10-02",
       "title": "Forever, This Ring",
       "director": "Chris Stokes",
@@ -235,6 +256,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1402292,
       "date": "2026-10-02",
       "title": "Penumbra 4",
       "director": "Bryce Spencer",
@@ -246,6 +268,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1628882,
       "date": "2026-10-02",
       "title": "Shabara",
       "director": "Kilaru Prem Chand",
@@ -257,6 +280,7 @@
       "notes": "TWO ERAS. ONE TREASURE."
     },
     {
+      "tmdb_id": 1422041,
       "date": "2026-10-02",
       "title": "The Black Ball",
       "director": "Javier Ambrossi, Javier Calvo",
@@ -268,6 +292,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1590154,
       "date": "2026-10-02",
       "title": "The Fall of Barsisa",
       "director": "Ayaan Bhatti",
@@ -279,6 +304,7 @@
       "notes": "What Goes Up, Must Come Down."
     },
     {
+      "tmdb_id": 1399488,
       "date": "2026-10-02",
       "title": "Untitled Cat Commercial",
       "director": "Anthony Leroy",
@@ -290,6 +316,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1658406,
       "date": "2026-10-02",
       "title": "Valmiki Ramayana",
       "director": "Bhavna Talwar",
@@ -301,6 +328,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1675182,
       "date": "2026-10-02",
       "title": "ママがもうこの世界にいなくても　私の命の日記",
       "director": "Yuki Yamato",
@@ -312,6 +340,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1661227,
       "date": "2026-10-03",
       "title": "FILOFOBIA",
       "director": "Nicola De Rosa",
@@ -323,6 +352,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1649531,
       "date": "2026-10-03",
       "title": "The weight of water",
       "director": "Marco Giacalone",
@@ -334,6 +364,7 @@
       "notes": "Marco Giacalone non è negli Epstein Files"
     },
     {
+      "tmdb_id": 1367558,
       "date": "2026-10-04",
       "title": "4 de Octubre",
       "director": "Ian Peláez Franco",
@@ -345,6 +376,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1592450,
       "date": "2026-10-04",
       "title": "When Anyone Sees",
       "director": "Sofía Martínez",
@@ -356,6 +388,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1669765,
       "date": "2026-10-04",
       "title": "Za Short Film",
       "director": "Ernie Marshall",
@@ -367,6 +400,7 @@
       "notes": "Hes determined"
     },
     {
+      "tmdb_id": 1676171,
       "date": "2026-10-05",
       "title": "NYRA II",
       "director": "Muhammed Yaseen",
@@ -378,6 +412,7 @@
       "notes": "The story of Evil"
     },
     {
+      "tmdb_id": 1454104,
       "date": "2026-10-07",
       "title": "Dantzig",
       "director": "Thomas Lilti",
@@ -389,6 +424,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1429581,
       "date": "2026-10-07",
       "title": "Ducobu et le fantôme de Saint-Potache",
       "director": "Élie Semoun",
@@ -400,6 +436,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1547995,
       "date": "2026-10-07",
       "title": "La Maison de nos rêves",
       "director": "Claude Zidi Jr.",
@@ -411,6 +448,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1477576,
       "date": "2026-10-08",
       "title": "Alte Liebe",
       "director": "Andreas Dresen",
@@ -422,6 +460,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1666929,
       "date": "2026-10-08",
       "title": "Denial",
       "director": "Bayu Adistira",
@@ -433,6 +472,7 @@
       "notes": "Denial"
     },
     {
+      "tmdb_id": 1126706,
       "date": "2026-10-08",
       "title": "Ducks",
       "director": "Neary Adeline Hay",
@@ -444,6 +484,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1584077,
       "date": "2026-10-08",
       "title": "First Witch",
       "director": "L.A. Lopes, Manuel H. Da Silva",
@@ -455,6 +496,7 @@
       "notes": "Do you believe in magic?"
     },
     {
+      "tmdb_id": 1668297,
       "date": "2026-10-08",
       "title": "Living Book",
       "director": "Denis Gulyar",
@@ -466,6 +508,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1452237,
       "date": "2026-10-08",
       "title": "Lügen über meine Mutter",
       "director": "Aron Lehmann",
@@ -477,6 +520,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1148365,
       "date": "2026-10-08",
       "title": "Matchbox",
       "director": "Sam Hargrave",
@@ -488,6 +532,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1433164,
       "date": "2026-10-08",
       "title": "Minha Vida com Shurastey",
       "director": "Diego Freitas",
@@ -499,6 +544,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1392164,
       "date": "2026-10-08",
       "title": "Picaretas Não Vão Pro Céu",
       "director": "Roberto Santucci",
@@ -510,6 +556,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1273694,
       "date": "2026-10-08",
       "title": "Race to Monte Carlo",
       "director": "Ilya Malanin",
@@ -521,6 +568,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1597385,
       "date": "2026-10-08",
       "title": "The EGGsplosive Easter 2.0. Quantum Paradox",
       "director": "—",
@@ -532,6 +580,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 980431,
       "date": "2026-10-09",
       "title": "Avatar: Aang, The Last Airbender",
       "director": "Lauren Montgomery",
@@ -543,6 +592,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1564177,
       "date": "2026-10-09",
       "title": "Dongri: Gangster's Paradise",
       "director": "Remo D'Souza",
@@ -554,6 +604,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1651316,
       "date": "2026-10-09",
       "title": "Eh Din Roz Ni Aune",
       "director": "Aneet Sekhon",
@@ -565,6 +616,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1592548,
       "date": "2026-10-09",
       "title": "Girls und Panzer das Finale: Part 5",
       "director": "Tsutomu Mizushima",
@@ -576,6 +628,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1461432,
       "date": "2026-10-09",
       "title": "Once in the Archipelago",
       "director": "Alex Schulman",
@@ -587,6 +640,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1400837,
       "date": "2026-10-09",
       "title": "Other Mommy",
       "director": "Rob Savage",
@@ -598,6 +652,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1281331,
       "date": "2026-10-09",
       "title": "The Social Reckoning",
       "director": "Aaron Sorkin",
@@ -609,6 +664,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1632015,
       "date": "2026-10-09",
       "title": "To You in the Beyond",
       "director": "Junichi Wada",
@@ -620,6 +676,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1590933,
       "date": "2026-10-09",
       "title": "You, Like a Star",
       "director": "Michihito Fujii",
@@ -631,6 +688,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 887583,
       "date": "2026-10-10",
       "title": "Analog Eyes",
       "director": "Braden Britt",
@@ -642,6 +700,7 @@
       "notes": "There's No Rewind Button in Life..."
     },
     {
+      "tmdb_id": 1660952,
       "date": "2026-10-10",
       "title": "My Body is a Prison",
       "director": "Mason Pugsley",
@@ -653,6 +712,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1598068,
       "date": "2026-10-11",
       "title": "Mike",
       "director": "Michael Joseph Laird",
@@ -664,6 +724,7 @@
       "notes": "The thrill of growing up."
     },
     {
+      "tmdb_id": 1669872,
       "date": "2026-10-11",
       "title": "Un castello",
       "director": "Nicolò Caggiano",
@@ -675,6 +736,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1567691,
       "date": "2026-10-12",
       "title": "Currents",
       "director": "Bailey Spore",
@@ -686,6 +748,7 @@
       "notes": "Every current leads somewhere."
     },
     {
+      "tmdb_id": 1597084,
       "date": "2026-10-13",
       "title": "Dolioo",
       "director": "Julius John",
@@ -697,6 +760,7 @@
       "notes": "Power is built on the bones of the fallen."
     },
     {
+      "tmdb_id": 1495373,
       "date": "2026-10-13",
       "title": "Friday's Chylde 3D",
       "director": "Zeb Hyke",
@@ -708,6 +772,7 @@
       "notes": "Friday's Chylde 3D"
     },
     {
+      "tmdb_id": 947493,
       "date": "2026-10-14",
       "title": "Iron Boy",
       "director": "Louis Clichy",
@@ -719,6 +784,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1355145,
       "date": "2026-10-14",
       "title": "Ivanna 2",
       "director": "Kimo Stamboel",
@@ -730,6 +796,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1241803,
       "date": "2026-10-14",
       "title": "Les Misérables",
       "director": "Fred Cavayé",
@@ -741,6 +808,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 848700,
       "date": "2026-10-14",
       "title": "Minotaur",
       "director": "Andrey Zvyagintsev",
@@ -752,6 +820,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1504729,
       "date": "2026-10-15",
       "title": "Athimanoharam",
       "director": "Tharun Moorthy",
@@ -763,6 +832,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1533928,
       "date": "2026-10-15",
       "title": "Bachelor Party D'eux",
       "director": "Amal Neerad",
@@ -774,6 +844,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1218454,
       "date": "2026-10-15",
       "title": "Família de Sorte",
       "director": "Viviane Ferreira",
@@ -785,6 +856,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1287520,
       "date": "2026-10-15",
       "title": "November 1963",
       "director": "Roland Joffé",
@@ -796,6 +868,7 @@
       "notes": "BETRAYED BY POWER. FUELED BY REVENGE."
     },
     {
+      "tmdb_id": 1616724,
       "date": "2026-10-15",
       "title": "The Book of Dreams",
       "director": "Bakyt Osmonkanov",
@@ -807,6 +880,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1477572,
       "date": "2026-10-15",
       "title": "Visitation",
       "director": "Volker Schlöndorff",
@@ -818,6 +892,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1628065,
       "date": "2026-10-15",
       "title": "Дьол сэттэ күнэ",
       "director": "Nikita Davydov",
@@ -829,6 +904,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1541201,
       "date": "2026-10-15",
       "title": "Приключения пингвиненка",
       "director": "Olga Amol",
@@ -840,6 +916,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1608666,
       "date": "2026-10-16",
       "title": "#DeSu7",
       "director": "Dev",
@@ -851,6 +928,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1669915,
       "date": "2026-10-16",
       "title": "Angel and the Badman",
       "director": "Julio Quintana",
@@ -862,6 +940,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1607833,
       "date": "2026-10-16",
       "title": "Bohurupi: The Golden Daku",
       "director": "Nandita Roy, Shiboprosad Mukherjee",
@@ -873,6 +952,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1494231,
       "date": "2026-10-16",
       "title": "La maleta",
       "director": "Carlos Therón",
@@ -884,6 +964,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1654998,
       "date": "2026-10-16",
       "title": "R.L. Stine's Pumpkinhead 2",
       "director": "Jem Garrard",
@@ -895,6 +976,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1553200,
       "date": "2026-10-16",
       "title": "Rascal Does Not Dream of a Dear Friend",
       "director": "Soichi Masui",
@@ -906,6 +988,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1626806,
       "date": "2026-10-16",
       "title": "Seyon",
       "director": "Sivakumar Murugesan",
@@ -917,6 +1000,7 @@
       "notes": "One More Time"
     },
     {
+      "tmdb_id": 1508252,
       "date": "2026-10-16",
       "title": "Slash",
       "director": "Tyler Nest",
@@ -928,6 +1012,7 @@
       "notes": "Another One Bites the Dust"
     },
     {
+      "tmdb_id": 1153576,
       "date": "2026-10-16",
       "title": "Street Fighter",
       "director": "Kitao Sakurai",
@@ -939,6 +1024,7 @@
       "notes": "Ready. Set. Fight."
     },
     {
+      "tmdb_id": 1644841,
       "date": "2026-10-16",
       "title": "Superfly",
       "director": "Mason Cermak",
@@ -950,6 +1036,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1591522,
       "date": "2026-10-16",
       "title": "The Eken: Kerala e Kurukshetra",
       "director": "Joydeep Mukherjee",
@@ -961,6 +1048,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1535111,
       "date": "2026-10-16",
       "title": "The Observer",
       "director": "Brock Cooper",
@@ -972,6 +1060,7 @@
       "notes": "We are our own apocolypse."
     },
     {
+      "tmdb_id": 1480865,
       "date": "2026-10-16",
       "title": "The Time That Never Came",
       "director": "Julia Rogowska",
@@ -983,6 +1072,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1544325,
       "date": "2026-10-16",
       "title": "Vayuputra",
       "director": "Chandoo Mondeti",
@@ -994,6 +1084,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1255833,
       "date": "2026-10-16",
       "title": "Whalefall",
       "director": "Brian Duffield",
@@ -1005,6 +1096,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1667870,
       "date": "2026-10-16",
       "title": "Your Silent Face",
       "director": "Kyriakos Kakoullis",
@@ -1016,6 +1108,7 @@
       "notes": "A display of love"
     },
     {
+      "tmdb_id": 1567755,
       "date": "2026-10-18",
       "title": "Anemoia",
       "director": "Sebastián Vázquez",
@@ -1027,6 +1120,7 @@
       "notes": "To live with your wounds is not the same as to heal them."
     },
     {
+      "tmdb_id": 1257973,
       "date": "2026-10-20",
       "title": "Fauzi",
       "director": "Hanu Raghavapudi",
@@ -1038,6 +1132,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1452018,
       "date": "2026-10-20",
       "title": "Women as Lovers",
       "director": "Caroline Kox",
@@ -1049,6 +1144,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1418998,
       "date": "2026-10-21",
       "title": "Karma",
       "director": "Guillaume Canet",
@@ -1060,6 +1156,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1450460,
       "date": "2026-10-21",
       "title": "Lapland War",
       "director": "Aku Louhimies",
@@ -1071,6 +1168,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1558094,
       "date": "2026-10-21",
       "title": "Let Love In",
       "director": "Felix van Groeningen",
@@ -1082,6 +1180,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1624445,
       "date": "2026-10-21",
       "title": "Misión Imbéciles: Outatime",
       "director": "Joel Orma",
@@ -1093,6 +1192,7 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1400940,
       "date": "2026-10-23",
       "title": "Clayface",
       "director": "James Watkins",

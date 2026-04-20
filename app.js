@@ -4,9 +4,16 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-const today = new Date().toISOString().slice(0, 10);
+const now = new Date();
+const YEAR = now.getFullYear();
+const TODAY = now.toISOString().slice(0, 10);
+const CURRENT_MONTH_KEY = `${YEAR}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+const NEXT_MONTH_KEY = (() => {
+  const d = new Date(YEAR, now.getMonth() + 1, 1);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+})();
 
-const fmtDate = (iso) => {
+const fmtDateShort = (iso) => {
   const d = new Date(iso + "T12:00:00");
   return d.toLocaleDateString(undefined, { weekday: "short", month: "long", day: "numeric" });
 };
@@ -27,19 +34,42 @@ const chipLabel = (type) =>
   type === "streaming" ? "Streaming" :
   type === "limited" ? "Limited" : "Wide";
 
-const monthFilename = (d) => {
-  const monthName = d.toLocaleString("en-US", { month: "long" }).toLowerCase();
-  return `./data/${monthName}-${d.getFullYear()}.json`;
+const wikipediaUrl = (title, date) => {
+  const year = date ? date.slice(0, 4) : "";
+  const q = `${title} ${year} film`.trim();
+  return `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(q)}&go=Go`;
 };
 
-async function loadBundles() {
-  const now = new Date();
-  const urls = [0, 1, 2].map((i) => monthFilename(new Date(now.getFullYear(), now.getMonth() + i, 1)));
-  const results = await Promise.all(urls.map((u) =>
-    fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null)
-  ));
+const monthFilename = (year, monthIdx) => {
+  const d = new Date(year, monthIdx, 1);
+  const monthName = d.toLocaleString("en-US", { month: "long" }).toLowerCase();
+  return `./data/${monthName}-${year}.json`;
+};
+
+async function loadYear(year) {
+  const urls = Array.from({ length: 12 }, (_, i) => monthFilename(year, i));
+  const results = await Promise.all(
+    urls.map((u) => fetch(u, { cache: "no-cache" })
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null))
+  );
   return results.filter(Boolean);
 }
+
+const el = (tag, attrs = {}, ...children) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v;
+    else if (k === "text") n.textContent = v;
+    else if (k === "open" && v) n.setAttribute("open", "");
+    else n.setAttribute(k, v);
+  }
+  for (const c of children.flat()) {
+    if (c == null) continue;
+    n.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return n;
+};
 
 const groupByDate = (rows) => {
   const map = new Map();
@@ -50,36 +80,10 @@ const groupByDate = (rows) => {
   return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
 };
 
-const el = (tag, attrs = {}, ...children) => {
-  const n = document.createElement(tag);
-  for (const [k, v] of Object.entries(attrs)) {
-    if (k === "class") n.className = v;
-    else if (k === "text") n.textContent = v;
-    else n.setAttribute(k, v);
-  }
-  for (const c of children.flat()) {
-    if (c == null) continue;
-    n.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
-  }
-  return n;
-};
+const monthKeyOf = (bundle) => bundle.releases[0]?.date.slice(0, 7) || "";
 
-const wikipediaUrl = (title, date) => {
-  const year = date ? date.slice(0, 4) : "";
-  const q = `${title} ${year} film`.trim();
-  return `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(q)}&go=Go`;
-};
-
-const renderRow = (m) => {
-  const sub = el("dl", { class: "row__sub" },
-    el("dt", { text: "Director" }), el("dd", { text: m.director }),
-    el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
-    el("dt", { text: "Budget" }), el("dd", { text: fmtBudget(m.budget_usd, m.budget_note) }),
-    m.cast && m.cast !== "—" ? el("dt", { text: "Cast" }) : null,
-    m.cast && m.cast !== "—" ? el("dd", { text: m.cast }) : null,
-  );
-
-  return el("a", {
+const renderRow = (m) =>
+  el("a", {
       class: "row",
       href: wikipediaUrl(m.title, m.date),
       target: "_blank",
@@ -90,46 +94,70 @@ const renderRow = (m) => {
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
     ),
     m.genre ? el("div", { class: "row__meta", text: m.genre }) : null,
-    sub,
+    el("dl", { class: "row__sub" },
+      el("dt", { text: "Director" }), el("dd", { text: m.director }),
+      el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
+      el("dt", { text: "Budget" }), el("dd", { text: fmtBudget(m.budget_usd, m.budget_note) }),
+      m.cast && m.cast !== "—" ? el("dt", { text: "Cast" }) : null,
+      m.cast && m.cast !== "—" ? el("dd", { text: m.cast }) : null,
+    ),
     m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
+  );
+
+const renderDateGroup = ([date, items]) =>
+  el("section", { class: "section" },
+    el("header", { class: "section__header" },
+      el("span", { class: "section__date", text: fmtDateShort(date) }),
+      el("span", { class: "section__count", text: `${items.length}` }),
+    ),
+    el("div", { class: "section__list" }, ...items.map(renderRow)),
+  );
+
+const renderMonth = (bundle) => {
+  const key = monthKeyOf(bundle);
+  const open = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
+  const isPast = key < CURRENT_MONTH_KEY;
+  const groups = groupByDate(bundle.releases);
+  const count = bundle.releases.length;
+
+  return el("details", {
+      class: isPast ? "month month--past" : "month",
+      open,
+      "data-month-key": key,
+    },
+    el("summary", { class: "month__summary" },
+      el("span", { class: "month__chevron", "aria-hidden": "true" }),
+      el("span", { class: "month__name", text: bundle.month }),
+      el("span", { class: "month__count", text: `${count}` }),
+    ),
+    el("div", { class: "month__body" }, ...groups.map(renderDateGroup)),
   );
 };
 
 const render = (bundles) => {
-  const all = bundles.flatMap((b) => b.releases).filter((r) => r.date >= today);
-  all.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
+  bundles = bundles.filter((b) => b.releases && b.releases.length);
+  bundles.sort((a, b) => monthKeyOf(a).localeCompare(monthKeyOf(b)));
 
   const label = document.getElementById("month-label");
-  if (all.length) {
-    const first = new Date(all[0].date + "T12:00:00");
-    const last = new Date(all[all.length - 1].date + "T12:00:00");
-    const same = first.getMonth() === last.getMonth() && first.getFullYear() === last.getFullYear();
-    label.textContent = same
-      ? first.toLocaleString(undefined, { month: "long", year: "numeric" })
-      : `${first.toLocaleString(undefined, { month: "short" })} – ${last.toLocaleString(undefined, { month: "short", year: "numeric" })}`;
-  } else {
-    label.textContent = "Upcoming";
-  }
+  label.textContent = `${YEAR}`;
 
   const list = document.getElementById("list");
   list.innerHTML = "";
 
-  if (!all.length) {
+  if (!bundles.length) {
     document.getElementById("empty").hidden = false;
     return;
   }
   document.getElementById("empty").hidden = true;
 
-  for (const [date, items] of groupByDate(all)) {
-    const section = el("section", { class: "section" },
-      el("header", { class: "section__header" },
-        el("span", { class: "section__date", text: fmtDate(date) }),
-        el("span", { class: "section__count", text: `${items.length} ${items.length === 1 ? "release" : "releases"}` }),
-      ),
-      el("div", { class: "section__list" }, ...items.map(renderRow)),
-    );
-    list.appendChild(section);
-  }
+  for (const b of bundles) list.appendChild(renderMonth(b));
+
+  requestAnimationFrame(() => {
+    const current = list.querySelector(`[data-month-key="${CURRENT_MONTH_KEY}"]`);
+    if (current) current.scrollIntoView({ block: "start", behavior: "instant" });
+  });
 };
 
-loadBundles().then(render).catch(() => { document.getElementById("empty").hidden = false; });
+loadYear(YEAR)
+  .then(render)
+  .catch(() => { document.getElementById("empty").hidden = false; });

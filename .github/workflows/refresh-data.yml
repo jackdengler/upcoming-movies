@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       month:
-        description: "Month (YYYY-MM). Leave blank for current month."
+        description: "Month (YYYY-MM). Leave blank to fetch the whole current year."
         required: false
         default: ""
   push:
@@ -31,26 +31,30 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Compute months
-        id: months
+      - name: Plan months
+        id: plan
         run: |
-          CURRENT=$(date -u +%Y-%m)
-          NEXT=$(date -u -d 'first day of next month' +%Y-%m)
-          echo "current=$CURRENT" >> "$GITHUB_OUTPUT"
-          echo "next=$NEXT" >> "$GITHUB_OUTPUT"
+          if [ -n "${{ inputs.month }}" ]; then
+            echo "months=${{ inputs.month }}" >> "$GITHUB_OUTPUT"
+          else
+            YEAR=$(date -u +%Y)
+            LIST=""
+            for M in 01 02 03 04 05 06 07 08 09 10 11 12; do
+              LIST="$LIST $YEAR-$M"
+            done
+            echo "months=$LIST" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Fetch current month
+      - name: Fetch from TMDB
         env:
           TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
-          MONTH: ${{ inputs.month != '' && inputs.month || steps.months.outputs.current }}
-        run: node scripts/fetch-tmdb.mjs
-
-      - name: Fetch next month
-        if: inputs.month == ''
-        env:
-          TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
-          MONTH: ${{ steps.months.outputs.next }}
-        run: node scripts/fetch-tmdb.mjs
+          MONTHS: ${{ steps.plan.outputs.months }}
+        run: |
+          for m in $MONTHS; do
+            echo "::group::Fetch $m"
+            MONTH="$m" node scripts/fetch-tmdb.mjs
+            echo "::endgroup::"
+          done
 
       - name: Commit if changed
         run: |

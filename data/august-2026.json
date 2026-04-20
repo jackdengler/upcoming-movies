@@ -4,66 +4,6 @@
   "source": "TMDB",
   "releases": [
     {
-      "tmdb_id": 1512014,
-      "date": "2026-08-01",
-      "title": "Bound By Lies",
-      "director": "Dylan Lee Baxter",
-      "studio": "A Baxter Production",
-      "budget_usd": 5000,
-      "release_type": "streaming",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Danielle Schwarz, Rebekah De La Fontaine, Brandon Del Campo, Yasa Aziz",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1544948,
-      "date": "2026-08-01",
-      "title": "Holy Father",
-      "director": "Shravan Tiwari",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Eric Roberts",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1353167,
-      "date": "2026-08-01",
-      "title": "The Mouse Trap: Welcome to the Mickeyverse",
-      "director": "Jamie Bailey",
-      "studio": "MM TRAP",
-      "budget_usd": 800000,
-      "release_type": "streaming",
-      "genre": "Horror / Thriller",
-      "cast": "Simon Phillips, Mackenzie Mills, Douglas Vermeeren, Brie Burke",
-      "notes": "Welcome to the Mickeyverse."
-    },
-    {
-      "tmdb_id": 1101412,
-      "date": "2026-08-07",
-      "title": "Fall 2",
-      "director": "Michael Spierig, Peter Spierig",
-      "studio": "Tea Shop Productions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Thriller",
-      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1477712,
-      "date": "2026-08-07",
-      "title": "Ice Cream Man",
-      "director": "Eli Roth",
-      "studio": "The Horror Section",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Ari Millen, Benjamin Byron Davis, Karen Cliche, Dylan Hawco",
-      "notes": "Watch out for children."
-    },
-    {
       "tmdb_id": 1433367,
       "date": "2026-08-07",
       "title": "One Night Only",
@@ -73,18 +13,6 @@
       "release_type": "wide",
       "genre": "Romance / Comedy",
       "cast": "Monica Barbaro, Callum Turner, Bobby Cannavale, Molly Ringwald",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1613693,
-      "date": "2026-08-07",
-      "title": "Otter",
-      "director": "Pizza Chunk",
-      "studio": "Pizza Chunk",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Adventure / Drama / Family",
-      "cast": "—",
       "notes": ""
     },
     {
@@ -112,30 +40,6 @@
       "notes": "A new kind of horror remake."
     },
     {
-      "tmdb_id": 1233883,
-      "date": "2026-08-10",
-      "title": "Epitaph",
-      "director": "Harley Coleman",
-      "studio": "CreepTV Productions",
-      "budget_usd": 4100000,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Aylin Baykal, Zachary Chambers, Victorius Kingston, Anouska Leigh",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1659167,
-      "date": "2026-08-13",
-      "title": "RECORDING #27 - Short Film",
-      "director": "Louis Brassington",
-      "studio": "RAWCTRL Studios",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Horror / Thriller",
-      "cast": "Louis Brassington, Alessia Moretti",
-      "notes": "It’s always been there."
-    },
-    {
       "tmdb_id": 1185806,
       "date": "2026-08-14",
       "title": "PAW Patrol: The Dino Movie",
@@ -146,18 +50,6 @@
       "genre": "Animation / Adventure / Family / Comedy",
       "cast": "Mckenna Grace, Carter Young, Hayden Chamberlen, Rain Janjua",
       "notes": "Adventure reaches new heights."
-    },
-    {
-      "tmdb_id": 192139,
-      "date": "2026-08-14",
-      "title": "The Brink of War",
-      "director": "Michael Russell Gunn",
-      "studio": "2521 Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / History / War",
-      "cast": "Jared Harris, Jeff Daniels, Branka Katić, Hope Davis",
-      "notes": "Not all battles are fought with bullets."
     },
     {
       "tmdb_id": 1101383,
@@ -181,42 +73,6 @@
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
       "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1472013,
-      "date": "2026-08-14",
-      "title": "Them Bones",
-      "director": "Joseph Shedd",
-      "studio": "Dead by Dawn Studios",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Horror / Thriller",
-      "cast": "Kody Myers, Bryan Myers, Joseph Shedd, Uncle Ben",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1657555,
-      "date": "2026-08-20",
-      "title": "Last Night at the Alamo",
-      "director": "Kyle Vannoy",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Hunter Morton, Eliott Edge, Benny Bender, Joshua Rievel",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1029639,
-      "date": "2026-08-21",
-      "title": "Billy Knight",
-      "director": "Alec Griffen Roth",
-      "studio": "Prominent Features",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Al Pacino, Charlie Heaton, Diana Silvers, Angela Sarafyan",
       "notes": ""
     },
     {
@@ -256,66 +112,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1664237,
-      "date": "2026-08-24",
-      "title": "TEENAGERS",
-      "director": "Davis Carriveau",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Horror / Mystery / Thriller",
-      "cast": "Layla Esser, Lauren Reitsma, Brynn Stickney, Emmerson Peaslee",
-      "notes": "One mistake, no way back"
-    },
-    {
-      "tmdb_id": 1204680,
-      "date": "2026-08-28",
-      "title": "Coyote vs. Acme",
-      "director": "Dave Green",
-      "studio": "Warner Bros. Pictures Animation",
-      "budget_usd": 72000000,
-      "release_type": "wide",
-      "genre": "Family / Comedy / Animation",
-      "cast": "Will Forte, John Cena, Lana Condor, Eric Bauza",
-      "notes": "The movie Acme doesn't want you to see."
-    },
-    {
-      "tmdb_id": 1476353,
-      "date": "2026-08-28",
-      "title": "Have A Heart",
-      "director": "Madison LLorente",
-      "studio": "The Spill of Thoughts",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Comedy / Romance / Drama",
-      "cast": "Saige Alexandria Armistead, Davin Broadhurst, AJ Roberts, Ediana Danger Walker",
-      "notes": "THE HARDEST HEART TO WIN IS YOUR OWN..."
-    },
-    {
-      "tmdb_id": 445466,
-      "date": "2026-08-28",
-      "title": "Idiots",
-      "director": "Macon Blair",
-      "studio": "Gramercy Park Media",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Science Fiction",
-      "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 843352,
-      "date": "2026-08-28",
-      "title": "Legend of the White Dragon",
-      "director": "Aaron Schoenke",
-      "studio": "Bat in the Sun Productions",
-      "budget_usd": 508578,
-      "release_type": "wide",
-      "genre": "Action / Science Fiction",
-      "cast": "Jason David Frank, Aaron Schoenke, Mayling Ng, Chalet Lizette Brannan",
-      "notes": "Legends never die"
-    },
-    {
       "tmdb_id": 1384216,
       "date": "2026-08-28",
       "title": "The Dog Stars",
@@ -326,18 +122,6 @@
       "genre": "Adventure / Science Fiction / Thriller",
       "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
       "notes": "The end of the world was just the beginning."
-    },
-    {
-      "tmdb_id": 1519320,
-      "date": "2026-08-30",
-      "title": "AEW All In 2026: London",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "—",
-      "cast": "William Ospreay",
-      "notes": ""
     }
   ]
 }

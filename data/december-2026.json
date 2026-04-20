@@ -4,18 +4,6 @@
   "source": "TMDB",
   "releases": [
     {
-      "tmdb_id": 1592881,
-      "date": "2026-12-01",
-      "title": "Yellow Lights",
-      "director": "David J Redman",
-      "studio": "TrePalm Entertainment Inc",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Drama",
-      "cast": "Matthew Lawrence, Judd Nelson, Sean Carrigan, Samantha Boscarino",
-      "notes": "Mike, a recovering alcoholic, struggles to earn back his family's trust, only to be blindsided by a sudden tragedy that forces him to confront the very past he's tried to outrun."
-    },
-    {
       "tmdb_id": 1078446,
       "date": "2026-12-04",
       "title": "Violent Night 2",
@@ -26,54 +14,6 @@
       "genre": "Action / Comedy / Fantasy",
       "cast": "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris",
       "notes": "Big Nick Energy"
-    },
-    {
-      "tmdb_id": 797716,
-      "date": "2026-12-06",
-      "title": "The Magnificent Raiders of Dimension War One",
-      "director": "—",
-      "studio": "Olas Hayes Productions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Fantasy",
-      "cast": "Tom Sizemore, Robert LaSardo, Celine Alva, Daniel Baldwin",
-      "notes": "Hey Buck, got gravity bombs?"
-    },
-    {
-      "tmdb_id": 1667058,
-      "date": "2026-12-10",
-      "title": "Cunk on Conspiracy",
-      "director": "Sam Esmail",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Comedy",
-      "cast": "Diane Morgan",
-      "notes": "Questioning everything, whether it's true or not."
-    },
-    {
-      "tmdb_id": 1250854,
-      "date": "2026-12-11",
-      "title": "Duped (The Jezbel Experience)",
-      "director": "S.V. Henson, Jr.",
-      "studio": "Golden Motion Pictures",
-      "budget_usd": 2000000,
-      "release_type": "wide",
-      "genre": "Drama / Horror / Thriller",
-      "cast": "Joy \"Babygirl\" Carter, Mona Gilliam",
-      "notes": "You shall reap what you sow"
-    },
-    {
-      "tmdb_id": 1501953,
-      "date": "2026-12-12",
-      "title": "Marrow",
-      "director": "Dakota Roth",
-      "studio": "Funky Worm Productions",
-      "budget_usd": 4000,
-      "release_type": "streaming",
-      "genre": "Drama / Horror",
-      "cast": "Megan Mayumi, Kate Patterson, Oliver Tomolillo",
-      "notes": "BONE MAKES THE MARROW. MARROW MAKES THE BLOOD. BLOOD MAKES THE LOVE."
     },
     {
       "tmdb_id": 1003596,
@@ -100,102 +40,6 @@
       "notes": "The epic conclusion."
     },
     {
-      "tmdb_id": 1677491,
-      "date": "2026-12-18",
-      "title": "Sigma Males",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1583323,
-      "date": "2026-12-18",
-      "title": "The Tallyman",
-      "director": "Ryan J. Diaz",
-      "studio": "—",
-      "budget_usd": 500,
-      "release_type": "limited",
-      "genre": "Action / Adventure / Comedy",
-      "cast": "Ryan J. Diaz",
-      "notes": "Mark it down."
-    },
-    {
-      "tmdb_id": 1666544,
-      "date": "2026-12-18",
-      "title": "Without a Trace",
-      "director": "Timothy Denison",
-      "studio": "—",
-      "budget_usd": 200,
-      "release_type": "wide",
-      "genre": "Thriller",
-      "cast": "Vincent Jarus, Alex Loncaric, Laurens Denison, Indeya Simon",
-      "notes": "What will it take to escape?"
-    },
-    {
-      "tmdb_id": 1300926,
-      "date": "2026-12-23",
-      "title": "The Angry Birds Movie 3",
-      "director": "John Rice",
-      "studio": "Rovio Animation",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Family / Comedy / Adventure / Animation",
-      "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1305546,
-      "date": "2026-12-24",
-      "title": "Los Vaqueros",
-      "director": "Eli Zarate",
-      "studio": "NLWG Productions",
-      "budget_usd": 9000,
-      "release_type": "streaming",
-      "genre": "Crime / Western / Thriller",
-      "cast": "Logan Wilson, Kimani Simmonds, Summer Brown, Claire Sparks",
-      "notes": "Loyalty means everything - or it means nothing."
-    },
-    {
-      "tmdb_id": 1628731,
-      "date": "2026-12-24",
-      "title": "The Christmas Rescue: A Big Movie",
-      "director": "—",
-      "studio": "YouTube",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Adventure / Family / Comedy",
-      "cast": "—",
-      "notes": "The rescue begins"
-    },
-    {
-      "tmdb_id": 1437882,
-      "date": "2026-12-25",
-      "title": "A Place in Hell",
-      "director": "Chloe Domont",
-      "studio": "T-Street",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Thriller / Drama",
-      "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1642786,
-      "date": "2026-12-25",
-      "title": "Classy Clown",
-      "director": "Dustin Blue",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Comedy / Crime / Drama",
-      "cast": "Dustin Blue, Thomas Michael",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1260649,
       "date": "2026-12-25",
       "title": "Jumanji: Open World",
@@ -208,18 +52,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1372443,
-      "date": "2026-12-25",
-      "title": "Mr. Irrelevant: The John Tuggle Story",
-      "director": "Jonathan Levine",
-      "studio": "Blackjack Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1421903,
       "date": "2026-12-25",
       "title": "Werwulf",
@@ -229,90 +61,6 @@
       "release_type": "wide",
       "genre": "Horror / Mystery",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Ralph Ineson",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1571521,
-      "date": "2026-12-26",
-      "title": "ViQueens",
-      "director": "Harald Zwart",
-      "studio": "Sola Media",
-      "budget_usd": 8000000,
-      "release_type": "wide",
-      "genre": "Animation / Adventure / Family",
-      "cast": "Ella Purnell, Rita Ora, Steve Speirs, Anton Lesser",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1286030,
-      "date": "2026-12-30",
-      "title": "Apophis 2029",
-      "director": "Jeffrey Schneider",
-      "studio": "WJD films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Science Fiction / Drama",
-      "cast": "Nick Dent, Geno Romo, Bob Olin, Jeffrey Schneider",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1612283,
-      "date": "2026-12-31",
-      "title": "Deathsman",
-      "director": "Adam Golden",
-      "studio": "Dichrome Films",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Drama / Science Fiction / Thriller",
-      "cast": "Adam Golden, JonMichael Casey, Adam Golden, Kyle Drake",
-      "notes": "Permanently Erasing Anomalies"
-    },
-    {
-      "tmdb_id": 1598464,
-      "date": "2026-12-31",
-      "title": "Down the Road Apiece",
-      "director": "Max Wilson",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Western",
-      "cast": "Chuck Hittinger, James DeForest Parker, Audrey Turner",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1636190,
-      "date": "2026-12-31",
-      "title": "OSAKAQUEST",
-      "director": "ratfaller, Blobbo",
-      "studio": "—",
-      "budget_usd": 6,
-      "release_type": "streaming",
-      "genre": "Action / Comedy / Adventure",
-      "cast": "Blobbo, ratfaller, Pimpgod45, Radiolean",
-      "notes": "Time travel's a scary thing."
-    },
-    {
-      "tmdb_id": 1671241,
-      "date": "2026-12-31",
-      "title": "The Rental Reaper",
-      "director": "Hank Heimlich",
-      "studio": "—",
-      "budget_usd": 1400,
-      "release_type": "streaming",
-      "genre": "Horror / Comedy",
-      "cast": "Jack Gould, Ailish O'Brien, Keller Gilliland, Alice Efremov",
-      "notes": "AIRBNBeware!"
-    },
-    {
-      "tmdb_id": 1652994,
-      "date": "2026-12-31",
-      "title": "Wings",
-      "director": "Adam Rebora",
-      "studio": "Film in a Bag Productions",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "—",
-      "cast": "—",
       "notes": ""
     }
   ]

@@ -2,7 +2,8 @@ const REPO = "jackdengler/upcoming-movies";
 const PATH = "data/interests.json";
 const BRANCH = "main";
 const PAT_KEY = "upcoming:gh_pat";
-const DEBOUNCE_MS = 5000;
+const CACHE_KEY = "upcoming:interests";
+const DEBOUNCE_MS = 2500;
 
 const LEVELS = ["must", "likely", "potential", "not", "watched"];
 
@@ -31,16 +32,56 @@ export function allMarks() {
   return { ...state.marks };
 }
 
+function readCache() {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+function writeCache() {
+  try { localStorage.setItem(CACHE_KEY, JSON.stringify(state.marks)); } catch {}
+}
+
+function isNewer(a, b) {
+  if (!a?.at) return false;
+  if (!b?.at) return true;
+  return a.at > b.at;
+}
+
+function mergeRemote(remoteMarks) {
+  let changed = false;
+  for (const [key, remote] of Object.entries(remoteMarks)) {
+    const local = state.marks[key];
+    if (!local || isNewer(remote, local)) {
+      state.marks[key] = remote;
+      changed = true;
+    }
+  }
+  return changed;
+}
+
 export async function load() {
+  // 1. Hydrate from localStorage instantly
+  const cached = readCache();
+  if (cached && typeof cached === "object") {
+    state.marks = cached;
+  }
+  state.loaded = true;
+  emit();
+
+  // 2. Merge with remote (prefer newer 'at' timestamps)
   try {
     const r = await fetch(`./${PATH}?t=${Date.now()}`, { cache: "no-cache" });
     if (r.ok) {
       const j = await r.json();
-      state.marks = j.marks || {};
+      const remote = j.marks || {};
+      if (mergeRemote(remote)) {
+        writeCache();
+        emit();
+      }
     }
   } catch {}
-  state.loaded = true;
-  emit();
 }
 
 async function fetchSha() {
@@ -115,7 +156,7 @@ export function set(key, level, meta = {}) {
     state.marks[key] = { level, at: new Date().toISOString(), ...meta };
   }
   emit();
-  localStorage.setItem(`${PAT_KEY}:cache`, JSON.stringify(state.marks));
+  writeCache();
   scheduleCommit();
 }
 
@@ -164,4 +205,5 @@ function setSync(status) {
 }
 
 window.addEventListener("beforeunload", () => { flush(); });
+window.addEventListener("pagehide", () => { flush(); });
 window.addEventListener("visibilitychange", () => { if (document.hidden) flush(); });

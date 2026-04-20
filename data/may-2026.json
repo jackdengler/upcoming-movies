@@ -1,0 +1,221 @@
+{
+  "month": "May 2026",
+  "updated": "2026-04-20",
+  "source": "Wikipedia, Deadline, Hollywood Reporter, The Numbers, studio announcements",
+  "releases": [
+    {
+      "date": "2026-05-01",
+      "title": "The Devil Wears Prada 2",
+      "director": "David Frankel",
+      "studio": "20th Century Studios",
+      "budget_usd": 150000000,
+      "budget_note": "Reported $100–150M range",
+      "release_type": "wide",
+      "genre": "Comedy / Drama",
+      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+      "notes": "Sequel, 20 years after the original."
+    },
+    {
+      "date": "2026-05-01",
+      "title": "Hokum",
+      "director": "Damian McCarthy",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Adam Scott, Peter Coonan, David Wilmot",
+      "notes": "Irish folk horror from the director of Oddity."
+    },
+    {
+      "date": "2026-05-01",
+      "title": "Deep Water",
+      "director": "Renny Harlin",
+      "studio": "Magenta Light Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Survival / Thriller",
+      "cast": "Aaron Eckhart, Ben Kingsley",
+      "notes": "Shark thriller; plane-crash survival."
+    },
+    {
+      "date": "2026-05-01",
+      "title": "Swapped",
+      "director": "Nathan Greno",
+      "studio": "Skydance Animation / Netflix",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Animated Adventure",
+      "cast": "Michael B. Jordan, Juno Temple, Tracy Morgan",
+      "notes": "Netflix + select theatrical."
+    },
+
+    {
+      "date": "2026-05-08",
+      "title": "Mortal Kombat II",
+      "director": "Simon McQuoid",
+      "studio": "Warner Bros. / New Line Cinema",
+      "budget_usd": 68000000,
+      "release_type": "wide",
+      "genre": "Action / Fantasy",
+      "cast": "Karl Urban, Lewis Tan, Hiroyuki Sanada, Tadanobu Asano",
+      "notes": "IMAX. Internationally May 6."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "The Sheep Detectives",
+      "director": "Kyle Balda",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Mystery / Comedy",
+      "cast": "Hugh Jackman, Emma Thompson, Julia Louis-Dreyfus (voice), Bryan Cranston (voice)",
+      "notes": "Adapted from Leonie Swann's Three Bags Full."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Billie Eilish – Hit Me Hard and Soft: The Tour (Live in 3D)",
+      "director": "James Cameron & Billie Eilish",
+      "studio": "Paramount Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Concert Film",
+      "cast": "Billie Eilish",
+      "notes": "Immersive 3D; early access screenings Apr 29."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Couples Weekend",
+      "director": "Nora Kirkpatrick",
+      "studio": "Vertical",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Alexandra Daddario, Daveed Diggs, Josh Gad, Ashley Park",
+      "notes": "Also day-and-date VOD."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Remarkably Bright Creatures",
+      "director": "Olivia Newman",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama",
+      "cast": "Sally Field, Lewis Pullman, Alfred Molina",
+      "notes": "Adapted from Shelby Van Pelt's novel."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Silent Friend",
+      "director": "Ildikó Enyedi",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Tony Leung, Léa Seydoux, Luna Wedler",
+      "notes": "Century-spanning triptych around a ginkgo tree."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "The Python Hunt",
+      "director": "Xander Robin",
+      "studio": "Oscilloscope Laboratories",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "—",
+      "notes": "SXSW jury-award doc on Everglades python contest."
+    },
+
+    {
+      "date": "2026-05-15",
+      "title": "Obsession",
+      "director": "Curry Barker",
+      "studio": "Focus Features / Blumhouse",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Michael Johnston, Inde Navarrette, Andy Richter",
+      "notes": "TIFF Midnight; Sitges People's Choice winner."
+    },
+
+    {
+      "date": "2026-05-22",
+      "title": "The Mandalorian and Grogu",
+      "director": "Jon Favreau",
+      "studio": "Lucasfilm / Walt Disney Studios",
+      "budget_usd": 166400000,
+      "release_type": "wide",
+      "genre": "Sci-Fi / Adventure",
+      "cast": "Pedro Pascal, Sigourney Weaver, Jeremy Allen White",
+      "notes": "First theatrical Star Wars since 2019."
+    },
+    {
+      "date": "2026-05-22",
+      "title": "I Love Boosters",
+      "director": "Boots Riley",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime Comedy",
+      "cast": "Keke Palmer, Naomi Ackie, Demi Moore, Taylour Paige",
+      "notes": "Premiered SXSW 2026."
+    },
+    {
+      "date": "2026-05-22",
+      "title": "Corporate Retreat",
+      "director": "Aaron Fisher",
+      "studio": "Passage Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Odeya Rush, Sasha Lane, Ashton Sanders, Alan Ruck, Rosanna Arquette",
+      "notes": "Corporate retreat gone deadly."
+    },
+    {
+      "date": "2026-05-22",
+      "title": "Tuner",
+      "director": "Daniel Roher",
+      "studio": "Black Bear Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "Leo Woodall, Dustin Hoffman, Jean Reno, Havana Rose Liu",
+      "notes": "Limited May 22, expands wide May 29."
+    },
+
+    {
+      "date": "2026-05-29",
+      "title": "Backrooms",
+      "director": "Kane Parsons",
+      "studio": "A24 / Chernin Entertainment",
+      "budget_usd": 10000000,
+      "release_type": "wide",
+      "genre": "Horror / Sci-Fi",
+      "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass",
+      "notes": "From the 20-year-old creator of the YouTube series."
+    },
+    {
+      "date": "2026-05-29",
+      "title": "Pressure",
+      "director": "Anthony Maras",
+      "studio": "Focus Features / Working Title / StudioCanal",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Historical Thriller",
+      "cast": "Andrew Scott, Brendan Fraser, Kerry Condon",
+      "notes": "72 hours before D-Day."
+    },
+    {
+      "date": "2026-05-29",
+      "title": "The Breadwinner",
+      "director": "Eric Appel",
+      "studio": "Sony / TriStar Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy",
+      "cast": "Nate Bargatze, Mandy Moore, Colin Jost, Kumail Nanjiani, Will Forte",
+      "notes": "Bargatze's feature debut."
+    }
+  ]
+}

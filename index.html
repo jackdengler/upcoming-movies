@@ -24,13 +24,15 @@
   </head>
   <body>
     <header class="app-header">
-      <h1>Upcoming</h1>
+      <div class="app-header__bar">
+        <h1>Upcoming</h1>
+        <span class="app-header__month" id="month-label">May 2026</span>
+      </div>
     </header>
 
     <main id="app" class="app-main">
-      <section class="empty-state" aria-live="polite">
-        <p>No releases yet.</p>
-      </section>
+      <div id="list" class="list" aria-live="polite"></div>
+      <p id="empty" class="empty-state" hidden>No releases yet.</p>
     </main>
 
     <script src="./app.js" defer></script>

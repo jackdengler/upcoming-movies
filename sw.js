@@ -1,10 +1,11 @@
-const CACHE = "upcoming-v1";
+const CACHE = "upcoming-v2";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
+  "./data/may-2026.json",
 ];
 
 self.addEventListener("install", (e) => {

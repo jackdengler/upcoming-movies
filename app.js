@@ -28,7 +28,7 @@ const LEVELS = ["must", "likely", "potential", "not", "watched"];
 const LEVEL_LABEL = {
   must: "Must",
   likely: "Likely",
-  potential: "Maybe",
+  potential: "Unlikely",
   not: "Skip",
   watched: "Seen",
 };
@@ -272,7 +272,7 @@ function renderInterestsTab(bundles) {
   const titles = {
     must: "Must watch",
     likely: "Likely watch",
-    potential: "Potential",
+    potential: "Unlikely",
     not: "Not interested",
     watched: "Watched",
   };

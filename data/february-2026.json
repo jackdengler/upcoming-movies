@@ -4,30 +4,6 @@
   "source": "TMDB",
   "releases": [
     {
-      "tmdb_id": 1654965,
-      "date": "2026-02-02",
-      "title": "The Game of Life",
-      "director": "Nick Salazar",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Thriller / Science Fiction",
-      "cast": "Nick Salazar, Brittany Shonka, Alexa Potts",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1548749,
-      "date": "2026-02-05",
-      "title": "Still Hope",
-      "director": "Richie Johns",
-      "studio": "Studio 523",
-      "budget_usd": 1000000,
-      "release_type": "wide",
-      "genre": "Drama / Thriller",
-      "cast": "Luna Rivera, John D. Michaels, Alex Veadov, Michelle Haro",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1429605,
       "date": "2026-02-06",
       "title": "F Valentine's Day",
@@ -37,18 +13,6 @@
       "release_type": "wide",
       "genre": "Romance / Comedy",
       "cast": "Virginia Gardner, Skylar Astin, Marisa Tomei, Jake Cannavale",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1461211,
-      "date": "2026-02-06",
-      "title": "Mimics",
-      "director": "Kristoffer Polaha",
-      "studio": "Nook Lane Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Horror",
-      "cast": "Kristoffer Polaha, Moriah Peters, Stephen Tobolowsky, Chris Parnell",
       "notes": ""
     },
     {
@@ -76,66 +40,6 @@
       "notes": "Embrace your fears."
     },
     {
-      "tmdb_id": 1373198,
-      "date": "2026-02-06",
-      "title": "Twisted",
-      "director": "Darren Lynn Bousman",
-      "studio": "Envision Media Arts",
-      "budget_usd": 93,
-      "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "Djimon Hounsou, Lauren LaVera, Mia Healey, Neal McDonough",
-      "notes": "Do no harm."
-    },
-    {
-      "tmdb_id": 1628755,
-      "date": "2026-02-07",
-      "title": "California Scenario",
-      "director": "James Takata",
-      "studio": "Metamorfic Productions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Will Yun Lee, Jon Huertas, Ellen Greene, Jes Macallan",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1617115,
-      "date": "2026-02-10",
-      "title": "Brother Unknown",
-      "director": "—",
-      "studio": "Alina Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Thriller",
-      "cast": "Payton Ash, Adam Foster Ballard, Jonny Blando, Angelina Marie Broyles",
-      "notes": "Where Family Isn't Who You Think..."
-    },
-    {
-      "tmdb_id": 1615605,
-      "date": "2026-02-11",
-      "title": "Be My Valentine",
-      "director": "Stefanie Davis",
-      "studio": "—",
-      "budget_usd": 5,
-      "release_type": "wide",
-      "genre": "Horror",
-      "cast": "Samantha Dalesio, Mitchell Patrick Greene, Bella Jackson, Amanda Brown",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1391847,
-      "date": "2026-02-11",
-      "title": "Gale: Yellow Brick Road",
-      "director": "Daniel Alexander",
-      "studio": "Daniel Alexander Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller / Fantasy",
-      "cast": "Chloë Culligan Crump, Laura Kay bailey, Karen Swan, Dara abasuté",
-      "notes": "Dorothy was Just the beginning"
-    },
-    {
       "tmdb_id": 1316092,
       "date": "2026-02-13",
       "title": "\"Wuthering Heights\"",
@@ -146,18 +50,6 @@
       "genre": "Romance / Drama",
       "cast": "Margot Robbie, Jacob Elordi, Hong Chau, Alison Oliver",
       "notes": "Come undone."
-    },
-    {
-      "tmdb_id": 1355496,
-      "date": "2026-02-13",
-      "title": "By Design",
-      "director": "Amanda Kramer",
-      "studio": "Cold Iron Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Fantasy / Romance",
-      "cast": "Juliette Lewis, Mamoudou Athie, Samantha Mathis, Robin Tunney",
-      "notes": ""
     },
     {
       "tmdb_id": 1171145,
@@ -196,30 +88,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1154538,
-      "date": "2026-02-13",
-      "title": "Nirvanna the Band the Show the Movie",
-      "director": "Matt Johnson",
-      "studio": "Crave",
-      "budget_usd": 1200000,
-      "release_type": "wide",
-      "genre": "Comedy / Science Fiction / Adventure",
-      "cast": "Matt Johnson, Jay McCarrol, Ben Petrie, Ethan Eng",
-      "notes": "One... last... plan."
-    },
-    {
-      "tmdb_id": 1477377,
-      "date": "2026-02-13",
-      "title": "Real Couples",
-      "director": "Julian Berger",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Julian Berger, Adriana Hinojosa, Nick Petroccione, Hudson Klass",
-      "notes": "Communication is key."
-    },
-    {
       "tmdb_id": 1470130,
       "date": "2026-02-13",
       "title": "The Mortuary Assistant",
@@ -232,30 +100,6 @@
       "notes": "Alone with the dead."
     },
     {
-      "tmdb_id": 1468229,
-      "date": "2026-02-14",
-      "title": "Ernie and Emma",
-      "director": "Bruce Campbell",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Bruce Campbell, Cerina Vincent, Ted Raimi, Robin McAlpine",
-      "notes": "'Til death do us part - and a little longer."
-    },
-    {
-      "tmdb_id": 1286659,
-      "date": "2026-02-14",
-      "title": "Fate",
-      "director": "Jonathan Baker",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Harvey Keitel, Faye Dunaway, Andrew McCarthy",
-      "notes": ""
-    },
-    {
       "tmdb_id": 467905,
       "date": "2026-02-20",
       "title": "How to Make a Killing",
@@ -266,18 +110,6 @@
       "genre": "Comedy / Thriller",
       "cast": "Glen Powell, Margaret Qualley, Jessica Henwick, Bill Camp",
       "notes": "$28 billion inheritance. 7 relatives standing in the way."
-    },
-    {
-      "tmdb_id": 1125701,
-      "date": "2026-02-20",
-      "title": "Midwinter Break",
-      "director": "Polly Findlay",
-      "studio": "Shoebox Films",
-      "budget_usd": 4000000,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Lesley Manville, Ciarán Hinds, Niamh Cusack, Julie Lamberton",
-      "notes": "A day they can't forget. A truth they can't escape."
     },
     {
       "tmdb_id": 1107166,
@@ -304,54 +136,6 @@
       "notes": "In a country torn by war, survival comes at all costs… and darkness closes in."
     },
     {
-      "tmdb_id": 1493611,
-      "date": "2026-02-21",
-      "title": "The Hail Mary",
-      "director": "Daniel Roebuck",
-      "studio": "Magic Bean Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Comedy",
-      "cast": "Daniel Roebuck, Marsha Dietlein, Joe Estevez, Duane Whitaker",
-      "notes": "When you have nothing else to lose..."
-    },
-    {
-      "tmdb_id": 1594694,
-      "date": "2026-02-26",
-      "title": "Lydia and the Mist Rider",
-      "director": "Nancy Florence Savard, Emilie Rosas, Philippe Arseneau Bussières",
-      "studio": "Productions 10th Ave",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Family",
-      "cast": "Sophie Nélisse, Hasani Freeman, Sarah Booth, Mizinga Mwinga",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1305787,
-      "date": "2026-02-27",
-      "title": "Micro Budget",
-      "director": "Morgan Evans",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Patrick Noth, Emilea Wilson, Jon Gabrus, Nichole Sakura",
-      "notes": "Lights. Camera. Asshole."
-    },
-    {
-      "tmdb_id": 1130875,
-      "date": "2026-02-27",
-      "title": "Operation Taco Gary's",
-      "director": "Michael Kvamme",
-      "studio": "Rotten Science",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Science Fiction / Action",
-      "cast": "Simon Rex, Dustin Milligan, Brenda Song, Jason Biggs",
-      "notes": "Aliens. Tacos. Conspiracies. Welcome to Taco Gary’s."
-    },
-    {
       "tmdb_id": 1159559,
       "date": "2026-02-27",
       "title": "Scream 7",
@@ -362,30 +146,6 @@
       "genre": "Horror / Mystery / Crime",
       "cast": "Neve Campbell, Courteney Cox, Isabel May, Jasmin Savoy Brown",
       "notes": "Burn it all down."
-    },
-    {
-      "tmdb_id": 1517305,
-      "date": "2026-02-27",
-      "title": "The Napa Boys",
-      "director": "Nick Corirossi",
-      "studio": "Sunset Rose Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Armen Weitzman, Nick Corirossi, Sarah Ramos, Riki Lindhome",
-      "notes": "The (Napa) boys are back in (Napa) town."
-    },
-    {
-      "tmdb_id": 1245084,
-      "date": "2026-02-27",
-      "title": "Undercard",
-      "director": "Tamika Miller",
-      "studio": "Catalyst Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Wanda Sykes, Bentley Green, Berto Colon, Danny Pardo",
-      "notes": "Some fights are personal."
     }
   ]
 }

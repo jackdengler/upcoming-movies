@@ -4,18 +4,6 @@
   "source": "TMDB",
   "releases": [
     {
-      "tmdb_id": 1674130,
-      "date": "2026-04-01",
-      "title": "A Single Christian",
-      "director": "Jurian Isabelle",
-      "studio": "Tubi",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Thriller",
-      "cast": "Kendria Bland, Lashawn Dawson, Mikeal Griggs, Louis McKnight",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
@@ -40,18 +28,6 @@
       "notes": "Before the American Revolution, there was a revelation."
     },
     {
-      "tmdb_id": 1659690,
-      "date": "2026-04-03",
-      "title": "The Secret Between Us",
-      "director": "Tamera Hill",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Family",
-      "cast": "Karen Abercrombie, Lisa Arrindell, Reggie Currelley, Denzell Dandridge",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1418657,
       "date": "2026-04-04",
       "title": "The Yeti",
@@ -62,18 +38,6 @@
       "genre": "Horror / Thriller",
       "cast": "Brittany Allen, Eric Nelsen, Corbin Bernsen, William Sadler",
       "notes": "Fear is primal."
-    },
-    {
-      "tmdb_id": 1292415,
-      "date": "2026-04-10",
-      "title": "Beast",
-      "director": "Tyler Atkins",
-      "studio": "Broken Open Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Drama",
-      "cast": "Daniel MacPherson, Luke Hemsworth, Russell Crowe, Mojean Aria",
-      "notes": "Legends are made in the cage."
     },
     {
       "tmdb_id": 855435,
@@ -88,30 +52,6 @@
       "notes": "You can't unsee it."
     },
     {
-      "tmdb_id": 1308388,
-      "date": "2026-04-10",
-      "title": "Hunting Matthew Nichols",
-      "director": "Markian Tarasiuk",
-      "studio": "Dropshock Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Markian Tarasiuk, Ryan Alexander McDonald, Miranda MacDougall, Christine Willes",
-      "notes": "Not all answers want to be found."
-    },
-    {
-      "tmdb_id": 1669919,
-      "date": "2026-04-10",
-      "title": "The Zoo",
-      "director": "Mimi Chakarova",
-      "studio": "Still I Rise Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "—",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1455079,
       "date": "2026-04-10",
       "title": "You, Me & Tuscany",
@@ -124,30 +64,6 @@
       "notes": "She came for the pasta and got lost in the sauce."
     },
     {
-      "tmdb_id": 1408324,
-      "date": "2026-04-15",
-      "title": "City Wide Fever",
-      "director": "Josh Heaps",
-      "studio": "Baby Josh",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Diletta Guglielmi, Angelica Kim, Hugo Alexander-Rose, Rutanya Alda",
-      "notes": "Sickness or pleasure?"
-    },
-    {
-      "tmdb_id": 949536,
-      "date": "2026-04-16",
-      "title": "Kill Code",
-      "director": "Justin Price",
-      "studio": "Powell and Price Productions",
-      "budget_usd": 20000000,
-      "release_type": "wide",
-      "genre": "Action / Thriller",
-      "cast": "Franzi Schissler, Frank Grillo, Harvey Keitel, Tyrese Gibson",
-      "notes": "JUDGE. EXECUTIONER. FREEDOM."
-    },
-    {
       "tmdb_id": 1243741,
       "date": "2026-04-17",
       "title": "Ballistic",
@@ -158,18 +74,6 @@
       "genre": "Action / Thriller",
       "cast": "Lena Headey, Enrico Colantoni, Amybeth McNulty, Michael Lipka",
       "notes": "A mother's pain, a bullet's purpose."
-    },
-    {
-      "tmdb_id": 1654515,
-      "date": "2026-04-17",
-      "title": "Bluebird",
-      "director": "Jay Arden Black",
-      "studio": "The Whale Husband",
-      "budget_usd": 50000,
-      "release_type": "wide",
-      "genre": "Science Fiction / Mystery / Romance / Comedy",
-      "cast": "David McElwee, Avery Joy Davis, Tony Bertele, Mark Aaron",
-      "notes": ""
     },
     {
       "tmdb_id": 1414413,
@@ -208,18 +112,6 @@
       "notes": "What happened to Katie?"
     },
     {
-      "tmdb_id": 854934,
-      "date": "2026-04-17",
-      "title": "Mabel",
-      "director": "Nicholas Ma",
-      "studio": "AgX",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Lexi Perkel, Christine Ko, Lena Josephine Marano, Quincy Dunn-Baker",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1242332,
       "date": "2026-04-17",
       "title": "Normal",
@@ -230,78 +122,6 @@
       "genre": "Action / Crime / Thriller",
       "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Ryan Allen",
       "notes": "Small town. Big secret."
-    },
-    {
-      "tmdb_id": 1631668,
-      "date": "2026-04-17",
-      "title": "Stay in the car",
-      "director": "Calvin Kian Ghaznavi",
-      "studio": "Silverman Productions Sound",
-      "budget_usd": 15000,
-      "release_type": "wide",
-      "genre": "Crime / Drama / Family",
-      "cast": "Lara Hunter, Ashley Alva, Timothy V. Murphy",
-      "notes": "A choice that could change her life forever."
-    },
-    {
-      "tmdb_id": 1647277,
-      "date": "2026-04-17",
-      "title": "The Gardener",
-      "director": "Dabney Day",
-      "studio": "Sunflower Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Radha Mitchell, William Miller, Ellen David, David Andrews",
-      "notes": "Every bloom tells a story."
-    },
-    {
-      "tmdb_id": 1658461,
-      "date": "2026-04-18",
-      "title": "WWE WrestleMania 42 Countdown - Saturday",
-      "director": "—",
-      "studio": "World Wrestling Entertainment (WWE)",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": "THE AMERICAN NIGHTMARE VS. THE VIPER."
-    },
-    {
-      "tmdb_id": 1318447,
-      "date": "2026-04-24",
-      "title": "Apex",
-      "director": "Baltasar Kormákur",
-      "studio": "RVK Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Thriller",
-      "cast": "Charlize Theron, Taron Egerton, Eric Bana, Caitlin Stasey",
-      "notes": "Hunt. Survive."
-    },
-    {
-      "tmdb_id": 1537617,
-      "date": "2026-04-24",
-      "title": "Frankie, Maniac Woman",
-      "director": "Pierre Tsigaridis",
-      "studio": "Two Witches Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Dina Silva, Pierre Tsigaridis, Stefanie Estes, Rocío de la Grana",
-      "notes": "\"Beauty is only skin deep, she wants to see what's inside!\""
-    },
-    {
-      "tmdb_id": 1472304,
-      "date": "2026-04-24",
-      "title": "Original Sound",
-      "director": "Gregory Jbara",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Bridget Moynahan, Eric Stoltz, Laura Marano, Ted King",
-      "notes": ""
     }
   ]
 }

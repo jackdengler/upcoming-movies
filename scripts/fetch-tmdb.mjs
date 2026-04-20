@@ -23,6 +23,7 @@ const headers = { Authorization: `Bearer ${TOKEN}`, Accept: "application/json" }
 
 const MAX_PER_MONTH = 75;
 const DISCOVER_PAGES = 10;
+const MIN_POPULARITY_NON_MAJOR = 8;
 
 // Major studios / distributors — if a movie has one of these in production_companies,
 // it's guaranteed to be included regardless of popularity or the monthly cap.
@@ -135,11 +136,14 @@ for (const m of list) {
     if (!cls.date) continue;
     if (cls.date.slice(0, 7) !== MONTH) continue;
 
-    const originUS = (d.origin_country || []).includes("US");
-    const major = hasMajorStudio(d.production_companies);
+    // Must have an actual US theatrical release (wide or limited).
+    if (!cls.isTheatrical) continue;
 
-    // Accept if: US origin, OR major studio involved, OR has a US theatrical release.
-    if (!originUS && !major && !cls.isTheatrical) continue;
+    const major = hasMajorStudio(d.production_companies);
+    const pop = m.popularity || d.popularity || 0;
+
+    // Non-major films need a popularity floor so we skip micro-indies.
+    if (!major && pop < MIN_POPULARITY_NON_MAJOR) continue;
 
     const director =
       (d.credits?.crew || [])

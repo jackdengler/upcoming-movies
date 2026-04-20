@@ -360,6 +360,10 @@ document.querySelectorAll(".tab-bar__btn").forEach((b) => {
   b.addEventListener("click", () => switchTab(b.dataset.tab));
 });
 
+document.getElementById("open-pat").addEventListener("click", () => {
+  requestPat();
+});
+
 function syncFilterChips() {
   for (const chip of document.querySelectorAll(".filter-chip")) {
     chip.classList.toggle("is-active", filters[chip.dataset.type] !== false);

@@ -97,6 +97,28 @@ body {
   letter-spacing: 0.02em;
 }
 
+.app-header__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-header__settings {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 4px;
+  margin: 0;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 8px;
+  transition: color 0.12s ease, background-color 0.12s ease;
+}
+.app-header__settings svg { width: 18px; height: 18px; stroke-width: 1.8; }
+.app-header__settings:active { color: var(--accent); background: rgba(20,20,30,0.05); }
+
 .app-header__sync {
   margin-top: 4px;
   font-size: 11px;

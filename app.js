@@ -4,7 +4,7 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-const DATA_URL = "./data/may-2026.json";
+const today = new Date().toISOString().slice(0, 10);
 
 const fmtDate = (iso) => {
   const d = new Date(iso + "T12:00:00");
@@ -12,7 +12,7 @@ const fmtDate = (iso) => {
 };
 
 const fmtBudget = (usd, note) => {
-  if (usd == null) return "Undisclosed";
+  if (usd == null || usd === 0) return "Undisclosed";
   const m = usd / 1_000_000;
   const base = m >= 100 ? `$${Math.round(m)}M` : `$${m.toFixed(m < 10 ? 1 : 0)}M`;
   return note ? `${base} · ${note}` : base;
@@ -26,6 +26,20 @@ const chipClass = (type) =>
 const chipLabel = (type) =>
   type === "streaming" ? "Streaming" :
   type === "limited" ? "Limited" : "Wide";
+
+const monthFilename = (d) => {
+  const monthName = d.toLocaleString("en-US", { month: "long" }).toLowerCase();
+  return `./data/${monthName}-${d.getFullYear()}.json`;
+};
+
+async function loadBundles() {
+  const now = new Date();
+  const urls = [0, 1, 2].map((i) => monthFilename(new Date(now.getFullYear(), now.getMonth() + i, 1)));
+  const results = await Promise.all(urls.map((u) =>
+    fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null)
+  ));
+  return results.filter(Boolean);
+}
 
 const groupByDate = (rows) => {
   const map = new Map();
@@ -64,24 +78,38 @@ const renderRow = (m) => {
       el("h3", { class: "row__title", text: m.title }),
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
     ),
-    el("div", { class: "row__meta", text: m.genre }),
+    m.genre ? el("div", { class: "row__meta", text: m.genre }) : null,
     sub,
     m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
   );
 };
 
-const render = (data) => {
-  document.getElementById("month-label").textContent = data.month;
+const render = (bundles) => {
+  const all = bundles.flatMap((b) => b.releases).filter((r) => r.date >= today);
+  all.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
+
+  const label = document.getElementById("month-label");
+  if (all.length) {
+    const first = new Date(all[0].date + "T12:00:00");
+    const last = new Date(all[all.length - 1].date + "T12:00:00");
+    const same = first.getMonth() === last.getMonth() && first.getFullYear() === last.getFullYear();
+    label.textContent = same
+      ? first.toLocaleString(undefined, { month: "long", year: "numeric" })
+      : `${first.toLocaleString(undefined, { month: "short" })} – ${last.toLocaleString(undefined, { month: "short", year: "numeric" })}`;
+  } else {
+    label.textContent = "Upcoming";
+  }
+
   const list = document.getElementById("list");
   list.innerHTML = "";
 
-  const groups = groupByDate(data.releases);
-  if (!groups.length) {
+  if (!all.length) {
     document.getElementById("empty").hidden = false;
     return;
   }
+  document.getElementById("empty").hidden = true;
 
-  for (const [date, items] of groups) {
+  for (const [date, items] of groupByDate(all)) {
     const section = el("section", { class: "section" },
       el("header", { class: "section__header" },
         el("span", { class: "section__date", text: fmtDate(date) }),
@@ -93,7 +121,4 @@ const render = (data) => {
   }
 };
 
-fetch(DATA_URL, { cache: "no-cache" })
-  .then((r) => r.json())
-  .then(render)
-  .catch(() => { document.getElementById("empty").hidden = false; });
+loadBundles().then(render).catch(() => { document.getElementById("empty").hidden = false; });

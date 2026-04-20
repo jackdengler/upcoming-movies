@@ -31,10 +31,25 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Fetch from TMDB
+      - name: Compute months
+        id: months
+        run: |
+          CURRENT=$(date -u +%Y-%m)
+          NEXT=$(date -u -d 'first day of next month' +%Y-%m)
+          echo "current=$CURRENT" >> "$GITHUB_OUTPUT"
+          echo "next=$NEXT" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch current month
         env:
           TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
-          MONTH: ${{ inputs.month }}
+          MONTH: ${{ inputs.month != '' && inputs.month || steps.months.outputs.current }}
+        run: node scripts/fetch-tmdb.mjs
+
+      - name: Fetch next month
+        if: inputs.month == ''
+        env:
+          TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
+          MONTH: ${{ steps.months.outputs.next }}
         run: node scripts/fetch-tmdb.mjs
 
       - name: Commit if changed

@@ -64,6 +64,12 @@ const el = (tag, attrs = {}, ...children) => {
   return n;
 };
 
+const wikipediaUrl = (title, date) => {
+  const year = date ? date.slice(0, 4) : "";
+  const q = `${title} ${year} film`.trim();
+  return `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(q)}&go=Go`;
+};
+
 const renderRow = (m) => {
   const sub = el("dl", { class: "row__sub" },
     el("dt", { text: "Director" }), el("dd", { text: m.director }),
@@ -73,7 +79,12 @@ const renderRow = (m) => {
     m.cast && m.cast !== "—" ? el("dd", { text: m.cast }) : null,
   );
 
-  return el("article", { class: "row" },
+  return el("a", {
+      class: "row",
+      href: wikipediaUrl(m.title, m.date),
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
     el("div", { class: "row__title-line" },
       el("h3", { class: "row__title", text: m.title }),
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),

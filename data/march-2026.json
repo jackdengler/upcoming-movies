@@ -4,6 +4,42 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1648554,
+      "date": "2026-03-03",
+      "title": "Amityville Aliens",
+      "director": "Donald Farmer, Victor Bonacore, Ron Ford, Charles D. Lincoln, JB Sapienza, Morrigan Thompson-Milam, Brian Wild, Dan Wilder, James Woolley",
+      "studio": "Wild Eye Releasing",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Kimberly L. Cole, Erin Brown, Donald Farmer, Alaine Huntington",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1101644,
+      "date": "2026-03-03",
+      "title": "When We Get There",
+      "director": "Ryan Patrick Welsh",
+      "studio": "Whiskey Panda Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Comedy",
+      "cast": "Chris Heeder, Alek Kristopher, Jamie Lien, Mindy Sterling",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1309083,
+      "date": "2026-03-06",
+      "title": "Dolly",
+      "director": "Rod Blackhurst",
+      "studio": "Witchcraft Motion Picture Company",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Max Lindsey, Fabianne Therese, Seann William Scott, Ethan Suplee",
+      "notes": "Mommy knows best."
+    },
+    {
       "tmdb_id": 1381027,
       "date": "2026-03-06",
       "title": "Good Boy",
@@ -28,6 +64,18 @@
       "notes": "Act natural."
     },
     {
+      "tmdb_id": 1439881,
+      "date": "2026-03-06",
+      "title": "Imposters",
+      "director": "Caleb J. Phillips",
+      "studio": "Broken Pig Productions",
+      "budget_usd": 650000,
+      "release_type": "wide",
+      "genre": "Drama / Horror / Science Fiction / Thriller",
+      "cast": "Jessica Rothe, Charlie Barnett, Yul Vazquez, Bates Wilder",
+      "notes": ""
+    },
+    {
       "tmdb_id": 875828,
       "date": "2026-03-06",
       "title": "Peaky Blinders: The Immortal Man",
@@ -38,6 +86,30 @@
       "genre": "Crime / Drama",
       "cast": "Cillian Murphy, Barry Keoghan, Rebecca Ferguson, Tim Roth",
       "notes": "It will all come to this."
+    },
+    {
+      "tmdb_id": 1383731,
+      "date": "2026-03-06",
+      "title": "Protector",
+      "director": "Adrian Grünberg",
+      "studio": "Highland Film Group",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Thriller",
+      "cast": "Milla Jovovich, Matthew Modine, Isabel Myers, D. B. Sweeney",
+      "notes": "Mother. Savior. Killer..."
+    },
+    {
+      "tmdb_id": 1613666,
+      "date": "2026-03-06",
+      "title": "Scallop Season",
+      "director": "James Bartolomeo",
+      "studio": "Echodale Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Oliver Bartolomeo, John Wesley Shipp, Taegen Burns, Tabitha Brownstone",
+      "notes": ""
     },
     {
       "tmdb_id": 1159831,
@@ -52,6 +124,42 @@
       "notes": "Here comes the mother f*%#ing bride!"
     },
     {
+      "tmdb_id": 1022046,
+      "date": "2026-03-06",
+      "title": "Youngblood",
+      "director": "Hubert Davis",
+      "studio": "Aircraft Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Ashton James, Henri Picard, Blair Underwood, Shawn Doyle",
+      "notes": "Take your shot."
+    },
+    {
+      "tmdb_id": 1510745,
+      "date": "2026-03-13",
+      "title": "Bodycam",
+      "director": "Brandon Christensen",
+      "studio": "Superchill",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Jaime M. Callica, Sean Rogerson, Catherine Lough Haggquist, Angel Prater",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1599047,
+      "date": "2026-03-13",
+      "title": "Gender Studies",
+      "director": "Jamie Kiernan O'Brien",
+      "studio": "Buckle Up Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Jake Junkins, Fannie Massarsky, Austin Cassel, Angelique Bencivenga",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1367642,
       "date": "2026-03-13",
       "title": "Reminders of Him",
@@ -64,6 +172,18 @@
       "notes": "Everyone deserves a second chance."
     },
     {
+      "tmdb_id": 1299357,
+      "date": "2026-03-13",
+      "title": "Scared to Death",
+      "director": "Paul Boyd",
+      "studio": "Mirror Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Lin Shaye, Bill Moseley, Olivier Paris, Victoria Konefal",
+      "notes": "Heads will roll."
+    },
+    {
       "tmdb_id": 1297446,
       "date": "2026-03-13",
       "title": "Slanted",
@@ -74,6 +194,18 @@
       "genre": "Comedy / Horror / Science Fiction",
       "cast": "Shirley Chen, Mckenna Grace, Amelie Zilber, Vivian Wu",
       "notes": "If you can't beat them... be them."
+    },
+    {
+      "tmdb_id": 874860,
+      "date": "2026-03-13",
+      "title": "Storm Rider: Legend of Hammerhead",
+      "director": "Zoran Lisinac, Domagoj Mazuran",
+      "studio": "Fig Production Group",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Adventure / Science Fiction / Action",
+      "cast": "Marco Ilsø, Billy Barratt, Gilles Geary, Sarah-Sofie Boussnina",
+      "notes": "Beyond the storm lies freedom."
     },
     {
       "tmdb_id": 1366906,
@@ -100,6 +232,18 @@
       "notes": "It wants to be heard."
     },
     {
+      "tmdb_id": 1648710,
+      "date": "2026-03-18",
+      "title": "Medora: Empress of the Badlands",
+      "director": "Daniel Bielinski",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Western",
+      "cast": "Baylee Toney, Robert Strange, Ignacyo Matynia, Colin Ward",
+      "notes": ""
+    },
+    {
       "tmdb_id": 999136,
       "date": "2026-03-20",
       "title": "Do Not Enter",
@@ -110,6 +254,30 @@
       "genre": "Horror",
       "cast": "Francesca Reale, Nicholas Hamilton, Adeline Rudolph, Jake Manley",
       "notes": "Getting in is hard, getting out is hell."
+    },
+    {
+      "tmdb_id": 1536845,
+      "date": "2026-03-20",
+      "title": "Monument",
+      "director": "Bryan Singer",
+      "studio": "Bad Hat Harry Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Jon Voight, Joseph Mazzello, Ori Pfeffer, Aviv Pinkas",
+      "notes": "Based on a true story."
+    },
+    {
+      "tmdb_id": 1533222,
+      "date": "2026-03-20",
+      "title": "Past Life",
+      "director": "Simeon Halligan",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Thriller",
+      "cast": "Aneurin Barnard, Nicholas Farrell, Jeremy Piven, Tim McInnerny",
+      "notes": "Some memories are deadly."
     },
     {
       "tmdb_id": 687163,
@@ -136,6 +304,66 @@
       "notes": "Double or nothing."
     },
     {
+      "tmdb_id": 938150,
+      "date": "2026-03-20",
+      "title": "Wardriver",
+      "director": "Rebecca Thomas",
+      "studio": "Highland Film Group",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "Dane DeHaan, Sasha Calle, Mamoudou Athie, Jeffrey Donovan",
+      "notes": "Hacking. Stealing. Surviving."
+    },
+    {
+      "tmdb_id": 1660372,
+      "date": "2026-03-20",
+      "title": "Wrestling with Love",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance / Drama",
+      "cast": "Zakhar Shadrin, Mark Ciccarelli",
+      "notes": "Too close to stay just enemies."
+    },
+    {
+      "tmdb_id": 1421977,
+      "date": "2026-03-27",
+      "title": "Fantasy Life",
+      "director": "Matthew Shear",
+      "studio": "Prospect Avenue",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Romance / Drama",
+      "cast": "Amanda Peet, Matthew Shear, Alessandro Nivola, Judd Hirsch",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1450527,
+      "date": "2026-03-27",
+      "title": "Forbidden Fruits",
+      "director": "Meredith Alloway",
+      "studio": "MXN Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Lili Reinhart, Lola Tung, Victoria Pedretti, Alexandra Shipp",
+      "notes": "The coven just clocked in."
+    },
+    {
+      "tmdb_id": 1465751,
+      "date": "2026-03-27",
+      "title": "She Dances",
+      "director": "Rick Gomez",
+      "studio": "Macaroni Art Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Drama",
+      "cast": "Steve Zahn, Audrey Zahn, Mackenzie Ziegler, Ethan Hawke",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1292695,
       "date": "2026-03-27",
       "title": "They Will Kill You",
@@ -146,6 +374,30 @@
       "genre": "Action / Horror / Comedy",
       "cast": "Zazie Beetz, Patricia Arquette, Myha'la, Paterson Joseph",
       "notes": "Let them try."
+    },
+    {
+      "tmdb_id": 1217505,
+      "date": "2026-03-27",
+      "title": "You're Dating a Narcissist!",
+      "director": "Ann Marie Allison",
+      "studio": "The Wonder Company",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Romance",
+      "cast": "Marisa Tomei, Sherry Cola, Ciara Bravo, Marco Pigossi",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1187129,
+      "date": "2026-03-30",
+      "title": "Unwinding",
+      "director": "Reza Ghassemi",
+      "studio": "Cinesia Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Thriller",
+      "cast": "Peter Facinelli, Q'orianka Kilcher, Susie Abromeit, Ranen Navat",
+      "notes": ""
     }
   ]
 }

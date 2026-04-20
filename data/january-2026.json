@@ -4,6 +4,66 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1544848,
+      "date": "2026-01-01",
+      "title": "Rough",
+      "director": "Kevin Lin",
+      "studio": "Gachapon Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Harrison Qian, Kylen Chen-Troester, Nima Shoghi, Mayciann Lopatic",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1560008,
+      "date": "2026-01-01",
+      "title": "The Woodster",
+      "director": "Aidan Peterson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Casey Peterson, Elijah Olachea",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1626279,
+      "date": "2026-01-01",
+      "title": "Unauthorized Love",
+      "director": "Delinda Kay",
+      "studio": "Delinda Kay Productions",
+      "budget_usd": 50,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Joseline Thomas, Izaiah Wimbush, Sherman Howard, Cynthia Velasquez",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1606669,
+      "date": "2026-01-01",
+      "title": "Wilderness Tapes: Volume One",
+      "director": "Brandon Walker",
+      "studio": "Ghost Machine Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Thomas Burke, Nathan Church, Eliot",
+      "notes": "Finding Buried Terror"
+    },
+    {
+      "tmdb_id": 1180417,
+      "date": "2026-01-02",
+      "title": "The Dutchman",
+      "director": "Andre Gaines",
+      "studio": "Cinemation Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Thriller",
+      "cast": "André Holland, Kate Mara, Zazie Beetz, Stephen McKinley Henderson",
+      "notes": "Two get on. One gets off."
+    },
+    {
       "tmdb_id": 1198984,
       "date": "2026-01-02",
       "title": "We Bury the Dead",
@@ -40,6 +100,18 @@
       "notes": "Hope is uncharted territory."
     },
     {
+      "tmdb_id": 1212461,
+      "date": "2026-01-09",
+      "title": "OBEX",
+      "director": "Albert Birney",
+      "studio": "Cartuna",
+      "budget_usd": 5000,
+      "release_type": "wide",
+      "genre": "Fantasy / Adventure / Horror",
+      "cast": "Albert Birney, Dorothy the Dog, Callie Hernandez, Paisley Isaacs",
+      "notes": "It's just a game..."
+    },
+    {
       "tmdb_id": 1601243,
       "date": "2026-01-09",
       "title": "Oscar Shaw",
@@ -64,6 +136,30 @@
       "notes": "Something's wrong with Ben."
     },
     {
+      "tmdb_id": 1669386,
+      "date": "2026-01-10",
+      "title": "撅嘴鱼的旅程",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Drama / Fantasy",
+      "cast": "—",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1659806,
+      "date": "2026-01-14",
+      "title": "Rabisu",
+      "director": "Chris Copier",
+      "studio": "Kingcup Productions",
+      "budget_usd": 1000000,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Hunter King, Chase Ramsey, Austin Archer, Lindsay Foster",
+      "notes": "People die. The camera doesn’t cut."
+    },
+    {
       "tmdb_id": 1272837,
       "date": "2026-01-16",
       "title": "28 Years Later: The Bone Temple",
@@ -76,6 +172,18 @@
       "notes": "Fear is the new faith."
     },
     {
+      "tmdb_id": 424853,
+      "date": "2026-01-16",
+      "title": "B-Roll",
+      "director": "Travis Long",
+      "studio": "Zurty Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Josh Brener, Karan Soni, Katy Stoll, Meghan Falcone",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1412598,
       "date": "2026-01-16",
       "title": "Killer Whale",
@@ -86,6 +194,42 @@
       "genre": "Thriller / Horror / Action / Mystery / Science Fiction",
       "cast": "Virginia Gardner, Mel Jarnson, Mitchell Hope, Isaac Crawley",
       "notes": "It's feeding time."
+    },
+    {
+      "tmdb_id": 1323625,
+      "date": "2026-01-16",
+      "title": "Night Patrol",
+      "director": "Ryan Prows",
+      "studio": "Phantom Four",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Mystery / Action",
+      "cast": "Jermaine Fowler, Justin Long, RJ Cyler, Freddie Gibbs",
+      "notes": "Defang the police."
+    },
+    {
+      "tmdb_id": 1359462,
+      "date": "2026-01-16",
+      "title": "Sheepdog",
+      "director": "Steven Grayhm",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Steven Grayhm, Vondie Curtis-Hall, Virginia Madsen, Dominic Fumusa",
+      "notes": "Sometimes we have to fall apart, to find ourselves all over again."
+    },
+    {
+      "tmdb_id": 1623331,
+      "date": "2026-01-23",
+      "title": "Avenged Sevenquads: Revenge of Hue Sevenfold: Part 2",
+      "director": "Perhapsbiscuits, Sexlord3000",
+      "studio": "—",
+      "budget_usd": 16,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "M. Shadows, Synyster Gates, Zacky Vengeance, Johnny Christ",
+      "notes": "Witness the Epic conclusion of the Hue Sevenfold saga"
     },
     {
       "tmdb_id": 1236153,
@@ -110,6 +254,54 @@
       "genre": "Mystery / Drama / Horror",
       "cast": "Jeremy Irvine, Hannah Emily Anderson, Evie Templeton, Pearse Egan",
       "notes": "Guilt is a place you can never leave."
+    },
+    {
+      "tmdb_id": 1650851,
+      "date": "2026-01-24",
+      "title": "anyone lived in a pretty how town",
+      "director": "Daniel Kreizberg",
+      "studio": "Meinart",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Romance",
+      "cast": "Jane Goodall",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1622226,
+      "date": "2026-01-25",
+      "title": "267",
+      "director": "Jesse Frank",
+      "studio": "—",
+      "budget_usd": 28000,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Rachel Petsiavas, Michael James Sewell Jr., Franny Titus, Wade Hammond",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1600761,
+      "date": "2026-01-25",
+      "title": "The Worm",
+      "director": "Tom Noakes",
+      "studio": "Studio Goono",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Drama",
+      "cast": "Joe Bird, Maggie Dence, Heather Mitchell, Susie Porter",
+      "notes": "Nobody loves me, everybody hates me..."
+    },
+    {
+      "tmdb_id": 1628161,
+      "date": "2026-01-29",
+      "title": "And, CUT!",
+      "director": "Gayathri Krishnakumar",
+      "studio": "—",
+      "budget_usd": 1200,
+      "release_type": "wide",
+      "genre": "Thriller",
+      "cast": "Paule Sydr, Gayathri Krishnakumar, Jelena Simic, Molly MacCormick",
+      "notes": "Everything comes at a price. Are you willing to pay?"
     },
     {
       "tmdb_id": 1116201,

@@ -164,14 +164,21 @@ function renderRow(m) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
 
-  const link = el("a", {
-      class: "row__link",
+  const titleLink = el("a", {
+      class: "row__titlelink",
       href: wikipediaUrl(m.title, m.date),
       target: "_blank",
       rel: "noopener noreferrer",
     },
+    m.title,
+  );
+
+  return el("div", {
+      class: `row${level ? ` row--${level}` : ""}`,
+      dataset: { key },
+    },
     el("div", { class: "row__title-line" },
-      el("h3", { class: "row__title", text: m.title }),
+      el("h3", { class: "row__title" }, titleLink),
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
     ),
     m.genre ? el("div", { class: "row__meta", text: m.genre }) : null,
@@ -183,13 +190,6 @@ function renderRow(m) {
       m.cast && m.cast !== "—" ? el("dd", { text: m.cast }) : null,
     ),
     m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
-  );
-
-  return el("div", {
-      class: `row${level ? ` row--${level}` : ""}`,
-      dataset: { key },
-    },
-    link,
     renderRatingBar(m),
   );
 }

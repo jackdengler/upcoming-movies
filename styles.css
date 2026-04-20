@@ -263,14 +263,12 @@ details[open] > .month__summary .month__chevron {
 .row--not { border-left-color: var(--level-not); opacity: 0.65; }
 .row--watched { border-left-color: var(--level-watched); opacity: 0.8; }
 
-.row__link {
-  display: block;
+.row__titlelink {
   color: inherit;
   text-decoration: none;
-  -webkit-touch-callout: none;
-  transition: background-color 0.12s ease;
+  -webkit-tap-highlight-color: rgba(184, 29, 36, 0.12);
 }
-.row__link:active .row__title { color: var(--accent); }
+.row__titlelink:active { color: var(--accent); }
 
 .row__title-line {
   display: flex;

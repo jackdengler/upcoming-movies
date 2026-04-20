@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20T22:01:13.630Z",
+  "updated": "2026-04-20T22:01:16.398Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -322,6 +322,13 @@
       "title": "Corporate Retreat",
       "date": "2026-05-22",
       "tmdb_id": 1451588
+    },
+    "tmdb:1227877": {
+      "level": "not",
+      "at": "2026-04-20T22:01:13.891Z",
+      "title": "I Love Boosters",
+      "date": "2026-05-22",
+      "tmdb_id": 1227877
     }
   }
 }

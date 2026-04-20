@@ -111,7 +111,8 @@ const el = (tag, attrs = {}, ...children) => {
   for (const [k, v] of Object.entries(attrs)) {
     if (k === "class") n.className = v;
     else if (k === "text") n.textContent = v;
-    else if (k === "open" && v) n.setAttribute("open", "");
+    else if (k === "open") { if (v) n.setAttribute("open", ""); }
+    else if (k === "hidden") { if (v) n.setAttribute("hidden", ""); }
     else if (k === "dataset") Object.assign(n.dataset, v);
     else n.setAttribute(k, v);
   }

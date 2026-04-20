@@ -104,6 +104,33 @@ body {
   text-transform: uppercase;
   color: var(--muted);
 }
+
+.filter-bar {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.filter-chip {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1.5px solid var(--separator);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+.filter-chip:active { transform: scale(0.96); }
+.filter-chip.is-active { background: var(--chip-bg); color: var(--chip-fg); border-color: transparent; }
+.filter-chip.is-active[data-type="limited"] { background: var(--chip-limited-bg); color: var(--chip-limited-fg); }
+.filter-chip.is-active[data-type="streaming"] { background: var(--chip-stream-bg); color: var(--chip-stream-fg); }
 .app-header__sync[data-status="saved"] { color: #166534; }
 .app-header__sync[data-status="error"] { color: var(--level-must); }
 

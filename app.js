@@ -32,6 +32,22 @@ const LEVEL_LABEL = {
   not: "Skip",
 };
 
+const TYPES = ["wide", "limited", "streaming"];
+const FILTER_KEY = "upcoming:filters";
+const filters = (() => {
+  try {
+    const saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
+    if (saved && typeof saved === "object") {
+      return { wide: !!saved.wide, limited: !!saved.limited, streaming: !!saved.streaming };
+    }
+  } catch {}
+  return { wide: true, limited: true, streaming: true };
+})();
+const saveFilters = () => {
+  try { localStorage.setItem(FILTER_KEY, JSON.stringify(filters)); } catch {}
+};
+const passesFilter = (m) => filters[m.release_type] !== false;
+
 const fmtDateShort = (iso) => {
   const d = new Date(iso + "T12:00:00");
   return d.toLocaleDateString(undefined, { weekday: "short", month: "long", day: "numeric" });
@@ -191,10 +207,12 @@ function renderDateGroup([date, items]) {
 
 function renderMonth(bundle) {
   const key = monthKeyOf(bundle);
+  const filtered = bundle.releases.filter(passesFilter);
+  if (!filtered.length) return null;
+
   const open = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
   const isPast = key < CURRENT_MONTH_KEY;
-  const groups = groupByDate(bundle.releases);
-  const count = bundle.releases.length;
+  const groups = groupByDate(filtered);
 
   return el("details", {
       class: isPast ? "month month--past" : "month",
@@ -204,10 +222,21 @@ function renderMonth(bundle) {
     el("summary", { class: "month__summary" },
       el("span", { class: "month__chevron", "aria-hidden": "true" }),
       el("span", { class: "month__name", text: bundle.month }),
-      el("span", { class: "month__count", text: `${count}` }),
+      el("span", { class: "month__count", text: `${filtered.length}` }),
     ),
     el("div", { class: "month__body" }, ...groups.map(renderDateGroup)),
   );
+}
+
+function sortMonthOrder(bundles) {
+  const past = [];
+  const rest = [];
+  for (const b of bundles) {
+    (monthKeyOf(b) < CURRENT_MONTH_KEY ? past : rest).push(b);
+  }
+  rest.sort((a, b) => monthKeyOf(a).localeCompare(monthKeyOf(b)));
+  past.sort((a, b) => monthKeyOf(a).localeCompare(monthKeyOf(b)));
+  return [...rest, ...past];
 }
 
 // ---------- Interests tab rendering ----------
@@ -234,6 +263,7 @@ function renderInterestsTab(bundles) {
       cast: "—",
       tmdb_id: meta.tmdb_id || null,
     };
+    if (!passesFilter(movie)) continue;
     if (grouped[meta.level]) grouped[meta.level].push(movie);
   }
 
@@ -275,21 +305,26 @@ function renderInterestsTab(bundles) {
 
 function renderYearTab(bundles) {
   bundles = bundles.filter((b) => b.releases && b.releases.length);
-  bundles.sort((a, b) => monthKeyOf(a).localeCompare(monthKeyOf(b)));
+  bundles = sortMonthOrder(bundles);
 
   const list = document.getElementById("list");
   list.innerHTML = "";
 
+  const rendered = [];
+  for (const b of bundles) {
+    const node = renderMonth(b);
+    if (node) rendered.push(node);
+  }
+
   const empty = document.getElementById("empty-year");
-  if (!bundles.length) { empty.hidden = false; return; }
+  if (!rendered.length) {
+    empty.textContent = "No releases match current filters.";
+    empty.hidden = false;
+    return;
+  }
   empty.hidden = true;
 
-  for (const b of bundles) list.appendChild(renderMonth(b));
-
-  requestAnimationFrame(() => {
-    const current = list.querySelector(`[data-month-key="${CURRENT_MONTH_KEY}"]`);
-    if (current) current.scrollIntoView({ block: "start", behavior: "instant" });
-  });
+  for (const node of rendered) list.appendChild(node);
 }
 
 // ---------- Tabs ----------
@@ -317,6 +352,24 @@ function switchTab(tab) {
 document.querySelectorAll(".tab-bar__btn").forEach((b) => {
   b.addEventListener("click", () => switchTab(b.dataset.tab));
 });
+
+function syncFilterChips() {
+  for (const chip of document.querySelectorAll(".filter-chip")) {
+    chip.classList.toggle("is-active", filters[chip.dataset.type] !== false);
+  }
+}
+
+document.querySelectorAll(".filter-chip").forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const t = chip.dataset.type;
+    filters[t] = !filters[t];
+    saveFilters();
+    syncFilterChips();
+    if (activeTab === "year") renderYearTab(allBundles);
+    else renderInterestsTab(allBundles);
+  });
+});
+syncFilterChips();
 
 // ---------- PAT dialog ----------
 

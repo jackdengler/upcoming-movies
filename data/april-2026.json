@@ -28,6 +28,18 @@
       "notes": "Before the American Revolution, there was a revelation."
     },
     {
+      "tmdb_id": 1325734,
+      "date": "2026-04-03",
+      "title": "The Drama",
+      "director": "Kristoffer Borgli",
+      "studio": "A24",
+      "budget_usd": 28000000,
+      "release_type": "wide",
+      "genre": "Romance / Comedy / Drama",
+      "cast": "Zendaya, Robert Pattinson, Mamoudou Athie, Alana Haim",
+      "notes": "Witness the wedding of the year."
+    },
+    {
       "tmdb_id": 1418657,
       "date": "2026-04-04",
       "title": "The Yeti",
@@ -122,6 +134,42 @@
       "genre": "Action / Crime / Thriller",
       "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Ryan Allen",
       "notes": "Small town. Big secret."
+    },
+    {
+      "tmdb_id": 1307373,
+      "date": "2026-04-17",
+      "title": "Wasteman",
+      "director": "Cal McMau",
+      "studio": "Bankside Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "David Jonsson, Tom Blyth, Alex Hassell, Neil Linpow",
+      "notes": "A bold new vision of life inside."
+    },
+    {
+      "tmdb_id": 1242265,
+      "date": "2026-04-24",
+      "title": "Fuze",
+      "director": "David Mackenzie",
+      "studio": "Anton",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Crime / Thriller",
+      "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
+      "notes": "Down to the wire."
+    },
+    {
+      "tmdb_id": 1317149,
+      "date": "2026-04-24",
+      "title": "I Swear",
+      "director": "Kirk Jones",
+      "studio": "One Story High",
+      "budget_usd": 6000000,
+      "release_type": "wide",
+      "genre": "Drama / History",
+      "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
+      "notes": "I blink. I twitch. I jump. I click. I whistle. I shout."
     }
   ]
 }

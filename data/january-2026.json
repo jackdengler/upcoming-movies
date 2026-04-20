@@ -76,6 +76,18 @@
       "notes": "Fear is the new faith."
     },
     {
+      "tmdb_id": 1276521,
+      "date": "2026-01-16",
+      "title": "Charlie the Wonderdog",
+      "director": "Shea Wageman",
+      "studio": "ICON Creative Studio",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Action / Adventure / Comedy / Family",
+      "cast": "Owen Wilson, Dawson Littman, Tabitha St. Germain, Sebastian Billingsley-Rodriguez",
+      "notes": "He's a good boy… most of the time."
+    },
+    {
       "tmdb_id": 1412598,
       "date": "2026-01-16",
       "title": "Killer Whale",
@@ -158,6 +170,18 @@
       "genre": "Action / Crime / Thriller",
       "cast": "Jason Statham, Bodhi Rae Breathnach, Naomi Ackie, Daniel Mays",
       "notes": "Her safety. His mission."
+    },
+    {
+      "tmdb_id": 1196067,
+      "date": "2026-01-30",
+      "title": "Worldbreaker",
+      "director": "Brad Anderson",
+      "studio": "23ten",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Science Fiction / Action / Horror",
+      "cast": "Milla Jovovich, Luke Evans, Billie Boullet, Meadow Williams",
+      "notes": "The future belongs to those who fight."
     }
   ]
 }

@@ -28,6 +28,18 @@
       "notes": "Transform your destiny."
     },
     {
+      "tmdb_id": 1314481,
+      "date": "2026-05-01",
+      "title": "The Devil Wears Prada 2",
+      "director": "David Frankel",
+      "studio": "20th Century Studios",
+      "budget_usd": 100000000,
+      "release_type": "wide",
+      "genre": "Drama / Comedy",
+      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+      "notes": "Icons reign forever."
+    },
+    {
       "tmdb_id": 931285,
       "date": "2026-05-08",
       "title": "Mortal Kombat II",
@@ -74,6 +86,18 @@
       "genre": "Drama / Mystery / Thriller",
       "cast": "Kara Young, Mallori Johnson, Sterling K. Brown, Janelle Monáe",
       "notes": "Make your daddy dead. Real dead."
+    },
+    {
+      "tmdb_id": 1339713,
+      "date": "2026-05-15",
+      "title": "Obsession",
+      "director": "Curry Barker",
+      "studio": "Tea Shop Productions",
+      "budget_usd": 1000000,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
+      "notes": "Be careful who you wish for…"
     },
     {
       "tmdb_id": 1227877,

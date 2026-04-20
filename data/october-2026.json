@@ -4,6 +4,30 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1248832,
+      "date": "2026-10-02",
+      "title": "Digger",
+      "director": "Alejandro G. Iñárritu",
+      "studio": "Warner Bros. Pictures",
+      "budget_usd": 125000000,
+      "release_type": "wide",
+      "genre": "Comedy / Drama",
+      "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
+      "notes": "A comedy of catastrophic proportions."
+    },
+    {
+      "tmdb_id": 1283515,
+      "date": "2026-10-02",
+      "title": "Verity",
+      "director": "Michael Showalter",
+      "studio": "Eat the Cat",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Mystery / Thriller",
+      "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1400837,
       "date": "2026-10-09",
       "title": "Other Mommy",
@@ -25,6 +49,18 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Mikey Madison, Jeremy Allen White, Jeremy Strong, Bill Burr",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1503762,
+      "date": "2026-10-16",
+      "title": "Sense and Sensibility",
+      "director": "Georgia Oakley",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance",
+      "cast": "Daisy Edgar-Jones, Esmé Creed-Miles, Caitríona Balfe, Bodhi Rae Breathnach",
       "notes": ""
     },
     {

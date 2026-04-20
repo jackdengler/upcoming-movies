@@ -16,6 +16,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1287141,
+      "date": "2026-02-06",
+      "title": "Pillion",
+      "director": "Harry Lighton",
+      "studio": "BBC Film",
+      "budget_usd": 1000000,
+      "release_type": "limited",
+      "genre": "Romance / Drama / Comedy",
+      "cast": "Harry Melling, Alexander Skarsgård, Lesley Sharp, Douglas Hodge",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1291335,
       "date": "2026-02-06",
       "title": "Solo Mio",
@@ -40,6 +52,18 @@
       "notes": "Embrace your fears."
     },
     {
+      "tmdb_id": 1193501,
+      "date": "2026-02-06",
+      "title": "Whistle",
+      "director": "Corin Hardy",
+      "studio": "No Trace Camping",
+      "budget_usd": 2000000,
+      "release_type": "wide",
+      "genre": "Horror / Mystery",
+      "cast": "Dafne Keen, Sophie Nélisse, Sky Yang, Jhaleil Swaby",
+      "notes": "Don't blow it."
+    },
+    {
       "tmdb_id": 1316092,
       "date": "2026-02-13",
       "title": "\"Wuthering Heights\"",
@@ -50,6 +74,18 @@
       "genre": "Romance / Drama",
       "cast": "Margot Robbie, Jacob Elordi, Hong Chau, Alison Oliver",
       "notes": "Come undone."
+    },
+    {
+      "tmdb_id": 696393,
+      "date": "2026-02-13",
+      "title": "Cold Storage",
+      "director": "Jonny Campbell",
+      "studio": "Pariah",
+      "budget_usd": 10000000,
+      "release_type": "wide",
+      "genre": "Horror / Science Fiction / Comedy",
+      "cast": "Joe Keery, Georgina Campbell, Liam Neeson, Lesley Manville",
+      "notes": "If it spreads, you're dead."
     },
     {
       "tmdb_id": 1171145,
@@ -88,6 +124,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1397335,
+      "date": "2026-02-13",
+      "title": "Hunting Jessica Brok",
+      "director": "Alastair Orr",
+      "studio": "Known Associates Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Danica De La Rey, Clyde Berning, Richard Lukunku, Anthony Oseyemi",
+      "notes": "Don't wound what you can't kill."
+    },
+    {
       "tmdb_id": 1470130,
       "date": "2026-02-13",
       "title": "The Mortuary Assistant",
@@ -98,6 +146,18 @@
       "genre": "Horror / Mystery",
       "cast": "Willa Holland, Paul Sparks, John Adams, Mark Steger",
       "notes": "Alone with the dead."
+    },
+    {
+      "tmdb_id": 1375831,
+      "date": "2026-02-20",
+      "title": "Diabolic",
+      "director": "Daniel J. Phillips",
+      "studio": "Sunjive Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Elizabeth Cullen, John Harlan Kim, Mia Challis, Genevieve Mooy",
+      "notes": "God forgives... evil doesn't."
     },
     {
       "tmdb_id": 467905,

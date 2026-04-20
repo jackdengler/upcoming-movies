@@ -25,6 +25,13 @@ const MAX_PER_MONTH = 75;
 const DISCOVER_PAGES = 10;
 const MIN_POPULARITY_NON_MAJOR = 6;
 
+// IMDb IDs of films that MUST be included if they're in the month, regardless
+// of how TMDB's discover ranks or dates them. For films whose primary_release_date
+// is stale, wrong, or ranked too low to surface via discover.
+const FORCE_INCLUDE_IMDB = [
+  "tt11378946", // Michael (Lionsgate, Apr 24 2026, Antoine Fuqua)
+];
+
 // Major studios / distributors — if a movie has one of these in production_companies,
 // it's guaranteed to be included regardless of popularity or the monthly cap.
 const MAJOR_STUDIOS = new Set([
@@ -124,6 +131,20 @@ const hasMajorStudio = (companies) =>
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const list = await discover();
+
+// Force-include targeted films by IMDb ID (bypasses discover's ranking).
+for (const imdbId of FORCE_INCLUDE_IMDB) {
+  try {
+    const r = await get(`/find/${imdbId}?external_source=imdb_id`);
+    const movie = r.movie_results?.[0];
+    if (movie && !list.some((m) => m.id === movie.id)) {
+      list.push(movie);
+    }
+  } catch (e) {
+    console.warn(`force-include ${imdbId} failed:`, e.message);
+  }
+}
+
 const releases = [];
 for (const m of list) {
   try {

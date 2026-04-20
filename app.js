@@ -251,6 +251,17 @@ function renderMonth(bundle) {
     expanded[key] = details.open;
     saveExpanded();
   });
+  // Backup: capture summary taps in case toggle event doesn't fire
+  // consistently (seen on iOS standalone PWA edge cases).
+  const summary = details.querySelector(".month__summary");
+  if (summary) {
+    summary.addEventListener("click", () => {
+      requestAnimationFrame(() => {
+        expanded[key] = details.open;
+        saveExpanded();
+      });
+    });
+  }
 
   return details;
 }

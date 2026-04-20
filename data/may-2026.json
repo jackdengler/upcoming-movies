@@ -4,6 +4,18 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1360812,
+      "date": "2026-05-01",
+      "title": "An Autumn Summer",
+      "director": "Jared Isaac",
+      "studio": "Practical",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Family / Romance",
+      "cast": "Lukita Maxwell, Mark McKenna, Louise Barnes, Katie Baker",
+      "notes": ""
+    },
+    {
       "tmdb_id": 539745,
       "date": "2026-05-01",
       "title": "Animal Farm",
@@ -76,6 +88,18 @@
       "notes": "Even when they're gone, they ain't really gone"
     },
     {
+      "tmdb_id": 1654797,
+      "date": "2026-05-01",
+      "title": "Miss Universe Philippines 2026",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "—",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1290792,
       "date": "2026-05-01",
       "title": "One Spoon of Chocolate",
@@ -86,6 +110,18 @@
       "genre": "Action / Drama / Thriller",
       "cast": "Shameik Moore, Blair Underwood, RJ Cyler, Paris Jackson",
       "notes": "He has nowhere to go. They have nowhere to hide."
+    },
+    {
+      "tmdb_id": 1537682,
+      "date": "2026-05-01",
+      "title": "Prick",
+      "director": "Brian Foster",
+      "studio": "Cat Fantastic Pictures",
+      "budget_usd": 3000,
+      "release_type": "streaming",
+      "genre": "Crime / Drama",
+      "cast": "Patrick Loree, Pete Berwick, Jamie Foster, Ethan Serpan",
+      "notes": ""
     },
     {
       "tmdb_id": 1007757,
@@ -100,6 +136,30 @@
       "notes": "Transform your destiny."
     },
     {
+      "tmdb_id": 1667759,
+      "date": "2026-05-01",
+      "title": "The Problem Drinker",
+      "director": "Kyle Kouri",
+      "studio": "Slashtag Cinema",
+      "budget_usd": 8000,
+      "release_type": "streaming",
+      "genre": "Drama / Comedy",
+      "cast": "Kyle Kouri, Matei Clark, Mimi Barks, Travis Bacon",
+      "notes": "\"A Movable Feast for Dirtbags.\""
+    },
+    {
+      "tmdb_id": 1667178,
+      "date": "2026-05-01",
+      "title": "To Do",
+      "director": "Tyler Toledo",
+      "studio": "—",
+      "budget_usd": 1000,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Kyle Towey, Luigi Aiello, Gracie Whaley, Vivi Aiello",
+      "notes": "Last Summer. Last Trip. Last Chance."
+    },
+    {
       "tmdb_id": 1575806,
       "date": "2026-05-02",
       "title": "Kentucky Roses",
@@ -112,6 +172,42 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1603175,
+      "date": "2026-05-03",
+      "title": "72 Hours on Gardraxis",
+      "director": "Benjamin Cragle",
+      "studio": "—",
+      "budget_usd": 5000,
+      "release_type": "streaming",
+      "genre": "Science Fiction / Drama",
+      "cast": "Phil Petranto, Marissa Hennen, Leigh LeFevre, Benjamin Cragle",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1665695,
+      "date": "2026-05-04",
+      "title": "Dr. Q",
+      "director": "White Cross",
+      "studio": "Tatu Behind the Stars",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama",
+      "cast": "Tara Reid",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1662692,
+      "date": "2026-05-05",
+      "title": "Before I Go",
+      "director": "Dominic Salazar",
+      "studio": "BROG studios",
+      "budget_usd": 20,
+      "release_type": "wide",
+      "genre": "Drama / Family",
+      "cast": "Dominic Salazar, Paxton Rain Salazar, Summer Keilani Salazar",
+      "notes": "I miss the way it all began."
+    },
+    {
       "tmdb_id": 1426728,
       "date": "2026-05-05",
       "title": "Taco Tuesday",
@@ -122,6 +218,18 @@
       "genre": "Action / Comedy",
       "cast": "Emma Anne Wedemeyer, Triston Dye, Silas Jackson, Caleb Schulman",
       "notes": "Tacos. Bullets. No Leftovers."
+    },
+    {
+      "tmdb_id": 1662191,
+      "date": "2026-05-06",
+      "title": "Portia",
+      "director": "Joshua Armell",
+      "studio": "—",
+      "budget_usd": 172,
+      "release_type": "streaming",
+      "genre": "Horror / Drama",
+      "cast": "Wren Woodward-Aviles, Errol Fern, Phoebe Grech, Joshua Armell",
+      "notes": ""
     },
     {
       "tmdb_id": 1398655,
@@ -208,6 +316,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1589579,
+      "date": "2026-05-08",
+      "title": "Stay Alive. Defy. Overcome",
+      "director": "Danny Scott",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Action / Thriller / Horror",
+      "cast": "Danny Scott, Saedreon Anderson, Cameron Ashley, Giovanni Casanova",
+      "notes": "Fight the night."
+    },
+    {
       "tmdb_id": 1301421,
       "date": "2026-05-08",
       "title": "The Sheep Detectives",
@@ -232,6 +352,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1664855,
+      "date": "2026-05-09",
+      "title": "short stop",
+      "director": "James Hale",
+      "studio": "Night Owl Prodution films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Tucker Henderson, Daniel Porthe, Bryce Burckart, Ethan Snider",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1526387,
       "date": "2026-05-09",
       "title": "The Good Assassin",
@@ -242,6 +374,30 @@
       "genre": "Action / Comedy / Drama",
       "cast": "Anthony Carastro, Matthew Wosczyna, Jordan Baer, Atlas Cannon",
       "notes": "Live a life worth killing for."
+    },
+    {
+      "tmdb_id": 1668715,
+      "date": "2026-05-09",
+      "title": "UFC 328: Chimaev vs Strickland",
+      "director": "—",
+      "studio": "Ultimate Fighting Championship",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Action",
+      "cast": "Khamzat Chimaev, Sean Strickland, Joshua Van, Tatsuro Taira",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1651240,
+      "date": "2026-05-10",
+      "title": "Blooky: The Book Who Wanted To Be Read",
+      "director": "Pablo Díaz De León Hicks",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Adventure / Family",
+      "cast": "Mengyuan (Cherry) Guo, Pablo Díaz De León Hicks",
+      "notes": ""
     },
     {
       "tmdb_id": 1658982,
@@ -256,6 +412,42 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1667956,
+      "date": "2026-05-11",
+      "title": "Observational Studies",
+      "director": "Brendon Schnathorst",
+      "studio": "Room 108",
+      "budget_usd": 20,
+      "release_type": "streaming",
+      "genre": "Horror",
+      "cast": "Olivia Miller, Jocelyn Loveless, Brendon Schnathorst, Brendon Schnathorst",
+      "notes": "\"Come to Me\""
+    },
+    {
+      "tmdb_id": 1662716,
+      "date": "2026-05-11",
+      "title": "Threadbare",
+      "director": "Dominic Salazar",
+      "studio": "BROG studios",
+      "budget_usd": 60,
+      "release_type": "wide",
+      "genre": "Drama / Family / Fantasy",
+      "cast": "Dominic Salazar, Paxton Rain Salazar, Emma Armstrong",
+      "notes": "The kingdoms just changing."
+    },
+    {
+      "tmdb_id": 1662440,
+      "date": "2026-05-12",
+      "title": "Bloodthirsty",
+      "director": "—",
+      "studio": "GoGetHer Productions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Horror",
+      "cast": "—",
+      "notes": "NO WAY OUT"
+    },
+    {
       "tmdb_id": 1439930,
       "date": "2026-05-12",
       "title": "The Punisher: One Last Kill",
@@ -266,6 +458,42 @@
       "genre": "Action / Crime / Drama",
       "cast": "Jon Bernthal, Jason R. Moore, Roe Rancell, Mila Jaymes",
       "notes": "To find peace, he will lose it."
+    },
+    {
+      "tmdb_id": 1637087,
+      "date": "2026-05-13",
+      "title": "Good Omens 3",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Fantasy / Comedy / Drama",
+      "cast": "David Tennant, Michael Sheen",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1653738,
+      "date": "2026-05-13",
+      "title": "Maid Robot 2",
+      "director": "Jamie Grefe",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Science Fiction / Thriller",
+      "cast": "Elizabeth Rath, Viktoriia Starodubtseva, Jamie Grefe, Chris Spinelli",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1196831,
+      "date": "2026-05-15",
+      "title": "A Guardian's Heart",
+      "director": "R. Michael Givens",
+      "studio": "Heart Stopper Productions",
+      "budget_usd": 1000000,
+      "release_type": "wide",
+      "genre": "Action / Adventure / Thriller",
+      "cast": "Alexis Baca, Laura Mason, Wayne D Burdette Jr.",
+      "notes": ""
     },
     {
       "tmdb_id": 1288229,
@@ -316,6 +544,18 @@
       "notes": "They're coming for your coin."
     },
     {
+      "tmdb_id": 1665429,
+      "date": "2026-05-15",
+      "title": "Lisa Ann Walter: It Was an Accident",
+      "director": "Lisa Ann Walter",
+      "studio": "Art & Industry",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Lisa Ann Walter, Sheryl Lee Ralph",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1282774,
       "date": "2026-05-15",
       "title": "Magic Hour",
@@ -340,6 +580,30 @@
       "notes": "Nobody is above suspicion... even the dead."
     },
     {
+      "tmdb_id": 1663527,
+      "date": "2026-05-16",
+      "title": "Best Served Cold: A Hannah Swensen Mystery",
+      "director": "—",
+      "studio": "Lighthouse Pictures",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Mystery / TV Movie",
+      "cast": "Alison Sweeney, Victor Webster, Barbara Niven",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1638300,
+      "date": "2026-05-16",
+      "title": "Ronda Rousey vs. Gina Carano",
+      "director": "—",
+      "studio": "Most Valuable Promotions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Action",
+      "cast": "Ronda Rousey, Gina Carano, Francis Ngannou, Philipe Lins",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1660612,
       "date": "2026-05-19",
       "title": "Wanda Sykes: Legacy",
@@ -350,6 +614,18 @@
       "genre": "Comedy",
       "cast": "Wanda Sykes",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1663287,
+      "date": "2026-05-20",
+      "title": "Paul and Greg and Amelia",
+      "director": "Michael Pomeroy",
+      "studio": "Montague Street Films",
+      "budget_usd": 100000,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Quinn Jackson, Christopher Ryan, Matt Hardy, Terra Layne",
+      "notes": "\"What happened in that room?\""
     },
     {
       "tmdb_id": 1380291,
@@ -460,6 +736,30 @@
       "notes": "When the system fails,the Justice Warriors prevail"
     },
     {
+      "tmdb_id": 1610524,
+      "date": "2026-05-24",
+      "title": "Ink Between the Lines",
+      "director": "Tatiana Ferrell",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama",
+      "cast": "Imani Bentley, Khloe Bell, Tatiana Ferrell, Jaylie Farrow",
+      "notes": "Ink always dries."
+    },
+    {
+      "tmdb_id": 1665664,
+      "date": "2026-05-25",
+      "title": "Weeyagale",
+      "director": "Ainslie Senfuka",
+      "studio": "Roundhouse",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Esme Green, Edith Kaggwa, Abiah Ndagire",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1623517,
       "date": "2026-05-26",
       "title": "Shocktopus",
@@ -469,6 +769,18 @@
       "release_type": "streaming",
       "genre": "Horror",
       "cast": "Kevin Coolidge, Tim Hatch, Natalie Himmelberger, Titus Himmelberger",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1665527,
+      "date": "2026-05-28",
+      "title": "Hope",
+      "director": "Jamal Ademola",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "—",
       "notes": ""
     },
     {
@@ -484,6 +796,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1665540,
+      "date": "2026-05-28",
+      "title": "White Agbada",
+      "director": "Lande Yoosuf",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Idara Victor, Tosin Morohunfola, Nosarieme Garrick, Cynthia Francillon",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1083381,
       "date": "2026-05-29",
       "title": "Backrooms",
@@ -494,18 +818,6 @@
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1274757,
-      "date": "2026-05-29",
-      "title": "Forastera",
-      "director": "Lucía Aleñar Iglesias",
-      "studio": "Lastor Media",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Zoe Stein, Lluís Homar, Núria Prims, Marta Angelat",
-      "notes": "A family where the hierarchy is overturned and the characters will have to find a new status quo."
     },
     {
       "tmdb_id": 1318413,
@@ -542,6 +854,54 @@
       "genre": "Action / Crime / Thriller",
       "cast": "Xie Miao, Joe Taslim, Yang Enyou, Yayan Ruhian",
       "notes": "To save their loved ones, they will fight everyone."
+    },
+    {
+      "tmdb_id": 1645668,
+      "date": "2026-05-30",
+      "title": "A Butler's Job",
+      "director": "Madison Arellano, Faye Kennedy",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Action / Mystery / Family / Comedy / Adventure",
+      "cast": "—",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1663525,
+      "date": "2026-05-30",
+      "title": "Haunted Harmony Mysteries: Key to the Castle",
+      "director": "—",
+      "studio": "Front Street Pictures",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Mystery / TV Movie",
+      "cast": "Tamera Mowry-Housley, Marco Grazzini",
+      "notes": "Behind the scenes. Beyond the grave"
+    },
+    {
+      "tmdb_id": 1664518,
+      "date": "2026-05-30",
+      "title": "Nightmares Unleashed 2: Joseph's Revenge",
+      "director": "Matthew Mark Hunter",
+      "studio": "MMH Productions",
+      "budget_usd": 6000,
+      "release_type": "limited",
+      "genre": "Fantasy / Horror / Romance / Thriller",
+      "cast": "Alynn Rixo, Matthew Mark Hunter, Ira Heiden, Luke Azevedo",
+      "notes": "This Nightmare Never Ends"
+    },
+    {
+      "tmdb_id": 1663803,
+      "date": "2026-05-30",
+      "title": "Ryzyup",
+      "director": "Griffin Conner",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "—",
+      "notes": ""
     }
   ]
 }

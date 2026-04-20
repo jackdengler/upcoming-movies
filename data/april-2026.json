@@ -4,6 +4,18 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1674130,
+      "date": "2026-04-01",
+      "title": "A Single Christian",
+      "director": "Jurian Isabelle",
+      "studio": "Tubi",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Thriller",
+      "cast": "Kendria Bland, Lashawn Dawson, Mikeal Griggs, Louis McKnight",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
@@ -40,16 +52,16 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1423251,
+      "tmdb_id": 1659690,
       "date": "2026-04-03",
-      "title": "Biker",
-      "director": "Abhilash Reddy",
-      "studio": "UV Creations",
+      "title": "The Secret Between Us",
+      "director": "Tamera Hill",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Adventure / Drama",
-      "cast": "Sharwanand, Dr. Rajasekhar, Malavika Nair, Shashank",
-      "notes": "Go All The Way"
+      "genre": "Drama / Family",
+      "cast": "Karen Abercrombie, Lisa Arrindell, Reggie Currelley, Denzell Dandridge",
+      "notes": ""
     },
     {
       "tmdb_id": 1638782,
@@ -76,6 +88,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1653840,
+      "date": "2026-04-04",
+      "title": "Rescued by Faith: The Connie and Larry Van Oosten Story",
+      "director": "Lee Gabiana",
+      "studio": "Lifetime",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama / TV Movie",
+      "cast": "Nancy Travis, Mike Pniewski, Jake Allyn, Clint Carmichael",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1418657,
       "date": "2026-04-04",
       "title": "The Yeti",
@@ -86,6 +110,18 @@
       "genre": "Horror / Thriller",
       "cast": "Brittany Allen, Eric Nelsen, Corbin Bernsen, William Sadler",
       "notes": "Fear is primal."
+    },
+    {
+      "tmdb_id": 1665594,
+      "date": "2026-04-07",
+      "title": "Blink Twice If You're Dead",
+      "director": "Victor Courtright",
+      "studio": "Dropout",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Animation / Mystery / Comedy",
+      "cast": "Ify Nwadiwe, Victor Courtright, Caitlin Reilly",
+      "notes": ""
     },
     {
       "tmdb_id": 1665224,
@@ -112,6 +148,18 @@
       "notes": "No flag, no backup, and no mercy."
     },
     {
+      "tmdb_id": 1647508,
+      "date": "2026-04-07",
+      "title": "Winter: Battleground",
+      "director": "David Christopher Pitt",
+      "studio": "Epic Pictures Group",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Science Fiction / Action / Thriller / War",
+      "cast": "Donald Cerrone, Johnny Messner, Kayleigh Gilbert",
+      "notes": "THE LAST FREE MAN ALIVE"
+    },
+    {
       "tmdb_id": 1422120,
       "date": "2026-04-08",
       "title": "Mermaid",
@@ -134,6 +182,18 @@
       "genre": "Comedy / Drama",
       "cast": "Keanu Reeves, Jonah Hill, Cameron Diaz, Matt Bomer",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1661946,
+      "date": "2026-04-09",
+      "title": "Watching Mr. Pearson",
+      "director": "Dillon Bentlage",
+      "studio": "KT pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy / History",
+      "cast": "Hugo Armstrong, Dominika Zawada, Luis Miguel Garcia Rizo, Sam Bullington",
+      "notes": "Who sticks around when it all goes away?"
     },
     {
       "tmdb_id": 1292415,
@@ -196,6 +256,18 @@
       "notes": "Protect your mind."
     },
     {
+      "tmdb_id": 1320006,
+      "date": "2026-04-10",
+      "title": "PH-1",
+      "director": "Mark Kassen",
+      "studio": "Like Minded Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Mystery / Thriller",
+      "cast": "Mark Kassen, Abubakar Salim, Jesse L. Martin, Dina Shihabi",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1659351,
       "date": "2026-04-10",
       "title": "The Caretaker",
@@ -218,6 +290,18 @@
       "genre": "Crime / Comedy",
       "cast": "Michaela Coel, Ian McKellen, Jessica Gunning, James Corden",
       "notes": "Art can be copied. Artists cannot."
+    },
+    {
+      "tmdb_id": 1465827,
+      "date": "2026-04-10",
+      "title": "The Travel Companion",
+      "director": "Travis Wood, Alex Mallis",
+      "studio": "Art School Athletics",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Tristan Turner, Anthony Oberbeck, Naomi Asa, Joanna Arnow",
+      "notes": ""
     },
     {
       "tmdb_id": 1290417,
@@ -256,6 +340,42 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1619328,
+      "date": "2026-04-11",
+      "title": "Bee My Love",
+      "director": "Christopher Giroux",
+      "studio": "Precious Metal Productions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Romance / Comedy / TV Movie",
+      "cast": "Ann Pirvu, Robin Dunne, Brigitte Kingsley, Emily Alatalo",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1665830,
+      "date": "2026-04-11",
+      "title": "I Have to Kill My Neighbor",
+      "director": "Tyson Caron",
+      "studio": "Black Watch Entertainment",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Thriller / TV Movie",
+      "cast": "Sarah Luby, Lauren Cochrane, Brynn Godenir, Derek Kun",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1660915,
+      "date": "2026-04-11",
+      "title": "TNA Rebellion 2026",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "—",
+      "cast": "Trey McBrayer, Adeel Alam, Leon Slater, Cederick Johnson",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1604975,
       "date": "2026-04-12",
       "title": "AEW Dynasty 2026",
@@ -280,15 +400,27 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1669929,
+      "tmdb_id": 1491758,
       "date": "2026-04-13",
-      "title": "The Gold Trail",
-      "director": "Daniel Duche",
-      "studio": "—",
+      "title": "A Royal Romance in Ibiza",
+      "director": "Graham Pritz-Bennett",
+      "studio": "JJLove Productions",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Action / Drama",
-      "cast": "Mario Castañeda, Milhem Cortaz, Jakora Xochitl, Wendel Bezerra",
+      "release_type": "streaming",
+      "genre": "Romance",
+      "cast": "Caprice Bourret, Matthew Pohlkamp, Ciro de Luca, Tessa Wood",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1673175,
+      "date": "2026-04-14",
+      "title": "Joe Dombrowski: Dad on Arrival",
+      "director": "Jesse Chieffo",
+      "studio": "800 Pound Gorilla Media",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Joe Dombrowski",
       "notes": ""
     },
     {
@@ -364,18 +496,6 @@
       "notes": "Sickness or pleasure?"
     },
     {
-      "tmdb_id": 1239134,
-      "date": "2026-04-16",
-      "title": "Bhooth Bangla",
-      "director": "Priyadarshan",
-      "studio": "Balaji Motion Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Akshay Kumar, Wamiqa Gabbi, Paresh Rawal, Tabu",
-      "notes": ""
-    },
-    {
       "tmdb_id": 949536,
       "date": "2026-04-16",
       "title": "Kill Code",
@@ -388,6 +508,18 @@
       "notes": "JUDGE. EXECUTIONER. FREEDOM."
     },
     {
+      "tmdb_id": 1653671,
+      "date": "2026-04-17",
+      "title": "Almost Us",
+      "director": "Anthony Bawn",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "—",
+      "cast": "Anthony Bawn, Adri Kennedy, Isaiah Ware, Devere Rogers",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1243741,
       "date": "2026-04-17",
       "title": "Ballistic",
@@ -398,6 +530,18 @@
       "genre": "Action / Thriller",
       "cast": "Lena Headey, Enrico Colantoni, Amybeth McNulty, Michael Lipka",
       "notes": "A mother's pain, a bullet's purpose."
+    },
+    {
+      "tmdb_id": 1654515,
+      "date": "2026-04-17",
+      "title": "Bluebird",
+      "director": "Jay Arden Black",
+      "studio": "The Whale Husband",
+      "budget_usd": 50000,
+      "release_type": "wide",
+      "genre": "Science Fiction / Mystery / Romance / Comedy",
+      "cast": "David McElwee, Avery Joy Davis, Tony Bertele, Mark Aaron",
+      "notes": ""
     },
     {
       "tmdb_id": 1414413,
@@ -422,6 +566,18 @@
       "genre": "Comedy",
       "cast": "David Spade, Theo Von, Bobby Lee, Tim Dillon",
       "notes": "Some messes can't be cleaned up."
+    },
+    {
+      "tmdb_id": 1620655,
+      "date": "2026-04-17",
+      "title": "By His Hand",
+      "director": "Taylor Paur",
+      "studio": "Scryer Productions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama / Thriller",
+      "cast": "Ryann Bailey, Steve Luna, Chase Ramsey, Forrie J. Smith",
+      "notes": "Name the beast that lurks in the dark."
     },
     {
       "tmdb_id": 1337592,
@@ -460,6 +616,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1400756,
+      "date": "2026-04-17",
+      "title": "Mad Bills to Pay (or Destiny, dile que no soy malo)",
+      "director": "Joel Alfonso Vargas",
+      "studio": "Killer Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Juan Collado, Destiny Checo, Yohanna Florentino, Nathaly Navarro",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1364953,
       "date": "2026-04-17",
       "title": "Mārama",
@@ -484,18 +652,6 @@
       "notes": "Small town. Big secret."
     },
     {
-      "tmdb_id": 1668590,
-      "date": "2026-04-17",
-      "title": "Pahaad",
-      "director": "Tulsi Ghimire",
-      "studio": "A Bhaagyaratna Films Production",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Madan Krishna Shrestha, Sunil Thapa, Shiva Shrestha, Bipin Karki",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1657502,
       "date": "2026-04-17",
       "title": "Ramy Youssef: In Love",
@@ -508,6 +664,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1533820,
+      "date": "2026-04-17",
+      "title": "Return of The Mack",
+      "director": "Kamal Smith",
+      "studio": "GRAND RISING PRODUCTIONS, INC.",
+      "budget_usd": 500000,
+      "release_type": "streaming",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Clifton Powell, De'Aundre Bonds, Doug E. Fresh, Ebony Tates",
+      "notes": "Back for the Smoke"
+    },
+    {
       "tmdb_id": 1511057,
       "date": "2026-04-17",
       "title": "Roommates",
@@ -518,18 +686,6 @@
       "genre": "Comedy",
       "cast": "Sadie Sandler, Chloe East, Billy Bryk, Sarah Sherman",
       "notes": "One dorm. Zero boundaries."
-    },
-    {
-      "tmdb_id": 1461254,
-      "date": "2026-04-17",
-      "title": "Salmokji: Whispering Water",
-      "director": "Lee Sang-min",
-      "studio": "The LAMP",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror",
-      "cast": "Kim Hye-yoon, Lee Jong-won, Kim Jun-han, Kim Young-sung",
-      "notes": "Do not dare to leave"
     },
     {
       "tmdb_id": 1631668,
@@ -580,6 +736,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1529651,
+      "date": "2026-04-18",
+      "title": "Krypto Saves the Day!: Coastal Catastrophe",
+      "director": "—",
+      "studio": "DC Studios",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Animation / Family / Science Fiction / Comedy",
+      "cast": "—",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1665860,
       "date": "2026-04-18",
       "title": "Murder in the Dark",
@@ -616,16 +784,16 @@
       "notes": "THE AMERICAN NIGHTMARE VS. THE VIPER."
     },
     {
-      "tmdb_id": 1674749,
-      "date": "2026-04-18",
-      "title": "WWE WrestleMania 42 Saturday",
-      "director": "—",
-      "studio": "World Wrestling Entertainment (WWE)",
+      "tmdb_id": 1633462,
+      "date": "2026-04-20",
+      "title": "Brenda",
+      "director": "Henry Griffin",
+      "studio": "Sylvester Flytrap LLC",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Drama / Comedy",
-      "cast": "Cody Rhodes, Randy Orton, Gionna Daddio, Ana Stephanie Vaquer González",
-      "notes": "THE AMERICAN NIGHTMARE VS. THE VIPER."
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Ajay Naidu, Jamie Neumann, Heather Burns, Jay Chandrasekhar",
+      "notes": "Whoever that is..."
     },
     {
       "tmdb_id": 1318447,
@@ -662,6 +830,18 @@
       "genre": "Horror / Comedy",
       "cast": "Dina Silva, Pierre Tsigaridis, Stefanie Estes, Rocío de la Grana",
       "notes": "\"Beauty is only skin deep, she wants to see what's inside!\""
+    },
+    {
+      "tmdb_id": 1567151,
+      "date": "2026-04-24",
+      "title": "Nikki Glaser: Good Girl",
+      "director": "Hamish Hamilton",
+      "studio": "Done+Dusted",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Nikki Glaser",
+      "notes": ""
     },
     {
       "tmdb_id": 1472304,
@@ -710,6 +890,18 @@
       "genre": "Romance",
       "cast": "Tyler Hynes, Stacey Farber, Christine Ebersole, BJ Harrison",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1553990,
+      "date": "2026-04-25",
+      "title": "The Bad Samaritan",
+      "director": "Ryland Walker Knight",
+      "studio": "Capsaicinco",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "Sabrina Saleha, Chauné Mountainsong",
+      "notes": "She'll ruin your day."
     }
   ]
 }

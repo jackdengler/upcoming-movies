@@ -4,6 +4,30 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1630475,
+      "date": "2026-06-01",
+      "title": "Dead Roommate",
+      "director": "CJ Maxwell",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Comedy / Drama",
+      "cast": "Michael J. Wray, Alexandra Rose Horton, Alexis Longtin, Emily Jade Goodwin",
+      "notes": "Victor’s new roommate is not who he was expecting."
+    },
+    {
+      "tmdb_id": 1640436,
+      "date": "2026-06-01",
+      "title": "Roll the Clip!",
+      "director": "Andrew Reid",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Andrew Reid",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1484708,
       "date": "2026-06-01",
       "title": "Sugar Beach",
@@ -26,6 +50,30 @@
       "genre": "Thriller / Drama",
       "cast": "Til Schweiger, Philippe Reinhardt, Irina Kobzeva, Natan Paul-Collis",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1674159,
+      "date": "2026-06-01",
+      "title": "We Will Haunt Your Archive",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "—",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1580534,
+      "date": "2026-06-02",
+      "title": "Wet Paper Bag",
+      "director": "Adam Burke, Jud Nichols",
+      "studio": "Adam Burke Productions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Thriller / Drama / Crime",
+      "cast": "Adam Burke, Mike Bredon, Megan McNamara, Nicole Weber",
+      "notes": "No One Is Going Home The Same"
     },
     {
       "tmdb_id": 1675335,
@@ -220,6 +268,42 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1561360,
+      "date": "2026-06-12",
+      "title": "Swamped",
+      "director": "Jordyn Neumann",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "—",
+      "cast": "Emma Bogusz, Lorina Sediqi, Brooke King-Hill, Chase Fagen",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1578960,
+      "date": "2026-06-14",
+      "title": "Alma",
+      "director": "Gabi Allen",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama",
+      "cast": "Nicole Musi, Jerry Butler",
+      "notes": "A Final Goodbye"
+    },
+    {
+      "tmdb_id": 1651613,
+      "date": "2026-06-14",
+      "title": "Before Me",
+      "director": "Matthew Simpson",
+      "studio": "Absolution Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Angelo Rosario, Grace Berry, Jeffrey Poyo, Drew Russell",
+      "notes": "Who were you with..."
+    },
+    {
       "tmdb_id": 1648226,
       "date": "2026-06-14",
       "title": "UFC Freedom 250: Topuria vs. Gaethje",
@@ -364,6 +448,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1669263,
+      "date": "2026-06-23",
+      "title": "Fake Hundreds",
+      "director": "Spencer Levy",
+      "studio": "DOGNEWS",
+      "budget_usd": 50,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Stephen Levy",
+      "notes": "You can take it with you."
+    },
+    {
       "tmdb_id": 1382832,
       "date": "2026-06-23",
       "title": "Hungry",
@@ -374,18 +470,6 @@
       "genre": "Thriller / Horror",
       "cast": "Madison Davenport, Joaquim de Almeida, Tracey Bonner, Jim Meskimen",
       "notes": "This hippo isn't playing games."
-    },
-    {
-      "tmdb_id": 1669841,
-      "date": "2026-06-25",
-      "title": "Bleach: Thousand-Year Blood War – The Calamity",
-      "director": "Tomohisa Taguchi",
-      "studio": "Pierrot",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Adventure / Animation / Science Fiction / Fantasy",
-      "cast": "Masakazu Morita, Noriaki Sugiyama, Yuki Matsuoka, Hiroki Yasumoto",
-      "notes": "I choose the path of protecting others."
     },
     {
       "tmdb_id": 1630850,
@@ -422,18 +506,6 @@
       "genre": "Action / War",
       "cast": "Colin Hanks, Scott Eastwood, Aunjanue Ellis-Taylor, Taylor John Smith",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1450771,
-      "date": "2026-06-26",
-      "title": "Nicolás de Jesús' Now You See Me...",
-      "director": "Nicolás de Jesús",
-      "studio": "Walt Nick's Pictures",
-      "budget_usd": 9500,
-      "release_type": "limited",
-      "genre": "Comedy / Drama / Thriller / Mystery",
-      "cast": "Alexis Adrián, Fredy Roque, Nicolás de Jesús, Mariel Landeros",
-      "notes": "Do Not Try This Trick At Home"
     },
     {
       "tmdb_id": 1081003,
@@ -481,6 +553,18 @@
       "release_type": "streaming",
       "genre": "Drama",
       "cast": "Liia Kalindovskaia, Alexandr Malakhov",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1652831,
+      "date": "2026-06-30",
+      "title": "Source Connection",
+      "director": "Austin Millet",
+      "studio": "Film in a Bag Productions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "—",
+      "cast": "—",
       "notes": ""
     }
   ]

@@ -148,18 +148,6 @@
       "notes": "TAKE A LOOK AROUND."
     },
     {
-      "tmdb_id": 1616543,
-      "date": "2026-07-11",
-      "title": "NJPW G1 Climax 36 - Day 1",
-      "director": "—",
-      "studio": "New Japan Pro-Wrestling",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1451148,
       "date": "2026-07-17",
       "title": "Cut Off",
@@ -220,18 +208,6 @@
       "notes": "ONE NIGHT. SIX GUESTS. COUNTLESS LIES."
     },
     {
-      "tmdb_id": 1586876,
-      "date": "2026-07-24",
-      "title": "Chiikawa the Movie: The Secret of the Mermaid Island",
-      "director": "Kei Oikawa",
-      "studio": "QTORY inc.",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Family",
-      "cast": "Haruka Aoki, Makoto Tanaka, Ari Ozawa",
-      "notes": "Meet you at the Island ✨"
-    },
-    {
       "tmdb_id": 1617234,
       "date": "2026-07-24",
       "title": "The Actor",
@@ -290,18 +266,6 @@
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
       "notes": "A brand new day starts now."
-    },
-    {
-      "tmdb_id": 1667533,
-      "date": "2026-07-31",
-      "title": "Transylvania Tapes",
-      "director": "Brad Sykes",
-      "studio": "Nightfall Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror",
-      "cast": "Valeria Badiuc, Maglina Filimon, Ion Haiduc, Andrei Marinescu",
-      "notes": "Vampires Aren't the Only Thing to Fear in Transylvania"
     }
   ]
 }

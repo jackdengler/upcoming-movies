@@ -4,6 +4,30 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 1633410,
+      "date": "2026-03-03",
+      "title": "Bruce Bruce: I Ain't Playin'",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Bruce Bruce",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1613813,
+      "date": "2026-03-03",
+      "title": "JC Bratton's Dollhouse",
+      "director": "Ken Zheng, Livi Zheng",
+      "studio": "Blue Milk Publishing, LLC",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Horror / Thriller",
+      "cast": "Gage Robinson, Autumn Rose Loose, Dorian Burks, Clara Carlo",
+      "notes": "Some stories should stay locked away."
+    },
+    {
       "tmdb_id": 1101644,
       "date": "2026-03-03",
       "title": "When We Get There",
@@ -26,6 +50,30 @@
       "genre": "Thriller / Romance",
       "cast": "Dip Patel, Marie Tiberi, Ja’Mir Fletcher, Laura Meadows",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1595531,
+      "date": "2026-03-04",
+      "title": "Othello",
+      "director": "Tom Morris",
+      "studio": "Chris Harper Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "David Harewood, Toby Jones, Caitlin FitzGerald, Vinette Robinson",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1400761,
+      "date": "2026-03-06",
+      "title": "Didn't Die",
+      "director": "Meera Menon",
+      "studio": "Elephant Shoe Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Horror / Thriller",
+      "cast": "Kiran Deol, George Basil, Samrat Chakrabarti, Katie McCuen",
+      "notes": "How are we surviving?"
     },
     {
       "tmdb_id": 1309083,
@@ -124,6 +172,42 @@
       "notes": "Take your shot."
     },
     {
+      "tmdb_id": 7181,
+      "date": "2026-03-07",
+      "title": "Dusk",
+      "director": "Kyle Hodgkinson",
+      "studio": "Foggy Notions Unlimited",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Laura Bailey, Bruce Dubose, Todd Haberkorn, GiGi Erneta",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1627985,
+      "date": "2026-03-07",
+      "title": "Sugar & Vice: A Hannah Swensen Mystery",
+      "director": "Peter Benson",
+      "studio": "Lighthouse Pictures",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Mystery / TV Movie",
+      "cast": "Alison Sweeney, Victor Webster, Barbara Niven, Tess Atkins",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1517865,
+      "date": "2026-03-07",
+      "title": "Vanished in an Instant",
+      "director": "Marta Borowski",
+      "studio": "Vortex Media",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Thriller / Mystery / TV Movie",
+      "cast": "Vinessa Antoine, Zachary Bennett, Natalie Lisinska, Aaron Poole",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1632808,
       "date": "2026-03-10",
       "title": "Do Not Open",
@@ -148,18 +232,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1262547,
-      "date": "2026-03-11",
-      "title": "Subedaar",
-      "director": "Suresh Triveni",
-      "studio": "Abundantia Entertainment",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Action / Crime / Drama",
-      "cast": "Anil Kapoor, Radhikka Madan, Aditya Rawal, Saurabh Shukla",
-      "notes": "Cross me and you’ll regret it"
-    },
-    {
       "tmdb_id": 1510745,
       "date": "2026-03-13",
       "title": "Bodycam",
@@ -169,6 +241,18 @@
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Jaime M. Callica, Sean Rogerson, Catherine Lough Haggquist, Angel Prater",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 916588,
+      "date": "2026-03-13",
+      "title": "Mars",
+      "director": "Sevan Najarian",
+      "studio": "Midnight Kids Studio",
+      "budget_usd": 200000,
+      "release_type": "limited",
+      "genre": "Animation / Comedy / Science Fiction",
+      "cast": "Trevor Moore, Zach Cregger, Sam Brown, Timmy Williams",
       "notes": ""
     },
     {
@@ -206,6 +290,18 @@
       "genre": "Romance / Drama",
       "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow, Bradley Whitford",
       "notes": "Everyone deserves a second chance."
+    },
+    {
+      "tmdb_id": 1299357,
+      "date": "2026-03-13",
+      "title": "Scared to Death",
+      "director": "Paul Boyd",
+      "studio": "Mirror Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Lin Shaye, Bill Moseley, Olivier Paris, Victoria Konefal",
+      "notes": "Heads will roll."
     },
     {
       "tmdb_id": 1297446,
@@ -256,6 +352,18 @@
       "notes": "It wants to be heard."
     },
     {
+      "tmdb_id": 1651156,
+      "date": "2026-03-13",
+      "title": "Woman to Woman",
+      "director": "Tonja Ayers",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Thriller",
+      "cast": "Tonja Brown, Krystal Monique, Chelsie Sutherland",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1622649,
       "date": "2026-03-14",
       "title": "Nelly Knows Mysteries: All Manners of Murder",
@@ -265,6 +373,18 @@
       "release_type": "streaming",
       "genre": "Mystery / TV Movie",
       "cast": "Pascale Hutton, Kavan Smith, Veronica Long, Paul McGillion",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1643454,
+      "date": "2026-03-14",
+      "title": "The Boy with My Son's Face",
+      "director": "Gigi Saul Guerrero",
+      "studio": "CMW Winter Productions",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Thriller / Drama / TV Movie",
+      "cast": "Italia Ricci, Stephanie Izsak, Siobhan Williams, Gigi Saul Guerrero",
       "notes": ""
     },
     {
@@ -278,6 +398,30 @@
       "genre": "—",
       "cast": "Maxwell Jacob Friedman, Stephen Woltz, Samuel Ratsch, James Cipperly",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1621303,
+      "date": "2026-03-15",
+      "title": "The 13th Annual On Cinema Oscar Special",
+      "director": "Eric Notarnicola",
+      "studio": "Abso Lutely Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Tim Heidecker, Gregg Turkington, Joe Estevez, Alessandro Serradimigni",
+      "notes": "The Last Oscar Special"
+    },
+    {
+      "tmdb_id": 1532908,
+      "date": "2026-03-16",
+      "title": "Imago",
+      "director": "Ariel Zengotita",
+      "studio": "Monkeypaw Productions",
+      "budget_usd": 50000,
+      "release_type": "limited",
+      "genre": "Horror / Comedy / Drama",
+      "cast": "Didi Romero, Ada Luz Pla, Denise Blasor, Josh Plasse",
+      "notes": "Honor your f̶a̶t̶h̶e̶r̶ a̶n̶d̶  mother..."
     },
     {
       "tmdb_id": 1654922,
@@ -340,16 +484,28 @@
       "notes": "Two kids. One spot. Playtime is over."
     },
     {
-      "tmdb_id": 1582770,
+      "tmdb_id": 1073973,
       "date": "2026-03-18",
-      "title": "Dhurandhar: The Revenge",
-      "director": "Aditya Dhar",
-      "studio": "Jio Studios",
-      "budget_usd": 22500000,
+      "title": "Dead Lover",
+      "director": "Grace Glowicki",
+      "studio": "Featured Creatures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Comedy / Romance",
+      "cast": "Grace Glowicki, Ben Petrie, Leah Doz, Lowen Morrow",
+      "notes": "Love can conquer death."
+    },
+    {
+      "tmdb_id": 1648710,
+      "date": "2026-03-18",
+      "title": "Medora: Empress of the Badlands",
+      "director": "Daniel Bielinski",
+      "studio": "—",
+      "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
-      "cast": "Ranveer Singh, Arjun Rampal, R. Madhavan, Sanjay Dutt",
-      "notes": "The Story of The Unknown Men Unfolds"
+      "genre": "Drama / Western",
+      "cast": "Baylee Toney, Robert Strange, Ignacyo Matynia, Colin Ward",
+      "notes": ""
     },
     {
       "tmdb_id": 999136,
@@ -364,15 +520,15 @@
       "notes": "Getting in is hard, getting out is hell."
     },
     {
-      "tmdb_id": 1057888,
+      "tmdb_id": 1274134,
       "date": "2026-03-20",
-      "title": "Dry Leaf",
-      "director": "Alexandre Koberidze",
-      "studio": "New Matter Films",
+      "title": "I Live Here Now",
+      "director": "Julie Pacino",
+      "studio": "Tiny Apples",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Fantasy",
-      "cast": "David Koberidze, Irina Chelidze, Giorgi Bochorishvili, Otar Nijaradze",
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Lucy Fry, Sarah Rich, Madeline Brewer, Lara Clear",
       "notes": ""
     },
     {
@@ -460,18 +616,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1244517,
-      "date": "2026-03-20",
-      "title": "Tow",
-      "director": "Stephanie Laing",
-      "studio": "The Exchange",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Rose Byrne, Dominic Sessa, Octavia Spencer, Ariana DeBose",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1217931,
       "date": "2026-03-20",
       "title": "Vampires of the Velvet Lounge",
@@ -494,6 +638,18 @@
       "genre": "Crime / Thriller",
       "cast": "Dane DeHaan, Sasha Calle, Mamoudou Athie, Jeffrey Donovan",
       "notes": "Hacking. Stealing. Surviving."
+    },
+    {
+      "tmdb_id": 1660372,
+      "date": "2026-03-20",
+      "title": "Wrestling with Love",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance / Drama",
+      "cast": "Zakhar Shadrin, Mark Ciccarelli",
+      "notes": "Too close to stay just enemies."
     },
     {
       "tmdb_id": 1634442,
@@ -529,6 +685,30 @@
       "release_type": "streaming",
       "genre": "Comedy",
       "cast": "Jeff Ross, Breckin Meyer",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1431247,
+      "date": "2026-03-26",
+      "title": "Crybaby Bridge",
+      "director": "Sarah T. Schwab",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "Erik King, Florencia Lozano, Kevin Breznahan, Sydney Mikayla",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1573688,
+      "date": "2026-03-27",
+      "title": "Color Theories by Julio Torres. A Guide to Seeing the World",
+      "director": "Julio Torres",
+      "studio": "Rotten Science",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Comedy",
+      "cast": "Julio Torres, Drew Rollins, Nick Meyers, Joe Rumrill",
       "notes": ""
     },
     {
@@ -616,6 +796,30 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1653524,
+      "date": "2026-03-27",
+      "title": "The Boy by the Pool",
+      "director": "Damián Romay",
+      "studio": "Studio TF1 America",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama / Thriller / TV Movie",
+      "cast": "Alex Veadov, Laurie Fortier, Britton Webb, Quinn Bozza",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1407278,
+      "date": "2026-03-27",
+      "title": "The Serpent's Skin",
+      "director": "Alice Maio Mackay",
+      "studio": "One Manner Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Romance",
+      "cast": "Alexandra McVicker, Avalon Fast, Jordan Dulieu, Scott Major",
+      "notes": "Desire leaves a mark."
+    },
+    {
       "tmdb_id": 1292695,
       "date": "2026-03-27",
       "title": "They Will Kill You",
@@ -661,6 +865,18 @@
       "release_type": "streaming",
       "genre": "Mystery / Thriller / TV Movie",
       "cast": "Teri Polo, Jamie-Lynn Sigler, Dylan Walsh, Al Sapienza",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1547656,
+      "date": "2026-03-29",
+      "title": "Picture Perfect Sister-in-Law",
+      "director": "Dave Thomas",
+      "studio": "Storyteller Studios",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Thriller / TV Movie / Mystery",
+      "cast": "Eddie Davenport, Analisa Wall, Nick Clark, Adam Harper",
       "notes": ""
     },
     {

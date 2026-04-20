@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20T21:40:19.481Z",
+  "updated": "2026-04-20T21:41:21.330Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -65,8 +65,8 @@
       "tmdb_id": 1455079
     },
     "tmdb:1304313": {
-      "level": "watched",
-      "at": "2026-04-20T21:40:14.149Z",
+      "level": "likely",
+      "at": "2026-04-20T21:32:02.099Z",
       "title": "Lee Cronin's The Mummy",
       "date": "2026-04-17",
       "tmdb_id": 1304313
@@ -168,6 +168,13 @@
       "title": "Evil Dead Burn",
       "date": "2026-07-10",
       "tmdb_id": 1212763
+    },
+    "tmdb:1273221": {
+      "level": "potential",
+      "at": "2026-04-20T21:41:15.951Z",
+      "title": "Scary Movie",
+      "date": "2026-06-05",
+      "tmdb_id": 1273221
     }
   }
 }

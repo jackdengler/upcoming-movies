@@ -80,6 +80,7 @@ async function discover() {
       region: "US",
       with_release_type: "2|3",
       without_genres: "99,10402",
+      with_original_language: "en",
       "primary_release_date.gte": start,
       "primary_release_date.lte": end,
       sort_by: "popularity.desc",
@@ -126,6 +127,7 @@ const releases = [];
 for (const m of list) {
   try {
     const d = await get(`/movie/${m.id}?append_to_response=credits,release_dates`);
+    if (d.original_language && d.original_language !== "en") continue;
     const genreIds = (d.genres || []).map((g) => g.id);
     if (genreIds.includes(99) || genreIds.includes(10402)) continue;
 

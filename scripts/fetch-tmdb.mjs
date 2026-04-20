@@ -82,8 +82,8 @@ async function discover() {
       with_release_type: "2|3",
       without_genres: "99,10402",
       with_original_language: "en",
-      "primary_release_date.gte": start,
-      "primary_release_date.lte": end,
+      "release_date.gte": start,
+      "release_date.lte": end,
       sort_by: "popularity.desc",
       page: String(page),
     });

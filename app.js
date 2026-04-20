@@ -172,7 +172,7 @@ function renderRatingBar(m) {
   return bar;
 }
 
-function renderRow(m) {
+function renderRow(m, opts = {}) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
 
@@ -185,6 +185,11 @@ function renderRow(m) {
     m.title,
   );
 
+  const metaBits = [];
+  if (opts.showDate && m.date) metaBits.push(fmtDateShort(m.date));
+  if (m.genre) metaBits.push(m.genre);
+  const meta = metaBits.join(" · ");
+
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
@@ -193,7 +198,7 @@ function renderRow(m) {
       el("h3", { class: "row__title" }, titleLink),
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
     ),
-    m.genre ? el("div", { class: "row__meta", text: m.genre }) : null,
+    meta ? el("div", { class: "row__meta", text: meta }) : null,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
       el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
@@ -320,7 +325,7 @@ function renderInterestsTab(bundles) {
         ),
         el("div", { class: "month__body" },
           el("div", { class: "section" },
-            el("div", { class: "section__list" }, ...items.map(renderRow)),
+            el("div", { class: "section__list" }, ...items.map((m) => renderRow(m, { showDate: true }))),
           )
         )
       )

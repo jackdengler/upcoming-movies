@@ -1,8 +1,17 @@
 import * as Interests from "./js/interests.js";
 
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  window.addEventListener("load", async () => {
+    try {
+      const reg = await navigator.serviceWorker.register("./sw.js");
+      reg.update().catch(() => {});
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+    } catch {}
   });
 }
 
@@ -442,4 +451,8 @@ Promise.all([loadYear(YEAR), Interests.load()])
     allBundles = bundles;
     renderYearTab(bundles);
   })
-  .catch(() => { document.getElementById("empty-year").hidden = false; });
+  .catch((e) => {
+    const empty = document.getElementById("empty-year");
+    empty.textContent = `Couldn't load data (${e?.message || "network error"}). Kill & reopen the app.`;
+    empty.hidden = false;
+  });

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20T23:49:45.965Z",
+  "updated": "2026-04-20T23:49:51.633Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -324,8 +324,8 @@
       "tmdb_id": 1451588
     },
     "tmdb:1227877": {
-      "level": "not",
-      "at": "2026-04-20T22:01:13.891Z",
+      "level": "potential",
+      "at": "2026-04-20T23:49:49.129Z",
       "title": "I Love Boosters",
       "date": "2026-05-22",
       "tmdb_id": 1227877

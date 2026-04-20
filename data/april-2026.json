@@ -104,14 +104,14 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Break",
-      "director": "Zyad Ashraf Mostafa",
-      "studio": "—",
-      "budget_usd": 100,
+      "title": "Behind the Palm Trees",
+      "director": "Meryem Benm'Barek-Aloïsi",
+      "studio": "Tessalit Productions",
+      "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Documentary",
-      "cast": "Zyad Ashraf Mostafa",
-      "notes": "Is there an ultimate truth?"
+      "genre": "Drama / Romance",
+      "cast": "Sara Giraudeau, Driss Ramdi, Carole Bouquet, Olivier Rabourdin",
+      "notes": ""
     },
     {
       "date": "2026-04-01",
@@ -123,6 +123,17 @@
       "genre": "Adventure / Fantasy / Drama / Comedy",
       "cast": "Evan Carse, Chris Rumble, Mia Schega, Nicole Wheeler",
       "notes": "You're the first human I've ever met. Want some fish?"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Compostelle",
+      "director": "Yann Samuell",
+      "studio": "Page Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Comedy",
+      "cast": "Alexandra Lamy, Julien Le Berre, Eric Métayer, Mélanie Doutey",
+      "notes": "Walking means Saving."
     },
     {
       "date": "2026-04-01",
@@ -159,17 +170,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Definition of Madness",
-      "director": "Arko Okk",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Arvo Haug, Arko Okk",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "Digérez !",
       "director": "Emilie-Rose Paoli",
       "studio": "Transversarts",
@@ -177,28 +177,6 @@
       "release_type": "wide",
       "genre": "Drama / Fantasy",
       "cast": "Charline Gehin, Julie Tortochot, Jason Ciarapica, Zacharie Alfeny",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Dilúvio de Memória",
-      "director": "Caio Cesar",
-      "studio": "3 Otários Produções",
-      "budget_usd": 1945,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Carlos Alberto R. Oliveira",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Dzieła utracone: Gitara",
-      "director": "Agnieszka Trzos",
-      "studio": "Wytwórnia Filmów Dokumentalnych i Fabularnych",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary / Drama / History",
-      "cast": "Antoni Pawlicki, Mariusz Ostrowski, Kamilla Baar, Alina Chechelska",
       "notes": ""
     },
     {
@@ -280,36 +258,14 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Hatton Garden: The Great Diamond Heist",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
+      "title": "Headstones",
+      "director": "Graydon Eskowich",
+      "studio": "Prairie Fringe Productions",
+      "budget_usd": 20000,
       "release_type": "wide",
-      "genre": "Documentary / Crime",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Hélène Trésore Transnationale",
-      "director": "Judith Abitbol",
-      "studio": "Godot production",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Hélène Hazéra, Laure Adler, Phia Ménard, Judith Abitbol",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Hey, dude, where's my GDP?",
-      "director": "Tamás Szili",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Anna Bánáti, Fruzsina Előd",
-      "notes": "A Telex filmje a magyar gazdaságpolitikai zsákutcáról"
+      "genre": "Drama / Comedy",
+      "cast": "Robyn Sanderson, Bailey Bourget, Brian Dueck, Monte McNaughton",
+      "notes": "Who's telling your story?"
     },
     {
       "date": "2026-04-01",
@@ -331,6 +287,17 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "—",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Hotel Falcon's Glow",
+      "director": "Andrii Kolesnyk",
+      "studio": "FILM.UA Group",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance / Comedy",
+      "cast": "Maksym Devizorov, Angelina Samchyk, Oleksandr Yarema, Inna Prykhodko",
       "notes": ""
     },
     {
@@ -357,35 +324,13 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Informe Plus+. Ahora Quini",
-      "director": "Movistar+",
-      "studio": "Movistar Plus+",
+      "title": "It Takes a Village",
+      "director": "Łukasz Kośmicki",
+      "studio": "ZPR Media Film & TV",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Enrique Castro \"Quini\", Joan Gaspart, José María Garcia, José Ramón Alexanko",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Instinto",
-      "director": "Andrés Varela, Carlos Andrés Morelli",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Is Your Smartphone Spying On You?",
-      "director": "Claire Burnett",
-      "studio": "Channel 5",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Alexis Conran, Carissa Véliz, Ken Munro, Mhairi Aitken",
+      "release_type": "streaming",
+      "genre": "Romance / Comedy",
+      "cast": "Anna Seniuk, Artur Barciś, Filip Gurłacz, Joanna Trzepiecińska",
       "notes": ""
     },
     {
@@ -412,17 +357,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "King of My Love",
-      "director": "Maryus  Vaysberg",
-      "studio": "My Way Studio",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Music",
-      "cast": "Demis Karabidis, Mikhail Galustyan, Albina Kabalina, Vasant Balan",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "Knock'em Dead",
       "director": "Isaiah Coleman",
       "studio": "Court Gesture Productions",
@@ -445,17 +379,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "L’Hôpital des Premiers Jours",
-      "director": "Éric Guéret",
-      "studio": "Haut et Court Doc",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "La la bye",
       "director": "Onanong Phanomkruea",
       "studio": "PHNS Production",
@@ -464,6 +387,17 @@
       "genre": "Drama",
       "cast": "Damisa Chang, Jaruk Chuensombat, Chanakrit Yenphan",
       "notes": "How it feels to lose the spark for that one thing you love the most?"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Lapönia",
+      "director": "David Serrano",
+      "studio": "The Mediapro Studio",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Family",
+      "cast": "Ángela Cervantes, Vebjørn Enger, Natalia Verbeke, Julián López",
+      "notes": ""
     },
     {
       "date": "2026-04-01",
@@ -489,17 +423,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Léo",
-      "director": "Nils Mahistre",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Léo Roger-Lamaire, Nils Mahistre",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "Like Father, Like Son?",
       "director": "Josef Hermansson Embring, Philip Sterner",
       "studio": "—",
@@ -507,6 +430,17 @@
       "release_type": "wide",
       "genre": "Mystery / Drama",
       "cast": "Ludvig Deltin, Jimmy Lindström",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Love, Sex and Elections",
+      "director": "Anton Skrypets",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy",
+      "cast": "Ihor Koltovskyi, Oleksandr Melnyk, Josephine Jackson, Liliia Tsvelikova",
       "notes": ""
     },
     {
@@ -522,13 +456,13 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Masked",
-      "director": "Lucas Swangard",
-      "studio": "—",
-      "budget_usd": 250,
+      "title": "Mauvaise Pioche",
+      "director": "Gérard Jugnot",
+      "studio": "M.E.S. Productions",
+      "budget_usd": null,
       "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Chloe Cavelle",
+      "genre": "Comedy",
+      "cast": "Gérard Jugnot, Thierry Lhermitte, Jean-Pierre Darroussin, Reem Kherici",
       "notes": ""
     },
     {
@@ -544,17 +478,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Mon corps est ma maison.",
-      "director": "Sid Vandenabeele",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Sid Vandenabeele, Alexandre Esse",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "Montserrat",
       "director": "James Cunningham",
       "studio": "Presidential Productions",
@@ -562,28 +485,6 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Wilson Bazurto",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Mothers Without Borders",
-      "director": "Ève Simonet, Sarah Tahlaiti",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
-      "notes": "What if the fate of mothers reflected the state of our democracy."
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Nelle Terre Del Branco",
-      "director": "Giaris Magi",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Nicola Di Pardo, Serena Fiorilli, Elena Marani, Nicola Tomaselli",
       "notes": ""
     },
     {
@@ -610,17 +511,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "O Golpe do Banco Master",
-      "director": "Márcia Cunha",
-      "studio": "Instituto Conhecimento Liberta",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Eduardo Moreira, Deborah Magagna",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "One More Lie Makes Your Whole World Fine",
       "director": "Evan Olsen",
       "studio": "Fringe Hippo Films",
@@ -629,17 +519,6 @@
       "genre": "—",
       "cast": "Evan Olsen",
       "notes": "Drink it all up"
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Past & Present Memories",
-      "director": "Dustin Blue",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "streaming",
-      "genre": "Documentary",
-      "cast": "Dustin Blue",
-      "notes": ""
     },
     {
       "date": "2026-04-01",
@@ -698,6 +577,17 @@
     },
     {
       "date": "2026-04-01",
+      "title": "Resurrection",
+      "director": "Sam Zaslow-Braverman",
+      "studio": "Room With No Name",
+      "budget_usd": 2700,
+      "release_type": "streaming",
+      "genre": "Drama / Romance / Thriller / Comedy",
+      "cast": "Susannah Berryman, Danny Ashkenasi, Isaac J. Conner, Dane Cruz",
+      "notes": "How long do you think is long enough?"
+    },
+    {
+      "date": "2026-04-01",
       "title": "Salada Caprese",
       "director": "Alex Nobre",
       "studio": "—",
@@ -705,6 +595,28 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Giovanna Zacheo, Alec Gonzales",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Samhain",
+      "director": "Josh Pierce",
+      "studio": "—",
+      "budget_usd": 60,
+      "release_type": "streaming",
+      "genre": "Horror",
+      "cast": "Josh Pierce",
+      "notes": "The last night he came home"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Scuola di seduzione",
+      "director": "Carlo Verdone",
+      "studio": "Filmauro",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy",
+      "cast": "Carlo Verdone, Karla Sofía Gascón, Lino Guanciale, Vittoria Puccini",
       "notes": ""
     },
     {
@@ -727,17 +639,6 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Sylvia Gomes Cardoso, Matheus Andreta Mikami, Miguel Artur Marsal Nogueira, Wellerson Barbosa Gomes dos Santos",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "SILVA, LÚCIO",
-      "director": "William Sossai, Carol Pires",
-      "studio": "Som Livre",
-      "budget_usd": 500,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Silva",
       "notes": ""
     },
     {
@@ -797,35 +698,13 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Stanisław Nowak. Pszczoły i ludzie",
-      "director": "Paweł Miecznik, Michał Hirsch",
-      "studio": "—",
+      "title": "Swingers 2",
+      "director": "Andrejs Ēķis, Tanel Ingi",
+      "studio": "Apollo Film Productions",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Star Cash",
-      "director": "Hayley Garrigus",
-      "studio": "Jack Pearkes Productions",
-      "budget_usd": 180,
-      "release_type": "streaming",
-      "genre": "Documentary / Science Fiction",
-      "cast": "—",
-      "notes": "Free Will is an Illusion"
-    },
-    {
-      "date": "2026-04-01",
-      "title": "Terreno",
-      "director": "Christofer Pallu",
-      "studio": "Filmes do Asilo Febril",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
+      "genre": "Comedy",
+      "cast": "Jan Uuspõld, Elina Pähklimägi, Ago Anderson, Elina Reinold",
       "notes": ""
     },
     {
@@ -838,17 +717,6 @@
       "genre": "Drama / Comedy",
       "cast": "Ronnie Gene Blevins, Sam Daly, Moses Jones, Johnny Sayres",
       "notes": "A rogue love letter to the American consumer."
-    },
-    {
-      "date": "2026-04-01",
-      "title": "The Day Innocence Died: Bloody Sunday and the Fight for Justice",
-      "director": "Hannan Majid, Richard York",
-      "studio": "Rainbow Collective",
-      "budget_usd": 93,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Adrian Kerr, Maeve Mc Laughlin, Tony Doherty, Eamonn McCann",
-      "notes": "Bloody Sunday and The Fight For Justice"
     },
     {
       "date": "2026-04-01",
@@ -874,6 +742,28 @@
     },
     {
       "date": "2026-04-01",
+      "title": "The Gamers: Dorkness Falls",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "—",
+      "cast": "—",
+      "notes": "You seem trustworthy. Would you care to join us on our noble quest?"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "The Giant Falls",
+      "director": "Marcos Carnevale",
+      "studio": "Leyenda Films",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Drama",
+      "cast": "Oscar Martínez, Matías Mayer, Inés Estévez, Luis Luque",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-01",
       "title": "The Human Interval",
       "director": "Josu Petite",
       "studio": "Fringe Hippo Films",
@@ -893,17 +783,6 @@
       "genre": "Horror / Fantasy",
       "cast": "Ryann Bailey, Tanner Gillman, Logan Squire, Steven Bartholomew",
       "notes": "A wounded soldier wakes, chained in a cellar. Cared for by an otherworldly girl who spirits him away to a sunlit meadow. But as shadows close in, he begins to suspect her sanctuary may be the deadliest trap of all."
-    },
-    {
-      "date": "2026-04-01",
-      "title": "The Mountain Keeps Watch",
-      "director": "Caleb Hatton",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
-      "notes": ""
     },
     {
       "date": "2026-04-01",
@@ -948,6 +827,17 @@
       "genre": "Drama",
       "cast": "Kenneth Gwynn, Chronikrose, Jermaine Bradley, Terrence Lee Williams",
       "notes": "Moses returns to heal the world with his staff"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "The Super Mario Galaxy Movie",
+      "director": "Aaron Horvath, Michael Jelenic",
+      "studio": "Illumination",
+      "budget_usd": 110000000,
+      "release_type": "wide",
+      "genre": "Family / Comedy / Adventure / Fantasy / Animation",
+      "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
+      "notes": "The galaxy awaits."
     },
     {
       "date": "2026-04-01",
@@ -1061,17 +951,6 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Zwolnij Tour - Film Dokumentalny",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "date": "2026-04-01",
       "title": "Желаю славы",
       "director": "Aleksandra Frank",
       "studio": "Kinomatreshka",
@@ -1083,6 +962,116 @@
     },
     {
       "date": "2026-04-02",
+      "title": "A Few Small Beers",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy",
+      "cast": "—",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Dara Ó Briain: Re:Creation",
+      "director": "Maurice Linnane",
+      "studio": "Pride Video",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy",
+      "cast": "Dara Ó Briain",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Don't Make Friends",
+      "director": "Joey Sawyer",
+      "studio": "Writers Club Films",
+      "budget_usd": 3000,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Joey Sawyer, Josh Cornell, Chris Bouchard, Kyle Smith",
+      "notes": "A band reunites. People change. Fuses blow. Things get weird. The show must go on!"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "It Came From the Bathtub!",
+      "director": "Maxwell Hampton",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Science Fiction / Horror / Comedy",
+      "cast": "Solomon Braginsky, Yosef Braginsky, Amelia Voiles, Maxwell Hampton",
+      "notes": "Say whaaaaat?"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Jazz for the Soul",
+      "director": "Clay Kesling",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "streaming",
+      "genre": "Romance / Drama",
+      "cast": "—",
+      "notes": "Razzling, dazzling, and diving in!"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Le Pire Stagiaire : Moniteur d'auto-école",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Grégory Guillotin",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Paulies Breakfast",
+      "director": "Teun Kooijman",
+      "studio": "Toonworks Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance / Action",
+      "cast": "Rowan Robertson, Gilian Landsbergen, Arjen Hendriks, Salma belmaashi",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Purely Belter: One Last Mission",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Family / Comedy",
+      "cast": "Chris Beattie, Chris Cross, Malcolm McDonald, Charlie Hardwick",
+      "notes": ""
+    },
+    {
+      "date": "2026-04-02",
+      "title": "The Big League",
+      "director": "Yaniv Berman",
+      "studio": "Fresco Films LTD",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Family",
+      "cast": "Israel Atias, Reut Alush, Mati Seri, Kobi Farag",
+      "notes": "The winner takes it all"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "The Chocolate War - Act One",
+      "director": "Franklin Gardner",
+      "studio": "Phony Pictures",
+      "budget_usd": 5,
+      "release_type": "wide",
+      "genre": "War / Crime / Drama / Western / Science Fiction",
+      "cast": "Dave, Santa Claus, Quentin, Walter White",
+      "notes": "The day it began... and the day it ended..."
+    },
+    {
+      "date": "2026-04-02",
       "title": "UNPEGGABLE",
       "director": "Kemal Marul",
       "studio": "TASSAK CO.",
@@ -1091,6 +1080,17 @@
       "genre": "Drama / Romance / Comedy",
       "cast": "Zafer Domalonger, Zofia Brzezińska, Elara Moonridge, Virelle Ashwyn",
       "notes": "Some fantasies are meant to stay fantasies."
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Адреналин",
+      "director": "Иман Гаджиев",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime",
+      "cast": "Курбан Алиев, Сиражудин Магомедсаидов, Юсуф Тагиров, Шамиль Шайдабеков",
+      "notes": ""
     },
     {
       "date": "2026-04-04",

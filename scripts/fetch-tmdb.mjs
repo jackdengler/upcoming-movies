@@ -32,47 +32,35 @@ const FORCE_INCLUDE_IMDB = [
   "tt11378946", // Michael (Lionsgate, Apr 24 2026, Antoine Fuqua)
 ];
 
-// Major studios / distributors — if a movie has one of these in production_companies,
-// it's guaranteed to be included regardless of popularity or the monthly cap.
-const MAJOR_STUDIOS = new Set([
-  // Disney
-  "Walt Disney Pictures", "Walt Disney Studios Motion Pictures",
-  "Marvel Studios", "Lucasfilm Ltd.", "Lucasfilm", "Pixar", "Pixar Animation Studios",
-  "20th Century Studios", "Searchlight Pictures",
-  // Warner
-  "Warner Bros. Pictures", "Warner Bros.", "New Line Cinema", "DC Studios", "DC Entertainment",
-  // Universal / Focus
-  "Universal Pictures", "Focus Features", "Working Title Films",
-  "DreamWorks Animation", "DreamWorks Pictures",
-  "Illumination", "Illumination Entertainment",
-  // Sony
-  "Sony Pictures", "Sony Pictures Entertainment", "Columbia Pictures", "TriStar Pictures",
-  "Screen Gems", "Sony Pictures Classics", "Sony Pictures Animation",
-  // Paramount
-  "Paramount Pictures", "Paramount Animation", "Paramount Players",
-  // Lionsgate & specialty
-  "Lionsgate", "Summit Entertainment",
-  "A24",
-  "Neon",
-  "IFC Films",
-  "Bleecker Street",
-  // Streamers / majors
-  "Apple Studios", "Apple Original Films",
-  "Amazon MGM Studios", "MGM", "Metro-Goldwyn-Mayer", "United Artists",
-  "Netflix",
-  // Notable genre labels
-  "Blumhouse Productions", "Blumhouse",
-  "Miramax",
-  "STX Entertainment", "STXfilms",
-  "Orion Pictures",
-  "Skydance", "Skydance Media", "Skydance Animation",
-  "Atomic Monster",
-  "Plan B Entertainment",
-  "Annapurna Pictures",
-  "Black Bear Pictures",
-  "Magnolia Pictures",
-  "Roadside Attractions",
-]);
+// Major studio / distributor name fragments (lowercase, substring match).
+// If a production company name contains any of these, the film is treated as major.
+const MAJOR_STUDIO_KEYWORDS = [
+  "walt disney", "marvel studios", "lucasfilm", "pixar",
+  "20th century", "searchlight",
+  "warner bros", "new line", "dc studios", "dc entertainment",
+  "universal pictures", "focus features", "working title", "dreamworks", "illumination",
+  "sony pictures", "columbia pictures", "tristar", "screen gems",
+  "paramount",
+  "lionsgate", "lions gate", "summit entertainment",
+  "a24",
+  "neon",
+  "ifc films", "bleecker street",
+  "apple studios", "apple original",
+  "amazon mgm", "metro-goldwyn", "united artists",
+  "netflix",
+  "blumhouse",
+  "miramax",
+  "stx entertainment", "stxfilms",
+  "orion pictures",
+  "skydance",
+  "atomic monster",
+  "plan b entertainment",
+  "annapurna",
+  "black bear",
+  "magnolia pictures",
+  "roadside attractions",
+  "wonder project",
+];
 
 async function get(path) {
   const r = await fetch(`${API}${path}`, { headers });
@@ -126,19 +114,24 @@ function classify(releaseDates) {
 }
 
 const hasMajorStudio = (companies) =>
-  (companies || []).some((c) => MAJOR_STUDIOS.has(c.name));
+  (companies || []).some((c) => {
+    const name = (c.name || "").toLowerCase();
+    return MAJOR_STUDIO_KEYWORDS.some((kw) => name.includes(kw));
+  });
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const list = await discover();
+const forced = new Set();
 
 // Force-include targeted films by IMDb ID (bypasses discover's ranking).
 for (const imdbId of FORCE_INCLUDE_IMDB) {
   try {
     const r = await get(`/find/${imdbId}?external_source=imdb_id`);
     const movie = r.movie_results?.[0];
-    if (movie && !list.some((m) => m.id === movie.id)) {
-      list.push(movie);
+    if (movie) {
+      forced.add(movie.id);
+      if (!list.some((m) => m.id === movie.id)) list.push(movie);
     }
   } catch (e) {
     console.warn(`force-include ${imdbId} failed:`, e.message);
@@ -149,24 +142,26 @@ const releases = [];
 for (const m of list) {
   try {
     const d = await get(`/movie/${m.id}?append_to_response=credits,release_dates`);
-    if (d.original_language && d.original_language !== "en") continue;
-    const genreIds = (d.genres || []).map((g) => g.id);
-    if (genreIds.includes(99) || genreIds.includes(10402)) continue;
+    const isForced = forced.has(d.id);
+
+    if (!isForced) {
+      if (d.original_language && d.original_language !== "en") continue;
+      const genreIds = (d.genres || []).map((g) => g.id);
+      if (genreIds.includes(99) || genreIds.includes(10402)) continue;
+    }
 
     const cls = classify(d.release_dates);
     if (!cls.date) continue;
     if (cls.date.slice(0, 7) !== MONTH) continue;
 
-    // Must have an actual US theatrical release (wide or limited).
-    if (!cls.isTheatrical) continue;
+    // Must have an actual US theatrical release (wide or limited), unless forced.
+    if (!isForced && !cls.isTheatrical) continue;
 
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
 
-    // Majors bypass all floors. Everything else must have some popularity —
-    // TMDB's "wide" tag alone isn't trustworthy, indie micro-releases sometimes
-    // self-tag as wide.
-    if (!major && pop < MIN_POPULARITY_NON_MAJOR) continue;
+    // Forced + majors bypass all floors. Others must have some popularity.
+    if (!isForced && !major && pop < MIN_POPULARITY_NON_MAJOR) continue;
 
     const director =
       (d.credits?.crew || [])
@@ -193,6 +188,7 @@ for (const m of list) {
       notes: d.tagline || "",
       _pop: d.popularity || 0,
       _major: major,
+      _forced: isForced,
     });
     await sleep(35);
   } catch (e) {
@@ -200,16 +196,17 @@ for (const m of list) {
   }
 }
 
-// Always keep every major-studio release. Fill remaining budget with top-popularity others.
-const majors = releases.filter((r) => r._major);
-const others = releases.filter((r) => !r._major);
+// Always keep every major-studio release and every force-included film.
+// Fill remaining budget with top-popularity others.
+const keep = releases.filter((r) => r._major || r._forced);
+const others = releases.filter((r) => !r._major && !r._forced);
 others.sort((a, b) => b._pop - a._pop);
-const remaining = Math.max(0, MAX_PER_MONTH - majors.length);
-const chosen = [...majors, ...others.slice(0, remaining)];
+const remaining = Math.max(0, MAX_PER_MONTH - keep.length);
+const chosen = [...keep, ...others.slice(0, remaining)];
 chosen.sort(
   (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title)
 );
-for (const r of chosen) { delete r._pop; delete r._major; }
+for (const r of chosen) { delete r._pop; delete r._major; delete r._forced; }
 const finalReleases = chosen;
 
 const monthName = new Date(`${start}T12:00:00Z`).toLocaleString("en-US", {

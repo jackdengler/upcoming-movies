@@ -23,7 +23,7 @@ const headers = { Authorization: `Bearer ${TOKEN}`, Accept: "application/json" }
 
 const MAX_PER_MONTH = 75;
 const DISCOVER_PAGES = 10;
-const MIN_POPULARITY_NON_MAJOR = 8;
+const MIN_POPULARITY_LIMITED = 4;
 
 // Major studios / distributors — if a movie has one of these in production_companies,
 // it's guaranteed to be included regardless of popularity or the monthly cap.
@@ -142,8 +142,10 @@ for (const m of list) {
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
 
-    // Non-major films need a popularity floor so we skip micro-indies.
-    if (!major && pop < MIN_POPULARITY_NON_MAJOR) continue;
+    // Wide releases always pass (they hit AMC in LA by default).
+    // Limited releases need a major studio or a bit of popularity so we skip
+    // unknown one-theater art-house micro-releases.
+    if (cls.type !== "wide" && !major && pop < MIN_POPULARITY_LIMITED) continue;
 
     const director =
       (d.credits?.crew || [])

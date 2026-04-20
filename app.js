@@ -35,6 +35,7 @@ const LEVEL_LABEL = {
 
 const TYPES = ["wide", "limited", "streaming"];
 const FILTER_KEY = "upcoming:filters";
+const EXPANDED_KEY = "upcoming:expanded";
 const filters = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
@@ -48,6 +49,17 @@ const saveFilters = () => {
   try { localStorage.setItem(FILTER_KEY, JSON.stringify(filters)); } catch {}
 };
 const passesFilter = (m) => filters[m.release_type] !== false;
+
+const expanded = (() => {
+  try {
+    const saved = JSON.parse(localStorage.getItem(EXPANDED_KEY) || "null");
+    if (saved && typeof saved === "object") return saved;
+  } catch {}
+  return {};
+})();
+const saveExpanded = () => {
+  try { localStorage.setItem(EXPANDED_KEY, JSON.stringify(expanded)); } catch {}
+};
 
 const fmtDateShort = (iso) => {
   const d = new Date(iso + "T12:00:00");
@@ -211,11 +223,12 @@ function renderMonth(bundle) {
   const filtered = bundle.releases.filter(passesFilter);
   if (!filtered.length) return null;
 
-  const open = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
+  const defaultOpen = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
+  const open = key in expanded ? expanded[key] : defaultOpen;
   const isPast = key < CURRENT_MONTH_KEY;
   const groups = groupByDate(filtered);
 
-  return el("details", {
+  const details = el("details", {
       class: isPast ? "month month--past" : "month",
       open,
       dataset: { monthKey: key },
@@ -227,6 +240,13 @@ function renderMonth(bundle) {
     ),
     el("div", { class: "month__body" }, ...groups.map(renderDateGroup)),
   );
+
+  details.addEventListener("toggle", () => {
+    expanded[key] = details.open;
+    saveExpanded();
+  });
+
+  return details;
 }
 
 function sortMonthOrder(bundles) {

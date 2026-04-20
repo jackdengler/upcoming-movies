@@ -33,6 +33,7 @@ async function discover() {
     const q = new URLSearchParams({
       region: "US",
       with_release_type: "2|3",
+      without_genres: "99,10402",
       "primary_release_date.gte": start,
       "primary_release_date.lte": end,
       sort_by: "primary_release_date.asc",
@@ -71,6 +72,8 @@ const releases = [];
 for (const m of list) {
   try {
     const d = await get(`/movie/${m.id}?append_to_response=credits,release_dates`);
+    const genreIds = (d.genres || []).map((g) => g.id);
+    if (genreIds.includes(99) || genreIds.includes(10402)) continue;
     const cls = classify(d.release_dates);
     const date = cls.date || d.release_date || m.release_date;
     if (!date || date.slice(0, 7) !== MONTH) continue;

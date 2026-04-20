@@ -24,12 +24,13 @@ const NEXT_MONTH_KEY = (() => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
 })();
 
-const LEVELS = ["must", "likely", "potential", "not"];
+const LEVELS = ["must", "likely", "potential", "not", "watched"];
 const LEVEL_LABEL = {
   must: "Must",
   likely: "Likely",
   potential: "Maybe",
   not: "Skip",
+  watched: "Seen",
 };
 
 const TYPES = ["wide", "limited", "streaming"];
@@ -249,7 +250,7 @@ function renderInterestsTab(bundles) {
   const byKey = new Map(allMovies.map((m) => [movieKey(m), m]));
 
   const marks = Interests.allMarks();
-  const grouped = { must: [], likely: [], potential: [], not: [] };
+  const grouped = { must: [], likely: [], potential: [], not: [], watched: [] };
 
   for (const [key, meta] of Object.entries(marks)) {
     const movie = byKey.get(key) || {
@@ -267,8 +268,14 @@ function renderInterestsTab(bundles) {
     if (grouped[meta.level]) grouped[meta.level].push(movie);
   }
 
-  const order = ["must", "likely", "potential", "not"];
-  const titles = { must: "Must watch", likely: "Likely watch", potential: "Potential", not: "Not interested" };
+  const order = ["must", "likely", "watched", "potential", "not"];
+  const titles = {
+    must: "Must watch",
+    likely: "Likely watch",
+    potential: "Potential",
+    not: "Not interested",
+    watched: "Watched",
+  };
 
   const empty = document.getElementById("empty-interests");
   const total = order.reduce((a, k) => a + grouped[k].length, 0);
@@ -408,7 +415,7 @@ Interests.onChange(() => {
   if (activeTab === "interests") renderInterestsTab(allBundles);
   for (const row of document.querySelectorAll(".row[data-key]")) {
     const lvl = Interests.getLevel(row.dataset.key);
-    row.classList.remove("row--must", "row--likely", "row--potential", "row--not");
+    row.classList.remove("row--must", "row--likely", "row--potential", "row--not", "row--watched");
     if (lvl) row.classList.add(`row--${lvl}`);
   }
   for (const btn of document.querySelectorAll(".rating__btn")) {

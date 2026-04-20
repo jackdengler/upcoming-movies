@@ -22,6 +22,7 @@
   --level-likely: #d97706;
   --level-potential: #ca8a04;
   --level-not: #64748b;
+  --level-watched: #0d9488;
 
   --header-blur: saturate(180%) blur(20px);
   --header-bg: rgba(244, 242, 238, 0.82);
@@ -260,6 +261,7 @@ details[open] > .month__summary .month__chevron {
 .row--likely { border-left-color: var(--level-likely); }
 .row--potential { border-left-color: var(--level-potential); }
 .row--not { border-left-color: var(--level-not); opacity: 0.65; }
+.row--watched { border-left-color: var(--level-watched); opacity: 0.8; }
 
 .row__link {
   display: block;
@@ -347,8 +349,8 @@ details[open] > .month__summary .month__chevron {
 
 .rating {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
   margin-top: 12px;
   padding-top: 12px;
   border-top: 0.5px solid var(--separator);
@@ -361,9 +363,9 @@ details[open] > .month__summary .month__chevron {
   background: transparent;
   color: var(--muted);
   font: inherit;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 8px 2px;
   border-radius: 10px;
@@ -392,6 +394,11 @@ details[open] > .month__summary .month__chevron {
   border-color: var(--level-not);
   color: #fff;
 }
+.rating__btn--watched.is-active {
+  background: var(--level-watched);
+  border-color: var(--level-watched);
+  color: #fff;
+}
 
 /* Interests tab */
 
@@ -399,6 +406,7 @@ details[open] > .month__summary .month__chevron {
 .interest-group--likely .month__name { color: var(--level-likely); }
 .interest-group--potential .month__name { color: var(--level-potential); }
 .interest-group--not .month__name { color: var(--level-not); }
+.interest-group--watched .month__name { color: var(--level-watched); }
 
 /* Tab bar */
 

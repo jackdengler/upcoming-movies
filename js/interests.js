@@ -4,7 +4,7 @@ const BRANCH = "main";
 const PAT_KEY = "upcoming:gh_pat";
 const DEBOUNCE_MS = 5000;
 
-const LEVELS = ["must", "likely", "potential", "not"];
+const LEVELS = ["must", "likely", "potential", "not", "watched"];
 
 const state = {
   marks: {},

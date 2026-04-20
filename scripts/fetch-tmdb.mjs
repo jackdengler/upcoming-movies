@@ -25,11 +25,17 @@ const MAX_PER_MONTH = 75;
 const DISCOVER_PAGES = 10;
 const MIN_POPULARITY_NON_MAJOR = 6;
 
-// IMDb IDs of films that MUST be included if they're in the month, regardless
-// of how TMDB's discover ranks or dates them. For films whose primary_release_date
-// is stale, wrong, or ranked too low to surface via discover.
-const FORCE_INCLUDE_IMDB = [
-  "tt11378946", // Michael (Lionsgate, Apr 24 2026, Antoine Fuqua)
+// Films that MUST be included, with manual date/type fallbacks for when TMDB's
+// data is incomplete. Every field except imdb_id is optional and only used when
+// TMDB doesn't supply it.
+const FORCE_INCLUDE = [
+  {
+    imdb_id: "tt11378946",
+    date: "2026-04-24",
+    release_type: "wide",
+    studio: "Lionsgate",
+    // director/cast/etc pulled live from TMDB via the normal detail fetch
+  },
 ];
 
 // Major studio / distributor name fragments (lowercase, substring match).
@@ -122,19 +128,21 @@ const hasMajorStudio = (companies) =>
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const list = await discover();
-const forced = new Set();
+const forced = new Map(); // tmdb id -> force-include meta
 
 // Force-include targeted films by IMDb ID (bypasses discover's ranking).
-for (const imdbId of FORCE_INCLUDE_IMDB) {
+for (const entry of FORCE_INCLUDE) {
   try {
-    const r = await get(`/find/${imdbId}?external_source=imdb_id`);
+    const r = await get(`/find/${entry.imdb_id}?external_source=imdb_id`);
     const movie = r.movie_results?.[0];
     if (movie) {
-      forced.add(movie.id);
+      forced.set(movie.id, entry);
       if (!list.some((m) => m.id === movie.id)) list.push(movie);
+    } else {
+      console.warn(`force-include ${entry.imdb_id}: no TMDB match`);
     }
   } catch (e) {
-    console.warn(`force-include ${imdbId} failed:`, e.message);
+    console.warn(`force-include ${entry.imdb_id} failed:`, e.message);
   }
 }
 
@@ -143,6 +151,7 @@ for (const m of list) {
   try {
     const d = await get(`/movie/${m.id}?append_to_response=credits,release_dates`);
     const isForced = forced.has(d.id);
+    const forcedMeta = forced.get(d.id);
 
     if (!isForced) {
       if (d.original_language && d.original_language !== "en") continue;
@@ -151,11 +160,15 @@ for (const m of list) {
     }
 
     const cls = classify(d.release_dates);
-    if (!cls.date) continue;
-    if (cls.date.slice(0, 7) !== MONTH) continue;
+    // For forced films, trust the manual override if TMDB has nothing / wrong date.
+    const date = (isForced && forcedMeta?.date) ? forcedMeta.date : cls.date;
+    const releaseType = cls.type && cls.date ? cls.type : (forcedMeta?.release_type || "wide");
+    const isTheatrical = cls.isTheatrical || (isForced && forcedMeta?.release_type);
 
-    // Must have an actual US theatrical release (wide or limited), unless forced.
-    if (!isForced && !cls.isTheatrical) continue;
+    if (!date) continue;
+    if (date.slice(0, 7) !== MONTH) continue;
+
+    if (!isForced && !isTheatrical) continue;
 
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
@@ -173,16 +186,16 @@ for (const m of list) {
         .slice(0, 4)
         .map((c) => c.name)
         .join(", ") || "—";
-    const studio = (d.production_companies || [])[0]?.name || "—";
+    const studio = (d.production_companies || [])[0]?.name || forcedMeta?.studio || "—";
 
     releases.push({
       tmdb_id: d.id,
-      date: cls.date,
+      date,
       title: d.title,
       director,
       studio,
       budget_usd: d.budget || null,
-      release_type: cls.type,
+      release_type: releaseType,
       genre: (d.genres || []).map((g) => g.name).join(" / ") || "—",
       cast,
       notes: d.tagline || "",

@@ -1,0 +1,50 @@
+name: Refresh release data
+
+on:
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "Month (YYYY-MM). Leave blank for current month."
+        required: false
+        default: ""
+  push:
+    paths:
+      - ".github/workflows/refresh-data.yml"
+      - "scripts/fetch-tmdb.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch from TMDB
+        env:
+          TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
+          MONTH: ${{ inputs.month }}
+        run: node scripts/fetch-tmdb.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "Refresh release data"
+            git push
+          else
+            echo "No changes"
+          fi

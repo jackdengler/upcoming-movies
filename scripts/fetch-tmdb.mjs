@@ -23,7 +23,7 @@ const headers = { Authorization: `Bearer ${TOKEN}`, Accept: "application/json" }
 
 const MAX_PER_MONTH = 75;
 const DISCOVER_PAGES = 10;
-const MIN_POPULARITY_LIMITED = 4;
+const MIN_POPULARITY_NON_MAJOR = 6;
 
 // Major studios / distributors — if a movie has one of these in production_companies,
 // it's guaranteed to be included regardless of popularity or the monthly cap.
@@ -142,10 +142,10 @@ for (const m of list) {
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
 
-    // Wide releases always pass (they hit AMC in LA by default).
-    // Limited releases need a major studio or a bit of popularity so we skip
-    // unknown one-theater art-house micro-releases.
-    if (cls.type !== "wide" && !major && pop < MIN_POPULARITY_LIMITED) continue;
+    // Majors bypass all floors. Everything else must have some popularity —
+    // TMDB's "wide" tag alone isn't trustworthy, indie micro-releases sometimes
+    // self-tag as wide.
+    if (!major && pop < MIN_POPULARITY_NON_MAJOR) continue;
 
     const director =
       (d.credits?.crew || [])

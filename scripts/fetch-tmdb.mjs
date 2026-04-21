@@ -36,6 +36,12 @@ const FORCE_INCLUDE = [
     studio: "Lionsgate",
     // director/cast/etc pulled live from TMDB via the normal detail fetch
   },
+  {
+    imdb_id: "tt34685692",
+    date: "2026-04-24",
+    release_type: "wide",
+    studio: "Independent Film Company",
+  },
 ];
 
 // Major studio / distributor name fragments (lowercase, substring match).

@@ -36,6 +36,7 @@ const LEVEL_LABEL = {
 const TYPES = ["wide", "limited", "streaming"];
 const FILTER_KEY = "upcoming:filters";
 const EXPANDED_KEY = "upcoming:expanded";
+const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
 const filters = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
@@ -59,6 +60,17 @@ const expanded = (() => {
 })();
 const saveExpanded = () => {
   try { localStorage.setItem(EXPANDED_KEY, JSON.stringify(expanded)); } catch {}
+};
+
+const interestExpanded = (() => {
+  try {
+    const saved = JSON.parse(localStorage.getItem(INTEREST_EXPANDED_KEY) || "null");
+    if (saved && typeof saved === "object") return saved;
+  } catch {}
+  return {};
+})();
+const saveInterestExpanded = () => {
+  try { localStorage.setItem(INTEREST_EXPANDED_KEY, JSON.stringify(interestExpanded)); } catch {}
 };
 
 const fmtDateShort = (iso) => {
@@ -332,24 +344,39 @@ function renderInterestsTab(bundles) {
     if (!items.length) continue;
     items.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
-    list.appendChild(
-      el("details", {
-          class: `month interest-group interest-group--${lv}`,
-          open: true,
-          dataset: { level: lv },
-        },
-        el("summary", { class: "month__summary" },
-          el("span", { class: "month__chevron", "aria-hidden": "true" }),
-          el("span", { class: "month__name", text: titles[lv] }),
-          el("span", { class: "month__count", text: `${items.length}` }),
-        ),
-        el("div", { class: "month__body" },
-          el("div", { class: "section" },
-            el("div", { class: "section__list" }, ...items.map((m) => renderRow(m, { showDate: true }))),
-          )
+    const open = lv in interestExpanded ? interestExpanded[lv] : true;
+    const details = el("details", {
+        class: `month interest-group interest-group--${lv}`,
+        open,
+        dataset: { level: lv },
+      },
+      el("summary", { class: "month__summary" },
+        el("span", { class: "month__chevron", "aria-hidden": "true" }),
+        el("span", { class: "month__name", text: titles[lv] }),
+        el("span", { class: "month__count", text: `${items.length}` }),
+      ),
+      el("div", { class: "month__body" },
+        el("div", { class: "section" },
+          el("div", { class: "section__list" }, ...items.map((m) => renderRow(m, { showDate: true }))),
         )
       )
     );
+
+    details.addEventListener("toggle", () => {
+      interestExpanded[lv] = details.open;
+      saveInterestExpanded();
+    });
+    const summary = details.querySelector(".month__summary");
+    if (summary) {
+      summary.addEventListener("click", () => {
+        requestAnimationFrame(() => {
+          interestExpanded[lv] = details.open;
+          saveInterestExpanded();
+        });
+      });
+    }
+
+    list.appendChild(details);
   }
 }
 

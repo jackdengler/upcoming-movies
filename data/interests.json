@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T08:34:00.032Z",
+  "updated": "2026-04-21T17:52:37.177Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -626,17 +626,19 @@
     },
     "tmdb:1243741": {
       "level": "not",
-      "at": "2026-04-20T22:19:18.814Z",
+      "at": "2026-04-21T17:52:34.313Z",
       "title": "Ballistic",
       "date": "2026-04-17",
-      "tmdb_id": 1243741
+      "tmdb_id": 1243741,
+      "no_local_theater": true
     },
     "tmdb:1414413": {
       "level": "not",
-      "at": "2026-04-20T22:19:20.026Z",
+      "at": "2026-04-21T17:52:36.824Z",
       "title": "Brothers Under Fire",
       "date": "2026-04-17",
-      "tmdb_id": 1414413
+      "tmdb_id": 1414413,
+      "no_local_theater": true
     },
     "tmdb:1307373": {
       "level": "potential",

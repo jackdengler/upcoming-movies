@@ -134,6 +134,14 @@ const groupByDate = (rows) => {
 
 const monthKeyOf = (bundle) => bundle.releases[0]?.date.slice(0, 7) || "";
 
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+const monthLabel = (year, monthIdx) => `${MONTH_NAMES[monthIdx]} ${year}`;
+const pad2 = (n) => String(n).padStart(2, "0");
+const dateKey = (year, monthIdx, day) => `${year}-${pad2(monthIdx + 1)}-${pad2(day)}`;
+
 // ---------- Row rendering ----------
 
 function renderRatingBar(m) {
@@ -371,6 +379,140 @@ function renderYearTab(bundles) {
   for (const node of rendered) list.appendChild(node);
 }
 
+// ---------- Calendar tab rendering ----------
+
+const calState = {
+  year: YEAR,
+  monthIdx: now.getMonth(),
+  selected: TODAY,
+};
+
+function moviesByDate(bundles) {
+  const map = new Map();
+  for (const b of bundles) {
+    for (const m of b.releases) {
+      if (!passesFilter(m)) continue;
+      if (!map.has(m.date)) map.set(m.date, []);
+      map.get(m.date).push(m);
+    }
+  }
+  return map;
+}
+
+function topLevelForDate(items) {
+  const priority = { must: 0, likely: 1, potential: 2, watched: 3, not: 4 };
+  let best = null;
+  let bestRank = 99;
+  for (const m of items) {
+    const lv = Interests.getLevel(movieKey(m));
+    if (lv && priority[lv] < bestRank) {
+      best = lv;
+      bestRank = priority[lv];
+    }
+  }
+  return best;
+}
+
+function renderCalendarDayList(items) {
+  const dayBox = document.getElementById("cal-day");
+  dayBox.innerHTML = "";
+  if (!items || !items.length) {
+    dayBox.appendChild(
+      el("p", { class: "calendar__empty", text: "No releases this day." })
+    );
+    return;
+  }
+  const header = el("div", { class: "section__header" },
+    el("span", { class: "section__date", text: fmtDateShort(items[0].date) }),
+    el("span", { class: "section__count", text: `${items.length}` }),
+  );
+  const list = el("div", { class: "section__list" }, ...items.map(renderRow));
+  dayBox.appendChild(el("div", { class: "section" }, header, list));
+}
+
+function renderCalendarTab(bundles) {
+  const grid = document.getElementById("cal-grid");
+  const label = document.getElementById("cal-month");
+  grid.innerHTML = "";
+
+  const { year, monthIdx } = calState;
+  label.textContent = monthLabel(year, monthIdx);
+
+  const firstDow = new Date(year, monthIdx, 1).getDay();
+  const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
+  const prevMonthDays = new Date(year, monthIdx, 0).getDate();
+  const byDate = moviesByDate(bundles);
+
+  const cellCount = Math.ceil((firstDow + daysInMonth) / 7) * 7;
+  for (let i = 0; i < cellCount; i++) {
+    const dayNum = i - firstDow + 1;
+    const inMonth = dayNum >= 1 && dayNum <= daysInMonth;
+    let cellYear = year, cellMonth = monthIdx, cellDay = dayNum;
+    if (dayNum < 1) {
+      cellMonth = monthIdx - 1;
+      cellDay = prevMonthDays + dayNum;
+      if (cellMonth < 0) { cellMonth = 11; cellYear = year - 1; }
+    } else if (dayNum > daysInMonth) {
+      cellMonth = monthIdx + 1;
+      cellDay = dayNum - daysInMonth;
+      if (cellMonth > 11) { cellMonth = 0; cellYear = year + 1; }
+    }
+    const iso = dateKey(cellYear, cellMonth, cellDay);
+    const items = byDate.get(iso) || [];
+    const isToday = iso === TODAY;
+    const isSelected = iso === calState.selected;
+    const topLv = topLevelForDate(items);
+
+    const cls = [
+      "calendar__cell",
+      inMonth ? "" : "calendar__cell--out",
+      isToday ? "calendar__cell--today" : "",
+      isSelected ? "calendar__cell--selected" : "",
+      items.length ? "calendar__cell--has" : "",
+      topLv ? `calendar__cell--${topLv}` : "",
+    ].filter(Boolean).join(" ");
+
+    const cell = el("button", {
+        type: "button",
+        class: cls,
+        role: "gridcell",
+        "aria-label": fmtDateShort(iso),
+        dataset: { date: iso, inMonth: String(inMonth) },
+      },
+      el("span", { class: "calendar__daynum", text: String(cellDay) }),
+      items.length
+        ? el("span", { class: "calendar__count", text: String(items.length) })
+        : null,
+    );
+    grid.appendChild(cell);
+  }
+
+  const selectedItems = (byDate.get(calState.selected) || [])
+    .slice()
+    .sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+  renderCalendarDayList(selectedItems);
+}
+
+function shiftCalendar(delta) {
+  let m = calState.monthIdx + delta;
+  let y = calState.year;
+  while (m < 0) { m += 12; y -= 1; }
+  while (m > 11) { m -= 12; y += 1; }
+  calState.year = y;
+  calState.monthIdx = m;
+  const daysInMonth = new Date(y, m + 1, 0).getDate();
+  const selDay = Math.min(parseInt(calState.selected.slice(8, 10), 10), daysInMonth);
+  calState.selected = dateKey(y, m, selDay);
+  renderCalendarTab(allBundles);
+  updateCalendarSub();
+}
+
+function updateCalendarSub() {
+  if (activeTab !== "calendar") return;
+  const sub = document.getElementById("view-sub");
+  sub.textContent = `${calState.year}`;
+}
+
 // ---------- Tabs ----------
 
 let allBundles = [];
@@ -383,14 +525,17 @@ function switchTab(tab) {
     b.classList.toggle("is-active", b.dataset.tab === tab)
   );
   document.getElementById("tab-year").hidden = tab !== "year";
+  document.getElementById("tab-calendar").hidden = tab !== "calendar";
   document.getElementById("tab-interests").hidden = tab !== "interests";
 
   const title = document.getElementById("view-title");
   const sub = document.getElementById("view-sub");
   if (tab === "year") { title.textContent = "Upcoming"; sub.textContent = `${YEAR}`; }
+  else if (tab === "calendar") { title.textContent = "Calendar"; sub.textContent = `${calState.year}`; }
   else { title.textContent = "Interests"; sub.textContent = ""; }
 
   if (tab === "interests") renderInterestsTab(allBundles);
+  if (tab === "calendar") renderCalendarTab(allBundles);
 }
 
 document.querySelectorAll(".tab-bar__btn").forEach((b) => {
@@ -414,10 +559,28 @@ document.querySelectorAll(".filter-chip").forEach((chip) => {
     saveFilters();
     syncFilterChips();
     if (activeTab === "year") renderYearTab(allBundles);
+    else if (activeTab === "calendar") renderCalendarTab(allBundles);
     else renderInterestsTab(allBundles);
   });
 });
 syncFilterChips();
+
+document.getElementById("cal-prev").addEventListener("click", () => shiftCalendar(-1));
+document.getElementById("cal-next").addEventListener("click", () => shiftCalendar(1));
+document.getElementById("cal-grid").addEventListener("click", (e) => {
+  const cell = e.target.closest(".calendar__cell");
+  if (!cell) return;
+  const iso = cell.dataset.date;
+  if (!iso) return;
+  if (cell.dataset.inMonth === "false") {
+    const [y, m, d] = iso.split("-").map(Number);
+    calState.year = y;
+    calState.monthIdx = m - 1;
+  }
+  calState.selected = iso;
+  renderCalendarTab(allBundles);
+  updateCalendarSub();
+});
 
 // ---------- PAT dialog ----------
 
@@ -454,6 +617,7 @@ function requestPat() {
 
 Interests.onChange(() => {
   if (activeTab === "interests") renderInterestsTab(allBundles);
+  if (activeTab === "calendar") renderCalendarTab(allBundles);
   for (const row of document.querySelectorAll(".row[data-key]")) {
     const lvl = Interests.getLevel(row.dataset.key);
     row.classList.remove("row--must", "row--likely", "row--potential", "row--not", "row--watched");

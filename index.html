@@ -106,6 +106,19 @@
       </button>
     </nav>
 
+    <dialog id="book-dialog" class="sheet">
+      <form method="dialog" class="sheet__body" id="book-form">
+        <h2 class="sheet__title">Book ticket</h2>
+        <p class="sheet__copy" id="book-copy">Pick the date you're seeing it.</p>
+        <input id="book-input" class="sheet__input" type="date" required />
+        <div class="sheet__actions">
+          <button type="button" class="sheet__btn sheet__btn--danger" id="book-remove" hidden>Remove</button>
+          <button type="button" class="sheet__btn sheet__btn--ghost" id="book-cancel">Cancel</button>
+          <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
+        </div>
+      </form>
+    </dialog>
+
     <dialog id="pat-dialog" class="sheet">
       <form method="dialog" class="sheet__body" id="pat-form">
         <h2 class="sheet__title">Connect GitHub</h2>

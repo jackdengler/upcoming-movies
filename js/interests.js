@@ -5,7 +5,7 @@ const PAT_KEY = "upcoming:gh_pat";
 const CACHE_KEY = "upcoming:interests";
 const DEBOUNCE_MS = 2500;
 
-const LEVELS = ["must", "likely", "potential", "not", "watched"];
+const LEVELS = ["must", "likely", "potential", "not", "booked", "watched"];
 
 const state = {
   marks: {},
@@ -158,6 +158,65 @@ export function set(key, level, meta = {}) {
   emit();
   writeCache();
   scheduleCommit();
+}
+
+export function getMark(key) {
+  return state.marks[key] || null;
+}
+
+// Toggle a boolean flag on a mark without touching its level.
+// If the mark doesn't exist yet and value is truthy, create one with no level.
+// If after the change the mark has no level and no truthy flags, delete it.
+export function setFlag(key, flag, value, meta = {}) {
+  const next = value ? true : false;
+  const now = new Date().toISOString();
+  const existing = state.marks[key];
+  if (existing) {
+    if (!next) {
+      const { [flag]: _, ...rest } = existing;
+      state.marks[key] = { ...rest, at: now };
+    } else {
+      state.marks[key] = { ...existing, [flag]: true, at: now };
+    }
+  } else if (next) {
+    state.marks[key] = {
+      level: null,
+      at: now,
+      ...meta,
+      [flag]: true,
+    };
+  }
+  const m = state.marks[key];
+  if (m && !m.level && !m.no_local_theater) {
+    delete state.marks[key];
+  }
+  emit();
+  writeCache();
+  scheduleCommit();
+}
+
+// Move any booked marks whose booked_date is strictly before `today` (YYYY-MM-DD)
+// into the "watched" state. Preserves booked_date as a historical field.
+// Returns true if anything changed.
+export function sweepPastBookings(today) {
+  let changed = false;
+  for (const [key, mark] of Object.entries(state.marks)) {
+    if (mark?.level !== "booked") continue;
+    const bd = mark.booked_date;
+    if (!bd || bd >= today) continue;
+    state.marks[key] = {
+      ...mark,
+      level: "watched",
+      at: new Date().toISOString(),
+    };
+    changed = true;
+  }
+  if (changed) {
+    emit();
+    writeCache();
+    scheduleCommit();
+  }
+  return changed;
 }
 
 function scheduleCommit() {

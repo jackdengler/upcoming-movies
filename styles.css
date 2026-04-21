@@ -20,6 +20,7 @@
 
   --level-must: #b81d24;
   --level-likely: #d97706;
+  --level-booked: #7c3aed;
   --level-potential: #ca8a04;
   --level-not: #64748b;
   --level-watched: #0d9488;
@@ -281,9 +282,43 @@ details[open] > .month__summary .month__chevron {
 .row:first-child { border-top: 0; }
 .row--must { border-left-color: var(--level-must); }
 .row--likely { border-left-color: var(--level-likely); }
+.row--booked { border-left-color: var(--level-booked); }
 .row--potential { border-left-color: var(--level-potential); }
 .row--not { border-left-color: var(--level-not); opacity: 0.65; }
 .row--watched { border-left-color: var(--level-watched); opacity: 0.8; }
+
+.row__booked {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: var(--level-booked);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.row__nolocal {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--level-not);
+  background: rgba(100, 116, 139, 0.12);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.row__booked + .row__nolocal {
+  margin-left: 6px;
+}
+
+.row--no-local .row__title { text-decoration: line-through rgba(100, 116, 139, 0.55); }
 
 .row__titlelink {
   color: inherit;
@@ -369,8 +404,8 @@ details[open] > .month__summary .month__chevron {
 
 .rating {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
   margin-top: 12px;
   padding-top: 12px;
   border-top: 0.5px solid var(--separator);
@@ -383,11 +418,11 @@ details[open] > .month__summary .month__chevron {
   background: transparent;
   color: var(--muted);
   font: inherit;
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 8px 2px;
+  padding: 8px 1px;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
@@ -402,6 +437,11 @@ details[open] > .month__summary .month__chevron {
 .rating__btn--likely.is-active {
   background: var(--level-likely);
   border-color: var(--level-likely);
+  color: #fff;
+}
+.rating__btn--booked.is-active {
+  background: var(--level-booked);
+  border-color: var(--level-booked);
   color: #fff;
 }
 .rating__btn--potential.is-active {
@@ -420,10 +460,38 @@ details[open] > .month__summary .month__chevron {
   color: #fff;
 }
 
+.row__flag {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  padding: 6px 11px;
+  border: 1.5px solid var(--separator);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
+}
+.row__flag:active { transform: scale(0.97); }
+.row__flag--no-local.is-active {
+  background: rgba(100, 116, 139, 0.14);
+  color: var(--level-not);
+  border-color: transparent;
+}
+
 /* Interests tab */
 
 .interest-group--must .month__name { color: var(--level-must); }
 .interest-group--likely .month__name { color: var(--level-likely); }
+.interest-group--booked .month__name { color: var(--level-booked); }
 .interest-group--potential .month__name { color: var(--level-potential); }
 .interest-group--not .month__name { color: var(--level-not); }
 .interest-group--watched .month__name { color: var(--level-watched); }
@@ -563,6 +631,7 @@ details[open] > .month__summary .month__chevron {
 }
 .calendar__cell--must .calendar__count { background: var(--level-must); color: #fff; }
 .calendar__cell--likely .calendar__count { background: var(--level-likely); color: #fff; }
+.calendar__cell--booked .calendar__count { background: var(--level-booked); color: #fff; }
 .calendar__cell--potential .calendar__count { background: var(--level-potential); color: #fff; }
 .calendar__cell--watched .calendar__count { background: var(--level-watched); color: #fff; }
 .calendar__cell--not .calendar__count { background: var(--level-not); color: #fff; }
@@ -693,6 +762,8 @@ details[open] > .month__summary .month__chevron {
 }
 .sheet__btn--ghost { background: transparent; color: var(--fg-2); }
 .sheet__btn--primary { background: var(--accent); color: #fff; }
+.sheet__btn--danger { background: transparent; color: var(--level-must); margin-right: auto; }
+.sheet__actions { align-items: center; }
 .sheet__link {
   display: inline-block;
   margin-top: 12px;

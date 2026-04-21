@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T17:56:26.929Z",
+  "updated": "2026-04-21T17:58:03.344Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -665,11 +665,12 @@
       "tmdb_id": 1248832
     },
     "tmdb:1314481": {
-      "level": "must",
-      "at": "2026-04-20T22:20:18.264Z",
+      "level": "booked",
+      "at": "2026-04-21T17:58:00.834Z",
       "title": "The Devil Wears Prada 2",
       "date": "2026-05-01",
-      "tmdb_id": 1314481
+      "tmdb_id": 1314481,
+      "booked_date": "2026-05-03"
     },
     "tmdb:1440050": {
       "level": "likely",

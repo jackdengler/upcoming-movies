@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T00:24:39.633Z",
+  "updated": "2026-04-21T00:24:42.147Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -966,6 +966,13 @@
       "title": "The Hunger Games: Sunrise on the Reaping",
       "date": "2026-11-20",
       "tmdb_id": 1300968
+    },
+    "tmdb:1078446": {
+      "level": "potential",
+      "at": "2026-04-21T00:24:39.642Z",
+      "title": "Violent Night 2",
+      "date": "2026-12-04",
+      "tmdb_id": 1078446
     }
   }
 }

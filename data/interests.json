@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T00:22:54.212Z",
+  "updated": "2026-04-21T00:23:26.236Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -917,6 +917,13 @@
       "title": "Whalefall",
       "date": "2026-10-16",
       "tmdb_id": 1255833
+    },
+    "tmdb:1400940": {
+      "level": "potential",
+      "at": "2026-04-21T00:23:23.727Z",
+      "title": "Clayface",
+      "date": "2026-10-23",
+      "tmdb_id": 1400940
     }
   }
 }

@@ -170,6 +170,18 @@
       "genre": "Drama / History",
       "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
       "notes": "I blink. I twitch. I jump. I click. I whistle. I shout."
+    },
+    {
+      "tmdb_id": 936075,
+      "date": "2026-04-24",
+      "title": "Michael",
+      "director": "Antoine Fuqua",
+      "studio": "Lionsgate",
+      "budget_usd": 200000000,
+      "release_type": "wide",
+      "genre": "Biography / Drama / History / Music",
+      "cast": "Jaafar Jackson, Colman Domingo, Nia Long, Miles Teller",
+      "notes": "The King of Pop, like you've never seen him."
     }
   ]
 }

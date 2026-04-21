@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T17:58:30.304Z",
+  "updated": "2026-04-21T21:58:20.793Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -17,10 +17,11 @@
     },
     "tmdb:1418657": {
       "level": "not",
-      "at": "2026-04-21T00:15:25.267Z",
+      "at": "2026-04-21T21:58:17.736Z",
       "title": "The Yeti",
       "date": "2026-04-04",
-      "tmdb_id": 1418657
+      "tmdb_id": 1418657,
+      "no_local_theater": true
     },
     "tmdb:1641319": {
       "level": "not",

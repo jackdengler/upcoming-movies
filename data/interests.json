@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T00:18:33.747Z",
+  "updated": "2026-04-21T00:18:56.878Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -840,6 +840,13 @@
       "title": "The Furious",
       "date": "2026-05-29",
       "tmdb_id": 1280738
+    },
+    "tmdb:950028": {
+      "level": "must",
+      "at": "2026-04-21T00:18:54.374Z",
+      "title": "The Invite",
+      "date": "2026-06-26",
+      "tmdb_id": 950028
     }
   }
 }

@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-21T00:25:33.365Z",
+  "updated": "2026-04-21T04:27:46.667Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
-      "at": "2026-04-20T21:39:11.758Z",
+      "at": "2026-04-21T03:20:40.445Z",
       "title": "The Super Mario Galaxy Movie",
       "date": "2026-04-01",
       "tmdb_id": 1226863
@@ -1001,6 +1001,13 @@
       "title": "Werwulf",
       "date": "2026-12-25",
       "tmdb_id": 1421903
+    },
+    "tmdb:936075": {
+      "level": "must",
+      "at": "2026-04-21T04:27:43.757Z",
+      "title": "Michael",
+      "date": "2026-04-24",
+      "tmdb_id": 936075
     }
   }
 }

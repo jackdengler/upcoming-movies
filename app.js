@@ -24,10 +24,11 @@ const NEXT_MONTH_KEY = (() => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
 })();
 
-const LEVELS = ["must", "likely", "potential", "not", "watched"];
+const LEVELS = ["must", "likely", "booked", "potential", "not", "watched"];
 const LEVEL_LABEL = {
   must: "Must",
   likely: "Likely",
+  booked: "Booked",
   potential: "Unlikely",
   not: "Skip",
   watched: "Seen",
@@ -183,6 +184,28 @@ function renderRatingBar(m) {
       if (!saved) return;
     }
     const current = Interests.getLevel(key);
+
+    if (lvl === "booked") {
+      const existing = Interests.getMark(key);
+      const result = await requestBookingDate({
+        title: m.title,
+        defaultDate: existing?.booked_date || m.date || TODAY,
+        isUpdate: current === "booked",
+      });
+      if (result.action === "cancel") return;
+      if (result.action === "remove") {
+        Interests.set(key, null);
+        return;
+      }
+      Interests.set(key, "booked", {
+        title: m.title,
+        date: m.date,
+        tmdb_id: m.tmdb_id || null,
+        booked_date: result.date,
+      });
+      return;
+    }
+
     Interests.set(key, current === lvl ? null : lvl, {
       title: m.title,
       date: m.date,
@@ -196,6 +219,7 @@ function renderRatingBar(m) {
 function renderRow(m, opts = {}) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
+  const mark = Interests.getMark(key);
 
   const titleLink = el("a", {
       class: "row__titlelink",
@@ -211,6 +235,10 @@ function renderRow(m, opts = {}) {
   if (m.genre) metaBits.push(m.genre);
   const meta = metaBits.join(" · ");
 
+  const bookedBadge = level === "booked" && mark?.booked_date
+    ? el("div", { class: "row__booked", text: `🎟  Booked for ${fmtDateShort(mark.booked_date)}` })
+    : null;
+
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
@@ -220,6 +248,7 @@ function renderRow(m, opts = {}) {
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
     ),
     meta ? el("div", { class: "row__meta", text: meta }) : null,
+    bookedBadge,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
       el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
@@ -307,7 +336,7 @@ function renderInterestsTab(bundles) {
   const byKey = new Map(allMovies.map((m) => [movieKey(m), m]));
 
   const marks = Interests.allMarks();
-  const grouped = { must: [], likely: [], potential: [], not: [], watched: [] };
+  const grouped = { must: [], likely: [], booked: [], potential: [], not: [], watched: [] };
 
   for (const [key, meta] of Object.entries(marks)) {
     const movie = byKey.get(key) || {
@@ -325,10 +354,11 @@ function renderInterestsTab(bundles) {
     if (grouped[meta.level]) grouped[meta.level].push(movie);
   }
 
-  const order = ["must", "likely", "watched", "potential", "not"];
+  const order = ["booked", "must", "likely", "watched", "potential", "not"];
   const titles = {
     must: "Must watch",
     likely: "Likely watch",
+    booked: "Booked",
     potential: "Unlikely",
     not: "Not interested",
     watched: "Watched",
@@ -342,7 +372,15 @@ function renderInterestsTab(bundles) {
   for (const lv of order) {
     const items = grouped[lv];
     if (!items.length) continue;
-    items.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+    if (lv === "booked") {
+      items.sort((a, b) => {
+        const am = Interests.getMark(movieKey(a))?.booked_date || a.date || "";
+        const bm = Interests.getMark(movieKey(b))?.booked_date || b.date || "";
+        return am.localeCompare(bm);
+      });
+    } else {
+      items.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+    }
 
     const open = lv in interestExpanded ? interestExpanded[lv] : true;
     const details = el("details", {
@@ -427,7 +465,7 @@ function moviesByDate(bundles) {
 }
 
 function topLevelForDate(items) {
-  const priority = { must: 0, likely: 1, potential: 2, watched: 3, not: 4 };
+  const priority = { booked: 0, must: 1, likely: 2, potential: 3, watched: 4, not: 5 };
   let best = null;
   let bestRank = 99;
   for (const m of items) {
@@ -647,15 +685,74 @@ function requestPat() {
   });
 }
 
+// ---------- Booking dialog ----------
+
+function requestBookingDate({ title, defaultDate, isUpdate }) {
+  return new Promise((resolve) => {
+    const dlg = document.getElementById("book-dialog");
+    const input = document.getElementById("book-input");
+    const copy = document.getElementById("book-copy");
+    const cancel = document.getElementById("book-cancel");
+    const remove = document.getElementById("book-remove");
+    const form = document.getElementById("book-form");
+
+    input.value = defaultDate || TODAY;
+    copy.textContent = title
+      ? `Pick the date you're seeing ${title}.`
+      : "Pick the date you're seeing it.";
+    remove.hidden = !isUpdate;
+    dlg.showModal();
+
+    const cleanup = () => {
+      cancel.removeEventListener("click", onCancel);
+      remove.removeEventListener("click", onRemove);
+      form.removeEventListener("submit", onSubmit);
+      dlg.removeEventListener("cancel", onEsc);
+    };
+    const onCancel = () => { dlg.close(); cleanup(); resolve({ action: "cancel" }); };
+    const onEsc = (e) => { e.preventDefault(); onCancel(); };
+    const onRemove = () => { dlg.close(); cleanup(); resolve({ action: "remove" }); };
+    const onSubmit = (e) => {
+      e.preventDefault();
+      const v = input.value;
+      if (!v) return;
+      dlg.close();
+      cleanup();
+      resolve({ action: "save", date: v });
+    };
+    cancel.addEventListener("click", onCancel);
+    remove.addEventListener("click", onRemove);
+    form.addEventListener("submit", onSubmit);
+    dlg.addEventListener("cancel", onEsc);
+  });
+}
+
 // ---------- Boot ----------
 
 Interests.onChange(() => {
   if (activeTab === "interests") renderInterestsTab(allBundles);
   if (activeTab === "calendar") renderCalendarTab(allBundles);
   for (const row of document.querySelectorAll(".row[data-key]")) {
-    const lvl = Interests.getLevel(row.dataset.key);
-    row.classList.remove("row--must", "row--likely", "row--potential", "row--not", "row--watched");
+    const key = row.dataset.key;
+    const lvl = Interests.getLevel(key);
+    row.classList.remove("row--must", "row--likely", "row--booked", "row--potential", "row--not", "row--watched");
     if (lvl) row.classList.add(`row--${lvl}`);
+
+    const existingBadge = row.querySelector(".row__booked");
+    const mark = Interests.getMark(key);
+    if (lvl === "booked" && mark?.booked_date) {
+      const text = `🎟  Booked for ${fmtDateShort(mark.booked_date)}`;
+      if (existingBadge) {
+        existingBadge.textContent = text;
+      } else {
+        const badge = el("div", { class: "row__booked", text });
+        const metaEl = row.querySelector(".row__meta");
+        const after = metaEl || row.querySelector(".row__title-line");
+        after?.after(badge);
+      }
+    } else if (existingBadge) {
+      existingBadge.remove();
+    }
   }
   for (const btn of document.querySelectorAll(".rating__btn")) {
     const row = btn.closest(".row");
@@ -670,6 +767,7 @@ Interests.onChange(() => {
 Promise.all([loadYear(YEAR), Interests.load()])
   .then(([bundles]) => {
     allBundles = bundles;
+    Interests.sweepPastBookings(TODAY);
     renderYearTab(bundles);
     if (activeTab === "calendar") renderCalendarTab(bundles);
     else if (activeTab === "interests") renderInterestsTab(bundles);

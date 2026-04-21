@@ -4,6 +4,18 @@
   "source": "TMDB",
   "releases": [
     {
+      "tmdb_id": 539745,
+      "date": "2026-05-01",
+      "title": "Animal Farm",
+      "director": "Andy Serkis",
+      "studio": "Aniventure",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Adventure / Comedy",
+      "cast": "Seth Rogen, Gaten Matarazzo, Kieran Culkin, Glenn Close",
+      "notes": "A cautionary tail."
+    },
+    {
       "tmdb_id": 1290792,
       "date": "2026-05-01",
       "title": "One Spoon of Chocolate",

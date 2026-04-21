@@ -160,6 +160,8 @@ const dateKey = (year, monthIdx, day) => `${year}-${pad2(monthIdx + 1)}-${pad2(d
 function renderRatingBar(m) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
+  const mark = Interests.getMark(key);
+  const noLocal = !!mark?.no_local_theater;
   const bar = el("div", { class: "rating", role: "group", "aria-label": "Interest level" },
     ...LEVELS.map((lv) =>
       el("button", {
@@ -171,6 +173,15 @@ function renderRatingBar(m) {
         LEVEL_LABEL[lv]
       )
     ),
+  );
+
+  const notLocalBtn = el("button", {
+      type: "button",
+      class: `row__flag row__flag--no-local${noLocal ? " is-active" : ""}`,
+      "data-flag": "no_local_theater",
+      "aria-pressed": noLocal ? "true" : "false",
+    },
+    "📍  Not playing near me",
   );
 
   bar.addEventListener("click", async (e) => {
@@ -213,7 +224,22 @@ function renderRatingBar(m) {
     });
   });
 
-  return bar;
+  notLocalBtn.addEventListener("click", async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!Interests.hasPat()) {
+      const saved = await requestPat();
+      if (!saved) return;
+    }
+    const current = !!Interests.getMark(key)?.no_local_theater;
+    Interests.setFlag(key, "no_local_theater", !current, {
+      title: m.title,
+      date: m.date,
+      tmdb_id: m.tmdb_id || null,
+    });
+  });
+
+  return [bar, notLocalBtn];
 }
 
 function renderRow(m, opts = {}) {
@@ -238,9 +264,12 @@ function renderRow(m, opts = {}) {
   const bookedBadge = level === "booked" && mark?.booked_date
     ? el("div", { class: "row__booked", text: `🎟  Booked for ${fmtDateShort(mark.booked_date)}` })
     : null;
+  const noLocalBadge = mark?.no_local_theater
+    ? el("div", { class: "row__nolocal", text: "📍  Not playing near me" })
+    : null;
 
   return el("div", {
-      class: `row${level ? ` row--${level}` : ""}`,
+      class: `row${level ? ` row--${level}` : ""}${mark?.no_local_theater ? " row--no-local" : ""}`,
       dataset: { key },
     },
     el("div", { class: "row__title-line" },
@@ -249,6 +278,7 @@ function renderRow(m, opts = {}) {
     ),
     meta ? el("div", { class: "row__meta", text: meta }) : null,
     bookedBadge,
+    noLocalBadge,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
       el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
@@ -735,23 +765,37 @@ Interests.onChange(() => {
   for (const row of document.querySelectorAll(".row[data-key]")) {
     const key = row.dataset.key;
     const lvl = Interests.getLevel(key);
+    const mark = Interests.getMark(key);
     row.classList.remove("row--must", "row--likely", "row--booked", "row--potential", "row--not", "row--watched");
     if (lvl) row.classList.add(`row--${lvl}`);
+    row.classList.toggle("row--no-local", !!mark?.no_local_theater);
 
-    const existingBadge = row.querySelector(".row__booked");
-    const mark = Interests.getMark(key);
+    const existingBooked = row.querySelector(".row__booked");
     if (lvl === "booked" && mark?.booked_date) {
       const text = `🎟  Booked for ${fmtDateShort(mark.booked_date)}`;
-      if (existingBadge) {
-        existingBadge.textContent = text;
+      if (existingBooked) {
+        existingBooked.textContent = text;
       } else {
         const badge = el("div", { class: "row__booked", text });
         const metaEl = row.querySelector(".row__meta");
         const after = metaEl || row.querySelector(".row__title-line");
         after?.after(badge);
       }
-    } else if (existingBadge) {
-      existingBadge.remove();
+    } else if (existingBooked) {
+      existingBooked.remove();
+    }
+
+    const existingNoLocal = row.querySelector(".row__nolocal");
+    if (mark?.no_local_theater) {
+      if (!existingNoLocal) {
+        const badge = el("div", { class: "row__nolocal", text: "📍  Not playing near me" });
+        const anchor = existingBooked
+          || row.querySelector(".row__meta")
+          || row.querySelector(".row__title-line");
+        anchor?.after(badge);
+      }
+    } else if (existingNoLocal) {
+      existingNoLocal.remove();
     }
   }
   for (const btn of document.querySelectorAll(".rating__btn")) {
@@ -761,6 +805,13 @@ Interests.onChange(() => {
     const isActive = btn.dataset.level === lvl;
     btn.classList.toggle("is-active", isActive);
     btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+  }
+  for (const btn of document.querySelectorAll(".row__flag--no-local")) {
+    const row = btn.closest(".row");
+    if (!row) continue;
+    const noLocal = !!Interests.getMark(row.dataset.key)?.no_local_theater;
+    btn.classList.toggle("is-active", noLocal);
+    btn.setAttribute("aria-pressed", noLocal ? "true" : "false");
   }
 });
 

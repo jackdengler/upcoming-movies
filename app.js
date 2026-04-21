@@ -442,6 +442,7 @@ function topLevelForDate(items) {
 
 function renderCalendarDayList(items) {
   const dayBox = document.getElementById("cal-day");
+  if (!dayBox) return;
   dayBox.innerHTML = "";
   if (!items || !items.length) {
     dayBox.appendChild(
@@ -460,6 +461,7 @@ function renderCalendarDayList(items) {
 function renderCalendarTab(bundles) {
   const grid = document.getElementById("cal-grid");
   const label = document.getElementById("cal-month");
+  if (!grid || !label) return;
   grid.innerHTML = "";
 
   const { year, monthIdx } = calState;
@@ -545,15 +547,20 @@ function updateCalendarSub() {
 let allBundles = [];
 let activeTab = "year";
 
+const setPanelHidden = (id, hide) => {
+  const e = document.getElementById(id);
+  if (e) e.hidden = hide;
+};
+
 function switchTab(tab) {
   if (tab === activeTab) return;
   activeTab = tab;
   document.querySelectorAll(".tab-bar__btn").forEach((b) =>
     b.classList.toggle("is-active", b.dataset.tab === tab)
   );
-  document.getElementById("tab-year").hidden = tab !== "year";
-  document.getElementById("tab-calendar").hidden = tab !== "calendar";
-  document.getElementById("tab-interests").hidden = tab !== "interests";
+  setPanelHidden("tab-year", tab !== "year");
+  setPanelHidden("tab-calendar", tab !== "calendar");
+  setPanelHidden("tab-interests", tab !== "interests");
 
   const title = document.getElementById("view-title");
   const sub = document.getElementById("view-sub");
@@ -592,15 +599,15 @@ document.querySelectorAll(".filter-chip").forEach((chip) => {
 });
 syncFilterChips();
 
-document.getElementById("cal-prev").addEventListener("click", () => shiftCalendar(-1));
-document.getElementById("cal-next").addEventListener("click", () => shiftCalendar(1));
-document.getElementById("cal-grid").addEventListener("click", (e) => {
+document.getElementById("cal-prev")?.addEventListener("click", () => shiftCalendar(-1));
+document.getElementById("cal-next")?.addEventListener("click", () => shiftCalendar(1));
+document.getElementById("cal-grid")?.addEventListener("click", (e) => {
   const cell = e.target.closest(".calendar__cell");
   if (!cell) return;
   const iso = cell.dataset.date;
   if (!iso) return;
   if (cell.dataset.inMonth === "false") {
-    const [y, m, d] = iso.split("-").map(Number);
+    const [y, m] = iso.split("-").map(Number);
     calState.year = y;
     calState.monthIdx = m - 1;
   }
@@ -664,6 +671,8 @@ Promise.all([loadYear(YEAR), Interests.load()])
   .then(([bundles]) => {
     allBundles = bundles;
     renderYearTab(bundles);
+    if (activeTab === "calendar") renderCalendarTab(bundles);
+    else if (activeTab === "interests") renderInterestsTab(bundles);
   })
   .catch((e) => {
     const empty = document.getElementById("empty-year");

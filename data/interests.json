@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T00:20:28.547Z",
+  "updated": "2026-04-21T00:21:00.817Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -854,6 +854,13 @@
       "title": "Teenage Sex and Death at Camp Miasma",
       "date": "2026-08-07",
       "tmdb_id": 1240889
+    },
+    "tmdb:1302904": {
+      "level": "not",
+      "at": "2026-04-21T00:20:58.309Z",
+      "title": "Practical Magic 2",
+      "date": "2026-09-11",
+      "tmdb_id": 1302904
     }
   }
 }

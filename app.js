@@ -35,20 +35,31 @@ const LEVEL_LABEL = {
   watched: "Seen",
 };
 
-const CALENDAR_KIND_KEY = "upcoming:calendar-kinds";
+const ACTIVE_KIND_KEY = "upcoming:active-kind";
+const LEGACY_CALENDAR_KIND_KEY = "upcoming:calendar-kinds";
 const EXPANDED_KEY = "upcoming:expanded";
 const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
-const calendarKinds = (() => {
+
+// Single source of truth for the New Releases ↔ Rereleases flip. Applies to
+// the List tab, the Calendar, and the Updates overlay. One-time migration
+// from the old per-Calendar chip state: if the legacy object had exactly one
+// kind enabled, prefer that; otherwise default to "releases".
+let activeKind = (() => {
   try {
-    const saved = JSON.parse(localStorage.getItem(CALENDAR_KIND_KEY) || "null");
-    if (saved && typeof saved === "object") {
-      return { releases: saved.releases !== false, rereleases: saved.rereleases !== false };
+    const saved = localStorage.getItem(ACTIVE_KIND_KEY);
+    if (saved === "releases" || saved === "rereleases") return saved;
+  } catch {}
+  try {
+    const legacy = JSON.parse(localStorage.getItem(LEGACY_CALENDAR_KIND_KEY) || "null");
+    localStorage.removeItem(LEGACY_CALENDAR_KIND_KEY);
+    if (legacy && typeof legacy === "object") {
+      if (legacy.rereleases && !legacy.releases) return "rereleases";
     }
   } catch {}
-  return { releases: true, rereleases: true };
+  return "releases";
 })();
-const saveCalendarKinds = () => {
-  try { localStorage.setItem(CALENDAR_KIND_KEY, JSON.stringify(calendarKinds)); } catch {}
+const saveActiveKind = () => {
+  try { localStorage.setItem(ACTIVE_KIND_KEY, activeKind); } catch {}
 };
 
 const expanded = (() => {
@@ -738,8 +749,14 @@ function renderActivityTab() {
   if (!list || !empty) return;
   list.innerHTML = "";
 
-  const events = Activity.readLog();
+  const wantKind = activeKind === "rereleases" ? "screening" : "release";
+  const events = Activity.readLog().filter(
+    (ev) => (ev.kind || "release") === wantKind,
+  );
   if (!events.length) {
+    empty.textContent = activeKind === "rereleases"
+      ? "No rerelease changes yet."
+      : "No changes yet. We'll track new movies and release updates here.";
     empty.hidden = false;
     return;
   }
@@ -798,20 +815,19 @@ const calState = {
   selected: TODAY,
 };
 
-// Build the calendar date → items map, honoring the New Releases / Rereleases
-// toggle pills. Each entry is either a release object or a screening object
-// (tagged with `_kind: "screening"`); downstream renderers branch on the tag.
+// Build the calendar date → items map for the current global `activeKind`.
+// Each entry is either a release object or a screening object (tagged with
+// `_kind: "screening"`); downstream renderers branch on the tag.
 function itemsByDate(bundles) {
   const map = new Map();
-  if (calendarKinds.releases) {
+  if (activeKind === "releases") {
     for (const b of bundles) {
       for (const m of b.releases) {
         if (!map.has(m.date)) map.set(m.date, []);
         map.get(m.date).push(m);
       }
     }
-  }
-  if (calendarKinds.rereleases) {
+  } else {
     for (const s of repertoryState.data?.screenings || []) {
       if (getRepMark(repTitleMonthId(s)) !== "yes") continue;
       if (!map.has(s.date)) map.set(s.date, []);
@@ -1022,13 +1038,6 @@ function shiftCalendar(delta) {
   const selDay = Math.min(parseInt(calState.selected.slice(8, 10), 10), daysInMonth);
   calState.selected = dateKey(y, m, selDay);
   renderCalendarTab(allBundles);
-  updateCalendarSub();
-}
-
-function updateCalendarSub() {
-  if (activeTab !== "calendar") return;
-  const sub = document.getElementById("view-sub");
-  sub.textContent = `${calState.year}`;
 }
 
 // ---------- Repertory tab rendering ----------
@@ -1286,52 +1295,62 @@ document.getElementById("repertory-list")?.addEventListener("click", (e) => {
 // ---------- Tabs ----------
 
 let allBundles = [];
-let activeTab = "year";
+let activeTab = "list";
+let updatesOpen = false;
 
 const setPanelHidden = (id, hide) => {
   const e = document.getElementById(id);
   if (e) e.hidden = hide;
 };
 
+function renderListTab() {
+  const list = document.getElementById("list");
+  const rep = document.getElementById("repertory-list");
+  const theaterBar = document.getElementById("theater-filter-bar");
+  if (activeKind === "releases") {
+    setPanelHidden("repertory-list", true);
+    setPanelHidden("theater-filter-bar", true);
+    setPanelHidden("empty-repertory", true);
+    if (rep) rep.innerHTML = "";
+    if (list) list.hidden = false;
+    renderYearTab(allBundles);
+  } else {
+    setPanelHidden("list", true);
+    setPanelHidden("empty-year", true);
+    if (list) list.innerHTML = "";
+    if (rep) rep.hidden = false;
+    if (theaterBar) theaterBar.hidden = false;
+    renderTheaterFilterBar();
+    renderRepertoryTab();
+  }
+}
+
+function renderActiveTab() {
+  if (activeTab === "list") renderListTab();
+  else if (activeTab === "calendar") renderCalendarTab(allBundles);
+  else if (activeTab === "interests") renderInterestsTab(allBundles);
+}
+
 function switchTab(tab) {
-  if (tab === activeTab) return;
+  const wasOverlay = updatesOpen;
+  if (updatesOpen) closeUpdates({ silent: true });
+  if (tab === activeTab) {
+    if (wasOverlay) {
+      setPanelHidden("tab-list", activeTab !== "list");
+      setPanelHidden("tab-calendar", activeTab !== "calendar");
+      setPanelHidden("tab-interests", activeTab !== "interests");
+    }
+    return;
+  }
   activeTab = tab;
   document.querySelectorAll(".tab-bar__btn").forEach((b) =>
     b.classList.toggle("is-active", b.dataset.tab === tab)
   );
-  setPanelHidden("tab-year", tab !== "year");
+  setPanelHidden("tab-list", tab !== "list");
   setPanelHidden("tab-calendar", tab !== "calendar");
-  setPanelHidden("tab-repertory", tab !== "repertory");
   setPanelHidden("tab-interests", tab !== "interests");
-  setPanelHidden("tab-activity", tab !== "activity");
 
-  const title = document.getElementById("view-title");
-  const sub = document.getElementById("view-sub");
-  if (tab === "year") { title.textContent = "Upcoming"; sub.textContent = `${YEAR}`; }
-  else if (tab === "calendar") { title.textContent = "Calendar"; sub.textContent = `${calState.year}`; }
-  else if (tab === "repertory") {
-    title.textContent = "Rereleases";
-    const total = (repertoryState.data?.screenings || []).length;
-    sub.textContent = total ? `${total} screenings` : "";
-  }
-  else if (tab === "activity") {
-    title.textContent = "Activity";
-    const total = Activity.readLog().length;
-    sub.textContent = total ? `${total} update${total === 1 ? "" : "s"}` : "";
-  }
-  else { title.textContent = "Interests"; sub.textContent = ""; }
-
-  if (tab === "interests") renderInterestsTab(allBundles);
-  if (tab === "calendar") renderCalendarTab(allBundles);
-  if (tab === "repertory") {
-    renderTheaterFilterBar();
-    renderRepertoryTab();
-  }
-  if (tab === "activity") {
-    renderActivityTab();
-    Activity.markSeen();
-    updateActivityBadge();
-  }
+  renderActiveTab();
 }
 
 document.querySelectorAll(".tab-bar__btn").forEach((b) => {
@@ -1342,25 +1361,52 @@ document.getElementById("open-pat").addEventListener("click", () => {
   requestPat();
 });
 
-function syncCalendarKindChips() {
-  const bar = document.getElementById("calendar-kind-bar");
+function openUpdates() {
+  updatesOpen = true;
+  setPanelHidden("tab-list", true);
+  setPanelHidden("tab-calendar", true);
+  setPanelHidden("tab-interests", true);
+  setPanelHidden("tab-updates", false);
+  renderActivityTab();
+  Activity.markSeen();
+  updateActivityBadge();
+}
+
+function closeUpdates({ silent = false } = {}) {
+  updatesOpen = false;
+  setPanelHidden("tab-updates", true);
+  if (silent) return;
+  setPanelHidden("tab-list", activeTab !== "list");
+  setPanelHidden("tab-calendar", activeTab !== "calendar");
+  setPanelHidden("tab-interests", activeTab !== "interests");
+}
+
+document.getElementById("open-updates")?.addEventListener("click", openUpdates);
+document.getElementById("updates-back")?.addEventListener("click", () => closeUpdates());
+
+function syncSegmentedChips() {
+  const bar = document.getElementById("kind-segmented");
   if (!bar) return;
-  for (const chip of bar.querySelectorAll(".filter-chip")) {
-    chip.classList.toggle("is-active", calendarKinds[chip.dataset.kind] !== false);
+  for (const chip of bar.querySelectorAll(".segmented__btn")) {
+    const on = chip.dataset.kind === activeKind;
+    chip.classList.toggle("is-active", on);
+    chip.setAttribute("aria-selected", on ? "true" : "false");
   }
 }
 
-document.getElementById("calendar-kind-bar")?.addEventListener("click", (e) => {
-  const chip = e.target.closest(".filter-chip");
+document.getElementById("kind-segmented")?.addEventListener("click", (e) => {
+  const chip = e.target.closest(".segmented__btn");
   if (!chip) return;
   const kind = chip.dataset.kind;
-  if (!kind) return;
-  calendarKinds[kind] = !calendarKinds[kind];
-  saveCalendarKinds();
-  syncCalendarKindChips();
-  if (activeTab === "calendar") renderCalendarTab(allBundles);
+  if (kind !== "releases" && kind !== "rereleases") return;
+  if (kind === activeKind) return;
+  activeKind = kind;
+  saveActiveKind();
+  syncSegmentedChips();
+  if (updatesOpen) renderActivityTab();
+  else renderActiveTab();
 });
-syncCalendarKindChips();
+syncSegmentedChips();
 
 document.getElementById("cal-prev")?.addEventListener("click", () => shiftCalendar(-1));
 document.getElementById("cal-next")?.addEventListener("click", () => shiftCalendar(1));
@@ -1376,7 +1422,6 @@ document.getElementById("cal-grid")?.addEventListener("click", (e) => {
   }
   calState.selected = iso;
   renderCalendarTab(allBundles);
-  updateCalendarSub();
 });
 
 // ---------- PAT dialog ----------
@@ -1456,8 +1501,8 @@ function requestDateDialog({ heading, copy, defaultDate, isUpdate }) {
 
 Interests.onChange(() => {
   if (activeTab === "interests") renderInterestsTab(allBundles);
-  if (activeTab === "calendar") renderCalendarTab(allBundles);
-  if (activeTab === "repertory") renderRepertoryTab();
+  else if (activeTab === "calendar") renderCalendarTab(allBundles);
+  else if (activeTab === "list" && activeKind === "rereleases") renderRepertoryTab();
   for (const row of document.querySelectorAll(".row[data-key]")) {
     const key = row.dataset.key;
     const lvl = Interests.getLevel(key);
@@ -1533,19 +1578,9 @@ Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
     allBundles = bundles;
     setRepertoryData(repertory);
     Interests.sweepPastBookings(TODAY);
-    Activity.ingest(bundles);
+    Activity.ingest({ bundles, screenings: repertory?.screenings || [] });
     updateActivityBadge();
-    renderYearTab(bundles);
-    if (activeTab === "calendar") renderCalendarTab(bundles);
-    else if (activeTab === "interests") renderInterestsTab(bundles);
-    else if (activeTab === "repertory") {
-      renderTheaterFilterBar();
-      renderRepertoryTab();
-    } else if (activeTab === "activity") {
-      renderActivityTab();
-      Activity.markSeen();
-      updateActivityBadge();
-    }
+    renderActiveTab();
   })
   .catch((e) => {
     const empty = document.getElementById("empty-year");

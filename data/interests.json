@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T21:14:53.294Z",
+  "updated": "2026-04-22T21:15:17.329Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1115,8 +1115,8 @@
       "url": "https://thenewbev.com/program/april-23-training-day-narc/"
     },
     "rep:new-beverly:2026-04-24:training-day": {
-      "level": "potential",
-      "at": "2026-04-22T21:14:50.785Z",
+      "level": "not",
+      "at": "2026-04-22T21:14:55.801Z",
       "kind": "screening",
       "title": "Training Day",
       "date": "2026-04-24",
@@ -1137,6 +1137,222 @@
       "format": null,
       "series": null,
       "url": "https://thenewbev.com/program/april-24-training-day-narc/"
+    },
+    "rep:new-beverly:2026-04-24:reservoir-dogs": {
+      "level": "potential",
+      "at": "2026-04-22T21:14:54.285Z",
+      "kind": "screening",
+      "title": "Reservoir Dogs",
+      "date": "2026-04-24",
+      "theater": "new-beverly",
+      "time": "23:59",
+      "format": null,
+      "series": "Midnight",
+      "url": "https://thenewbev.com/program/april-24-reservoir-dogs-midnight-show/"
+    },
+    "rep:new-beverly:2026-04-25:raiders-of-the-lost-ark": {
+      "level": "potential",
+      "at": "2026-04-22T21:14:57.731Z",
+      "kind": "screening",
+      "title": "Raiders of the Lost Ark",
+      "date": "2026-04-25",
+      "theater": "new-beverly",
+      "time": "14:00",
+      "format": null,
+      "series": "Kiddie Matinee",
+      "url": "https://thenewbev.com/program/april-25-raiders-of-the-lost-ark-family-matinee/"
+    },
+    "rep:new-beverly:2026-04-25:training-day": {
+      "level": "potential",
+      "at": "2026-04-22T21:15:00.577Z",
+      "kind": "screening",
+      "title": "Training Day",
+      "date": "2026-04-25",
+      "theater": "new-beverly",
+      "time": "18:00",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-25-training-day-narc/"
+    },
+    "rep:new-beverly:2026-04-25:narc": {
+      "level": "not",
+      "at": "2026-04-22T21:15:00.194Z",
+      "kind": "screening",
+      "title": "Narc",
+      "date": "2026-04-25",
+      "theater": "new-beverly",
+      "time": "20:30",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-25-training-day-narc/"
+    },
+    "rep:new-beverly:2026-04-25:shadow-of-the-vampire": {
+      "level": "not",
+      "at": "2026-04-22T21:15:02.090Z",
+      "kind": "screening",
+      "title": "Shadow of the Vampire",
+      "date": "2026-04-25",
+      "theater": "new-beverly",
+      "time": "23:59",
+      "format": null,
+      "series": "Midnight",
+      "url": "https://thenewbev.com/program/april-25-shadow-of-the-vampire-midnight-show/"
+    },
+    "rep:new-beverly:2026-04-26:raiders-of-the-lost-ark": {
+      "level": "potential",
+      "at": "2026-04-22T21:15:03.011Z",
+      "kind": "screening",
+      "title": "Raiders of the Lost Ark",
+      "date": "2026-04-26",
+      "theater": "new-beverly",
+      "time": "14:00",
+      "format": null,
+      "series": "Kiddie Matinee",
+      "url": "https://thenewbev.com/program/april-26-raiders-of-the-lost-ark-family-matinee/"
+    },
+    "rep:new-beverly:2026-04-26:high-society": {
+      "level": "not",
+      "at": "2026-04-22T21:15:03.477Z",
+      "kind": "screening",
+      "title": "High Society",
+      "date": "2026-04-26",
+      "theater": "new-beverly",
+      "time": "18:30",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-26-high-society-pride-of-the-blue-grass/"
+    },
+    "rep:new-beverly:2026-04-26:pride-of-the-blue-grass": {
+      "level": "not",
+      "at": "2026-04-22T21:15:04.323Z",
+      "kind": "screening",
+      "title": "Pride of the Blue Grass",
+      "date": "2026-04-26",
+      "theater": "new-beverly",
+      "time": "20:00",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-26-high-society-pride-of-the-blue-grass/"
+    },
+    "rep:new-beverly:2026-04-27:the-ape-man": {
+      "level": "not",
+      "at": "2026-04-22T21:15:05.344Z",
+      "kind": "screening",
+      "title": "The Ape Man",
+      "date": "2026-04-27",
+      "theater": "new-beverly",
+      "time": "19:30",
+      "format": null,
+      "series": "Triple Feature",
+      "url": "https://thenewbev.com/program/april-27-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
+    },
+    "rep:new-beverly:2026-04-27:voodoo-man": {
+      "level": "not",
+      "at": "2026-04-22T21:15:06.078Z",
+      "kind": "screening",
+      "title": "Voodoo Man",
+      "date": "2026-04-27",
+      "theater": "new-beverly",
+      "time": "21:05",
+      "format": null,
+      "series": "Triple Feature",
+      "url": "https://thenewbev.com/program/april-27-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
+    },
+    "rep:new-beverly:2026-04-27:bela-lugosi-meets-a-brooklyn-gorilla": {
+      "level": "not",
+      "at": "2026-04-22T21:15:07.348Z",
+      "kind": "screening",
+      "title": "Bela Lugosi Meets A Brooklyn Gorilla",
+      "date": "2026-04-27",
+      "theater": "new-beverly",
+      "time": "22:25",
+      "format": null,
+      "series": "Triple Feature",
+      "url": "https://thenewbev.com/program/april-27-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
+    },
+    "rep:new-beverly:2026-04-28:the-ape-man": {
+      "level": "not",
+      "at": "2026-04-22T21:15:07.748Z",
+      "kind": "screening",
+      "title": "The Ape Man",
+      "date": "2026-04-28",
+      "theater": "new-beverly",
+      "time": "19:30",
+      "format": null,
+      "series": "Triple Feature",
+      "url": "https://thenewbev.com/program/april-28-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
+    },
+    "rep:new-beverly:2026-04-28:voodoo-man": {
+      "level": "not",
+      "at": "2026-04-22T21:15:08.845Z",
+      "kind": "screening",
+      "title": "Voodoo Man",
+      "date": "2026-04-28",
+      "theater": "new-beverly",
+      "time": "21:05",
+      "format": null,
+      "series": "Triple Feature",
+      "url": "https://thenewbev.com/program/april-28-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
+    },
+    "rep:new-beverly:2026-04-28:bela-lugosi-meets-a-brooklyn-gorilla": {
+      "level": "not",
+      "at": "2026-04-22T21:15:09.899Z",
+      "kind": "screening",
+      "title": "Bela Lugosi Meets A Brooklyn Gorilla",
+      "date": "2026-04-28",
+      "theater": "new-beverly",
+      "time": "22:25",
+      "format": null,
+      "series": "Triple Feature",
+      "url": "https://thenewbev.com/program/april-28-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
+    },
+    "rep:new-beverly:2026-04-29:make-me-a-star": {
+      "level": "not",
+      "at": "2026-04-22T21:15:10.920Z",
+      "kind": "screening",
+      "title": "Make Me a Star",
+      "date": "2026-04-29",
+      "theater": "new-beverly",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-29-make-me-a-star-dont-gamble-with-strangers/"
+    },
+    "rep:new-beverly:2026-04-30:don-t-gamble-with-strangers": {
+      "level": "not",
+      "at": "2026-04-22T21:15:12.874Z",
+      "kind": "screening",
+      "title": "Don’t Gamble with Strangers",
+      "date": "2026-04-30",
+      "theater": "new-beverly",
+      "time": "21:25",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-30-make-me-a-star-dont-gamble-with-strangers/"
+    },
+    "rep:new-beverly:2026-04-30:make-me-a-star": {
+      "level": "not",
+      "at": "2026-04-22T21:15:13.857Z",
+      "kind": "screening",
+      "title": "Make Me a Star",
+      "date": "2026-04-30",
+      "theater": "new-beverly",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-30-make-me-a-star-dont-gamble-with-strangers/"
+    },
+    "rep:new-beverly:2026-04-29:don-t-gamble-with-strangers": {
+      "level": "not",
+      "at": "2026-04-22T21:15:14.820Z",
+      "kind": "screening",
+      "title": "Don’t Gamble with Strangers",
+      "date": "2026-04-29",
+      "theater": "new-beverly",
+      "time": "21:25",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-29-make-me-a-star-dont-gamble-with-strangers/"
     }
   }
 }

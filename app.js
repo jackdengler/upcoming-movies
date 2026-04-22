@@ -17,7 +17,7 @@ if ("serviceWorker" in navigator) {
 
 const now = new Date();
 const YEAR = now.getFullYear();
-const TODAY = now.toISOString().slice(0, 10);
+const TODAY = `${YEAR}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
 const CURRENT_MONTH_KEY = `${YEAR}-${String(now.getMonth() + 1).padStart(2, "0")}`;
 const NEXT_MONTH_KEY = (() => {
   const d = new Date(YEAR, now.getMonth() + 1, 1);

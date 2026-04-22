@@ -35,22 +35,21 @@ const LEVEL_LABEL = {
   watched: "Seen",
 };
 
-const FILTER_KEY = "upcoming:filters";
+const CALENDAR_KIND_KEY = "upcoming:calendar-kinds";
 const EXPANDED_KEY = "upcoming:expanded";
 const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
-const filters = (() => {
+const calendarKinds = (() => {
   try {
-    const saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
+    const saved = JSON.parse(localStorage.getItem(CALENDAR_KIND_KEY) || "null");
     if (saved && typeof saved === "object") {
-      return { wide: !!saved.wide, limited: !!saved.limited };
+      return { releases: saved.releases !== false, rereleases: saved.rereleases !== false };
     }
   } catch {}
-  return { wide: true, limited: true };
+  return { releases: true, rereleases: true };
 })();
-const saveFilters = () => {
-  try { localStorage.setItem(FILTER_KEY, JSON.stringify(filters)); } catch {}
+const saveCalendarKinds = () => {
+  try { localStorage.setItem(CALENDAR_KIND_KEY, JSON.stringify(calendarKinds)); } catch {}
 };
-const passesFilter = (m) => filters[m.release_type] !== false;
 
 const expanded = (() => {
   try {
@@ -428,7 +427,7 @@ function renderDateGroup([date, items]) {
 
 function renderMonth(bundle) {
   const key = monthKeyOf(bundle);
-  const filtered = bundle.releases.filter(passesFilter);
+  const filtered = bundle.releases;
   if (!filtered.length) return null;
 
   const defaultOpen = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
@@ -522,7 +521,6 @@ function renderInterestsTab(bundles) {
       cast: "—",
       tmdb_id: meta.tmdb_id || null,
     };
-    if (!passesFilter(movie)) continue;
     grouped[meta.level].push(movie);
   }
 
@@ -764,13 +762,23 @@ const calState = {
   selected: TODAY,
 };
 
-function moviesByDate(bundles) {
+// Build the calendar date → items map, honoring the New Releases / Rereleases
+// toggle pills. Each entry is either a release object or a screening object
+// (tagged with `_kind: "screening"`); downstream renderers branch on the tag.
+function itemsByDate(bundles) {
   const map = new Map();
-  for (const b of bundles) {
-    for (const m of b.releases) {
-      if (!passesFilter(m)) continue;
-      if (!map.has(m.date)) map.set(m.date, []);
-      map.get(m.date).push(m);
+  if (calendarKinds.releases) {
+    for (const b of bundles) {
+      for (const m of b.releases) {
+        if (!map.has(m.date)) map.set(m.date, []);
+        map.get(m.date).push(m);
+      }
+    }
+  }
+  if (calendarKinds.rereleases) {
+    for (const s of repertoryState.data?.screenings || []) {
+      if (!map.has(s.date)) map.set(s.date, []);
+      map.get(s.date).push({ ...s, _kind: "screening" });
     }
   }
   return map;
@@ -849,8 +857,8 @@ function renderCalendarDayList(items, selectedDate, byKey, bookedMap, watchedMap
   const watchedEntries = watchedMap.get(selectedDate) || [];
 
   const resolve = ({ key, mark }) => byKey.get(key) || placeholderMovie(mark);
-  const bookedMovies = bookedEntries.map(resolve).filter(passesFilter);
-  const watchedMovies = watchedEntries.map(resolve).filter(passesFilter);
+  const bookedMovies = bookedEntries.map(resolve);
+  const watchedMovies = watchedEntries.map(resolve);
 
   if (!items.length && !bookedMovies.length && !watchedMovies.length) {
     dayBox.appendChild(
@@ -882,7 +890,7 @@ function renderCalendarDayList(items, selectedDate, byKey, bookedMap, watchedMap
       el("span", { class: "section__date", text: fmtDateShort(items[0].date) }),
       el("span", { class: "section__count", text: `${items.length}` }),
     );
-    const list = el("div", { class: "section__list" }, ...items.map(renderRow));
+    const list = el("div", { class: "section__list" }, ...items.map(renderAny));
     dayBox.appendChild(el("div", { class: "section" }, header, list));
   }
 }
@@ -899,7 +907,7 @@ function renderCalendarTab(bundles) {
   const firstDow = new Date(year, monthIdx, 1).getDay();
   const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
   const prevMonthDays = new Date(year, monthIdx, 0).getDate();
-  const byDate = moviesByDate(bundles);
+  const byDate = itemsByDate(bundles);
   const byKey = movieIndex(bundles);
   const bookedMap = marksByField("booked", "booked_date");
   const watchedMap = marksByField("watched", "watched_date");
@@ -1149,7 +1157,7 @@ function switchTab(tab) {
   if (tab === "year") { title.textContent = "Upcoming"; sub.textContent = `${YEAR}`; }
   else if (tab === "calendar") { title.textContent = "Calendar"; sub.textContent = `${calState.year}`; }
   else if (tab === "repertory") {
-    title.textContent = "Theaters";
+    title.textContent = "Rereleases";
     const total = (repertoryState.data?.screenings || []).length;
     sub.textContent = total ? `${total} screenings` : "";
   }
@@ -1181,24 +1189,25 @@ document.getElementById("open-pat").addEventListener("click", () => {
   requestPat();
 });
 
-function syncFilterChips() {
-  for (const chip of document.querySelectorAll(".filter-chip")) {
-    chip.classList.toggle("is-active", filters[chip.dataset.type] !== false);
+function syncCalendarKindChips() {
+  const bar = document.getElementById("calendar-kind-bar");
+  if (!bar) return;
+  for (const chip of bar.querySelectorAll(".filter-chip")) {
+    chip.classList.toggle("is-active", calendarKinds[chip.dataset.kind] !== false);
   }
 }
 
-document.querySelectorAll(".filter-chip").forEach((chip) => {
-  chip.addEventListener("click", () => {
-    const t = chip.dataset.type;
-    filters[t] = !filters[t];
-    saveFilters();
-    syncFilterChips();
-    if (activeTab === "year") renderYearTab(allBundles);
-    else if (activeTab === "calendar") renderCalendarTab(allBundles);
-    else if (activeTab === "interests") renderInterestsTab(allBundles);
-  });
+document.getElementById("calendar-kind-bar")?.addEventListener("click", (e) => {
+  const chip = e.target.closest(".filter-chip");
+  if (!chip) return;
+  const kind = chip.dataset.kind;
+  if (!kind) return;
+  calendarKinds[kind] = !calendarKinds[kind];
+  saveCalendarKinds();
+  syncCalendarKindChips();
+  if (activeTab === "calendar") renderCalendarTab(allBundles);
 });
-syncFilterChips();
+syncCalendarKindChips();
 
 document.getElementById("cal-prev")?.addEventListener("click", () => shiftCalendar(-1));
 document.getElementById("cal-next")?.addEventListener("click", () => shiftCalendar(1));

@@ -198,8 +198,9 @@ function renderRatingBar(m) {
 
     if (lvl === "booked") {
       const existing = Interests.getMark(key);
-      const result = await requestBookingDate({
-        title: m.title,
+      const result = await requestDateDialog({
+        heading: "Book ticket",
+        copy: m.title ? `Pick the date you're seeing ${m.title}.` : "Pick the date you're seeing it.",
         defaultDate: existing?.booked_date || m.date || TODAY,
         isUpdate: current === "booked",
       });
@@ -213,6 +214,28 @@ function renderRatingBar(m) {
         date: m.date,
         tmdb_id: m.tmdb_id || null,
         booked_date: result.date,
+      });
+      return;
+    }
+
+    if (lvl === "watched") {
+      const existing = Interests.getMark(key);
+      const result = await requestDateDialog({
+        heading: "Mark watched",
+        copy: m.title ? `When did you see ${m.title}?` : "When did you see it?",
+        defaultDate: existing?.watched_date || existing?.booked_date || m.date || TODAY,
+        isUpdate: current === "watched",
+      });
+      if (result.action === "cancel") return;
+      if (result.action === "remove") {
+        Interests.set(key, null);
+        return;
+      }
+      Interests.set(key, "watched", {
+        title: m.title,
+        date: m.date,
+        tmdb_id: m.tmdb_id || null,
+        watched_date: result.date,
       });
       return;
     }
@@ -264,6 +287,9 @@ function renderRow(m, opts = {}) {
   const bookedBadge = level === "booked" && mark?.booked_date
     ? el("div", { class: "row__booked", text: `🎟  Booked for ${fmtDateShort(mark.booked_date)}` })
     : null;
+  const watchedBadge = level === "watched" && mark?.watched_date
+    ? el("div", { class: "row__watched", text: `✓  Watched ${fmtDateShort(mark.watched_date)}` })
+    : null;
   const noLocalBadge = mark?.no_local_theater
     ? el("div", { class: "row__nolocal", text: "📍  Not playing near me" })
     : null;
@@ -278,6 +304,7 @@ function renderRow(m, opts = {}) {
     ),
     meta ? el("div", { class: "row__meta", text: meta }) : null,
     bookedBadge,
+    watchedBadge,
     noLocalBadge,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
@@ -494,6 +521,40 @@ function moviesByDate(bundles) {
   return map;
 }
 
+function movieIndex(bundles) {
+  const map = new Map();
+  for (const b of bundles) {
+    for (const m of b.releases) map.set(movieKey(m), m);
+  }
+  return map;
+}
+
+function placeholderMovie(mark) {
+  return {
+    title: mark?.title || "Unknown",
+    date: mark?.date || "",
+    director: "—",
+    studio: "—",
+    budget_usd: null,
+    release_type: "wide",
+    genre: "",
+    cast: "—",
+    tmdb_id: mark?.tmdb_id || null,
+  };
+}
+
+function marksByField(level, field) {
+  const map = new Map();
+  for (const [key, mark] of Object.entries(Interests.allMarks())) {
+    if (mark?.level !== level) continue;
+    const d = mark[field];
+    if (!d) continue;
+    if (!map.has(d)) map.set(d, []);
+    map.get(d).push({ key, mark });
+  }
+  return map;
+}
+
 function topLevelForDate(items) {
   const priority = { booked: 0, must: 1, likely: 2, potential: 3, watched: 4, not: 5 };
   let best = null;
@@ -508,22 +569,48 @@ function topLevelForDate(items) {
   return best;
 }
 
-function renderCalendarDayList(items) {
+function renderCalendarDayList(items, selectedDate, byKey, bookedMap, watchedMap) {
   const dayBox = document.getElementById("cal-day");
   if (!dayBox) return;
   dayBox.innerHTML = "";
-  if (!items || !items.length) {
+
+  const bookedEntries = bookedMap.get(selectedDate) || [];
+  const watchedEntries = watchedMap.get(selectedDate) || [];
+
+  const resolve = ({ key, mark }) => byKey.get(key) || placeholderMovie(mark);
+  const bookedMovies = bookedEntries.map(resolve).filter(passesFilter);
+  const watchedMovies = watchedEntries.map(resolve).filter(passesFilter);
+
+  if (!items.length && !bookedMovies.length && !watchedMovies.length) {
     dayBox.appendChild(
-      el("p", { class: "calendar__empty", text: "No releases this day." })
+      el("p", { class: "calendar__empty", text: "Nothing on this day." })
     );
     return;
   }
-  const header = el("div", { class: "section__header" },
-    el("span", { class: "section__date", text: fmtDateShort(items[0].date) }),
-    el("span", { class: "section__count", text: `${items.length}` }),
-  );
-  const list = el("div", { class: "section__list" }, ...items.map(renderRow));
-  dayBox.appendChild(el("div", { class: "section" }, header, list));
+
+  const addSection = (label, count, rows) => {
+    if (!rows.length) return;
+    const header = el("div", { class: "section__header" },
+      el("span", { class: "section__date", text: label }),
+      el("span", { class: "section__count", text: `${count}` }),
+    );
+    const list = el("div", { class: "section__list" },
+      ...rows.map((m) => renderRow(m, { showDate: true }))
+    );
+    dayBox.appendChild(el("div", { class: "section" }, header, list));
+  };
+
+  addSection("Booked", bookedMovies.length, bookedMovies);
+  addSection("Watched", watchedMovies.length, watchedMovies);
+
+  if (items.length) {
+    const header = el("div", { class: "section__header" },
+      el("span", { class: "section__date", text: fmtDateShort(items[0].date) }),
+      el("span", { class: "section__count", text: `${items.length}` }),
+    );
+    const list = el("div", { class: "section__list" }, ...items.map(renderRow));
+    dayBox.appendChild(el("div", { class: "section" }, header, list));
+  }
 }
 
 function renderCalendarTab(bundles) {
@@ -539,6 +626,9 @@ function renderCalendarTab(bundles) {
   const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
   const prevMonthDays = new Date(year, monthIdx, 0).getDate();
   const byDate = moviesByDate(bundles);
+  const byKey = movieIndex(bundles);
+  const bookedMap = marksByField("booked", "booked_date");
+  const watchedMap = marksByField("watched", "watched_date");
 
   const cellCount = Math.ceil((firstDow + daysInMonth) / 7) * 7;
   for (let i = 0; i < cellCount; i++) {
@@ -559,6 +649,8 @@ function renderCalendarTab(bundles) {
     const isToday = iso === TODAY;
     const isSelected = iso === calState.selected;
     const topLv = topLevelForDate(items);
+    const hasBooked = bookedMap.has(iso);
+    const hasWatched = watchedMap.has(iso);
 
     const cls = [
       "calendar__cell",
@@ -567,7 +659,16 @@ function renderCalendarTab(bundles) {
       isSelected ? "calendar__cell--selected" : "",
       items.length ? "calendar__cell--has" : "",
       topLv ? `calendar__cell--${topLv}` : "",
+      hasBooked ? "calendar__cell--has-booked" : "",
+      hasWatched ? "calendar__cell--has-watched" : "",
     ].filter(Boolean).join(" ");
+
+    const dots = (hasBooked || hasWatched)
+      ? el("span", { class: "calendar__dots", "aria-hidden": "true" },
+          hasBooked ? el("span", { class: "calendar__dot calendar__dot--booked" }) : null,
+          hasWatched ? el("span", { class: "calendar__dot calendar__dot--watched" }) : null,
+        )
+      : null;
 
     const cell = el("button", {
         type: "button",
@@ -580,6 +681,7 @@ function renderCalendarTab(bundles) {
       items.length
         ? el("span", { class: "calendar__count", text: String(items.length) })
         : null,
+      dots,
     );
     grid.appendChild(cell);
   }
@@ -587,7 +689,7 @@ function renderCalendarTab(bundles) {
   const selectedItems = (byDate.get(calState.selected) || [])
     .slice()
     .sort((a, b) => (a.title || "").localeCompare(b.title || ""));
-  renderCalendarDayList(selectedItems);
+  renderCalendarDayList(selectedItems, calState.selected, byKey, bookedMap, watchedMap);
 }
 
 function shiftCalendar(delta) {
@@ -717,19 +819,19 @@ function requestPat() {
 
 // ---------- Booking dialog ----------
 
-function requestBookingDate({ title, defaultDate, isUpdate }) {
+function requestDateDialog({ heading, copy, defaultDate, isUpdate }) {
   return new Promise((resolve) => {
     const dlg = document.getElementById("book-dialog");
     const input = document.getElementById("book-input");
-    const copy = document.getElementById("book-copy");
+    const titleEl = document.getElementById("book-title");
+    const copyEl = document.getElementById("book-copy");
     const cancel = document.getElementById("book-cancel");
     const remove = document.getElementById("book-remove");
     const form = document.getElementById("book-form");
 
     input.value = defaultDate || TODAY;
-    copy.textContent = title
-      ? `Pick the date you're seeing ${title}.`
-      : "Pick the date you're seeing it.";
+    titleEl.textContent = heading || "Pick a date";
+    copyEl.textContent = copy || "Pick a date.";
     remove.hidden = !isUpdate;
     dlg.showModal();
 
@@ -785,11 +887,28 @@ Interests.onChange(() => {
       existingBooked.remove();
     }
 
+    const existingWatched = row.querySelector(".row__watched");
+    if (lvl === "watched" && mark?.watched_date) {
+      const text = `✓  Watched ${fmtDateShort(mark.watched_date)}`;
+      if (existingWatched) {
+        existingWatched.textContent = text;
+      } else {
+        const badge = el("div", { class: "row__watched", text });
+        const anchor = row.querySelector(".row__booked")
+          || row.querySelector(".row__meta")
+          || row.querySelector(".row__title-line");
+        anchor?.after(badge);
+      }
+    } else if (existingWatched) {
+      existingWatched.remove();
+    }
+
     const existingNoLocal = row.querySelector(".row__nolocal");
     if (mark?.no_local_theater) {
       if (!existingNoLocal) {
         const badge = el("div", { class: "row__nolocal", text: "📍  Not playing near me" });
-        const anchor = existingBooked
+        const anchor = row.querySelector(".row__watched")
+          || row.querySelector(".row__booked")
           || row.querySelector(".row__meta")
           || row.querySelector(".row__title-line");
         anchor?.after(badge);

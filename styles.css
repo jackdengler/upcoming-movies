@@ -301,6 +301,20 @@ details[open] > .month__summary .month__chevron {
   border-radius: 999px;
 }
 
+.row__watched {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: var(--level-watched);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
 .row__nolocal {
   margin-top: 6px;
   display: inline-flex;
@@ -314,7 +328,9 @@ details[open] > .month__summary .month__chevron {
   padding: 3px 9px;
   border-radius: 999px;
 }
-.row__booked + .row__nolocal {
+.row__booked + .row__nolocal,
+.row__watched + .row__nolocal,
+.row__booked + .row__watched {
   margin-left: 6px;
 }
 
@@ -635,6 +651,25 @@ details[open] > .month__summary .month__chevron {
 .calendar__cell--potential .calendar__count { background: var(--level-potential); color: #fff; }
 .calendar__cell--watched .calendar__count { background: var(--level-watched); color: #fff; }
 .calendar__cell--not .calendar__count { background: var(--level-not); color: #fff; }
+
+.calendar__dots {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  pointer-events: none;
+}
+.calendar__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  display: block;
+}
+.calendar__dot--booked { background: var(--level-booked); }
+.calendar__dot--watched { background: var(--level-watched); }
 
 .calendar__day {
   margin-top: 14px;

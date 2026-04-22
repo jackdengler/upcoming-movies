@@ -207,6 +207,7 @@ export function sweepPastBookings(today) {
     state.marks[key] = {
       ...mark,
       level: "watched",
+      watched_date: mark.watched_date || bd,
       at: new Date().toISOString(),
     };
     changed = true;

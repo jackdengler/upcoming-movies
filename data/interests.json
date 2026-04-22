@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T08:45:50.147Z",
+  "updated": "2026-04-22T17:49:08.381Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1049,6 +1049,14 @@
       "date": "2026-05-01",
       "tmdb_id": 1430077,
       "watched_date": "2026-04-21"
+    },
+    "tmdb:1364297": {
+      "level": "not",
+      "at": "2026-04-22T17:49:08.329Z",
+      "title": "Bunnylovr",
+      "date": "2026-04-10",
+      "tmdb_id": 1364297,
+      "no_local_theater": true
     }
   }
 }

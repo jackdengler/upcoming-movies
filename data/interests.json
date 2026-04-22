@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T21:31:55.564Z",
+  "updated": "2026-04-22T21:32:02.622Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1545,6 +1545,54 @@
       "format": "35mm",
       "series": null,
       "url": "https://ticketing.uswest.veezi.com/purchase/3532?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-05-05:rza-s-one-spoon-of-chocolate": {
+      "level": "not",
+      "at": "2026-04-22T21:31:56.327Z",
+      "kind": "screening",
+      "title": "RZA’S ONE SPOON OF CHOCOLATE",
+      "date": "2026-05-05",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3540?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-05-04:rza-s-one-spoon-of-chocolate": {
+      "level": "not",
+      "at": "2026-04-22T21:31:57.285Z",
+      "kind": "screening",
+      "title": "RZA’S ONE SPOON OF CHOCOLATE",
+      "date": "2026-05-04",
+      "theater": "vista",
+      "time": "19:30",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3543?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-05-06:rza-s-one-spoon-of-chocolate": {
+      "level": "not",
+      "at": "2026-04-22T21:31:58.902Z",
+      "kind": "screening",
+      "title": "RZA’S ONE SPOON OF CHOCOLATE",
+      "date": "2026-05-06",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3541?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-05-07:rza-s-one-spoon-of-chocolate": {
+      "level": "not",
+      "at": "2026-04-22T21:32:00.114Z",
+      "kind": "screening",
+      "title": "RZA’S ONE SPOON OF CHOCOLATE",
+      "date": "2026-05-07",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3542?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     }
   }
 }

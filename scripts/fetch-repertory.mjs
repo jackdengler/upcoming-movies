@@ -24,6 +24,14 @@ const COMMON_HEADERS = {
 const HORIZON_DAYS = 60; // keep screenings up to ~2 months out
 const REQUEST_TIMEOUT_MS = 15000;
 
+// Diagnostic sample capture. When a source returns HTTP 200 but 0 events, we
+// attach a ~3KB sample of its last fetched page to the committed JSON so
+// parser bugs are debuggable without live access to the target sites.
+const _debug = {
+  currentSource: null,
+  sampleBySource: new Map(), // sourceId -> { url, bytes, sample }
+};
+
 // ---------- Theater registry ----------
 
 const THEATERS = [
@@ -91,7 +99,17 @@ async function fetchText(url, extraHeaders = {}) {
       redirect: "follow",
     });
     if (!r.ok) throw new Error(`HTTP ${r.status} ${url}`);
-    return await r.text();
+    const text = await r.text();
+    // Record a sample for the currently-running source so we can diagnose
+    // "HTTP 200 but 0 events" cases (wrong parser) from the committed JSON.
+    if (_debug.currentSource) {
+      _debug.sampleBySource.set(_debug.currentSource, {
+        url,
+        bytes: text.length,
+        sample: text.slice(0, 3500),
+      });
+    }
+    return text;
   } finally {
     clearTimeout(timer);
   }
@@ -540,21 +558,33 @@ const allScreenings = [];
 const sourceStatus = [];
 
 for (const src of SOURCES) {
+  _debug.currentSource = src.id;
+  _debug.sampleBySource.delete(src.id);
   try {
     const rows = await src.fn();
     allScreenings.push(...rows);
-    sourceStatus.push({ id: src.id, count: rows.length, status: "ok" });
+    const entry = { id: src.id, count: rows.length, status: "ok" };
+    // Attach a page sample when the fetch succeeded but no events were
+    // extracted — usually means the parser is looking at the wrong shape.
+    if (rows.length === 0) {
+      const sample = _debug.sampleBySource.get(src.id);
+      if (sample) {
+        entry.sample_url = sample.url;
+        entry.sample_bytes = sample.bytes;
+        entry.sample = sample.sample;
+      }
+    }
+    sourceStatus.push(entry);
     console.log(`${src.id}: ${rows.length} screenings`);
     await sleep(400);
   } catch (e) {
     console.warn(`${src.id} FAILED: ${e.message}`);
-    // Preserve previous-run screenings for this source's theaters so we don't
-    // wipe the UI when a single site is down.
     const kept = previous.filter((s) => src.theaters.includes(s.theater) && inWindow(s.date));
     allScreenings.push(...kept);
     sourceStatus.push({ id: src.id, count: kept.length, status: `failed: ${e.message}` });
   }
 }
+_debug.currentSource = null;
 
 const cleaned = dedupeScreenings(
   allScreenings

@@ -1260,21 +1260,57 @@ function renderRepertoryTab() {
   }
   empty.hidden = true;
 
+  // Mirror the new-releases layout: collapsible month wrappers with the
+  // current/next months expanded by default and past months pushed below
+  // the upcoming ones. Inner per-title grouping stays intact.
   const groups = groupByTitleMonth(screenings);
-  for (const [monthKey, titleMap] of groups) {
+  const upcoming = [];
+  const past = [];
+  for (const g of groups) (g[0] < CURRENT_MONTH_KEY ? past : upcoming).push(g);
+  const ordered = [...upcoming, ...past];
+
+  for (const [monthKey, titleMap] of ordered) {
     const entries = [...titleMap.values()].sort(
       (a, b) =>
         (a.title || "").localeCompare(b.title || "") ||
         (a.theater || "").localeCompare(b.theater || ""),
     );
-    const section = el("section", { class: "section" },
-      el("header", { class: "section__header" },
-        el("span", { class: "section__date", text: fmtMonthLabel(monthKey) }),
-        el("span", { class: "section__count", text: `${entries.length}` }),
+    const defaultOpen = monthKey === CURRENT_MONTH_KEY || monthKey === NEXT_MONTH_KEY;
+    const open = monthKey in expanded ? expanded[monthKey] : defaultOpen;
+    const isPast = monthKey < CURRENT_MONTH_KEY;
+
+    const details = el("details", {
+        class: isPast ? "month month--past" : "month",
+        open,
+        dataset: { monthKey },
+      },
+      el("summary", { class: "month__summary" },
+        el("span", { class: "month__chevron", "aria-hidden": "true" }),
+        el("span", { class: "month__name", text: fmtMonthLabel(monthKey) }),
+        el("span", { class: "month__count", text: `${entries.length}` }),
       ),
-      el("div", { class: "section__list" }, ...entries.map(renderRepTitleRow)),
+      el("div", { class: "month__body" },
+        el("section", { class: "section" },
+          el("div", { class: "section__list" }, ...entries.map(renderRepTitleRow)),
+        ),
+      ),
     );
-    list.appendChild(section);
+
+    details.addEventListener("toggle", () => {
+      expanded[monthKey] = details.open;
+      saveExpanded();
+    });
+    const summary = details.querySelector(".month__summary");
+    if (summary) {
+      summary.addEventListener("click", () => {
+        requestAnimationFrame(() => {
+          expanded[monthKey] = details.open;
+          saveExpanded();
+        });
+      });
+    }
+
+    list.appendChild(details);
   }
 }
 

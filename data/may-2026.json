@@ -16,6 +16,18 @@
       "notes": "A cautionary tail."
     },
     {
+      "tmdb_id": 1127384,
+      "date": "2026-05-01",
+      "title": "Deep Water",
+      "director": "Renny Harlin",
+      "studio": "Lionsgate",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Aaron Eckhart, Ben Kingsley, Angus Sampson, Lucy Barrett",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1290792,
       "date": "2026-05-01",
       "title": "One Spoon of Chocolate",
@@ -110,6 +122,18 @@
       "genre": "Horror",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
       "notes": "Be careful who you wish for…"
+    },
+    {
+      "tmdb_id": 1451588,
+      "date": "2026-05-22",
+      "title": "Corporate Retreat",
+      "director": "Aaron Fisher",
+      "studio": "Passage Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Odeya Rush, Sasha Lane, Ashton Sanders, Alan Ruck",
+      "notes": ""
     },
     {
       "tmdb_id": 1227877,

@@ -52,6 +52,18 @@
       "notes": "Fear is primal."
     },
     {
+      "tmdb_id": 1292415,
+      "date": "2026-04-10",
+      "title": "Beast",
+      "director": "Tyler Atkins",
+      "studio": "Broken Open Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Drama / Sport",
+      "cast": "Russell Crowe, Luke Hemsworth, Daniel MacPherson, Mojean Aria",
+      "notes": "One more fight."
+    },
+    {
       "tmdb_id": 1408208,
       "date": "2026-04-10",
       "title": "Exit 8",
@@ -74,6 +86,42 @@
       "genre": "Horror / Thriller",
       "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
       "notes": "You can't unsee it."
+    },
+    {
+      "tmdb_id": 1308388,
+      "date": "2026-04-10",
+      "title": "Hunting Matthew Nichols",
+      "director": "Markian Tarasiuk",
+      "studio": "DeVuono Releasing",
+      "budget_usd": 275000,
+      "release_type": "limited",
+      "genre": "Horror / Mystery / Thriller",
+      "cast": "Miranda MacDougall, Markian Tarasiuk, Christine Willes",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 787844,
+      "date": "2026-04-10",
+      "title": "Newborn",
+      "director": "Nate Parker",
+      "studio": "Mansa Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Thriller",
+      "cast": "David Oyelowo, Olivia Washington, Barry Pepper, Jimmie Fails",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1400357,
+      "date": "2026-04-10",
+      "title": "The Christophers",
+      "director": "Steven Soderbergh",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Ian McKellen, Michaela Coel, Jessica Gunning, James Corden",
+      "notes": ""
     },
     {
       "tmdb_id": 1455079,
@@ -134,6 +182,18 @@
       "genre": "Horror / Mystery",
       "cast": "Jack Reynor, Laia Costa, May Calamawy, Natalie Grace",
       "notes": "What happened to Katie?"
+    },
+    {
+      "tmdb_id": 854934,
+      "date": "2026-04-17",
+      "title": "Mabel",
+      "director": "Nicholas Ma",
+      "studio": "Tribeca Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Judy Greer, Christine Ko, Lexi Perkel, Jim Santangeli",
+      "notes": ""
     },
     {
       "tmdb_id": 1242332,

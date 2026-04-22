@@ -40,6 +40,18 @@
       "notes": "It will all come to this."
     },
     {
+      "tmdb_id": 1383731,
+      "date": "2026-03-06",
+      "title": "Protector",
+      "director": "Adrian Grünberg",
+      "studio": "Highland Film Group",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Thriller",
+      "cast": "Milla Jovovich, Matthew Modine, Isabel Myers, D. B. Sweeney",
+      "notes": "Mother. Savior. Killer..."
+    },
+    {
       "tmdb_id": 1159831,
       "date": "2026-03-06",
       "title": "The Bride!",
@@ -146,6 +158,18 @@
       "genre": "Horror / Comedy",
       "cast": "Samara Weaving, Kathryn Newton, Elijah Wood, Sarah Michelle Gellar",
       "notes": "Double or nothing."
+    },
+    {
+      "tmdb_id": 1244517,
+      "date": "2026-03-20",
+      "title": "Tow",
+      "director": "Stephanie Laing",
+      "studio": "The Exchange",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Rose Byrne, Dominic Sessa, Demi Lovato, Simon Rex",
+      "notes": ""
     },
     {
       "tmdb_id": 1292695,

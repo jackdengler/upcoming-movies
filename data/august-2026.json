@@ -115,25 +115,13 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Suzanne Todd Productions",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1204680,
-      "date": "2026-08-28",
-      "title": "Coyote vs. ACME",
-      "director": "Dave Green",
-      "studio": "Warner Bros. Pictures Animation",
-      "budget_usd": 72000000,
-      "release_type": "wide",
-      "genre": "Family / Comedy / Animation",
-      "cast": "Will Forte, John Cena, Lana Condor, Eric Bauza",
-      "notes": "The movie ACME doesn't want you to see."
     },
     {
       "tmdb_id": 1339588,

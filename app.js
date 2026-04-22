@@ -34,7 +34,6 @@ const LEVEL_LABEL = {
   watched: "Seen",
 };
 
-const TYPES = ["wide", "limited", "streaming"];
 const FILTER_KEY = "upcoming:filters";
 const EXPANDED_KEY = "upcoming:expanded";
 const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
@@ -42,10 +41,10 @@ const filters = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
     if (saved && typeof saved === "object") {
-      return { wide: !!saved.wide, limited: !!saved.limited, streaming: !!saved.streaming };
+      return { wide: !!saved.wide, limited: !!saved.limited };
     }
   } catch {}
-  return { wide: true, limited: true, streaming: true };
+  return { wide: true, limited: true };
 })();
 const saveFilters = () => {
   try { localStorage.setItem(FILTER_KEY, JSON.stringify(filters)); } catch {}

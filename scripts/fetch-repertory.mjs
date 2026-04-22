@@ -39,6 +39,7 @@ const THEATERS = [
   { slug: "nuart", name: "Nuart Theatre", address: "11272 Santa Monica Blvd, Los Angeles", url: "https://www.landmarktheatres.com/los-angeles/nuart-theatre" },
   { slug: "aero", name: "Aero Theatre", address: "1328 Montana Ave, Santa Monica", url: "https://www.americancinematheque.com/aero/" },
   { slug: "egyptian", name: "Egyptian Theatre", address: "6712 Hollywood Blvd, Los Angeles", url: "https://www.americancinematheque.com/egyptian/" },
+  { slug: "los-feliz-theatre", name: "Los Feliz Theatre", address: "1822 N Vermont Ave, Los Angeles", url: "https://www.americancinematheque.com/about/theatres/los-feliz-theatre/" },
   { slug: "vista", name: "Vista Theater", address: "4473 Sunset Dr, Los Angeles", url: "https://vistatheaterhollywood.com/" },
   { slug: "alamo-dtla", name: "Alamo Drafthouse DTLA", address: "700 W 7th St, Los Angeles", url: "https://drafthouse.com/los-angeles" },
   { slug: "academy-museum", name: "Academy Museum", address: "6067 Wilshire Blvd, Los Angeles", url: "https://www.academymuseum.org/en/programs" },
@@ -373,50 +374,59 @@ function jsonLdEvents(html, theaterSlug, fallbackUrl) {
   return out;
 }
 
-// American Cinematheque (Aero + Egyptian). Their site emits Schema.org Event
-// nodes per screening with a `location.name` we can use to route to the right
-// venue.
+// American Cinematheque (Aero + Egyptian + Los Feliz Theatre). The site's
+// #eventsApp Vue widget calls The Events Calendar REST API
+// (/wp-json/tribe/events/v1/events), which returns a structured events list
+// we can route to the right venue by Tribe Events venue id.
+//   54  = Aero Theatre
+//   55  = Egyptian Theatre
+//   102 = Los Feliz Theatre
 async function scrapeAmericanCinematheque() {
-  const candidates = [
-    "https://www.americancinematheque.com/now-showing/",
-    "https://www.americancinematheque.com/calendar/",
-  ];
-  let html = "";
-  let lastErr = null;
-  for (const url of candidates) {
-    try {
-      html = await fetchText(url);
-      if (html) break;
-    } catch (e) { lastErr = e; }
-  }
-  if (!html) throw lastErr || new Error("ac: no candidate URL succeeded");
+  const AC_VENUE_TO_THEATER = { 54: "aero", 55: "egyptian", 102: "los-feliz-theatre" };
+  const base = "https://www.americancinematheque.com/wp-json/tribe/events/v1/events";
+  const params = new URLSearchParams({
+    per_page: "50",
+    start_date: TODAY_LA,
+    end_date: HORIZON_LA,
+  });
+  let url = `${base}?${params.toString()}`;
 
   const out = [];
-  for (const b of extractJsonLd(html)) {
-    for (const ev of flattenEvents(b)) {
-      const start = ev.startDate;
+  for (let page = 0; page < 10 && url; page++) {
+    const data = await fetchJson(url);
+    if (!data?.events?.length) break;
+    for (const ev of data.events) {
+      const start = ev.start_date || ev.startDate;
       if (!start) continue;
-      const parts = String(start).endsWith("Z") || /[+-]\d{2}:?\d{2}$/.test(String(start))
-        ? laParts(start)
-        : (naivePTParts(start) || laParts(start));
+      const parts = naivePTParts(start) || laParts(start);
       if (!parts || !inWindow(parts.date)) continue;
-      const venue = String(ev.location?.name || ev.location || "").toLowerCase();
-      let theaterSlug = null;
-      if (venue.includes("aero")) theaterSlug = "aero";
-      else if (venue.includes("egyptian")) theaterSlug = "egyptian";
-      else continue;
-      const name = ev.name || "";
+
+      let theater = AC_VENUE_TO_THEATER[ev.venue?.id];
+      if (!theater) {
+        const vname = String(ev.venue?.venue || ev.venue?.name || "").toLowerCase();
+        if (vname.includes("aero")) theater = "aero";
+        else if (vname.includes("egyptian")) theater = "egyptian";
+        else if (vname.includes("los feliz")) theater = "los-feliz-theatre";
+      }
+      if (!theater) continue;
+
+      const name = decodeEntities(ev.title || "");
+      const desc = decodeEntities(ev.description || "").replace(/<[^>]+>/g, " ");
+      const series = Array.isArray(ev.categories) && ev.categories[0]?.name
+        ? decodeEntities(ev.categories[0].name)
+        : null;
       out.push({
-        theater: theaterSlug,
+        theater,
         title: cleanTitle(name),
         year: extractYear(name),
         date: parts.date,
         time: parts.time,
-        format: detectFormat(name + " " + (ev.description || "")),
-        series: ev.superEvent?.name || null,
+        format: detectFormat(`${name} ${desc}`),
+        series,
         url: ev.url || "https://www.americancinematheque.com/now-showing/",
       });
     }
+    url = data.next_rest_url || null;
   }
   return out;
 }
@@ -691,7 +701,7 @@ async function scrapeAMCClassics() {
 
 const SOURCES = [
   { id: "new-beverly", theaters: ["new-beverly"], fn: scrapeNewBeverly },
-  { id: "american-cinematheque", theaters: ["aero", "egyptian"], fn: scrapeAmericanCinematheque },
+  { id: "american-cinematheque", theaters: ["aero", "egyptian", "los-feliz-theatre"], fn: scrapeAmericanCinematheque },
   { id: "nuart", theaters: ["nuart"], fn: scrapeNuart },
   { id: "vista", theaters: ["vista"], fn: scrapeVista },
   { id: "alamo-dtla", theaters: ["alamo-dtla"], fn: scrapeAlamoDtla },

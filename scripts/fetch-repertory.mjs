@@ -25,7 +25,7 @@ const HORIZON_DAYS = 60; // keep screenings up to ~2 months out
 const REQUEST_TIMEOUT_MS = 15000;
 
 // Diagnostic sample capture. When a source returns HTTP 200 but 0 events, we
-// attach a ~3KB sample of its last fetched page to the committed JSON so
+// attach a ~60KB sample of its last fetched page to the committed JSON so
 // parser bugs are debuggable without live access to the target sites.
 const _debug = {
   currentSource: null,
@@ -106,7 +106,7 @@ async function fetchText(url, extraHeaders = {}) {
       _debug.sampleBySource.set(_debug.currentSource, {
         url,
         bytes: text.length,
-        sample: text.slice(0, 3500),
+        sample: text.slice(0, 60000),
       });
     }
     return text;
@@ -252,44 +252,98 @@ function extractYear(s) {
 // Screening shape:
 //   { theater, title, year, date, time, format, series, url }
 
-// New Beverly: WordPress "Modern Events Calendar" exposes an iCal export.
-// We try two known iCal URLs, then fall back to JSON-LD on the schedule page.
+// "7:30 pm" → "19:30"
+function parse12h(s) {
+  const m = String(s).trim().match(/^(\d{1,2}):(\d{2})\s*([ap])m$/i);
+  if (!m) return null;
+  let h = Number(m[1]) % 12;
+  if (m[3].toLowerCase() === "p") h += 12;
+  return `${String(h).padStart(2, "0")}:${m[2]}`;
+}
+
+const NB_MONTHS = {
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+  july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+};
+
+// New Beverly publishes one month at a time on /schedule/ as server-rendered
+// `<article class="event-card">` blocks. The page heading "<h2>Month YYYY</h2>"
+// supplies the year context; each card carries day, times, title, and a
+// program URL. Multi-feature nights have N <time> tags + N titles separated by
+// " / " inside the title heading.
 async function scrapeNewBeverly() {
-  const candidates = [
-    "https://thenewbev.com/?plugin=all-in-one-event-calendar&controller=ai1ec_exporter_controller&action=export_events",
-    "https://thenewbev.com/events/?ical=1",
-    "https://thenewbev.com/?ical=1",
-  ];
-  for (const url of candidates) {
-    try {
-      const text = await fetchText(url, { Accept: "text/calendar" });
-      if (!text.includes("BEGIN:VEVENT")) continue;
-      const events = parseIcs(text);
-      const out = [];
-      for (const ev of events) {
-        const parts = icsTimeToParts(ev.DTSTART);
-        if (!parts || !inWindow(parts.date)) continue;
-        const summary = decodeEntities(ev.SUMMARY).replace(/\\,/g, ",").replace(/\\n/g, " ").trim();
-        const desc = decodeEntities(ev.DESCRIPTION || "").replace(/\\n/g, " ");
-        out.push({
-          theater: "new-beverly",
-          title: cleanTitle(summary),
-          year: extractYear(summary),
-          date: parts.date,
-          time: parts.time,
-          format: detectFormat(summary + " " + desc),
-          series: null,
-          url: ev.URL || "https://thenewbev.com/schedule/",
-        });
-      }
-      if (out.length) return out;
-    } catch (e) {
-      console.warn(`new-beverly: ${url} → ${e.message}`);
+  const url = "https://thenewbev.com/schedule/";
+  const html = await fetchText(url);
+
+  const headingM = html.match(/<h2[^>]*>\s*([A-Za-z]+)\s+(\d{4})\s*<\/h2>/);
+  const headingMonth = headingM ? headingM[1].toLowerCase() : null;
+  const headingYear = headingM ? Number(headingM[2]) : new Date().getUTCFullYear();
+
+  const out = [];
+  const articleRe = /<article[^>]*class="[^"]*\bevent-card\b[^"]*"[^>]*>([\s\S]*?)<\/article>/gi;
+  let match;
+  while ((match = articleRe.exec(html))) {
+    const block = match[1];
+
+    const dayM = block.match(/event-card__numb[^>]*>\s*(\d{1,2})\s*</);
+    if (!dayM) continue;
+    const monthM = block.match(/event-card__month[^>]*>\s*([A-Za-z]+)\s*</);
+    const monthName = (monthM ? monthM[1] : headingMonth || "").toLowerCase();
+    const monthNum = NB_MONTHS[monthName];
+    if (!monthNum) continue;
+
+    // Year roll-over: if the heading is December and a card shows a January
+    // day, that day is in the following calendar year.
+    let year = headingYear;
+    if (headingMonth && monthName !== headingMonth &&
+        NB_MONTHS[headingMonth] === 12 && monthNum === 1) {
+      year += 1;
+    }
+    const day = Number(dayM[1]);
+    const date = `${year}-${String(monthNum).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+    if (!inWindow(date)) continue;
+
+    const times = [];
+    const timeRe = /<time[^>]*class="[^"]*\bevent-card__time\b[^"]*"[^>]*>\s*([0-9:]+\s*[ap]m)\s*<\/time>/gi;
+    let tm;
+    while ((tm = timeRe.exec(block))) {
+      const t = parse12h(tm[1]);
+      if (t) times.push(t);
+    }
+    if (!times.length) continue;
+
+    const titleM = block.match(/<h4[^>]*class="[^"]*\bevent-card__title\b[^"]*"[^>]*>([\s\S]*?)<\/h4>/i);
+    const titleText = titleM ? stripTags(titleM[1]).replace(/\s+/g, " ").trim() : "";
+    const titles = titleText.split(/\s*\/\s*/).map((s) => s.trim()).filter(Boolean);
+    if (!titles.length) continue;
+
+    const hrefM = block.match(/href="([^"]+)"/);
+    const programUrl = hrefM ? hrefM[1] : url;
+
+    const seriesM = block.match(/event-card__label[^>]+aria-label="([^"]+)"/);
+    const series = seriesM ? decodeEntities(seriesM[1]) : null;
+
+    // Pair each <time> with its corresponding title for double/triple features.
+    // On a count mismatch (rare), emit one screening per time using the joined
+    // title — better to over-report than to drop the row entirely.
+    const pairs = times.length === titles.length
+      ? times.map((t, i) => [t, titles[i]])
+      : times.map((t) => [t, titles.join(" / ")]);
+
+    for (const [time, rawTitle] of pairs) {
+      out.push({
+        theater: "new-beverly",
+        title: cleanTitle(rawTitle),
+        year: extractYear(rawTitle),
+        date,
+        time,
+        format: detectFormat(rawTitle),
+        series,
+        url: programUrl,
+      });
     }
   }
-  // HTML fallback: parse JSON-LD events from the schedule page.
-  const html = await fetchText("https://thenewbev.com/schedule/");
-  return jsonLdEvents(html, "new-beverly", "https://thenewbev.com/schedule/");
+  return out;
 }
 
 // Generic JSON-LD extractor used by several WordPress-backed cinema sites.

@@ -1,10 +1,11 @@
-const CACHE = "upcoming-v10";
+const CACHE = "upcoming-v11";
 const SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./js/interests.js",
+  "./js/activity.js",
   "./manifest.webmanifest",
 ];
 

@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-20",
   "source": "TMDB",
   "releases": [
     {
@@ -14,18 +14,6 @@
       "genre": "Comedy / Drama",
       "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
       "notes": "A comedy of catastrophic proportions."
-    },
-    {
-      "tmdb_id": 1402292,
-      "date": "2026-10-02",
-      "title": "Penumbra 4",
-      "director": "Bryce Spencer",
-      "studio": "—",
-      "budget_usd": 1000,
-      "release_type": "wide",
-      "genre": "Horror / Science Fiction",
-      "cast": "Bryce Spencer, Deward Grow, Ellery Kingston, Dylan Barlow",
-      "notes": ""
     },
     {
       "tmdb_id": 1283515,
@@ -61,30 +49,6 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Mikey Madison, Jeremy Allen White, Jeremy Strong, Bill Burr",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1495373,
-      "date": "2026-10-13",
-      "title": "Friday's Chylde 3D",
-      "director": "Zeb Hyke",
-      "studio": "—",
-      "budget_usd": 23,
-      "release_type": "wide",
-      "genre": "Horror / Science Fiction / Fantasy",
-      "cast": "—",
-      "notes": "Friday's Chylde 3D"
-    },
-    {
-      "tmdb_id": 1669915,
-      "date": "2026-10-16",
-      "title": "Angel and the Badman",
-      "director": "Julio Quintana",
-      "studio": "Angel Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Western / Drama",
-      "cast": "Zachary Levi, Neal McDonough, Tommy Lee Jones",
       "notes": ""
     },
     {
@@ -136,18 +100,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1468383,
-      "date": "2026-10-23",
-      "title": "Faust",
-      "director": "Leonardo Gomez",
-      "studio": "Three Sided Productions",
-      "budget_usd": 1400,
-      "release_type": "wide",
-      "genre": "Drama / Horror / Fantasy",
-      "cast": "Ryan Thomas, Mina Izaie, Fox Hughes, Megan Millis",
-      "notes": "Dispel Your Troubles"
-    },
-    {
       "tmdb_id": 858035,
       "date": "2026-10-23",
       "title": "Klara and the Sun",
@@ -170,42 +122,6 @@
       "genre": "Drama / Thriller",
       "cast": "Benedict Cumberbatch, Rosamund Pike, Anthony Hopkins, Cosmo Jarvis",
       "notes": ""
-    },
-    {
-      "tmdb_id": 791523,
-      "date": "2026-10-23",
-      "title": "Wildwood",
-      "director": "Travis Knight",
-      "studio": "LAIKA",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Family / Fantasy / Adventure",
-      "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1594719,
-      "date": "2026-10-31",
-      "title": "Bullet and Lace",
-      "director": "Nick Noyes",
-      "studio": "Jackel Factory",
-      "budget_usd": 2,
-      "release_type": "wide",
-      "genre": "Thriller / Horror",
-      "cast": "Shannon Sullivan, Dave Schweitzer, Charlotte Rose Benjamin",
-      "notes": "True crime hits different when you’re the episode."
-    },
-    {
-      "tmdb_id": 1595886,
-      "date": "2026-10-31",
-      "title": "Lights! Camera!! Scream!!!",
-      "director": "Nick Noyes",
-      "studio": "A Part of the Chaos",
-      "budget_usd": 15000,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Shannon Sullivan, Aria Bryan, Dave Schweitzer, Nick Noyes",
-      "notes": "Making a movie shouldn’t be this deadly."
     }
   ]
 }

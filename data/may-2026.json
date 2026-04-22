@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-20",
   "source": "TMDB",
   "releases": [
     {
@@ -11,68 +11,32 @@
       "studio": "Aniventure",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Family / Drama",
-      "cast": "Seth Rogen, Gaten Matarazzo, Woody Harrelson, Kieran Culkin",
-      "notes": "It's time for these animals to stand and fight."
-    },
-    {
-      "tmdb_id": 1363285,
-      "date": "2026-05-01",
-      "title": "Brimstone Terrace",
-      "director": "Tyler W. Moore",
-      "studio": "Illumination Cinema",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Comedy / Drama",
-      "cast": "Tori Kamal, Jamie Zin, Matthew J. Lindblom, Jillian Elaine",
-      "notes": "Meet the New Grim Reaper"
-    },
-    {
-      "tmdb_id": 1469164,
-      "date": "2026-05-01",
-      "title": "Casa Grande",
-      "director": "Juan Pablo Arias Munoz",
-      "studio": "ESX Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Western",
-      "cast": "John Pyper-Ferguson, Christina Moore, Madison Lawlor, Lou Diamond Phillips",
-      "notes": "Nothing stays buried forever."
+      "genre": "Animation / Adventure / Comedy",
+      "cast": "Seth Rogen, Gaten Matarazzo, Kieran Culkin, Glenn Close",
+      "notes": "A cautionary tail."
     },
     {
       "tmdb_id": 1127384,
       "date": "2026-05-01",
       "title": "Deep Water",
       "director": "Renny Harlin",
-      "studio": "Magenta Light Studios",
+      "studio": "Lionsgate",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Thriller / Horror",
-      "cast": "Aaron Eckhart, Molly Belle Wright, Kelly Gale, Ben Kingsley",
-      "notes": "Surviving the crash is just the beginning."
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Aaron Eckhart, Ben Kingsley, Angus Sampson, Lucy Barrett",
+      "notes": ""
     },
     {
       "tmdb_id": 1430077,
       "date": "2026-05-01",
       "title": "Hokum",
       "director": "Damian McCarthy",
-      "studio": "Spooky Pictures",
+      "studio": "Neon",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
-      "notes": "We've been expecting you."
-    },
-    {
-      "tmdb_id": 1654797,
-      "date": "2026-05-01",
-      "title": "Miss Universe Philippines 2026",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
+      "release_type": "limited",
+      "genre": "Horror / Mystery / Thriller",
+      "cast": "Adam Scott, Peter Coonan, David Wilmot, Austin Amelio",
       "notes": ""
     },
     {
@@ -86,30 +50,6 @@
       "genre": "Action / Drama / Thriller",
       "cast": "Shameik Moore, Blair Underwood, RJ Cyler, Paris Jackson",
       "notes": "He has nowhere to go. They have nowhere to hide."
-    },
-    {
-      "tmdb_id": 1595249,
-      "date": "2026-05-01",
-      "title": "Senioritis Stirkes! 2: The Final Project",
-      "director": "Thomas Prin",
-      "studio": "ThomasProductions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Thomas Prin",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1656777,
-      "date": "2026-05-01",
-      "title": "Surprise!",
-      "director": "Eva Birkner",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Louie Baires",
-      "notes": ""
     },
     {
       "tmdb_id": 1007757,
@@ -136,54 +76,6 @@
       "notes": "Icons reign forever."
     },
     {
-      "tmdb_id": 1628464,
-      "date": "2026-05-01",
-      "title": "Tourists",
-      "director": "Aditya Bajaj",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Chloe Nanes, Jabril Rilley, Simran Khanuja, Stuart Frohna",
-      "notes": "It truly hurts to understand your pain and know there’s nothing you can really do about it."
-    },
-    {
-      "tmdb_id": 1662692,
-      "date": "2026-05-05",
-      "title": "Before I Go",
-      "director": "Dominic Salazar",
-      "studio": "BROG studios",
-      "budget_usd": 20,
-      "release_type": "wide",
-      "genre": "Drama / Family",
-      "cast": "Dominic Salazar, Paxton Rain Salazar, Summer Keilani Salazar",
-      "notes": "I miss the way it all began."
-    },
-    {
-      "tmdb_id": 1676384,
-      "date": "2026-05-05",
-      "title": "Bless Ur Heart",
-      "director": "Milan Medley",
-      "studio": "—",
-      "budget_usd": 1000,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Tierra Scott, Hattie Fisher, Demi Rodriguez, Rocco Papa Greaney",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1234716,
-      "date": "2026-05-08",
-      "title": "Little Lamb",
-      "director": "Greg Herman",
-      "studio": "AGN&S Wolf",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Crime / Drama / Mystery / Thriller",
-      "cast": "Kelly Kristofferson, Deena Wade, Victor Dimotsis, Rhonan Cort",
-      "notes": "The wolf never sleeps."
-    },
-    {
       "tmdb_id": 931285,
       "date": "2026-05-08",
       "title": "Mortal Kombat II",
@@ -196,18 +88,6 @@
       "notes": "Finish the fight."
     },
     {
-      "tmdb_id": 1409853,
-      "date": "2026-05-08",
-      "title": "Neglected",
-      "director": "David Lipper",
-      "studio": "Red Sea Media",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Thriller",
-      "cast": "Josh Duhamel, Dylan Sprouse, Til Schweiger, Jeremy London",
-      "notes": "How far would you go to save your son?"
-    },
-    {
       "tmdb_id": 1301421,
       "date": "2026-05-08",
       "title": "The Sheep Detectives",
@@ -218,66 +98,6 @@
       "genre": "Mystery / Crime / Comedy / Family",
       "cast": "Hugh Jackman, Emma Thompson, Nicholas Braun, Nicholas Galitzine",
       "notes": "A new breed of mystery."
-    },
-    {
-      "tmdb_id": 1608562,
-      "date": "2026-05-10",
-      "title": "The Alfred Show Movie",
-      "director": "Jaxson Rattay",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Elija Rattay, Jamie Tinajero, Henry Hansen, Miles Hansen",
-      "notes": "To love, to kidnap children..."
-    },
-    {
-      "tmdb_id": 1662716,
-      "date": "2026-05-11",
-      "title": "Threadbare",
-      "director": "Dominic Salazar",
-      "studio": "BROG studios",
-      "budget_usd": 60,
-      "release_type": "wide",
-      "genre": "Drama / Family / Fantasy",
-      "cast": "Dominic Salazar, Paxton Rain Salazar, Emma Armstrong",
-      "notes": "The kingdoms just changing."
-    },
-    {
-      "tmdb_id": 1665071,
-      "date": "2026-05-12",
-      "title": "The Big Break",
-      "director": "Steve Rodgers",
-      "studio": "Cooped Up Productions",
-      "budget_usd": 7500,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Kenny Cooper, Derek Bosworth, Jake Day, Tiana Okoye",
-      "notes": "A costumed character attempts to land a Hollywood role after an agent shows up at a children's birthday party."
-    },
-    {
-      "tmdb_id": 1196831,
-      "date": "2026-05-15",
-      "title": "A Guardian's Heart",
-      "director": "R. Michael Givens",
-      "studio": "Heart Stopper Productions",
-      "budget_usd": 1000000,
-      "release_type": "wide",
-      "genre": "Action / Adventure / Thriller",
-      "cast": "Alexis Baca, Laura Mason, Wayne D Burdette Jr.",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1398050,
-      "date": "2026-05-15",
-      "title": "Driver's Ed",
-      "director": "Bobby Farrelly",
-      "studio": "AGC Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Sam Nivola, Sophie Telegadis, Mohana Krishnan, Aidan Laprete",
-      "notes": ""
     },
     {
       "tmdb_id": 1122573,
@@ -304,18 +124,6 @@
       "notes": "Make your daddy dead. Real dead."
     },
     {
-      "tmdb_id": 1285669,
-      "date": "2026-05-15",
-      "title": "LifeHack",
-      "director": "Ronan Corrigan",
-      "studio": "Screenlife Liverpool",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Thriller / Crime",
-      "cast": "Georgie Farmer, Yasmin Finney, Roman Hayeck-Green, James Scholz",
-      "notes": "They're coming for your coin."
-    },
-    {
       "tmdb_id": 1339713,
       "date": "2026-05-15",
       "title": "Obsession",
@@ -328,39 +136,15 @@
       "notes": "Be careful who you wish for…"
     },
     {
-      "tmdb_id": 1675676,
-      "date": "2026-05-16",
-      "title": "Seven Millimeter",
-      "director": "Leon Kokorev",
-      "studio": "Controlled Chaos",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Romance / Drama / Fantasy",
-      "cast": "Jackson Aber, Chloe Housel, Leon Kokorev",
-      "notes": "All feeling"
-    },
-    {
-      "tmdb_id": 1663287,
-      "date": "2026-05-20",
-      "title": "Paul and Greg and Amelia",
-      "director": "Michael Pomeroy",
-      "studio": "Montague Street Films",
-      "budget_usd": 100000,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Quinn Jackson, Christopher Ryan, Matt Hardy, Terra Layne",
-      "notes": "\"What happened in that room?\""
-    },
-    {
       "tmdb_id": 1451588,
       "date": "2026-05-22",
       "title": "Corporate Retreat",
       "director": "Aaron Fisher",
       "studio": "Passage Pictures",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller / Comedy",
-      "cast": "Odeya Rush, Sasha Lane, Elias Kacavas, Ashton Sanders",
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Odeya Rush, Sasha Lane, Ashton Sanders, Alan Ruck",
       "notes": ""
     },
     {
@@ -400,18 +184,6 @@
       "notes": "If you're searching for new adventure, \"this is the way.\""
     },
     {
-      "tmdb_id": 1127625,
-      "date": "2026-05-22",
-      "title": "The Salt Path",
-      "director": "Marianne Elliott",
-      "studio": "RocketScience",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Gillian Anderson, Jason Isaacs, James Lance, Hermione Norris",
-      "notes": "Life. One step at a time."
-    },
-    {
       "tmdb_id": 1340206,
       "date": "2026-05-22",
       "title": "Tuner",
@@ -422,102 +194,6 @@
       "genre": "Crime / Thriller / Comedy",
       "cast": "Leo Woodall, Dustin Hoffman, Havana Rose Liu, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent."
-    },
-    {
-      "tmdb_id": 1451248,
-      "date": "2026-05-22",
-      "title": "Vengeance Rising",
-      "director": "Aiden Palomo",
-      "studio": "—",
-      "budget_usd": 530000,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Aiden Palomo, Michael Sanchez, Jose Oviedo",
-      "notes": "VengeanceRising"
-    },
-    {
-      "tmdb_id": 1665539,
-      "date": "2026-05-23",
-      "title": "The Dream",
-      "director": "Tyler Woodruff",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1594296,
-      "date": "2026-05-24",
-      "title": "Portrait In Red",
-      "director": "Lorelei Moxon",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Mystery",
-      "cast": "Finneus Burghart, MaKaela Longmire, Prudence Soto, Lorenzo Mendez",
-      "notes": "Are you convinced?"
-    },
-    {
-      "tmdb_id": 1665664,
-      "date": "2026-05-25",
-      "title": "Weeyagale",
-      "director": "Ainslie Senfuka",
-      "studio": "Roundhouse",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Esme Green, Edith Kaggwa, Abiah Ndagire",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1665650,
-      "date": "2026-05-28",
-      "title": "Director's Notes",
-      "director": "Christian Nyampeta",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1665527,
-      "date": "2026-05-28",
-      "title": "Hope",
-      "director": "Jamal Ademola",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1665633,
-      "date": "2026-05-28",
-      "title": "Iku Aka",
-      "director": "Tiffany Lotanna Onyeje",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1665540,
-      "date": "2026-05-28",
-      "title": "White Agbada",
-      "director": "Lande Yoosuf",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Idara Victor, Tosin Morohunfola, Nosarieme Garrick, Cynthia Francillon",
-      "notes": ""
     },
     {
       "tmdb_id": 1083381,
@@ -566,78 +242,6 @@
       "genre": "Action / Crime / Thriller",
       "cast": "Xie Miao, Joe Taslim, Yang Enyou, Yayan Ruhian",
       "notes": "To save their loved ones, they will fight everyone."
-    },
-    {
-      "tmdb_id": 1645668,
-      "date": "2026-05-30",
-      "title": "A Butler's Job",
-      "director": "Madison Arellano, Faye Kennedy",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Action / Mystery / Family / Comedy / Adventure",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1476536,
-      "date": "2026-05-30",
-      "title": "Mood Swings",
-      "director": "Brady Domingo",
-      "studio": "The Domingo Film Company",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Grainger Maxwell, Jesse Hadler, Elijah Collins, John Basler",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1663803,
-      "date": "2026-05-30",
-      "title": "Ryzyup",
-      "director": "Griffin Conner",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1593711,
-      "date": "2026-05-31",
-      "title": "Hate Cake",
-      "director": "Vincent Gauge",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1616538,
-      "date": "2026-05-31",
-      "title": "Junkmail",
-      "director": "Kaden Nero",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Kendrick Tewasilmal",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1616481,
-      "date": "2026-05-31",
-      "title": "The Wrong Side of Town",
-      "director": "Sofia Babynine",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "Jordan Tejeda",
-      "notes": ""
     }
   ]
 }

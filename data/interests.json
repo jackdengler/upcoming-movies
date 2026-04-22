@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T17:49:57.815Z",
+  "updated": "2026-04-22T21:14:30.442Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1065,6 +1065,54 @@
       "date": "2026-05-01",
       "tmdb_id": 1363285,
       "no_local_theater": true
+    },
+    "rep:new-beverly:2026-04-22:5-card-stud-ib-tech-print": {
+      "level": "not",
+      "at": "2026-04-22T21:14:24.797Z",
+      "kind": "screening",
+      "title": "5 Card Stud (IB Tech Print)",
+      "date": "2026-04-22",
+      "theater": "new-beverly",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-22-5-card-stud-rough-night-in-jericho/"
+    },
+    "rep:new-beverly:2026-04-22:rough-night-in-jericho-ib-tech-print": {
+      "level": "not",
+      "at": "2026-04-22T21:14:25.463Z",
+      "kind": "screening",
+      "title": "Rough Night in Jericho (IB Tech Print)",
+      "date": "2026-04-22",
+      "theater": "new-beverly",
+      "time": "21:45",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-22-5-card-stud-rough-night-in-jericho/"
+    },
+    "rep:new-beverly:2026-04-23:training-day": {
+      "level": "not",
+      "at": "2026-04-22T21:14:26.700Z",
+      "kind": "screening",
+      "title": "Training Day",
+      "date": "2026-04-23",
+      "theater": "new-beverly",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-23-training-day-narc/"
+    },
+    "rep:new-beverly:2026-04-23:narc": {
+      "level": "not",
+      "at": "2026-04-22T21:14:27.300Z",
+      "kind": "screening",
+      "title": "Narc",
+      "date": "2026-04-23",
+      "theater": "new-beverly",
+      "time": "22:00",
+      "format": null,
+      "series": null,
+      "url": "https://thenewbev.com/program/april-23-training-day-narc/"
     }
   }
 }

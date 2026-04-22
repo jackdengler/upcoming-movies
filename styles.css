@@ -101,24 +101,78 @@ body {
 .app-header__right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
-.app-header__settings {
+.app-header__icon {
   appearance: none;
   -webkit-appearance: none;
   background: transparent;
   border: 0;
-  padding: 4px;
+  padding: 6px;
   margin: 0;
   color: var(--muted);
   cursor: pointer;
   line-height: 0;
   border-radius: 8px;
+  position: relative;
   transition: color 0.12s ease, background-color 0.12s ease;
 }
-.app-header__settings svg { width: 18px; height: 18px; stroke-width: 1.8; }
-.app-header__settings:active { color: var(--accent); background: rgba(20,20,30,0.05); }
+.app-header__icon svg { width: 20px; height: 20px; stroke-width: 1.8; }
+.app-header__icon:active { color: var(--accent); background: rgba(20,20,30,0.05); }
+.app-header__settings svg { width: 18px; height: 18px; }
+
+.app-header__badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 16px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 0 2px var(--header-bg);
+  pointer-events: none;
+}
+
+.app-header__segmented {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  padding: 2px;
+  background: rgba(20, 20, 30, 0.06);
+  border-radius: 10px;
+}
+
+.segmented__btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 7px 12px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--fg-2);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+.segmented__btn:active { transform: scale(0.98); }
+.segmented__btn.is-active {
+  background: var(--surface);
+  color: var(--fg);
+  box-shadow: var(--shadow-card);
+  font-weight: 700;
+}
 
 .app-header__sync {
   margin-top: 4px;
@@ -854,7 +908,7 @@ details[open] > .month__summary .month__chevron {
   bottom: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 8px 4px calc(var(--safe-bottom) + 8px);
   background: var(--tabbar-bg);
   backdrop-filter: var(--header-blur);
@@ -998,6 +1052,27 @@ details[open] > .month__summary .month__chevron {
   color: var(--muted);
   text-align: center;
 }
+
+/* Updates overlay */
+
+.updates__nav {
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0 12px;
+}
+
+.updates__title {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+
+.updates__nav-spacer { display: block; }
 
 /* Activity tab */
 

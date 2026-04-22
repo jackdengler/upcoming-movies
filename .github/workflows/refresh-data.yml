@@ -71,10 +71,17 @@ jobs:
           fi
           git add data/
           git commit -m "Refresh release data"
-          for i in 1 2 3 4; do
+          # Longer retry window to survive concurrent interests.json commits
+          # from the frontend PAT, which can arrive faster than a short backoff
+          # can absorb during user-active hours.
+          BACKOFFS=(5 10 15 20 30 45 60 90 120)
+          for i in "${!BACKOFFS[@]}"; do
             git pull --rebase origin main && git push && exit 0
-            echo "Push attempt $i failed, retrying..."
-            sleep $((i * 2))
+            s=${BACKOFFS[$i]}
+            echo "Push attempt $((i+1)) failed, sleeping ${s}s..."
+            sleep "$s"
           done
+          # Final attempt with no further sleep.
+          git pull --rebase origin main && git push && exit 0
           echo "Push failed after retries" >&2
           exit 1

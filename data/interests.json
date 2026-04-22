@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T00:57:50.422Z",
+  "updated": "2026-04-22T00:58:00.352Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -442,10 +442,11 @@
     },
     "tmdb:1292695": {
       "level": "watched",
-      "at": "2026-04-20T22:05:09.102Z",
+      "at": "2026-04-22T00:57:57.831Z",
       "title": "They Will Kill You",
       "date": "2026-03-27",
-      "tmdb_id": 1292695
+      "tmdb_id": 1292695,
+      "watched_date": "2026-04-10"
     },
     "tmdb:1429605": {
       "level": "not",

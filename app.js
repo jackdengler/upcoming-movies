@@ -116,21 +116,38 @@ const itemKey = (item) =>
 
 // Rereleases interest is stored at the (theater, title, month) granularity:
 // marking "Training Day at New Beverly, April" once applies to every showtime
-// of that run. The ID is independent from `screeningKey` (which is per-
-// showtime) so the two models don't collide.
+// of that run. Three states: "yes" (interested), "no" (skip), or absent (not
+// yet evaluated). The ID is independent from `screeningKey` (per-showtime) so
+// the two models don't collide.
 const repTitleMonthId = (s) =>
   `${s.theater}|${slugifyClient(s.title)}|${(s.date || "").slice(0, 7)}`;
 
-const REP_INTEREST_KEY = "upcoming:rereleases-interest";
-const repInterest = (() => {
+const REP_MARKS_KEY = "upcoming:rereleases-marks";
+const REP_MARKS_KEY_LEGACY = "upcoming:rereleases-interest"; // superseded
+const repMarks = (() => {
   try {
-    const saved = JSON.parse(localStorage.getItem(REP_INTEREST_KEY) || "null");
-    if (Array.isArray(saved)) return new Set(saved);
+    const saved = JSON.parse(localStorage.getItem(REP_MARKS_KEY) || "null");
+    if (saved && typeof saved === "object" && !Array.isArray(saved)) return saved;
   } catch {}
-  return new Set();
+  // One-time migration: legacy key stored a Set of interested IDs only.
+  try {
+    const legacy = JSON.parse(localStorage.getItem(REP_MARKS_KEY_LEGACY) || "null");
+    if (Array.isArray(legacy)) {
+      const out = Object.fromEntries(legacy.map((id) => [id, "yes"]));
+      try { localStorage.setItem(REP_MARKS_KEY, JSON.stringify(out)); } catch {}
+      return out;
+    }
+  } catch {}
+  return {};
 })();
-const saveRepInterest = () => {
-  try { localStorage.setItem(REP_INTEREST_KEY, JSON.stringify([...repInterest])); } catch {}
+const saveRepMarks = () => {
+  try { localStorage.setItem(REP_MARKS_KEY, JSON.stringify(repMarks)); } catch {}
+};
+const getRepMark = (id) => repMarks[id] || null;
+const setRepMark = (id, value) => {
+  if (value) repMarks[id] = value;
+  else delete repMarks[id];
+  saveRepMarks();
 };
 
 const fmtTime = (hhmm) => {
@@ -796,7 +813,7 @@ function itemsByDate(bundles) {
   }
   if (calendarKinds.rereleases) {
     for (const s of repertoryState.data?.screenings || []) {
-      if (!repInterest.has(repTitleMonthId(s))) continue;
+      if (getRepMark(repTitleMonthId(s)) !== "yes") continue;
       if (!map.has(s.date)) map.set(s.date, []);
       map.get(s.date).push({ ...s, _kind: "screening" });
     }
@@ -1167,14 +1184,18 @@ function renderRepTitleRow(entry) {
 
   const countText = `${entry.showings.length} showing${entry.showings.length === 1 ? "" : "s"}`;
 
-  const interested = repInterest.has(entry.id);
-  const interestBtn = el("button", {
+  const mark = getRepMark(entry.id);
+  const mkMarkBtn = (value, label) => el("button", {
       type: "button",
-      class: `rep-interest${interested ? " is-on" : ""}`,
-      "aria-pressed": interested ? "true" : "false",
-      dataset: { id: entry.id },
+      class: `rep-interest rep-interest--${value}${mark === value ? " is-on" : ""}`,
+      "aria-pressed": mark === value ? "true" : "false",
+      dataset: { id: entry.id, mark: value },
     },
-    interested ? "Interested" : "+ Interested",
+    label,
+  );
+  const markButtons = el("div", { class: "rep-interest-group" },
+    mkMarkBtn("yes", "Interested"),
+    mkMarkBtn("no", "Not interested"),
   );
 
   const summary = el("summary", { class: "rep-title__summary" },
@@ -1183,7 +1204,7 @@ function renderRepTitleRow(entry) {
         titleNode,
         el("span", { class: "chip--theater", text: theaterName }),
       ),
-      interestBtn,
+      markButtons,
     ),
     el("div", { class: "rep-title__meta" },
       el("span", { class: "row__meta", text: countText }),
@@ -1202,8 +1223,9 @@ function renderRepTitleRow(entry) {
     }),
   );
 
+  const modClass = mark === "yes" ? " rep-title--on" : mark === "no" ? " rep-title--off" : "";
   const details = el("details", {
-      class: `rep-title${interested ? " rep-title--on" : ""}`,
+      class: `rep-title${modClass}`,
       dataset: { id: entry.id },
     },
     summary,
@@ -1253,10 +1275,10 @@ document.getElementById("repertory-list")?.addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
   const id = btn.dataset.id;
-  if (!id) return;
-  if (repInterest.has(id)) repInterest.delete(id);
-  else repInterest.add(id);
-  saveRepInterest();
+  const want = btn.dataset.mark; // "yes" | "no"
+  if (!id || !want) return;
+  // Tapping the active mark clears it; tapping the other flips the state.
+  setRepMark(id, getRepMark(id) === want ? null : want);
   renderRepertoryTab();
   if (activeTab === "calendar") renderCalendarTab(allBundles);
 });

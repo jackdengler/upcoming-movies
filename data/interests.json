@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T00:56:09.403Z",
+  "updated": "2026-04-22T00:57:04.103Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -368,11 +368,12 @@
       "tmdb_id": 1381027
     },
     "tmdb:1327819": {
-      "level": "not",
-      "at": "2026-04-22T00:55:43.727Z",
+      "level": "watched",
+      "at": "2026-04-22T00:57:01.575Z",
       "title": "Hoppers",
       "date": "2026-03-06",
-      "tmdb_id": 1327819
+      "tmdb_id": 1327819,
+      "watched_date": "2026-03-07"
     },
     "tmdb:875828": {
       "level": "not",

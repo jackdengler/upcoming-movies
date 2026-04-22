@@ -597,9 +597,19 @@ details[open] > .month__summary .month__chevron {
 
 .rep-title__head {
   display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+  min-width: 0;
+}
+.rep-title__head .row__title-line {
+  min-width: 0;
+  flex-wrap: wrap;
+}
+.rep-title__head .row__title { min-width: 0; }
+.rep-title__head .row__titlelink {
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .rep-title__meta {
@@ -628,7 +638,7 @@ details[open] > .month__summary .month__chevron {
 .rep-interest-group {
   display: flex;
   gap: 6px;
-  flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .rep-interest {

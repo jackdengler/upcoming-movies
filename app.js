@@ -1,4 +1,5 @@
 import * as Interests from "./js/interests.js";
+import * as Activity from "./js/activity.js";
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", async () => {
@@ -594,6 +595,141 @@ function renderInterestsTab(bundles) {
   }
 }
 
+// ---------- Activity tab rendering ----------
+
+const ACTIVITY_FIELD_LABEL = {
+  date: "Release date",
+  release_type: "Release type",
+  studio: "Studio",
+  director: "Director",
+};
+
+const ACTIVITY_CHIP = {
+  added: { text: "New", className: "activity-chip activity-chip--added" },
+  removed: { text: "Removed", className: "activity-chip activity-chip--removed" },
+  date: { text: "Date", className: "activity-chip activity-chip--date" },
+  release_type: { text: "Type", className: "activity-chip activity-chip--type" },
+  studio: { text: "Studio", className: "activity-chip activity-chip--studio" },
+  director: { text: "Director", className: "activity-chip activity-chip--director" },
+};
+
+function activityChipFor(ev) {
+  if (ev.type === "added") return ACTIVITY_CHIP.added;
+  if (ev.type === "removed") return ACTIVITY_CHIP.removed;
+  return ACTIVITY_CHIP[ev.field] || ACTIVITY_CHIP.date;
+}
+
+function fmtActivityValue(field, v) {
+  if (v == null || v === "") return "—";
+  if (field === "date") return fmtDateShort(v);
+  if (field === "release_type") return chipLabel(v);
+  return String(v);
+}
+
+function fmtActivityDay(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  const today = new Date(TODAY + "T12:00:00");
+  const dayKey = `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+  if (dayKey === TODAY) return "Today";
+  const yesterday = new Date(today);
+  yesterday.setDate(today.getDate() - 1);
+  const ykey = `${yesterday.getFullYear()}-${pad2(yesterday.getMonth() + 1)}-${pad2(yesterday.getDate())}`;
+  if (dayKey === ykey) return "Yesterday";
+  return d.toLocaleDateString(undefined, { weekday: "short", month: "long", day: "numeric" });
+}
+
+function describeEvent(ev) {
+  if (ev.type === "added") {
+    const bits = [];
+    if (ev.date) bits.push(fmtDateShort(ev.date));
+    if (ev.release_type) bits.push(chipLabel(ev.release_type));
+    return bits.length ? `Added · ${bits.join(" · ")}` : "Added";
+  }
+  if (ev.type === "removed") {
+    return ev.date ? `Removed (was ${fmtDateShort(ev.date)})` : "Removed";
+  }
+  const label = ACTIVITY_FIELD_LABEL[ev.field] || ev.field;
+  const from = fmtActivityValue(ev.field, ev.from);
+  const to = fmtActivityValue(ev.field, ev.to);
+  return `${label}: ${from} → ${to}`;
+}
+
+function renderActivityRow(ev) {
+  const chip = activityChipFor(ev);
+  const titleLink = el("a", {
+      class: "row__titlelink",
+      href: wikipediaUrl(ev.title, ev.date || ""),
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    ev.title,
+  );
+
+  return el("div", { class: `row activity-row activity-row--${ev.type}${ev.field ? ` activity-row--${ev.field}` : ""}` },
+    el("div", { class: "row__title-line" },
+      el("h3", { class: "row__title" }, titleLink),
+      el("span", { class: chip.className, text: chip.text }),
+    ),
+    el("div", { class: "activity-row__desc", text: describeEvent(ev) }),
+  );
+}
+
+function groupActivityByDay(events) {
+  const map = new Map();
+  for (const ev of events) {
+    const d = new Date(ev.at);
+    const dayKey = `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+    if (!map.has(dayKey)) map.set(dayKey, []);
+    map.get(dayKey).push(ev);
+  }
+  return [...map.entries()].sort(([a], [b]) => b.localeCompare(a));
+}
+
+function updateActivityBadge() {
+  const badge = document.getElementById("activity-badge");
+  if (!badge) return;
+  const n = Activity.unreadCount();
+  if (n > 0) {
+    badge.textContent = n > 99 ? "99+" : String(n);
+    badge.hidden = false;
+  } else {
+    badge.hidden = true;
+  }
+}
+
+function renderActivityTab() {
+  const list = document.getElementById("activity-list");
+  const empty = document.getElementById("empty-activity");
+  if (!list || !empty) return;
+  list.innerHTML = "";
+
+  const events = Activity.readLog();
+  if (!events.length) {
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+
+  const seen = Activity.getLastSeen();
+  const groups = groupActivityByDay(events);
+  for (const [, items] of groups) {
+    const firstAt = items[0].at;
+    const header = el("div", { class: "section__header" },
+      el("span", { class: "section__date", text: fmtActivityDay(firstAt) }),
+      el("span", { class: "section__count", text: `${items.length}` }),
+    );
+    const rows = items.map((ev) => {
+      const row = renderActivityRow(ev);
+      if (seen && ev.at > seen) row.classList.add("activity-row--new");
+      else if (!seen) row.classList.add("activity-row--new");
+      return row;
+    });
+    const body = el("div", { class: "section__list" }, ...rows);
+    list.appendChild(el("section", { class: "section" }, header, body));
+  }
+}
+
 // ---------- Year tab rendering ----------
 
 function renderYearTab(bundles) {
@@ -1006,6 +1142,7 @@ function switchTab(tab) {
   setPanelHidden("tab-calendar", tab !== "calendar");
   setPanelHidden("tab-repertory", tab !== "repertory");
   setPanelHidden("tab-interests", tab !== "interests");
+  setPanelHidden("tab-activity", tab !== "activity");
 
   const title = document.getElementById("view-title");
   const sub = document.getElementById("view-sub");
@@ -1016,6 +1153,11 @@ function switchTab(tab) {
     const total = (repertoryState.data?.screenings || []).length;
     sub.textContent = total ? `${total} screenings` : "";
   }
+  else if (tab === "activity") {
+    title.textContent = "Activity";
+    const total = Activity.readLog().length;
+    sub.textContent = total ? `${total} update${total === 1 ? "" : "s"}` : "";
+  }
   else { title.textContent = "Interests"; sub.textContent = ""; }
 
   if (tab === "interests") renderInterestsTab(allBundles);
@@ -1023,6 +1165,11 @@ function switchTab(tab) {
   if (tab === "repertory") {
     renderTheaterFilterBar();
     renderRepertoryTab();
+  }
+  if (tab === "activity") {
+    renderActivityTab();
+    Activity.markSeen();
+    updateActivityBadge();
   }
 }
 
@@ -1048,7 +1195,7 @@ document.querySelectorAll(".filter-chip").forEach((chip) => {
     syncFilterChips();
     if (activeTab === "year") renderYearTab(allBundles);
     else if (activeTab === "calendar") renderCalendarTab(allBundles);
-    else renderInterestsTab(allBundles);
+    else if (activeTab === "interests") renderInterestsTab(allBundles);
   });
 });
 syncFilterChips();
@@ -1224,12 +1371,18 @@ Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
     allBundles = bundles;
     setRepertoryData(repertory);
     Interests.sweepPastBookings(TODAY);
+    Activity.ingest(bundles);
+    updateActivityBadge();
     renderYearTab(bundles);
     if (activeTab === "calendar") renderCalendarTab(bundles);
     else if (activeTab === "interests") renderInterestsTab(bundles);
     else if (activeTab === "repertory") {
       renderTheaterFilterBar();
       renderRepertoryTab();
+    } else if (activeTab === "activity") {
+      renderActivityTab();
+      Activity.markSeen();
+      updateActivityBadge();
     }
   })
   .catch((e) => {

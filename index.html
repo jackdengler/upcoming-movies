@@ -85,6 +85,13 @@
           Swipe any movie on the Year tab to mark interest.
         </p>
       </section>
+
+      <section id="tab-activity" class="tab-panel" aria-label="Activity" hidden>
+        <div id="activity-list"></div>
+        <p id="empty-activity" class="empty-state" hidden>
+          No changes yet. We'll track new movies and release updates here.
+        </p>
+      </section>
     </main>
 
     <nav class="tab-bar" role="tablist">
@@ -117,6 +124,14 @@
           <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/>
         </svg>
         <span>Interests</span>
+      </button>
+      <button class="tab-bar__btn" data-tab="activity" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span>Activity</span>
+        <span class="tab-bar__badge" id="activity-badge" hidden></span>
       </button>
     </nav>
 

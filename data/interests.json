@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T21:31:12.595Z",
+  "updated": "2026-04-22T21:31:21.235Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1389,6 +1389,18 @@
       "format": "35mm",
       "series": null,
       "url": "https://ticketing.uswest.veezi.com/purchase/3514?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-24:batman-begins": {
+      "level": "likely",
+      "at": "2026-04-22T21:31:18.729Z",
+      "kind": "screening",
+      "title": "Batman Begins",
+      "date": "2026-04-24",
+      "theater": "vista",
+      "time": "23:30",
+      "format": "35mm",
+      "series": "Late Show",
+      "url": "https://ticketing.uswest.veezi.com/purchase/3433?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     }
   }
 }

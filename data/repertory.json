@@ -1,7 +1,58 @@
 {
   "updated": "2026-04-22",
-  "source": "Per-theater scrapers (initial placeholder)",
-  "sources": [],
+  "source": "Per-theater scrapers",
+  "sources": [
+    {
+      "id": "new-beverly",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "id": "american-cinematheque",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "id": "nuart",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "id": "vista",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "id": "los-feliz-3",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "id": "alamo-dtla",
+      "count": 0,
+      "status": "failed: alamo-dtla: no calendar endpoint reachable"
+    },
+    {
+      "id": "academy-museum",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "id": "brain-dead",
+      "count": 0,
+      "status": "failed: fetch failed"
+    },
+    {
+      "id": "lumiere",
+      "count": 0,
+      "status": "failed: HTTP 403 https://www.laemmle.com/theater/music-hall"
+    },
+    {
+      "id": "amc-classics",
+      "count": 0,
+      "status": "ok"
+    }
+  ],
   "theaters": [
     {
       "slug": "new-beverly",

@@ -40,7 +40,6 @@ const THEATERS = [
   { slug: "aero", name: "Aero Theatre", address: "1328 Montana Ave, Santa Monica", url: "https://www.americancinematheque.com/aero/" },
   { slug: "egyptian", name: "Egyptian Theatre", address: "6712 Hollywood Blvd, Los Angeles", url: "https://www.americancinematheque.com/egyptian/" },
   { slug: "vista", name: "Vista Theater", address: "4473 Sunset Dr, Los Angeles", url: "https://vistatheaterhollywood.com/" },
-  { slug: "los-feliz-3", name: "Los Feliz 3", address: "1822 N Vermont Ave, Los Angeles", url: "https://vintagecinemas.com/losfeliz/" },
   { slug: "alamo-dtla", name: "Alamo Drafthouse DTLA", address: "700 W 7th St, Los Angeles", url: "https://drafthouse.com/los-angeles" },
   { slug: "academy-museum", name: "Academy Museum", address: "6067 Wilshire Blvd, Los Angeles", url: "https://www.academymuseum.org/en/programs" },
   { slug: "brain-dead", name: "Brain Dead Studios", address: "611 N Fairfax Ave, Los Angeles", url: "https://braindead.studio/" },
@@ -596,15 +595,48 @@ async function scrapeVista() {
   return out;
 }
 
-async function scrapeLosFeliz3() {
-  const html = await fetchText("https://vintagecinemas.com/losfeliz/");
-  return jsonLdEvents(html, "los-feliz-3", "https://vintagecinemas.com/losfeliz/");
-}
-
-// Alamo Drafthouse exposes a public showtimes JSON API.
+// Alamo Drafthouse Downtown LA.
+//
+// Strategy:
+//   1. Fetch the Next.js theater page and pull __NEXT_DATA__. Even on SSR'd
+//      Next.js apps the embedded blob often contains films/sessions pre-
+//      fetched for the first paint, which is enough to populate showings.
+//   2. If __NEXT_DATA__ doesn't contain showings, try a set of known/guessed
+//      JSON endpoints. Alamo has historically served from `drafthouse.com
+//      /s/mother/...`; the exact path has drifted over the years, so we try
+//      several.
+//   3. If all of that fails, the fetchText diagnostic sample captured during
+//      step 1 will land in the committed JSON for the next iteration.
 async function scrapeAlamoDtla() {
-  // Cinema slug for DTLA in Alamo's API; their public site uses "downtown-los-angeles".
+  const pageUrls = [
+    "https://drafthouse.com/los-angeles/theater/downtown",
+    "https://drafthouse.com/los-angeles",
+  ];
+  let html = "";
+  for (const u of pageUrls) {
+    try { html = await fetchText(u); if (html) break; } catch {}
+  }
+
+  if (html) {
+    const nextM = html.match(
+      /<script[^>]+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/
+    );
+    if (nextM) {
+      try {
+        const data = JSON.parse(nextM[1]);
+        const hits = [];
+        walkForShowtimes(data, "alamo-dtla", hits);
+        if (hits.length) return dedupeScreenings(hits);
+      } catch {}
+    }
+    const jl = jsonLdEvents(html, "alamo-dtla", pageUrls[0]);
+    if (jl.length) return jl;
+  }
+
   const candidates = [
+    "https://drafthouse.com/s/mother/v2/schedule/market/los-angeles/cinema/downtown",
+    "https://drafthouse.com/s/mother/v2/schedule/cinema/downtown",
+    "https://drafthouse.com/api/v2/calendar/market/los-angeles/cinema/downtown",
     "https://drafthouse.com/api/v2/calendar/cinema/downtown-los-angeles",
     "https://drafthouse.com/api/v2/cinema/downtown-los-angeles/calendar",
     "https://drafthouse.com/s/mother/v2/schedule/cinema/downtown-los-angeles",
@@ -616,7 +648,6 @@ async function scrapeAlamoDtla() {
   if (!data) throw new Error("alamo-dtla: no calendar endpoint reachable");
   const out = [];
   walkForShowtimes(data, "alamo-dtla", out);
-  // De-duplicate (same showtime referenced under multiple keys in the tree).
   return dedupeScreenings(out);
 }
 
@@ -663,7 +694,6 @@ const SOURCES = [
   { id: "american-cinematheque", theaters: ["aero", "egyptian"], fn: scrapeAmericanCinematheque },
   { id: "nuart", theaters: ["nuart"], fn: scrapeNuart },
   { id: "vista", theaters: ["vista"], fn: scrapeVista },
-  { id: "los-feliz-3", theaters: ["los-feliz-3"], fn: scrapeLosFeliz3 },
   { id: "alamo-dtla", theaters: ["alamo-dtla"], fn: scrapeAlamoDtla },
   { id: "academy-museum", theaters: ["academy-museum"], fn: scrapeAcademyMuseum },
   { id: "brain-dead", theaters: ["brain-dead"], fn: scrapeBrainDeadStudios },

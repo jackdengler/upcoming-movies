@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-20",
   "source": "TMDB",
   "releases": [
     {
@@ -16,42 +16,6 @@
       "notes": "Hollywood has a monster problem."
     },
     {
-      "tmdb_id": 1308767,
-      "date": "2026-07-03",
-      "title": "Young Washington",
-      "director": "Jon Erwin",
-      "studio": "Angel Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "History / Drama",
-      "cast": "William Franklyn-Miller, Ben Kingsley, Andy Serkis, Kelsey Grammer",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1654654,
-      "date": "2026-07-04",
-      "title": "Inevitably Alone",
-      "director": "Joe Brooks",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Paul Brooks Jr., Michael Brooks, Wyatt Ek",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1287805,
-      "date": "2026-07-06",
-      "title": "Night Comes",
-      "director": "Jay Hernandez",
-      "studio": "Impossible Dream Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Dafne Keen, Samantha Lorraine, Alexander Ludwig, Rochelle Greenwood",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1212763,
       "date": "2026-07-10",
       "title": "Evil Dead Burn",
@@ -60,19 +24,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1476682,
-      "date": "2026-07-10",
-      "title": "Gail Daughtry and the Celebrity Sex Pass",
-      "director": "David Wain",
-      "studio": "Likely Story",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Jon Hamm, Zoey Deutch, John Slattery, Ben Wang",
+      "cast": "Souheila Yacoub, Hunter Doohan, Luciane Buchanan, Victory Ndukwe",
       "notes": ""
     },
     {
@@ -110,18 +62,6 @@
       "genre": "Adventure / Drama / Fantasy",
       "cast": "Matt Damon, Tom Holland, Zendaya, Anne Hathaway",
       "notes": "Defy the gods."
-    },
-    {
-      "tmdb_id": 1617234,
-      "date": "2026-07-24",
-      "title": "The Actor",
-      "director": "Aaron Saldaña Cisneros",
-      "studio": "Mission Avenue",
-      "budget_usd": 3000,
-      "release_type": "wide",
-      "genre": "Thriller / Horror",
-      "cast": "JD Hathway, Angelica Dulen",
-      "notes": "Feel free."
     },
     {
       "tmdb_id": 1288059,

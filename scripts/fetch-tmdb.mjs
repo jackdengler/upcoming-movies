@@ -324,7 +324,11 @@ for (const m of list) {
     const normTitle = normalizeTitle(d.title);
     const isBomWide = bomWideTitles.has(normTitle);
     const isBomAlways = bomAlwaysTitles.has(normTitle);
-    const isWide = isBomWide || cls.type === "wide";
+    // Only trust BOM for "wide". TMDB's cls.type === "wide" comes from
+    // release type 3 (Theatrical) which it assigns to virtually every
+    // theatrical release, including 1-theater festival premieres, so it
+    // can't be used as a popularity-floor bypass on its own.
+    const isWide = isBomWide;
 
     if (!date) continue;
     if (date.slice(0, 7) !== MONTH) continue;

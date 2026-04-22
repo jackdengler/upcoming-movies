@@ -1,44 +1,8 @@
 {
   "month": "November 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-20",
   "source": "TMDB",
   "releases": [
-    {
-      "tmdb_id": 1522191,
-      "date": "2026-11-01",
-      "title": "FaceTape",
-      "director": "Manny Liotta",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Thriller / Science Fiction / Drama / Crime / Horror",
-      "cast": "Cody Steele, Joshuah Arizmendi, Morningstar Dickson, Mackenzie Lauren Taylor",
-      "notes": "Plug Out."
-    },
-    {
-      "tmdb_id": 1562642,
-      "date": "2026-11-06",
-      "title": "Archangel",
-      "director": "William Eubank",
-      "studio": "Mandalay Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action",
-      "cast": "Jim Caviezel, Olivia Thirlby, Garret Dillahunt, Shea Whigham",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1662511,
-      "date": "2026-11-06",
-      "title": "Daffy Season",
-      "director": "Todd Wilderman, Hamish Grieve",
-      "studio": "Warner Bros. Pictures Animation",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation",
-      "cast": "Eric Bauza",
-      "notes": ""
-    },
     {
       "tmdb_id": 1117898,
       "date": "2026-11-06",
@@ -76,54 +40,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1286656,
-      "date": "2026-11-13",
-      "title": "I Play Rocky",
-      "director": "Peter Farrelly",
-      "studio": "Eden Rock Media",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1608787,
-      "date": "2026-11-13",
-      "title": "Plucked",
-      "director": "Usher Morgan, Katie Vincent",
-      "studio": "Dark Passage Films",
-      "budget_usd": 350000,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Katie Vincent, Jared Canfield, Tony Crane, Catherine Curtin",
-      "notes": "Some things never change-until they do..."
-    },
-    {
-      "tmdb_id": 1170600,
-      "date": "2026-11-13",
-      "title": "Return of the Living Dead",
-      "director": "Steve Wolsh",
-      "studio": "Living Dead Media",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Devon Sawa, Casimere Jollette, Kynlee Heiman, Alexander Ward",
-      "notes": "Tarman is coming to town"
-    },
-    {
-      "tmdb_id": 1535193,
-      "date": "2026-11-13",
-      "title": "The End of all Days",
-      "director": "Tyler Lahousse",
-      "studio": "Camelot Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Drama",
-      "cast": "Miranda Klein, Julia Meisler, Jacob Card, Brandon Conley",
-      "notes": "WE WERE NOT PREPARED."
-    },
-    {
       "tmdb_id": 1288211,
       "date": "2026-11-13",
       "title": "The Great Beyond",
@@ -134,18 +50,6 @@
       "genre": "Drama / Adventure / Action",
       "cast": "Glen Powell, Jenna Ortega, Emma Mackey, Samuel L. Jackson",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1241478,
-      "date": "2026-11-20",
-      "title": "Jimmy",
-      "director": "Aaron Burns",
-      "studio": "Burns & Co.",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / History",
-      "cast": "KJ Apa, Jason Alexander, Max Casella, Sarah Drew",
-      "notes": "America's most-beloved actor, the iconic role that saved him..."
     },
     {
       "tmdb_id": 1300968,
@@ -170,30 +74,6 @@
       "genre": "Comedy / Romance",
       "cast": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson",
       "notes": "The circle of trust just got bigger."
-    },
-    {
-      "tmdb_id": 1538497,
-      "date": "2026-11-25",
-      "title": "Hexed",
-      "director": "Jason Hand, Fawn Veerasunthorn",
-      "studio": "Walt Disney Animation Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Family / Animation / Fantasy / Adventure",
-      "cast": "Hailee Steinfeld, Rashida Jones, Jim Hanks, Cee Lo Green",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1461490,
-      "date": "2026-11-26",
-      "title": "Hershey",
-      "director": "Mark Waters",
-      "studio": "Dandelion Media",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Romance",
-      "cast": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind",
-      "notes": ""
     }
   ]
 }

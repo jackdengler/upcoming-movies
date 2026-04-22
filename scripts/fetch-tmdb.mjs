@@ -200,50 +200,69 @@ async function fetchBomHtml(url) {
   return r.text();
 }
 
-// Pull wide releases out of a BOM weekly calendar page. Each <tr> has a
-// title link (/release/rlXXX/ or /title/ttXXX/) and a cell containing the
-// release-type label. We match rows where that label is "Wide".
-function parseWideReleasesFromBom(html) {
+// Distributors whose films we always pull, even when they only distribute
+// (rather than produce) and even when the release is limited. Checked as a
+// case-insensitive whole-word match against each BOM row's text.
+const ALWAYS_PULL_DISTRIBUTORS = ["Neon"];
+
+// Parse every BOM row that links to a film. Returns { title, rowText } so the
+// caller can inspect release-type and distributor keywords independently.
+function parseBomRows(html) {
   const out = [];
   const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
   let row;
   while ((row = rowRe.exec(html))) {
     const cells = row[1];
-    if (!/>\s*Wide\s*</i.test(cells) && !/\bWide\b/.test(stripTags(cells))) continue;
-    if (/>\s*Limited\s*</i.test(cells)) continue;
     const link = cells.match(
       /<a[^>]+href="\/(?:release|title)\/[^"]+"[^>]*>([\s\S]*?)<\/a>/i
     );
     if (!link) continue;
     const title = stripTags(link[1]);
-    if (title) out.push(title);
+    if (!title) continue;
+    out.push({ title, rowText: stripTags(cells) });
   }
   return out;
 }
 
-async function fetchBomWideTitles(y, m) {
-  const titles = new Set();
+async function fetchBomSignals(y, m) {
+  const wide = new Set();
+  const always = new Set();
   const fridays = fridaysCoveringMonth(y, m);
   for (const f of fridays) {
     const ymd = f.toISOString().slice(0, 10);
     try {
       const html = await fetchBomHtml(`https://www.boxofficemojo.com/calendar/${ymd}/`);
-      for (const t of parseWideReleasesFromBom(html)) titles.add(normalizeTitle(t));
+      for (const { title, rowText } of parseBomRows(html)) {
+        const norm = normalizeTitle(title);
+        if (/\bWide\b/.test(rowText) && !/\bLimited\b/.test(rowText)) wide.add(norm);
+        if (
+          ALWAYS_PULL_DISTRIBUTORS.some((k) =>
+            new RegExp(`\\b${k}\\b`, "i").test(rowText)
+          )
+        ) {
+          always.add(norm);
+        }
+      }
       await sleep(300);
     } catch (e) {
       console.warn(`BOM ${ymd}: ${e.message}`);
     }
   }
-  return titles;
+  return { wide, always };
 }
 
 let bomWideTitles = new Set();
+let bomAlwaysTitles = new Set();
 try {
-  bomWideTitles = await fetchBomWideTitles(+year, +mm);
-  console.log(`BOM: ${bomWideTitles.size} wide release title(s) for ${MONTH}`);
+  ({ wide: bomWideTitles, always: bomAlwaysTitles } = await fetchBomSignals(+year, +mm));
+  console.log(
+    `BOM: ${bomWideTitles.size} wide, ${bomAlwaysTitles.size} always-pull distributor match(es) for ${MONTH}`
+  );
 } catch (e) {
   console.warn(`BOM lookup failed entirely: ${e.message}`);
 }
+
+const bomForceTitles = new Set([...bomWideTitles, ...bomAlwaysTitles]);
 
 const list = await discover();
 const forced = new Map(); // tmdb id -> force-include meta
@@ -264,9 +283,10 @@ for (const entry of FORCE_INCLUDE) {
   }
 }
 
-// For BOM wide releases not already in TMDB's discover results, search TMDB
-// by title and add the best match so we render them even with low popularity.
-for (const norm of bomWideTitles) {
+// For any BOM force-pull title (wide release or always-pull distributor) not
+// already in TMDB's discover results, search TMDB by title and add the best
+// match so we render it even when popularity is below the floor.
+for (const norm of bomForceTitles) {
   if (list.some((m) => normalizeTitle(m.title) === norm)) continue;
   try {
     const r = await get(
@@ -301,20 +321,24 @@ for (const m of list) {
     const releaseType = cls.type && cls.date ? cls.type : (forcedMeta?.release_type || "wide");
     const isTheatrical = cls.isTheatrical || (isForced && forcedMeta?.release_type);
 
+    const normTitle = normalizeTitle(d.title);
+    const isBomWide = bomWideTitles.has(normTitle);
+    const isBomAlways = bomAlwaysTitles.has(normTitle);
+    const isWide = isBomWide || cls.type === "wide";
+
     if (!date) continue;
     if (date.slice(0, 7) !== MONTH) continue;
 
-    if (!isForced && !isTheatrical) continue;
+    // BOM-confirmed films are inherently theatrical (BOM only lists theatrical
+    // releases), so trust that signal even if TMDB's classify() came up short.
+    if (!isForced && !isBomAlways && !isBomWide && !isTheatrical) continue;
 
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
 
-    // Forced, majors, and wide theatrical releases always pull. "Wide" is
-    // whatever Box Office Mojo flagged, with TMDB's own wide classification
-    // as a fallback for weeks we couldn't scrape.
-    const isBomWide = bomWideTitles.has(normalizeTitle(d.title));
-    const isWide = isBomWide || cls.type === "wide";
-    if (!isForced && !major && !isWide && pop < MIN_POPULARITY_NON_MAJOR) continue;
+    // Forced, majors, wide releases, and always-pull distributor matches
+    // bypass the popularity floor.
+    if (!isForced && !major && !isWide && !isBomAlways && pop < MIN_POPULARITY_NON_MAJOR) continue;
 
     const director =
       (d.credits?.crew || [])
@@ -343,6 +367,7 @@ for (const m of list) {
       _major: major,
       _forced: isForced,
       _wide: isWide,
+      _bom_always: isBomAlways,
     });
     await sleep(35);
   } catch (e) {
@@ -350,18 +375,24 @@ for (const m of list) {
   }
 }
 
-// Always keep every major-studio release, every force-included film, and
-// every wide theatrical release. Fill remaining budget with top-popularity
-// others.
-const keep = releases.filter((r) => r._major || r._forced || r._wide);
-const others = releases.filter((r) => !r._major && !r._forced && !r._wide);
+// Always keep every major-studio release, every force-included film, every
+// wide theatrical release, and every always-pull distributor match (e.g.
+// Neon). Fill remaining budget with top-popularity others.
+const keep = releases.filter((r) => r._major || r._forced || r._wide || r._bom_always);
+const others = releases.filter((r) => !r._major && !r._forced && !r._wide && !r._bom_always);
 others.sort((a, b) => b._pop - a._pop);
 const remaining = Math.max(0, MAX_PER_MONTH - keep.length);
 const chosen = [...keep, ...others.slice(0, remaining)];
 chosen.sort(
   (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title)
 );
-for (const r of chosen) { delete r._pop; delete r._major; delete r._forced; delete r._wide; }
+for (const r of chosen) {
+  delete r._pop;
+  delete r._major;
+  delete r._forced;
+  delete r._wide;
+  delete r._bom_always;
+}
 const finalReleases = chosen;
 
 const monthName = new Date(`${start}T12:00:00Z`).toLocaleString("en-US", {

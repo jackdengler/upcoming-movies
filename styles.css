@@ -512,6 +512,82 @@ details[open] > .month__summary .month__chevron {
 .interest-group--not .month__name { color: var(--level-not); }
 .interest-group--watched .month__name { color: var(--level-watched); }
 
+/* Repertory */
+
+.theater-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 0 12px;
+  margin-bottom: 4px;
+  border-bottom: 0.5px solid var(--separator);
+}
+
+.theater-chip {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1.5px solid var(--separator);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+.theater-chip:active { transform: scale(0.96); }
+.theater-chip.is-active {
+  background: rgba(184, 29, 36, 0.10);
+  color: var(--accent-ink);
+  border-color: transparent;
+}
+
+.row__time {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+.chip--theater {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(20, 20, 30, 0.06);
+  color: var(--fg-2);
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.chip--format {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(184, 29, 36, 0.10);
+  color: var(--accent-ink);
+  margin-left: 6px;
+}
+
+.row__series {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+}
+
 /* Calendar */
 
 .calendar {
@@ -692,7 +768,7 @@ details[open] > .month__summary .month__chevron {
   bottom: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 8px 8px calc(var(--safe-bottom) + 8px);
   background: var(--tabbar-bg);
   backdrop-filter: var(--header-blur);

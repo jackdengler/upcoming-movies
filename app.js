@@ -103,6 +103,27 @@ const wikipediaUrl = (title, date) => {
 
 const movieKey = (m) => (m.tmdb_id ? `tmdb:${m.tmdb_id}` : `ttl:${m.title}:${m.date}`);
 
+const slugifyClient = (s) =>
+  String(s)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 60);
+
+const screeningKey = (s) => `rep:${s.theater}:${s.date}:${slugifyClient(s.title)}`;
+const itemKey = (item) =>
+  item?._kind === "screening" ? screeningKey(item) : movieKey(item);
+
+const fmtTime = (hhmm) => {
+  if (!hhmm) return "";
+  const [h, m] = hhmm.split(":").map(Number);
+  if (!Number.isFinite(h)) return hhmm;
+  const period = h >= 12 ? "PM" : "AM";
+  const h12 = ((h + 11) % 12) + 1;
+  return `${h12}:${String(m || 0).padStart(2, "0")} ${period}`;
+};
+
 const monthFilename = (year, monthIdx) => {
   const d = new Date(year, monthIdx, 1);
   const monthName = d.toLocaleString("en-US", { month: "long" }).toLowerCase();
@@ -117,6 +138,14 @@ async function loadYear(year) {
       .catch(() => null))
   );
   return results.filter(Boolean);
+}
+
+async function loadRepertory() {
+  try {
+    const r = await fetch("./data/repertory.json", { cache: "no-cache" });
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
 }
 
 const el = (tag, attrs = {}, ...children) => {
@@ -157,8 +186,25 @@ const dateKey = (year, monthIdx, day) => `${year}-${pad2(monthIdx + 1)}-${pad2(d
 
 // ---------- Row rendering ----------
 
+function baseMeta(item) {
+  if (item._kind === "screening") {
+    return {
+      kind: "screening",
+      title: item.title,
+      date: item.date,
+      theater: item.theater,
+      time: item.time,
+      format: item.format || null,
+      series: item.series || null,
+      url: item.url || null,
+    };
+  }
+  return { title: item.title, date: item.date, tmdb_id: item.tmdb_id || null };
+}
+
 function renderRatingBar(m) {
-  const key = movieKey(m);
+  const isScreening = m._kind === "screening";
+  const key = itemKey(m);
   const level = Interests.getLevel(key);
   const mark = Interests.getMark(key);
   const noLocal = !!mark?.no_local_theater;
@@ -175,14 +221,16 @@ function renderRatingBar(m) {
     ),
   );
 
-  const notLocalBtn = el("button", {
-      type: "button",
-      class: `row__flag row__flag--no-local${noLocal ? " is-active" : ""}`,
-      "data-flag": "no_local_theater",
-      "aria-pressed": noLocal ? "true" : "false",
-    },
-    "📍  Not playing near me",
-  );
+  const notLocalBtn = isScreening
+    ? null
+    : el("button", {
+        type: "button",
+        class: `row__flag row__flag--no-local${noLocal ? " is-active" : ""}`,
+        "data-flag": "no_local_theater",
+        "aria-pressed": noLocal ? "true" : "false",
+      },
+      "📍  Not playing near me",
+    );
 
   bar.addEventListener("click", async (e) => {
     const btn = e.target.closest(".rating__btn");
@@ -210,9 +258,7 @@ function renderRatingBar(m) {
         return;
       }
       Interests.set(key, "booked", {
-        title: m.title,
-        date: m.date,
-        tmdb_id: m.tmdb_id || null,
+        ...baseMeta(m),
         booked_date: result.date,
       });
       return;
@@ -232,37 +278,29 @@ function renderRatingBar(m) {
         return;
       }
       Interests.set(key, "watched", {
-        title: m.title,
-        date: m.date,
-        tmdb_id: m.tmdb_id || null,
+        ...baseMeta(m),
         watched_date: result.date,
       });
       return;
     }
 
-    Interests.set(key, current === lvl ? null : lvl, {
-      title: m.title,
-      date: m.date,
-      tmdb_id: m.tmdb_id || null,
-    });
+    Interests.set(key, current === lvl ? null : lvl, baseMeta(m));
   });
 
-  notLocalBtn.addEventListener("click", async (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (!Interests.hasPat()) {
-      const saved = await requestPat();
-      if (!saved) return;
-    }
-    const current = !!Interests.getMark(key)?.no_local_theater;
-    Interests.setFlag(key, "no_local_theater", !current, {
-      title: m.title,
-      date: m.date,
-      tmdb_id: m.tmdb_id || null,
+  if (notLocalBtn) {
+    notLocalBtn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!Interests.hasPat()) {
+        const saved = await requestPat();
+        if (!saved) return;
+      }
+      const current = !!Interests.getMark(key)?.no_local_theater;
+      Interests.setFlag(key, "no_local_theater", !current, baseMeta(m));
     });
-  });
+  }
 
-  return [bar, notLocalBtn];
+  return [bar, notLocalBtn].filter(Boolean);
 }
 
 function renderRow(m, opts = {}) {
@@ -315,6 +353,64 @@ function renderRow(m, opts = {}) {
     ),
     m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
     renderRatingBar(m),
+  );
+}
+
+// ---------- Screening row rendering ----------
+
+function renderScreening(s, opts = {}) {
+  const item = { ...s, _kind: "screening" };
+  const key = screeningKey(s);
+  const level = Interests.getLevel(key);
+  const mark = Interests.getMark(key);
+
+  const theaterMeta = repertoryState.theatersBySlug.get(s.theater);
+  const theaterName = theaterMeta?.name || s.theater;
+  const linkUrl = s.url || theaterMeta?.url || wikipediaUrl(s.title, `${s.year || ""}-01-01`);
+
+  const titleLink = el("a", {
+      class: "row__titlelink",
+      href: linkUrl,
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    s.title || "Untitled",
+  );
+
+  const dateLine = opts.showDate
+    ? `${fmtDateShort(s.date)} · ${fmtTime(s.time)}`
+    : fmtTime(s.time);
+
+  const bookedBadge = level === "booked" && mark?.booked_date
+    ? el("div", { class: "row__booked", text: `🎟  Booked for ${fmtDateShort(mark.booked_date)}` })
+    : null;
+  const watchedBadge = level === "watched" && mark?.watched_date
+    ? el("div", { class: "row__watched", text: `✓  Watched ${fmtDateShort(mark.watched_date)}` })
+    : null;
+
+  const titleNode = el("h3", { class: "row__title" }, titleLink);
+  if (s.format) {
+    titleNode.appendChild(el("span", { class: "chip--format", text: s.format }));
+  }
+  if (s.year) {
+    titleNode.appendChild(
+      el("span", { class: "row__meta", text: ` (${s.year})` })
+    );
+  }
+
+  return el("div", {
+      class: `row${level ? ` row--${level}` : ""}`,
+      dataset: { key },
+    },
+    el("div", { class: "row__title-line" },
+      titleNode,
+      el("span", { class: "chip--theater", text: theaterName }),
+    ),
+    el("div", { class: "row__time", text: dateLine }),
+    s.series ? el("div", { class: "row__series", text: s.series }) : null,
+    bookedBadge,
+    watchedBadge,
+    renderRatingBar(item),
   );
 }
 
@@ -391,11 +487,30 @@ function renderInterestsTab(bundles) {
 
   const allMovies = bundles.flatMap((b) => b.releases);
   const byKey = new Map(allMovies.map((m) => [movieKey(m), m]));
+  const screenings = repertoryState.data?.screenings || [];
+  const byScreeningKey = new Map(screenings.map((s) => [screeningKey(s), s]));
 
   const marks = Interests.allMarks();
   const grouped = { must: [], likely: [], booked: [], potential: [], not: [], watched: [] };
 
   for (const [key, meta] of Object.entries(marks)) {
+    if (!grouped[meta.level]) continue;
+
+    if (key.startsWith("rep:") || meta.kind === "screening") {
+      const screening = byScreeningKey.get(key) || {
+        theater: meta.theater || "unknown",
+        title: meta.title || "Unknown",
+        year: null,
+        date: meta.date || "",
+        time: meta.time || "",
+        format: meta.format || null,
+        series: meta.series || null,
+        url: meta.url || null,
+      };
+      grouped[meta.level].push({ ...screening, _kind: "screening" });
+      continue;
+    }
+
     const movie = byKey.get(key) || {
       title: meta.title || "Unknown",
       date: meta.date || "",
@@ -408,7 +523,7 @@ function renderInterestsTab(bundles) {
       tmdb_id: meta.tmdb_id || null,
     };
     if (!passesFilter(movie)) continue;
-    if (grouped[meta.level]) grouped[meta.level].push(movie);
+    grouped[meta.level].push(movie);
   }
 
   const order = ["booked", "must", "likely", "watched", "potential", "not"];
@@ -431,13 +546,18 @@ function renderInterestsTab(bundles) {
     if (!items.length) continue;
     if (lv === "booked") {
       items.sort((a, b) => {
-        const am = Interests.getMark(movieKey(a))?.booked_date || a.date || "";
-        const bm = Interests.getMark(movieKey(b))?.booked_date || b.date || "";
+        const am = Interests.getMark(itemKey(a))?.booked_date || a.date || "";
+        const bm = Interests.getMark(itemKey(b))?.booked_date || b.date || "";
         return am.localeCompare(bm);
       });
     } else {
       items.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
     }
+
+    const renderItem = (m) =>
+      m._kind === "screening"
+        ? renderScreening(m, { showDate: true })
+        : renderRow(m, { showDate: true });
 
     const open = lv in interestExpanded ? interestExpanded[lv] : true;
     const details = el("details", {
@@ -452,7 +572,7 @@ function renderInterestsTab(bundles) {
       ),
       el("div", { class: "month__body" },
         el("div", { class: "section" },
-          el("div", { class: "section__list" }, ...items.map((m) => renderRow(m, { showDate: true }))),
+          el("div", { class: "section__list" }, ...items.map(renderItem)),
         )
       )
     );
@@ -526,10 +646,26 @@ function movieIndex(bundles) {
   for (const b of bundles) {
     for (const m of b.releases) map.set(movieKey(m), m);
   }
+  for (const s of repertoryState.data?.screenings || []) {
+    map.set(screeningKey(s), { ...s, _kind: "screening" });
+  }
   return map;
 }
 
 function placeholderMovie(mark) {
+  if (mark?.kind === "screening") {
+    return {
+      _kind: "screening",
+      theater: mark.theater || "unknown",
+      title: mark.title || "Unknown",
+      year: null,
+      date: mark.date || "",
+      time: mark.time || "",
+      format: mark.format || null,
+      series: mark.series || null,
+      url: mark.url || null,
+    };
+  }
   return {
     title: mark?.title || "Unknown",
     date: mark?.date || "",
@@ -588,15 +724,18 @@ function renderCalendarDayList(items, selectedDate, byKey, bookedMap, watchedMap
     return;
   }
 
+  const renderAny = (m) =>
+    m._kind === "screening"
+      ? renderScreening(m, { showDate: true })
+      : renderRow(m, { showDate: true });
+
   const addSection = (label, count, rows) => {
     if (!rows.length) return;
     const header = el("div", { class: "section__header" },
       el("span", { class: "section__date", text: label }),
       el("span", { class: "section__count", text: `${count}` }),
     );
-    const list = el("div", { class: "section__list" },
-      ...rows.map((m) => renderRow(m, { showDate: true }))
-    );
+    const list = el("div", { class: "section__list" }, ...rows.map(renderAny));
     dayBox.appendChild(el("div", { class: "section" }, header, list));
   };
 
@@ -712,6 +851,142 @@ function updateCalendarSub() {
   sub.textContent = `${calState.year}`;
 }
 
+// ---------- Repertory tab rendering ----------
+
+const THEATER_FILTER_KEY = "upcoming:theater-filters";
+
+const repertoryState = {
+  data: null,                         // { theaters, screenings, ... } or null
+  theatersBySlug: new Map(),
+  hiddenTheaters: (() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(THEATER_FILTER_KEY) || "null");
+      if (saved && typeof saved === "object") return new Set(saved);
+    } catch {}
+    return new Set();
+  })(),
+};
+
+function saveTheaterFilters() {
+  try {
+    localStorage.setItem(
+      THEATER_FILTER_KEY,
+      JSON.stringify([...repertoryState.hiddenTheaters])
+    );
+  } catch {}
+}
+
+function setRepertoryData(data) {
+  repertoryState.data = data;
+  repertoryState.theatersBySlug = new Map(
+    (data?.theaters || []).map((t) => [t.slug, t])
+  );
+}
+
+function activeScreenings() {
+  const all = repertoryState.data?.screenings || [];
+  const hidden = repertoryState.hiddenTheaters;
+  return all.filter((s) => !hidden.has(s.theater));
+}
+
+function screeningsByDate(rows) {
+  const map = new Map();
+  for (const r of rows) {
+    if (!map.has(r.date)) map.set(r.date, []);
+    map.get(r.date).push(r);
+  }
+  for (const [, items] of map) {
+    items.sort(
+      (a, b) =>
+        (a.time || "").localeCompare(b.time || "") ||
+        (a.theater || "").localeCompare(b.theater || "")
+    );
+  }
+  return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
+}
+
+function renderTheaterFilterBar() {
+  const bar = document.getElementById("theater-filter-bar");
+  if (!bar) return;
+  bar.innerHTML = "";
+  const data = repertoryState.data;
+  if (!data?.theaters?.length) return;
+
+  // Only show theaters that actually have screenings in the current window.
+  const hasScreenings = new Set(
+    (data.screenings || []).map((s) => s.theater)
+  );
+  const theaters = data.theaters.filter((t) => hasScreenings.has(t.slug));
+  if (!theaters.length) return;
+
+  const allBtn = el("button", {
+      type: "button",
+      class: `theater-chip${repertoryState.hiddenTheaters.size === 0 ? " is-active" : ""}`,
+      dataset: { slug: "__all__" },
+    },
+    "All",
+  );
+  bar.appendChild(allBtn);
+
+  for (const t of theaters) {
+    const active = !repertoryState.hiddenTheaters.has(t.slug);
+    const btn = el("button", {
+        type: "button",
+        class: `theater-chip${active ? " is-active" : ""}`,
+        dataset: { slug: t.slug },
+      },
+      t.name.replace(/^AMC /, "").replace(/^The /, ""),
+    );
+    bar.appendChild(btn);
+  }
+
+  bar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".theater-chip");
+    if (!btn) return;
+    const slug = btn.dataset.slug;
+    if (slug === "__all__") {
+      repertoryState.hiddenTheaters.clear();
+    } else if (repertoryState.hiddenTheaters.has(slug)) {
+      repertoryState.hiddenTheaters.delete(slug);
+    } else {
+      repertoryState.hiddenTheaters.add(slug);
+    }
+    saveTheaterFilters();
+    renderTheaterFilterBar();
+    renderRepertoryTab();
+  }, { once: true });
+}
+
+function renderRepertoryTab() {
+  const list = document.getElementById("repertory-list");
+  const empty = document.getElementById("empty-repertory");
+  if (!list || !empty) return;
+  list.innerHTML = "";
+
+  const data = repertoryState.data;
+  const screenings = activeScreenings();
+  if (!screenings.length) {
+    empty.textContent = data?.screenings?.length
+      ? "No screenings match the current theater filter."
+      : "No repertory screenings loaded yet. The next data refresh will populate this list.";
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+
+  const groups = screeningsByDate(screenings);
+  for (const [date, items] of groups) {
+    const section = el("section", { class: "section" },
+      el("header", { class: "section__header" },
+        el("span", { class: "section__date", text: fmtDateShort(date) }),
+        el("span", { class: "section__count", text: `${items.length}` }),
+      ),
+      el("div", { class: "section__list" }, ...items.map((s) => renderScreening(s))),
+    );
+    list.appendChild(section);
+  }
+}
+
 // ---------- Tabs ----------
 
 let allBundles = [];
@@ -730,16 +1005,26 @@ function switchTab(tab) {
   );
   setPanelHidden("tab-year", tab !== "year");
   setPanelHidden("tab-calendar", tab !== "calendar");
+  setPanelHidden("tab-repertory", tab !== "repertory");
   setPanelHidden("tab-interests", tab !== "interests");
 
   const title = document.getElementById("view-title");
   const sub = document.getElementById("view-sub");
   if (tab === "year") { title.textContent = "Upcoming"; sub.textContent = `${YEAR}`; }
   else if (tab === "calendar") { title.textContent = "Calendar"; sub.textContent = `${calState.year}`; }
+  else if (tab === "repertory") {
+    title.textContent = "Theaters";
+    const total = (repertoryState.data?.screenings || []).length;
+    sub.textContent = total ? `${total} screenings` : "";
+  }
   else { title.textContent = "Interests"; sub.textContent = ""; }
 
   if (tab === "interests") renderInterestsTab(allBundles);
   if (tab === "calendar") renderCalendarTab(allBundles);
+  if (tab === "repertory") {
+    renderTheaterFilterBar();
+    renderRepertoryTab();
+  }
 }
 
 document.querySelectorAll(".tab-bar__btn").forEach((b) => {
@@ -864,6 +1149,7 @@ function requestDateDialog({ heading, copy, defaultDate, isUpdate }) {
 Interests.onChange(() => {
   if (activeTab === "interests") renderInterestsTab(allBundles);
   if (activeTab === "calendar") renderCalendarTab(allBundles);
+  if (activeTab === "repertory") renderRepertoryTab();
   for (const row of document.querySelectorAll(".row[data-key]")) {
     const key = row.dataset.key;
     const lvl = Interests.getLevel(key);
@@ -934,13 +1220,18 @@ Interests.onChange(() => {
   }
 });
 
-Promise.all([loadYear(YEAR), Interests.load()])
-  .then(([bundles]) => {
+Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
+  .then(([bundles, repertory]) => {
     allBundles = bundles;
+    setRepertoryData(repertory);
     Interests.sweepPastBookings(TODAY);
     renderYearTab(bundles);
     if (activeTab === "calendar") renderCalendarTab(bundles);
     else if (activeTab === "interests") renderInterestsTab(bundles);
+    else if (activeTab === "repertory") {
+      renderTheaterFilterBar();
+      renderRepertoryTab();
+    }
   })
   .catch((e) => {
     const empty = document.getElementById("empty-year");

@@ -25,7 +25,7 @@ const NEXT_MONTH_KEY = (() => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
 })();
 
-const LEVELS = ["must", "likely", "booked", "potential", "not", "watched"];
+const LEVELS = ["watched", "booked", "must", "likely", "potential", "not"];
 const LEVEL_LABEL = {
   must: "Must",
   likely: "Likely",
@@ -491,7 +491,7 @@ function renderInterestsTab(bundles) {
   const byScreeningKey = new Map(screenings.map((s) => [screeningKey(s), s]));
 
   const marks = Interests.allMarks();
-  const grouped = { must: [], likely: [], booked: [], potential: [], not: [], watched: [] };
+  const grouped = { watched: [], booked: [], must: [], likely: [], potential: [], not: [] };
 
   for (const [key, meta] of Object.entries(marks)) {
     if (!grouped[meta.level]) continue;
@@ -526,7 +526,7 @@ function renderInterestsTab(bundles) {
     grouped[meta.level].push(movie);
   }
 
-  const order = ["booked", "must", "likely", "watched", "potential", "not"];
+  const order = ["watched", "booked", "must", "likely", "potential", "not"];
   const titles = {
     must: "Must watch",
     likely: "Likely watch",
@@ -827,7 +827,7 @@ function marksByField(level, field) {
 }
 
 function topLevelForDate(items) {
-  const priority = { booked: 0, must: 1, likely: 2, potential: 3, watched: 4, not: 5 };
+  const priority = { watched: 0, booked: 1, must: 2, likely: 3, potential: 4, not: 5 };
   let best = null;
   let bestRank = 99;
   for (const m of items) {
@@ -1300,7 +1300,7 @@ Interests.onChange(() => {
     const key = row.dataset.key;
     const lvl = Interests.getLevel(key);
     const mark = Interests.getMark(key);
-    row.classList.remove("row--must", "row--likely", "row--booked", "row--potential", "row--not", "row--watched");
+    row.classList.remove("row--watched", "row--booked", "row--must", "row--likely", "row--potential", "row--not");
     if (lvl) row.classList.add(`row--${lvl}`);
     row.classList.toggle("row--no-local", !!mark?.no_local_theater);
 

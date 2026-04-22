@@ -5,7 +5,7 @@ const PAT_KEY = "upcoming:gh_pat";
 const CACHE_KEY = "upcoming:interests";
 const DEBOUNCE_MS = 2500;
 
-const LEVELS = ["must", "likely", "potential", "not", "booked", "watched"];
+const LEVELS = ["watched", "booked", "must", "likely", "potential", "not"];
 
 const state = {
   marks: {},

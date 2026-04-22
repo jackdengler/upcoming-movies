@@ -25,7 +25,7 @@ const HORIZON_DAYS = 60; // keep screenings up to ~2 months out
 const REQUEST_TIMEOUT_MS = 15000;
 
 // Diagnostic sample capture. When a source returns HTTP 200 but 0 events, we
-// attach a ~3KB sample of its last fetched page to the committed JSON so
+// attach a ~60KB sample of its last fetched page to the committed JSON so
 // parser bugs are debuggable without live access to the target sites.
 const _debug = {
   currentSource: null,
@@ -106,7 +106,7 @@ async function fetchText(url, extraHeaders = {}) {
       _debug.sampleBySource.set(_debug.currentSource, {
         url,
         bytes: text.length,
-        sample: text.slice(0, 3500),
+        sample: text.slice(0, 60000),
       });
     }
     return text;

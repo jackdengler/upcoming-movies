@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T01:06:49.630Z",
+  "updated": "2026-04-22T05:15:12.022Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1041,12 +1041,12 @@
       "watched_date": "2026-04-09"
     },
     "tmdb:1430077": {
-      "level": "booked",
-      "at": "2026-04-22T01:06:44.854Z",
+      "level": "watched",
+      "at": "2026-04-22T05:15:09.183Z",
       "title": "Hokum",
       "date": "2026-05-01",
       "tmdb_id": 1430077,
-      "booked_date": "2026-04-21"
+      "watched_date": "2026-04-21"
     }
   }
 }

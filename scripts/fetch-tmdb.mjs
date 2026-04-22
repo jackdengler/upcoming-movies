@@ -179,8 +179,10 @@ for (const m of list) {
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
 
-    // Forced + majors bypass all floors. Others must have some popularity.
-    if (!isForced && !major && pop < MIN_POPULARITY_NON_MAJOR) continue;
+    // Forced, majors, and any wide theatrical release bypass the popularity
+    // floor — per user preference, every wide release should always pull.
+    const isWide = cls.type === "wide";
+    if (!isForced && !major && !isWide && pop < MIN_POPULARITY_NON_MAJOR) continue;
 
     const director =
       (d.credits?.crew || [])
@@ -208,6 +210,7 @@ for (const m of list) {
       _pop: d.popularity || 0,
       _major: major,
       _forced: isForced,
+      _wide: isWide,
     });
     await sleep(35);
   } catch (e) {
@@ -215,17 +218,18 @@ for (const m of list) {
   }
 }
 
-// Always keep every major-studio release and every force-included film.
-// Fill remaining budget with top-popularity others.
-const keep = releases.filter((r) => r._major || r._forced);
-const others = releases.filter((r) => !r._major && !r._forced);
+// Always keep every major-studio release, every force-included film, and
+// every wide theatrical release. Fill remaining budget with top-popularity
+// others.
+const keep = releases.filter((r) => r._major || r._forced || r._wide);
+const others = releases.filter((r) => !r._major && !r._forced && !r._wide);
 others.sort((a, b) => b._pop - a._pop);
 const remaining = Math.max(0, MAX_PER_MONTH - keep.length);
 const chosen = [...keep, ...others.slice(0, remaining)];
 chosen.sort(
   (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title)
 );
-for (const r of chosen) { delete r._pop; delete r._major; delete r._forced; }
+for (const r of chosen) { delete r._pop; delete r._major; delete r._forced; delete r._wide; }
 const finalReleases = chosen;
 
 const monthName = new Date(`${start}T12:00:00Z`).toLocaleString("en-US", {
@@ -248,5 +252,5 @@ try {
 } catch {}
 writeFileSync(filename, payload);
 console.log(
-  `${changed ? "Updated" : "Unchanged"} ${filename} (${finalReleases.length} releases, ${majors.length} major)`
+  `${changed ? "Updated" : "Unchanged"} ${filename} (${finalReleases.length} releases, ${keep.length} always-kept)`
 );

@@ -261,7 +261,7 @@ function parse12h(s) {
   return `${String(h).padStart(2, "0")}:${m[2]}`;
 }
 
-const NB_MONTHS = {
+const MONTH_BY_NAME = {
   january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
   july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
 };
@@ -289,14 +289,14 @@ async function scrapeNewBeverly() {
     if (!dayM) continue;
     const monthM = block.match(/event-card__month[^>]*>\s*([A-Za-z]+)\s*</);
     const monthName = (monthM ? monthM[1] : headingMonth || "").toLowerCase();
-    const monthNum = NB_MONTHS[monthName];
+    const monthNum = MONTH_BY_NAME[monthName];
     if (!monthNum) continue;
 
     // Year roll-over: if the heading is December and a card shows a January
     // day, that day is in the following calendar year.
     let year = headingYear;
     if (headingMonth && monthName !== headingMonth &&
-        NB_MONTHS[headingMonth] === 12 && monthNum === 1) {
+        MONTH_BY_NAME[headingMonth] === 12 && monthNum === 1) {
       year += 1;
     }
     const day = Number(dayM[1]);
@@ -499,17 +499,99 @@ function walkForShowtimes(node, theaterSlug, out, depth = 0) {
   }
 }
 
+// Resolve a (month name, day) pair to a YYYY-MM-DD using today as the anchor.
+// Vista's page exposes no year, only month names that may roll over (e.g.
+// schedule running Dec → Jan). If the candidate date in the current LA year
+// is more than a day in the past, assume the next year.
+function resolveDateNearToday(monthName, day) {
+  const month = MONTH_BY_NAME[String(monthName).toLowerCase()];
+  if (!month || !day) return null;
+  const padM = String(month).padStart(2, "0");
+  const padD = String(day).padStart(2, "0");
+  const todayY = Number(TODAY_LA.slice(0, 4));
+  const candidate = `${todayY}-${padM}-${padD}`;
+  if (candidate >= TODAY_LA) return candidate;
+  // candidate < today → either yesterday/earlier-this-week or next year.
+  const yesterday = new Date(`${TODAY_LA}T00:00:00Z`);
+  yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+  const yTxt = yesterday.toISOString().slice(0, 10);
+  return candidate < yTxt ? `${todayY + 1}-${padM}-${padD}` : candidate;
+}
+
+// Vista publishes a few weeks of programming on the home page as
+// <div class="shows__grid--row"> blocks: each row has one schedule cell and
+// one metadata cell. Schedule cells expose month markers, day labels, and
+// Veezi ticket links per showtime. There's no JSON-LD or year on the page.
 async function scrapeVista() {
-  const html = await fetchText("https://vistatheaterhollywood.com/");
-  const out = jsonLdEvents(html, "vista", "https://vistatheaterhollywood.com/");
-  if (out.length) return out;
-  // Vista uses Squarespace; fall back to walking the embedded data blob.
-  const m = html.match(/Static\.SQUARESPACE_CONTEXT\s*=\s*({[\s\S]*?});/);
-  if (m) {
-    try {
-      const ctx = JSON.parse(m[1]);
-      walkForShowtimes(ctx, "vista", out);
-    } catch {}
+  const url = "https://vistatheaterhollywood.com/";
+  const html = await fetchText(url);
+
+  const fromJsonLd = jsonLdEvents(html, "vista", url);
+  if (fromJsonLd.length) return fromJsonLd;
+
+  const sectionM = html.match(
+    /<section[^>]*class="shows"[^>]*id="now-playing"[^>]*>([\s\S]*?)<\/section>/i
+  );
+  if (!sectionM) return [];
+  const rows = sectionM[1].split(/<div\s+class="shows__grid--row"[^>]*>/);
+  rows.shift(); // discard prefix before first row
+
+  const out = [];
+  for (const row of rows) {
+    const cells = row.split(/<div\s+class="shows__grid--cell"[^>]*>/);
+    if (cells.length < 3) continue;
+    const scheduleHtml = cells[1];
+    const metaHtml = cells[2];
+
+    const titleM = metaHtml.match(/<h3[^>]*class="alt"[^>]*>([\s\S]*?)<\/h3>/i);
+    const titleRaw = titleM ? stripTags(titleM[1]).trim() : "";
+    if (!titleRaw) continue;
+
+    // "<p>2026 | 1h 30m | 35mm Presentation</p>" — first 4-digit run is the
+    // film's release year; format hint sits later in the same line.
+    const metaLineM = metaHtml.match(/<p>\s*(\d{4})\s*\|[^<]*<\/p>/);
+    const year = metaLineM ? Number(metaLineM[1]) : extractYear(titleRaw);
+    const format = detectFormat(metaLineM ? metaLineM[0] : "");
+
+    // "Late Show" / "Matinee" badge on the poster cell.
+    const seriesM = metaHtml.match(/shows__grid--tag[^"]*"[^>]*>\s*([^<]+?)\s*<\/p>/);
+    const series = seriesM ? decodeEntities(seriesM[1]).trim() : null;
+
+    // Walk the schedule cell in source order. Month markers and day labels are
+    // sticky; each <a> ticket link emits one screening using the current
+    // (month, day) context.
+    const tokens = [];
+    const monthRe = /<p[^>]*\bmonth\b[^>]*>\s*([A-Za-z]+)\s*<\/p>/gi;
+    const dayRe = /<p\s+class="text__size-2"[^>]*>\s*(\d{1,2})(?:st|nd|rd|th)?\s*<\/p>/gi;
+    const timeRe = /<a\s+href="([^"]+)"[^>]*class="[^"]*card__button[^"]*"[^>]*>\s*([0-9:]+\s*[ap]m)\s*<\/a>/gi;
+    let m;
+    while ((m = monthRe.exec(scheduleHtml))) tokens.push({ kind: "month", value: m[1], pos: m.index });
+    while ((m = dayRe.exec(scheduleHtml))) tokens.push({ kind: "day", value: Number(m[1]), pos: m.index });
+    while ((m = timeRe.exec(scheduleHtml))) tokens.push({ kind: "time", href: m[1], time: m[2], pos: m.index });
+    tokens.sort((a, b) => a.pos - b.pos);
+
+    let curMonth = null;
+    let curDay = null;
+    for (const tok of tokens) {
+      if (tok.kind === "month") curMonth = tok.value;
+      else if (tok.kind === "day") curDay = tok.value;
+      else if (tok.kind === "time" && curMonth && curDay) {
+        const date = resolveDateNearToday(curMonth, curDay);
+        if (!date || !inWindow(date)) continue;
+        const time = parse12h(tok.time);
+        if (!time) continue;
+        out.push({
+          theater: "vista",
+          title: cleanTitle(titleRaw),
+          year,
+          date,
+          time,
+          format,
+          series,
+          url: tok.href,
+        });
+      }
+    }
   }
   return out;
 }

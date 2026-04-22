@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
@@ -14,6 +14,42 @@
       "genre": "Action / Comedy / Fantasy",
       "cast": "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris",
       "notes": "Big Nick Energy"
+    },
+    {
+      "tmdb_id": 797716,
+      "date": "2026-12-06",
+      "title": "The Magnificent Raiders of Dimension War One",
+      "director": "—",
+      "studio": "Olas Hayes Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Fantasy",
+      "cast": "Tom Sizemore, Robert LaSardo, Celine Alva, Daniel Baldwin",
+      "notes": "Hey Buck, got gravity bombs?"
+    },
+    {
+      "tmdb_id": 1250854,
+      "date": "2026-12-11",
+      "title": "Duped (The Jezbel Experience)",
+      "director": "S.V. Henson, Jr.",
+      "studio": "Golden Motion Pictures",
+      "budget_usd": 2000000,
+      "release_type": "wide",
+      "genre": "Drama / Horror / Thriller",
+      "cast": "Joy \"Babygirl\" Carter, Mona Gilliam",
+      "notes": "You shall reap what you sow"
+    },
+    {
+      "tmdb_id": 1358274,
+      "date": "2026-12-12",
+      "title": "Starlight",
+      "director": "Michael Brando",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Romance",
+      "cast": "Michael Brando, Irmena Chichikova, Cassie Clare, Ruby Kammer",
+      "notes": ""
     },
     {
       "tmdb_id": 1003596,
@@ -40,6 +76,42 @@
       "notes": "The epic conclusion."
     },
     {
+      "tmdb_id": 1666544,
+      "date": "2026-12-18",
+      "title": "Without a Trace",
+      "director": "Timothy Denison",
+      "studio": "—",
+      "budget_usd": 200,
+      "release_type": "wide",
+      "genre": "Thriller",
+      "cast": "Vincent Jarus, Alex Loncaric, Laurens Denison, Indeya Simon",
+      "notes": "What will it take to escape?"
+    },
+    {
+      "tmdb_id": 1300926,
+      "date": "2026-12-23",
+      "title": "The Angry Birds Movie 3",
+      "director": "John Rice",
+      "studio": "Rovio Animation",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Family / Comedy / Adventure / Animation",
+      "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1437882,
+      "date": "2026-12-25",
+      "title": "A Place in Hell",
+      "director": "Chloe Domont",
+      "studio": "T-Street",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Thriller / Drama",
+      "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1260649,
       "date": "2026-12-25",
       "title": "Jumanji: Open World",
@@ -52,6 +124,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1372443,
+      "date": "2026-12-25",
+      "title": "Mr. Irrelevant: The John Tuggle Story",
+      "director": "Jonathan Levine",
+      "studio": "Blackjack Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1421903,
       "date": "2026-12-25",
       "title": "Werwulf",
@@ -61,6 +145,54 @@
       "release_type": "wide",
       "genre": "Horror / Mystery",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Ralph Ineson",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1408207,
+      "date": "2026-12-25",
+      "title": "Zero A.D.",
+      "director": "Alejandro Monteverde",
+      "studio": "Angel Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Deva Cassel, Jamie Ward, Jim Caviezel, Sam Worthington",
+      "notes": "The beginning was nearly the end."
+    },
+    {
+      "tmdb_id": 1571521,
+      "date": "2026-12-26",
+      "title": "ViQueens",
+      "director": "Harald Zwart",
+      "studio": "Sola Media",
+      "budget_usd": 8000000,
+      "release_type": "wide",
+      "genre": "Animation / Adventure / Family",
+      "cast": "Ella Purnell, Rita Ora, Steve Speirs, Anton Lesser",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1286030,
+      "date": "2026-12-30",
+      "title": "Apophis 2029",
+      "director": "Jeffrey Schneider",
+      "studio": "WJD films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Science Fiction / Drama",
+      "cast": "Nick Dent, Geno Romo, Bob Olin, Jeffrey Schneider",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1598464,
+      "date": "2026-12-31",
+      "title": "Down the Road Apiece",
+      "director": "Max Wilson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Western",
+      "cast": "Chuck Hittinger, James DeForest Parker, Audrey Turner",
       "notes": ""
     }
   ]

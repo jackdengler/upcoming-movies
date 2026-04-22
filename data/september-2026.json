@@ -1,8 +1,32 @@
 {
   "month": "September 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
+    {
+      "tmdb_id": 1352071,
+      "date": "2026-09-02",
+      "title": "More Beautiful Than Death",
+      "director": "Austin Lugo",
+      "studio": "Life Through Fiction Productions",
+      "budget_usd": 20000,
+      "release_type": "wide",
+      "genre": "Drama / Horror",
+      "cast": "Drew Gould, Jess Jani, Melody Ricketts, Brandon Hess",
+      "notes": "Nothing can happen in life more beautiful than death"
+    },
+    {
+      "tmdb_id": 1380417,
+      "date": "2026-09-04",
+      "title": "By Any Means",
+      "director": "Elegance Bratton",
+      "studio": "Hammerstone Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "History / Drama / Thriller",
+      "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, Giancarlo Esposito",
+      "notes": ""
+    },
     {
       "tmdb_id": 1437511,
       "date": "2026-09-04",
@@ -16,6 +40,42 @@
       "notes": ""
     },
     {
+      "tmdb_id": 790798,
+      "date": "2026-09-04",
+      "title": "Jessica Frost",
+      "director": "Runar Berntsen",
+      "studio": "Castellani Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Fantasy / Science Fiction",
+      "cast": "—",
+      "notes": "There's another world, but it is in this one."
+    },
+    {
+      "tmdb_id": 1664187,
+      "date": "2026-09-04",
+      "title": "Late Night At The Movies",
+      "director": "Taylor Rhoades",
+      "studio": "—",
+      "budget_usd": 1000,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Melody West, Gideon Morley, Karlee Mayfield, Jarod Gianoni",
+      "notes": "It's A Reel Dead End Job"
+    },
+    {
+      "tmdb_id": 1657843,
+      "date": "2026-09-04",
+      "title": "P31",
+      "director": "Carl Jackson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "Alexis Andrews",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1302904,
       "date": "2026-09-11",
       "title": "Practical Magic 2",
@@ -24,8 +84,20 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Fantasy / Drama / Comedy",
-      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Dianne Wiest",
-      "notes": "The curse lives on. But so does the magic."
+      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Lee Pace",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1377237,
+      "date": "2026-09-11",
+      "title": "Runner",
+      "director": "Scott Waugh",
+      "studio": "Broken Road Productions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Drama / Comedy",
+      "cast": "Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George",
+      "notes": ""
     },
     {
       "tmdb_id": 1423191,
@@ -37,6 +109,30 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Paul Walter Hauser, Zach Cherry, Kali Reis",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1477104,
+      "date": "2026-09-18",
+      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "director": "Steve Cox, Matthew Walker",
+      "studio": "Aardman",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Family / Comedy / Adventure / Animation",
+      "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
+      "notes": "What's that coming over the hill?"
+    },
+    {
+      "tmdb_id": 1126097,
+      "date": "2026-09-25",
+      "title": "Charlie Harper",
+      "director": "Tom Dean, Mac Eldridge",
+      "studio": "Temple Hill Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance",
+      "cast": "Emilia Jones, Nick Robinson, Nicholas Cirillo, Ja'Quan Monroe-Henderson",
       "notes": ""
     },
     {
@@ -62,6 +158,18 @@
       "genre": "Horror / Thriller",
       "cast": "Maika Monroe, Thomasin McKenzie, Jason Isaacs, Amy De Bhrún",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1641958,
+      "date": "2026-09-26",
+      "title": "The Miracle of the Second Chance",
+      "director": "Gracyen Duncan-Smith",
+      "studio": "Girl",
+      "budget_usd": 15000000,
+      "release_type": "wide",
+      "genre": "Family / Action",
+      "cast": "Gracyen Duncan-Smith, Amanda Moon, Eden Brown, Lil Champ",
+      "notes": "Heritage is the heart of the home."
     }
   ]
 }

@@ -47,22 +47,17 @@ const THEATERS = [
   { slug: "lumiere", name: "Lumiere Music Hall", address: "9036 Wilshire Blvd, Beverly Hills", url: "https://www.laemmle.com/theater/music-hall" },
 ];
 
-// AMC Classics — LA-area whitelist. Names match AMC's "name" field for fuzzy
-// matching against showtimes; theater IDs are filled in by the scraper at
-// runtime if needed.
-const LA_AMC_THEATERS = [
-  { slug: "amc-century-city-15", name: "AMC Century City 15", address: "10250 Santa Monica Blvd, Los Angeles" },
-  { slug: "amc-citywalk", name: "AMC Universal CityWalk", address: "100 Universal City Plaza, Universal City" },
-  { slug: "amc-burbank-16", name: "AMC Burbank 16", address: "125 E Palm Ave, Burbank" },
-  { slug: "amc-del-amo-18", name: "AMC Del Amo 18", address: "3525 W Carson St, Torrance" },
-  { slug: "amc-santa-monica-7", name: "AMC Santa Monica 7", address: "1310 3rd St Promenade, Santa Monica" },
-  { slug: "amc-marina-marketplace-6", name: "AMC Marina Marketplace 6", address: "13455 Maxella Ave, Marina del Rey" },
-  { slug: "amc-marina-pacifica-12", name: "AMC Marina Pacifica 12", address: "6346 E Pacific Coast Hwy, Long Beach" },
-];
-for (const t of LA_AMC_THEATERS) {
-  t.url = "https://www.amctheatres.com/amc-classic-series";
-  THEATERS.push(t);
-}
+// Fathom Events: the joint venture between AMC, Regal, and Cinemark that
+// runs the real classic-film rereleases at those chains (TCM Big Screen
+// Classics, Studio Ghibli Fest, anniversary screenings, etc.). We surface
+// them under a single pseudo-theater; the specific venue appears in the
+// series / title field.
+THEATERS.push({
+  slug: "fathom-la",
+  name: "Fathom Events (LA)",
+  address: "Various AMC / Regal / Cinemark in LA",
+  url: "https://www.fathomevents.com/",
+});
 
 // ---------- Generic helpers ----------
 
@@ -687,14 +682,67 @@ async function scrapeLumiere() {
   return jsonLdEvents(html, "lumiere", "https://www.laemmle.com/theater/music-hall");
 }
 
-// AMC Classics: AMC's site is a heavily-defended SPA. Scraping reliably is a
-// project of its own; first pass returns [] and logs a TODO so the rest of the
-// pipeline still runs. Future work: hit api.amctheatres.com with an API key
-// stored as a repo secret, filter showtimes where program === "AMC Classics"
-// AND theater is in LA_AMC_THEATERS.
-async function scrapeAMCClassics() {
-  console.warn("amc-classics: scraper not yet implemented (returning 0 screenings)");
-  return [];
+// Fathom Events handles classic rereleases at AMC, Regal, and Cinemark.
+// First pass: best-effort fetch of the classics series page, look for
+// JSON-LD events or an embedded Next.js data blob. If nothing shakes out,
+// the 60KB diagnostic sample tells us what shape the page is actually in.
+async function scrapeFathomEvents() {
+  const pageCandidates = [
+    "https://www.fathomevents.com/series/classics",
+    "https://www.fathomevents.com/series",
+    "https://www.fathomevents.com/",
+  ];
+  let html = "";
+  for (const u of pageCandidates) {
+    try { html = await fetchText(u); if (html) break; } catch {}
+  }
+  if (!html) throw new Error("fathom: no candidate URL succeeded");
+
+  const out = [];
+
+  // Path 1: JSON-LD Event nodes (site uses structured data on film pages).
+  for (const b of extractJsonLd(html)) {
+    for (const ev of flattenEvents(b)) {
+      const start = ev.startDate;
+      if (!start) continue;
+      const parts = String(start).endsWith("Z") || /[+-]\d{2}:?\d{2}$/.test(String(start))
+        ? laParts(start)
+        : (naivePTParts(start) || laParts(start));
+      if (!parts || !inWindow(parts.date)) continue;
+      const venue = String(ev.location?.name || ev.location || "");
+      if (!isLaVenue(venue)) continue;
+      const name = ev.name || "";
+      out.push({
+        theater: "fathom-la",
+        title: cleanTitle(name),
+        year: extractYear(name),
+        date: parts.date,
+        time: parts.time,
+        format: detectFormat(`${name} ${ev.description || ""}`),
+        series: venue || ev.superEvent?.name || null,
+        url: ev.url || pageCandidates[0],
+      });
+    }
+  }
+  if (out.length) return out;
+
+  // Path 2: Next.js __NEXT_DATA__ blob (Fathom's marketing site is built
+  // with Next; the events feed may be pre-rendered).
+  const nextM = html.match(/<script[^>]+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+  if (nextM) {
+    try {
+      const data = JSON.parse(nextM[1]);
+      walkForShowtimes(data, "fathom-la", out);
+    } catch {}
+  }
+  return dedupeScreenings(out);
+}
+
+// Loose "is this LA-area?" check. Fathom venue names typically include the
+// city; we cast a wide net over the metro.
+function isLaVenue(name) {
+  const s = String(name).toLowerCase();
+  return /\b(los angeles|hollywood|burbank|pasadena|santa monica|culver city|glendale|north hollywood|studio city|sherman oaks|universal city|marina del rey|long beach|torrance|century city|playa vista)\b/.test(s);
 }
 
 // ---------- Source orchestration ----------
@@ -708,7 +756,7 @@ const SOURCES = [
   { id: "academy-museum", theaters: ["academy-museum"], fn: scrapeAcademyMuseum },
   { id: "brain-dead", theaters: ["brain-dead"], fn: scrapeBrainDeadStudios },
   { id: "lumiere", theaters: ["lumiere"], fn: scrapeLumiere },
-  { id: "amc-classics", theaters: LA_AMC_THEATERS.map((t) => t.slug), fn: scrapeAMCClassics },
+  { id: "fathom", theaters: ["fathom-la"], fn: scrapeFathomEvents },
 ];
 
 function dedupeScreenings(rows) {

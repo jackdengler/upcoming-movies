@@ -133,6 +133,118 @@ const hasMajorStudio = (companies) =>
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// ---------- Box Office Mojo: authoritative wide-release list ----------
+// BOM is the user's canonical source for "this is a real wide release."
+// We scrape the weekly calendar pages covering the target month and pull out
+// any film whose release-type annotation reads "Wide". Result is used to
+// force-include that title regardless of TMDB popularity.
+//
+// Notes:
+// - BOM has no public API; we scrape public HTML. If Amazon's WAF rejects a
+//   request we skip that week and continue; missing hits fall back to TMDB's
+//   own wide classification so the script never hard-fails.
+// - The HTML shape has been stable (a single <table> per Friday with a
+//   "Release" / release-type cell), but is not contractual. If parsing yields
+//   zero hits the surrounding logic still runs.
+
+const BOM_USER_AGENT =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0";
+
+const HTML_ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", apos: "'", nbsp: " " };
+const decodeEntities = (s) =>
+  s
+    .replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (_, ent) => {
+      if (ent[0] === "#") {
+        const code = ent[1] === "x" ? parseInt(ent.slice(2), 16) : parseInt(ent.slice(1), 10);
+        return Number.isFinite(code) ? String.fromCodePoint(code) : _;
+      }
+      return HTML_ENTITIES[ent.toLowerCase()] ?? _;
+    });
+
+const stripTags = (s) => decodeEntities(s.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
+
+const normalizeTitle = (s) =>
+  (s || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/\s*\(\d{4}\)\s*$/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+function fridaysCoveringMonth(y, m) {
+  // m is 1-indexed. Return every Friday whose week (Fri..Thu) intersects the month.
+  const first = new Date(Date.UTC(y, m - 1, 1));
+  const last = new Date(Date.UTC(y, m, 0));
+  // Walk back to the Friday on or before the 1st.
+  const offset = (first.getUTCDay() - 5 + 7) % 7;
+  const cursor = new Date(first);
+  cursor.setUTCDate(cursor.getUTCDate() - offset);
+  const out = [];
+  while (cursor <= last) {
+    out.push(new Date(cursor));
+    cursor.setUTCDate(cursor.getUTCDate() + 7);
+  }
+  return out;
+}
+
+async function fetchBomHtml(url) {
+  const r = await fetch(url, {
+    headers: {
+      "User-Agent": BOM_USER_AGENT,
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+    },
+  });
+  if (!r.ok) throw new Error(`BOM ${r.status}`);
+  return r.text();
+}
+
+// Pull wide releases out of a BOM weekly calendar page. Each <tr> has a
+// title link (/release/rlXXX/ or /title/ttXXX/) and a cell containing the
+// release-type label. We match rows where that label is "Wide".
+function parseWideReleasesFromBom(html) {
+  const out = [];
+  const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
+  let row;
+  while ((row = rowRe.exec(html))) {
+    const cells = row[1];
+    if (!/>\s*Wide\s*</i.test(cells) && !/\bWide\b/.test(stripTags(cells))) continue;
+    if (/>\s*Limited\s*</i.test(cells)) continue;
+    const link = cells.match(
+      /<a[^>]+href="\/(?:release|title)\/[^"]+"[^>]*>([\s\S]*?)<\/a>/i
+    );
+    if (!link) continue;
+    const title = stripTags(link[1]);
+    if (title) out.push(title);
+  }
+  return out;
+}
+
+async function fetchBomWideTitles(y, m) {
+  const titles = new Set();
+  const fridays = fridaysCoveringMonth(y, m);
+  for (const f of fridays) {
+    const ymd = f.toISOString().slice(0, 10);
+    try {
+      const html = await fetchBomHtml(`https://www.boxofficemojo.com/calendar/${ymd}/`);
+      for (const t of parseWideReleasesFromBom(html)) titles.add(normalizeTitle(t));
+      await sleep(300);
+    } catch (e) {
+      console.warn(`BOM ${ymd}: ${e.message}`);
+    }
+  }
+  return titles;
+}
+
+let bomWideTitles = new Set();
+try {
+  bomWideTitles = await fetchBomWideTitles(+year, +mm);
+  console.log(`BOM: ${bomWideTitles.size} wide release title(s) for ${MONTH}`);
+} catch (e) {
+  console.warn(`BOM lookup failed entirely: ${e.message}`);
+}
+
 const list = await discover();
 const forced = new Map(); // tmdb id -> force-include meta
 
@@ -149,6 +261,24 @@ for (const entry of FORCE_INCLUDE) {
     }
   } catch (e) {
     console.warn(`force-include ${entry.imdb_id} failed:`, e.message);
+  }
+}
+
+// For BOM wide releases not already in TMDB's discover results, search TMDB
+// by title and add the best match so we render them even with low popularity.
+for (const norm of bomWideTitles) {
+  if (list.some((m) => normalizeTitle(m.title) === norm)) continue;
+  try {
+    const r = await get(
+      `/search/movie?query=${encodeURIComponent(norm)}&primary_release_year=${year}`
+    );
+    const hits = r.results || [];
+    const hit =
+      hits.find((x) => (x.release_date || "").slice(0, 7) === MONTH) || hits[0];
+    if (hit && !list.some((m) => m.id === hit.id)) list.push(hit);
+    await sleep(35);
+  } catch (e) {
+    console.warn(`BOM→TMDB search "${norm}" failed:`, e.message);
   }
 }
 
@@ -179,9 +309,11 @@ for (const m of list) {
     const major = hasMajorStudio(d.production_companies);
     const pop = m.popularity || d.popularity || 0;
 
-    // Forced, majors, and any wide theatrical release bypass the popularity
-    // floor — per user preference, every wide release should always pull.
-    const isWide = cls.type === "wide";
+    // Forced, majors, and wide theatrical releases always pull. "Wide" is
+    // whatever Box Office Mojo flagged, with TMDB's own wide classification
+    // as a fallback for weeks we couldn't scrape.
+    const isBomWide = bomWideTitles.has(normalizeTitle(d.title));
+    const isWide = isBomWide || cls.type === "wide";
     if (!isForced && !major && !isWide && pop < MIN_POPULARITY_NON_MAJOR) continue;
 
     const director =

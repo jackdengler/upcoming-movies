@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T17:49:29.998Z",
+  "updated": "2026-04-22T17:49:40.694Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1056,6 +1056,14 @@
       "title": "Bunnylovr",
       "date": "2026-04-10",
       "tmdb_id": 1364297,
+      "no_local_theater": true
+    },
+    "tmdb:1363285": {
+      "level": "not",
+      "at": "2026-04-22T17:49:38.185Z",
+      "title": "Brimstone Terrace",
+      "date": "2026-05-01",
+      "tmdb_id": 1363285,
       "no_local_theater": true
     }
   }

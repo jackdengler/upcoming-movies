@@ -625,6 +625,12 @@ details[open] > .month__summary .month__chevron {
 }
 .rep-title__showing a:active { opacity: 0.7; }
 
+.rep-interest-group {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
 .rep-interest {
   flex-shrink: 0;
   font-size: 12px;
@@ -637,11 +643,19 @@ details[open] > .month__summary .month__chevron {
   cursor: pointer;
 }
 .rep-interest:active { transform: scale(0.96); }
-.rep-interest.is-on {
+.rep-interest--yes.is-on {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
 }
+.rep-interest--no.is-on {
+  background: var(--fg-2);
+  border-color: var(--fg-2);
+  color: #fff;
+}
+
+.rep-title--off { opacity: 0.55; }
+.rep-title--off:not([open]) .rep-title__meta { display: none; }
 
 .row__series {
   margin-top: 4px;

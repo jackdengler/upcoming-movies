@@ -1,12 +1,13 @@
 {
-  "updated": "2026-04-22T00:58:01.105Z",
+  "updated": "2026-04-22T00:58:07.802Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
-      "at": "2026-04-22T00:22:36.402Z",
+      "at": "2026-04-22T00:58:05.280Z",
       "title": "The Super Mario Galaxy Movie",
       "date": "2026-04-01",
-      "tmdb_id": 1226863
+      "tmdb_id": 1226863,
+      "watched_date": "2026-04-05"
     },
     "tmdb:1341137": {
       "level": "not",

@@ -71,6 +71,14 @@
         </div>
       </section>
 
+      <section id="tab-repertory" class="tab-panel" aria-label="Repertory" hidden>
+        <div id="theater-filter-bar" class="theater-filter-bar" role="group" aria-label="Filter by theater"></div>
+        <div id="repertory-list"></div>
+        <p id="empty-repertory" class="empty-state" hidden>
+          No repertory screenings loaded yet.
+        </p>
+      </section>
+
       <section id="tab-interests" class="tab-panel" aria-label="Interests" hidden>
         <div id="interest-list"></div>
         <p id="empty-interests" class="empty-state" hidden>
@@ -96,6 +104,13 @@
           <circle cx="16" cy="14" r="1" fill="currentColor" stroke="none"/>
         </svg>
         <span>Calendar</span>
+      </button>
+      <button class="tab-bar__btn" data-tab="repertory" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 6V4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2M4 6v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6"/>
+          <path d="M8 3v3M16 3v3M9 12l3 2 3-2-3-2-3 2z"/>
+        </svg>
+        <span>Theaters</span>
       </button>
       <button class="tab-bar__btn" data-tab="interests" role="tab" aria-selected="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

@@ -1,0 +1,110 @@
+{
+  "updated": "2026-04-22",
+  "source": "Per-theater scrapers (initial placeholder)",
+  "sources": [],
+  "theaters": [
+    {
+      "slug": "new-beverly",
+      "name": "New Beverly Cinema",
+      "address": "7165 W Beverly Blvd, Los Angeles",
+      "url": "https://thenewbev.com/"
+    },
+    {
+      "slug": "nuart",
+      "name": "Nuart Theatre",
+      "address": "11272 Santa Monica Blvd, Los Angeles",
+      "url": "https://www.landmarktheatres.com/los-angeles/nuart-theatre"
+    },
+    {
+      "slug": "aero",
+      "name": "Aero Theatre",
+      "address": "1328 Montana Ave, Santa Monica",
+      "url": "https://www.americancinematheque.com/aero/"
+    },
+    {
+      "slug": "egyptian",
+      "name": "Egyptian Theatre",
+      "address": "6712 Hollywood Blvd, Los Angeles",
+      "url": "https://www.americancinematheque.com/egyptian/"
+    },
+    {
+      "slug": "vista",
+      "name": "Vista Theater",
+      "address": "4473 Sunset Dr, Los Angeles",
+      "url": "https://vistatheaterhollywood.com/"
+    },
+    {
+      "slug": "los-feliz-3",
+      "name": "Los Feliz 3",
+      "address": "1822 N Vermont Ave, Los Angeles",
+      "url": "https://vintagecinemas.com/losfeliz/"
+    },
+    {
+      "slug": "alamo-dtla",
+      "name": "Alamo Drafthouse DTLA",
+      "address": "700 W 7th St, Los Angeles",
+      "url": "https://drafthouse.com/los-angeles"
+    },
+    {
+      "slug": "academy-museum",
+      "name": "Academy Museum",
+      "address": "6067 Wilshire Blvd, Los Angeles",
+      "url": "https://www.academymuseum.org/en/programs"
+    },
+    {
+      "slug": "brain-dead",
+      "name": "Brain Dead Studios",
+      "address": "611 N Fairfax Ave, Los Angeles",
+      "url": "https://braindead.studio/"
+    },
+    {
+      "slug": "lumiere",
+      "name": "Lumiere Music Hall",
+      "address": "9036 Wilshire Blvd, Beverly Hills",
+      "url": "https://www.laemmle.com/theater/music-hall"
+    },
+    {
+      "slug": "amc-century-city-15",
+      "name": "AMC Century City 15",
+      "address": "10250 Santa Monica Blvd, Los Angeles",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    },
+    {
+      "slug": "amc-citywalk",
+      "name": "AMC Universal CityWalk",
+      "address": "100 Universal City Plaza, Universal City",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    },
+    {
+      "slug": "amc-burbank-16",
+      "name": "AMC Burbank 16",
+      "address": "125 E Palm Ave, Burbank",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    },
+    {
+      "slug": "amc-del-amo-18",
+      "name": "AMC Del Amo 18",
+      "address": "3525 W Carson St, Torrance",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    },
+    {
+      "slug": "amc-santa-monica-7",
+      "name": "AMC Santa Monica 7",
+      "address": "1310 3rd St Promenade, Santa Monica",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    },
+    {
+      "slug": "amc-marina-marketplace-6",
+      "name": "AMC Marina Marketplace 6",
+      "address": "13455 Maxella Ave, Marina del Rey",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    },
+    {
+      "slug": "amc-marina-pacifica-12",
+      "name": "AMC Marina Pacifica 12",
+      "address": "6346 E Pacific Coast Hwy, Long Beach",
+      "url": "https://www.amctheatres.com/amc-classic-series"
+    }
+  ],
+  "screenings": []
+}

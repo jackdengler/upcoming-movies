@@ -13,6 +13,7 @@ on:
     paths:
       - ".github/workflows/refresh-data.yml"
       - "scripts/fetch-tmdb.mjs"
+      - "scripts/fetch-repertory.mjs"
 
 permissions:
   contents: write
@@ -55,6 +56,10 @@ jobs:
             MONTH="$m" node scripts/fetch-tmdb.mjs
             echo "::endgroup::"
           done
+
+      - name: Fetch LA repertory theaters
+        continue-on-error: true
+        run: node scripts/fetch-repertory.mjs
 
       - name: Commit if changed
         run: |

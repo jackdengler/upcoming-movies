@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
@@ -16,6 +16,18 @@
       "notes": "Hollywood has a monster problem."
     },
     {
+      "tmdb_id": 1308767,
+      "date": "2026-07-03",
+      "title": "Young Washington",
+      "director": "Jon Erwin",
+      "studio": "Angel Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "History / Drama",
+      "cast": "William Franklyn-Miller, Ben Kingsley, Andy Serkis, Kelsey Grammer",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1212763,
       "date": "2026-07-10",
       "title": "Evil Dead Burn",
@@ -24,7 +36,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Souheila Yacoub, Hunter Doohan, Luciane Buchanan, Victory Ndukwe",
+      "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
       "notes": ""
     },
     {

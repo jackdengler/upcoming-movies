@@ -1,43 +1,31 @@
 {
   "month": "May 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
-      "tmdb_id": 539745,
+      "tmdb_id": 1363285,
       "date": "2026-05-01",
-      "title": "Animal Farm",
-      "director": "Andy Serkis",
-      "studio": "Aniventure",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Adventure / Comedy",
-      "cast": "Seth Rogen, Gaten Matarazzo, Kieran Culkin, Glenn Close",
-      "notes": "A cautionary tail."
-    },
-    {
-      "tmdb_id": 1127384,
-      "date": "2026-05-01",
-      "title": "Deep Water",
-      "director": "Renny Harlin",
-      "studio": "Lionsgate",
+      "title": "Brimstone Terrace",
+      "director": "Tyler W. Moore",
+      "studio": "Illumination Cinema",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Thriller",
-      "cast": "Aaron Eckhart, Ben Kingsley, Angus Sampson, Lucy Barrett",
-      "notes": ""
+      "genre": "Animation / Comedy / Drama",
+      "cast": "Tori Kamal, Jamie Zin, Matthew J. Lindblom, Jillian Elaine",
+      "notes": "Meet the New Grim Reaper"
     },
     {
       "tmdb_id": 1430077,
       "date": "2026-05-01",
       "title": "Hokum",
       "director": "Damian McCarthy",
-      "studio": "Neon",
+      "studio": "Spooky Pictures",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Mystery / Thriller",
-      "cast": "Adam Scott, Peter Coonan, David Wilmot, Austin Amelio",
-      "notes": ""
+      "release_type": "wide",
+      "genre": "Horror / Mystery",
+      "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
+      "notes": "We've been expecting you."
     },
     {
       "tmdb_id": 1290792,
@@ -134,18 +122,6 @@
       "genre": "Horror",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
       "notes": "Be careful who you wish for…"
-    },
-    {
-      "tmdb_id": 1451588,
-      "date": "2026-05-22",
-      "title": "Corporate Retreat",
-      "director": "Aaron Fisher",
-      "studio": "Passage Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "Odeya Rush, Sasha Lane, Ashton Sanders, Alan Ruck",
-      "notes": ""
     },
     {
       "tmdb_id": 1227877,

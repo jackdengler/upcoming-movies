@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
@@ -40,6 +40,18 @@
       "notes": "The epic conclusion."
     },
     {
+      "tmdb_id": 1437882,
+      "date": "2026-12-25",
+      "title": "A Place in Hell",
+      "director": "Chloe Domont",
+      "studio": "T-Street",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Thriller / Drama",
+      "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1260649,
       "date": "2026-12-25",
       "title": "Jumanji: Open World",
@@ -49,6 +61,18 @@
       "release_type": "wide",
       "genre": "Fantasy / Adventure / Comedy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1372443,
+      "date": "2026-12-25",
+      "title": "Mr. Irrelevant: The John Tuggle Story",
+      "director": "Jonathan Levine",
+      "studio": "Blackjack Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
       "notes": ""
     },
     {

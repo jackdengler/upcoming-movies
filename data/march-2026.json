@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
@@ -100,6 +100,18 @@
       "notes": "It wants to be heard."
     },
     {
+      "tmdb_id": 1073973,
+      "date": "2026-03-18",
+      "title": "Dead Lover",
+      "director": "Grace Glowicki",
+      "studio": "Featured Creatures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Comedy / Romance",
+      "cast": "Grace Glowicki, Ben Petrie, Leah Doz, Lowen Morrow",
+      "notes": "Love can conquer death."
+    },
+    {
       "tmdb_id": 999136,
       "date": "2026-03-20",
       "title": "Do Not Enter",
@@ -134,18 +146,6 @@
       "genre": "Horror / Comedy",
       "cast": "Samara Weaving, Kathryn Newton, Elijah Wood, Sarah Michelle Gellar",
       "notes": "Double or nothing."
-    },
-    {
-      "tmdb_id": 1450527,
-      "date": "2026-03-27",
-      "title": "Forbidden Fruits",
-      "director": "Meredith Alloway",
-      "studio": "MXN Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Lili Reinhart, Lola Tung, Victoria Pedretti, Alexandra Shipp",
-      "notes": "The coven just clocked in."
     },
     {
       "tmdb_id": 1292695,

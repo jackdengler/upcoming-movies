@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Illumination",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -52,75 +52,15 @@
       "notes": "Fear is primal."
     },
     {
-      "tmdb_id": 1292415,
+      "tmdb_id": 1364297,
       "date": "2026-04-10",
-      "title": "Beast",
-      "director": "Tyler Atkins",
-      "studio": "Broken Open Pictures",
+      "title": "Bunnylovr",
+      "director": "Katarina Zhu",
+      "studio": "Neon Heart Productions",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Drama / Sport",
-      "cast": "Russell Crowe, Luke Hemsworth, Daniel MacPherson, Mojean Aria",
-      "notes": "One more fight."
-    },
-    {
-      "tmdb_id": 1408208,
-      "date": "2026-04-10",
-      "title": "Exit 8",
-      "director": "Genki Kawamura",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Mystery / Thriller",
-      "cast": "Kazunari Ninomiya, Yamato Kochi, Nana Komatsu",
-      "notes": "Don't overlook anything out of the ordinary."
-    },
-    {
-      "tmdb_id": 855435,
-      "date": "2026-04-10",
-      "title": "Faces of Death",
-      "director": "Daniel Goldhaber",
-      "studio": "Legendary Pictures",
-      "budget_usd": 7400000,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
-      "notes": "You can't unsee it."
-    },
-    {
-      "tmdb_id": 1308388,
-      "date": "2026-04-10",
-      "title": "Hunting Matthew Nichols",
-      "director": "Markian Tarasiuk",
-      "studio": "DeVuono Releasing",
-      "budget_usd": 275000,
-      "release_type": "limited",
-      "genre": "Horror / Mystery / Thriller",
-      "cast": "Miranda MacDougall, Markian Tarasiuk, Christine Willes",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 787844,
-      "date": "2026-04-10",
-      "title": "Newborn",
-      "director": "Nate Parker",
-      "studio": "Mansa Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Thriller",
-      "cast": "David Oyelowo, Olivia Washington, Barry Pepper, Jimmie Fails",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1400357,
-      "date": "2026-04-10",
-      "title": "The Christophers",
-      "director": "Steven Soderbergh",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Ian McKellen, Michaela Coel, Jessica Gunning, James Corden",
+      "genre": "Drama",
+      "cast": "Katarina Zhu, Austin Amelio, Perry Yung, Jack Kilmer",
       "notes": ""
     },
     {
@@ -184,18 +124,6 @@
       "notes": "What happened to Katie?"
     },
     {
-      "tmdb_id": 854934,
-      "date": "2026-04-17",
-      "title": "Mabel",
-      "director": "Nicholas Ma",
-      "studio": "Tribeca Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Judy Greer, Christine Ko, Lexi Perkel, Jim Santangeli",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1242332,
       "date": "2026-04-17",
       "title": "Normal",
@@ -249,23 +177,23 @@
       "title": "Michael",
       "director": "Antoine Fuqua",
       "studio": "Lionsgate",
-      "budget_usd": 200000000,
+      "budget_usd": 170000000,
       "release_type": "wide",
-      "genre": "Biography / Drama / History / Music",
-      "cast": "Jaafar Jackson, Colman Domingo, Nia Long, Miles Teller",
-      "notes": "The King of Pop, like you've never seen him."
+      "genre": "Music / Drama",
+      "cast": "Jaafar Jackson, Colman Domingo, Nia Long, Kendrick Sampson",
+      "notes": "Discover the making of a king."
     },
     {
       "tmdb_id": 1390300,
       "date": "2026-04-24",
       "title": "Over Your Dead Body",
       "director": "Jorma Taccone",
-      "studio": "87North",
+      "studio": "87North Productions",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Comedy / Thriller",
+      "release_type": "limited",
+      "genre": "Comedy / Action / Thriller",
       "cast": "Jason Segel, Samara Weaving, Timothy Olyphant, Juliette Lewis",
-      "notes": "Till death do us part."
+      "notes": "Breakups are all in the execution."
     }
   ]
 }

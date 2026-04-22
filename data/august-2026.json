@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-04-20",
+  "updated": "2026-04-22",
   "source": "TMDB",
   "releases": [
     {
@@ -25,7 +25,7 @@
       "release_type": "wide",
       "genre": "Comedy / Crime / Mystery",
       "cast": "Jay Chandrasekhar, Paul Soter, Steve Lemme, Erik Stolhanske",
-      "notes": ""
+      "notes": "The mustache rides, again. Again."
     },
     {
       "tmdb_id": 1240889,
@@ -76,6 +76,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1226699,
+      "date": "2026-08-14",
+      "title": "The Wrong Girls",
+      "director": "Dylan Meyer",
+      "studio": "Nevermind",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Drama / Thriller",
+      "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1291595,
       "date": "2026-08-21",
       "title": "Insidious: Out of the Further",
@@ -110,6 +122,18 @@
       "genre": "Comedy",
       "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1204680,
+      "date": "2026-08-28",
+      "title": "Coyote vs. ACME",
+      "director": "Dave Green",
+      "studio": "Warner Bros. Pictures Animation",
+      "budget_usd": 72000000,
+      "release_type": "wide",
+      "genre": "Family / Comedy / Animation",
+      "cast": "Will Forte, John Cena, Lana Condor, Eric Bauza",
+      "notes": "The movie ACME doesn't want you to see."
     },
     {
       "tmdb_id": 1339588,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T00:30:10.879Z",
+  "updated": "2026-04-22T00:30:33.153Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -199,8 +199,8 @@
       "tmdb_id": 1084244
     },
     "tmdb:1081003": {
-      "level": "likely",
-      "at": "2026-04-20T21:41:41.731Z",
+      "level": "potential",
+      "at": "2026-04-22T00:30:30.647Z",
       "title": "Supergirl",
       "date": "2026-06-26",
       "tmdb_id": 1081003

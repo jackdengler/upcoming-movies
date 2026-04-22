@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T00:58:39.808Z",
+  "updated": "2026-04-22T00:58:53.157Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -68,10 +68,11 @@
     },
     "tmdb:1304313": {
       "level": "watched",
-      "at": "2026-04-20T21:59:19.173Z",
+      "at": "2026-04-22T00:58:44.921Z",
       "title": "Lee Cronin's The Mummy",
       "date": "2026-04-17",
-      "tmdb_id": 1304313
+      "tmdb_id": 1304313,
+      "watched_date": "2026-04-16"
     },
     "tmdb:1242332": {
       "level": "likely",
@@ -1040,12 +1041,13 @@
       "watched_date": "2026-04-09"
     },
     "tmdb:1430077": {
-      "level": "booked",
-      "at": "2026-04-22T00:54:15.445Z",
+      "level": "watched",
+      "at": "2026-04-22T00:58:50.458Z",
       "title": "Hokum",
       "date": "2026-05-01",
       "tmdb_id": 1430077,
-      "booked_date": "2026-04-21"
+      "booked_date": "2026-04-21",
+      "watched_date": "2026-04-21"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T21:31:36.008Z",
+  "updated": "2026-04-22T21:31:47.534Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1437,6 +1437,78 @@
       "format": "35mm",
       "series": "Late Show",
       "url": "https://ticketing.uswest.veezi.com/purchase/3434?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-26:libeled-lady": {
+      "level": "not",
+      "at": "2026-04-22T21:31:39.500Z",
+      "kind": "screening",
+      "title": "Libeled Lady",
+      "date": "2026-04-26",
+      "theater": "vista",
+      "time": "10:00",
+      "format": "35mm",
+      "series": "Matinee",
+      "url": "https://ticketing.uswest.veezi.com/purchase/3437?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-26:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:40.167Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-26",
+      "theater": "vista",
+      "time": "13:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3520?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-27:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:41.721Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-27",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3515?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-28:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:42.996Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-28",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3516?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-29:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:44.021Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-29",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3517?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-30:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:45.026Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-30",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3518?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     }
   }
 }

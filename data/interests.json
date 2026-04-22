@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T21:15:18.271Z",
+  "updated": "2026-04-22T21:31:12.595Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1353,6 +1353,42 @@
       "format": null,
       "series": null,
       "url": "https://thenewbev.com/program/april-29-make-me-a-star-dont-gamble-with-strangers/"
+    },
+    "rep:vista:2026-04-22:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:06.958Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-22",
+      "theater": "vista",
+      "time": "12:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3504?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-23:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:07.990Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-23",
+      "theater": "vista",
+      "time": "13:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3505?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
+    },
+    "rep:vista:2026-04-24:normal": {
+      "level": "not",
+      "at": "2026-04-22T21:31:09.816Z",
+      "kind": "screening",
+      "title": "Normal",
+      "date": "2026-04-24",
+      "theater": "vista",
+      "time": "16:00",
+      "format": "35mm",
+      "series": null,
+      "url": "https://ticketing.uswest.veezi.com/purchase/3514?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     }
   }
 }

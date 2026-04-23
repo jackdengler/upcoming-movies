@@ -256,8 +256,18 @@ function parse12h(s) {
 }
 
 const MONTH_BY_NAME = {
-  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
-  july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+  january: 1, jan: 1,
+  february: 2, feb: 2,
+  march: 3, mar: 3,
+  april: 4, apr: 4,
+  may: 5,
+  june: 6, jun: 6,
+  july: 7, jul: 7,
+  august: 8, aug: 8,
+  september: 9, sep: 9, sept: 9,
+  october: 10, oct: 10,
+  november: 11, nov: 11,
+  december: 12, dec: 12,
 };
 
 // New Beverly publishes one month at a time on /schedule/ as server-rendered
@@ -831,67 +841,84 @@ async function scrapeBrainDeadStudios() {
 }
 
 
-// Fathom Events handles classic rereleases at AMC, Regal, and Cinemark.
-// First pass: best-effort fetch of the classics series page, look for
-// JSON-LD events or an embedded Next.js data blob. If nothing shakes out,
-// the 60KB diagnostic sample tells us what shape the page is actually in.
+// Fathom Entertainment's /releases/ page, filtered to Classics
+// (fwp_events_genres=33). Server-rendered HTML: each release is an
+// <a class="posters-item" href="..."> block with a headline (title),
+// an optional preheadline (series name), and a date-list containing
+// either individual <span>Mon DD</span> entries, a "<span>Mon DD — Mon DD</span>"
+// range, or a "<p>Starting Mon DD</p>" open-ended start.
+//
+// Fathom films play at many theaters nationally; this is emitted under the
+// `fathom-la` pseudo-theater with a 7pm placeholder time (their standard
+// evening showtime — exact times vary by theater, shown on the film page).
 async function scrapeFathomEvents() {
-  const pageCandidates = [
-    "https://www.fathomevents.com/series/classics",
-    "https://www.fathomevents.com/series",
-    "https://www.fathomevents.com/",
-  ];
-  let html = "";
-  for (const u of pageCandidates) {
-    try { html = await fetchText(u); if (html) break; } catch {}
-  }
-  if (!html) throw new Error("fathom: no candidate URL succeeded");
+  const url = "https://www.fathomentertainment.com/releases/?fwp_events_genres=33";
+  const html = await fetchText(url);
 
   const out = [];
+  const itemRe = /<a\s+href="([^"]+)"[^>]*class="posters-item"[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = itemRe.exec(html))) {
+    const linkUrl = m[1];
+    const block = m[2];
 
-  // Path 1: JSON-LD Event nodes (site uses structured data on film pages).
-  for (const b of extractJsonLd(html)) {
-    for (const ev of flattenEvents(b)) {
-      const start = ev.startDate;
-      if (!start) continue;
-      const parts = String(start).endsWith("Z") || /[+-]\d{2}:?\d{2}$/.test(String(start))
-        ? laParts(start)
-        : (naivePTParts(start) || laParts(start));
-      if (!parts || !inWindow(parts.date)) continue;
-      const venue = String(ev.location?.name || ev.location || "");
-      if (!isLaVenue(venue)) continue;
-      const name = ev.name || "";
+    const titleM = block.match(/<h3[^>]*class="headline"[^>]*>\s*([\s\S]*?)\s*<\/h3>/i);
+    if (!titleM) continue;
+    const title = decodeEntities(stripTags(titleM[1])).trim();
+    if (!title) continue;
+
+    const seriesM = block.match(/<div[^>]*class="preheadline"[^>]*>\s*([\s\S]*?)\s*<\/div>/i);
+    const series = seriesM ? decodeEntities(stripTags(seriesM[1])).trim() : null;
+
+    const dateBoxM = block.match(/<div[^>]*class="date-list"[^>]*>([\s\S]*?)<\/div>/i);
+    if (!dateBoxM) continue;
+    const dateText = decodeEntities(stripTags(dateBoxM[1])).replace(/\s+/g, " ").trim();
+
+    // Three shapes:
+    //   "Apr 26 Apr 29"       → individual dates
+    //   "Oct 10 — Oct 14"     → inclusive range (en or em dash)
+    //   "Starting Oct 9"      → single anchor date
+    const dates = [];
+    const rangeM = dateText.match(/^([A-Za-z]+)\s+(\d{1,2})\s*[-–—]\s*([A-Za-z]+)\s+(\d{1,2})$/);
+    const startingM = dateText.match(/^Starting\s+([A-Za-z]+)\s+(\d{1,2})$/i);
+    if (rangeM) {
+      const startIso = resolveDateNearToday(rangeM[1], Number(rangeM[2]));
+      const endIso = resolveDateNearToday(rangeM[3], Number(rangeM[4]));
+      if (startIso && endIso) {
+        const cur = new Date(`${startIso}T00:00:00Z`);
+        const end = new Date(`${endIso}T00:00:00Z`);
+        while (cur <= end) {
+          dates.push(cur.toISOString().slice(0, 10));
+          cur.setUTCDate(cur.getUTCDate() + 1);
+        }
+      }
+    } else if (startingM) {
+      const d = resolveDateNearToday(startingM[1], Number(startingM[2]));
+      if (d) dates.push(d);
+    } else {
+      const dayRe = /([A-Za-z]+)\s+(\d{1,2})/g;
+      let dm;
+      while ((dm = dayRe.exec(dateText))) {
+        const d = resolveDateNearToday(dm[1], Number(dm[2]));
+        if (d) dates.push(d);
+      }
+    }
+
+    for (const date of dates) {
+      if (!inWindow(date)) continue;
       out.push({
         theater: "fathom-la",
-        title: cleanTitle(name),
-        year: extractYear(name),
-        date: parts.date,
-        time: parts.time,
-        format: detectFormat(`${name} ${ev.description || ""}`),
-        series: venue || ev.superEvent?.name || null,
-        url: ev.url || pageCandidates[0],
+        title: cleanTitle(title),
+        year: extractYear(title),
+        date,
+        time: "19:00", // Fathom's typical evening showtime; exact varies per venue
+        format: null,
+        series,
+        url: linkUrl,
       });
     }
   }
-  if (out.length) return out;
-
-  // Path 2: Next.js __NEXT_DATA__ blob (Fathom's marketing site is built
-  // with Next; the events feed may be pre-rendered).
-  const nextM = html.match(/<script[^>]+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
-  if (nextM) {
-    try {
-      const data = JSON.parse(nextM[1]);
-      walkForShowtimes(data, "fathom-la", out);
-    } catch {}
-  }
   return dedupeScreenings(out);
-}
-
-// Loose "is this LA-area?" check. Fathom venue names typically include the
-// city; we cast a wide net over the metro.
-function isLaVenue(name) {
-  const s = String(name).toLowerCase();
-  return /\b(los angeles|hollywood|burbank|pasadena|santa monica|culver city|glendale|north hollywood|studio city|sherman oaks|universal city|marina del rey|long beach|torrance|century city|playa vista)\b/.test(s);
 }
 
 // ---------- Source orchestration ----------

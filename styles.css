@@ -576,6 +576,7 @@ details[open] > .month__summary .month__chevron {
   margin-bottom: 4px;
   border-bottom: 0.5px solid var(--separator);
 }
+.theater-filter-bar[hidden] { display: none; }
 
 .theater-chip {
   appearance: none;

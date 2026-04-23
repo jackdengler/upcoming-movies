@@ -473,46 +473,41 @@ async function scrapeNuart() {
   collectMeta(scheduledData);
   collectMeta(scheduleData);
 
+  // The schedule endpoint returns:
+  //   { "X00CW": { "schedule": { "<movieId>": { "<YYYY-MM-DD>": [showings] } } } }
+  // where each `showing` has `startsAt` (naive PT) and a ticketing URL buried
+  // under `data.ticketing[0].urls[0]`. The movieId is the _parent key_ — not
+  // a field on the showing — so a generic walker misses it.
   const out = [];
-  const emit = (node, depth = 0) => {
-    if (depth > 10 || !node || typeof node !== "object") return;
-    if (Array.isArray(node)) { for (const x of node) emit(x, depth + 1); return; }
-    const start = node.startsAt || node.startTime || node.showtime;
-    if (start) {
-      let title = null;
-      let year = null;
-      const m = node.movie;
-      if (m && typeof m === "object") {
-        title = m.title || m.name || null;
-        year = m.productionYear || m.year || null;
-      } else if (m != null) {
-        const meta = titleById.get(String(m));
-        if (meta) { title = meta.title; year = meta.year; }
-      }
-      if (!title && node.movieId != null) {
-        const meta = titleById.get(String(node.movieId));
-        if (meta) { title = meta.title; year = meta.year; }
-      }
-      if (title) {
-        const parts = naivePTParts(start) || laParts(start);
-        if (parts && inWindow(parts.date)) {
+  for (const [_theaterKey, theaterVal] of Object.entries(scheduleData || {})) {
+    const byMovie = theaterVal?.schedule;
+    if (!byMovie || typeof byMovie !== "object") continue;
+    for (const [movieId, byDate] of Object.entries(byMovie)) {
+      const meta = titleById.get(String(movieId));
+      if (!meta) continue;
+      for (const showings of Object.values(byDate || {})) {
+        if (!Array.isArray(showings)) continue;
+        for (const s of showings) {
+          if (s?.isExpired) continue;
+          const start = s?.startsAt;
+          if (!start) continue;
+          const parts = naivePTParts(start) || laParts(start);
+          if (!parts || !inWindow(parts.date)) continue;
+          const ticketUrl = s?.data?.ticketing?.[0]?.urls?.[0] || null;
           out.push({
             theater: "nuart",
-            title: cleanTitle(title),
-            year: year || extractYear(title) || null,
+            title: cleanTitle(meta.title),
+            year: meta.year || extractYear(meta.title) || null,
             date: parts.date,
             time: parts.time,
-            format: detectFormat(title),
+            format: detectFormat(meta.title),
             series: null,
-            url: node.bookingLink || node.booking_url || node.data?.ticketing?.[0]?.urls?.[0] || "https://www.landmarktheatres.com/los-angeles/nuart-theatre",
+            url: ticketUrl || "https://www.landmarktheatres.com/los-angeles/nuart-theatre",
           });
         }
       }
     }
-    for (const k of Object.keys(node)) emit(node[k], depth + 1);
-  };
-  emit(scheduleData);
-  emit(scheduledData);
+  }
   return dedupeScreenings(out);
 }
 
@@ -732,32 +727,45 @@ async function scrapeAcademyMuseum() {
   const url = `https://tickets.academymuseum.org/cached_api/events/available?${params.toString()}`;
 
   const data = await fetchJson(url);
-  const events = Array.isArray(data) ? data : (data?.data || data?.events || []);
 
-  const out = [];
-  for (const ev of events) {
-    const title = ev.name || ev.title || ev.display_name;
-    if (!title) continue;
-    const sessions = ev.event_sessions || ev.sessions || [];
-    const venueName = ev.venue?.name || ev.venue?.display_name || null;
-    for (const s of sessions) {
-      const start = s.start_datetime || s.start || s.startsAt;
-      if (!start) continue;
-      const parts = laParts(start);
-      if (!parts || !inWindow(parts.date)) continue;
-      out.push({
-        theater: "academy-museum",
-        title: cleanTitle(title),
-        year: extractYear(title) || ev.production_year || null,
-        date: parts.date,
-        time: parts.time,
-        format: detectFormat(`${title} ${ev.short_description || ""}`),
-        series: venueName || (Array.isArray(ev.categories) ? ev.categories[0] : null),
-        url: ev.public_url || ev.url ||
-             (ev.slug ? `https://www.academymuseum.org/en/programs/detail/${ev.slug}` : null) ||
-             "https://www.academymuseum.org/en/calendar",
+  // cached_api returns a relational document: top-level keys are collection
+  // names (event_session, event_template, venue), each with { _count, _data }.
+  // Join sessions → templates via event_template_id; templates → venues via
+  // venue_id. Titles live on the template (field: `name`).
+  const templates = new Map();
+  for (const t of data?.event_template?._data || []) {
+    if (t?.id) {
+      templates.set(t.id, {
+        name: t.name || t.title || "",
+        category: t.category || null,
+        venue_id: t.venue_id || null,
       });
     }
+  }
+  const venues = new Map();
+  for (const v of data?.venue?._data || []) {
+    if (v?.id) venues.set(v.id, v.name || v.display_name || null);
+  }
+
+  const out = [];
+  for (const s of data?.event_session?._data || []) {
+    const tmpl = templates.get(s?.event_template_id);
+    const title = tmpl?.name;
+    const start = s?.start_datetime;
+    if (!title || !start) continue;
+    const parts = laParts(start);
+    if (!parts || !inWindow(parts.date)) continue;
+    const venueName = tmpl.venue_id ? venues.get(tmpl.venue_id) : null;
+    out.push({
+      theater: "academy-museum",
+      title: cleanTitle(title),
+      year: extractYear(title),
+      date: parts.date,
+      time: parts.time,
+      format: detectFormat(title),
+      series: tmpl.category || venueName || null,
+      url: "https://www.academymuseum.org/en/calendar",
+    });
   }
   return dedupeScreenings(out);
 }

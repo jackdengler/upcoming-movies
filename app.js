@@ -1197,17 +1197,19 @@ function renderRepTitleRow(entry) {
   const countText = `${entry.showings.length} showing${entry.showings.length === 1 ? "" : "s"}`;
 
   const mark = getRepMark(entry.id);
-  const mkMarkBtn = (value, label) => el("button", {
+  const mkMarkBtn = (value, icon, label) => el("button", {
       type: "button",
       class: `rep-interest rep-interest--${value}${mark === value ? " is-on" : ""}`,
       "aria-pressed": mark === value ? "true" : "false",
+      "aria-label": label,
+      title: label,
       dataset: { id: entry.id, mark: value },
     },
-    label,
+    icon,
   );
   const markButtons = el("div", { class: "rep-interest-group" },
-    mkMarkBtn("yes", "Interested"),
-    mkMarkBtn("no", "Not interested"),
+    mkMarkBtn("yes", "✓", "Interested"),
+    mkMarkBtn("no", "✕", "Not interested"),
   );
 
   const summary = el("summary", { class: "rep-title__summary" },

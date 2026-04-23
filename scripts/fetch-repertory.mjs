@@ -708,9 +708,59 @@ async function scrapeAlamoDtla() {
   return dedupeScreenings(out);
 }
 
+// Academy Museum. Their Next.js calendar is driven by a ticketing backend at
+// tickets.academymuseum.org; the `cached_api/events/available` endpoint
+// returns film-screening events with embedded sessions and venue info.
+// Each event has a single title + N event_sessions (one per showtime); we
+// flatten one screening per session.
 async function scrapeAcademyMuseum() {
-  const html = await fetchText("https://www.academymuseum.org/en/programs");
-  return jsonLdEvents(html, "academy-museum", "https://www.academymuseum.org/en/programs");
+  const categories = [
+    "Film Screening",
+    "Film Screening: Matinee",
+    "Film Screening: Double Feature",
+  ].join(",");
+  // API wants `...start_datetime._gte=<ISO UTC>`. Use start-of-today-LA
+  // expressed as UTC (= 07:00Z during PDT, 08:00Z during PST); an off-by-
+  // an-hour here is harmless because we re-filter by inWindow below.
+  const gte = `${TODAY_LA}T07:00:00.000Z`;
+  const params = new URLSearchParams({
+    "event_session.start_datetime._gte": gte,
+    "_withmemberevents": "",
+    "category._in": categories,
+    "_embed": "event_session,venue",
+    "_sort": "event_session.start_datetime",
+  });
+  const url = `https://tickets.academymuseum.org/cached_api/events/available?${params.toString()}`;
+
+  const data = await fetchJson(url);
+  const events = Array.isArray(data) ? data : (data?.data || data?.events || []);
+
+  const out = [];
+  for (const ev of events) {
+    const title = ev.name || ev.title || ev.display_name;
+    if (!title) continue;
+    const sessions = ev.event_sessions || ev.sessions || [];
+    const venueName = ev.venue?.name || ev.venue?.display_name || null;
+    for (const s of sessions) {
+      const start = s.start_datetime || s.start || s.startsAt;
+      if (!start) continue;
+      const parts = laParts(start);
+      if (!parts || !inWindow(parts.date)) continue;
+      out.push({
+        theater: "academy-museum",
+        title: cleanTitle(title),
+        year: extractYear(title) || ev.production_year || null,
+        date: parts.date,
+        time: parts.time,
+        format: detectFormat(`${title} ${ev.short_description || ""}`),
+        series: venueName || (Array.isArray(ev.categories) ? ev.categories[0] : null),
+        url: ev.public_url || ev.url ||
+             (ev.slug ? `https://www.academymuseum.org/en/programs/detail/${ev.slug}` : null) ||
+             "https://www.academymuseum.org/en/calendar",
+      });
+    }
+  }
+  return dedupeScreenings(out);
 }
 
 async function scrapeBrainDeadStudios() {

@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-23",
   "source": "TMDB",
   "releases": [
     {
@@ -170,6 +170,18 @@
       "genre": "Drama",
       "cast": "Rose Byrne, Dominic Sessa, Demi Lovato, Simon Rex",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1450527,
+      "date": "2026-03-27",
+      "title": "Forbidden Fruits",
+      "director": "Meredith Alloway",
+      "studio": "MXN Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Lili Reinhart, Lola Tung, Victoria Pedretti, Alexandra Shipp",
+      "notes": "The coven just clocked in."
     },
     {
       "tmdb_id": 1292695,

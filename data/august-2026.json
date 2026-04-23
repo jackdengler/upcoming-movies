@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-23",
   "source": "TMDB",
   "releases": [
     {
@@ -122,6 +122,18 @@
       "genre": "Comedy",
       "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1204680,
+      "date": "2026-08-28",
+      "title": "Coyote vs. ACME",
+      "director": "Dave Green",
+      "studio": "Troll Court Entertainment",
+      "budget_usd": 72000000,
+      "release_type": "wide",
+      "genre": "Family / Comedy / Animation / Adventure",
+      "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
+      "notes": "The movie ACME doesn't want you to see."
     },
     {
       "tmdb_id": 1339588,

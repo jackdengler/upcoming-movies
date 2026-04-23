@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-04-22",
+  "updated": "2026-04-23",
   "source": "TMDB",
   "releases": [
     {
@@ -31,7 +31,7 @@
       "tmdb_id": 1291335,
       "date": "2026-02-06",
       "title": "Solo Mio",
-      "director": "Charles Kinnane, Daniel Kinnane",
+      "director": "Daniel Kinnane, Charles Kinnane",
       "studio": "A Higher Standard",
       "budget_usd": 4000000,
       "release_type": "wide",

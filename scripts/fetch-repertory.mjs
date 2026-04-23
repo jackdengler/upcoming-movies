@@ -46,17 +46,11 @@ const THEATERS = [
   { slug: "brain-dead", name: "Brain Dead Studios", address: "611 N Fairfax Ave, Los Angeles", url: "https://studios.wearebraindead.com/coming-soon/" },
 ];
 
-// Fathom Events: the joint venture between AMC, Regal, and Cinemark that
-// runs the real classic-film rereleases at those chains (TCM Big Screen
-// Classics, Studio Ghibli Fest, anniversary screenings, etc.). We surface
-// them under a single pseudo-theater; the specific venue appears in the
-// series / title field.
-THEATERS.push({
-  slug: "fathom-la",
-  name: "Fathom Events (LA)",
-  address: "Various AMC / Regal / Cinemark in LA",
-  url: "https://www.fathomevents.com/",
-});
+// Fathom's specific LA venues (AMC Burbank, Regal LA Live, etc.) are
+// discovered dynamically by scrapeFathomEvents at run time and pushed onto
+// THEATERS as they're seen, so the static registry above doesn't need
+// stubs for them. Theater slugs are of the form `fathom-<theaterID>` where
+// theaterID is Fathom's internal venue id.
 
 // ---------- Generic helpers ----------
 
@@ -841,82 +835,128 @@ async function scrapeBrainDeadStudios() {
 }
 
 
-// Fathom Entertainment's /releases/ page, filtered to Classics
-// (fwp_events_genres=33). Server-rendered HTML: each release is an
-// <a class="posters-item" href="..."> block with a headline (title),
-// an optional preheadline (series name), and a date-list containing
-// either individual <span>Mon DD</span> entries, a "<span>Mon DD — Mon DD</span>"
-// range, or a "<p>Starting Mon DD</p>" open-ended start.
+// Fathom Entertainment. Flow:
+//   1. Scrape /releases/?fwp_events_genres=33 → list of classic films (url,
+//      title, series).
+//   2. For each film, fetch its detail page → extract `data-event-id` (the
+//      Fathom internal event ID, distinct from the WP post id on the list).
+//   3. Call api.fathomentertainment.com/api/events/showtimes with an LA
+//      lat/lng → XML response with up to 25 nearest theaters, each with its
+//      own per-date showtimes and Fandango ticket URLs.
+//   4. Register each distinct theater in THEATERS on the fly so the UI can
+//      filter by individual venue (AMC Burbank 16, Regal LA Live, etc.) and
+//      emit one screening per (film, theater, date, time).
 //
-// Fathom films play at many theaters nationally; this is emitted under the
-// `fathom-la` pseudo-theater with a 7pm placeholder time (their standard
-// evening showtime — exact times vary by theater, shown on the film page).
+// Classics only; Studio Ghibli / Met Opera / etc. live under other genre
+// IDs and aren't pulled here.
 async function scrapeFathomEvents() {
-  const url = "https://www.fathomentertainment.com/releases/?fwp_events_genres=33";
-  const html = await fetchText(url);
+  const listUrl = "https://www.fathomentertainment.com/releases/?fwp_events_genres=33";
+  const listHtml = await fetchText(listUrl);
 
-  const out = [];
+  // Step 1: harvest (url, title, series) from the list page.
+  const films = [];
   const itemRe = /<a\s+href="([^"]+)"[^>]*class="posters-item"[^>]*>([\s\S]*?)<\/a>/gi;
   let m;
-  while ((m = itemRe.exec(html))) {
-    const linkUrl = m[1];
+  while ((m = itemRe.exec(listHtml))) {
+    const url = m[1];
     const block = m[2];
-
     const titleM = block.match(/<h3[^>]*class="headline"[^>]*>\s*([\s\S]*?)\s*<\/h3>/i);
     if (!titleM) continue;
     const title = decodeEntities(stripTags(titleM[1])).trim();
     if (!title) continue;
-
     const seriesM = block.match(/<div[^>]*class="preheadline"[^>]*>\s*([\s\S]*?)\s*<\/div>/i);
     const series = seriesM ? decodeEntities(stripTags(seriesM[1])).trim() : null;
+    films.push({ url, title, series });
+  }
+  if (!films.length) return [];
 
-    const dateBoxM = block.match(/<div[^>]*class="date-list"[^>]*>([\s\S]*?)<\/div>/i);
-    if (!dateBoxM) continue;
-    const dateText = decodeEntities(stripTags(dateBoxM[1])).replace(/\s+/g, " ").trim();
+  const LA_LAT = "34.0522";
+  const LA_LNG = "-118.2437";
+  const KNOWN = new Set(THEATERS.map((t) => t.slug));
+  const out = [];
 
-    // Three shapes:
-    //   "Apr 26 Apr 29"       → individual dates
-    //   "Oct 10 — Oct 14"     → inclusive range (en or em dash)
-    //   "Starting Oct 9"      → single anchor date
-    const dates = [];
-    const rangeM = dateText.match(/^([A-Za-z]+)\s+(\d{1,2})\s*[-–—]\s*([A-Za-z]+)\s+(\d{1,2})$/);
-    const startingM = dateText.match(/^Starting\s+([A-Za-z]+)\s+(\d{1,2})$/i);
-    if (rangeM) {
-      const startIso = resolveDateNearToday(rangeM[1], Number(rangeM[2]));
-      const endIso = resolveDateNearToday(rangeM[3], Number(rangeM[4]));
-      if (startIso && endIso) {
-        const cur = new Date(`${startIso}T00:00:00Z`);
-        const end = new Date(`${endIso}T00:00:00Z`);
-        while (cur <= end) {
-          dates.push(cur.toISOString().slice(0, 10));
-          cur.setUTCDate(cur.getUTCDate() + 1);
+  // XML lives in a .NET DataContract namespace; we only care about the
+  // leaf text so a few per-field regex matches are cheaper than a full
+  // parser.
+  const xmlField = (block, tag) => {
+    const r = new RegExp(`<${tag}>([^<]*)</${tag}>`);
+    const hit = block.match(r);
+    return hit ? decodeEntities(hit[1]).trim() : null;
+  };
+
+  for (const film of films) {
+    // Step 2: extract eventID from the detail page.
+    let detailHtml = "";
+    try { detailHtml = await fetchText(film.url); } catch {}
+    const eidM = detailHtml.match(/data-event-id="(\d+)"/);
+    if (!eidM) continue;
+    const eventID = eidM[1];
+
+    // Step 3: call the showtimes API.
+    const apiUrl = `https://api.fathomentertainment.com/api/events/showtimes?lat=${LA_LAT}&lng=${LA_LNG}&eventID=${eventID}&maxTheaters=25`;
+    let xml = "";
+    try { xml = await fetchText(apiUrl); } catch { continue; }
+
+    const showDateRe = /<ShowDate>([\s\S]*?)<\/ShowDate>/g;
+    let sd;
+    while ((sd = showDateRe.exec(xml))) {
+      const sdBlock = sd[1];
+      const dateStr = xmlField(sdBlock, "Date");
+      if (!dateStr) continue;
+      // API gives dates as M/D/YYYY.
+      const dm = dateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+      if (!dm) continue;
+      const date = `${dm[3]}-${dm[1].padStart(2, "0")}-${dm[2].padStart(2, "0")}`;
+      if (!inWindow(date)) continue;
+
+      const theaterRe = /<ShowtimeTheater>([\s\S]*?)<\/ShowtimeTheater>/g;
+      let th;
+      while ((th = theaterRe.exec(sdBlock))) {
+        const thBlock = th[1];
+        const theaterName = xmlField(thBlock, "TheaterName");
+        const theaterID = xmlField(thBlock, "TheaterID");
+        if (!theaterName || !theaterID) continue;
+        const theaterSlug = `fathom-${theaterID}`;
+
+        // Step 4: register the theater once per run.
+        if (!KNOWN.has(theaterSlug)) {
+          const addr = xmlField(thBlock, "Address1") || "";
+          const city = xmlField(thBlock, "City") || "";
+          const state = xmlField(thBlock, "State") || "";
+          THEATERS.push({
+            slug: theaterSlug,
+            name: theaterName,
+            address: [addr, city, state].filter(Boolean).join(", "),
+            url: "https://www.fathomentertainment.com/",
+          });
+          KNOWN.add(theaterSlug);
+        }
+
+        const showtimeRe = /<Showtime>([\s\S]*?)<\/Showtime>/g;
+        let st;
+        while ((st = showtimeRe.exec(thBlock))) {
+          const stBlock = st[1];
+          const timeStr = xmlField(stBlock, "Time");
+          const purchaseUrl = xmlField(stBlock, "PurchaseURL");
+          if (!timeStr) continue;
+          const time = parse12h(timeStr);
+          if (!time) continue;
+          out.push({
+            theater: theaterSlug,
+            title: cleanTitle(film.title),
+            year: extractYear(film.title),
+            date,
+            time,
+            format: null,
+            series: film.series,
+            url: purchaseUrl || film.url,
+          });
         }
       }
-    } else if (startingM) {
-      const d = resolveDateNearToday(startingM[1], Number(startingM[2]));
-      if (d) dates.push(d);
-    } else {
-      const dayRe = /([A-Za-z]+)\s+(\d{1,2})/g;
-      let dm;
-      while ((dm = dayRe.exec(dateText))) {
-        const d = resolveDateNearToday(dm[1], Number(dm[2]));
-        if (d) dates.push(d);
-      }
     }
 
-    for (const date of dates) {
-      if (!inWindow(date)) continue;
-      out.push({
-        theater: "fathom-la",
-        title: cleanTitle(title),
-        year: extractYear(title),
-        date,
-        time: "19:00", // Fathom's typical evening showtime; exact varies per venue
-        format: null,
-        series,
-        url: linkUrl,
-      });
-    }
+    // Be polite between film fetches.
+    await sleep(400);
   }
   return dedupeScreenings(out);
 }
@@ -931,7 +971,9 @@ const SOURCES = [
   { id: "alamo-dtla", theaters: ["alamo-dtla"], fn: scrapeAlamoDtla },
   { id: "academy-museum", theaters: ["academy-museum"], fn: scrapeAcademyMuseum },
   { id: "brain-dead", theaters: ["brain-dead"], fn: scrapeBrainDeadStudios },
-  { id: "fathom", theaters: ["fathom-la"], fn: scrapeFathomEvents },
+  // Fathom's specific venue slugs are discovered at run time and all start
+  // with "fathom-"; use a prefix match instead of a static theater list.
+  { id: "fathom", theaterPrefix: "fathom-", fn: scrapeFathomEvents },
 ];
 
 function dedupeScreenings(rows) {
@@ -978,7 +1020,12 @@ for (const src of SOURCES) {
     await sleep(400);
   } catch (e) {
     console.warn(`${src.id} FAILED: ${e.message}`);
-    const kept = previous.filter((s) => src.theaters.includes(s.theater) && inWindow(s.date));
+    const kept = previous.filter((s) => {
+      if (!inWindow(s.date)) return false;
+      if (src.theaters?.includes(s.theater)) return true;
+      if (src.theaterPrefix && String(s.theater).startsWith(src.theaterPrefix)) return true;
+      return false;
+    });
     allScreenings.push(...kept);
     sourceStatus.push({ id: src.id, count: kept.length, status: `failed: ${e.message}` });
   }

@@ -691,31 +691,42 @@ details[open] > .month__summary .month__chevron {
 .rep-title__showing a:active { opacity: 0.7; }
 
 .rep-interest-group {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--divider);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.04);
 }
 
 .rep-interest {
-  flex-shrink: 0;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--divider);
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 40px;
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  border: 0;
   background: transparent;
   color: var(--fg-2);
   cursor: pointer;
+  display: inline-grid;
+  place-items: center;
+  transition: background-color 0.12s ease, color 0.12s ease, transform 0.08s ease;
 }
+.rep-interest + .rep-interest { border-left: 1px solid var(--divider); }
+.rep-interest:hover { background: rgba(0, 0, 0, 0.04); color: var(--fg); }
 .rep-interest:active { transform: scale(0.96); }
 .rep-interest--yes.is-on {
   background: var(--accent);
-  border-color: var(--accent);
   color: #fff;
 }
 .rep-interest--no.is-on {
   background: var(--fg-2);
-  border-color: var(--fg-2);
   color: #fff;
 }
 

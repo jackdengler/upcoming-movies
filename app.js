@@ -541,8 +541,11 @@ function renderInterestsTab(bundles) {
 
   for (const [key, meta] of Object.entries(marks)) {
     if (!grouped[meta.level]) continue;
+    const isScreening = key.startsWith("rep:") || meta.kind === "screening";
+    if (activeKind === "releases" && isScreening) continue;
+    if (activeKind === "rereleases" && !isScreening) continue;
 
-    if (key.startsWith("rep:") || meta.kind === "screening") {
+    if (isScreening) {
       const screening = byScreeningKey.get(key) || {
         theater: meta.theater || "unknown",
         title: meta.title || "Unknown",

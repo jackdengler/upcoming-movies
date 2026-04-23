@@ -43,7 +43,7 @@ const THEATERS = [
   { slug: "vista", name: "Vista Theater", address: "4473 Sunset Dr, Los Angeles", url: "https://vistatheaterhollywood.com/" },
   { slug: "alamo-dtla", name: "Alamo Drafthouse DTLA", address: "700 W 7th St, Los Angeles", url: "https://drafthouse.com/los-angeles" },
   { slug: "academy-museum", name: "Academy Museum", address: "6067 Wilshire Blvd, Los Angeles", url: "https://www.academymuseum.org/en/programs" },
-  { slug: "brain-dead", name: "Brain Dead Studios", address: "611 N Fairfax Ave, Los Angeles", url: "https://braindead.studio/" },
+  { slug: "brain-dead", name: "Brain Dead Studios", address: "611 N Fairfax Ave, Los Angeles", url: "https://studios.wearebraindead.com/coming-soon/" },
   { slug: "lumiere", name: "Lumiere Music Hall", address: "9036 Wilshire Blvd, Beverly Hills", url: "https://www.laemmle.com/theater/music-hall" },
 ];
 
@@ -763,19 +763,64 @@ async function scrapeAcademyMuseum() {
   return dedupeScreenings(out);
 }
 
+// Brain Dead Studios lives at studios.wearebraindead.com (old braindead.studio
+// 404s). /coming-soon/ is their schedule page — a Filmbot-powered WordPress
+// site with server-rendered HTML. Each film is a <div class="show-details">
+// block containing a title link, a show-specs line (Director / Run Time /
+// Format / Release Year), and N <li data-date="..."> entries with ticket
+// links. The `data-date` timestamp is the theater-day anchor (3am PT); the
+// specific time ("7:00 pm") lives in the <a class="showtime"> text.
 async function scrapeBrainDeadStudios() {
-  const html = await fetchText("https://braindead.studio/");
-  const out = jsonLdEvents(html, "brain-dead", "https://braindead.studio/");
-  if (out.length) return out;
-  // BD is Webflow + a custom calendar widget. Look for embedded JSON.
-  const m = html.match(/window\.__SHOWTIMES__\s*=\s*(\[[\s\S]*?\]);/);
-  if (m) {
-    try {
-      const arr = JSON.parse(m[1]);
-      walkForShowtimes(arr, "brain-dead", out);
-    } catch {}
+  const url = "https://studios.wearebraindead.com/coming-soon/";
+  const html = await fetchText(url);
+
+  const out = [];
+  const blockRe = /<div\s+class="show-details">([\s\S]*?)<\/div><!-- \.show-details -->/gi;
+  let b;
+  while ((b = blockRe.exec(html))) {
+    const block = b[1];
+
+    const titleM = block.match(
+      /<h2[^>]*class="show-title"[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*<\/h2>/i
+    );
+    if (!titleM) continue;
+    const filmUrl = titleM[1];
+    const titleRaw = decodeEntities(stripTags(titleM[2])).trim();
+    if (!titleRaw) continue;
+
+    const yearM = block.match(
+      /show-spec-label">Release Year:<\/span>\s*(\d{4})/
+    );
+    const year = yearM ? Number(yearM[1]) : extractYear(titleRaw);
+
+    const formatM = block.match(
+      /show-spec-label">Format:<\/span>\s*([^<\s][^<]*)/
+    );
+    const format = detectFormat(formatM ? formatM[1] : "");
+
+    const showtimeRe =
+      /<li\s+data-date="(\d+)"[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*class="[^"]*\bshowtime\b[^"]*"[^>]*>\s*([0-9:]+\s*[ap]m)\s*<\/a>\s*<\/li>/gi;
+    let st;
+    while ((st = showtimeRe.exec(block))) {
+      const ts = Number(st[1]);
+      if (!Number.isFinite(ts)) continue;
+      const parts = laParts(new Date(ts * 1000));
+      if (!parts || !inWindow(parts.date)) continue;
+      const time = parse12h(st[3]);
+      if (!time) continue;
+      out.push({
+        theater: "brain-dead",
+        title: cleanTitle(titleRaw),
+        year: year || null,
+        date: parts.date,
+        time,
+        format,
+        series: null,
+        url: st[2] || filmUrl,
+      });
+    }
   }
-  return out;
+  return dedupeScreenings(out);
 }
 
 async function scrapeLumiere() {

@@ -426,43 +426,95 @@ async function scrapeAmericanCinematheque() {
   return out;
 }
 
-// Nuart (Landmark). Landmark's per-theater page is a Next.js SSR app; the page
-// embeds JSON in __NEXT_DATA__ that includes showtimes.
+// Nuart (Landmark). Landmark is a Gatsby site backed by Webedia's box-office
+// API. The theater page triggers these JSON endpoints at page load:
+//   /api/gatsby-source-boxofficeapi/schedule?from=...&to=...&theaters={"id":...}
+//   /api/gatsby-source-boxofficeapi/scheduledMovies?theaterId=X00CW
+// Schedule rows reference movies by numeric ID; scheduledMovies enriches
+// those IDs with titles + production years. Theater id "X00CW" comes from
+// the `bocms:theater:id` meta tag on the page.
 async function scrapeNuart() {
-  const html = await fetchText("https://www.landmarktheatres.com/los-angeles/nuart-theatre");
-  const out = [];
-  // Try the JSON-LD path first.
-  for (const b of extractJsonLd(html)) {
-    for (const ev of flattenEvents(b)) {
-      const start = ev.startDate;
-      if (!start) continue;
-      const parts = laParts(start);
-      if (!parts || !inWindow(parts.date)) continue;
-      const name = ev.name || ev.workPresented?.name || "";
-      out.push({
-        theater: "nuart",
-        title: cleanTitle(name),
-        year: extractYear(name),
-        date: parts.date,
-        time: parts.time,
-        format: detectFormat(name),
-        series: null,
-        url: ev.url || "https://www.landmarktheatres.com/los-angeles/nuart-theatre",
+  const THEATER_ID = "X00CW";
+  const apiBase = "https://www.landmarktheatres.com/api/gatsby-source-boxofficeapi";
+
+  const endDate = new Date(`${TODAY_LA}T00:00:00Z`);
+  endDate.setUTCDate(endDate.getUTCDate() + HORIZON_DAYS);
+  const from = `${TODAY_LA}T03:00:00`;
+  const to = `${endDate.toISOString().slice(0, 10)}T03:00:00`;
+  const theatersJson = JSON.stringify({ id: THEATER_ID, timeZone: "America/Los_Angeles" });
+
+  const scheduleUrl = `${apiBase}/schedule?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}&theaters=${encodeURIComponent(theatersJson)}`;
+  const scheduledUrl = `${apiBase}/scheduledMovies?theaterId=${THEATER_ID}`;
+
+  const [scheduleData, scheduledData] = await Promise.all([
+    fetchJson(scheduleUrl).catch(() => null),
+    fetchJson(scheduledUrl).catch(() => null),
+  ]);
+
+  if (!scheduleData && !scheduledData) {
+    throw new Error("nuart: both box-office endpoints unreachable");
+  }
+
+  // Build a movieId -> { title, year } map from whichever endpoint carries
+  // movie metadata. Walking depth is capped so rogue arrays don't explode.
+  const titleById = new Map();
+  const collectMeta = (node, depth = 0) => {
+    if (depth > 10 || !node || typeof node !== "object") return;
+    if (Array.isArray(node)) { for (const x of node) collectMeta(x, depth + 1); return; }
+    const id = node.id || node.movieId;
+    const title = node.title || node.name;
+    if (id != null && title) {
+      titleById.set(String(id), {
+        title: String(title),
+        year: node.productionYear || node.year || extractYear(String(title)) || null,
       });
     }
-  }
-  if (out.length) return out;
-  // Fallback: extract __NEXT_DATA__ blob and look for showtimes objects.
-  const nextMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
-  if (nextMatch) {
-    try {
-      const data = JSON.parse(nextMatch[1]);
-      walkForShowtimes(data, "nuart", out);
-    } catch (e) {
-      console.warn(`nuart: __NEXT_DATA__ parse: ${e.message}`);
+    for (const k of Object.keys(node)) collectMeta(node[k], depth + 1);
+  };
+  collectMeta(scheduledData);
+  collectMeta(scheduleData);
+
+  const out = [];
+  const emit = (node, depth = 0) => {
+    if (depth > 10 || !node || typeof node !== "object") return;
+    if (Array.isArray(node)) { for (const x of node) emit(x, depth + 1); return; }
+    const start = node.startsAt || node.startTime || node.showtime;
+    if (start) {
+      let title = null;
+      let year = null;
+      const m = node.movie;
+      if (m && typeof m === "object") {
+        title = m.title || m.name || null;
+        year = m.productionYear || m.year || null;
+      } else if (m != null) {
+        const meta = titleById.get(String(m));
+        if (meta) { title = meta.title; year = meta.year; }
+      }
+      if (!title && node.movieId != null) {
+        const meta = titleById.get(String(node.movieId));
+        if (meta) { title = meta.title; year = meta.year; }
+      }
+      if (title) {
+        const parts = naivePTParts(start) || laParts(start);
+        if (parts && inWindow(parts.date)) {
+          out.push({
+            theater: "nuart",
+            title: cleanTitle(title),
+            year: year || extractYear(title) || null,
+            date: parts.date,
+            time: parts.time,
+            format: detectFormat(title),
+            series: null,
+            url: node.bookingLink || node.booking_url || node.data?.ticketing?.[0]?.urls?.[0] || "https://www.landmarktheatres.com/los-angeles/nuart-theatre",
+          });
+        }
+      }
     }
-  }
-  return out;
+    for (const k of Object.keys(node)) emit(node[k], depth + 1);
+  };
+  emit(scheduleData);
+  emit(scheduledData);
+  return dedupeScreenings(out);
 }
 
 // Walk an arbitrary JSON tree looking for objects that look like showtimes —
@@ -476,7 +528,7 @@ function walkForShowtimes(node, theaterSlug, out, depth = 0) {
   }
   if (typeof node !== "object") return;
   const start =
-    node.startTime || node.start_time || node.showtime || node.start || node.startDate;
+    node.startsAt || node.startTime || node.start_time || node.showtime || node.start || node.startDate;
   const titleRaw =
     node.filmTitle || node.film_title || node.title || node.name ||
     node.film?.title || node.movie?.title;

@@ -44,7 +44,6 @@ const THEATERS = [
   { slug: "alamo-dtla", name: "Alamo Drafthouse DTLA", address: "700 W 7th St, Los Angeles", url: "https://drafthouse.com/los-angeles" },
   { slug: "academy-museum", name: "Academy Museum", address: "6067 Wilshire Blvd, Los Angeles", url: "https://www.academymuseum.org/en/programs" },
   { slug: "brain-dead", name: "Brain Dead Studios", address: "611 N Fairfax Ave, Los Angeles", url: "https://studios.wearebraindead.com/coming-soon/" },
-  { slug: "lumiere", name: "Lumiere Music Hall", address: "9036 Wilshire Blvd, Beverly Hills", url: "https://www.laemmle.com/theater/music-hall" },
 ];
 
 // Fathom Events: the joint venture between AMC, Regal, and Cinemark that
@@ -823,11 +822,6 @@ async function scrapeBrainDeadStudios() {
   return dedupeScreenings(out);
 }
 
-async function scrapeLumiere() {
-  // Laemmle exposes per-theater showtimes pages with JSON-LD.
-  const html = await fetchText("https://www.laemmle.com/theater/music-hall");
-  return jsonLdEvents(html, "lumiere", "https://www.laemmle.com/theater/music-hall");
-}
 
 // Fathom Events handles classic rereleases at AMC, Regal, and Cinemark.
 // First pass: best-effort fetch of the classics series page, look for
@@ -902,7 +896,6 @@ const SOURCES = [
   { id: "alamo-dtla", theaters: ["alamo-dtla"], fn: scrapeAlamoDtla },
   { id: "academy-museum", theaters: ["academy-museum"], fn: scrapeAcademyMuseum },
   { id: "brain-dead", theaters: ["brain-dead"], fn: scrapeBrainDeadStudios },
-  { id: "lumiere", theaters: ["lumiere"], fn: scrapeLumiere },
   { id: "fathom", theaters: ["fathom-la"], fn: scrapeFathomEvents },
 ];
 

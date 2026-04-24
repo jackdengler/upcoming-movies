@@ -1041,9 +1041,20 @@ for (const src of SOURCES) {
 }
 _debug.currentSource = null;
 
+// Rereleases-only: drop any screening whose film release year matches or
+// exceeds its screening year (i.e. first-run programming at Vista, Alamo,
+// Brain Dead). Unknown-year rows are kept — most rep houses fail to expose
+// a year in markup and are reliably older films.
+const isRerelease = (s) => {
+  if (s.year == null) return true;
+  const screeningYear = Number((s.date || "").slice(0, 4));
+  return Number.isFinite(screeningYear) && s.year < screeningYear;
+};
+
 const cleaned = dedupeScreenings(
   allScreenings
     .filter((s) => s && s.title && s.date && s.time && inWindow(s.date))
+    .filter(isRerelease)
     .map((s) => ({
       theater: s.theater,
       title: s.title,

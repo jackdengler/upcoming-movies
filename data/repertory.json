@@ -110,36 +110,6 @@
   ],
   "screenings": [
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-23",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3505?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-23",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3512?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-23",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3513?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "The Hidden Fortress in 35mm",
       "year": null,
@@ -180,16 +150,6 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-24",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3514?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "new-beverly",
       "title": "Training Day",
       "year": null,
@@ -208,16 +168,6 @@
       "format": "dcp",
       "series": null,
       "url": "https://studios.wearebraindead.com/purchase/1273195/"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-24",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3521?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "academy-museum",
@@ -290,16 +240,6 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-25",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3519?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "new-beverly",
       "title": "Raiders of the Lost Ark",
       "year": null,
@@ -318,16 +258,6 @@
       "format": null,
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-25",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3526?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "brain-dead",
@@ -358,26 +288,6 @@
       "format": "35mm",
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-25",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3527?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "Mermaid",
-      "year": 2026,
-      "date": "2026-04-25",
-      "time": "20:00",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1273198/"
     },
     {
       "theater": "new-beverly",
@@ -430,16 +340,6 @@
       "url": "http://www.fandango.com/redirect.aspx?mid=244286&a=13191&wssaffid=13191&tid=AAAWX&date=2026-04-26+13:00:00&cmp=ST_Fathom:The-Silence-of-the-Lambs-35th-Anniversary-_nat_"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-26",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3520?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "Ordinary People",
       "year": null,
@@ -480,16 +380,6 @@
       "url": "http://www.fandango.com/redirect.aspx?mid=244286&a=13191&wssaffid=13191&tid=AAAWX&date=2026-04-26+16:00:00&cmp=ST_Fathom:The-Silence-of-the-Lambs-35th-Anniversary-_nat_"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-26",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3528?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "brain-dead",
       "title": "The Quay Brothers",
       "year": null,
@@ -520,16 +410,6 @@
       "url": "https://thenewbev.com/program/april-26-high-society-pride-of-the-blue-grass/"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-26",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3529?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "brain-dead",
       "title": "Mad God",
       "year": 2021,
@@ -558,26 +438,6 @@
       "format": null,
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-27",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3515?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-27",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3522?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "academy-museum",
@@ -618,26 +478,6 @@
       "format": null,
       "series": "Triple Feature",
       "url": "https://thenewbev.com/program/april-27-the-ape-man-voodoo-man-bela-lugosi-meets-a-brooklyn-gorilla/"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-28",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3516?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-28",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3523?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "new-beverly",
@@ -690,16 +530,6 @@
       "url": "http://www.fandango.com/redirect.aspx?mid=244286&a=13191&wssaffid=13191&tid=AAAWX&date=2026-04-29+16:00:00&cmp=ST_Fathom:The-Silence-of-the-Lambs-35th-Anniversary-_nat_"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-29",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3517?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "fathom-17364",
       "title": "The Silence of the Lambs 35th Anniversary",
       "year": null,
@@ -708,16 +538,6 @@
       "format": null,
       "series": "Fathom\u2019s Big Screen Classics",
       "url": "http://www.fandango.com/redirect.aspx?mid=244286&a=13191&wssaffid=13191&tid=AAAWX&date=2026-04-29+19:00:00&cmp=ST_Fathom:The-Silence-of-the-Lambs-35th-Anniversary-_nat_"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-29",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3524?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "academy-museum",
@@ -760,26 +580,6 @@
       "url": "https://thenewbev.com/program/april-29-make-me-a-star-dont-gamble-with-strangers/"
     },
     {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-30",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3518?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "Normal",
-      "year": 2026,
-      "date": "2026-04-30",
-      "time": "19:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3525?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "new-beverly",
       "title": "Make Me a Star",
       "year": null,
@@ -800,16 +600,6 @@
       "url": "https://thenewbev.com/program/april-30-make-me-a-star-dont-gamble-with-strangers/"
     },
     {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-01",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3530?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "Marathon Man in 4K",
       "year": null,
@@ -818,26 +608,6 @@
       "format": null,
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-01",
-      "time": "16:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3533?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-01",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3534?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "academy-museum",
@@ -850,16 +620,6 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-02",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3531?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "Taking of Pelham One Two Three",
       "year": null,
@@ -870,16 +630,6 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-02",
-      "time": "16:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3535?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "High and Low (Tengoku to jigoku) in 35mm",
       "year": null,
@@ -888,26 +638,6 @@
       "format": "35mm",
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-02",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3536?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-03",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3532?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "academy-museum",
@@ -930,16 +660,6 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-03",
-      "time": "16:15",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3537?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "Sanjuro in 35mm",
       "year": null,
@@ -960,66 +680,6 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-03",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3538?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-04",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3539?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-04",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3543?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-05",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3540?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-05",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3544?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-06",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3541?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
       "theater": "academy-museum",
       "title": "Seven in 4K",
       "year": null,
@@ -1028,36 +688,6 @@
       "format": null,
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-06",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3545?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-07",
-      "time": "16:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3542?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "vista",
-      "title": "RZA\u2019S ONE SPOON OF CHOCOLATE",
-      "year": 2026,
-      "date": "2026-05-07",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3546?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
     },
     {
       "theater": "academy-museum",

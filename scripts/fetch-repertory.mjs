@@ -58,6 +58,8 @@ const THEATERS = [
 // Keys are Fathom theater IDs; values are comments for human readers.
 const FATHOM_THEATER_ALLOWLIST = new Set([
   "17364", // Universal Cinema AMC at CityWalk Hollywood
+  "18736", // AMC Burbank 16
+  "17327", // AMC South Bay Galleria 16
 ]);
 
 // ---------- Generic helpers ----------

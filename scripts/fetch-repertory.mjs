@@ -51,6 +51,14 @@ const THEATERS = [
 // THEATERS as they're seen, so the static registry above doesn't need
 // stubs for them. Theater slugs are of the form `fathom-<theaterID>` where
 // theaterID is Fathom's internal venue id.
+//
+// Fathom's showtimes API returns the 25 nearest partner cinemas for each
+// event — 30+ chain venues, most of them far-flung. Narrow the cast here so
+// only the handful we actually care about get registered and emit screenings.
+// Keys are Fathom theater IDs; values are comments for human readers.
+const FATHOM_THEATER_ALLOWLIST = new Set([
+  "17364", // Universal Cinema AMC at CityWalk Hollywood
+]);
 
 // ---------- Generic helpers ----------
 
@@ -916,6 +924,7 @@ async function scrapeFathomEvents() {
         const theaterName = xmlField(thBlock, "TheaterName");
         const theaterID = xmlField(thBlock, "TheaterID");
         if (!theaterName || !theaterID) continue;
+        if (!FATHOM_THEATER_ALLOWLIST.has(theaterID)) continue;
         const theaterSlug = `fathom-${theaterID}`;
 
         // Step 4: register the theater once per run.

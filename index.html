@@ -132,6 +132,18 @@
       </button>
     </nav>
 
+    <dialog id="showtime-dialog" class="sheet">
+      <div class="sheet__body">
+        <h2 class="sheet__title" id="showtime-title">Pick a showtime</h2>
+        <p class="sheet__copy" id="showtime-copy">Tap the showtime you're going to.</p>
+        <div id="showtime-list" class="showtime-list"></div>
+        <div class="sheet__actions">
+          <button type="button" class="sheet__btn sheet__btn--danger" id="showtime-remove" hidden>Remove</button>
+          <button type="button" class="sheet__btn sheet__btn--ghost" id="showtime-cancel">Cancel</button>
+        </div>
+      </div>
+    </dialog>
+
     <dialog id="book-dialog" class="sheet">
       <form method="dialog" class="sheet__body" id="book-form">
         <h2 class="sheet__title" id="book-title">Book ticket</h2>

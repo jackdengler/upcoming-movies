@@ -125,26 +125,88 @@ const screeningKey = (s) => `rep:${s.theater}:${s.date}:${slugifyClient(s.title)
 const itemKey = (item) =>
   item?._kind === "screening" ? screeningKey(item) : movieKey(item);
 
-// Rereleases interest is stored at the (theater, title, month) granularity:
-// marking "Training Day at New Beverly, April" once applies to every showtime
-// of that run. Three states: "yes" (interested), "no" (skip), or absent (not
-// yet evaluated). The ID is independent from `screeningKey` (per-showtime) so
-// the two models don't collide.
+// Rereleases interest is stored at the (title, month) granularity. The same
+// title playing at multiple theaters in the same month rolls up to one mark,
+// so marking "Training Day, April" once applies to every showtime that month
+// regardless of which theater(s) host it. A re-run a year later gets a new
+// month key and starts fresh.
+//
+// Each mark is an object:
+//   {
+//     interest: "yes" | "no" | null,
+//     booked:   { date, time, theater } | null,
+//     watched:  { date, time, theater } | null,
+//     meta:     { title, year, format, series } | null,  // for display when
+//                                                          screening data has
+//                                                          rotated past
+//   }
 const repTitleMonthId = (s) =>
-  `${s.theater}|${slugifyClient(s.title)}|${(s.date || "").slice(0, 7)}`;
+  `${slugifyClient(s.title)}|${(s.date || "").slice(0, 7)}`;
 
 const REP_MARKS_KEY = "upcoming:rereleases-marks";
 const REP_MARKS_KEY_LEGACY = "upcoming:rereleases-interest"; // superseded
+
+function stripTheaterFromRepId(id) {
+  // Old keys looked like "theater|slug|YYYY-MM"; new keys are "slug|YYYY-MM".
+  const parts = String(id).split("|");
+  if (parts.length === 3) return `${parts[1]}|${parts[2]}`;
+  return id;
+}
+
+function normalizeRepMarkValue(value) {
+  if (typeof value === "string") {
+    return { interest: value === "yes" || value === "no" ? value : null,
+             booked: null, watched: null, meta: null };
+  }
+  if (value && typeof value === "object") {
+    const interest = value.interest === "yes" || value.interest === "no" ? value.interest : null;
+    return {
+      interest,
+      booked: value.booked || null,
+      watched: value.watched || null,
+      meta: value.meta || null,
+    };
+  }
+  return null;
+}
+
+function mergeRepMarkInto(target, incoming) {
+  if (!incoming) return target;
+  if (!target) return { ...incoming };
+  // "yes" wins over "no" (we'd rather over-show than under-show).
+  if (incoming.interest === "yes") target.interest = "yes";
+  else if (!target.interest && incoming.interest) target.interest = incoming.interest;
+  if (!target.booked && incoming.booked) target.booked = incoming.booked;
+  if (!target.watched && incoming.watched) target.watched = incoming.watched;
+  if (!target.meta && incoming.meta) target.meta = incoming.meta;
+  return target;
+}
+
 const repMarks = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(REP_MARKS_KEY) || "null");
-    if (saved && typeof saved === "object" && !Array.isArray(saved)) return saved;
+    if (saved && typeof saved === "object" && !Array.isArray(saved)) {
+      const out = {};
+      for (const [key, value] of Object.entries(saved)) {
+        const newKey = stripTheaterFromRepId(key);
+        const norm = normalizeRepMarkValue(value);
+        if (!norm) continue;
+        out[newKey] = mergeRepMarkInto(out[newKey], norm);
+      }
+      return out;
+    }
   } catch {}
   // One-time migration: legacy key stored a Set of interested IDs only.
   try {
     const legacy = JSON.parse(localStorage.getItem(REP_MARKS_KEY_LEGACY) || "null");
     if (Array.isArray(legacy)) {
-      const out = Object.fromEntries(legacy.map((id) => [id, "yes"]));
+      const out = {};
+      for (const id of legacy) {
+        const newKey = stripTheaterFromRepId(id);
+        out[newKey] = mergeRepMarkInto(out[newKey], {
+          interest: "yes", booked: null, watched: null, meta: null,
+        });
+      }
       try { localStorage.setItem(REP_MARKS_KEY, JSON.stringify(out)); } catch {}
       return out;
     }
@@ -155,11 +217,61 @@ const saveRepMarks = () => {
   try { localStorage.setItem(REP_MARKS_KEY, JSON.stringify(repMarks)); } catch {}
 };
 const getRepMark = (id) => repMarks[id] || null;
-const setRepMark = (id, value) => {
-  if (value) repMarks[id] = value;
-  else delete repMarks[id];
+const getRepInterest = (id) => repMarks[id]?.interest || null;
+const getRepBooked = (id) => repMarks[id]?.booked || null;
+const getRepWatched = (id) => repMarks[id]?.watched || null;
+
+function ensureRepMark(id, meta) {
+  if (!repMarks[id]) {
+    repMarks[id] = { interest: null, booked: null, watched: null, meta: meta || null };
+  } else if (meta && !repMarks[id].meta) {
+    repMarks[id].meta = meta;
+  }
+  return repMarks[id];
+}
+
+function pruneRepMark(id) {
+  const m = repMarks[id];
+  if (!m) return;
+  if (!m.interest && !m.booked && !m.watched) delete repMarks[id];
+}
+
+function setRepInterest(id, value, meta) {
+  if (value !== "yes" && value !== "no" && value !== null) return;
+  if (value === null) {
+    if (repMarks[id]) {
+      repMarks[id].interest = null;
+      pruneRepMark(id);
+    }
+  } else {
+    ensureRepMark(id, meta).interest = value;
+  }
   saveRepMarks();
-};
+}
+
+function setRepBooked(id, booked, meta) {
+  if (booked === null) {
+    if (repMarks[id]) {
+      repMarks[id].booked = null;
+      pruneRepMark(id);
+    }
+  } else {
+    ensureRepMark(id, meta).booked = booked;
+  }
+  saveRepMarks();
+}
+
+function setRepWatched(id, watched, meta) {
+  if (watched === null) {
+    if (repMarks[id]) {
+      repMarks[id].watched = null;
+      pruneRepMark(id);
+    }
+  } else {
+    ensureRepMark(id, meta).watched = watched;
+  }
+  saveRepMarks();
+}
 
 const fmtTime = (hhmm) => {
   if (!hhmm) return "";
@@ -528,6 +640,14 @@ function sortMonthOrder(bundles) {
 // ---------- Interests tab rendering ----------
 
 function renderInterestsTab(bundles) {
+  if (activeKind === "rereleases") {
+    renderRereleasesInterestsTab();
+    return;
+  }
+  renderReleasesInterestsTab(bundles);
+}
+
+function renderReleasesInterestsTab(bundles) {
   const list = document.getElementById("interest-list");
   list.innerHTML = "";
 
@@ -586,7 +706,11 @@ function renderInterestsTab(bundles) {
 
   const empty = document.getElementById("empty-interests");
   const total = order.reduce((a, k) => a + grouped[k].length, 0);
-  if (!total) { empty.hidden = false; return; }
+  if (!total) {
+    empty.textContent = "Swipe any movie on the List tab to mark interest.";
+    empty.hidden = false;
+    return;
+  }
   empty.hidden = true;
 
   for (const lv of order) {
@@ -641,6 +765,262 @@ function renderInterestsTab(bundles) {
 
     list.appendChild(details);
   }
+}
+
+// ---------- Rereleases Interests tab ----------
+
+// Group every rep mark into Interested / Watched / Past / Not interested.
+// - "watched" if the user explicitly marked it seen
+// - "not" if interest === "no"
+// - "past" if interest === "yes" AND every showtime in the run is in the past
+//          (the run ended; nothing to book anymore, and it wasn't marked seen)
+// - "interested" otherwise when interest === "yes"
+//
+// Past is computed on the fly from `lastShowDate` so it auto-populates the day
+// after a run's last showtime. When the screening data has rotated out the
+// month entirely, `entry` is null and we fall back to the mark's month key:
+// anything whose YYYY-MM is strictly before the current month is past.
+function categorizeRepMark(id, mark, entry, today) {
+  if (mark.watched) return "watched";
+  if (mark.interest === "no") return "not";
+  // Treat a lone booking as "interested" — you wouldn't book something you
+  // weren't interested in.
+  if (mark.interest !== "yes" && !mark.booked) return null;
+
+  const last = entry ? lastShowDate(entry) : null;
+  if (last) {
+    return last < today ? "past" : "interested";
+  }
+  // No current screening data for this run. Infer from the month key.
+  const monthKey = id.split("|")[1] || "";
+  const todayMonth = today.slice(0, 7);
+  if (monthKey && monthKey < todayMonth) return "past";
+  return "interested";
+}
+
+function renderRepInterestCard(id, mark, entry) {
+  const title = entry?.title || mark.meta?.title || "Unknown";
+  const year = entry?.year ?? mark.meta?.year ?? null;
+  const theaters = entry
+    ? [...entry.theaters]
+    : [mark.booked?.theater, mark.watched?.theater].filter(Boolean);
+  const linkUrl = entry?.showings?.find((s) => s.url)?.url
+    || (theaters[0] && repertoryState.theatersBySlug.get(theaters[0])?.url)
+    || wikipediaUrl(title, `${year || ""}-01-01`);
+
+  const titleLink = el("a", {
+      class: "row__titlelink",
+      href: linkUrl,
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    title,
+  );
+  const titleNode = el("h3", { class: "row__title" }, titleLink);
+  if (year) {
+    titleNode.appendChild(el("span", { class: "row__meta", text: ` (${year})` }));
+  }
+
+  const theaterChips = theaters.map((slug) =>
+    el("span", { class: "chip--theater", text: shortTheaterName(slug) })
+  );
+
+  const bookedBadge = mark.booked
+    ? el("div", { class: "row__booked", text: `🎟  Booked ${fmtShowtime(mark.booked.date, mark.booked.time, mark.booked.theater)}` })
+    : null;
+  const watchedBadge = mark.watched
+    ? el("div", { class: "row__watched", text: `✓  Watched ${fmtShowtime(mark.watched.date, mark.watched.time, mark.watched.theater)}` })
+    : null;
+
+  const actions = el("div", { class: "rep-card__actions", dataset: { id } });
+  const hasShowings = !!entry?.showings?.length;
+  if (mark.interest === "yes" && !mark.watched) {
+    actions.appendChild(el("button", {
+      type: "button",
+      class: "rep-card-action",
+      dataset: { action: "book" },
+      hidden: hasShowings ? false : true,
+    }, mark.booked ? "Change booking" : "🎟  Book"));
+  }
+  if (!mark.watched) {
+    actions.appendChild(el("button", {
+      type: "button",
+      class: "rep-card-action",
+      dataset: { action: "seen" },
+    }, "✓  Mark seen"));
+  } else {
+    actions.appendChild(el("button", {
+      type: "button",
+      class: "rep-card-action",
+      dataset: { action: "clear-seen" },
+    }, "Clear seen"));
+  }
+  if (mark.interest === "yes") {
+    actions.appendChild(el("button", {
+      type: "button",
+      class: "rep-card-action rep-card-action--ghost",
+      dataset: { action: "skip" },
+    }, "Not interested"));
+  } else if (mark.interest === "no") {
+    actions.appendChild(el("button", {
+      type: "button",
+      class: "rep-card-action rep-card-action--ghost",
+      dataset: { action: "reinterest" },
+    }, "Mark interested"));
+  }
+
+  return el("div", { class: "rep-card", dataset: { id } },
+    el("div", { class: "row__title-line" },
+      titleNode,
+      ...theaterChips,
+    ),
+    bookedBadge,
+    watchedBadge,
+    actions,
+  );
+}
+
+const REP_CATEGORY_ORDER = ["interested", "watched", "past", "not"];
+const REP_CATEGORY_LABEL = {
+  interested: "Interested",
+  watched: "Watched",
+  past: "Past",
+  not: "Not interested",
+};
+
+function renderRereleasesInterestsTab() {
+  const list = document.getElementById("interest-list");
+  const empty = document.getElementById("empty-interests");
+  list.innerHTML = "";
+
+  const screenings = repertoryState.data?.screenings || [];
+  const groups = groupByTitleMonth(screenings);
+  const entryById = new Map();
+  for (const [, titleMap] of groups) {
+    for (const [id, entry] of titleMap) entryById.set(id, entry);
+  }
+
+  const grouped = { interested: [], watched: [], past: [], not: [] };
+  for (const [id, mark] of Object.entries(repMarks)) {
+    const entry = entryById.get(id) || null;
+    // Opportunistically backfill meta so we can still render the card after
+    // the run's screenings have rolled off.
+    if (entry && !mark.meta) {
+      mark.meta = repEntryMeta(entry);
+    }
+    const cat = categorizeRepMark(id, mark, entry, TODAY);
+    if (!cat) continue;
+    grouped[cat].push({ id, mark, entry });
+  }
+
+  const total = REP_CATEGORY_ORDER.reduce((a, k) => a + grouped[k].length, 0);
+  if (!total) {
+    empty.textContent = "Tap ✓ on any rerelease to start tracking it.";
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+
+  for (const cat of REP_CATEGORY_ORDER) {
+    const items = grouped[cat];
+    if (!items.length) continue;
+
+    // Sort: most recent booked first within Interested, otherwise by month.
+    items.sort((a, b) => {
+      const amk = (a.id.split("|")[1] || "");
+      const bmk = (b.id.split("|")[1] || "");
+      const cmp = amk.localeCompare(bmk);
+      return cat === "past" ? -cmp : cmp;
+    });
+
+    const open = cat in interestExpanded ? interestExpanded[cat] : true;
+    const details = el("details", {
+        class: `month interest-group interest-group--${cat}`,
+        open,
+        dataset: { level: cat },
+      },
+      el("summary", { class: "month__summary" },
+        el("span", { class: "month__chevron", "aria-hidden": "true" }),
+        el("span", { class: "month__name", text: REP_CATEGORY_LABEL[cat] }),
+        el("span", { class: "month__count", text: `${items.length}` }),
+      ),
+      el("div", { class: "month__body" },
+        el("div", { class: "section" },
+          el("div", { class: "section__list" },
+            ...items.map(({ id, mark, entry }) => renderRepInterestCard(id, mark, entry)),
+          ),
+        )
+      )
+    );
+
+    details.addEventListener("toggle", () => {
+      interestExpanded[cat] = details.open;
+      saveInterestExpanded();
+    });
+    const summary = details.querySelector(".month__summary");
+    if (summary) {
+      summary.addEventListener("click", () => {
+        requestAnimationFrame(() => {
+          interestExpanded[cat] = details.open;
+          saveInterestExpanded();
+        });
+      });
+    }
+
+    list.appendChild(details);
+  }
+}
+
+// Handle clicks on rep-card action buttons in the Interests tab.
+async function handleRepCardAction(id, action) {
+  const mark = getRepMark(id);
+  if (!mark) return;
+  const entry = findRepEntryById(id);
+  const meta = entry ? repEntryMeta(entry) : mark.meta;
+
+  if (action === "skip") {
+    setRepInterest(id, "no", meta);
+  } else if (action === "reinterest") {
+    setRepInterest(id, "yes", meta);
+  } else if (action === "clear-seen") {
+    setRepWatched(id, null);
+  } else if (action === "book" || action === "seen") {
+    const isBook = action === "book";
+    const existing = isBook ? mark.booked : mark.watched;
+    const selectedKey = existing
+      ? `${existing.date}|${existing.time}|${existing.theater}`
+      : null;
+    const showings = entry?.showings || [];
+    if (!showings.length && !existing) {
+      // Nothing to pick and nothing to remove.
+      return;
+    }
+    const result = await requestShowtimeDialog({
+      heading: isBook ? "Book showtime" : "Mark seen",
+      copy: isBook
+        ? "Pick which showtime you're going to."
+        : "Pick the showtime you caught.",
+      showings,
+      isUpdate: !!existing,
+      selectedKey,
+    });
+    if (result.action === "cancel") return;
+    if (result.action === "remove") {
+      if (isBook) setRepBooked(id, null);
+      else setRepWatched(id, null);
+    } else if (result.action === "save") {
+      const chosen = {
+        date: result.showing.date,
+        time: result.showing.time,
+        theater: result.showing.theater,
+      };
+      if (isBook) setRepBooked(id, chosen, meta);
+      else setRepWatched(id, chosen, meta);
+    }
+  }
+  renderInterestsTab(allBundles);
+  if (activeTab === "list" && activeKind === "rereleases") renderRepertoryTab();
+  if (activeTab === "calendar") renderCalendarTab(allBundles);
 }
 
 // ---------- Activity tab rendering ----------
@@ -832,7 +1212,7 @@ function itemsByDate(bundles) {
     }
   } else {
     for (const s of repertoryState.data?.screenings || []) {
-      if (getRepMark(repTitleMonthId(s)) !== "yes") continue;
+      if (getRepInterest(repTitleMonthId(s)) !== "yes") continue;
       if (!map.has(s.date)) map.set(s.date, []);
       map.get(s.date).push({ ...s, _kind: "screening" });
     }
@@ -1124,8 +1504,10 @@ function renderTheaterFilterBar() {
 }
 
 // Collapse a flat screening list into { monthKey -> { titleMonthId -> entry } }.
-// Each entry represents one film's run at one theater in one calendar month,
-// carrying every showtime in that run.
+// Each entry represents one film's run across any and all theaters in one
+// calendar month, carrying every showtime. If three AMCs and the Nuart all
+// show the same title in April, they collapse into one entry with four
+// theaters and all showings merged.
 function groupByTitleMonth(screenings) {
   const months = new Map();
   for (const s of screenings) {
@@ -1138,21 +1520,20 @@ function groupByTitleMonth(screenings) {
     if (!entry) {
       entry = {
         id,
-        theater: s.theater,
         title: s.title,
         year: s.year || null,
         // Format / series are usually consistent across showtimes but can
-        // vary (e.g. one midnight show in a run). Carry the first non-null
-        // and track any others for display.
+        // vary (e.g. one midnight show in a run). Carry the first non-null.
         format: s.format || null,
         series: s.series || null,
-        url: s.url || null,
+        theaters: new Set(),
         showings: [],
       };
       monthGroup.set(id, entry);
     }
     if (!entry.format && s.format) entry.format = s.format;
     if (!entry.series && s.series) entry.series = s.series;
+    if (s.theater) entry.theaters.add(s.theater);
     entry.showings.push(s);
   }
   for (const monthGroup of months.values()) {
@@ -1167,6 +1548,48 @@ function groupByTitleMonth(screenings) {
   return [...months.entries()].sort(([a], [b]) => a.localeCompare(b));
 }
 
+// Helpers for rendering and category logic.
+function repEntryMeta(entry) {
+  return {
+    title: entry.title,
+    year: entry.year,
+    format: entry.format,
+    series: entry.series,
+  };
+}
+
+function lastShowDate(entry) {
+  const s = entry?.showings?.[entry.showings.length - 1];
+  return s?.date || null;
+}
+
+function theaterName(slug) {
+  const meta = repertoryState.theatersBySlug.get(slug);
+  return meta?.name || slug || "Unknown theater";
+}
+
+function shortTheaterName(slug) {
+  return theaterName(slug).replace(/^AMC /, "").replace(/^The /, "");
+}
+
+function fmtShowtime(date, time, theater) {
+  const when = `${fmtDateShort(date)} · ${fmtTime(time)}`;
+  return theater ? `${when} · ${shortTheaterName(theater)}` : when;
+}
+
+// Look up the current screening entry for a given rep mark id. Used to gather
+// showtime lists for the picker and to backfill meta when marks are edited.
+// Returns null if the id's run isn't in the current screening window.
+function findRepEntryById(id) {
+  const screenings = repertoryState.data?.screenings || [];
+  const groups = groupByTitleMonth(screenings);
+  for (const [, titleMap] of groups) {
+    const entry = titleMap.get(id);
+    if (entry) return entry;
+  }
+  return null;
+}
+
 const fmtMonthLabel = (yyyymm) => {
   const [y, m] = yyyymm.split("-").map(Number);
   if (!Number.isFinite(y) || !Number.isFinite(m)) return yyyymm;
@@ -1174,9 +1597,11 @@ const fmtMonthLabel = (yyyymm) => {
 };
 
 function renderRepTitleRow(entry) {
-  const theaterMeta = repertoryState.theatersBySlug.get(entry.theater);
-  const theaterName = theaterMeta?.name || entry.theater;
-  const linkUrl = entry.url || theaterMeta?.url || wikipediaUrl(entry.title, `${entry.year || ""}-01-01`);
+  const theaters = [...entry.theaters];
+  const firstTheaterMeta = theaters.length ? repertoryState.theatersBySlug.get(theaters[0]) : null;
+  const linkUrl = entry.showings.find((s) => s.url)?.url
+    || firstTheaterMeta?.url
+    || wikipediaUrl(entry.title, `${entry.year || ""}-01-01`);
 
   const titleLink = el("a", {
       class: "row__titlelink",
@@ -1194,13 +1619,20 @@ function renderRepTitleRow(entry) {
     titleNode.appendChild(el("span", { class: "row__meta", text: ` (${entry.year})` }));
   }
 
+  const theaterChips = theaters.map((slug) =>
+    el("span", { class: "chip--theater", text: shortTheaterName(slug) })
+  );
+
   const countText = `${entry.showings.length} showing${entry.showings.length === 1 ? "" : "s"}`;
 
-  const mark = getRepMark(entry.id);
+  const interest = getRepInterest(entry.id);
+  const booked = getRepBooked(entry.id);
+  const watched = getRepWatched(entry.id);
+
   const mkMarkBtn = (value, icon, label) => el("button", {
       type: "button",
-      class: `rep-interest rep-interest--${value}${mark === value ? " is-on" : ""}`,
-      "aria-pressed": mark === value ? "true" : "false",
+      class: `rep-interest rep-interest--${value}${interest === value ? " is-on" : ""}`,
+      "aria-pressed": interest === value ? "true" : "false",
       "aria-label": label,
       title: label,
       dataset: { id: entry.id, mark: value },
@@ -1212,11 +1644,18 @@ function renderRepTitleRow(entry) {
     mkMarkBtn("no", "✕", "Not interested"),
   );
 
+  const bookedBadge = booked
+    ? el("div", { class: "row__booked", text: `🎟  Booked ${fmtShowtime(booked.date, booked.time, booked.theater)}` })
+    : null;
+  const watchedBadge = watched
+    ? el("div", { class: "row__watched", text: `✓  Watched ${fmtShowtime(watched.date, watched.time, watched.theater)}` })
+    : null;
+
   const summary = el("summary", { class: "rep-title__summary" },
     el("div", { class: "rep-title__head" },
       el("div", { class: "row__title-line" },
         titleNode,
-        el("span", { class: "chip--theater", text: theaterName }),
+        ...theaterChips,
       ),
       markButtons,
     ),
@@ -1224,11 +1663,13 @@ function renderRepTitleRow(entry) {
       el("span", { class: "row__meta", text: countText }),
       entry.series ? el("span", { class: "row__meta", text: ` · ${entry.series}` }) : null,
     ),
+    bookedBadge,
+    watchedBadge,
   );
 
   const body = el("div", { class: "rep-title__body" },
     ...entry.showings.map((s) => {
-      const when = `${fmtDateShort(s.date)} · ${fmtTime(s.time)}`;
+      const when = fmtShowtime(s.date, s.time, theaters.length > 1 ? s.theater : null);
       return el("div", { class: "rep-title__showing" },
         s.url
           ? el("a", { href: s.url, target: "_blank", rel: "noopener noreferrer", text: when })
@@ -1237,7 +1678,7 @@ function renderRepTitleRow(entry) {
     }),
   );
 
-  const modClass = mark === "yes" ? " rep-title--on" : mark === "no" ? " rep-title--off" : "";
+  const modClass = interest === "yes" ? " rep-title--on" : interest === "no" ? " rep-title--off" : "";
   const details = el("details", {
       class: `rep-title${modClass}`,
       dataset: { id: entry.id },
@@ -1328,9 +1769,24 @@ document.getElementById("repertory-list")?.addEventListener("click", (e) => {
   const want = btn.dataset.mark; // "yes" | "no"
   if (!id || !want) return;
   // Tapping the active mark clears it; tapping the other flips the state.
-  setRepMark(id, getRepMark(id) === want ? null : want);
+  const entry = findRepEntryById(id);
+  const meta = entry ? repEntryMeta(entry) : null;
+  setRepInterest(id, getRepInterest(id) === want ? null : want, meta);
   renderRepertoryTab();
   if (activeTab === "calendar") renderCalendarTab(allBundles);
+  if (activeTab === "interests") renderInterestsTab(allBundles);
+});
+
+document.getElementById("interest-list")?.addEventListener("click", (e) => {
+  const btn = e.target.closest(".rep-card-action");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const actions = btn.closest(".rep-card__actions");
+  const id = actions?.dataset.id;
+  const action = btn.dataset.action;
+  if (!id || !action) return;
+  handleRepCardAction(id, action);
 });
 
 // ---------- Tabs ----------
@@ -1534,6 +1990,65 @@ function requestDateDialog({ heading, copy, defaultDate, isUpdate }) {
     cancel.addEventListener("click", onCancel);
     remove.addEventListener("click", onRemove);
     form.addEventListener("submit", onSubmit);
+    dlg.addEventListener("cancel", onEsc);
+  });
+}
+
+// ---------- Showtime picker dialog ----------
+
+// Present the user with a list of showings for a rereleases run and resolve
+// with the chosen one. `showings` is an array of { date, time, theater }.
+// Returns { action: "save", showing } | { action: "remove" } | { action: "cancel" }.
+function requestShowtimeDialog({ heading, copy, showings, isUpdate, selectedKey }) {
+  return new Promise((resolve) => {
+    const dlg = document.getElementById("showtime-dialog");
+    const titleEl = document.getElementById("showtime-title");
+    const copyEl = document.getElementById("showtime-copy");
+    const listEl = document.getElementById("showtime-list");
+    const cancel = document.getElementById("showtime-cancel");
+    const remove = document.getElementById("showtime-remove");
+
+    titleEl.textContent = heading || "Pick a showtime";
+    copyEl.textContent = copy || "Tap the showtime.";
+    remove.hidden = !isUpdate;
+    listEl.innerHTML = "";
+
+    const buttons = [];
+    if (!showings.length) {
+      listEl.appendChild(el("p", { class: "sheet__copy", text: "No showtimes available." }));
+    } else {
+      for (const s of showings) {
+        const key = `${s.date}|${s.time}|${s.theater}`;
+        const btn = el("button", {
+            type: "button",
+            class: `showtime-option${key === selectedKey ? " is-selected" : ""}`,
+            dataset: { key },
+          },
+          el("span", { class: "showtime-option__when", text: `${fmtDateShort(s.date)} · ${fmtTime(s.time)}` }),
+          el("span", { class: "showtime-option__where", text: shortTheaterName(s.theater) }),
+        );
+        btn.addEventListener("click", () => {
+          dlg.close();
+          cleanup();
+          resolve({ action: "save", showing: s });
+        });
+        buttons.push(btn);
+        listEl.appendChild(btn);
+      }
+    }
+
+    dlg.showModal();
+
+    const cleanup = () => {
+      cancel.removeEventListener("click", onCancel);
+      remove.removeEventListener("click", onRemove);
+      dlg.removeEventListener("cancel", onEsc);
+    };
+    const onCancel = () => { dlg.close(); cleanup(); resolve({ action: "cancel" }); };
+    const onEsc = (e) => { e.preventDefault(); onCancel(); };
+    const onRemove = () => { dlg.close(); cleanup(); resolve({ action: "remove" }); };
+    cancel.addEventListener("click", onCancel);
+    remove.addEventListener("click", onRemove);
     dlg.addEventListener("cancel", onEsc);
   });
 }

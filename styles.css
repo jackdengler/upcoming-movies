@@ -1056,6 +1056,83 @@ details[open] > .month__summary .month__chevron {
   font-weight: 600;
 }
 
+/* Showtime picker sheet */
+
+.showtime-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 4px 0 8px;
+  max-height: 60dvh;
+  overflow-y: auto;
+}
+
+.showtime-option {
+  appearance: none;
+  border: 1px solid var(--divider);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: background-color 0.12s ease, border-color 0.12s ease, transform 0.08s ease;
+}
+.showtime-option:hover { background: rgba(0, 0, 0, 0.04); }
+.showtime-option:active { transform: scale(0.99); }
+.showtime-option.is-selected {
+  border-color: var(--accent);
+  background: rgba(184, 29, 36, 0.08);
+}
+.showtime-option__when {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg);
+}
+.showtime-option__where {
+  font-size: 12px;
+  color: var(--fg-2);
+}
+
+/* Rereleases interest cards (Interests tab) */
+
+.rep-card {
+  padding: 12px 14px;
+  border-top: 1px solid var(--divider);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rep-card:first-child { border-top: 0; }
+
+.rep-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.rep-card-action {
+  appearance: none;
+  border: 1px solid var(--divider);
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.12s ease, border-color 0.12s ease, transform 0.08s ease;
+}
+.rep-card-action:hover { background: rgba(0, 0, 0, 0.04); }
+.rep-card-action:active { transform: scale(0.97); }
+.rep-card-action[hidden] { display: none; }
+.rep-card-action--ghost { color: var(--fg-2); }
+
 .empty-state {
   display: grid;
   place-items: center;

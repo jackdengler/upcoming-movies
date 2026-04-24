@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -96,7 +96,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Family / Animation / Fantasy / Adventure",
-      "cast": "Hailee Steinfeld, Rashida Jones, Jim Hanks, Cee Lo Green",
+      "cast": "Hailee Steinfeld, Rashida Jones",
       "notes": ""
     }
   ]

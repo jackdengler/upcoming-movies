@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "date": "2026-06-05",
       "title": "Scary Movie",
       "director": "Michael Tiddes",
-      "studio": "Paramount Pictures",
+      "studio": "Miramax",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Horror",

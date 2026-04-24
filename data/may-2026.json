@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -26,18 +26,6 @@
       "genre": "Horror / Mystery",
       "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
       "notes": "We've been expecting you."
-    },
-    {
-      "tmdb_id": 1290792,
-      "date": "2026-05-01",
-      "title": "One Spoon of Chocolate",
-      "director": "RZA",
-      "studio": "RZA Productions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Drama / Thriller",
-      "cast": "Shameik Moore, Blair Underwood, RJ Cyler, Paris Jackson",
-      "notes": "He has nowhere to go. They have nowhere to hide."
     },
     {
       "tmdb_id": 1007757,
@@ -181,7 +169,7 @@
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
-      "notes": ""
+      "notes": "You are not supposed to be here."
     },
     {
       "tmdb_id": 1318413,

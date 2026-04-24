@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -76,18 +76,6 @@
       "notes": "Everyone deserves a second chance."
     },
     {
-      "tmdb_id": 1297446,
-      "date": "2026-03-13",
-      "title": "Slanted",
-      "director": "Amy Wang",
-      "studio": "Tideline Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Horror / Science Fiction",
-      "cast": "Shirley Chen, Mckenna Grace, Amelie Zilber, Vivian Wu",
-      "notes": "If you can't beat them... be them."
-    },
-    {
       "tmdb_id": 1366906,
       "date": "2026-03-13",
       "title": "The Gates",
@@ -150,7 +138,7 @@
     {
       "tmdb_id": 1266127,
       "date": "2026-03-20",
-      "title": "Ready or Not: Here I Come",
+      "title": "Ready or Not 2: Here I Come",
       "director": "Matt Bettinelli-Olpin, Tyler Gillett",
       "studio": "Searchlight Pictures",
       "budget_usd": 14000000,

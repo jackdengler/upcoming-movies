@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -62,18 +62,6 @@
       "genre": "Comedy / Adventure / Animation / Fantasy / Family",
       "cast": "H.E.R., Liza Soberano, Dave Franco, Jenny Slate",
       "notes": "Go together."
-    },
-    {
-      "tmdb_id": 1379486,
-      "date": "2026-09-25",
-      "title": "Victorian Psycho",
-      "director": "Zachary Wigon",
-      "studio": "Anton",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Maika Monroe, Thomasin McKenzie, Jason Isaacs, Amy De Bhrún",
-      "notes": ""
     }
   ]
 }

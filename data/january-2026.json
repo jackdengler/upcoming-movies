@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -14,18 +14,6 @@
       "genre": "Horror / Thriller",
       "cast": "Daisy Ridley, Brenton Thwaites, Mark Coles Smith, Matt Whelan",
       "notes": "Volunteers needed."
-    },
-    {
-      "tmdb_id": 1263012,
-      "date": "2026-01-09",
-      "title": "Dead Man's Wire",
-      "director": "Gus Van Sant",
-      "studio": "Elevated Films",
-      "budget_usd": 13000000,
-      "release_type": "wide",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Bill Skarsgård, Colman Domingo, Al Pacino, Dacre Montgomery",
-      "notes": "His revolution was televised."
     },
     {
       "tmdb_id": 840464,
@@ -74,18 +62,6 @@
       "genre": "Horror / Thriller / Science Fiction",
       "cast": "Ralph Fiennes, Jack O'Connell, Alfie Williams, Erin Kellyman",
       "notes": "Fear is the new faith."
-    },
-    {
-      "tmdb_id": 1276521,
-      "date": "2026-01-16",
-      "title": "Charlie the Wonderdog",
-      "director": "Shea Wageman",
-      "studio": "ICON Creative Studio",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Action / Adventure / Comedy / Family",
-      "cast": "Owen Wilson, Dawson Littman, Tabitha St. Germain, Sebastian Billingsley-Rodriguez",
-      "notes": "He's a good boy… most of the time."
     },
     {
       "tmdb_id": 1412598,

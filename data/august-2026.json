@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-04-23",
+  "updated": "2026-04-24",
   "source": "TMDB",
   "releases": [
     {
@@ -145,6 +145,18 @@
       "release_type": "wide",
       "genre": "Romance / Comedy",
       "cast": "Spike Fearn, Angourie Rice, Yali Topol Margalith, Ella Maisy Purvis",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1629199,
+      "date": "2026-08-28",
+      "title": "Goodbye Girl",
+      "director": "Oran Zegman",
+      "studio": "GulfStream Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Romance",
+      "cast": "Kiernan Shipka, Cole Sprouse, Natalia Dyer, David Iacono",
       "notes": ""
     },
     {

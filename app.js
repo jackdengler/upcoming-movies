@@ -1614,6 +1614,20 @@ Interests.onChange(() => {
   }
 });
 
+function dismissSplash() {
+  const splash = document.getElementById("app-splash");
+  if (!splash || splash.classList.contains("is-hidden")) return;
+  splash.classList.add("is-hidden");
+  splash.addEventListener(
+    "transitionend",
+    () => splash.remove(),
+    { once: true }
+  );
+}
+
+// Safety net: never leave the splash stuck even if data fetches hang forever.
+setTimeout(dismissSplash, 6000);
+
 Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
   .then(([bundles, repertory]) => {
     allBundles = bundles;
@@ -1622,9 +1636,11 @@ Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
     Activity.ingest({ bundles, screenings: repertory?.screenings || [] });
     updateActivityBadge();
     renderActiveTab();
+    requestAnimationFrame(dismissSplash);
   })
   .catch((e) => {
     const empty = document.getElementById("empty-year");
     empty.textContent = `Couldn't load data (${e?.message || "network error"}). Kill & reopen the app.`;
     empty.hidden = false;
+    dismissSplash();
   });

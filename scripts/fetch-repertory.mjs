@@ -46,11 +46,36 @@ const THEATERS = [
   { slug: "brain-dead", name: "Brain Dead Studios", address: "611 N Fairfax Ave, Los Angeles", url: "https://studios.wearebraindead.com/coming-soon/" },
 ];
 
+// First-run AMC venues the user favorites that are NOT Fathom partners, so
+// they need a separate pull from AMC's own REST API. We only keep screenings
+// tagged with the `fanfaves` attribute (AMC's Fan Faves rerelease program);
+// first-run programming at these venues is out of scope for a repertory app.
+// theatreId values come from AMC's API and appear in the ReactServer payload
+// on any theatre showtimes page.
+const AMC_PREFERRED_THEATERS = [
+  { slug: "amc-century-city-15", theatreId: 245, name: "AMC Century City 15", address: "10250 Santa Monica Blvd, Los Angeles", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15" },
+  { slug: "amc-dine-in-marina-6", theatreId: 2418, name: "AMC DINE-IN Marina 6", address: "13455 Maxella Ave, Marina Del Rey", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-dine-in-marina-6" },
+  { slug: "amc-marina-marketplace-6", theatreId: 446, name: "AMC Marina Marketplace 6", address: "4335 Glencoe Ave, Marina Del Rey", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-marina-marketplace-6" },
+  { slug: "amc-the-grove-14", theatreId: 450, name: "AMC The Grove 14", address: "189 The Grove Dr, Los Angeles", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-the-grove-14" },
+  { slug: "amc-santa-monica-7", theatreId: 203, name: "AMC Santa Monica 7", address: "1310 3rd Street, Santa Monica", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-santa-monica-7" },
+  { slug: "amc-burbank-town-center-8", theatreId: 209, name: "AMC Burbank Town Center 8", address: "201 E Magnolia Blvd, Burbank", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-burbank-town-center-8" },
+];
+
 // Fathom's specific LA venues (AMC Burbank, Regal LA Live, etc.) are
 // discovered dynamically by scrapeFathomEvents at run time and pushed onto
 // THEATERS as they're seen, so the static registry above doesn't need
 // stubs for them. Theater slugs are of the form `fathom-<theaterID>` where
 // theaterID is Fathom's internal venue id.
+//
+// Fathom's showtimes API returns the 25 nearest partner cinemas for each
+// event — 30+ chain venues, most of them far-flung. Narrow the cast here so
+// only the handful we actually care about get registered and emit screenings.
+// Keys are Fathom theater IDs; values are comments for human readers.
+const FATHOM_THEATER_ALLOWLIST = new Set([
+  "17364", // Universal Cinema AMC at CityWalk Hollywood
+  "18736", // AMC Burbank 16
+  "17327", // AMC South Bay Galleria 16
+]);
 
 // ---------- Generic helpers ----------
 
@@ -916,6 +941,7 @@ async function scrapeFathomEvents() {
         const theaterName = xmlField(thBlock, "TheaterName");
         const theaterID = xmlField(thBlock, "TheaterID");
         if (!theaterName || !theaterID) continue;
+        if (!FATHOM_THEATER_ALLOWLIST.has(theaterID)) continue;
         const theaterSlug = `fathom-${theaterID}`;
 
         // Step 4: register the theater once per run.
@@ -961,6 +987,91 @@ async function scrapeFathomEvents() {
   return dedupeScreenings(out);
 }
 
+// AMC's REST API at api.amctheatres.com. Auth'd via X-AMC-Vendor-Key header
+// with a free developer key (register at developers.amctheatres.com). Unlike
+// amctheatres.com the API subdomain isn't behind Cloudflare Turnstile, so it
+// works from CI. Without the key set, this source fails gracefully and the
+// rest of the scrape still runs.
+//
+// Endpoint: GET /v2/theatres/{id}/showtimes/{YYYY-MM-DD}
+//   → HAL-wrapped list of showings for a theatre on a date, each with:
+//       movieName, movieId, showDateTimeLocal (naive PT), websiteUrl,
+//       attributes[] (array of {code,name} or string codes), format{code}, ...
+//   Attributes include `fanfaves` for AMC's Fan Faves rerelease series, which
+//   is our rereleases-only signal. Other codes (imax, dolbycinemaatamcprime,
+//   amcartisanfilms, thrlschls) are first-run presentation formats or
+//   programs and are dropped. The global isRerelease year filter applied
+//   later is a safety net.
+async function scrapeAmcPreferredTheatres() {
+  const key = process.env.AMC_API_KEY;
+  if (!key) throw new Error("AMC_API_KEY not configured (set it as a GitHub Actions secret)");
+
+  // Register our 6 favorited venues on the first run so the UI has stable
+  // names even if a theatre returns zero fanfaves showings this window.
+  const known = new Set(THEATERS.map((t) => t.slug));
+  for (const t of AMC_PREFERRED_THEATERS) {
+    if (!known.has(t.slug)) {
+      THEATERS.push({ slug: t.slug, name: t.name, address: t.address, url: t.url });
+      known.add(t.slug);
+    }
+  }
+
+  // Build the date list covering the same horizon as the rest of the scraper.
+  // AMC's API is per-date, so we fan out 6 theatres × HORIZON_DAYS dates. At
+  // 60 days that's 360 calls/run — well under any reasonable quota; sleep
+  // between calls keeps us polite.
+  const dates = [];
+  for (let i = 0; i < HORIZON_DAYS; i++) {
+    const d = new Date(`${TODAY_LA}T00:00:00Z`);
+    d.setUTCDate(d.getUTCDate() + i);
+    dates.push(d.toISOString().slice(0, 10));
+  }
+
+  const headers = { "X-AMC-Vendor-Key": key };
+  const out = [];
+
+  // Attributes come back as either [{code,name}] (v2) or bare string codes
+  // depending on the endpoint version. Normalize both.
+  const hasCode = (attrs, code) => {
+    if (!Array.isArray(attrs)) return false;
+    return attrs.some((a) => (typeof a === "string" ? a : a?.code) === code);
+  };
+
+  for (const theater of AMC_PREFERRED_THEATERS) {
+    for (const date of dates) {
+      const url = `https://api.amctheatres.com/v2/theatres/${theater.theatreId}/showtimes/${date}?page-size=200`;
+      let data;
+      try {
+        data = await fetchJson(url, headers);
+      } catch {
+        // 404 = no showtimes on that date for that theatre. Common; skip.
+        continue;
+      }
+      const showings = data?._embedded?.showtimes || data?.showtimes || [];
+      for (const s of showings) {
+        if (!hasCode(s.attributes, "fanfaves")) continue;
+        const start = s.showDateTimeLocal || s.showDateTimeUtc;
+        if (!start) continue;
+        const parts = naivePTParts(start) || laParts(start);
+        if (!parts || !inWindow(parts.date)) continue;
+        const name = decodeEntities(s.movieName || "");
+        out.push({
+          theater: theater.slug,
+          title: cleanTitle(name),
+          year: extractYear(name),
+          date: parts.date,
+          time: parts.time,
+          format: detectFormat(s.format?.code || s.format?.name || name),
+          series: "Fan Faves",
+          url: s.websiteUrl || s._links?.purchase?.href || theater.url,
+        });
+      }
+      await sleep(150);
+    }
+  }
+  return dedupeScreenings(out);
+}
+
 // ---------- Source orchestration ----------
 
 const SOURCES = [
@@ -971,6 +1082,7 @@ const SOURCES = [
   { id: "alamo-dtla", theaters: ["alamo-dtla"], fn: scrapeAlamoDtla },
   { id: "academy-museum", theaters: ["academy-museum"], fn: scrapeAcademyMuseum },
   { id: "brain-dead", theaters: ["brain-dead"], fn: scrapeBrainDeadStudios },
+  { id: "amc-preferred", theaters: AMC_PREFERRED_THEATERS.map((t) => t.slug), fn: scrapeAmcPreferredTheatres },
   // Fathom's specific venue slugs are discovered at run time and all start
   // with "fathom-"; use a prefix match instead of a static theater list.
   { id: "fathom", theaterPrefix: "fathom-", fn: scrapeFathomEvents },
@@ -1032,9 +1144,20 @@ for (const src of SOURCES) {
 }
 _debug.currentSource = null;
 
+// Rereleases-only: drop any screening whose film release year matches or
+// exceeds its screening year (i.e. first-run programming at Vista, Alamo,
+// Brain Dead). Unknown-year rows are kept — most rep houses fail to expose
+// a year in markup and are reliably older films.
+const isRerelease = (s) => {
+  if (s.year == null) return true;
+  const screeningYear = Number((s.date || "").slice(0, 4));
+  return Number.isFinite(screeningYear) && s.year < screeningYear;
+};
+
 const cleaned = dedupeScreenings(
   allScreenings
     .filter((s) => s && s.title && s.date && s.time && inWindow(s.date))
+    .filter(isRerelease)
     .map((s) => ({
       theater: s.theater,
       title: s.title,

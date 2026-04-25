@@ -46,6 +46,30 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Eliminate the 300ms tap delay on iOS PWAs and disable text-selection
+   on tappable controls so taps register the moment a finger lifts. */
+button,
+a,
+[role="button"],
+[role="tab"],
+[role="gridcell"],
+.row,
+.calendar__cell,
+.tab-bar__btn,
+.segmented__btn,
+.theater-chip,
+.filter-chip,
+.rating__btn,
+.rep-interest,
+.rep-card-action,
+.showtime-option,
+.app-header__icon,
+.calendar__navbtn,
+.month__summary,
+.rep-title__summary {
+  touch-action: manipulation;
+}
+
 html, body {
   margin: 0;
   padding: 0;

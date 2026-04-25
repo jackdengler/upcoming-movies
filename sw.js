@@ -1,4 +1,4 @@
-const CACHE = "upcoming-v14";
+const CACHE = "upcoming-v15";
 const SHELL = [
   "./",
   "./index.html",
@@ -23,8 +23,10 @@ self.addEventListener("activate", (e) => {
   self.clients.claim();
 });
 
-// Network-first for everything same-origin; cache as offline fallback.
-// api.github.com and other cross-origin requests pass through untouched.
+// Stale-while-revalidate for same-origin GETs: serve from cache instantly,
+// kick off a network refresh in the background, and fall back to network if
+// nothing is cached yet. api.github.com and other cross-origin requests pass
+// through untouched.
 self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
@@ -32,18 +34,23 @@ self.addEventListener("fetch", (e) => {
   if (url.origin !== location.origin) return;
 
   e.respondWith(
-    fetch(req)
-      .then((res) => {
-        const copy = res.clone();
-        caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {});
-        return res;
-      })
-      .catch(() =>
-        caches.match(req).then((hit) => {
-          if (hit) return hit;
-          if (req.mode === "navigate") return caches.match("./index.html");
-          return new Response("", { status: 503 });
+    caches.open(CACHE).then(async (cache) => {
+      const cached = await cache.match(req);
+      const network = fetch(req)
+        .then((res) => {
+          if (res && res.ok) cache.put(req, res.clone()).catch(() => {});
+          return res;
         })
-      )
+        .catch(() => null);
+
+      if (cached) return cached;
+      const fresh = await network;
+      if (fresh) return fresh;
+      if (req.mode === "navigate") {
+        const fallback = await cache.match("./index.html");
+        if (fallback) return fallback;
+      }
+      return new Response("", { status: 503 });
+    })
   );
 });

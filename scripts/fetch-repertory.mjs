@@ -397,61 +397,180 @@ function jsonLdEvents(html, theaterSlug, fallbackUrl) {
   return out;
 }
 
-// American Cinematheque (Aero + Egyptian + Los Feliz Theatre). The site's
-// #eventsApp Vue widget calls The Events Calendar REST API
-// (/wp-json/tribe/events/v1/events), which returns a structured events list
-// we can route to the right venue by Tribe Events venue id.
-//   54  = Aero Theatre
-//   55  = Egyptian Theatre
-//   102 = Los Feliz Theatre
+// American Cinematheque (Aero + Egyptian + Los Feliz Theatre).
+//
+// Originally hit The Events Calendar REST API at
+// /wp-json/tribe/events/v1/events, but the Cinematheque site has been
+// returning HTTP 404 for that path from CI for some time, leaving the three
+// venues empty. We now fall through several strategies — REST first (cheap,
+// returns structured data when available), then the per-venue HTML pages
+// which carry JSON-LD for upcoming events, then the /now-showing/
+// aggregator. Whichever produces rows wins.
 async function scrapeAmericanCinematheque() {
   const AC_VENUE_TO_THEATER = { 54: "aero", 55: "egyptian", 102: "los-feliz-theatre" };
-  const base = "https://www.americancinematheque.com/wp-json/tribe/events/v1/events";
-  const params = new URLSearchParams({
-    per_page: "50",
-    start_date: TODAY_LA,
-    end_date: HORIZON_LA,
-  });
-  let url = `${base}?${params.toString()}`;
+  const matchVenueName = (text) => {
+    const v = String(text || "").toLowerCase();
+    if (v.includes("aero")) return "aero";
+    if (v.includes("egyptian")) return "egyptian";
+    if (v.includes("los feliz")) return "los-feliz-theatre";
+    return null;
+  };
+
+  // Strategy 1: Tribe Events REST API. Cheap when it works; falls through on
+  // the HTTP 404 the production endpoint has been emitting.
+  try {
+    const base = "https://www.americancinematheque.com/wp-json/tribe/events/v1/events";
+    const params = new URLSearchParams({
+      per_page: "50",
+      start_date: TODAY_LA,
+      end_date: HORIZON_LA,
+    });
+    let url = `${base}?${params.toString()}`;
+    const restRows = [];
+    for (let page = 0; page < 10 && url; page++) {
+      const data = await fetchJson(url);
+      if (!data?.events?.length) break;
+      for (const ev of data.events) {
+        const start = ev.start_date || ev.startDate;
+        if (!start) continue;
+        const parts = naivePTParts(start) || laParts(start);
+        if (!parts || !inWindow(parts.date)) continue;
+        const theater =
+          AC_VENUE_TO_THEATER[ev.venue?.id] ||
+          matchVenueName(ev.venue?.venue || ev.venue?.name);
+        if (!theater) continue;
+        const name = decodeEntities(ev.title || "");
+        const desc = decodeEntities(ev.description || "").replace(/<[^>]+>/g, " ");
+        const series = Array.isArray(ev.categories) && ev.categories[0]?.name
+          ? decodeEntities(ev.categories[0].name)
+          : null;
+        restRows.push({
+          theater,
+          title: cleanTitle(name),
+          year: extractYear(name),
+          date: parts.date,
+          time: parts.time,
+          format: detectFormat(`${name} ${desc}`),
+          series,
+          url: ev.url || "https://www.americancinematheque.com/now-showing/",
+        });
+      }
+      url = data.next_rest_url || null;
+    }
+    if (restRows.length) return dedupeScreenings(restRows);
+  } catch {
+    // Fall through to HTML strategies.
+  }
 
   const out = [];
-  for (let page = 0; page < 10 && url; page++) {
-    const data = await fetchJson(url);
-    if (!data?.events?.length) break;
-    for (const ev of data.events) {
-      const start = ev.start_date || ev.startDate;
-      if (!start) continue;
-      const parts = naivePTParts(start) || laParts(start);
+  // Track whether any HTML strategy actually reached a live page. If every
+  // request fails (network/WAF blocks the whole site), throw so the
+  // orchestrator preserves the previous run's AC screenings instead of
+  // wiping Egyptian/Aero/Los Feliz to zero.
+  let gotAnyHtml = false;
+
+  // Tribe Events Calendar v2 list markup, server-rendered on the venue and
+  // /now-showing/ pages. Each event is an <article> carrying a datetime, a
+  // title link, and a venue label. Used by both the per-venue and
+  // aggregator scrapes below.
+  const parseTribeListHtml = (html, defaultTheater) => {
+    const rows = [];
+    const articleRe = /<article[^>]*class="[^"]*tribe-events-calendar-list__event[^"]*"[^>]*>([\s\S]*?)<\/article>/gi;
+    let m;
+    while ((m = articleRe.exec(html))) {
+      const block = m[1];
+      const dtM = block.match(/<time[^>]+datetime="([^"]+)"/);
+      if (!dtM) continue;
+      const parts = naivePTParts(dtM[1]) || laParts(dtM[1]);
       if (!parts || !inWindow(parts.date)) continue;
-
-      let theater = AC_VENUE_TO_THEATER[ev.venue?.id];
-      if (!theater) {
-        const vname = String(ev.venue?.venue || ev.venue?.name || "").toLowerCase();
-        if (vname.includes("aero")) theater = "aero";
-        else if (vname.includes("egyptian")) theater = "egyptian";
-        else if (vname.includes("los feliz")) theater = "los-feliz-theatre";
-      }
+      const titleM = block.match(
+        /class="[^"]*tribe-events-calendar-list__event-title-link[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i
+      );
+      if (!titleM) continue;
+      const evUrl = titleM[1];
+      const titleRaw = decodeEntities(stripTags(titleM[2])).trim();
+      if (!titleRaw) continue;
+      const venueM = block.match(
+        /class="[^"]*tribe-events-calendar-list__event-venue-title[^"]*"[^>]*>\s*([\s\S]*?)\s*</i
+      );
+      const theater = matchVenueName(venueM ? venueM[1] : "") || defaultTheater;
       if (!theater) continue;
+      rows.push({
+        theater,
+        title: cleanTitle(titleRaw),
+        year: extractYear(titleRaw),
+        date: parts.date,
+        time: parts.time,
+        format: detectFormat(titleRaw),
+        series: null,
+        url: evUrl,
+      });
+    }
+    return rows;
+  };
 
-      const name = decodeEntities(ev.title || "");
-      const desc = decodeEntities(ev.description || "").replace(/<[^>]+>/g, " ");
-      const series = Array.isArray(ev.categories) && ev.categories[0]?.name
-        ? decodeEntities(ev.categories[0].name)
-        : null;
+  // Strategy 2: per-venue HTML pages. JSON-LD events are emitted by the
+  // Tribe plugin alongside the visible listing, so when JSON-LD is present
+  // we get clean structured rows without parsing markup.
+  const venuePages = [
+    { theater: "aero", url: "https://www.americancinematheque.com/aero/" },
+    { theater: "egyptian", url: "https://www.americancinematheque.com/egyptian/" },
+    { theater: "los-feliz-theatre", url: "https://www.americancinematheque.com/about/theatres/los-feliz-theatre/" },
+  ];
+  for (const { theater, url } of venuePages) {
+    let html = "";
+    try { html = await fetchText(url); } catch { continue; }
+    gotAnyHtml = true;
+    out.push(...jsonLdEvents(html, theater, url));
+    out.push(...parseTribeListHtml(html, theater));
+    await sleep(300);
+  }
+  if (out.length) return dedupeScreenings(out);
+
+  // Strategy 3: /now-showing/ aggregator. JSON-LD events here carry a
+  // location.name we route through matchVenueName; HTML rows include a
+  // venue label inline.
+  let nowHtml = "";
+  try {
+    nowHtml = await fetchText("https://www.americancinematheque.com/now-showing/");
+    gotAnyHtml = true;
+  } catch {
+    if (!gotAnyHtml) {
+      throw new Error("americancinematheque.com unreachable across REST + venue + now-showing");
+    }
+    return [];
+  }
+  for (const block of extractJsonLd(nowHtml)) {
+    for (const ev of flattenEvents(block)) {
+      const start = ev.startDate || ev.start_date;
+      if (!start) continue;
+      const parts =
+        String(start).endsWith("Z") || /[+-]\d{2}:?\d{2}$/.test(String(start))
+          ? laParts(start)
+          : naivePTParts(start) || laParts(start);
+      if (!parts || !inWindow(parts.date)) continue;
+      const locName = ev.location?.name || ev.location?.[0]?.name || "";
+      const theater = matchVenueName(locName);
+      if (!theater) continue;
+      const name = ev.name || ev.headline || "";
       out.push({
         theater,
         title: cleanTitle(name),
-        year: extractYear(name),
+        year:
+          extractYear(name) ||
+          (ev.workPresented?.dateCreated
+            ? Number(String(ev.workPresented.dateCreated).slice(0, 4))
+            : null),
         date: parts.date,
         time: parts.time,
-        format: detectFormat(`${name} ${desc}`),
-        series,
+        format: detectFormat(`${name} ${ev.description || ""}`),
+        series: ev.superEvent?.name || null,
         url: ev.url || "https://www.americancinematheque.com/now-showing/",
       });
     }
-    url = data.next_rest_url || null;
   }
-  return out;
+  out.push(...parseTribeListHtml(nowHtml, null));
+  return dedupeScreenings(out);
 }
 
 // Nuart (Landmark). Landmark is a Gatsby site backed by Webedia's box-office

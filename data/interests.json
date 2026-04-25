@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-24T04:49:56.145Z",
+  "updated": "2026-04-25T21:52:47.639Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1019,12 +1019,11 @@
       "tmdb_id": 1421903
     },
     "tmdb:936075": {
-      "level": "booked",
-      "at": "2026-04-21T17:54:13.353Z",
+      "level": "must",
+      "at": "2026-04-25T21:52:44.687Z",
       "title": "Michael",
       "date": "2026-04-24",
-      "tmdb_id": 936075,
-      "booked_date": "2026-04-25"
+      "tmdb_id": 936075
     },
     "tmdb:1390300": {
       "level": "likely",

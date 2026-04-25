@@ -291,7 +291,7 @@ const monthFilename = (year, monthIdx) => {
 async function loadYear(year) {
   const urls = Array.from({ length: 12 }, (_, i) => monthFilename(year, i));
   const results = await Promise.all(
-    urls.map((u) => fetch(u, { cache: "no-cache" })
+    urls.map((u) => fetch(u)
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null))
   );
@@ -300,7 +300,7 @@ async function loadYear(year) {
 
 async function loadRepertory() {
   try {
-    const r = await fetch("./data/repertory.json", { cache: "no-cache" });
+    const r = await fetch("./data/repertory.json");
     if (!r.ok) return null;
     return await r.json();
   } catch { return null; }
@@ -893,16 +893,9 @@ function renderRereleasesInterestsTab() {
   const empty = document.getElementById("empty-interests");
   list.innerHTML = "";
 
-  const screenings = repertoryState.data?.screenings || [];
-  const groups = groupByTitleMonth(screenings);
-  const entryById = new Map();
-  for (const [, titleMap] of groups) {
-    for (const [id, entry] of titleMap) entryById.set(id, entry);
-  }
-
   const grouped = { interested: [], watched: [], past: [], not: [] };
   for (const [id, mark] of Object.entries(repMarks)) {
-    const entry = entryById.get(id) || null;
+    const entry = repEntryById(id);
     // Opportunistically backfill meta so we can still render the card after
     // the run's screenings have rolled off.
     if (entry && !mark.meta) {
@@ -1020,7 +1013,9 @@ async function handleRepCardAction(id, action) {
   }
   renderInterestsTab(allBundles);
   if (activeTab === "list" && activeKind === "rereleases") renderRepertoryTab();
+  else tabDirty.list = true;
   if (activeTab === "calendar") renderCalendarTab(allBundles);
+  else tabDirty.calendar = true;
 }
 
 // ---------- Activity tab rendering ----------
@@ -1430,6 +1425,11 @@ const THEATER_FILTER_KEY = "upcoming:theater-filters";
 const repertoryState = {
   data: null,                         // { theaters, screenings, ... } or null
   theatersBySlug: new Map(),
+  // Cached groupings — built lazily, invalidated when the underlying screening
+  // list changes (data swap or theater-filter toggle).
+  _groupedAll: null,                  // groupByTitleMonth(all screenings)
+  _groupedActive: null,               // groupByTitleMonth(activeScreenings())
+  _entryById: null,                   // id -> entry, built from _groupedAll
   hiddenTheaters: (() => {
     try {
       const saved = JSON.parse(localStorage.getItem(THEATER_FILTER_KEY) || "null");
@@ -1438,6 +1438,39 @@ const repertoryState = {
     return new Set();
   })(),
 };
+
+function invalidateRepertoryCaches() {
+  repertoryState._groupedAll = null;
+  repertoryState._groupedActive = null;
+  repertoryState._entryById = null;
+}
+
+function groupedAllRep() {
+  if (!repertoryState._groupedAll) {
+    repertoryState._groupedAll = groupByTitleMonth(
+      repertoryState.data?.screenings || []
+    );
+  }
+  return repertoryState._groupedAll;
+}
+
+function groupedActiveRep() {
+  if (!repertoryState._groupedActive) {
+    repertoryState._groupedActive = groupByTitleMonth(activeScreenings());
+  }
+  return repertoryState._groupedActive;
+}
+
+function repEntryById(id) {
+  if (!repertoryState._entryById) {
+    const map = new Map();
+    for (const [, titleMap] of groupedAllRep()) {
+      for (const [eid, entry] of titleMap) map.set(eid, entry);
+    }
+    repertoryState._entryById = map;
+  }
+  return repertoryState._entryById.get(id) || null;
+}
 
 function saveTheaterFilters() {
   try {
@@ -1453,6 +1486,7 @@ function setRepertoryData(data) {
   repertoryState.theatersBySlug = new Map(
     (data?.theaters || []).map((t) => [t.slug, t])
   );
+  invalidateRepertoryCaches();
 }
 
 function activeScreenings() {
@@ -1498,6 +1532,7 @@ function renderTheaterFilterBar() {
       repertoryState.hiddenTheaters.add(slug);
     }
     saveTheaterFilters();
+    repertoryState._groupedActive = null;
     renderTheaterFilterBar();
     renderRepertoryTab();
   }, { once: true });
@@ -1581,13 +1616,7 @@ function fmtShowtime(date, time, theater) {
 // showtime lists for the picker and to backfill meta when marks are edited.
 // Returns null if the id's run isn't in the current screening window.
 function findRepEntryById(id) {
-  const screenings = repertoryState.data?.screenings || [];
-  const groups = groupByTitleMonth(screenings);
-  for (const [, titleMap] of groups) {
-    const entry = titleMap.get(id);
-    if (entry) return entry;
-  }
-  return null;
+  return repEntryById(id);
 }
 
 const fmtMonthLabel = (yyyymm) => {
@@ -1709,7 +1738,7 @@ function renderRepertoryTab() {
   // Mirror the new-releases layout: collapsible month wrappers with the
   // current/next months expanded by default and past months pushed below
   // the upcoming ones. Inner per-title grouping stays intact.
-  const groups = groupByTitleMonth(screenings);
+  const groups = groupedActiveRep();
   const upcoming = [];
   const past = [];
   for (const g of groups) (g[0] < CURRENT_MONTH_KEY ? past : upcoming).push(g);
@@ -1773,8 +1802,12 @@ document.getElementById("repertory-list")?.addEventListener("click", (e) => {
   const meta = entry ? repEntryMeta(entry) : null;
   setRepInterest(id, getRepInterest(id) === want ? null : want, meta);
   renderRepertoryTab();
+  // Other tabs depend on rep interest state too; rebuild whichever is showing
+  // and stash a dirty flag for the rest so they're rebuilt on next visit.
   if (activeTab === "calendar") renderCalendarTab(allBundles);
+  else tabDirty.calendar = true;
   if (activeTab === "interests") renderInterestsTab(allBundles);
+  else tabDirty.interests = true;
 });
 
 document.getElementById("interest-list")?.addEventListener("click", (e) => {
@@ -1794,6 +1827,24 @@ document.getElementById("interest-list")?.addEventListener("click", (e) => {
 let allBundles = [];
 let activeTab = "list";
 let updatesOpen = false;
+
+// Track which tabs have been rendered at least once and which need a fresh
+// render before being shown. Switching to a tab whose DOM is up-to-date just
+// flips its `hidden` flag — no rebuild — so navigation feels instant.
+const tabRendered = { list: false, calendar: false, interests: false };
+const tabDirty = { list: true, calendar: true, interests: true };
+
+const markAllTabsDirty = () => {
+  tabDirty.list = true;
+  tabDirty.calendar = true;
+  tabDirty.interests = true;
+};
+
+const markOtherTabsDirty = () => {
+  for (const t of ["list", "calendar", "interests"]) {
+    if (t !== activeTab) tabDirty[t] = true;
+  }
+};
 
 const setPanelHidden = (id, hide) => {
   const e = document.getElementById(id);
@@ -1826,6 +1877,12 @@ function renderActiveTab() {
   if (activeTab === "list") renderListTab();
   else if (activeTab === "calendar") renderCalendarTab(allBundles);
   else if (activeTab === "interests") renderInterestsTab(allBundles);
+  tabRendered[activeTab] = true;
+  tabDirty[activeTab] = false;
+}
+
+function ensureActiveTabFresh() {
+  if (!tabRendered[activeTab] || tabDirty[activeTab]) renderActiveTab();
 }
 
 function switchTab(tab) {
@@ -1843,11 +1900,13 @@ function switchTab(tab) {
   document.querySelectorAll(".tab-bar__btn").forEach((b) =>
     b.classList.toggle("is-active", b.dataset.tab === tab)
   );
+  // Reveal the destination panel immediately so the user sees the navigation
+  // land on this frame; only rebuild its DOM if the cached copy is stale.
   setPanelHidden("tab-list", tab !== "list");
   setPanelHidden("tab-calendar", tab !== "calendar");
   setPanelHidden("tab-interests", tab !== "interests");
 
-  renderActiveTab();
+  ensureActiveTabFresh();
 }
 
 document.querySelectorAll(".tab-bar__btn").forEach((b) => {
@@ -1900,6 +1959,8 @@ document.getElementById("kind-segmented")?.addEventListener("click", (e) => {
   activeKind = kind;
   saveActiveKind();
   syncSegmentedChips();
+  // The kind affects every list/calendar/interests panel, so mark all stale.
+  markAllTabsDirty();
   if (updatesOpen) renderActivityTab();
   else renderActiveTab();
 });
@@ -2055,10 +2116,38 @@ function requestShowtimeDialog({ heading, copy, showings, isUpdate, selectedKey 
 
 // ---------- Boot ----------
 
-Interests.onChange(() => {
-  if (activeTab === "interests") renderInterestsTab(allBundles);
-  else if (activeTab === "calendar") renderCalendarTab(allBundles);
-  else if (activeTab === "list" && activeKind === "rereleases") renderRepertoryTab();
+// Run a render pass scheduled by `Interests.onChange`. Multiple synchronous
+// interest mutations collapse into one rAF tick: we either rebuild the active
+// tab once (interests / calendar / rereleases list) or, on the new-releases
+// list, do a cheap in-place class/badge update on the rows that exist.
+let pendingInterestsRender = false;
+function flushInterestsChange() {
+  pendingInterestsRender = false;
+
+  // The active tab gets a real re-render; the others get a dirty flag so they
+  // rebuild on the next visit instead of right now.
+  let didFullRender = false;
+  if (activeTab === "interests") {
+    renderInterestsTab(allBundles);
+    didFullRender = true;
+  } else if (activeTab === "calendar") {
+    renderCalendarTab(allBundles);
+    didFullRender = true;
+  } else if (activeTab === "list" && activeKind === "rereleases") {
+    renderRepertoryTab();
+    didFullRender = true;
+  }
+  if (didFullRender) {
+    tabRendered[activeTab] = true;
+    tabDirty[activeTab] = false;
+    markOtherTabsDirty();
+    return;
+  }
+  // We're on the new-releases list, which we don't fully rebuild on every
+  // interest tap. Instead, patch the existing rows in place and let the other
+  // tabs lazily rebuild when revealed.
+  markOtherTabsDirty();
+
   for (const row of document.querySelectorAll(".row[data-key]")) {
     const key = row.dataset.key;
     const lvl = Interests.getLevel(key);
@@ -2127,6 +2216,12 @@ Interests.onChange(() => {
     btn.classList.toggle("is-active", noLocal);
     btn.setAttribute("aria-pressed", noLocal ? "true" : "false");
   }
+}
+
+Interests.onChange(() => {
+  if (pendingInterestsRender) return;
+  pendingInterestsRender = true;
+  requestAnimationFrame(flushInterestsChange);
 });
 
 Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])

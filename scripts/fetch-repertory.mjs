@@ -399,177 +399,107 @@ function jsonLdEvents(html, theaterSlug, fallbackUrl) {
 
 // American Cinematheque (Aero + Egyptian + Los Feliz Theatre).
 //
-// Originally hit The Events Calendar REST API at
-// /wp-json/tribe/events/v1/events, but the Cinematheque site has been
-// returning HTTP 404 for that path from CI for some time, leaving the three
-// venues empty. We now fall through several strategies — REST first (cheap,
-// returns structured data when available), then the per-venue HTML pages
-// which carry JSON-LD for upcoming events, then the /now-showing/
-// aggregator. Whichever produces rows wins.
+// The Cinematheque site is a Vue SPA that hydrates from a custom WP-REST
+// endpoint proxying their Algolia `event` index:
+//   /wp-json/wp/v2/algolia_get_events?environment=production_<year>
+//     &startDate=<unix>&endDate=<unix>
+// The legacy /wp-json/tribe/events/v1/events path was retired during the
+// 2025-26 site rebuild and now 404s; the page itself contains no
+// server-rendered events, just `<div id="eventsApp">`, so HTML scraping is
+// pointless. Each Algolia hit is a flat object with the relevant fields
+// (title, url, event_location[], event_start_date, event_start_time, etc.).
+//
+// Venue ids are taxonomy term ids: 54=Aero, 55=Egyptian, 102=Los Feliz Theatre.
 async function scrapeAmericanCinematheque() {
   const AC_VENUE_TO_THEATER = { 54: "aero", 55: "egyptian", 102: "los-feliz-theatre" };
-  const matchVenueName = (text) => {
-    const v = String(text || "").toLowerCase();
-    if (v.includes("aero")) return "aero";
-    if (v.includes("egyptian")) return "egyptian";
-    if (v.includes("los feliz")) return "los-feliz-theatre";
-    return null;
-  };
 
-  // Strategy 1: Tribe Events REST API. Cheap when it works; falls through on
-  // the HTTP 404 the production endpoint has been emitting.
-  try {
-    const base = "https://www.americancinematheque.com/wp-json/tribe/events/v1/events";
-    const params = new URLSearchParams({
-      per_page: "50",
-      start_date: TODAY_LA,
-      end_date: HORIZON_LA,
-    });
-    let url = `${base}?${params.toString()}`;
-    const restRows = [];
-    for (let page = 0; page < 10 && url; page++) {
-      const data = await fetchJson(url);
-      if (!data?.events?.length) break;
-      for (const ev of data.events) {
-        const start = ev.start_date || ev.startDate;
-        if (!start) continue;
-        const parts = naivePTParts(start) || laParts(start);
-        if (!parts || !inWindow(parts.date)) continue;
-        const theater =
-          AC_VENUE_TO_THEATER[ev.venue?.id] ||
-          matchVenueName(ev.venue?.venue || ev.venue?.name);
-        if (!theater) continue;
-        const name = decodeEntities(ev.title || "");
-        const desc = decodeEntities(ev.description || "").replace(/<[^>]+>/g, " ");
-        const series = Array.isArray(ev.categories) && ev.categories[0]?.name
-          ? decodeEntities(ev.categories[0].name)
-          : null;
-        restRows.push({
-          theater,
-          title: cleanTitle(name),
-          year: extractYear(name),
-          date: parts.date,
-          time: parts.time,
-          format: detectFormat(`${name} ${desc}`),
-          series,
-          url: ev.url || "https://www.americancinematheque.com/now-showing/",
-        });
-      }
-      url = data.next_rest_url || null;
-    }
-    if (restRows.length) return dedupeScreenings(restRows);
-  } catch {
-    // Fall through to HTML strategies.
-  }
+  // The site's `algolia_env` JS global is "production_<currentYear>"; the
+  // index is rolled annually so we need to track the calendar year.
+  const env = `production_${new Date().getFullYear()}`;
+  const baseUrl =
+    "https://www.americancinematheque.com/wp-json/wp/v2/algolia_get_events";
+
+  // The site itself requests one visible month at a time. Mirror that to
+  // avoid hidden Algolia pagination caps: 30-day chunks across our window.
+  // LA midnight ≈ 08:00 UTC during PST (07:00 during PDT); a one-hour
+  // discrepancy here is harmless because we re-filter by inWindow below.
+  const dayUnix = (dateStr) =>
+    Math.floor(new Date(`${dateStr}T08:00:00Z`).getTime() / 1000);
+  const startUnix = dayUnix(TODAY_LA);
+  const endUnix = dayUnix(HORIZON_LA) + 86400;
 
   const out = [];
-  // Track whether any HTML strategy actually reached a live page. If every
-  // request fails (network/WAF blocks the whole site), throw so the
-  // orchestrator preserves the previous run's AC screenings instead of
-  // wiping Egyptian/Aero/Los Feliz to zero.
-  let gotAnyHtml = false;
+  for (let chunkStart = startUnix; chunkStart < endUnix; chunkStart += 30 * 86400) {
+    const chunkEnd = Math.min(chunkStart + 30 * 86400, endUnix);
+    const url = `${baseUrl}?environment=${encodeURIComponent(env)}&startDate=${chunkStart}&endDate=${chunkEnd}`;
+    const data = await fetchJson(url);
+    // Endpoint returns either a bare array or an Algolia-style { hits: [...] }
+    // wrapper depending on plugin version; accept both.
+    const hits = Array.isArray(data)
+      ? data
+      : data?.hits || data?.events || data?.results || [];
 
-  // Tribe Events Calendar v2 list markup, server-rendered on the venue and
-  // /now-showing/ pages. Each event is an <article> carrying a datetime, a
-  // title link, and a venue label. Used by both the per-venue and
-  // aggregator scrapes below.
-  const parseTribeListHtml = (html, defaultTheater) => {
-    const rows = [];
-    const articleRe = /<article[^>]*class="[^"]*tribe-events-calendar-list__event[^"]*"[^>]*>([\s\S]*?)<\/article>/gi;
-    let m;
-    while ((m = articleRe.exec(html))) {
-      const block = m[1];
-      const dtM = block.match(/<time[^>]+datetime="([^"]+)"/);
-      if (!dtM) continue;
-      const parts = naivePTParts(dtM[1]) || laParts(dtM[1]);
-      if (!parts || !inWindow(parts.date)) continue;
-      const titleM = block.match(
-        /class="[^"]*tribe-events-calendar-list__event-title-link[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i
-      );
-      if (!titleM) continue;
-      const evUrl = titleM[1];
-      const titleRaw = decodeEntities(stripTags(titleM[2])).trim();
-      if (!titleRaw) continue;
-      const venueM = block.match(
-        /class="[^"]*tribe-events-calendar-list__event-venue-title[^"]*"[^>]*>\s*([\s\S]*?)\s*</i
-      );
-      const theater = matchVenueName(venueM ? venueM[1] : "") || defaultTheater;
+    for (const ev of hits) {
+      const locations = Array.isArray(ev.event_location) ? ev.event_location : [];
+      let theater = null;
+      for (const loc of locations) {
+        const id =
+          typeof loc === "object" && loc
+            ? loc.id ?? loc.term_id ?? loc.value
+            : loc;
+        const slug =
+          AC_VENUE_TO_THEATER[Number(id)] || AC_VENUE_TO_THEATER[String(id)];
+        if (slug) { theater = slug; break; }
+      }
       if (!theater) continue;
-      rows.push({
+
+      // event_start_date is "YYYYMMDD" in LA-local, the cleanest source.
+      // Fall back to the unix timestamp when missing.
+      let date = null;
+      if (ev.event_start_date) {
+        const m = String(ev.event_start_date).match(/^(\d{4})(\d{2})(\d{2})$/);
+        if (m) date = `${m[1]}-${m[2]}-${m[3]}`;
+      }
+      if (!date && ev.event_start_date_unix) {
+        const parts = laParts(new Date(Number(ev.event_start_date_unix) * 1000));
+        if (parts) date = parts.date;
+      }
+      if (!date || !inWindow(date)) continue;
+
+      // event_start_time is the user-facing 12h string ("6:30 PM"); prefer
+      // it so our times match what AC displays. Fall back to the unix value.
+      let time = null;
+      if (ev.event_start_time) time = parse12h(ev.event_start_time);
+      if (!time && ev.event_start_date_unix) {
+        const parts = laParts(new Date(Number(ev.event_start_date_unix) * 1000));
+        if (parts) time = parts.time;
+      }
+      if (!time) continue;
+
+      const title = decodeEntities(String(ev.title || ev.name || "")).trim();
+      if (!title) continue;
+
+      const excerpt = decodeEntities(
+        String(ev.event_card_excerpt || "").replace(/<[^>]+>/g, " ")
+      );
+      const evUrl =
+        ev.url ||
+        ev.permalink ||
+        "https://www.americancinematheque.com/now-showing/";
+
+      out.push({
         theater,
-        title: cleanTitle(titleRaw),
-        year: extractYear(titleRaw),
-        date: parts.date,
-        time: parts.time,
-        format: detectFormat(titleRaw),
+        title: cleanTitle(title),
+        year: extractYear(title),
+        date,
+        time,
+        format: detectFormat(`${title} ${excerpt}`),
         series: null,
         url: evUrl,
       });
     }
-    return rows;
-  };
-
-  // Strategy 2: per-venue HTML pages. JSON-LD events are emitted by the
-  // Tribe plugin alongside the visible listing, so when JSON-LD is present
-  // we get clean structured rows without parsing markup.
-  const venuePages = [
-    { theater: "aero", url: "https://www.americancinematheque.com/aero/" },
-    { theater: "egyptian", url: "https://www.americancinematheque.com/egyptian/" },
-    { theater: "los-feliz-theatre", url: "https://www.americancinematheque.com/about/theatres/los-feliz-theatre/" },
-  ];
-  for (const { theater, url } of venuePages) {
-    let html = "";
-    try { html = await fetchText(url); } catch { continue; }
-    gotAnyHtml = true;
-    out.push(...jsonLdEvents(html, theater, url));
-    out.push(...parseTribeListHtml(html, theater));
     await sleep(300);
   }
-  if (out.length) return dedupeScreenings(out);
-
-  // Strategy 3: /now-showing/ aggregator. JSON-LD events here carry a
-  // location.name we route through matchVenueName; HTML rows include a
-  // venue label inline.
-  let nowHtml = "";
-  try {
-    nowHtml = await fetchText("https://www.americancinematheque.com/now-showing/");
-    gotAnyHtml = true;
-  } catch {
-    if (!gotAnyHtml) {
-      throw new Error("americancinematheque.com unreachable across REST + venue + now-showing");
-    }
-    return [];
-  }
-  for (const block of extractJsonLd(nowHtml)) {
-    for (const ev of flattenEvents(block)) {
-      const start = ev.startDate || ev.start_date;
-      if (!start) continue;
-      const parts =
-        String(start).endsWith("Z") || /[+-]\d{2}:?\d{2}$/.test(String(start))
-          ? laParts(start)
-          : naivePTParts(start) || laParts(start);
-      if (!parts || !inWindow(parts.date)) continue;
-      const locName = ev.location?.name || ev.location?.[0]?.name || "";
-      const theater = matchVenueName(locName);
-      if (!theater) continue;
-      const name = ev.name || ev.headline || "";
-      out.push({
-        theater,
-        title: cleanTitle(name),
-        year:
-          extractYear(name) ||
-          (ev.workPresented?.dateCreated
-            ? Number(String(ev.workPresented.dateCreated).slice(0, 4))
-            : null),
-        date: parts.date,
-        time: parts.time,
-        format: detectFormat(`${name} ${ev.description || ""}`),
-        series: ev.superEvent?.name || null,
-        url: ev.url || "https://www.americancinematheque.com/now-showing/",
-      });
-    }
-  }
-  out.push(...parseTribeListHtml(nowHtml, null));
   return dedupeScreenings(out);
 }
 

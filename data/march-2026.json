@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
@@ -74,18 +74,6 @@
       "genre": "Romance / Drama",
       "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow, Bradley Whitford",
       "notes": "Everyone deserves a second chance."
-    },
-    {
-      "tmdb_id": 1366906,
-      "date": "2026-03-13",
-      "title": "The Gates",
-      "director": "John Burr",
-      "studio": "Indy Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller",
-      "cast": "Mason Gooding, Algee Smith, Keith Powers, James Van Der Beek",
-      "notes": "One wrong turn. One long night."
     },
     {
       "tmdb_id": 1480387,

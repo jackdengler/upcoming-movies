@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
@@ -31,7 +31,7 @@
       "tmdb_id": 1291335,
       "date": "2026-02-06",
       "title": "Solo Mio",
-      "director": "Charles Kinnane, Daniel Kinnane",
+      "director": "Daniel Kinnane, Charles Kinnane",
       "studio": "A Higher Standard",
       "budget_usd": 4000000,
       "release_type": "wide",
@@ -60,7 +60,7 @@
       "budget_usd": 2000000,
       "release_type": "wide",
       "genre": "Horror / Mystery",
-      "cast": "Dafne Keen, Sophie Nélisse, Sky Yang, Jhaleil Swaby",
+      "cast": "Dafne Keen, Sophie Nélisse, Alissa Skovbye, Jhaleil Swaby",
       "notes": "Don't blow it."
     },
     {
@@ -140,7 +140,7 @@
       "date": "2026-02-13",
       "title": "The Mortuary Assistant",
       "director": "Jeremiah Kipp",
-      "studio": "Dread",
+      "studio": "Epic Pictures Group",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Mystery",

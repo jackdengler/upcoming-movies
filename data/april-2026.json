@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
+      "director": "Aaron Horvath, Michael Jelenic",
       "studio": "Illumination",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -100,18 +100,6 @@
       "notes": "He never planned to fight. But he refuses to fall."
     },
     {
-      "tmdb_id": 1391074,
-      "date": "2026-04-17",
-      "title": "Busboys",
-      "director": "Jonah Feingold",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "David Spade, Theo Von, Bobby Lee, Tim Dillon",
-      "notes": "Some messes can't be cleaned up."
-    },
-    {
       "tmdb_id": 1304313,
       "date": "2026-04-17",
       "title": "Lee Cronin's The Mummy",
@@ -148,14 +136,26 @@
       "notes": "A bold new vision of life inside."
     },
     {
+      "tmdb_id": 1680738,
+      "date": "2026-04-23",
+      "title": "Pretty Guardian Sailor Moon the Miracle: Moon Palace Chapter Deluxe",
+      "director": "—",
+      "studio": "Universal Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Adventure / Fantasy",
+      "cast": "—",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1318447,
       "date": "2026-04-24",
       "title": "Apex",
       "director": "Baltasar Kormákur",
-      "studio": "RVK Studios",
-      "budget_usd": null,
+      "studio": "Chernin Entertainment",
+      "budget_usd": 23,
       "release_type": "limited",
-      "genre": "Action / Thriller",
+      "genre": "Thriller / Action",
       "cast": "Charlize Theron, Taron Egerton, Eric Bana, Caitlin Stasey",
       "notes": "Hunt. Survive."
     },
@@ -167,7 +167,7 @@
       "studio": "Anton",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Crime / Thriller",
+      "genre": "Action / Crime / Thriller / Drama",
       "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
       "notes": "Down to the wire."
     },
@@ -189,7 +189,7 @@
       "title": "Michael",
       "director": "Antoine Fuqua",
       "studio": "Lionsgate",
-      "budget_usd": 200000000,
+      "budget_usd": 250000000,
       "release_type": "wide",
       "genre": "Music / Drama",
       "cast": "Jaafar Jackson, Colman Domingo, Nia Long, Juliano Krue Valdi",

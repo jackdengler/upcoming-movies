@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
@@ -23,9 +23,21 @@
       "studio": "Spooky Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Mystery",
+      "genre": "Horror / Mystery / Thriller",
       "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
       "notes": "We've been expecting you."
+    },
+    {
+      "tmdb_id": 1290792,
+      "date": "2026-05-01",
+      "title": "One Spoon of Chocolate",
+      "director": "RZA",
+      "studio": "RZA Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Drama / Thriller",
+      "cast": "Shameik Moore, Blair Underwood, RJ Cyler, Paris Jackson",
+      "notes": "He has nowhere to go. They have nowhere to hide."
     },
     {
       "tmdb_id": 1007757,
@@ -107,7 +119,7 @@
       "studio": "Tea Shop Productions",
       "budget_usd": 1000000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Thriller",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
       "notes": "Be careful who you wish for…"
     },

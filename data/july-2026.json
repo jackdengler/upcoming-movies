@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
@@ -13,7 +13,7 @@
       "release_type": "wide",
       "genre": "Animation / Family / Comedy / Adventure / Fantasy",
       "cast": "Pierre Coffin, Allison Janney, Christoph Waltz, Jeff Bridges",
-      "notes": ""
+      "notes": "Hollywood has a monster problem."
     },
     {
       "tmdb_id": 1308767,
@@ -25,7 +25,7 @@
       "release_type": "wide",
       "genre": "History / Drama",
       "cast": "William Franklyn-Miller, Ben Kingsley, Andy Serkis, Kelsey Grammer",
-      "notes": ""
+      "notes": "250 years of history begins with one man."
     },
     {
       "tmdb_id": 1212763,

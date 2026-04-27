@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
@@ -47,7 +47,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Fantasy / Drama",
+      "genre": "Fantasy / Drama / Adventure",
       "cast": "Johnny Depp, Andrea Riseborough, Tramell Tillman, Ian McKellen",
       "notes": ""
     },

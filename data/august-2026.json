@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-04-24",
+  "updated": "2026-04-27",
   "source": "TMDB",
   "releases": [
     {
@@ -48,7 +48,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Adventure / Family / Comedy",
-      "cast": "Mckenna Grace, Carter Young, Hayden Chamberlen, Rain Janjua",
+      "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
       "notes": "Adventure reaches new heights."
     },
     {
@@ -126,12 +126,12 @@
     {
       "tmdb_id": 1204680,
       "date": "2026-08-28",
-      "title": "Coyote vs. ACME",
+      "title": "Coyote vs ACME",
       "director": "Dave Green",
       "studio": "Troll Court Entertainment",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Family / Comedy / Animation / Adventure",
+      "genre": "Adventure / Animation / Comedy / Family",
       "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
       "notes": "The movie ACME doesn't want you to see."
     },

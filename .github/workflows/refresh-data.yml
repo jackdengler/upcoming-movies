@@ -12,7 +12,7 @@ on:
   push:
     paths:
       - ".github/workflows/refresh-data.yml"
-      - "scripts/fetch-tmdb.mjs"
+      - "scripts/fetch-bom.mjs"
       - "scripts/fetch-repertory.mjs"
 
 permissions:
@@ -46,14 +46,14 @@ jobs:
             echo "months=$LIST" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Fetch from TMDB
+      - name: Fetch from Box Office Mojo
         env:
           TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
           MONTHS: ${{ steps.plan.outputs.months }}
         run: |
           for m in $MONTHS; do
             echo "::group::Fetch $m"
-            MONTH="$m" node scripts/fetch-tmdb.mjs
+            MONTH="$m" node scripts/fetch-bom.mjs
             echo "::endgroup::"
           done
 

@@ -4,18 +4,6 @@
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": null,
-      "date": "2026-12-04",
-      "title": "Untitled Shudder Horror Film",
-      "director": "—",
-      "studio": "Shudder",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror",
-      "cast": "—",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1078446,
       "date": "2026-12-04",
       "title": "Violent Night 2",

@@ -4,30 +4,6 @@
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": 1578018,
-      "date": "2026-01-02",
-      "title": "Bendito Corazon",
-      "director": "Miguel Ángel Pérez",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Juan Manuel Azcona, Nora Cervantes, Manjarrez Belinda, Humberto Fuentes",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1418569,
-      "date": "2026-01-02",
-      "title": "Holding Liat",
-      "director": "Brandon Kramer",
-      "studio": "The Film Collaborative",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Yehuda Beinin, Chaya Beinin, Tal Beinin, Joel Beinin",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1570472,
       "date": "2026-01-02",
       "title": "Kidz Bop Live: The Concert Movie",
@@ -40,40 +16,16 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1298547,
+      "tmdb_id": 1395140,
       "date": "2026-01-02",
-      "title": "Paying for It",
-      "director": "Sook-Yin Lee",
-      "studio": "Film Movement",
+      "title": "Lupin the IIIrd: The Movie - The Immortal Bloodline",
+      "director": "Takeshi Koike",
+      "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Comedy",
-      "cast": "Dan Beirne, Emily Lê, Andrea Werhun, Noah Lamanna",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1422625,
-      "date": "2026-01-02",
-      "title": "Starman",
-      "director": "Robert Stone",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Gentry Lee, Arthur C. Clarke",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-01-02",
-      "title": "The Nowhere Man",
-      "director": "—",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Drama / Thriller",
-      "cast": "Bonko Khoza, Dineo Rasedile, Naturi Naughton, Nathan Castle",
-      "notes": ""
+      "genre": "Animation / Action / Crime",
+      "cast": "Kanichi Kurita, Akio Otsuka, Daisuke Namikawa, Miyuki Sawashiro",
+      "notes": "You haven't seen the real Lupin III yet."
     },
     {
       "tmdb_id": 1370814,
@@ -88,30 +40,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1146458,
-      "date": "2026-01-02",
-      "title": "The Shadow of the Sun",
-      "director": "Miguel Angel Ferrer",
-      "studio": "Outsider Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Carlos Manuel Gonzalez, Greisy Mena, Anyelo Lopez, David Olaves",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1219542,
-      "date": "2026-01-02",
-      "title": "The Three Investigators: Isle of Death",
-      "director": "Tim Dünschede",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Family / Crime / Adventure",
-      "cast": "Julius Weckauf, Nevio Wendt, Levi Brandl, Momo Beier",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1198984,
       "date": "2026-01-02",
       "title": "We Bury the Dead",
@@ -122,18 +50,6 @@
       "genre": "Horror / Thriller",
       "cast": "Daisy Ridley, Brenton Thwaites, Mark Coles Smith, Matt Whelan",
       "notes": "Volunteers needed."
-    },
-    {
-      "tmdb_id": 1395140,
-      "date": "2026-01-04",
-      "title": "Lupin the IIIrd: The Movie - The Immortal Bloodline",
-      "director": "Takeshi Koike",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Action / Crime",
-      "cast": "Kanichi Kurita, Akio Otsuka, Daisuke Namikawa, Miyuki Sawashiro",
-      "notes": "You haven't seen the real Lupin III yet."
     },
     {
       "tmdb_id": 1219620,
@@ -160,18 +76,6 @@
       "notes": "Throw big or go home."
     },
     {
-      "tmdb_id": 1263012,
-      "date": "2026-01-09",
-      "title": "Dead Man's Wire",
-      "director": "Gus Van Sant",
-      "studio": "Row K Entertainment",
-      "budget_usd": 13000000,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Bill Skarsgård, Dacre Montgomery, Cary Elwes, Myha'la",
-      "notes": "His revolution was televised."
-    },
-    {
       "tmdb_id": 840464,
       "date": "2026-01-09",
       "title": "Greenland 2: Migration",
@@ -184,16 +88,16 @@
       "notes": "Hope is uncharted territory."
     },
     {
-      "tmdb_id": 1193128,
+      "tmdb_id": 1418569,
       "date": "2026-01-09",
-      "title": "I Was a Stranger",
-      "director": "Brandt Andersen",
-      "studio": "Angel",
+      "title": "Holding Liat",
+      "director": "Brandon Kramer",
+      "studio": "The Film Collaborative",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Thriller",
-      "cast": "Yasmine Al Massri, Yahya Mahayni, Omar Sy, Ziad Bakri",
-      "notes": "Based on 14 million true stories."
+      "genre": "Documentary",
+      "cast": "Yehuda Beinin, Chaya Beinin, Tal Beinin, Joel Beinin",
+      "notes": ""
     },
     {
       "tmdb_id": 975335,
@@ -241,18 +145,6 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Lucie Laruelle, Babette Verbeek, Elsa Houben, Janaïna Halloy Fokan",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-01-16",
-      "title": "2026 Oscar Nominated Short Films",
-      "director": "—",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "Taika Waititi",
       "notes": ""
     },
     {
@@ -304,16 +196,40 @@
       "notes": "He's a good boy… most of the time."
     },
     {
-      "tmdb_id": 1241693,
+      "tmdb_id": 1263012,
       "date": "2026-01-16",
-      "title": "Do Deewane Seher Mein",
-      "director": "Ravi Udyawar",
-      "studio": "—",
+      "title": "Dead Man's Wire",
+      "director": "Gus Van Sant",
+      "studio": "Row K Entertainment",
+      "budget_usd": 13000000,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Bill Skarsgård, Dacre Montgomery, Cary Elwes, Myha'la",
+      "notes": "His revolution was televised."
+    },
+    {
+      "tmdb_id": 858024,
+      "date": "2026-01-16",
+      "title": "Hamnet",
+      "director": "Chloé Zhao",
+      "studio": "Focus Features",
+      "budget_usd": 30000000,
+      "release_type": "wide",
+      "genre": "Drama / Romance / History",
+      "cast": "Jessie Buckley, Paul Mescal, Emily Watson, Joe Alwyn",
+      "notes": "Keep your heart open."
+    },
+    {
+      "tmdb_id": 1193128,
+      "date": "2026-01-16",
+      "title": "I Was a Stranger",
+      "director": "Brandt Andersen",
+      "studio": "Angel",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Romance / Drama / Comedy",
-      "cast": "Siddhant Chaturvedi, Mrunal Thakur, Ila Arun, Joy Sengupta",
-      "notes": ""
+      "release_type": "wide",
+      "genre": "Drama / Thriller",
+      "cast": "Yasmine Al Massri, Yahya Mahayni, Omar Sy, Ziad Bakri",
+      "notes": "Based on 14 million true stories."
     },
     {
       "tmdb_id": 1323625,
@@ -352,15 +268,27 @@
       "notes": "The past doesn't fade. It echoes."
     },
     {
-      "tmdb_id": 1134680,
+      "tmdb_id": null,
       "date": "2026-01-16",
-      "title": "The Proud Princess",
-      "director": "Radek Beran, David Lisý",
-      "studio": "Level 33 Entertainment",
+      "title": "The Nowhere Man",
+      "director": "—",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Drama / Thriller",
+      "cast": "Bonko Khoza, Dineo Rasedile, Naturi Naughton, Nathan Castle",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1146458,
+      "date": "2026-01-16",
+      "title": "The Shadow of the Sun",
+      "director": "Miguel Angel Ferrer",
+      "studio": "Outsider Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Family / Fantasy",
-      "cast": "Marek Lambora, Anna Prášilová Fialová, Aleš Procházka, Zbyšek Pantůček",
+      "genre": "Drama",
+      "cast": "Carlos Manuel Gonzalez, Greisy Mena, Anyelo Lopez, David Olaves",
       "notes": ""
     },
     {
@@ -388,6 +316,18 @@
       "notes": "The incredible story of an ordinary Russian teacher who exposed Putin's propaganda machine."
     },
     {
+      "tmdb_id": 1129188,
+      "date": "2026-01-21",
+      "title": "The Optimist: The Bravest Act Is Truth",
+      "director": "Finn Taylor",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Stephen Lang, Elsie Fisher, Robin Weigert, Luke David Blumm",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1596092,
       "date": "2026-01-22",
       "title": "Megadeth: Behind the Mask",
@@ -400,30 +340,6 @@
       "notes": "The End Begins"
     },
     {
-      "tmdb_id": 804370,
-      "date": "2026-01-23",
-      "title": "Arco",
-      "director": "Ugo Bienvenu",
-      "studio": "Neon",
-      "budget_usd": 10000000,
-      "release_type": "limited",
-      "genre": "Animation / Adventure / Fantasy / Family / Science Fiction",
-      "cast": "Margot Ringard Oldra, Oscar Tresanini, Nathanaël Perrot, Alma Jodorowsky",
-      "notes": "What if rainbows were people from the future traveling in time?"
-    },
-    {
-      "tmdb_id": 1270041,
-      "date": "2026-01-23",
-      "title": "Bring the Law",
-      "director": "Scout Taylor-Compton",
-      "studio": "Level 33 Entertainment",
-      "budget_usd": 2000000,
-      "release_type": "limited",
-      "genre": "Action / Thriller",
-      "cast": "Brendan Fehr, Danielle Harris, Nicky Whelan, Mickey Rourke",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1450257,
       "date": "2026-01-23",
       "title": "Clika",
@@ -434,6 +350,18 @@
       "genre": "Music / Drama",
       "cast": "Jay Dee, Cristian E. Gutierrez, Daniel 'DoKnows' Lopez, Laura Lopez",
       "notes": "There are no shortcuts to living your dreams."
+    },
+    {
+      "tmdb_id": 1044878,
+      "date": "2026-01-23",
+      "title": "Dooba Dooba",
+      "director": "Ehrland Hollingsworth",
+      "studio": "Dark Sky Films",
+      "budget_usd": 5000,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Betsy Sligh, Amna Vegha, Erin O'Meara, Winston Haynes",
+      "notes": "Hear it once, you won't forget."
     },
     {
       "tmdb_id": 1243006,
@@ -457,18 +385,6 @@
       "release_type": "limited",
       "genre": "Horror / Thriller",
       "cast": "Gianni DeCenzo, Jan Luis Castellanos, Elizabeth Yu, Vanessa Rubio",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-01-23",
-      "title": "Hypnosismic -Division Rap Battle- Rule the Stage -Battle of Pride 2023",
-      "director": "—",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
       "notes": ""
     },
     {
@@ -520,18 +436,6 @@
       "notes": "With no chance at an ordinary life, he lived an extraordinary one."
     },
     {
-      "tmdb_id": 799882,
-      "date": "2026-01-23",
-      "title": "The Bluff",
-      "director": "Frank E. Flowers",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Action / Thriller",
-      "cast": "Priyanka Chopra Jonas, Karl Urban, Safia Oakley-Green, Ismael Cruz Cordova",
-      "notes": "Betrayal cuts deep."
-    },
-    {
       "tmdb_id": 1581486,
       "date": "2026-01-23",
       "title": "The Dreamer Cinderella",
@@ -542,6 +446,18 @@
       "genre": "Drama / Romance",
       "cast": "Anakaren Chablé, Anthony Preston, Tara Reid, Paul Johansson",
       "notes": "A dream never meant for her"
+    },
+    {
+      "tmdb_id": 1219542,
+      "date": "2026-01-23",
+      "title": "The Three Investigators: Isle of Death",
+      "director": "Tim Dünschede",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Family / Crime / Adventure",
+      "cast": "Julius Weckauf, Nevio Wendt, Levi Brandl, Momo Beier",
+      "notes": ""
     },
     {
       "tmdb_id": 1465563,
@@ -556,10 +472,22 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1370123,
+      "date": "2026-01-30",
+      "title": "Aida: The Movie",
+      "director": "Paco León",
+      "studio": "Outsider Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Carmen Machi, Paco León, Melani Olivares, Miren Ibarguren",
+      "notes": "This never happened, but it could've happened."
+    },
+    {
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
+      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",
@@ -577,30 +505,6 @@
       "release_type": "limited",
       "genre": "Comedy / Crime",
       "cast": "Eddie Peng Yu-Yan, Allen, Zhou You, Yan Peilun",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1366242,
-      "date": "2026-01-30",
-      "title": "DRAGN",
-      "director": "Peter Webber",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Horror / Thriller / Science Fiction",
-      "cast": "James Paxton, Lilly Krug, Carlos Bardem, Alice Pagani",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1624208,
-      "date": "2026-01-30",
-      "title": "Enhypen: Walk the Line Summer Edition - In Cinemas",
-      "director": "Park Jae-seok, Oh Yoon-dong",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music / Documentary",
-      "cast": "Jungwon, Heeseung, Jay, Jake",
       "notes": ""
     },
     {
@@ -664,15 +568,15 @@
       "notes": "Live by the Sword, Die by the Sword"
     },
     {
-      "tmdb_id": 1586068,
+      "tmdb_id": 1298547,
       "date": "2026-01-30",
-      "title": "Othello",
-      "director": "David Oyelowo",
-      "studio": "Trafalgar Releasing",
+      "title": "Paying for It",
+      "director": "Sook-Yin Lee",
+      "studio": "Film Movement",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / War",
-      "cast": "David Oyelowo, Rachel Brosnahan, Cynthia Erivo",
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Dan Beirne, Emily Lê, Andrea Werhun, Noah Lamanna",
       "notes": ""
     },
     {
@@ -698,18 +602,6 @@
       "genre": "Action / Crime / Thriller",
       "cast": "Jason Statham, Bodhi Rae Breathnach, Naomi Ackie, Daniel Mays",
       "notes": "Her safety. His mission."
-    },
-    {
-      "tmdb_id": 768614,
-      "date": "2026-01-30",
-      "title": "Silver Star",
-      "director": "Ruben Amar, Lola Bessis",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Thriller / Comedy",
-      "cast": "Troy Leigh-Anne Johnson, Grace Van Dien, Noa Fisher, Odley Jean",
-      "notes": "Can you survive?"
     },
     {
       "tmdb_id": 1437198,

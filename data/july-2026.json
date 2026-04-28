@@ -4,52 +4,16 @@
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": null,
-      "date": "2026-07-03",
-      "title": "CatVideoFest 2026",
-      "director": "—",
-      "studio": "Oscilloscope",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Family",
-      "cast": "A Bunch of Cats",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1596318,
-      "date": "2026-07-03",
-      "title": "Cookie Queens",
-      "director": "Alysa Nahmias",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Ara, Shannon Elizabeth, Nikki, Olive",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-07-03",
-      "title": "One Night Only",
-      "director": "—",
+      "tmdb_id": 1315772,
+      "date": "2026-07-01",
+      "title": "Minions & Monsters",
+      "director": "Pierre Coffin",
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1404304,
-      "date": "2026-07-03",
-      "title": "The Isolate Thief",
-      "director": "John Suits",
-      "studio": "Radial Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Western / Drama",
-      "cast": "Sean Bean, Mackenzie Foy, Odeya Rush, Jack Kesy",
-      "notes": ""
+      "genre": "Animation / Family / Comedy / Adventure / Fantasy",
+      "cast": "Pierre Coffin, Allison Janney, Christoph Waltz, Jeff Bridges",
+      "notes": "Hollywood has a monster problem."
     },
     {
       "tmdb_id": 1290417,
@@ -64,30 +28,6 @@
       "notes": "If the flood doesn't kill you..."
     },
     {
-      "tmdb_id": null,
-      "date": "2026-07-03",
-      "title": "Untitled Disney",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-07-03",
-      "title": "Untitled Disney",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1308767,
       "date": "2026-07-03",
       "title": "Young Washington",
@@ -98,18 +38,6 @@
       "genre": "History / Drama",
       "cast": "William Franklyn-Miller, Ben Kingsley, Andy Serkis, Kelsey Grammer",
       "notes": "250 years of history begins with one man."
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-07-10",
-      "title": "Elijah Peel",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Music",
-      "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
-      "notes": ""
     },
     {
       "tmdb_id": 1212763,
@@ -148,6 +76,18 @@
       "notes": "The ocean chose her for a reason."
     },
     {
+      "tmdb_id": 1404304,
+      "date": "2026-07-10",
+      "title": "The Isolate Thief",
+      "director": "John Suits",
+      "studio": "Radial Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Western / Drama",
+      "cast": "Sean Bean, Mackenzie Foy, Odeya Rush, Jack Kesy",
+      "notes": ""
+    },
+    {
       "tmdb_id": null,
       "date": "2026-07-10",
       "title": "Untitled Disney",
@@ -182,18 +122,6 @@
       "genre": "Adventure / Drama / Fantasy",
       "cast": "Matt Damon, Tom Holland, Zendaya, Anne Hathaway",
       "notes": "Defy the gods."
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-07-24",
-      "title": "Untitled IFC Comedy Film",
-      "director": "—",
-      "studio": "IFC Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy",
-      "cast": "—",
-      "notes": ""
     },
     {
       "tmdb_id": 969681,

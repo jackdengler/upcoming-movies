@@ -16,54 +16,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": null,
-      "date": "2026-06-05",
-      "title": "Diamond Made Man",
-      "director": "—",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Sci-Fi",
-      "cast": "Sreehari, Vasudha, Sreehari Devi Mangala Puvvu",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1462889,
-      "date": "2026-06-05",
-      "title": "Drunken Noodles",
-      "director": "Lucio Castro",
-      "studio": "Strand Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Laith Khalifeh, Matthew Risch, Joel Isaac, Ezriel Kornel",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1537635,
-      "date": "2026-06-05",
-      "title": "Everywhere Man: The Lives and Times of Peter Asher",
-      "director": "Dayna Goldfine, Daniel Geller",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "Peter Asher",
-      "notes": "The legend behind music's biggest legends"
-    },
-    {
-      "tmdb_id": 1441453,
-      "date": "2026-06-05",
-      "title": "Jinsei",
-      "director": "Ryuya Suzuki",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Drama",
-      "cast": "ACE COOL, Taketo Tanaka, Shohei Uno, Remi Tyon",
-      "notes": "One life. One hundred years."
-    },
-    {
       "tmdb_id": 1284016,
       "date": "2026-06-05",
       "title": "Power Ballad",
@@ -74,18 +26,6 @@
       "genre": "Comedy / Music",
       "cast": "Paul Rudd, Nick Jonas, Naoimh Whelton, Jack Reynor",
       "notes": "Every record has two sides."
-    },
-    {
-      "tmdb_id": 1399525,
-      "date": "2026-06-05",
-      "title": "Rose of Nevada",
-      "director": "Mark Jenkin",
-      "studio": "1-2 Special",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Science Fiction / Mystery / Drama",
-      "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe",
-      "notes": ""
     },
     {
       "tmdb_id": 1273221,
@@ -112,15 +52,15 @@
       "notes": "Family is the most serious business."
     },
     {
-      "tmdb_id": 1404304,
+      "tmdb_id": 1031084,
       "date": "2026-06-05",
-      "title": "The Isolate Thief",
-      "director": "John Suits",
-      "studio": "Radial Entertainment",
+      "title": "The Currents",
+      "director": "Milagros Mumenthaler",
+      "studio": "Kino Lorber",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Western / Drama",
-      "cast": "Sean Bean, Mackenzie Foy, Odeya Rush, Jack Kesy",
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Isabel Aimé González Sola, Esteban Bigliardi, Claudia Sánchez, Ernestina Gatti",
       "notes": ""
     },
     {
@@ -148,42 +88,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1290417,
-      "date": "2026-06-05",
-      "title": "Thrash",
-      "director": "Tommy Wirkola",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Phoebe Dynevor, Whitney Peak, Djimon Hounsou, Alyla Browne",
-      "notes": "If the flood doesn't kill you..."
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-06-05",
-      "title": "UFC Freedom 250",
-      "director": "—",
-      "studio": "Iconic Events Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-06-05",
-      "title": "Untitled Disney",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1536053,
       "date": "2026-06-09",
       "title": "Sacred Heart: His Reign Has No End",
@@ -208,6 +112,18 @@
       "notes": "We deserve to know."
     },
     {
+      "tmdb_id": 1441453,
+      "date": "2026-06-12",
+      "title": "Jinsei",
+      "director": "Ryuya Suzuki",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Drama",
+      "cast": "ACE COOL, Taketo Tanaka, Shohei Uno, Remi Tyon",
+      "notes": "One life. One hundred years."
+    },
+    {
       "tmdb_id": 1541560,
       "date": "2026-06-12",
       "title": "Stop! That! Train!",
@@ -218,6 +134,42 @@
       "genre": "Action / Comedy / Music",
       "cast": "RuPaul, Jujubee, Ginger Minj, Brooke Lynn Hytes",
       "notes": "The greatest trainwreck in herstory."
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-06-14",
+      "title": "UFC Freedom 250",
+      "director": "—",
+      "studio": "Iconic Events Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "—",
+      "notes": ""
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-06-16",
+      "title": "Diamond Made Man",
+      "director": "—",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Sci-Fi",
+      "cast": "Sreehari, Vasudha, Sreehari Devi Mangala Puvvu",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1537635,
+      "date": "2026-06-19",
+      "title": "Everywhere Man: The Lives and Times of Peter Asher",
+      "director": "Dayna Goldfine, Daniel Geller",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Peter Asher",
+      "notes": "The legend behind music's biggest legends"
     },
     {
       "tmdb_id": 1397485,
@@ -244,6 +196,18 @@
       "notes": "It will never stop."
     },
     {
+      "tmdb_id": 1399525,
+      "date": "2026-06-19",
+      "title": "Rose of Nevada",
+      "director": "Mark Jenkin",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Science Fiction / Mystery / Drama",
+      "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1284465,
       "date": "2026-06-19",
       "title": "The Death of Robin Hood",
@@ -266,6 +230,18 @@
       "genre": "Animation / Family / Comedy / Adventure",
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
       "notes": "It's on."
+    },
+    {
+      "tmdb_id": 1462889,
+      "date": "2026-06-26",
+      "title": "Drunken Noodles",
+      "director": "Lucio Castro",
+      "studio": "Strand Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Laith Khalifeh, Matthew Risch, Joel Isaac, Ezriel Kornel",
+      "notes": ""
     },
     {
       "tmdb_id": 1612018,

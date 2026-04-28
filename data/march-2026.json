@@ -4,30 +4,6 @@
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": 1341137,
-      "date": "2026-03-06",
-      "title": "A Great Awakening",
-      "director": "Joshua Enck",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / History",
-      "cast": "John Paul Sneed, Jonathan Blair, JT Schaeffer, Josh Bates",
-      "notes": "Before the American Revolution, there was a revelation."
-    },
-    {
-      "tmdb_id": 840873,
-      "date": "2026-03-06",
-      "title": "A Magnificent Life",
-      "director": "Sylvain Chomet",
-      "studio": "Sony Pictures Classics",
-      "budget_usd": 15000000,
-      "release_type": "limited",
-      "genre": "Animation / History / Drama",
-      "cast": "Laurent Lafitte, Géraldine Pailhas, Thierry Garcia, Olivia Gotanègre",
-      "notes": "His story is that of cinema."
-    },
-    {
       "tmdb_id": 1260210,
       "date": "2026-03-06",
       "title": "Aadu 3",
@@ -64,30 +40,6 @@
       "notes": "It all counts."
     },
     {
-      "tmdb_id": 1284460,
-      "date": "2026-03-06",
-      "title": "Alpha",
-      "director": "Julia Ducournau",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Drama / Science Fiction",
-      "cast": "Mélissa Boros, Tahar Rahim, Golshifteh Farahani, Emma Mackey",
-      "notes": "Love leaves a mark."
-    },
-    {
-      "tmdb_id": 1292415,
-      "date": "2026-03-06",
-      "title": "Beast",
-      "director": "Tyler Atkins",
-      "studio": "Lionsgate",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Drama",
-      "cast": "Daniel MacPherson, Luke Hemsworth, Russell Crowe, Mojean Aria",
-      "notes": "Legends are made in the cage."
-    },
-    {
       "tmdb_id": 1124796,
       "date": "2026-03-06",
       "title": "Bershama",
@@ -97,42 +49,6 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Hesham Maged, Reham Abdelghafour, Mostafa Ghareb, Bassem Samra",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1423251,
-      "date": "2026-03-06",
-      "title": "Biker",
-      "director": "Abhilash Reddy",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Adventure / Drama",
-      "cast": "Sharwanand, Dr. Rajasekhar, Malavika Nair, Shashank",
-      "notes": "Go All The Way"
-    },
-    {
-      "tmdb_id": 1542995,
-      "date": "2026-03-06",
-      "title": "Bonolota Express",
-      "director": "Tanim Noor",
-      "studio": "Swapna Scarecrow",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Comedy / Family",
-      "cast": "Mosharraf Karim, Chanchal Chowdhury, Sabila Nur, Sariful Razz",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1621113,
-      "date": "2026-03-06",
-      "title": "Bring Me the Horizon: L.I.V.E. in São Paulo",
-      "director": "Oliver Sykes, CiRCUS HEaD",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music / Documentary",
-      "cast": "Oliver Sykes, Lee Malia, Matt Kean, John Jones",
       "notes": ""
     },
     {
@@ -146,30 +62,6 @@
       "genre": "Romance / Drama / Thriller",
       "cast": "Trấn Thành, Nguyen Dieu Huyen, LyLy, Pháp Kiều",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1364297,
-      "date": "2026-03-06",
-      "title": "Bunnylovr",
-      "director": "Katarina Zhu",
-      "studio": "Utopia",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Katarina Zhu, Austin Amelio, Perry Yung, Jack Kilmer",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1419053,
-      "date": "2026-03-06",
-      "title": "ChaO",
-      "director": "Yasuhiro Aoki",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Fantasy / Romance",
-      "cast": "Ouji Suzuka, Anna Yamada, Kavka Shishido, Yuuichirou Umehara",
-      "notes": "He's on the hook."
     },
     {
       "tmdb_id": 1219556,
@@ -220,30 +112,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1073973,
-      "date": "2026-03-06",
-      "title": "Dead Lover",
-      "director": "Grace Glowicki",
-      "studio": "Cartuna",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Comedy / Romance",
-      "cast": "Grace Glowicki, Ben Petrie, Leah Doz, Lowen Morrow",
-      "notes": "Love can conquer death."
-    },
-    {
-      "tmdb_id": 1582770,
-      "date": "2026-03-06",
-      "title": "Dhurandhar: The Revenge",
-      "director": "Aditya Dhar",
-      "studio": "Moviegoers Entertainment",
-      "budget_usd": 22500000,
-      "release_type": "limited",
-      "genre": "Action / Crime / Thriller",
-      "cast": "Ranveer Singh, Arjun Rampal, R. Madhavan, Sanjay Dutt",
-      "notes": "The Story of The Unknown Men Unfolds"
-    },
-    {
       "tmdb_id": 1309083,
       "date": "2026-03-06",
       "title": "Dolly",
@@ -280,78 +148,6 @@
       "notes": "Heaven help him."
     },
     {
-      "tmdb_id": 1408208,
-      "date": "2026-03-06",
-      "title": "Exit 8",
-      "director": "Genki Kawamura",
-      "studio": "Neon",
-      "budget_usd": 1400000,
-      "release_type": "limited",
-      "genre": "Horror / Mystery",
-      "cast": "Kazunari Ninomiya, Yamato Kochi, Nana Komatsu, Naru Asanuma",
-      "notes": "Turn back."
-    },
-    {
-      "tmdb_id": 855435,
-      "date": "2026-03-06",
-      "title": "Faces of Death",
-      "director": "Daniel Goldhaber",
-      "studio": "IFC Films",
-      "budget_usd": 7400000,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
-      "notes": "You can't unsee it."
-    },
-    {
-      "tmdb_id": 1421977,
-      "date": "2026-03-06",
-      "title": "Fantasy Life",
-      "director": "Matthew Shear",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Romance / Drama",
-      "cast": "Amanda Peet, Matthew Shear, Alessandro Nivola, Judd Hirsch",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1450527,
-      "date": "2026-03-06",
-      "title": "Forbidden Fruits",
-      "director": "Meredith Alloway",
-      "studio": "IFC Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Comedy",
-      "cast": "Lili Reinhart, Lola Tung, Victoria Pedretti, Alexandra Shipp",
-      "notes": "The coven just clocked in."
-    },
-    {
-      "tmdb_id": 843342,
-      "date": "2026-03-06",
-      "title": "Hamlet",
-      "director": "Aneil Karia",
-      "studio": "Vertical Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Riz Ahmed, Morfydd Clark, Timothy Spall, Art Malik",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1616685,
-      "date": "2026-03-06",
-      "title": "He Calls Me Daughter",
-      "director": "Rick Altizer",
-      "studio": "—",
-      "budget_usd": 300000,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Chonda Pierce, Alex Kendrick, Meg Meeker, Lynsi Snyder",
-      "notes": "A heavenly Father changes everything."
-    },
-    {
       "tmdb_id": 1381027,
       "date": "2026-03-06",
       "title": "Heel",
@@ -362,18 +158,6 @@
       "genre": "Thriller / Drama / Mystery",
       "cast": "Stephen Graham, Andrea Riseborough, Anson Boon, Kit Rakusen",
       "notes": "Some people only learn the hard way."
-    },
-    {
-      "tmdb_id": 1381151,
-      "date": "2026-03-06",
-      "title": "Holy Days",
-      "director": "Nathalie Boltt",
-      "studio": "Blue Fox Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Adventure / Drama",
-      "cast": "Elijah Tamati, Judy Davis, Miriam Margolyes, Jacki Weaver",
-      "notes": "Breaking the rules. Keeping the faith."
     },
     {
       "tmdb_id": 1327819,
@@ -388,30 +172,6 @@
       "notes": "Act natural."
     },
     {
-      "tmdb_id": 1308388,
-      "date": "2026-03-06",
-      "title": "Hunting Matthew Nichols",
-      "director": "Markian Tarasiuk",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Markian Tarasiuk, Ryan Alexander McDonald, Miranda MacDougall, Christine Willes",
-      "notes": "Not all answers want to be found."
-    },
-    {
-      "tmdb_id": 1644912,
-      "date": "2026-03-06",
-      "title": "Jimmy O. Yang: Finally Home",
-      "director": "Jimmy O. Yang",
-      "studio": "Variance Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy",
-      "cast": "Jimmy O. Yang",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1220334,
       "date": "2026-03-06",
       "title": "John Lilly and the Earth Coincidence Control Office",
@@ -421,30 +181,6 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Chloë Sevigny, Alejandro Jodorowsky, Allen Ginsberg, Timothy Leary",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1410189,
-      "date": "2026-03-06",
-      "title": "Kontinental '25",
-      "director": "Radu Jude",
-      "studio": "1-2 Special",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Eszter Tompa, Gabriel Spahiu, Adonis Tanța, Oana Mardare",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1356670,
-      "date": "2026-03-06",
-      "title": "Late Shift",
-      "director": "Petra Biondina Volpe",
-      "studio": "Music Box Films",
-      "budget_usd": 4600000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Leonie Benesch, Alireza Bayram, Jürg Plüss, Jasmin Mattei",
       "notes": ""
     },
     {
@@ -472,18 +208,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1517069,
-      "date": "2026-03-06",
-      "title": "Marc by Sofia",
-      "director": "Sofia Coppola",
-      "studio": "A24",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Sofia Coppola, Marc Jacobs, Spike Jonze, Romy Mars",
-      "notes": "A portrait of marc jacobs"
-    },
-    {
       "tmdb_id": 1651173,
       "date": "2026-03-06",
       "title": "Mirmire",
@@ -493,54 +217,6 @@
       "release_type": "limited",
       "genre": "Drama / Family",
       "cast": "Dayahang Rai, Prakash Saput, Srijana Ningleku, Maotse Gurung",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1178602,
-      "date": "2026-03-06",
-      "title": "Miroirs No. 3",
-      "director": "Christian Petzold",
-      "studio": "1-2 Special",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Paula Beer, Barbara Auer, Matthias Brandt, Enno Trebs",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1465557,
-      "date": "2026-03-06",
-      "title": "Our Hero, Balthazar",
-      "director": "Oscar Boyson",
-      "studio": "Picturehouse",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Comedy / Thriller",
-      "cast": "Jaeden Martell, Asa Butterfield, Jennifer Ehle, Pippa Knowles",
-      "notes": "Take a shot at friendship."
-    },
-    {
-      "tmdb_id": 1432596,
-      "date": "2026-03-06",
-      "title": "Palestine 36",
-      "director": "Annemarie Jacir",
-      "studio": "Watermelon Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / History / War",
-      "cast": "Karim Daoud Anaya, Hiam Abbass, Robert Aramayo, Yasmine Al Massri",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1320006,
-      "date": "2026-03-06",
-      "title": "PH-1",
-      "director": "Mark Kassen",
-      "studio": "Buffalo 8 Productions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Mystery / Thriller",
-      "cast": "Mark Kassen, Abubakar Salim, Jesse L. Martin, Dina Shihabi",
       "notes": ""
     },
     {
@@ -556,18 +232,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 687163,
-      "date": "2026-03-06",
-      "title": "Project Hail Mary",
-      "director": "Phil Lord, Christopher Miller",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": 200000000,
-      "release_type": "wide",
-      "genre": "Science Fiction / Adventure",
-      "cast": "Ryan Gosling, James Ortiz, Sandra Hüller, Lionel Boyce",
-      "notes": "Believe in the Hail Mary."
-    },
-    {
       "tmdb_id": 1383731,
       "date": "2026-03-06",
       "title": "Protector",
@@ -578,18 +242,6 @@
       "genre": "Action / Thriller",
       "cast": "Milla Jovovich, Matthew Modine, Isabel Myers, D. B. Sweeney",
       "notes": "Mother. Savior. Killer..."
-    },
-    {
-      "tmdb_id": 1451078,
-      "date": "2026-03-06",
-      "title": "Raakaasa",
-      "director": "Manasa Sharma",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Fantasy / Comedy",
-      "cast": "Sangeeth Shobhan, Nayan Sarika, Raadhya, Vennela Kishore",
-      "notes": ""
     },
     {
       "tmdb_id": 1211237,
@@ -604,66 +256,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1266127,
-      "date": "2026-03-06",
-      "title": "Ready or Not 2: Here I Come",
-      "director": "Matt Bettinelli-Olpin, Tyler Gillett",
-      "studio": "Searchlight Pictures",
-      "budget_usd": 14000000,
-      "release_type": "limited",
-      "genre": "Horror / Comedy",
-      "cast": "Samara Weaving, Kathryn Newton, Elijah Wood, Sarah Michelle Gellar",
-      "notes": "Double or nothing."
-    },
-    {
-      "tmdb_id": 1323909,
-      "date": "2026-03-06",
-      "title": "Red Riding",
-      "director": "Craig Conway",
-      "studio": "—",
-      "budget_usd": 635000,
-      "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "Victoria Tait, Lynsey Beauchamp, Ian Whyte, Bill Fellows",
-      "notes": "This is no fairy tale."
-    },
-    {
-      "tmdb_id": 1367642,
-      "date": "2026-03-06",
-      "title": "Reminders of Him",
-      "director": "Vanessa Caswill",
-      "studio": "Universal Pictures",
-      "budget_usd": 30000000,
-      "release_type": "wide",
-      "genre": "Romance / Drama",
-      "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow, Bradley Whitford",
-      "notes": "Everyone deserves a second chance."
-    },
-    {
-      "tmdb_id": 1299357,
-      "date": "2026-03-06",
-      "title": "Scared to Death",
-      "director": "Paul Boyd",
-      "studio": "Atlas Distribution Company",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Comedy",
-      "cast": "Lin Shaye, Bill Moseley, Olivier Paris, Victoria Konefal",
-      "notes": "Heads will roll."
-    },
-    {
-      "tmdb_id": 1465751,
-      "date": "2026-03-06",
-      "title": "She Dances",
-      "director": "Rick Gomez",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Steve Zahn, Audrey Zahn, Ethan Hawke, Mackenzie Ziegler",
-      "notes": ""
-    },
-    {
       "tmdb_id": 768614,
       "date": "2026-03-06",
       "title": "Silver Star",
@@ -674,42 +266,6 @@
       "genre": "Crime / Drama / Thriller / Comedy",
       "cast": "Troy Leigh-Anne Johnson, Grace Van Dien, Noa Fisher, Odley Jean",
       "notes": "Can you survive?"
-    },
-    {
-      "tmdb_id": 1297446,
-      "date": "2026-03-06",
-      "title": "Slanted",
-      "director": "Amy Wang",
-      "studio": "Bleecker Street Media",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Horror / Science Fiction",
-      "cast": "Shirley Chen, Mckenna Grace, Amelie Zilber, Vivian Wu",
-      "notes": "If you can't beat them... be them."
-    },
-    {
-      "tmdb_id": 1492865,
-      "date": "2026-03-06",
-      "title": "Steal This Story, Please!",
-      "director": "Carl Deal, Tia Lessin",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Amy Goodman",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1596335,
-      "date": "2026-03-06",
-      "title": "The AI Doc: Or How I Became an Apocaloptimist",
-      "director": "Daniel Roher, Charlie Tyrell",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Daniel Roher, Sam Altman, Daniela Amodei, Dario Amodei",
-      "notes": "The future is not automatic"
     },
     {
       "tmdb_id": 1172265,
@@ -736,54 +292,6 @@
       "notes": "Here comes the mother f*%#ing bride!"
     },
     {
-      "tmdb_id": 1400357,
-      "date": "2026-03-06",
-      "title": "The Christophers",
-      "director": "Steven Soderbergh",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Comedy",
-      "cast": "Michaela Coel, Ian McKellen, Jessica Gunning, James Corden",
-      "notes": "Art can be copied. Artists cannot."
-    },
-    {
-      "tmdb_id": 1389881,
-      "date": "2026-03-06",
-      "title": "The Cure",
-      "director": "Nancy Leopardi",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "David Dastmalchian, Ashley Greene, Samantha Cochran, Sydney Taylor",
-      "notes": "Family is more than blood."
-    },
-    {
-      "tmdb_id": 1325734,
-      "date": "2026-03-06",
-      "title": "The Drama",
-      "director": "Kristoffer Borgli",
-      "studio": "A24",
-      "budget_usd": 28000000,
-      "release_type": "wide",
-      "genre": "Romance / Comedy / Drama",
-      "cast": "Zendaya, Robert Pattinson, Mamoudou Athie, Alana Haim",
-      "notes": "Witness the wedding of the year."
-    },
-    {
-      "tmdb_id": 1514521,
-      "date": "2026-03-06",
-      "title": "The First Hymn",
-      "director": "John Dickson, Mark Hadley",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "John Dickson, Chris Tomlin, Ben Fielding, Stephanie Boonstra",
-      "notes": ""
-    },
-    {
       "tmdb_id": 970347,
       "date": "2026-03-06",
       "title": "The Killer",
@@ -794,102 +302,6 @@
       "genre": "Action / Thriller / Crime",
       "cast": "Nathalie Emmanuel, Omar Sy, Sam Worthington, Diana Silvers",
       "notes": "Some alliances form. Others will crumble."
-    },
-    {
-      "tmdb_id": 1146058,
-      "date": "2026-03-06",
-      "title": "The Pout-Pout Fish",
-      "director": "Ricard Cussó",
-      "studio": "Viva Pictures",
-      "budget_usd": 10000,
-      "release_type": "wide",
-      "genre": "Animation / Family / Adventure / Comedy",
-      "cast": "Nick Offerman, Nina Oyama, Miranda Otto, Amy Sedaris",
-      "notes": "Spreading the dreary-wearies since 2008."
-    },
-    {
-      "tmdb_id": 1429348,
-      "date": "2026-03-06",
-      "title": "The Stranger",
-      "director": "François Ozon",
-      "studio": "Music Box Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Crime",
-      "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin, Denis Lavant",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1226863,
-      "date": "2026-03-06",
-      "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
-      "studio": "Universal Pictures",
-      "budget_usd": 110000000,
-      "release_type": "wide",
-      "genre": "Family / Comedy / Adventure / Fantasy / Animation",
-      "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
-      "notes": "The galaxy awaits."
-    },
-    {
-      "tmdb_id": 1418657,
-      "date": "2026-03-06",
-      "title": "The Yeti",
-      "director": "Gene Gallerano, William Pisciotta",
-      "studio": "Well Go USA Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "Brittany Allen, Eric Nelsen, Corbin Bernsen, William Sadler",
-      "notes": "Fear is primal."
-    },
-    {
-      "tmdb_id": 1292695,
-      "date": "2026-03-06",
-      "title": "They Will Kill You",
-      "director": "Kirill Sokolov",
-      "studio": "Warner Bros.",
-      "budget_usd": 20000000,
-      "release_type": "limited",
-      "genre": "Horror / Action / Comedy",
-      "cast": "Zazie Beetz, Patricia Arquette, Myha'la, Paterson Joseph",
-      "notes": "Let them try."
-    },
-    {
-      "tmdb_id": 1244517,
-      "date": "2026-03-06",
-      "title": "Tow",
-      "director": "Stephanie Laing",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Rose Byrne, Dominic Sessa, Demi Lovato, Simon Rex",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1257406,
-      "date": "2026-03-06",
-      "title": "Two Prosecutors",
-      "director": "Sergei Loznitsa",
-      "studio": "Janus Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Mystery / Thriller / History",
-      "cast": "Aleksandr Kuznetsov, Aleksandr Filippenko, Anatoliy Belyy, Andris Keišs",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1480387,
-      "date": "2026-03-06",
-      "title": "Undertone",
-      "director": "Ian Tuason",
-      "studio": "A24",
-      "budget_usd": 500000,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Nina Kiri, Adam DiMarco, Michèle Duquet, Keana Bastidas",
-      "notes": "It wants to be heard."
     },
     {
       "tmdb_id": 868668,
@@ -916,18 +328,6 @@
       "notes": "Biopic of a Billion Bros"
     },
     {
-      "tmdb_id": 1217931,
-      "date": "2026-03-06",
-      "title": "Vampires of the Velvet Lounge",
-      "director": "Adam Sherman",
-      "studio": "Strand Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Horror",
-      "cast": "Mena Suvari, Dichen Lachman, Stephen Dorff, Sarah Dumont",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1559916,
       "date": "2026-03-06",
       "title": "We Met at Grossinger's",
@@ -950,30 +350,6 @@
       "genre": "Comedy",
       "cast": "Kendrick Lamar, Kellan Tetlow, Trey Parker, Andrea Sevilla",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1149614,
-      "date": "2026-03-06",
-      "title": "Yes",
-      "director": "Nadav Lapid",
-      "studio": "Kino Lorber",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Comedy",
-      "cast": "Ariel Bronz, Efrat Dor, Naama Preis, Aleksey Serebryakov",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1455079,
-      "date": "2026-03-06",
-      "title": "You, Me & Tuscany",
-      "director": "Kat Coiro",
-      "studio": "Universal Pictures",
-      "budget_usd": 18000000,
-      "release_type": "wide",
-      "genre": "Romance / Comedy",
-      "cast": "Halle Bailey, Regé-Jean Page, Marco Calvani, Lorenzo de Moor",
-      "notes": "She came for the pasta and got lost in the sauce."
     },
     {
       "tmdb_id": 1022046,
@@ -1012,6 +388,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1284460,
+      "date": "2026-03-13",
+      "title": "Alpha",
+      "director": "Julia Ducournau",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Drama / Science Fiction",
+      "cast": "Mélissa Boros, Tahar Rahim, Golshifteh Farahani, Emma Mackey",
+      "notes": "Love leaves a mark."
+    },
+    {
       "tmdb_id": 1247794,
       "date": "2026-03-13",
       "title": "American Solitaire",
@@ -1036,54 +424,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1243741,
-      "date": "2026-03-13",
-      "title": "Ballistic",
-      "director": "Chad Faust",
-      "studio": "Brainstorm Media",
-      "budget_usd": 4000000,
-      "release_type": "limited",
-      "genre": "Action / Thriller",
-      "cast": "Lena Headey, Enrico Colantoni, Amybeth McNulty, Michael Lipka",
-      "notes": "A mother's pain, a bullet's purpose."
-    },
-    {
-      "tmdb_id": 1239134,
-      "date": "2026-03-13",
-      "title": "Bhooth Bangla",
-      "director": "Priyadarshan",
-      "studio": "—",
-      "budget_usd": 14000000,
-      "release_type": "limited",
-      "genre": "Horror / Comedy",
-      "cast": "Akshay Kumar, Wamiqa Gabbi, Paresh Rawal, Tabu",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1184941,
-      "date": "2026-03-13",
-      "title": "Blue Heron",
-      "director": "Sophy Romvari",
-      "studio": "Janus Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Eylul Guven, Iringó Réti, Ádám Tompa, Edik Beddoes",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1414413,
-      "date": "2026-03-13",
-      "title": "Brothers Under Fire",
-      "director": "Justin Chadwick",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Thriller / Mystery / Drama",
-      "cast": "Kiefer Sutherland, Tommy Martinez, Ashton Sanders, Solly McLeod",
-      "notes": "He never planned to fight. But he refuses to fall."
-    },
-    {
       "tmdb_id": 1640663,
       "date": "2026-03-13",
       "title": "BTS WORLD TOUR 'ARIRANG' in GOYANG: LIVE VIEWING",
@@ -1094,162 +434,6 @@
       "genre": "Music",
       "cast": "RM, Jin, Suga, j-hope",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1391074,
-      "date": "2026-03-13",
-      "title": "Busboys",
-      "director": "Jonah Feingold",
-      "studio": "Busboys Holdings",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "David Spade, Theo Von, Bobby Lee, Tim Dillon",
-      "notes": "Some messes can't be cleaned up."
-    },
-    {
-      "tmdb_id": 1601096,
-      "date": "2026-03-13",
-      "title": "Changing Lanes",
-      "director": "Ben Wolf",
-      "studio": "First Run",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "David Byrne, Janette Sadik-Khan",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1337592,
-      "date": "2026-03-13",
-      "title": "Erupcja",
-      "director": "Pete Ohs",
-      "studio": "1-2 Special",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Comedy",
-      "cast": "Charli xcx, Lena Góra, Will Madden, Jeremy O. Harris",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1472844,
-      "date": "2026-03-13",
-      "title": "Everyone Is Lying to You for Money",
-      "director": "Ben McKenzie, Giorgio Angelini",
-      "studio": "Eammon Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Ben McKenzie, Morena Baccarin, Sam Bankman-Fried, Alex Mashinksy",
-      "notes": "Like subprime, but dumber."
-    },
-    {
-      "tmdb_id": 1015154,
-      "date": "2026-03-13",
-      "title": "Fireflies at El Mozote",
-      "director": "Ernesto Melara",
-      "studio": "Magenta Light Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Drama / History / War",
-      "cast": "Paz Vega, Juan Pablo Shuk, Yancey Arias, Mena Suvari",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1304313,
-      "date": "2026-03-13",
-      "title": "Lee Cronin's The Mummy",
-      "director": "Lee Cronin",
-      "studio": "Warner Bros.",
-      "budget_usd": 22000000,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Jack Reynor, Laia Costa, May Calamawy, Natalie Grace",
-      "notes": "What happened to Katie?"
-    },
-    {
-      "tmdb_id": 1582296,
-      "date": "2026-03-13",
-      "title": "Legends of the Lost Ark",
-      "director": "Stephen Pettit",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Chris Mckinny, Cyndi Parker, Steven King, Jose Jaime Pinto",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1634949,
-      "date": "2026-03-13",
-      "title": "Lorne",
-      "director": "Morgan Neville",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Lorne Michaels, Tina Fey, Maya Rudolph, John Mulaney",
-      "notes": "The legend behind the legends."
-    },
-    {
-      "tmdb_id": 1400756,
-      "date": "2026-03-13",
-      "title": "Mad Bills to Pay: (or Destiny, dile que no soy malo)",
-      "director": "Joel Alfonso Vargas",
-      "studio": "Oscilloscope",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Juan Collado, Destiny Checo, Yohanna Florentino, Nathaly Navarro",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1364953,
-      "date": "2026-03-13",
-      "title": "Marama",
-      "director": "Taratoa Stappard",
-      "studio": "Dark Sky Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Drama / Mystery",
-      "cast": "Ariaana Osborne, Toby Stephens, Umi Myers, Erroll Shand",
-      "notes": "A Māori gothic story of retribution."
-    },
-    {
-      "tmdb_id": 1177767,
-      "date": "2026-03-13",
-      "title": "Mile End Kicks",
-      "director": "Chandler Levack",
-      "studio": "Sumerian Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Romance / Music",
-      "cast": "Barbie Ferreira, Devon Bostick, Stanley Simons, Juliette Gariépy",
-      "notes": "Welcome to the summer of 2011."
-    },
-    {
-      "tmdb_id": 1102883,
-      "date": "2026-03-13",
-      "title": "Mother Mary",
-      "director": "David Lowery",
-      "studio": "A24",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music / Thriller / Fantasy / Drama",
-      "cast": "Anne Hathaway, Michaela Coel, Hunter Schafer, FKA twigs",
-      "notes": "This is not a ghost story."
-    },
-    {
-      "tmdb_id": 1242332,
-      "date": "2026-03-13",
-      "title": "Normal",
-      "director": "Ben Wheatley",
-      "studio": "Magnolia Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
-      "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Ryan Allen",
-      "notes": "Small town. Big secret."
     },
     {
       "tmdb_id": 1421552,
@@ -1264,6 +448,54 @@
       "notes": ""
     },
     {
+      "tmdb_id": 1323909,
+      "date": "2026-03-13",
+      "title": "Red Riding",
+      "director": "Craig Conway",
+      "studio": "—",
+      "budget_usd": 635000,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Victoria Tait, Lynsey Beauchamp, Ian Whyte, Bill Fellows",
+      "notes": "This is no fairy tale."
+    },
+    {
+      "tmdb_id": 1367642,
+      "date": "2026-03-13",
+      "title": "Reminders of Him",
+      "director": "Vanessa Caswill",
+      "studio": "Universal Pictures",
+      "budget_usd": 30000000,
+      "release_type": "wide",
+      "genre": "Romance / Drama",
+      "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow, Bradley Whitford",
+      "notes": "Everyone deserves a second chance."
+    },
+    {
+      "tmdb_id": 1299357,
+      "date": "2026-03-13",
+      "title": "Scared to Death",
+      "director": "Paul Boyd",
+      "studio": "Atlas Distribution Company",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Comedy",
+      "cast": "Lin Shaye, Bill Moseley, Olivier Paris, Victoria Konefal",
+      "notes": "Heads will roll."
+    },
+    {
+      "tmdb_id": 1297446,
+      "date": "2026-03-13",
+      "title": "Slanted",
+      "director": "Amy Wang",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Horror / Science Fiction",
+      "cast": "Shirley Chen, Mckenna Grace, Amelie Zilber, Vivian Wu",
+      "notes": "If you can't beat them... be them."
+    },
+    {
       "tmdb_id": 1443576,
       "date": "2026-03-13",
       "title": "Sundays",
@@ -1276,18 +508,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1647277,
-      "date": "2026-03-13",
-      "title": "The Gardener",
-      "director": "Dabney Day",
-      "studio": "Area 23a",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Radha Mitchell, William Miller, Ellen David, David Andrews",
-      "notes": "Every bloom tells a story."
-    },
-    {
       "tmdb_id": 1280300,
       "date": "2026-03-13",
       "title": "The Whistler",
@@ -1297,18 +517,6 @@
       "release_type": "limited",
       "genre": "Mystery / Horror / Thriller",
       "cast": "Juan Pablo Raba, Diane Guerrero, Indhira Serrano, Laureano Olivares",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1226699,
-      "date": "2026-03-13",
-      "title": "The Wrong Girls",
-      "director": "Dylan Meyer",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Drama / Thriller",
-      "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
       "notes": ""
     },
     {
@@ -1324,28 +532,52 @@
       "notes": "Bring on The Heat"
     },
     {
-      "tmdb_id": 1307373,
+      "tmdb_id": 1480387,
       "date": "2026-03-13",
-      "title": "Wasteman",
-      "director": "Cal McMau",
-      "studio": "Vertigo Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "David Jonsson, Tom Blyth, Alex Hassell, Neil Linpow",
-      "notes": "A bold new vision of life inside."
+      "title": "Undertone",
+      "director": "Ian Tuason",
+      "studio": "A24",
+      "budget_usd": 500000,
+      "release_type": "wide",
+      "genre": "Horror / Mystery",
+      "cast": "Nina Kiri, Adam DiMarco, Michèle Duquet, Keana Bastidas",
+      "notes": "It wants to be heard."
     },
     {
-      "tmdb_id": 1616429,
-      "date": "2026-03-20",
-      "title": "American Youngboy",
-      "director": "Nico Ballesteros",
+      "tmdb_id": 1616685,
+      "date": "2026-03-17",
+      "title": "He Calls Me Daughter",
+      "director": "Rick Altizer",
       "studio": "—",
+      "budget_usd": 300000,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Chonda Pierce, Alex Kendrick, Meg Meeker, Lynsi Snyder",
+      "notes": "A heavenly Father changes everything."
+    },
+    {
+      "tmdb_id": 1073973,
+      "date": "2026-03-18",
+      "title": "Dead Lover",
+      "director": "Grace Glowicki",
+      "studio": "Cartuna",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "YoungBoy Never Broke Again",
-      "notes": ""
+      "genre": "Horror / Comedy / Romance",
+      "cast": "Grace Glowicki, Ben Petrie, Leah Doz, Lowen Morrow",
+      "notes": "Love can conquer death."
+    },
+    {
+      "tmdb_id": 1582770,
+      "date": "2026-03-18",
+      "title": "Dhurandhar: The Revenge",
+      "director": "Aditya Dhar",
+      "studio": "Moviegoers Entertainment",
+      "budget_usd": 22500000,
+      "release_type": "limited",
+      "genre": "Action / Crime / Thriller",
+      "cast": "Ranveer Singh, Arjun Rampal, R. Madhavan, Sanjay Dutt",
+      "notes": "The Story of The Unknown Men Unfolds"
     },
     {
       "tmdb_id": 1640677,
@@ -1372,54 +604,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 898704,
-      "date": "2026-03-20",
-      "title": "Desert Warrior",
-      "director": "Rupert Wyatt",
-      "studio": "Vertical Entertainment",
-      "budget_usd": 150000000,
-      "release_type": "wide",
-      "genre": "Action / Drama / History",
-      "cast": "Anthony Mackie, Aiysha Hart, Ben Kingsley, Ghassan Massoud",
-      "notes": "One warrior must unite them all."
-    },
-    {
-      "tmdb_id": 1242265,
-      "date": "2026-03-20",
-      "title": "Fuze",
-      "director": "David Mackenzie",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Crime / Thriller / Drama",
-      "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
-      "notes": "Down to the wire."
-    },
-    {
-      "tmdb_id": 1317149,
-      "date": "2026-03-20",
-      "title": "I Swear",
-      "director": "Kirk Jones",
-      "studio": "Sony Pictures Classics",
-      "budget_usd": 6000000,
-      "release_type": "wide",
-      "genre": "Drama / History",
-      "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
-      "notes": "I blink. I twitch. I jump. I click. I whistle. I shout."
-    },
-    {
-      "tmdb_id": 1593115,
-      "date": "2026-03-20",
-      "title": "Kapodistrias",
-      "director": "Yannis Smaragdis",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "History / Drama",
-      "cast": "Antonis Miriagos, Finbar Lynch, Pavlos Kourtidis, Tasos Halkias",
-      "notes": ""
-    },
-    {
       "tmdb_id": null,
       "date": "2026-03-20",
       "title": "La maison des bois",
@@ -1432,16 +616,40 @@
       "notes": ""
     },
     {
-      "tmdb_id": 936075,
+      "tmdb_id": 1356670,
       "date": "2026-03-20",
-      "title": "Michael",
-      "director": "Antoine Fuqua",
-      "studio": "Lionsgate",
-      "budget_usd": 250000000,
-      "release_type": "wide",
-      "genre": "Music / Drama",
-      "cast": "Jaafar Jackson, Colman Domingo, Nia Long, Juliano Krue Valdi",
-      "notes": "Discover the making of a king."
+      "title": "Late Shift",
+      "director": "Petra Biondina Volpe",
+      "studio": "Music Box Films",
+      "budget_usd": 4600000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Leonie Benesch, Alireza Bayram, Jürg Plüss, Jasmin Mattei",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1517069,
+      "date": "2026-03-20",
+      "title": "Marc by Sofia",
+      "director": "Sofia Coppola",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Sofia Coppola, Marc Jacobs, Spike Jonze, Romy Mars",
+      "notes": "A portrait of marc jacobs"
+    },
+    {
+      "tmdb_id": 1178602,
+      "date": "2026-03-20",
+      "title": "Miroirs No. 3",
+      "director": "Christian Petzold",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Paula Beer, Barbara Auer, Matthias Brandt, Enno Trebs",
+      "notes": ""
     },
     {
       "tmdb_id": 1165655,
@@ -1456,40 +664,28 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1514056,
+      "tmdb_id": 687163,
       "date": "2026-03-20",
-      "title": "Nika & Madison",
-      "director": "Eva Thomas",
-      "studio": "Indican Pictures",
-      "budget_usd": 2000000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1233655,
-      "date": "2026-03-20",
-      "title": "Omaha",
-      "director": "Cole Webley",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Family",
-      "cast": "John Magaro, Molly Belle Wright, Wyatt Solis, Talia Balsam",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1390300,
-      "date": "2026-03-20",
-      "title": "Over Your Dead Body",
-      "director": "Jorma Taccone",
-      "studio": "IFC Films",
-      "budget_usd": null,
+      "title": "Project Hail Mary",
+      "director": "Phil Lord, Christopher Miller",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": 200000000,
       "release_type": "wide",
-      "genre": "Comedy / Action / Thriller",
-      "cast": "Jason Segel, Samara Weaving, Timothy Olyphant, Juliette Lewis",
-      "notes": "Breakups are all in the execution."
+      "genre": "Science Fiction / Adventure",
+      "cast": "Ryan Gosling, James Ortiz, Sandra Hüller, Lionel Boyce",
+      "notes": "Believe in the Hail Mary."
+    },
+    {
+      "tmdb_id": 1266127,
+      "date": "2026-03-20",
+      "title": "Ready or Not 2: Here I Come",
+      "director": "Matt Bettinelli-Olpin, Tyler Gillett",
+      "studio": "Searchlight Pictures",
+      "budget_usd": 14000000,
+      "release_type": "limited",
+      "genre": "Horror / Comedy",
+      "cast": "Samara Weaving, Kathryn Newton, Elijah Wood, Sarah Michelle Gellar",
+      "notes": "Double or nothing."
     },
     {
       "tmdb_id": 1400736,
@@ -1504,16 +700,28 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1422600,
+      "tmdb_id": 1389881,
       "date": "2026-03-20",
-      "title": "Strange Journey: The Story of Rocky Horror",
-      "director": "Linus O'Brien",
-      "studio": "Magenta Light Studios",
+      "title": "The Cure",
+      "director": "Nancy Leopardi",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Richard O'Brien, Susan Sarandon, Tim Curry, Barry Bostwick",
-      "notes": ""
+      "genre": "Horror / Thriller",
+      "cast": "David Dastmalchian, Ashley Greene, Samantha Cochran, Sydney Taylor",
+      "notes": "Family is more than blood."
+    },
+    {
+      "tmdb_id": 1146058,
+      "date": "2026-03-20",
+      "title": "The Pout-Pout Fish",
+      "director": "Ricard Cussó",
+      "studio": "Viva Pictures",
+      "budget_usd": 10000,
+      "release_type": "wide",
+      "genre": "Animation / Family / Adventure / Comedy",
+      "cast": "Nick Offerman, Nina Oyama, Miranda Otto, Amy Sedaris",
+      "notes": "Spreading the dreary-wearies since 2008."
     },
     {
       "tmdb_id": 1327460,
@@ -1528,6 +736,42 @@
       "notes": "Our nation. Our kids. Our guns."
     },
     {
+      "tmdb_id": 1244517,
+      "date": "2026-03-20",
+      "title": "Tow",
+      "director": "Stephanie Laing",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Rose Byrne, Dominic Sessa, Demi Lovato, Simon Rex",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1257406,
+      "date": "2026-03-20",
+      "title": "Two Prosecutors",
+      "director": "Sergei Loznitsa",
+      "studio": "Janus Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Mystery / Thriller / History",
+      "cast": "Aleksandr Kuznetsov, Aleksandr Filippenko, Anatoliy Belyy, Andris Keišs",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1217931,
+      "date": "2026-03-20",
+      "title": "Vampires of the Velvet Lounge",
+      "director": "Adam Sherman",
+      "studio": "Strand Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Horror",
+      "cast": "Mena Suvari, Dichen Lachman, Stephen Dorff, Sarah Dumont",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1587535,
       "date": "2026-03-20",
       "title": "Wasteland Cop",
@@ -1540,40 +784,40 @@
       "notes": "There's no law in the wasteland"
     },
     {
-      "tmdb_id": 539745,
-      "date": "2026-03-27",
-      "title": "Animal Farm",
-      "director": "Andy Serkis",
-      "studio": "Angel",
+      "tmdb_id": 1514521,
+      "date": "2026-03-24",
+      "title": "The First Hymn",
+      "director": "John Dickson, Mark Hadley",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Comedy / Family / Drama",
-      "cast": "Seth Rogen, Gaten Matarazzo, Woody Harrelson, Kieran Culkin",
-      "notes": "It's time for these animals to stand and fight."
+      "genre": "Documentary",
+      "cast": "John Dickson, Chris Tomlin, Ben Fielding, Stephanie Boonstra",
+      "notes": ""
     },
     {
-      "tmdb_id": 1115030,
-      "date": "2026-03-27",
-      "title": "Animal Friends",
-      "director": "Peter Atencio",
-      "studio": "Sony Pictures Releasing",
+      "tmdb_id": 1621113,
+      "date": "2026-03-25",
+      "title": "Bring Me the Horizon: L.I.V.E. in São Paulo",
+      "director": "Oliver Sykes, CiRCUS HEaD",
+      "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Adventure",
-      "cast": "Ryan Reynolds, Jason Momoa, Aubrey Plaza, Dan Levy",
-      "notes": "You know you want to stroke it."
+      "genre": "Music / Documentary",
+      "cast": "Oliver Sykes, Lee Malia, Matt Kean, John Jones",
+      "notes": ""
     },
     {
-      "tmdb_id": 1469164,
+      "tmdb_id": 840873,
       "date": "2026-03-27",
-      "title": "Casa Grande",
-      "director": "Juan Pablo Arias Munoz",
-      "studio": "Seismic Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Western",
-      "cast": "John Pyper-Ferguson, Christina Moore, Madison Lawlor, Lou Diamond Phillips",
-      "notes": "Nothing stays buried forever."
+      "title": "A Magnificent Life",
+      "director": "Sylvain Chomet",
+      "studio": "Sony Pictures Classics",
+      "budget_usd": 15000000,
+      "release_type": "limited",
+      "genre": "Animation / History / Drama",
+      "cast": "Laurent Lafitte, Géraldine Pailhas, Thierry Garcia, Olivia Gotanègre",
+      "notes": "His story is that of cinema."
     },
     {
       "tmdb_id": 1427653,
@@ -1600,40 +844,76 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1430077,
+      "tmdb_id": 1421977,
       "date": "2026-03-27",
-      "title": "Hokum",
-      "director": "Damian McCarthy",
-      "studio": "Neon",
+      "title": "Fantasy Life",
+      "director": "Matthew Shear",
+      "studio": "Greenwich Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Mystery / Thriller",
-      "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
-      "notes": "We've been expecting you."
+      "genre": "Comedy / Romance / Drama",
+      "cast": "Amanda Peet, Matthew Shear, Alessandro Nivola, Judd Hirsch",
+      "notes": ""
     },
     {
-      "tmdb_id": 1290792,
+      "tmdb_id": 1450527,
       "date": "2026-03-27",
-      "title": "One Spoon of Chocolate",
-      "director": "RZA",
+      "title": "Forbidden Fruits",
+      "director": "Meredith Alloway",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Comedy",
+      "cast": "Lili Reinhart, Lola Tung, Victoria Pedretti, Alexandra Shipp",
+      "notes": "The coven just clocked in."
+    },
+    {
+      "tmdb_id": 1381151,
+      "date": "2026-03-27",
+      "title": "Holy Days",
+      "director": "Nathalie Boltt",
+      "studio": "Blue Fox Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Adventure / Drama",
+      "cast": "Elijah Tamati, Judy Davis, Miriam Margolyes, Jacki Weaver",
+      "notes": "Breaking the rules. Keeping the faith."
+    },
+    {
+      "tmdb_id": 1644912,
+      "date": "2026-03-27",
+      "title": "Jimmy O. Yang: Finally Home",
+      "director": "Jimmy O. Yang",
       "studio": "Variance Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Drama / Thriller",
-      "cast": "Shameik Moore, Blair Underwood, RJ Cyler, Paris Jackson",
-      "notes": "He has nowhere to go. They have nowhere to hide."
+      "genre": "Comedy",
+      "cast": "Jimmy O. Yang",
+      "notes": ""
     },
     {
-      "tmdb_id": 661603,
+      "tmdb_id": 1410189,
       "date": "2026-03-27",
-      "title": "Our Land",
-      "director": "Lucrecia Martel",
-      "studio": "Strand Releasing",
+      "title": "Kontinental '25",
+      "director": "Radu Jude",
+      "studio": "1-2 Special",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Javier Chocobar, Comunidad Chuschagasta",
+      "genre": "Comedy / Drama",
+      "cast": "Eszter Tompa, Gabriel Spahiu, Adonis Tanța, Oana Mardare",
       "notes": ""
+    },
+    {
+      "tmdb_id": 1465557,
+      "date": "2026-03-27",
+      "title": "Our Hero, Balthazar",
+      "director": "Oscar Boyson",
+      "studio": "Picturehouse",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy / Thriller",
+      "cast": "Jaeden Martell, Asa Butterfield, Jennifer Ehle, Pippa Knowles",
+      "notes": "Take a shot at friendship."
     },
     {
       "tmdb_id": null,
@@ -1648,28 +928,28 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1363974,
+      "tmdb_id": 1465751,
       "date": "2026-03-27",
-      "title": "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea",
-      "director": "Yasuhito Kikuchi",
-      "studio": "Sony Pictures Releasing",
+      "title": "She Dances",
+      "director": "Rick Gomez",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Fantasy / Adventure / Comedy",
-      "cast": "Miho Okasaki, Mao Ichimichi, Tomoaki Maeno, Makoto Furukawa",
+      "genre": "Comedy / Drama",
+      "cast": "Steve Zahn, Audrey Zahn, Ethan Hawke, Mackenzie Ziegler",
       "notes": ""
     },
     {
-      "tmdb_id": 1314481,
+      "tmdb_id": 1596335,
       "date": "2026-03-27",
-      "title": "The Devil Wears Prada 2",
-      "director": "David Frankel",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": 100000000,
-      "release_type": "wide",
-      "genre": "Drama / Comedy",
-      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
-      "notes": "Icons reign forever."
+      "title": "The AI Doc: Or How I Became an Apocaloptimist",
+      "director": "Daniel Roher, Charlie Tyrell",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Daniel Roher, Sam Altman, Daniela Amodei, Dario Amodei",
+      "notes": "The future is not automatic"
     },
     {
       "tmdb_id": 1462322,
@@ -1684,16 +964,16 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1650789,
+      "tmdb_id": 1292695,
       "date": "2026-03-27",
-      "title": "The Story of Everything",
-      "director": "Eric Esau",
-      "studio": "—",
-      "budget_usd": null,
+      "title": "They Will Kill You",
+      "director": "Kirill Sokolov",
+      "studio": "Warner Bros.",
+      "budget_usd": 20000000,
       "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Dr. Stephen C. Meyer, Phd, John Lennox, PhD, Peter Thiel, Brian Keating, PhD",
-      "notes": "The Science That Reveals A Mind Behind The Universe"
+      "genre": "Horror / Action / Comedy",
+      "cast": "Zazie Beetz, Patricia Arquette, Myha'la, Paterson Joseph",
+      "notes": "Let them try."
     },
     {
       "tmdb_id": 1331349,
@@ -1705,6 +985,18 @@
       "release_type": "limited",
       "genre": "Drama / Romance / Music",
       "cast": "François Civil, Nadia Tereszkiewicz, Charlotte Rampling, Hippolyte Girardot",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1149614,
+      "date": "2026-03-27",
+      "title": "Yes",
+      "director": "Nadav Lapid",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Ariel Bronz, Efrat Dor, Naama Preis, Aleksey Serebryakov",
       "notes": ""
     }
   ]

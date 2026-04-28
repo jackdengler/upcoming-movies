@@ -28,78 +28,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1248832,
-      "date": "2026-09-04",
-      "title": "Digger",
-      "director": "Alejandro G. Iñárritu",
-      "studio": "Warner Bros.",
-      "budget_usd": 125000000,
-      "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
-      "notes": "A comedy of catastrophic proportions."
-    },
-    {
-      "tmdb_id": 1465063,
-      "date": "2026-09-04",
-      "title": "Forgotten Island",
-      "director": "Januel Mercado, Joel Crawford",
-      "studio": "DreamWorks",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Adventure / Animation / Fantasy / Family",
-      "cast": "H.E.R., Liza Soberano, Dave Franco, Jenny Slate",
-      "notes": "Go together."
-    },
-    {
-      "tmdb_id": 1400837,
-      "date": "2026-09-04",
-      "title": "Other Mommy",
-      "director": "Rob Savage",
-      "studio": "Universal Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror",
-      "cast": "Jessica Chastain, Jay Duplass, Dichen Lachman, Arabella Olivia Clark",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1302904,
-      "date": "2026-09-04",
-      "title": "Practical Magic 2",
-      "director": "Susanne Bier",
-      "studio": "Warner Bros.",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Fantasy / Drama / Comedy",
-      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Lee Pace",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1423191,
-      "date": "2026-09-04",
-      "title": "Resident Evil",
-      "director": "Zach Cregger",
-      "studio": "Columbia Pictures",
-      "budget_usd": 80000000,
-      "release_type": "limited",
-      "genre": "Horror / Science Fiction",
-      "cast": "Austin Abrams, Paul Walter Hauser, Zach Cherry, Kali Reis",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1477104,
-      "date": "2026-09-04",
-      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
-      "director": "Steve Cox, Matthew Walker",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Family / Comedy / Adventure / Animation",
-      "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
-      "notes": "What's that coming over the hill?"
-    },
-    {
       "tmdb_id": 980431,
       "date": "2026-09-04",
       "title": "The Legend of Aang: The Last Airbender",
@@ -110,30 +38,6 @@
       "genre": "Animation / Action / Adventure / Fantasy",
       "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
       "notes": ""
-    },
-    {
-      "tmdb_id": 977942,
-      "date": "2026-09-04",
-      "title": "The Uprising",
-      "director": "Paul Greengrass",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / History",
-      "cast": "Andrew Garfield, Katherine Waterston, Jamie Bell, Cosmo Jarvis",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1497970,
-      "date": "2026-09-04",
-      "title": "Tom and Jerry: Forbidden Compass",
-      "director": "Zhang Gang",
-      "studio": "Viva Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Comedy / Family / Fantasy / Adventure",
-      "cast": "Jiang Wen, Shun Zi, Lan Long, Tu Xiongfei",
-      "notes": "The cat and mouse chase never ends!"
     },
     {
       "tmdb_id": 1521151,
@@ -148,28 +52,16 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1283515,
-      "date": "2026-09-04",
-      "title": "Verity",
-      "director": "Michael Showalter",
-      "studio": "Amazon MGM Studios",
+      "tmdb_id": 1497970,
+      "date": "2026-09-09",
+      "title": "Tom and Jerry: Forbidden Compass",
+      "director": "Zhang Gang",
+      "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Mystery / Thriller",
-      "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
-      "notes": "There is no light where we're going."
-    },
-    {
-      "tmdb_id": 1511171,
-      "date": "2026-09-11",
-      "title": "Flywheel: Ignition of the Soul",
-      "director": "Alessandro Barros",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Mário Bregieira, Pérola Faria, Felipe Folgosi, Alex Kendrick",
-      "notes": ""
+      "genre": "Animation / Comedy / Family / Fantasy / Adventure",
+      "cast": "Jiang Wen, Shun Zi, Lan Long, Tu Xiongfei",
+      "notes": "The cat and mouse chase never ends!"
     },
     {
       "tmdb_id": 1272162,
@@ -181,6 +73,18 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Leslie Mann, Andrew Barth Feldman, Cooper Hoffman, Nico Parker",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1302904,
+      "date": "2026-09-11",
+      "title": "Practical Magic 2",
+      "director": "Susanne Bier",
+      "studio": "Warner Bros.",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Fantasy / Drama / Comedy",
+      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Lee Pace",
       "notes": ""
     },
     {
@@ -196,52 +100,40 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1153576,
+      "tmdb_id": 977942,
       "date": "2026-09-11",
-      "title": "Street Fighter",
-      "director": "Kitao Sakurai",
-      "studio": "Paramount Pictures International",
+      "title": "The Uprising",
+      "director": "Paul Greengrass",
+      "studio": "Focus Features",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Comedy / Fantasy",
-      "cast": "Noah Centineo, Andrew Koji, Callina Liang, Joe Anoa'i",
-      "notes": "Ready. Set. Fight."
-    },
-    {
-      "tmdb_id": 1255833,
-      "date": "2026-09-11",
-      "title": "Whalefall",
-      "director": "Brian Duffield",
-      "studio": "20th Century Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller",
-      "cast": "Austin Abrams, Josh Brolin, Elisabeth Shue, John Ortiz",
+      "release_type": "wide",
+      "genre": "Drama / History",
+      "cast": "Andrew Garfield, Katherine Waterston, Jamie Bell, Cosmo Jarvis",
       "notes": ""
     },
     {
-      "tmdb_id": 1400940,
+      "tmdb_id": 1423191,
       "date": "2026-09-18",
-      "title": "Clayface",
-      "director": "James Watkins",
-      "studio": "Warner Bros.",
-      "budget_usd": 40000000,
+      "title": "Resident Evil",
+      "director": "Zach Cregger",
+      "studio": "Columbia Pictures",
+      "budget_usd": 80000000,
       "release_type": "limited",
-      "genre": "Horror / Thriller / Science Fiction",
-      "cast": "Tom Rhys Harries, Naomi Ackie, David Dencik, Max Minghella",
-      "notes": "Look fear in the face."
+      "genre": "Horror / Science Fiction",
+      "cast": "Austin Abrams, Paul Walter Hauser, Zach Cherry, Kali Reis",
+      "notes": ""
     },
     {
-      "tmdb_id": 858035,
+      "tmdb_id": 1477104,
       "date": "2026-09-18",
-      "title": "Klara and the Sun",
-      "director": "Taika Waititi",
-      "studio": "Sony Pictures Releasing",
+      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "director": "Steve Cox, Matthew Walker",
+      "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Science Fiction / Drama",
-      "cast": "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne",
-      "notes": ""
+      "genre": "Family / Comedy / Adventure / Animation",
+      "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
+      "notes": "What's that coming over the hill?"
     },
     {
       "tmdb_id": 1102464,
@@ -256,16 +148,16 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1290000,
-      "date": "2026-09-18",
-      "title": "Wife and Dog",
-      "director": "Guy Ritchie",
-      "studio": "Black Bear",
+      "tmdb_id": 1465063,
+      "date": "2026-09-25",
+      "title": "Forgotten Island",
+      "director": "Januel Mercado, Joel Crawford",
+      "studio": "DreamWorks",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Thriller",
-      "cast": "Benedict Cumberbatch, Rosamund Pike, Anthony Hopkins, Cosmo Jarvis",
-      "notes": ""
+      "genre": "Comedy / Adventure / Animation / Fantasy / Family",
+      "cast": "H.E.R., Liza Soberano, Dave Franco, Jenny Slate",
+      "notes": "Go together."
     }
   ]
 }

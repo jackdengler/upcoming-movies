@@ -4,66 +4,6 @@
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": 1437882,
-      "date": "2026-12-04",
-      "title": "A Place in Hell",
-      "director": "Chloe Domont",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller / Drama",
-      "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1003596,
-      "date": "2026-12-04",
-      "title": "Avengers: Doomsday",
-      "director": "Joe Russo, Anthony Russo",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Science Fiction / Action / Adventure",
-      "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1260649,
-      "date": "2026-12-04",
-      "title": "Jumanji: Open World",
-      "director": "Jake Kasdan",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Fantasy / Adventure / Comedy",
-      "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1372443,
-      "date": "2026-12-04",
-      "title": "Mr. Irrelevant: The John Tuggle Story",
-      "director": "Jonathan Levine",
-      "studio": "Paramount Pictures International",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1300926,
-      "date": "2026-12-04",
-      "title": "The Angry Birds Movie 3",
-      "director": "John Rice",
-      "studio": "Paramount Pictures International",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Family / Comedy / Adventure / Animation",
-      "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
-      "notes": ""
-    },
-    {
       "tmdb_id": null,
       "date": "2026-12-04",
       "title": "Untitled Shudder Horror Film",
@@ -88,8 +28,68 @@
       "notes": "Big Nick Energy"
     },
     {
+      "tmdb_id": 1003596,
+      "date": "2026-12-18",
+      "title": "Avengers: Doomsday",
+      "director": "Joe Russo, Anthony Russo",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Science Fiction / Action / Adventure",
+      "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1300926,
+      "date": "2026-12-23",
+      "title": "The Angry Birds Movie 3",
+      "director": "John Rice",
+      "studio": "Paramount Pictures International",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Family / Comedy / Adventure / Animation",
+      "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1437882,
+      "date": "2026-12-25",
+      "title": "A Place in Hell",
+      "director": "Chloe Domont",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Drama",
+      "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1260649,
+      "date": "2026-12-25",
+      "title": "Jumanji: Open World",
+      "director": "Jake Kasdan",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Fantasy / Adventure / Comedy",
+      "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1372443,
+      "date": "2026-12-25",
+      "title": "Mr. Irrelevant: The John Tuggle Story",
+      "director": "Jonathan Levine",
+      "studio": "Paramount Pictures International",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1421903,
-      "date": "2026-12-04",
+      "date": "2026-12-25",
       "title": "Werwulf",
       "director": "Robert Eggers",
       "studio": "Focus Features",
@@ -97,54 +97,6 @@
       "release_type": "limited",
       "genre": "Horror / Mystery",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Ralph Ineson",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 621304,
-      "date": "2026-12-11",
-      "title": "Children of Blood and Bone",
-      "director": "Gina Prince-Bythewood",
-      "studio": "Paramount Pictures International",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Fantasy",
-      "cast": "Thuso Mbedu, Amandla Stenberg, Damson Idris, Tosin Cole",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1440769,
-      "date": "2026-12-11",
-      "title": "The Beekeeper 2",
-      "director": "Timo Tjahjanto",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
-      "cast": "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1518403,
-      "date": "2026-12-18",
-      "title": "Air Bud Returns",
-      "director": "Robert Vince",
-      "studio": "Cineverse",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Family / Drama",
-      "cast": "Roscoe, Aydin Artis, Tracy Ifeachor, Edwin Lee Gibson",
-      "notes": "Ain't no rules."
-    },
-    {
-      "tmdb_id": 1425472,
-      "date": "2026-12-25",
-      "title": "The Rescue",
-      "director": "Potsy Ponciroli",
-      "studio": "Paramount Pictures International",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Western",
-      "cast": "Brandon Sklenar, Hassie Harrison, Josh Lucas, Tim Blake Nelson",
       "notes": ""
     }
   ]

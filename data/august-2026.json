@@ -4,30 +4,6 @@
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": 1514026,
-      "date": "2026-08-07",
-      "title": "Buddy",
-      "director": "Casper Kelly",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1380417,
-      "date": "2026-08-07",
-      "title": "By Any Means",
-      "director": "Elegance Bratton",
-      "studio": "Paramount Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "History / Drama / Thriller",
-      "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, Giancarlo Esposito",
-      "notes": ""
-    },
-    {
       "tmdb_id": null,
       "date": "2026-08-07",
       "title": "CatVideoFest 2026",
@@ -37,18 +13,6 @@
       "release_type": "limited",
       "genre": "Family",
       "cast": "A Bunch of Cats",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1375646,
-      "date": "2026-08-07",
-      "title": "Colony",
-      "director": "Yeon Sang-ho",
-      "studio": "Well Go USA Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Thriller / Horror / Mystery",
-      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Shin Hyun-been",
       "notes": ""
     },
     {
@@ -64,18 +28,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1204680,
-      "date": "2026-08-07",
-      "title": "Coyote vs. Acme",
-      "director": "Dave Green",
-      "studio": "Warner Bros.",
-      "budget_usd": 72000000,
-      "release_type": "limited",
-      "genre": "Adventure / Animation / Comedy / Family",
-      "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
-      "notes": "The movie ACME doesn't want you to see."
-    },
-    {
       "tmdb_id": null,
       "date": "2026-08-07",
       "title": "Elijah Peel",
@@ -85,18 +37,6 @@
       "release_type": "limited",
       "genre": "Drama / Music",
       "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1339588,
-      "date": "2026-08-07",
-      "title": "Finding Emily",
-      "director": "Alicia MacDonald",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Romance / Comedy",
-      "cast": "Spike Fearn, Angourie Rice, Yali Topol Margalith, Ella Maisy Purvis",
       "notes": ""
     },
     {
@@ -112,42 +52,6 @@
       "notes": "Watch out for children."
     },
     {
-      "tmdb_id": 445466,
-      "date": "2026-08-07",
-      "title": "Idiots",
-      "director": "Macon Blair",
-      "studio": "IFC Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Crime",
-      "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1291595,
-      "date": "2026-08-07",
-      "title": "Insidious: Out of the Further",
-      "director": "Jacob Chase",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Amelia Eve, Brandon Perea, Lin Shaye, Maisie Richardson-Sellers",
-      "notes": "Evil found a way out."
-    },
-    {
-      "tmdb_id": 1288445,
-      "date": "2026-08-07",
-      "title": "Mutiny",
-      "director": "Jean-François Richet",
-      "studio": "Lionsgate",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
-      "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
-      "notes": "There's blood in the water."
-    },
-    {
       "tmdb_id": null,
       "date": "2026-08-07",
       "title": "One Night Only",
@@ -157,54 +61,6 @@
       "release_type": "wide",
       "genre": "—",
       "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1185806,
-      "date": "2026-08-07",
-      "title": "PAW Patrol: The Dino Movie",
-      "director": "Cal Brunker",
-      "studio": "Paramount Pictures International",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Adventure / Animation / Comedy / Family",
-      "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
-      "notes": "Adventure reaches new heights."
-    },
-    {
-      "tmdb_id": 1302904,
-      "date": "2026-08-07",
-      "title": "Practical Magic 2",
-      "director": "Susanne Bier",
-      "studio": "Warner Bros.",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Fantasy / Drama / Comedy",
-      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Lee Pace",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1417019,
-      "date": "2026-08-07",
-      "title": "Six: The Musical Live!",
-      "director": "Liz Clare",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Music / History",
-      "cast": "Jarneia Richard-Noel, Millie O'Connell, Natalie Paris, Alexia McIntosh",
-      "notes": "SEE THE ORIGINAL QUEENS HIT THE BIG SCREEN"
-    },
-    {
-      "tmdb_id": 1341138,
-      "date": "2026-08-07",
-      "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
-      "studio": "Black Bear",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
       "notes": ""
     },
     {
@@ -230,66 +86,6 @@
       "genre": "Horror",
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
       "notes": "A new kind of horror remake."
-    },
-    {
-      "tmdb_id": 1384216,
-      "date": "2026-08-07",
-      "title": "The Dog Stars",
-      "director": "Ridley Scott",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Adventure / Science Fiction / Thriller",
-      "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
-      "notes": "The end of the world was just the beginning."
-    },
-    {
-      "tmdb_id": 1101383,
-      "date": "2026-08-07",
-      "title": "The End of Oak Street",
-      "director": "David Robert Mitchell",
-      "studio": "Warner Bros.",
-      "budget_usd": 85000000,
-      "release_type": "limited",
-      "genre": "Science Fiction / Mystery / Thriller",
-      "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1124142,
-      "date": "2026-08-07",
-      "title": "The Rivals of Amziah King",
-      "director": "Andrew Patterson",
-      "studio": "Black Bear",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 977942,
-      "date": "2026-08-07",
-      "title": "The Uprising",
-      "director": "Paul Greengrass",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / History",
-      "cast": "Andrew Garfield, Katherine Waterston, Jamie Bell, Cosmo Jarvis",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1497970,
-      "date": "2026-08-07",
-      "title": "Tom and Jerry: Forbidden Compass",
-      "director": "Zhang Gang",
-      "studio": "Viva Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Comedy / Family / Fantasy / Adventure",
-      "cast": "Jiang Wen, Shun Zi, Lan Long, Tu Xiongfei",
-      "notes": "The cat and mouse chase never ends!"
     },
     {
       "tmdb_id": null,
@@ -328,28 +124,52 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1423191,
+      "tmdb_id": 1185806,
       "date": "2026-08-14",
-      "title": "Resident Evil",
-      "director": "Zach Cregger",
-      "studio": "Columbia Pictures",
-      "budget_usd": 80000000,
+      "title": "PAW Patrol: The Dino Movie",
+      "director": "Cal Brunker",
+      "studio": "Paramount Pictures International",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Adventure / Animation / Comedy / Family",
+      "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
+      "notes": "Adventure reaches new heights."
+    },
+    {
+      "tmdb_id": 1417019,
+      "date": "2026-08-14",
+      "title": "Six: The Musical Live!",
+      "director": "Liz Clare",
+      "studio": "Focus Features",
+      "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Science Fiction",
-      "cast": "Austin Abrams, Paul Walter Hauser, Zach Cherry, Kali Reis",
+      "genre": "Comedy / Music / History",
+      "cast": "Jarneia Richard-Noel, Millie O'Connell, Natalie Paris, Alexia McIntosh",
+      "notes": "SEE THE ORIGINAL QUEENS HIT THE BIG SCREEN"
+    },
+    {
+      "tmdb_id": 1101383,
+      "date": "2026-08-14",
+      "title": "The End of Oak Street",
+      "director": "David Robert Mitchell",
+      "studio": "Warner Bros.",
+      "budget_usd": 85000000,
+      "release_type": "limited",
+      "genre": "Science Fiction / Mystery / Thriller",
+      "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
       "notes": ""
     },
     {
-      "tmdb_id": 1477104,
+      "tmdb_id": 1124142,
       "date": "2026-08-14",
-      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
-      "director": "Steve Cox, Matthew Walker",
-      "studio": "GKIDS",
+      "title": "The Rivals of Amziah King",
+      "director": "Andrew Patterson",
+      "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Family / Comedy / Adventure / Animation",
-      "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
-      "notes": "What's that coming over the hill?"
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
+      "notes": ""
     },
     {
       "tmdb_id": 1521151,
@@ -364,40 +184,100 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1465063,
+      "tmdb_id": 1291595,
       "date": "2026-08-21",
-      "title": "Forgotten Island",
-      "director": "Januel Mercado, Joel Crawford",
-      "studio": "DreamWorks",
+      "title": "Insidious: Out of the Further",
+      "director": "Jacob Chase",
+      "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Adventure / Animation / Fantasy / Family",
-      "cast": "H.E.R., Liza Soberano, Dave Franco, Jenny Slate",
-      "notes": "Go together."
+      "genre": "Horror / Thriller",
+      "cast": "Amelia Eve, Brandon Perea, Lin Shaye, Maisie Richardson-Sellers",
+      "notes": "Evil found a way out."
     },
     {
-      "tmdb_id": 1248832,
+      "tmdb_id": 1288445,
+      "date": "2026-08-21",
+      "title": "Mutiny",
+      "director": "Jean-François Richet",
+      "studio": "Lionsgate",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Crime / Thriller",
+      "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
+      "notes": "There's blood in the water."
+    },
+    {
+      "tmdb_id": 1341138,
+      "date": "2026-08-21",
+      "title": "Spa Weekend",
+      "director": "Jon Lucas, Scott Moore",
+      "studio": "Black Bear",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy",
+      "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1375646,
       "date": "2026-08-28",
-      "title": "Digger",
-      "director": "Alejandro G. Iñárritu",
-      "studio": "Warner Bros.",
-      "budget_usd": 125000000,
+      "title": "Colony",
+      "director": "Yeon Sang-ho",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
-      "notes": "A comedy of catastrophic proportions."
+      "genre": "Action / Thriller / Horror / Mystery",
+      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Shin Hyun-been",
+      "notes": ""
     },
     {
-      "tmdb_id": 1283515,
+      "tmdb_id": 1204680,
       "date": "2026-08-28",
-      "title": "Verity",
-      "director": "Michael Showalter",
-      "studio": "Amazon MGM Studios",
+      "title": "Coyote vs. Acme",
+      "director": "Dave Green",
+      "studio": "Warner Bros.",
+      "budget_usd": 72000000,
+      "release_type": "limited",
+      "genre": "Adventure / Animation / Comedy / Family",
+      "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
+      "notes": "The movie ACME doesn't want you to see."
+    },
+    {
+      "tmdb_id": 1339588,
+      "date": "2026-08-28",
+      "title": "Finding Emily",
+      "director": "Alicia MacDonald",
+      "studio": "Focus Features",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Mystery / Thriller",
-      "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
-      "notes": "There is no light where we're going."
+      "release_type": "limited",
+      "genre": "Romance / Comedy",
+      "cast": "Spike Fearn, Angourie Rice, Yali Topol Margalith, Ella Maisy Purvis",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 445466,
+      "date": "2026-08-28",
+      "title": "Idiots",
+      "director": "Macon Blair",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Crime",
+      "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1384216,
+      "date": "2026-08-28",
+      "title": "The Dog Stars",
+      "director": "Ridley Scott",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Adventure / Science Fiction / Thriller",
+      "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
+      "notes": "The end of the world was just the beginning."
     }
   ]
 }

@@ -171,10 +171,22 @@ async function fetchBomMonth(y, m) {
   return out;
 }
 
+// Pull every US theatrical (release_type 2 = limited, 3 = wide) date from
+// TMDB's release_dates payload, oldest first.
+function usTheatricalDates(d) {
+  const us = (d.release_dates?.results || []).find((r) => r.iso_3166_1 === "US");
+  if (!us) return [];
+  return us.release_dates
+    .filter((r) => r.type === 2 || r.type === 3)
+    .map((r) => r.release_date.slice(0, 10))
+    .sort();
+}
+
 async function enrich(rows) {
   const calendarYear = +year;
   const out = [];
-  let dropped = 0;
+  let droppedRerelease = 0;
+  let droppedOtherMonth = 0;
   for (const row of rows) {
     let tmdb_id = null;
     let director = "—";
@@ -183,6 +195,7 @@ async function enrich(rows) {
     let cast = row.bom_cast || "—";
     let genre = row.genres.length ? row.genres.join(" / ") : "—";
     let originalYear = null;
+    let tmdbTheatricalDates = null;
 
     if (row.imdb_id) {
       try {
@@ -208,6 +221,7 @@ async function enrich(rows) {
           notes = d.tagline || "";
           if (d.genres?.length) genre = d.genres.map((g) => g.name).join(" / ");
           originalYear = d.release_date ? +d.release_date.slice(0, 4) : null;
+          tmdbTheatricalDates = usTheatricalDates(d);
         }
         await sleep(35);
       } catch (e) {
@@ -220,13 +234,33 @@ async function enrich(rows) {
       originalYear < calendarYear - RERELEASE_YEAR_THRESHOLD
     ) {
       console.log(`Drop re-release: ${row.title} (${originalYear})`);
-      dropped++;
+      droppedRerelease++;
       continue;
+    }
+
+    // BOM's calendar pages list multiple weeks of upcoming films, not just
+    // the URL's Friday — so the URL alone is unreliable as a release date.
+    // Prefer the earliest TMDB US theatrical date that falls in the target
+    // month. If TMDB knows about US theatrical dates but none is in the
+    // target month, the row belongs to a different month's file (drop).
+    // Fall back to the BOM URL Friday only when TMDB has no US theatrical
+    // entries at all (rare; mostly tiny indies TMDB hasn't indexed).
+    let date;
+    if (tmdbTheatricalDates && tmdbTheatricalDates.length) {
+      const inMonth = tmdbTheatricalDates.find((d) => d.slice(0, 7) === MONTH);
+      if (inMonth) {
+        date = inMonth;
+      } else {
+        droppedOtherMonth++;
+        continue;
+      }
+    } else {
+      date = row.date;
     }
 
     out.push({
       tmdb_id,
-      date: row.date,
+      date,
       title: row.title,
       director,
       studio: row.distributor || "—",
@@ -237,7 +271,9 @@ async function enrich(rows) {
       notes,
     });
   }
-  if (dropped) console.log(`Dropped ${dropped} re-release(s).`);
+  if (droppedRerelease) console.log(`Dropped ${droppedRerelease} re-release(s).`);
+  if (droppedOtherMonth)
+    console.log(`Dropped ${droppedOtherMonth} listing(s) belonging to other months.`);
   return out;
 }
 

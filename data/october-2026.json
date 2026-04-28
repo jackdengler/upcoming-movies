@@ -16,60 +16,12 @@
       "notes": "A comedy of catastrophic proportions."
     },
     {
-      "tmdb_id": 1272162,
-      "date": "2026-10-02",
-      "title": "Poetic License",
-      "director": "Maude Apatow",
-      "studio": "Row K Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy",
-      "cast": "Leslie Mann, Andrew Barth Feldman, Cooper Hoffman, Nico Parker",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-10-02",
-      "title": "Sense and Sensibility",
-      "director": "—",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Romance",
-      "cast": "Daisy Edgar-Jones, Caitríona Balfe, George MacKay, Bodhi Rae Breathnach",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 980431,
-      "date": "2026-10-02",
-      "title": "The Legend of Aang: The Last Airbender",
-      "director": "Lauren Montgomery",
-      "studio": "Paramount Pictures International",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Action / Adventure / Fantasy",
-      "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1102464,
-      "date": "2026-10-02",
-      "title": "Untitled Jordan Peele Project",
-      "director": "Jordan Peele",
-      "studio": "Universal Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "—",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1283515,
       "date": "2026-10-02",
       "title": "Verity",
       "director": "Michael Showalter",
       "studio": "Amazon MGM Studios",
-      "budget_usd": null,
+      "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Mystery / Thriller",
       "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
@@ -88,6 +40,18 @@
       "notes": ""
     },
     {
+      "tmdb_id": 980431,
+      "date": "2026-10-09",
+      "title": "The Legend of Aang: The Last Airbender",
+      "director": "Lauren Montgomery",
+      "studio": "Paramount Pictures International",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Action / Adventure / Fantasy",
+      "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
+      "notes": ""
+    },
+    {
       "tmdb_id": 1511171,
       "date": "2026-10-16",
       "title": "Flywheel: Ignition of the Soul",
@@ -97,6 +61,30 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Mário Bregieira, Pérola Faria, Felipe Folgosi, Alex Kendrick",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1272162,
+      "date": "2026-10-16",
+      "title": "Poetic License",
+      "director": "Maude Apatow",
+      "studio": "Row K Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Leslie Mann, Andrew Barth Feldman, Cooper Hoffman, Nico Parker",
+      "notes": ""
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-10-16",
+      "title": "Sense and Sensibility",
+      "director": "—",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance",
+      "cast": "Daisy Edgar-Jones, Caitríona Balfe, George MacKay, Bodhi Rae Breathnach",
       "notes": ""
     },
     {
@@ -145,6 +133,18 @@
       "release_type": "limited",
       "genre": "Science Fiction / Drama",
       "cast": "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1102464,
+      "date": "2026-10-23",
+      "title": "Untitled Jordan Peele Project",
+      "director": "Jordan Peele",
+      "studio": "Universal Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "—",
       "notes": ""
     },
     {

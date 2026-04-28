@@ -52,18 +52,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1286656,
-      "date": "2026-11-13",
-      "title": "I Play Rocky",
-      "director": "Peter Farrelly",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1288211,
       "date": "2026-11-13",
       "title": "The Great Beyond",
@@ -73,6 +61,18 @@
       "release_type": "limited",
       "genre": "Drama / Adventure / Action",
       "cast": "Glen Powell, Jenna Ortega, Emma Mackey, Samuel L. Jackson",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1286656,
+      "date": "2026-11-20",
+      "title": "I Play Rocky",
+      "director": "Peter Farrelly",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
       "notes": ""
     },
     {

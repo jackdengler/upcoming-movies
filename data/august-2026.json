@@ -28,18 +28,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": null,
-      "date": "2026-08-07",
-      "title": "Elijah Peel",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Music",
-      "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1477712,
       "date": "2026-08-07",
       "title": "Ice Cream Man",
@@ -101,26 +89,14 @@
     },
     {
       "tmdb_id": null,
-      "date": "2026-08-07",
-      "title": "Untitled Disney",
+      "date": "2026-08-14",
+      "title": "Elijah Peel",
       "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-08-07",
-      "title": "Untitled IFC Comedy Film",
-      "director": "—",
-      "studio": "IFC Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy",
-      "cast": "—",
+      "genre": "Drama / Music",
+      "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
       "notes": ""
     },
     {
@@ -160,27 +136,27 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1124142,
-      "date": "2026-08-14",
-      "title": "The Rivals of Amziah King",
-      "director": "Andrew Patterson",
-      "studio": "Black Bear",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1521151,
+      "tmdb_id": null,
       "date": "2026-08-14",
       "title": "Untitled Disney",
       "director": "—",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Comedy / Family",
+      "genre": "—",
       "cast": "—",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 813418,
+      "date": "2026-08-21",
+      "title": "Hot Spot",
+      "director": "Agnieszka Smoczyńska",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Science Fiction / Thriller",
+      "cast": "Andrzej Konopka, Noomi Rapace, Reika Kirishima",
       "notes": ""
     },
     {
@@ -217,6 +193,30 @@
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1124142,
+      "date": "2026-08-21",
+      "title": "The Rivals of Amziah King",
+      "director": "Andrew Patterson",
+      "studio": "Black Bear",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1120556,
+      "date": "2026-08-28",
+      "title": "Cliffhanger",
+      "director": "Jaume Collet-Serra",
+      "studio": "StudioCanal",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Adventure / Thriller",
+      "cast": "Lily James, Pierce Brosnan, Nell Tiger Free, Franz Rogowski",
       "notes": ""
     },
     {
@@ -278,6 +278,18 @@
       "genre": "Adventure / Science Fiction / Thriller",
       "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
       "notes": "The end of the world was just the beginning."
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-08-28",
+      "title": "Untitled IFC Comedy Film",
+      "director": "—",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "—",
+      "notes": ""
     }
   ]
 }

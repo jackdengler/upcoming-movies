@@ -1,0 +1,95 @@
+name: Refresh release data
+
+on:
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "Month (YYYY-MM). Leave blank to fetch the whole current year."
+        required: false
+        default: ""
+  push:
+    paths:
+      - ".github/workflows/refresh-data.yml"
+      - "scripts/fetch-bom.mjs"
+      - "scripts/fetch-repertory.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Plan months
+        id: plan
+        run: |
+          if [ -n "${{ inputs.month }}" ]; then
+            echo "months=${{ inputs.month }}" >> "$GITHUB_OUTPUT"
+          else
+            YEAR=$(date -u +%Y)
+            LIST=""
+            for M in 01 02 03 04 05 06 07 08 09 10 11 12; do
+              LIST="$LIST $YEAR-$M"
+            done
+            echo "months=$LIST" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch from Box Office Mojo
+        env:
+          TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
+          MONTHS: ${{ steps.plan.outputs.months }}
+        run: |
+          for m in $MONTHS; do
+            echo "::group::Fetch $m"
+            MONTH="$m" node scripts/fetch-bom.mjs
+            echo "::endgroup::"
+          done
+
+      - name: Fetch LA repertory theaters
+        continue-on-error: true
+        run: node scripts/fetch-repertory.mjs
+
+      - name: Upload repertory JSON artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: repertory-json
+          path: data/repertory.json
+          retention-days: 14
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git add data/
+          git commit -m "Refresh release data"
+          # Longer retry window to survive concurrent interests.json commits
+          # from the frontend PAT, which can arrive faster than a short backoff
+          # can absorb during user-active hours.
+          BACKOFFS=(5 10 15 20 30 45 60 90 120)
+          for i in "${!BACKOFFS[@]}"; do
+            git pull --rebase origin main && git push && exit 0
+            s=${BACKOFFS[$i]}
+            echo "Push attempt $((i+1)) failed, sleeping ${s}s..."
+            sleep "$s"
+          done
+          # Final attempt with no further sleep.
+          git pull --rebase origin main && git push && exit 0
+          echo "Push failed after retries" >&2
+          exit 1

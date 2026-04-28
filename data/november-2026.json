@@ -1,0 +1,115 @@
+{
+  "month": "November 2026",
+  "updated": "2026-04-28",
+  "source": "Box Office Mojo",
+  "releases": [
+    {
+      "tmdb_id": 1381071,
+      "date": "2026-11-06",
+      "title": "Godzilla Minus Zero",
+      "director": "Takashi Yamazaki",
+      "studio": "GKIDS",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Science Fiction / Horror / Action",
+      "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Munetaka Aoki",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1117898,
+      "date": "2026-11-06",
+      "title": "The Cat in the Hat",
+      "director": "Erica Rivinoja, Alessandro Carloni",
+      "studio": "Warner Bros.",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Family / Comedy / Animation / Fantasy",
+      "cast": "Bill Hader, Xochitl Gomez, Quinta Brunson, Bowen Yang",
+      "notes": "The cat's out of the bag."
+    },
+    {
+      "tmdb_id": 891621,
+      "date": "2026-11-06",
+      "title": "Wild Horse Nine",
+      "director": "Martin McDonagh",
+      "studio": "Searchlight Pictures",
+      "budget_usd": 5000000,
+      "release_type": "wide",
+      "genre": "Comedy / Crime / Thriller",
+      "cast": "John Malkovich, Sam Rockwell, Steve Buscemi, Parker Posey",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1567605,
+      "date": "2026-11-13",
+      "title": "Ebenezer: A Christmas Carol",
+      "director": "Ti West",
+      "studio": "Paramount Pictures International",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Fantasy / Drama / Adventure",
+      "cast": "Johnny Depp, Andrea Riseborough, Tramell Tillman, Ian McKellen",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1286656,
+      "date": "2026-11-13",
+      "title": "I Play Rocky",
+      "director": "Peter Farrelly",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1288211,
+      "date": "2026-11-13",
+      "title": "The Great Beyond",
+      "director": "J.J. Abrams",
+      "studio": "Warner Bros.",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Adventure / Action",
+      "cast": "Glen Powell, Jenna Ortega, Emma Mackey, Samuel L. Jackson",
+      "notes": ""
+    },
+    {
+      "tmdb_id": 1300968,
+      "date": "2026-11-20",
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "director": "Francis Lawrence",
+      "studio": "Lionsgate",
+      "budget_usd": 150000000,
+      "release_type": "wide",
+      "genre": "Science Fiction / Action / Adventure",
+      "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons, Ralph Fiennes",
+      "notes": "Welcome to the Second Quarter Quell."
+    },
+    {
+      "tmdb_id": 1400336,
+      "date": "2026-11-25",
+      "title": "Focker-in-Law",
+      "director": "John Hamburg",
+      "studio": "Paramount Pictures International",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Romance",
+      "cast": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson",
+      "notes": "The circle of trust just got bigger."
+    },
+    {
+      "tmdb_id": 1538497,
+      "date": "2026-11-25",
+      "title": "Hexed",
+      "director": "Jason Hand, Fawn Veerasunthorn",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Family / Animation / Fantasy / Adventure",
+      "cast": "Hailee Steinfeld, Rashida Jones",
+      "notes": ""
+    }
+  ]
+}

@@ -36,6 +36,7 @@ const LEVEL_LABEL = {
 };
 
 const ACTIVE_KIND_KEY = "upcoming:active-kind";
+const ACTIVE_SCOPE_KEY = "upcoming:active-scope";
 const LEGACY_CALENDAR_KIND_KEY = "upcoming:calendar-kinds";
 const EXPANDED_KEY = "upcoming:expanded";
 const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
@@ -61,6 +62,22 @@ let activeKind = (() => {
 const saveActiveKind = () => {
   try { localStorage.setItem(ACTIVE_KIND_KEY, activeKind); } catch {}
 };
+
+// Scope filter for the New Releases view: "both" | "wide" | "limited".
+// Applied to the List and Calendar tabs only — Interests and Updates show
+// every marked/changed item regardless of current scope.
+let activeScope = (() => {
+  try {
+    const saved = localStorage.getItem(ACTIVE_SCOPE_KEY);
+    if (saved === "both" || saved === "wide" || saved === "limited") return saved;
+  } catch {}
+  return "both";
+})();
+const saveActiveScope = () => {
+  try { localStorage.setItem(ACTIVE_SCOPE_KEY, activeScope); } catch {}
+};
+const matchesScope = (m) =>
+  activeScope === "both" || (m.release_type || "wide") === activeScope;
 
 const expanded = (() => {
   try {
@@ -586,7 +603,7 @@ function renderDateGroup([date, items]) {
 
 function renderMonth(bundle) {
   const key = monthKeyOf(bundle);
-  const filtered = bundle.releases;
+  const filtered = bundle.releases.filter(matchesScope);
   if (!filtered.length) return null;
 
   const defaultOpen = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
@@ -1201,6 +1218,7 @@ function itemsByDate(bundles) {
   if (activeKind === "releases") {
     for (const b of bundles) {
       for (const m of b.releases) {
+        if (!matchesScope(m)) continue;
         if (!map.has(m.date)) map.set(m.date, []);
         map.get(m.date).push(m);
       }
@@ -1942,11 +1960,21 @@ document.getElementById("updates-back")?.addEventListener("click", () => closeUp
 
 function syncSegmentedChips() {
   const bar = document.getElementById("kind-segmented");
-  if (!bar) return;
-  for (const chip of bar.querySelectorAll(".segmented__btn")) {
-    const on = chip.dataset.kind === activeKind;
-    chip.classList.toggle("is-active", on);
-    chip.setAttribute("aria-selected", on ? "true" : "false");
+  if (bar) {
+    for (const chip of bar.querySelectorAll(".segmented__btn")) {
+      const on = chip.dataset.kind === activeKind;
+      chip.classList.toggle("is-active", on);
+      chip.setAttribute("aria-selected", on ? "true" : "false");
+    }
+  }
+  const scope = document.getElementById("scope-segmented");
+  if (scope) {
+    scope.hidden = activeKind !== "releases";
+    for (const chip of scope.querySelectorAll(".segmented__btn")) {
+      const on = chip.dataset.scope === activeScope;
+      chip.classList.toggle("is-active", on);
+      chip.setAttribute("aria-selected", on ? "true" : "false");
+    }
   }
 }
 
@@ -1963,6 +1991,21 @@ document.getElementById("kind-segmented")?.addEventListener("click", (e) => {
   markAllTabsDirty();
   if (updatesOpen) renderActivityTab();
   else renderActiveTab();
+});
+
+document.getElementById("scope-segmented")?.addEventListener("click", (e) => {
+  const chip = e.target.closest(".segmented__btn");
+  if (!chip) return;
+  const scope = chip.dataset.scope;
+  if (scope !== "both" && scope !== "wide" && scope !== "limited") return;
+  if (scope === activeScope) return;
+  activeScope = scope;
+  saveActiveScope();
+  syncSegmentedChips();
+  // Scope only affects List + Calendar; Interests/Updates are unfiltered.
+  tabDirty.list = true;
+  tabDirty.calendar = true;
+  if (!updatesOpen) renderActiveTab();
 });
 syncSegmentedChips();
 

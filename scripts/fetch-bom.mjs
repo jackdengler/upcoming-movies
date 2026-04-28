@@ -1,18 +1,28 @@
 #!/usr/bin/env node
-// Fetches release data from Box Office Mojo's calendar (the authoritative
-// list of what's actually booked into US theaters) and enriches each title
+// Fetches release data from Box Office Mojo's calendar — the authoritative
+// list of what's actually booked into US theaters — and enriches each title
 // via TMDB for fields BOM doesn't expose: director, budget, tagline, and a
 // stable tmdb_id used as the frontend's movie key.
 //
-// BOM is gospel: every row that appears on the calendar lands in the output
-// (modulo the re-release filter below). TMDB is consulted per-title via the
-// IMDb ID that BOM exposes; if TMDB has no match we still emit the row with
-// the fields BOM provides.
+// BOM is gospel for the *date*, *distributor*, *Wide/Limited classification*,
+// and the *re-release / anniversary* flag (BOM annotates Top Gun, Legally
+// Blonde re-releases, etc. with a "<year> Re-release" or "Nth Anniversary"
+// secondary label). Any row BOM marks that way is dropped — they belong in
+// the rereleases tab, not new releases. As a backstop for unannotated
+// re-releases (e.g. Harlan County U.S.A. 1976 listed without a label) we
+// also drop films whose TMDB primary release_date year is more than 3 years
+// before the calendar year. The threshold preserves festival-to-theatrical
+// rollouts (festival 2024 → theatrical 2026 stays in).
 //
-// Re-releases (e.g. a 1976 Janus Films print appearing in a 2026 calendar)
-// are dropped by comparing TMDB's primary release_date year to the calendar
-// year. The threshold of 3 years preserves festival-to-theatrical rollouts
-// (festival 2024 → theatrical 2026 is kept).
+// BOM's calendar page (`/calendar/<YYYY-MM-01>/`) is a single table that
+// covers ~30 days starting from the URL date, with `<tr class="mojo-group-
+// label">` rows acting as per-day section dividers. We walk the table top
+// to bottom, tracking the most recent divider as the canonical date for
+// each subsequent film row, and keep only rows whose date falls in the
+// target month. A film occasionally appears under multiple dates (limited
+// preview week → wide opening week); we de-dupe by release_id, preferring
+// the row whose scale is "Wide" so the date reflects the actual theatrical
+// opening rather than a preview screening.
 //
 // Env: TMDB_TOKEN (v4 Read Access Token), MONTH (YYYY-MM, defaults to current)
 
@@ -71,26 +81,23 @@ async function bomGet(url) {
   return r.text();
 }
 
-// Every Friday inside the target month. Each Friday's BOM calendar page
-// lists the films opening that week (Fri..Thu); the Friday is the canonical
-// release date we record. Mid-week openings (Wed/Thu) get rolled to the
-// week's Friday — BOM doesn't surface a per-row date and the precision loss
-// is acceptable for a monthly view.
-function fridaysInMonth(y, m) {
-  const out = [];
-  const cursor = new Date(Date.UTC(y, m - 1, 1));
-  while (cursor.getUTCDay() !== 5) cursor.setUTCDate(cursor.getUTCDate() + 1);
-  const last = new Date(Date.UTC(y, m, 0));
-  while (cursor <= last) {
-    out.push(new Date(cursor));
-    cursor.setUTCDate(cursor.getUTCDate() + 7);
-  }
-  return out;
+const MONTH_NAMES = {
+  January: "01", February: "02", March: "03", April: "04",
+  May: "05", June: "06", July: "07", August: "08",
+  September: "09", October: "10", November: "11", December: "12",
+};
+
+// "May 1, 2026" → "2026-05-01". Returns null on anything we don't recognize.
+function parseDateHeader(text) {
+  const m = text.match(/^([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})$/);
+  if (!m) return null;
+  const month = MONTH_NAMES[m[1]];
+  if (!month) return null;
+  return `${m[3]}-${month}-${String(+m[2]).padStart(2, "0")}`;
 }
 
-// Parse a single BOM calendar row. Returns null if the row isn't a film row
-// (header rows, layout rows, etc. don't carry a /release/ link).
-function parseRow(rowHtml) {
+// Parse a single film row. Returns null for non-film rows (header, dividers).
+function parseFilmRow(rowHtml) {
   const releaseLink = rowHtml.match(
     /<a[^>]+href="\/release\/(rl\d+)\/[^"]*"[^>]*>/i
   );
@@ -101,22 +108,31 @@ function parseRow(rowHtml) {
   const title = stripTags(titleMatch[1]);
   if (!title) return null;
 
+  // BOM marks re-releases / anniversary screenings with a secondary label
+  // directly under the title, e.g. "2026 Re-release (40th Anniversary)" or
+  // "25th Anniversary". Either text is enough to classify the row as a
+  // re-release and drop it from new-releases output.
+  const isRerelease =
+    /class="a-size-base a-color-secondary"[^>]*>[^<]*(?:Re-release|Anniversary)/i.test(
+      rowHtml,
+    );
+
   const imdbMatch = rowHtml.match(/pro\.imdb\.com\/title\/(tt\d+)/i);
 
   const studiosCellMatch = rowHtml.match(
-    /<td[^>]*mojo-field-type-release_studios[^>]*>([\s\S]*?)<\/td>/i
+    /<td[^>]*mojo-field-type-release_studios[^>]*>([\s\S]*?)<\/td>/i,
   );
   const distributorRaw = studiosCellMatch ? stripTags(studiosCellMatch[1]) : "";
   const distributor = distributorRaw && distributorRaw !== "-" ? distributorRaw : null;
 
   const scaleCellMatch = rowHtml.match(
-    /<td[^>]*mojo-field-type-release_scale[^>]*>([\s\S]*?)<\/td>/i
+    /<td[^>]*mojo-field-type-release_scale[^>]*>([\s\S]*?)<\/td>/i,
   );
   const scaleText = scaleCellMatch ? stripTags(scaleCellMatch[1]).toLowerCase() : "";
   const release_type = /\bwide\b/.test(scaleText) ? "wide" : "limited";
 
   const genresMatch = rowHtml.match(
-    /<div class="a-section a-spacing-none mojo-schedule-genres">([\s\S]*?)<\/div>/i
+    /<div class="a-section a-spacing-none mojo-schedule-genres">([\s\S]*?)<\/div>/i,
   );
   const genres = genresMatch
     ? stripTags(genresMatch[1])
@@ -125,7 +141,7 @@ function parseRow(rowHtml) {
     : [];
 
   const castMatch = rowHtml.match(
-    /<span class="a-text-bold">With:\s*<\/span>([\s\S]*?)<\/div>/i
+    /<span class="a-text-bold">With:\s*<\/span>([\s\S]*?)<\/div>/i,
   );
   const bom_cast = castMatch ? stripTags(castMatch[1]) : null;
 
@@ -137,56 +153,61 @@ function parseRow(rowHtml) {
     release_type,
     genres,
     bom_cast,
+    isRerelease,
   };
 }
 
-function parseCalendarHtml(html) {
-  const rows = [];
-  const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
+// Walk every <tr> in document order. Section-divider rows
+// (class="mojo-group-label") update the running date; subsequent film
+// rows inherit it. Keeps only rows whose date falls in the target month,
+// drops BOM-flagged re-releases, and de-dupes by release_id with a Wide
+// > Limited preference so a multi-stage release lands on its wide date.
+function parseCalendar(html, targetMonth) {
+  const byReleaseId = new Map();
+  let currentDate = null;
+  let dropped = 0;
+  const rowRe = /<tr\b([^>]*)>([\s\S]*?)<\/tr>/gi;
   let match;
   while ((match = rowRe.exec(html))) {
-    const parsed = parseRow(match[1]);
-    if (parsed) rows.push(parsed);
-  }
-  return rows;
-}
+    const trAttrs = match[1];
+    const rowHtml = match[2];
 
-async function fetchBomMonth(y, m) {
-  const out = [];
-  const seen = new Set();
-  for (const friday of fridaysInMonth(y, m)) {
-    const ymd = friday.toISOString().slice(0, 10);
-    try {
-      const html = await bomGet(`https://www.boxofficemojo.com/calendar/${ymd}/`);
-      for (const row of parseCalendarHtml(html)) {
-        if (seen.has(row.release_id)) continue;
-        seen.add(row.release_id);
-        out.push({ ...row, date: ymd });
+    if (/mojo-group-label/.test(trAttrs)) {
+      const headerMatch = rowHtml.match(
+        /class="[^"]*mojo-table-header[^"]*"[^>]*>([\s\S]*?)<\/th>/i,
+      );
+      if (headerMatch) {
+        const parsed = parseDateHeader(stripTags(headerMatch[1]));
+        if (parsed) currentDate = parsed;
       }
-      await sleep(300);
-    } catch (e) {
-      console.warn(`BOM ${ymd}: ${e.message}`);
+      continue;
     }
-  }
-  return out;
-}
 
-// Pull every US theatrical (release_type 2 = limited, 3 = wide) date from
-// TMDB's release_dates payload, oldest first.
-function usTheatricalDates(d) {
-  const us = (d.release_dates?.results || []).find((r) => r.iso_3166_1 === "US");
-  if (!us) return [];
-  return us.release_dates
-    .filter((r) => r.type === 2 || r.type === 3)
-    .map((r) => r.release_date.slice(0, 10))
-    .sort();
+    if (!currentDate) continue;
+    if (currentDate.slice(0, 7) !== targetMonth) continue;
+
+    const film = parseFilmRow(rowHtml);
+    if (!film) continue;
+    if (film.isRerelease) {
+      dropped++;
+      continue;
+    }
+    film.date = currentDate;
+
+    const existing = byReleaseId.get(film.release_id);
+    const preferIncoming =
+      !existing ||
+      (existing.release_type !== "wide" && film.release_type === "wide");
+    if (preferIncoming) byReleaseId.set(film.release_id, film);
+  }
+  if (dropped) console.log(`Dropped ${dropped} BOM-flagged re-release(s).`);
+  return [...byReleaseId.values()];
 }
 
 async function enrich(rows) {
   const calendarYear = +year;
   const out = [];
   let droppedRerelease = 0;
-  let droppedOtherMonth = 0;
   for (const row of rows) {
     let tmdb_id = null;
     let director = "—";
@@ -195,7 +216,6 @@ async function enrich(rows) {
     let cast = row.bom_cast || "—";
     let genre = row.genres.length ? row.genres.join(" / ") : "—";
     let originalYear = null;
-    let tmdbTheatricalDates = null;
 
     if (row.imdb_id) {
       try {
@@ -205,7 +225,7 @@ async function enrich(rows) {
           tmdb_id = movie.id;
           await sleep(35);
           const d = await tmdbGet(
-            `/movie/${movie.id}?append_to_response=credits,release_dates`
+            `/movie/${movie.id}?append_to_response=credits`,
           );
           director =
             (d.credits?.crew || [])
@@ -221,7 +241,6 @@ async function enrich(rows) {
           notes = d.tagline || "";
           if (d.genres?.length) genre = d.genres.map((g) => g.name).join(" / ");
           originalYear = d.release_date ? +d.release_date.slice(0, 4) : null;
-          tmdbTheatricalDates = usTheatricalDates(d);
         }
         await sleep(35);
       } catch (e) {
@@ -229,38 +248,20 @@ async function enrich(rows) {
       }
     }
 
+    // Backstop for re-releases BOM didn't annotate (e.g. Harlan County
+    // U.S.A. (1976) appearing on the calendar with no Re-release tag).
     if (
       originalYear !== null &&
       originalYear < calendarYear - RERELEASE_YEAR_THRESHOLD
     ) {
-      console.log(`Drop re-release: ${row.title} (${originalYear})`);
+      console.log(`Drop unannotated re-release: ${row.title} (${originalYear})`);
       droppedRerelease++;
       continue;
     }
 
-    // BOM's calendar pages list multiple weeks of upcoming films, not just
-    // the URL's Friday — so the URL alone is unreliable as a release date.
-    // Prefer the earliest TMDB US theatrical date that falls in the target
-    // month. If TMDB knows about US theatrical dates but none is in the
-    // target month, the row belongs to a different month's file (drop).
-    // Fall back to the BOM URL Friday only when TMDB has no US theatrical
-    // entries at all (rare; mostly tiny indies TMDB hasn't indexed).
-    let date;
-    if (tmdbTheatricalDates && tmdbTheatricalDates.length) {
-      const inMonth = tmdbTheatricalDates.find((d) => d.slice(0, 7) === MONTH);
-      if (inMonth) {
-        date = inMonth;
-      } else {
-        droppedOtherMonth++;
-        continue;
-      }
-    } else {
-      date = row.date;
-    }
-
     out.push({
       tmdb_id,
-      date,
+      date: row.date,
       title: row.title,
       director,
       studio: row.distributor || "—",
@@ -271,18 +272,19 @@ async function enrich(rows) {
       notes,
     });
   }
-  if (droppedRerelease) console.log(`Dropped ${droppedRerelease} re-release(s).`);
-  if (droppedOtherMonth)
-    console.log(`Dropped ${droppedOtherMonth} listing(s) belonging to other months.`);
+  if (droppedRerelease)
+    console.log(`Dropped ${droppedRerelease} TMDB-year re-release(s).`);
   return out;
 }
 
-const bomRows = await fetchBomMonth(+year, +mm);
+const calendarUrl = `https://www.boxofficemojo.com/calendar/${year}-${mm}-01/`;
+const html = await bomGet(calendarUrl);
+const bomRows = parseCalendar(html, MONTH);
 console.log(`BOM: ${bomRows.length} listing(s) for ${MONTH}`);
 
 const releases = await enrich(bomRows);
 releases.sort(
-  (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title)
+  (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title),
 );
 
 const monthName = new Date(`${year}-${mm}-01T12:00:00Z`).toLocaleString("en-US", {

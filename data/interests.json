@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-25T21:52:47.639Z",
+  "updated": "2026-04-28T05:23:00.642Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -351,12 +351,12 @@
       "tmdb_id": 787844
     },
     "tmdb:1290792": {
-      "level": "booked",
-      "at": "2026-04-21T17:56:20.770Z",
+      "level": "watched",
+      "at": "2026-04-28T05:22:57.889Z",
       "title": "One Spoon of Chocolate",
       "date": "2026-05-01",
       "tmdb_id": 1290792,
-      "booked_date": "2026-04-30"
+      "watched_date": "2026-04-27"
     },
     "tmdb:1257868": {
       "level": "not",

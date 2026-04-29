@@ -133,6 +133,98 @@ async function fetchJson(url, extraHeaders = {}) {
   return JSON.parse(text);
 }
 
+// ---------- TMDB trailer lookup (rep entries) ----------
+
+const TMDB_API = "https://api.themoviedb.org/3";
+
+async function tmdbGet(path) {
+  const token = process.env.TMDB_TOKEN;
+  if (!token) throw new Error("TMDB_TOKEN missing");
+  const r = await fetch(`${TMDB_API}${path}`, {
+    headers: { Authorization: `Bearer ${token}`, Accept: "application/json" },
+  });
+  if (!r.ok) throw new Error(`TMDB ${r.status} ${path}`);
+  return r.json();
+}
+
+function pickTrailerKey(videos) {
+  const yt = (videos?.results || []).filter(
+    (v) => v.site === "YouTube" && v.key,
+  );
+  if (!yt.length) return null;
+  const score = (v) =>
+    (v.type === "Trailer" ? 1000 : v.type === "Teaser" ? 500 : 0) +
+    (v.official ? 100 : 0);
+  yt.sort((a, b) => {
+    const sa = score(a);
+    const sb = score(b);
+    if (sa !== sb) return sb - sa;
+    return (b.published_at || "").localeCompare(a.published_at || "");
+  });
+  return yt[0].key;
+}
+
+// Look up a YouTube trailer key by (title, year). Best-effort: returns null
+// on any miss (no result, no videos, no English-language match) so callers
+// can fall back to YouTube search. Caches by `${title}|${year}` so the same
+// film across many showtimes incurs at most two TMDB calls.
+const _trailerCache = new Map();
+async function lookupTrailerKey(title, year) {
+  const cacheKey = `${title}|${year ?? ""}`;
+  if (_trailerCache.has(cacheKey)) return _trailerCache.get(cacheKey);
+  let result = null;
+  try {
+    const params = new URLSearchParams({
+      query: title,
+      include_adult: "false",
+    });
+    if (year) params.set("year", String(year));
+    const search = await tmdbGet(`/search/movie?${params.toString()}`);
+    const candidates = search.results || [];
+    const match = candidates.find((m) => {
+      const my = (m.release_date || "").slice(0, 4);
+      return year ? my === String(year) : true;
+    }) || candidates[0];
+    if (match?.id) {
+      await sleep(35);
+      const videos = await tmdbGet(`/movie/${match.id}/videos`);
+      result = pickTrailerKey(videos);
+    }
+  } catch (e) {
+    console.warn(`Trailer lookup failed for "${title}" (${year || "?"}): ${e.message}`);
+  }
+  _trailerCache.set(cacheKey, result);
+  await sleep(35);
+  return result;
+}
+
+async function enrichTrailers(screenings) {
+  if (!process.env.TMDB_TOKEN) {
+    console.log("TMDB_TOKEN not set; skipping trailer enrichment.");
+    return;
+  }
+  const uniq = new Map(); // "title|year" -> { title, year }
+  for (const s of screenings) {
+    const k = `${s.title}|${s.year ?? ""}`;
+    if (!uniq.has(k)) uniq.set(k, { title: s.title, year: s.year ?? null });
+  }
+  console.log(`TMDB trailer lookup: ${uniq.size} unique film(s).`);
+  const resolved = new Map();
+  for (const [k, { title, year }] of uniq) {
+    resolved.set(k, await lookupTrailerKey(title, year));
+  }
+  let hits = 0;
+  for (const s of screenings) {
+    const k = `${s.title}|${s.year ?? ""}`;
+    const id = resolved.get(k);
+    if (id) {
+      s.youtube_trailer_id = id;
+      hits++;
+    }
+  }
+  console.log(`Trailer enrichment: ${hits}/${screenings.length} screenings tagged.`);
+}
+
 // LA local-time formatting. All sources differ in how they encode time zones
 // (some emit naive datetimes that are already PT, some emit UTC). We normalize
 // to LA wall time using Intl, which handles DST correctly.
@@ -1175,6 +1267,12 @@ const cleaned = dedupeScreenings(
     a.theater.localeCompare(b.theater) ||
     a.title.localeCompare(b.title)
 );
+
+// Enrich each screening with `youtube_trailer_id` via TMDB. We only look up
+// each unique (title, year) pair once and fan the result back out to every
+// showtime — a single rep run can have 8+ screenings. No-op if TMDB_TOKEN
+// isn't set so this script still runs locally without credentials.
+await enrichTrailers(cleaned);
 
 const out = {
   updated: new Date().toISOString().slice(0, 10),

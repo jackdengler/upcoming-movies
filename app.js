@@ -79,6 +79,46 @@ const saveActiveScope = () => {
 const matchesScope = (m) =>
   activeScope === "both" || (m.release_type || "wide") === activeScope;
 
+// Free-text filter for the List tab (releases + rereleases). Not persisted —
+// each session starts clean to avoid leaving the list in a confusing,
+// half-empty state across reloads.
+let searchQuery = "";
+const normalizeQuery = (s) =>
+  String(s || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const releaseHaystack = (m) =>
+  normalizeQuery([m.title, m.director, m.cast, m.studio, m.genre, m.notes]
+    .filter(Boolean).join(" "));
+
+const repEntryHaystack = (entry) =>
+  normalizeQuery([
+    entry.title,
+    entry.year,
+    entry.format,
+    entry.series,
+    [...entry.theaters].join(" "),
+  ].filter(Boolean).join(" "));
+
+const matchesQuery = (haystack) => {
+  if (!searchQuery) return true;
+  const q = searchQuery;
+  if (!q) return true;
+  // All space-separated terms must match somewhere — lets users combine
+  // "scorsese 2026" or "horror limited" without committing to one field.
+  for (const term of q.split(" ")) {
+    if (term && !haystack.includes(term)) return false;
+  }
+  return true;
+};
+
+const matchesReleaseQuery = (m) => matchesQuery(releaseHaystack(m));
+const matchesRepEntryQuery = (entry) => matchesQuery(repEntryHaystack(entry));
+
 const expanded = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(EXPANDED_KEY) || "null");
@@ -377,6 +417,73 @@ function baseMeta(item) {
   return { title: item.title, date: item.date, tmdb_id: item.tmdb_id || null };
 }
 
+// Trailer ids from the data fetcher; openTrailers tracks which rows are
+// currently expanded inline so re-renders preserve the playing state.
+const openTrailers = new Set();
+
+const youtubeSearchUrl = (title, year) => {
+  const q = `${title || ""} ${year || ""} trailer`.trim();
+  return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
+};
+
+function trailerEmbedUrl(videoId) {
+  // youtube-nocookie keeps the standalone PWA from leaking into the user's
+  // YouTube history. autoplay=1 fires once the iframe mounts because we only
+  // append the iframe in response to a user tap (gesture-allowed).
+  return `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+}
+
+function renderTrailerSection(m) {
+  const key = movieKey(m);
+  const ytId = m.youtube_trailer_id || null;
+  const open = openTrailers.has(key);
+  const year = (m.date || "").slice(0, 4) || null;
+
+  if (!ytId) {
+    return el("div", { class: "row__trailer-row" },
+      el("a", {
+          class: "row__trailer-btn",
+          href: youtubeSearchUrl(m.title, year),
+          target: "_blank",
+          rel: "noopener noreferrer",
+          dataset: { trailerSearch: "1" },
+        },
+        el("span", { text: "Search trailer" }),
+      ),
+    );
+  }
+
+  const btn = el("button", {
+      type: "button",
+      class: `row__trailer-btn${open ? " is-on" : ""}`,
+      "aria-pressed": open ? "true" : "false",
+      "aria-expanded": open ? "true" : "false",
+      dataset: { trailerToggle: "1", key, yt: ytId },
+    },
+    el("span", { text: open ? "Hide trailer" : "Trailer" }),
+  );
+
+  const wrap = el("div", { class: "row__trailer", dataset: { trailerWrap: key } },
+    el("div", { class: "row__trailer-row" }, btn),
+  );
+
+  if (open) {
+    const frame = el("div", { class: "row__trailer-frame" },
+      el("iframe", {
+        src: trailerEmbedUrl(ytId),
+        allow: "autoplay; encrypted-media; picture-in-picture; web-share",
+        allowfullscreen: "",
+        loading: "lazy",
+        referrerpolicy: "strict-origin-when-cross-origin",
+        title: `${m.title || "Trailer"} trailer`,
+      }),
+    );
+    wrap.appendChild(frame);
+  }
+
+  return wrap;
+}
+
 function renderRatingBar(m) {
   const isScreening = m._kind === "screening";
   const key = itemKey(m);
@@ -527,6 +634,7 @@ function renderRow(m, opts = {}) {
       m.cast && m.cast !== "—" ? el("dd", { text: m.cast }) : null,
     ),
     m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
+    renderTrailerSection(m),
     renderRatingBar(m),
   );
 }
@@ -603,11 +711,15 @@ function renderDateGroup([date, items]) {
 
 function renderMonth(bundle) {
   const key = monthKeyOf(bundle);
-  const filtered = bundle.releases.filter(matchesScope);
+  const filtered = bundle.releases.filter((m) => matchesScope(m) && matchesReleaseQuery(m));
   if (!filtered.length) return null;
 
   const defaultOpen = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
-  const open = key in expanded ? expanded[key] : defaultOpen;
+  // Active search forces every surviving month open so matches are visible
+  // without an extra tap to expand each section.
+  const open = searchQuery
+    ? true
+    : (key in expanded ? expanded[key] : defaultOpen);
   const isPast = key < CURRENT_MONTH_KEY;
   const groups = groupByDate(filtered);
 
@@ -1193,7 +1305,9 @@ function renderYearTab(bundles) {
 
   const empty = document.getElementById("empty-year");
   if (!rendered.length) {
-    empty.textContent = "No releases match current filters.";
+    empty.textContent = searchQuery
+      ? "No releases match your search."
+      : "No releases match current filters.";
     empty.hidden = false;
     return;
   }
@@ -1762,14 +1876,21 @@ function renderRepertoryTab() {
   for (const g of groups) (g[0] < CURRENT_MONTH_KEY ? past : upcoming).push(g);
   const ordered = [...upcoming, ...past];
 
+  let renderedAny = false;
   for (const [monthKey, titleMap] of ordered) {
-    const entries = [...titleMap.values()].sort(
-      (a, b) =>
-        (a.title || "").localeCompare(b.title || "") ||
-        (a.theater || "").localeCompare(b.theater || ""),
-    );
+    const entries = [...titleMap.values()]
+      .filter(matchesRepEntryQuery)
+      .sort(
+        (a, b) =>
+          (a.title || "").localeCompare(b.title || "") ||
+          (a.theater || "").localeCompare(b.theater || ""),
+      );
+    if (!entries.length) continue;
+    renderedAny = true;
     const defaultOpen = monthKey === CURRENT_MONTH_KEY || monthKey === NEXT_MONTH_KEY;
-    const open = monthKey in expanded ? expanded[monthKey] : defaultOpen;
+    const open = searchQuery
+      ? true
+      : (monthKey in expanded ? expanded[monthKey] : defaultOpen);
     const isPast = monthKey < CURRENT_MONTH_KEY;
 
     const details = el("details", {
@@ -1805,7 +1926,61 @@ function renderRepertoryTab() {
 
     list.appendChild(details);
   }
+
+  if (!renderedAny) {
+    empty.textContent = searchQuery
+      ? "No screenings match your search."
+      : "No screenings match the current theater filter.";
+    empty.hidden = false;
+  }
 }
+
+// Delegated trailer toggle. Mutates the trailer wrap in place (rather than
+// re-rendering the row) so neighbouring rows that already have an iframe
+// playing don't get torn down and restarted every tap.
+function handleTrailerClick(e) {
+  const btn = e.target.closest("[data-trailer-toggle]");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const key = btn.dataset.key;
+  const ytId = btn.dataset.yt;
+  if (!key || !ytId) return;
+  const wrap = btn.closest("[data-trailer-wrap]");
+  if (!wrap) return;
+  const existing = wrap.querySelector(".row__trailer-frame");
+  if (existing) {
+    existing.remove();
+    openTrailers.delete(key);
+    btn.classList.remove("is-on");
+    btn.setAttribute("aria-pressed", "false");
+    btn.setAttribute("aria-expanded", "false");
+    const label = btn.querySelector("span");
+    if (label) label.textContent = "Trailer";
+  } else {
+    const frame = el("div", { class: "row__trailer-frame" },
+      el("iframe", {
+        src: trailerEmbedUrl(ytId),
+        allow: "autoplay; encrypted-media; picture-in-picture; web-share",
+        allowfullscreen: "",
+        loading: "lazy",
+        referrerpolicy: "strict-origin-when-cross-origin",
+        title: "Trailer",
+      }),
+    );
+    wrap.appendChild(frame);
+    openTrailers.add(key);
+    btn.classList.add("is-on");
+    btn.setAttribute("aria-pressed", "true");
+    btn.setAttribute("aria-expanded", "true");
+    const label = btn.querySelector("span");
+    if (label) label.textContent = "Hide trailer";
+  }
+}
+
+document.getElementById("list")?.addEventListener("click", handleTrailerClick);
+document.getElementById("cal-day")?.addEventListener("click", handleTrailerClick);
+document.getElementById("interest-list")?.addEventListener("click", handleTrailerClick);
 
 document.getElementById("repertory-list")?.addEventListener("click", (e) => {
   const btn = e.target.closest(".rep-interest");
@@ -2008,6 +2183,41 @@ document.getElementById("scope-segmented")?.addEventListener("click", (e) => {
   if (!updatesOpen) renderActiveTab();
 });
 syncSegmentedChips();
+
+// ---------- Search input ----------
+
+const searchInput = document.getElementById("search-input");
+const searchClearBtn = document.getElementById("search-clear");
+
+let searchTimer = null;
+function applySearch(value) {
+  const next = normalizeQuery(value);
+  if (next === searchQuery) return;
+  searchQuery = next;
+  if (searchClearBtn) searchClearBtn.hidden = !value;
+  // Search only impacts the List tab; mark Calendar dirty too in case the
+  // user toggles back later. Interests/Updates ignore the search.
+  tabDirty.list = true;
+  if (activeTab === "list" && !updatesOpen) renderListTab();
+}
+
+searchInput?.addEventListener("input", (e) => {
+  const value = e.target.value;
+  if (searchClearBtn) searchClearBtn.hidden = !value;
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => applySearch(value), 120);
+});
+searchInput?.addEventListener("search", (e) => {
+  clearTimeout(searchTimer);
+  applySearch(e.target.value);
+});
+searchClearBtn?.addEventListener("click", () => {
+  if (!searchInput) return;
+  searchInput.value = "";
+  clearTimeout(searchTimer);
+  applySearch("");
+  searchInput.focus();
+});
 
 document.getElementById("cal-prev")?.addEventListener("click", () => shiftCalendar(-1));
 document.getElementById("cal-next")?.addEventListener("click", () => shiftCalendar(1));

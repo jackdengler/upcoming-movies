@@ -327,6 +327,7 @@ async function enrich(rows) {
     let genre = row.genres.length ? row.genres.join(" / ") : "—";
     let originalYear = null;
     let originalLanguage = null;
+    let youtube_trailer_id = null;
 
     if (row.imdb_id) {
       try {
@@ -336,7 +337,7 @@ async function enrich(rows) {
           tmdb_id = movie.id;
           await sleep(35);
           const d = await tmdbGet(
-            `/movie/${movie.id}?append_to_response=credits`,
+            `/movie/${movie.id}?append_to_response=credits,videos`,
           );
           director =
             (d.credits?.crew || [])
@@ -353,6 +354,26 @@ async function enrich(rows) {
           if (d.genres?.length) genre = d.genres.map((g) => g.name).join(" / ");
           originalYear = d.release_date ? +d.release_date.slice(0, 4) : null;
           originalLanguage = d.original_language || null;
+          // Pick the best YouTube trailer: prefer official Trailer, then any
+          // Trailer, then any Teaser. Newer videos win ties so the latest
+          // marketing cut surfaces over a year-old teaser.
+          const videos = (d.videos?.results || []).filter(
+            (v) => v.site === "YouTube" && v.key,
+          );
+          const score = (v) => {
+            const isTrailer = v.type === "Trailer";
+            const isTeaser = v.type === "Teaser";
+            const officialBoost = v.official ? 100 : 0;
+            const typeScore = isTrailer ? 1000 : isTeaser ? 500 : 0;
+            return typeScore + officialBoost;
+          };
+          videos.sort((a, b) => {
+            const sa = score(a);
+            const sb = score(b);
+            if (sa !== sb) return sb - sa;
+            return (b.published_at || "").localeCompare(a.published_at || "");
+          });
+          if (videos.length) youtube_trailer_id = videos[0].key;
         }
         await sleep(35);
       } catch (e) {
@@ -391,6 +412,7 @@ async function enrich(rows) {
       genre,
       cast,
       notes,
+      youtube_trailer_id,
     });
   }
   if (droppedRerelease)

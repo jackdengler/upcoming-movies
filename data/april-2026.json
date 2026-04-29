@@ -7,13 +7,14 @@
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
       "genre": "Family / Comedy / Adventure / Fantasy / Animation",
       "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
-      "notes": "The galaxy awaits."
+      "notes": "The galaxy awaits.",
+      "youtube_trailer_id": "En5QZmL5R1s"
     },
     {
       "tmdb_id": 1341137,
@@ -25,7 +26,8 @@
       "release_type": "limited",
       "genre": "Drama / History",
       "cast": "John Paul Sneed, Jonathan Blair, JT Schaeffer, Josh Bates",
-      "notes": "Before the American Revolution, there was a revelation."
+      "notes": "Before the American Revolution, there was a revelation.",
+      "youtube_trailer_id": "H4-rMC88ylQ"
     },
     {
       "tmdb_id": 1326036,
@@ -37,7 +39,8 @@
       "release_type": "limited",
       "genre": "Drama / Romance",
       "cast": "Teresa Palmer, Joe Dempsie, Eamon Farren, Adrienne Pickering",
-      "notes": "It all counts."
+      "notes": "It all counts.",
+      "youtube_trailer_id": "ZhCjT82jAfo"
     },
     {
       "tmdb_id": 1410189,
@@ -49,7 +52,8 @@
       "release_type": "wide",
       "genre": "Comedy / Drama",
       "cast": "Eszter Tompa, Gabriel Spahiu, Adonis Tanța, Oana Mardare",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "b9umCIsc-zc"
     },
     {
       "tmdb_id": null,
@@ -61,7 +65,8 @@
       "release_type": "limited",
       "genre": "Drama / History",
       "cast": "Shang Wang, Zhang Yanrong, Chuwen Zhang, Caixia Zhang",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1172265,
@@ -73,7 +78,8 @@
       "release_type": "limited",
       "genre": "Drama / Adventure / Science Fiction",
       "cast": "Denise Weinberg, Rodrigo Santoro, Miriam Socarrás, Adanilo",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "nFQEUuodCQ0"
     },
     {
       "tmdb_id": 1325734,
@@ -85,7 +91,8 @@
       "release_type": "wide",
       "genre": "Romance / Comedy / Drama",
       "cast": "Zendaya, Robert Pattinson, Mamoudou Athie, Alana Haim",
-      "notes": "Witness the wedding of the year."
+      "notes": "Witness the wedding of the year.",
+      "youtube_trailer_id": "0ZDzsH3XGFA"
     },
     {
       "tmdb_id": 1429348,
@@ -97,7 +104,8 @@
       "release_type": "limited",
       "genre": "Drama / Crime",
       "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin, Denis Lavant",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "gR912kHSOlA"
     },
     {
       "tmdb_id": 1149614,
@@ -109,7 +117,8 @@
       "release_type": "wide",
       "genre": "Drama / Comedy",
       "cast": "Ariel Bronz, Efrat Dor, Naama Preis, Aleksey Serebryakov",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "Z7dOWWLczN0"
     },
     {
       "tmdb_id": 1418657,
@@ -121,7 +130,8 @@
       "release_type": "limited",
       "genre": "Horror / Thriller",
       "cast": "Brittany Allen, Eric Nelsen, Corbin Bernsen, William Sadler",
-      "notes": "Fear is primal."
+      "notes": "Fear is primal.",
+      "youtube_trailer_id": "7rXJdyv5cRQ"
     },
     {
       "tmdb_id": 1292415,
@@ -133,7 +143,8 @@
       "release_type": "limited",
       "genre": "Action / Drama",
       "cast": "Daniel MacPherson, Luke Hemsworth, Russell Crowe, Mojean Aria",
-      "notes": "Legends are made in the cage."
+      "notes": "Legends are made in the cage.",
+      "youtube_trailer_id": "yJN2mJ4uOas"
     },
     {
       "tmdb_id": 1364297,
@@ -145,7 +156,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Katarina Zhu, Austin Amelio, Perry Yung, Jack Kilmer",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1419053,
@@ -157,7 +169,8 @@
       "release_type": "limited",
       "genre": "Animation / Fantasy / Romance",
       "cast": "Ouji Suzuka, Anna Yamada, Kavka Shishido, Yuuichirou Umehara",
-      "notes": "He's on the hook."
+      "notes": "He's on the hook.",
+      "youtube_trailer_id": "Cc6VyTu_SH0"
     },
     {
       "tmdb_id": 1408208,
@@ -169,7 +182,8 @@
       "release_type": "limited",
       "genre": "Horror / Mystery",
       "cast": "Kazunari Ninomiya, Yamato Kochi, Nana Komatsu, Naru Asanuma",
-      "notes": "Turn back."
+      "notes": "Turn back.",
+      "youtube_trailer_id": "zzEDWwhtAHc"
     },
     {
       "tmdb_id": 855435,
@@ -181,7 +195,8 @@
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
-      "notes": "You can't unsee it."
+      "notes": "You can't unsee it.",
+      "youtube_trailer_id": "bKiX2FBBz54"
     },
     {
       "tmdb_id": 843342,
@@ -193,7 +208,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Riz Ahmed, Morfydd Clark, Timothy Spall, Art Malik",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "mv2iYGYSUtY"
     },
     {
       "tmdb_id": 1308388,
@@ -205,7 +221,8 @@
       "release_type": "wide",
       "genre": "Horror / Mystery",
       "cast": "Markian Tarasiuk, Ryan Alexander McDonald, Miranda MacDougall, Christine Willes",
-      "notes": "Not all answers want to be found."
+      "notes": "Not all answers want to be found.",
+      "youtube_trailer_id": "SxnwSNp0848"
     },
     {
       "tmdb_id": 1320006,
@@ -217,7 +234,8 @@
       "release_type": "limited",
       "genre": "Mystery / Thriller",
       "cast": "Mark Kassen, Abubakar Salim, Jesse L. Martin, Dina Shihabi",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "CSU9c8O2ud8"
     },
     {
       "tmdb_id": 1492865,
@@ -229,7 +247,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Amy Goodman",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "GumfuqgijpY"
     },
     {
       "tmdb_id": 1400357,
@@ -241,7 +260,8 @@
       "release_type": "limited",
       "genre": "Crime / Comedy",
       "cast": "Michaela Coel, Ian McKellen, Jessica Gunning, James Corden",
-      "notes": "Art can be copied. Artists cannot."
+      "notes": "Art can be copied. Artists cannot.",
+      "youtube_trailer_id": "7CB2nsSBqs0"
     },
     {
       "tmdb_id": 1455079,
@@ -253,7 +273,8 @@
       "release_type": "wide",
       "genre": "Romance / Comedy",
       "cast": "Halle Bailey, Regé-Jean Page, Marco Calvani, Lorenzo de Moor",
-      "notes": "She came for the pasta and got lost in the sauce."
+      "notes": "She came for the pasta and got lost in the sauce.",
+      "youtube_trailer_id": "uYTMroh8pjI"
     },
     {
       "tmdb_id": 1582296,
@@ -265,7 +286,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Chris Mckinny, Cyndi Parker, Steven King, Jose Jaime Pinto",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "12L02ZqwW9o"
     },
     {
       "tmdb_id": 1226699,
@@ -277,7 +299,8 @@
       "release_type": "limited",
       "genre": "Comedy / Drama / Thriller",
       "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1601096,
@@ -289,7 +312,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "David Byrne, Janette Sadik-Khan",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1341341,
@@ -301,7 +325,8 @@
       "release_type": "limited",
       "genre": "Crime / Comedy / Mystery",
       "cast": "Liam Neeson, Spike Fearn, Jim Sturgess, Talia Ryder",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1152014,
@@ -313,7 +338,8 @@
       "release_type": "limited",
       "genre": "Comedy / Family",
       "cast": "Artus, Clovis Cornillac, Alice Belaïdi, Marc Riso",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "_xXtpZvtXyo"
     },
     {
       "tmdb_id": 1247794,
@@ -325,7 +351,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Joshua Close, Joanne Kelly, Gilbert Owuor",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "lpc7olNGWS4"
     },
     {
       "tmdb_id": 1243741,
@@ -337,7 +364,8 @@
       "release_type": "limited",
       "genre": "Thriller / Drama",
       "cast": "Lena Headey, Enrico Colantoni, Amybeth McNulty, Michael Lipka",
-      "notes": "A mother's pain, a bullet's purpose."
+      "notes": "A mother's pain, a bullet's purpose.",
+      "youtube_trailer_id": "bxvgiEFR774"
     },
     {
       "tmdb_id": 1184941,
@@ -349,7 +377,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Eylul Guven, Iringó Réti, Ádám Tompa, Edik Beddoes",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "JeWg8wUlQVo"
     },
     {
       "tmdb_id": 1414413,
@@ -361,7 +390,8 @@
       "release_type": "limited",
       "genre": "Action / Thriller / Mystery / Drama",
       "cast": "Kiefer Sutherland, Tommy Martinez, Ashton Sanders, Solly McLeod",
-      "notes": "He never planned to fight. But he refuses to fall."
+      "notes": "He never planned to fight. But he refuses to fall.",
+      "youtube_trailer_id": "DrG4QkBpqMc"
     },
     {
       "tmdb_id": 1391074,
@@ -373,7 +403,8 @@
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "David Spade, Theo Von, Bobby Lee, Tim Dillon",
-      "notes": "Some messes can't be cleaned up."
+      "notes": "Some messes can't be cleaned up.",
+      "youtube_trailer_id": "SEVbq2DvsEQ"
     },
     {
       "tmdb_id": 1337592,
@@ -385,7 +416,8 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Charli xcx, Lena Góra, Will Madden, Jeremy O. Harris",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "v5D_0BJD6CU"
     },
     {
       "tmdb_id": 1472844,
@@ -397,7 +429,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Ben McKenzie, Morena Baccarin, Sam Bankman-Fried, Alex Mashinksy",
-      "notes": "Like subprime, but dumber."
+      "notes": "Like subprime, but dumber.",
+      "youtube_trailer_id": "hEXxAOFqv4U"
     },
     {
       "tmdb_id": 1015154,
@@ -409,7 +442,8 @@
       "release_type": "limited",
       "genre": "Action / Drama / History / War",
       "cast": "Paz Vega, Juan Pablo Shuk, Yancey Arias, Mena Suvari",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "D3sQsAuxJWE"
     },
     {
       "tmdb_id": 1304313,
@@ -421,7 +455,8 @@
       "release_type": "wide",
       "genre": "Horror / Mystery",
       "cast": "Jack Reynor, Laia Costa, May Calamawy, Natalie Grace",
-      "notes": "What happened to Katie?"
+      "notes": "What happened to Katie?",
+      "youtube_trailer_id": "6wbMsDmJLCs"
     },
     {
       "tmdb_id": 1634949,
@@ -433,7 +468,8 @@
       "release_type": "wide",
       "genre": "Documentary",
       "cast": "Lorne Michaels, Tina Fey, Maya Rudolph, John Mulaney",
-      "notes": "The legend behind the legends."
+      "notes": "The legend behind the legends.",
+      "youtube_trailer_id": "8jAzm4a5SLo"
     },
     {
       "tmdb_id": 1400756,
@@ -445,7 +481,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Juan Collado, Destiny Checo, Yohanna Florentino, Nathaly Navarro",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "H7oz4ixPiSI"
     },
     {
       "tmdb_id": 1364953,
@@ -457,7 +494,8 @@
       "release_type": "limited",
       "genre": "Horror / Drama / Mystery",
       "cast": "Ariaana Osborne, Toby Stephens, Umi Myers, Erroll Shand",
-      "notes": "A Māori gothic story of retribution."
+      "notes": "A Māori gothic story of retribution.",
+      "youtube_trailer_id": "uP_BNr2VerM"
     },
     {
       "tmdb_id": 1177767,
@@ -469,7 +507,8 @@
       "release_type": "wide",
       "genre": "Comedy / Romance / Music",
       "cast": "Barbie Ferreira, Devon Bostick, Stanley Simons, Juliette Gariépy",
-      "notes": "Welcome to the summer of 2011."
+      "notes": "Welcome to the summer of 2011.",
+      "youtube_trailer_id": "mzaCmw_VrlI"
     },
     {
       "tmdb_id": 1242332,
@@ -481,7 +520,8 @@
       "release_type": "wide",
       "genre": "Action / Crime / Thriller",
       "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Ryan Allen",
-      "notes": "Small town. Big secret."
+      "notes": "Small town. Big secret.",
+      "youtube_trailer_id": "5OndK0w1lYY"
     },
     {
       "tmdb_id": 1421552,
@@ -493,7 +533,8 @@
       "release_type": "limited",
       "genre": "Action / Comedy / Family / Fantasy",
       "cast": "Jackie Chan, Ma Li, Qiao Shan, Yu Yang",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "V3jKsgAqFas"
     },
     {
       "tmdb_id": 1443576,
@@ -505,7 +546,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Blanca Soroa, Patricia López Arnaiz, Miguel Garcés, Juan Minujín",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "FRwwy6W2xh8"
     },
     {
       "tmdb_id": 1647277,
@@ -517,7 +559,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Radha Mitchell, William Miller, Ellen David, David Andrews",
-      "notes": "Every bloom tells a story."
+      "notes": "Every bloom tells a story.",
+      "youtube_trailer_id": "n4BuVSMrkVo"
     },
     {
       "tmdb_id": 1280300,
@@ -529,7 +572,8 @@
       "release_type": "limited",
       "genre": "Mystery / Horror / Thriller",
       "cast": "Juan Pablo Raba, Diane Guerrero, Indhira Serrano, Laureano Olivares",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "8PNnVN8NSHk"
     },
     {
       "tmdb_id": 1307373,
@@ -541,7 +585,8 @@
       "release_type": "limited",
       "genre": "Crime / Drama / Thriller",
       "cast": "David Jonsson, Tom Blyth, Alex Hassell, Neil Linpow",
-      "notes": "A bold new vision of life inside."
+      "notes": "A bold new vision of life inside.",
+      "youtube_trailer_id": "uaOextY7REM"
     },
     {
       "tmdb_id": 1303613,
@@ -553,7 +598,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Miriam Garlo, Álvaro Cervantes, Elena Irureta, Joaquín Notario",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "YhYdF1oavYk"
     },
     {
       "tmdb_id": 1616429,
@@ -565,7 +611,8 @@
       "release_type": "limited",
       "genre": "Documentary / Music",
       "cast": "YoungBoy Never Broke Again",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1593115,
@@ -577,7 +624,8 @@
       "release_type": "limited",
       "genre": "History / Drama",
       "cast": "Antonis Miriagos, Finbar Lynch, Pavlos Kourtidis, Tasos Halkias",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "pYDMv5BtmWM"
     },
     {
       "tmdb_id": null,
@@ -589,7 +637,8 @@
       "release_type": "limited",
       "genre": "Comedy / Drama / History / War",
       "cast": "Pierre Doris, Jacqueline Dufranne, Agathe Natanson, Hervé Lévy",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1269644,
@@ -601,7 +650,8 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Jasper Billerbeck, Diane Kruger, Kian Köppke, Laura Tonke",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "-izT0MKkvZY"
     },
     {
       "tmdb_id": 898704,
@@ -613,7 +663,8 @@
       "release_type": "wide",
       "genre": "Action / Drama / History",
       "cast": "Anthony Mackie, Aiysha Hart, Ben Kingsley, Ghassan Massoud",
-      "notes": "One warrior must unite them all."
+      "notes": "One warrior must unite them all.",
+      "youtube_trailer_id": "fraAGOuT3sA"
     },
     {
       "tmdb_id": 1242265,
@@ -625,7 +676,8 @@
       "release_type": "limited",
       "genre": "Action / Crime / Thriller / Drama",
       "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
-      "notes": "Down to the wire."
+      "notes": "Down to the wire.",
+      "youtube_trailer_id": "1aNywiElPSY"
     },
     {
       "tmdb_id": 1317149,
@@ -637,7 +689,8 @@
       "release_type": "wide",
       "genre": "Drama / History",
       "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
-      "notes": "I blink. I twitch. I jump. I click. I whistle. I shout."
+      "notes": "I blink. I twitch. I jump. I click. I whistle. I shout.",
+      "youtube_trailer_id": "10ynpduiRpM"
     },
     {
       "tmdb_id": 936075,
@@ -649,7 +702,8 @@
       "release_type": "wide",
       "genre": "Music / Drama",
       "cast": "Jaafar Jackson, Colman Domingo, Nia Long, Juliano Krue Valdi",
-      "notes": "Discover the making of a king."
+      "notes": "Discover the making of a king.",
+      "youtube_trailer_id": "k-YAcjaLuSI"
     },
     {
       "tmdb_id": 1165655,
@@ -661,7 +715,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Bárbara Mori, Pudy Ballumbrosio, Christian Meier, Juan Pablo Olyslager",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1102883,
@@ -673,7 +728,8 @@
       "release_type": "wide",
       "genre": "Music / Fantasy / Drama",
       "cast": "Anne Hathaway, Michaela Coel, Hunter Schafer, FKA twigs",
-      "notes": "This is not a ghost story."
+      "notes": "This is not a ghost story.",
+      "youtube_trailer_id": "aqYHOsuje1E"
     },
     {
       "tmdb_id": 1514056,
@@ -685,7 +741,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "QAAlkFKaUxM"
     },
     {
       "tmdb_id": 1233655,
@@ -697,7 +754,8 @@
       "release_type": "limited",
       "genre": "Drama / Family",
       "cast": "John Magaro, Molly Belle Wright, Wyatt Solis, Talia Balsam",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "M2OTVoxpetU"
     },
     {
       "tmdb_id": 1390300,
@@ -709,7 +767,8 @@
       "release_type": "wide",
       "genre": "Comedy / Action / Thriller",
       "cast": "Jason Segel, Samara Weaving, Timothy Olyphant, Juliette Lewis",
-      "notes": "Breakups are all in the execution."
+      "notes": "Breakups are all in the execution.",
+      "youtube_trailer_id": "pGxKTIegUZ4"
     },
     {
       "tmdb_id": 1400736,
@@ -721,7 +780,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Stephan James, Sheryl Lee Ralph, Titus Welliver, Maliq Johnson",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "6odpzlKJ7ek"
     },
     {
       "tmdb_id": 1327460,
@@ -733,7 +793,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Kue Lawrence, Christina Brucato, Oscar Nuñez, Jamad Mays",
-      "notes": "Our nation. Our kids. Our guns."
+      "notes": "Our nation. Our kids. Our guns.",
+      "youtube_trailer_id": "Z12uz--D4Gc"
     },
     {
       "tmdb_id": 1587535,
@@ -745,7 +806,8 @@
       "release_type": "limited",
       "genre": "Science Fiction / Fantasy / Action / Adventure / Crime",
       "cast": "Brendan Guy Murphy, Joseph Franco, Carol Cardenas, Sian Vilaire",
-      "notes": "There's no law in the wasteland"
+      "notes": "There's no law in the wasteland",
+      "youtube_trailer_id": "TrFvsZvAPg4"
     },
     {
       "tmdb_id": 1427653,
@@ -757,7 +819,8 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Lloyd Eyre-Morgan, David Tag, Liam Boyle, Tyler Conti",
-      "notes": "They say the best way to move forward is to go back..."
+      "notes": "They say the best way to move forward is to go back...",
+      "youtube_trailer_id": "s2LLsEmk7fc"
     },
     {
       "tmdb_id": null,
@@ -769,7 +832,8 @@
       "release_type": "limited",
       "genre": "Documentary / Music",
       "cast": "John Lennon, Yoko Ono, Sha-Na-Na, Stevie Wonder",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1650789,
@@ -781,7 +845,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Dr. Stephen C. Meyer, Phd, John Lennox, PhD, Peter Thiel, Brian Keating, PhD",
-      "notes": "The Science That Reveals A Mind Behind The Universe"
+      "notes": "The Science That Reveals A Mind Behind The Universe",
+      "youtube_trailer_id": "pwL3ZKlwEoc"
     }
   ]
 }

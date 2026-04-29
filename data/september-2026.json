@@ -13,7 +13,8 @@
       "release_type": "wide",
       "genre": "Horror / Comedy",
       "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1380417,
@@ -25,7 +26,8 @@
       "release_type": "wide",
       "genre": "History / Drama / Thriller",
       "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, Giancarlo Esposito",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1497970,
@@ -37,7 +39,8 @@
       "release_type": "wide",
       "genre": "Animation / Comedy / Family / Fantasy / Adventure",
       "cast": "Jiang Wen, Shun Zi, Lan Long, Tu Xiongfei",
-      "notes": "The cat and mouse chase never ends!"
+      "notes": "The cat and mouse chase never ends!",
+      "youtube_trailer_id": "VBPlpfK6zXg"
     },
     {
       "tmdb_id": 1302904,
@@ -49,7 +52,8 @@
       "release_type": "wide",
       "genre": "Fantasy / Drama / Comedy",
       "cast": "Sandra Bullock, Nicole Kidman, Joey King, Lee Pace",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "iSWP2feb4rw"
     },
     {
       "tmdb_id": 977942,
@@ -61,7 +65,8 @@
       "release_type": "wide",
       "genre": "Drama / History",
       "cast": "Andrew Garfield, Katherine Waterston, Jamie Bell, Cosmo Jarvis",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1423191,
@@ -73,7 +78,8 @@
       "release_type": "limited",
       "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Paul Walter Hauser, Zach Cherry, Kali Reis",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1477104,
@@ -85,7 +91,8 @@
       "release_type": "limited",
       "genre": "Family / Comedy / Adventure / Animation",
       "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
-      "notes": "What's that coming over the hill?"
+      "notes": "What's that coming over the hill?",
+      "youtube_trailer_id": "UZ46Smi6mOw"
     },
     {
       "tmdb_id": 1521151,
@@ -97,7 +104,8 @@
       "release_type": "limited",
       "genre": "Animation / Comedy / Family",
       "cast": "—",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1465063,
@@ -109,7 +117,8 @@
       "release_type": "wide",
       "genre": "Comedy / Adventure / Animation / Fantasy / Family",
       "cast": "H.E.R., Liza Soberano, Dave Franco, Jenny Slate",
-      "notes": "Go together."
+      "notes": "Go together.",
+      "youtube_trailer_id": "a8RHqN93qfo"
     }
   ]
 }

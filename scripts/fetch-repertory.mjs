@@ -398,35 +398,56 @@ function jsonLdEvents(html, theaterSlug, fallbackUrl) {
 }
 
 // American Cinematheque (Aero + Egyptian + Los Feliz Theatre). The site's
-// #eventsApp Vue widget calls The Events Calendar REST API
-// (/wp-json/tribe/events/v1/events), which returns a structured events list
-// we can route to the right venue by Tribe Events venue id.
+// events listing is Algolia-backed via a custom WP REST endpoint:
+//   /wp-json/wp/v2/algolia_get_events?environment=production_2026
+//                                    &startDate=<unix>&endDate=<unix>
+// Each hit carries event_start_date (YYYYMMDD), event_start_time ("7:00 PM"),
+// event_location (array of taxonomy term IDs), and event_card_excerpt (HTML
+// like "<p>Los Feliz 3 | …</p>") which we use as a venue-name fallback.
 //   54  = Aero Theatre
 //   55  = Egyptian Theatre
 //   102 = Los Feliz Theatre
+// We chunk the request into 30-day windows since the endpoint appears to
+// return everything in range without pagination metadata.
 async function scrapeAmericanCinematheque() {
   const AC_VENUE_TO_THEATER = { 54: "aero", 55: "egyptian", 102: "los-feliz-theatre" };
-  const base = "https://www.americancinematheque.com/wp-json/tribe/events/v1/events";
-  const params = new URLSearchParams({
-    per_page: "50",
-    start_date: TODAY_LA,
-    end_date: HORIZON_LA,
-  });
-  let url = `${base}?${params.toString()}`;
+  const base = "https://www.americancinematheque.com/wp-json/wp/v2/algolia_get_events";
+  const env = `production_${TODAY_LA.slice(0, 4)}`;
 
   const out = [];
-  for (let page = 0; page < 10 && url; page++) {
+  const seen = new Set();
+  // Cover [today-1d, today+HORIZON+1d] in 30-day windows. inWindow() trims
+  // anything outside the canonical horizon below.
+  const startSec = Math.floor(new Date(`${TODAY_LA}T00:00:00Z`).getTime() / 1000) - 86400;
+  const endSec = startSec + (HORIZON_DAYS + 2) * 86400;
+  const CHUNK = 30 * 86400;
+  for (let s = startSec; s < endSec; s += CHUNK) {
+    const e = Math.min(s + CHUNK, endSec);
+    const url = `${base}?environment=${env}&startDate=${s}&endDate=${e}`;
     const data = await fetchJson(url);
-    if (!data?.events?.length) break;
-    for (const ev of data.events) {
-      const start = ev.start_date || ev.startDate;
-      if (!start) continue;
-      const parts = naivePTParts(start) || laParts(start);
-      if (!parts || !inWindow(parts.date)) continue;
+    const hits = Array.isArray(data?.hits) ? data.hits : [];
+    for (const ev of hits) {
+      if (ev?.id != null) {
+        if (seen.has(ev.id)) continue;
+        seen.add(ev.id);
+      }
+      const dm = String(ev?.event_start_date || "").match(/^(\d{4})(\d{2})(\d{2})$/);
+      if (!dm) continue;
+      const date = `${dm[1]}-${dm[2]}-${dm[3]}`;
+      if (!inWindow(date)) continue;
+      const time = parse12h(ev.event_start_time || "");
+      if (!time) continue;
 
-      let theater = AC_VENUE_TO_THEATER[ev.venue?.id];
+      let theater = null;
+      if (Array.isArray(ev.event_location)) {
+        for (const loc of ev.event_location) {
+          if (AC_VENUE_TO_THEATER[loc]) { theater = AC_VENUE_TO_THEATER[loc]; break; }
+        }
+      }
       if (!theater) {
-        const vname = String(ev.venue?.venue || ev.venue?.name || "").toLowerCase();
+        const vname = String(ev.event_card_excerpt || "")
+          .replace(/<[^>]+>/g, " ")
+          .toLowerCase();
         if (vname.includes("aero")) theater = "aero";
         else if (vname.includes("egyptian")) theater = "egyptian";
         else if (vname.includes("los feliz")) theater = "los-feliz-theatre";
@@ -434,22 +455,22 @@ async function scrapeAmericanCinematheque() {
       if (!theater) continue;
 
       const name = decodeEntities(ev.title || "");
-      const desc = decodeEntities(ev.description || "").replace(/<[^>]+>/g, " ");
-      const series = Array.isArray(ev.categories) && ev.categories[0]?.name
-        ? decodeEntities(ev.categories[0].name)
+      const excerptText = decodeEntities(String(ev.event_card_excerpt || "").replace(/<[^>]+>/g, " "));
+      const series = Array.isArray(ev.related_series) && ev.related_series[0]?.post_title
+        ? decodeEntities(ev.related_series[0].post_title)
         : null;
       out.push({
         theater,
         title: cleanTitle(name),
         year: extractYear(name),
-        date: parts.date,
-        time: parts.time,
-        format: detectFormat(`${name} ${desc}`),
+        date,
+        time,
+        format: detectFormat(`${name} ${excerptText}`),
         series,
         url: ev.url || "https://www.americancinematheque.com/now-showing/",
       });
     }
-    url = data.next_rest_url || null;
+    await sleep(200);
   }
   return out;
 }

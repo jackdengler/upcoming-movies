@@ -93,7 +93,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: calc(var(--safe-top) + 12px) 18px 12px;
+  padding: calc(var(--safe-top) + 8px) 14px 10px;
   background: var(--header-bg);
   backdrop-filter: var(--header-blur);
   -webkit-backdrop-filter: var(--header-blur);
@@ -166,7 +166,7 @@ body {
 }
 
 .app-header__segmented {
-  margin-top: 12px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
@@ -175,7 +175,7 @@ body {
   border-radius: 10px;
 }
 .app-header__segmented--scope {
-  margin-top: 6px;
+  margin-top: 4px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .app-header__segmented--scope[hidden] { display: none; }
@@ -244,7 +244,7 @@ body {
 /* Main */
 
 .app-main {
-  padding: 12px 16px calc(var(--safe-bottom) + var(--tabbar-h) + 24px);
+  padding: 8px 10px calc(var(--safe-bottom) + var(--tabbar-h) + 24px);
 }
 
 .tab-panel { display: block; }
@@ -326,7 +326,7 @@ details[open] > .month__summary .month__chevron {
   align-items: baseline;
   justify-content: space-between;
   gap: 12px;
-  padding: 0 6px 8px;
+  padding: 0 4px 8px;
 }
 
 .section__date {
@@ -356,7 +356,7 @@ details[open] > .month__summary .month__chevron {
 .row {
   position: relative;
   display: block;
-  padding: 14px 16px;
+  padding: 14px 14px;
   background: var(--surface);
   border-top: 0.5px solid var(--separator);
   border-left: 3px solid transparent;
@@ -469,8 +469,8 @@ details[open] > .month__summary .month__chevron {
 .row__sub {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 4px 12px;
+  grid-template-columns: 64px 1fr;
+  gap: 4px 10px;
   font-size: 13px;
   color: var(--muted);
 }
@@ -1195,7 +1195,7 @@ details[open] > .month__summary .month__chevron {
 /* Activity tab */
 
 .activity-row {
-  padding: 14px 16px;
+  padding: 14px 14px;
 }
 
 .activity-row__desc {

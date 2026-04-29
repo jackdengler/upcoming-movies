@@ -93,7 +93,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: calc(var(--safe-top) + 8px) 14px 10px;
+  padding: var(--safe-top) 14px 10px;
   background: var(--header-bg);
   backdrop-filter: var(--header-blur);
   -webkit-backdrop-filter: var(--header-blur);

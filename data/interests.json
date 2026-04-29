@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-29T03:50:59.497Z",
+  "updated": "2026-04-29T03:51:03.522Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1773,6 +1773,13 @@
       "title": "Silent Friend",
       "date": "2026-05-08",
       "tmdb_id": 1168719
+    },
+    "tmdb:1421979": {
+      "level": "potential",
+      "at": "2026-04-29T03:51:01.021Z",
+      "title": "The Python Hunt",
+      "date": "2026-05-08",
+      "tmdb_id": 1421979
     }
   }
 }

@@ -433,17 +433,14 @@ function trailerEmbedUrl(videoId) {
   return `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
 }
 
-function renderTrailerSection(m) {
-  const key = movieKey(m);
-  const ytId = m.youtube_trailer_id || null;
+function renderTrailer({ key, title, year, ytId }) {
   const open = openTrailers.has(key);
-  const year = (m.date || "").slice(0, 4) || null;
 
   if (!ytId) {
     return el("div", { class: "row__trailer-row" },
       el("a", {
           class: "row__trailer-btn",
-          href: youtubeSearchUrl(m.title, year),
+          href: youtubeSearchUrl(title, year),
           target: "_blank",
           rel: "noopener noreferrer",
           dataset: { trailerSearch: "1" },
@@ -475,13 +472,36 @@ function renderTrailerSection(m) {
         allowfullscreen: "",
         loading: "lazy",
         referrerpolicy: "strict-origin-when-cross-origin",
-        title: `${m.title || "Trailer"} trailer`,
+        title: `${title || "Trailer"} trailer`,
       }),
     );
     wrap.appendChild(frame);
   }
 
   return wrap;
+}
+
+function renderTrailerSection(m) {
+  return renderTrailer({
+    key: movieKey(m),
+    title: m.title,
+    year: (m.date || "").slice(0, 4) || null,
+    ytId: m.youtube_trailer_id || null,
+  });
+}
+
+function renderRepTrailerSection(entry) {
+  // Group-level entries don't carry a single date, but every showing in the
+  // run shares the same film. Pick the first showing that has a baked
+  // `youtube_trailer_id` so screenings with stale data still get picked up.
+  const ytId =
+    entry.showings.find((s) => s.youtube_trailer_id)?.youtube_trailer_id || null;
+  return renderTrailer({
+    key: entry.id,
+    title: entry.title,
+    year: entry.year,
+    ytId,
+  });
 }
 
 function renderRatingBar(m) {
@@ -1837,6 +1857,7 @@ function renderRepTitleRow(entry) {
           : el("span", { text: when }),
       );
     }),
+    renderRepTrailerSection(entry),
   );
 
   const modClass = interest === "yes" ? " rep-title--on" : interest === "no" ? " rep-title--off" : "";
@@ -1981,6 +2002,7 @@ function handleTrailerClick(e) {
 document.getElementById("list")?.addEventListener("click", handleTrailerClick);
 document.getElementById("cal-day")?.addEventListener("click", handleTrailerClick);
 document.getElementById("interest-list")?.addEventListener("click", handleTrailerClick);
+document.getElementById("repertory-list")?.addEventListener("click", handleTrailerClick);
 
 document.getElementById("repertory-list")?.addEventListener("click", (e) => {
   const btn = e.target.closest(".rep-interest");

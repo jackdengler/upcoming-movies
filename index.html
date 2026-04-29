@@ -55,6 +55,20 @@
 
     <main class="app-main">
       <section id="tab-list" class="tab-panel" aria-label="List">
+        <div class="search-bar">
+          <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M21 21l-4.3-4.3"/>
+          </svg>
+          <input id="search-input" class="search-bar__input" type="search"
+                 inputmode="search" autocomplete="off" autocorrect="off"
+                 spellcheck="false" placeholder="Search title, director, cast…" />
+          <button id="search-clear" class="search-bar__clear" type="button" aria-label="Clear search" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
         <div id="theater-filter-bar" class="theater-filter-bar" role="group" aria-label="Filter by theater" hidden></div>
         <div id="list"></div>
         <div id="repertory-list" hidden></div>

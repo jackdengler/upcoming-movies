@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-29T03:50:56.318Z",
+  "updated": "2026-04-29T03:50:59.497Z",
   "marks": {
     "tmdb:1226863": {
       "level": "watched",
@@ -1766,6 +1766,13 @@
       "title": "Neglected",
       "date": "2026-05-08",
       "tmdb_id": 1409853
+    },
+    "tmdb:1168719": {
+      "level": "potential",
+      "at": "2026-04-29T03:50:56.996Z",
+      "title": "Silent Friend",
+      "date": "2026-05-08",
+      "tmdb_id": 1168719
     }
   }
 }

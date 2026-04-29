@@ -1952,29 +1952,26 @@ function openUpdates() {
 // our automation produces: "Update interests" (PAT writes from the app)
 // and "Refresh release data" (refresh-data.yml). Everything else counts
 // as an actual code change.
+//
+// Fetched fresh every time the Updates panel opens (no cache) so a new
+// deploy is reflected immediately. Falls back to the previous result on
+// a transient network error so the line doesn't disappear.
 const CODE_VERSION_KEY = "upcoming:code-version";
-const CODE_VERSION_TTL_MS = 6 * 60 * 60 * 1000;
 
 async function fetchLatestCodeCommit() {
-  try {
-    const raw = localStorage.getItem(CODE_VERSION_KEY);
-    if (raw) {
-      const cached = JSON.parse(raw);
-      if (cached && Date.now() - (cached.fetchedAt || 0) < CODE_VERSION_TTL_MS) {
-        return cached;
-      }
-    }
-  } catch {}
-
   let commits;
   try {
     const r = await fetch(
       "https://api.github.com/repos/jackdengler/upcoming-movies/commits?per_page=30",
-      { headers: { Accept: "application/vnd.github+json" } },
+      { headers: { Accept: "application/vnd.github+json" }, cache: "no-store" },
     );
-    if (!r.ok) return null;
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
     commits = await r.json();
   } catch {
+    try {
+      const raw = localStorage.getItem(CODE_VERSION_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch {}
     return null;
   }
   if (!Array.isArray(commits)) return null;
@@ -1987,7 +1984,6 @@ async function fetchLatestCodeCommit() {
   if (!codeCommit) return null;
 
   const result = {
-    fetchedAt: Date.now(),
     sha: codeCommit.sha,
     date: codeCommit.commit?.committer?.date || codeCommit.commit?.author?.date || null,
     message: String(codeCommit.commit?.message || "").split("\n")[0],

@@ -1,4 +1,4 @@
-const REPO = "jackdengler/upcoming-movies";
+const REPO = "jackdengler/private-data-storage";
 const PATH = "data/interests.json";
 const BRANCH = "main";
 const PAT_KEY = "upcoming:gh_pat";
@@ -70,9 +70,23 @@ export async function load() {
   state.loaded = true;
   emit();
 
-  // 2. Merge with remote (prefer newer 'at' timestamps)
+  // 2. Merge with remote (prefer newer 'at' timestamps).
+  // The watchlist now lives in a private repo, so the read needs the PAT.
+  // Without it, we keep using the localStorage cache and let the user paste
+  // a token via the Connect-GitHub dialog.
+  const pat = getPat();
+  if (!pat) return;
   try {
-    const r = await fetch(`./${PATH}?t=${Date.now()}`, { cache: "no-cache" });
+    const r = await fetch(
+      `https://api.github.com/repos/${REPO}/contents/${PATH}?ref=${BRANCH}&t=${Date.now()}`,
+      {
+        cache: "no-cache",
+        headers: {
+          Authorization: `Bearer ${pat}`,
+          Accept: "application/vnd.github.raw",
+        },
+      }
+    );
     if (r.ok) {
       const j = await r.json();
       const remote = j.marks || {};

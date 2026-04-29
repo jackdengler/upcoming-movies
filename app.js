@@ -2139,8 +2139,99 @@ function openUpdates() {
   setPanelHidden("tab-interests", true);
   setPanelHidden("tab-updates", false);
   renderActivityTab();
+  renderCodeVersionFooter();
   Activity.markSeen();
   updateActivityBadge();
+}
+
+// "App last updated …" line in the Updates panel. Skips bot commits to
+// data/ — the only commit messages we treat as data-only are the two
+// our automation produces: "Update interests" (PAT writes from the app)
+// and "Refresh release data" (refresh-data.yml). Everything else counts
+// as an actual code change.
+//
+// Fetched fresh every time the Updates panel opens (no cache) so a new
+// deploy is reflected immediately. Falls back to the previous result on
+// a transient network error so the line doesn't disappear.
+const CODE_VERSION_KEY = "upcoming:code-version";
+
+async function fetchLatestCodeCommit() {
+  let commits;
+  try {
+    const r = await fetch(
+      "https://api.github.com/repos/jackdengler/upcoming-movies/commits?per_page=30",
+      { headers: { Accept: "application/vnd.github+json" }, cache: "no-store" },
+    );
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    commits = await r.json();
+  } catch {
+    try {
+      const raw = localStorage.getItem(CODE_VERSION_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch {}
+    return null;
+  }
+  if (!Array.isArray(commits)) return null;
+
+  const isDataOnly = (c) => {
+    const msg = String(c?.commit?.message || "").trim().toLowerCase();
+    return msg.startsWith("update interests") || msg.startsWith("refresh release data");
+  };
+  const codeCommit = commits.find((c) => !isDataOnly(c));
+  if (!codeCommit) return null;
+
+  const result = {
+    sha: codeCommit.sha,
+    date: codeCommit.commit?.committer?.date || codeCommit.commit?.author?.date || null,
+    message: String(codeCommit.commit?.message || "").split("\n")[0],
+    url: codeCommit.html_url || null,
+  };
+  try { localStorage.setItem(CODE_VERSION_KEY, JSON.stringify(result)); } catch {}
+  return result;
+}
+
+function relativeDateText(iso) {
+  if (!iso) return "";
+  const then = new Date(iso);
+  if (Number.isNaN(then.getTime())) return "";
+  const ms = Date.now() - then.getTime();
+  if (ms < 60 * 1000) return "just now";
+  const minutes = Math.round(ms / 60000);
+  if (minutes < 60) return `${minutes} min ago`;
+  const hours = Math.round(ms / 3600000);
+  if (hours < 24) return hours === 1 ? "1 hour ago" : `${hours} hours ago`;
+  const days = Math.round(ms / 86400000);
+  if (days === 1) return "yesterday";
+  if (days < 7) return `${days} days ago`;
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: then.getFullYear() === new Date().getFullYear() ? undefined : "numeric",
+  }).format(then);
+}
+
+async function renderCodeVersionFooter() {
+  const el = document.getElementById("code-updated");
+  if (!el) return;
+  const info = await fetchLatestCodeCommit();
+  if (!info?.date) {
+    el.hidden = true;
+    return;
+  }
+  el.hidden = false;
+  el.textContent = "";
+  el.append("App last updated ");
+  if (info.url) {
+    const a = document.createElement("a");
+    a.href = info.url;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.textContent = relativeDateText(info.date);
+    if (info.message) a.title = info.message;
+    el.append(a);
+  } else {
+    el.append(relativeDateText(info.date));
+  }
 }
 
 function closeUpdates({ silent = false } = {}) {

@@ -42,6 +42,115 @@ const [year, mm] = MONTH.split("-");
 
 const RERELEASE_YEAR_THRESHOLD = 3;
 
+// Categories the user doesn't track in this app. Each row is checked against
+// distributor name, title pattern, and TMDB original_language. Anything that
+// matches is dropped at enrichment time. The WHITELIST below exempts specific
+// titles whose distributor/category would otherwise catch a film we want to
+// keep (e.g. Andy Serkis's "Animal Farm" via Angel Studios, real Iconic
+// Events horror releases, Trafalgar's recorded Othello).
+
+// Distributors that exclusively serve a single niche we don't track.
+// Anything they release is dropped outright.
+const FULL_BLOCK_DISTRIBUTORS = new Set([
+  "Fathom Events", // faith + live event programming
+  "CJ 4DPlex", // 4DX-only experiences
+  "Bandai", // anime-only theatrical
+]);
+
+// Distributors that mostly fit a niche but occasionally release a real
+// theatrical film (Andy Serkis's "Animal Farm" via Angel; horror like
+// "Ice Cream Man" via Iconic; recorded plays / music docs like "Othello"
+// and "Power to the People" via Trafalgar). For each, drop only when a
+// distributor-specific pattern matches; otherwise keep the film.
+//
+//   Trafalgar Releasing → drop if the title has a colon. Every concert and
+//     live-event release in the catalog uses the "<Artist>: <Tour>" or
+//     "<Artist>: ... LIVE VIEWING" format. Narrative theatrical content
+//     (Othello, Power to the People) consistently does not.
+//   Iconic Events Releasing → drop if the title matches a UFC PPV pattern
+//     (handled by EXCLUDED_TITLE_PATTERNS below). Real horror / thriller
+//     limited releases stay in.
+//   Angel → drop unless TMDB tags the film as Animation. Angel's catalog
+//     is overwhelmingly faith-based live action; the rare wide-audience
+//     animated feature (Animal Farm w/ Andy Serkis) is the exception.
+const NICHE_DISTRIBUTORS = {
+  "Trafalgar Releasing": (row) => /:/.test(row.title),
+  "Angel": (_row, tmdbGenres) => !/\bAnimation\b/i.test(tmdbGenres || ""),
+  // Iconic Events relies on global UFC title patterns — no per-distrib rule.
+};
+
+// Drop on title match regardless of distributor. Catches niche programming
+// that legitimate distributors occasionally release (Sony's Crunchyroll
+// sneak peeks, GKIDS's anime tie-ins) plus clearly-named faith-based films
+// without a flagged distributor.
+const EXCLUDED_TITLE_PATTERNS = [
+  /\bKidz Bop\b/i,
+  /\bCatVideoFest\b/i,
+  /Crunchyroll Anime/i,
+  /\bUFC\s+\d/i,
+  /\bUFC Freedom\b/i,
+  /Sacred Heart/i,
+  /Apocalypse of St\./i,
+  /First Hymn/i,
+  /That They May Be One/i,
+  /\bMoses the Black\b/i,
+  /\bStill Hope\b/i,
+  /Ben Kjar Story/i,
+  /Hypnosismic/i,
+  /Uma Musume/i,
+  /Lupin the III/i,
+  /Mobile Suit Gundam/i,
+  /Slime the Movie|Reincarnated as a Slime/i,
+];
+
+// TMDB original_language codes for South Asian regional cinema. Bollywood,
+// Tollywood, Mollywood, Kollywood, Punjabi, Bengali etc. don't fit the app's
+// scope; European-language arthouse (fr/de/it/es/etc.) is intentionally not
+// blocked since the user wants those.
+const EXCLUDED_LANGUAGES = new Set([
+  "hi", // Hindi
+  "ml", // Malayalam
+  "ta", // Tamil
+  "te", // Telugu
+  "pa", // Punjabi
+  "bn", // Bengali
+  "kn", // Kannada
+  "ur", // Urdu
+  "gu", // Gujarati
+  "mr", // Marathi
+]);
+
+// Emergency override for any title that slips past the rules and shouldn't
+// have. Empty for now — the niche-distributor heuristics catch every
+// known false positive.
+const WHITELIST_TMDB_IDS = new Set([]);
+const WHITELIST_TITLES = new Set([]);
+
+function isWhitelisted(tmdbId, title) {
+  if (tmdbId && WHITELIST_TMDB_IDS.has(tmdbId)) return true;
+  if (WHITELIST_TITLES.has(title)) return true;
+  return false;
+}
+
+function exclusionReason(row, tmdbLanguage, tmdbGenres) {
+  if (row.distributor) {
+    if (FULL_BLOCK_DISTRIBUTORS.has(row.distributor)) {
+      return `distributor=${row.distributor}`;
+    }
+    const nicheRule = NICHE_DISTRIBUTORS[row.distributor];
+    if (nicheRule && nicheRule(row, tmdbGenres)) {
+      return `distributor=${row.distributor} (niche pattern)`;
+    }
+  }
+  for (const re of EXCLUDED_TITLE_PATTERNS) {
+    if (re.test(row.title)) return `title=${re.source}`;
+  }
+  if (tmdbLanguage && EXCLUDED_LANGUAGES.has(tmdbLanguage)) {
+    return `language=${tmdbLanguage}`;
+  }
+  return null;
+}
+
 const TMDB_API = "https://api.themoviedb.org/3";
 const tmdbHeaders = { Authorization: `Bearer ${TOKEN}`, Accept: "application/json" };
 
@@ -208,6 +317,7 @@ async function enrich(rows) {
   const calendarYear = +year;
   const out = [];
   let droppedRerelease = 0;
+  let droppedCategory = 0;
   for (const row of rows) {
     let tmdb_id = null;
     let director = "—";
@@ -216,6 +326,7 @@ async function enrich(rows) {
     let cast = row.bom_cast || "—";
     let genre = row.genres.length ? row.genres.join(" / ") : "—";
     let originalYear = null;
+    let originalLanguage = null;
 
     if (row.imdb_id) {
       try {
@@ -241,6 +352,7 @@ async function enrich(rows) {
           notes = d.tagline || "";
           if (d.genres?.length) genre = d.genres.map((g) => g.name).join(" / ");
           originalYear = d.release_date ? +d.release_date.slice(0, 4) : null;
+          originalLanguage = d.original_language || null;
         }
         await sleep(35);
       } catch (e) {
@@ -259,6 +371,15 @@ async function enrich(rows) {
       continue;
     }
 
+    if (!isWhitelisted(tmdb_id, row.title)) {
+      const reason = exclusionReason(row, originalLanguage, genre);
+      if (reason) {
+        console.log(`Drop [${reason}]: ${row.title}`);
+        droppedCategory++;
+        continue;
+      }
+    }
+
     out.push({
       tmdb_id,
       date: row.date,
@@ -274,6 +395,8 @@ async function enrich(rows) {
   }
   if (droppedRerelease)
     console.log(`Dropped ${droppedRerelease} TMDB-year re-release(s).`);
+  if (droppedCategory)
+    console.log(`Dropped ${droppedCategory} categorically-excluded film(s).`);
   return out;
 }
 

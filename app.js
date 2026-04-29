@@ -1574,6 +1574,19 @@ function shiftCalendar(delta) {
 
 const THEATER_FILTER_KEY = "upcoming:theater-filters";
 
+// Theater chip groups. When ≥2 group members have screenings in the current
+// window we collapse them into a single chip — toggling it bulk-hides or
+// bulk-shows every member at once. Currently only "AMC" qualifies (the six
+// directly-scraped AMC venues plus the Fathom-discovered AMCs / Universal
+// Cinema AMC at CityWalk).
+const THEATER_GROUPS = [
+  {
+    slug: "amc",
+    name: "AMC",
+    matches: (t) => /\bAMC\b/i.test(t?.name || ""),
+  },
+];
+
 const repertoryState = {
   data: null,                         // { theaters, screenings, ... } or null
   theatersBySlug: new Map(),
@@ -1661,7 +1674,29 @@ function renderTheaterFilterBar() {
   const theaters = data.theaters.filter((t) => hasScreenings.has(t.slug));
   if (!theaters.length) return;
 
+  // Pull out group members first so they don't double-render as solo chips.
+  const grouped = new Set();
+  const groupChips = [];
+  for (const g of THEATER_GROUPS) {
+    const members = theaters.filter((t) => g.matches(t));
+    if (members.length < 2) continue;
+    for (const m of members) grouped.add(m.slug);
+    const slugs = members.map((m) => m.slug);
+    const allActive = slugs.every((s) => !repertoryState.hiddenTheaters.has(s));
+    groupChips.push(
+      el("button", {
+          type: "button",
+          class: `theater-chip${allActive ? " is-active" : ""}`,
+          dataset: { slugs: slugs.join(",") },
+        },
+        g.name,
+      ),
+    );
+  }
+  for (const chip of groupChips) bar.appendChild(chip);
+
   for (const t of theaters) {
+    if (grouped.has(t.slug)) continue;
     const active = !repertoryState.hiddenTheaters.has(t.slug);
     const btn = el("button", {
         type: "button",
@@ -1676,12 +1711,17 @@ function renderTheaterFilterBar() {
   bar.addEventListener("click", (e) => {
     const btn = e.target.closest(".theater-chip");
     if (!btn) return;
-    const slug = btn.dataset.slug;
-    if (!slug) return;
-    if (repertoryState.hiddenTheaters.has(slug)) {
-      repertoryState.hiddenTheaters.delete(slug);
+    const slugs = btn.dataset.slugs
+      ? btn.dataset.slugs.split(",").filter(Boolean)
+      : btn.dataset.slug ? [btn.dataset.slug] : [];
+    if (!slugs.length) return;
+    // Group chip behaves as one unit: if any member is currently shown,
+    // hide the whole group; otherwise reveal them all.
+    const anyVisible = slugs.some((s) => !repertoryState.hiddenTheaters.has(s));
+    if (anyVisible) {
+      for (const s of slugs) repertoryState.hiddenTheaters.add(s);
     } else {
-      repertoryState.hiddenTheaters.add(slug);
+      for (const s of slugs) repertoryState.hiddenTheaters.delete(s);
     }
     saveTheaterFilters();
     repertoryState._groupedActive = null;

@@ -47,11 +47,20 @@ const THEATERS = [
 ];
 
 // First-run AMC venues the user favorites that are NOT Fathom partners, so
-// they need a separate pull from AMC's own REST API. We only keep screenings
-// tagged with the `fanfaves` attribute (AMC's Fan Faves rerelease program);
-// first-run programming at these venues is out of scope for a repertory app.
-// theatreId values come from AMC's API and appear in the ReactServer payload
-// on any theatre showtimes page.
+// they need a separate pull from AMC's own REST API. Screenings tagged with
+// the `fanfaves` attribute (AMC's Fan Faves rerelease program) become
+// repertory rows; everything else is first-run programming whose titles we
+// collect into AMC_LOCAL_TITLES so the New Releases view can offer an
+// "Only at my AMCs" filter. theatreId values come from AMC's API and appear
+// in the ReactServer payload on any theatre showtimes page.
+// Normalized titles of first-run films currently scheduled at any of the
+// AMC_PREFERRED_THEATERS within HORIZON_DAYS. Populated as a side effect of
+// scrapeAmcPreferredTheatres and emitted as `amc_local_titles` so the client
+// can match against `slugifyClient(release.title)` to power a soft filter.
+// On a failed/skipped AMC pull this stays empty and is preserved from the
+// previous run below — same degrade-gracefully behaviour as repertory rows.
+const AMC_LOCAL_TITLES = new Set();
+
 const AMC_PREFERRED_THEATERS = [
   { slug: "amc-century-city-15", theatreId: 245, name: "AMC Century City 15", address: "10250 Santa Monica Blvd, Los Angeles", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-century-city-15" },
   { slug: "amc-dine-in-marina-6", theatreId: 2418, name: "AMC DINE-IN Marina 6", address: "13455 Maxella Ave, Marina Del Rey", url: "https://www.amctheatres.com/movie-theatres/los-angeles/amc-dine-in-marina-6" },
@@ -101,6 +110,16 @@ const slugify = (s) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .slice(0, 80);
+
+// Mirror of slugifyClient in app.js — must stay in sync so amc_local_titles
+// keys match what the frontend computes from release.title.
+const slugifyTitle = (s) =>
+  String(s)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 60);
 
 async function fetchText(url, extraHeaders = {}) {
   const ctrl = new AbortController();
@@ -1162,15 +1181,21 @@ async function scrapeAmcPreferredTheatres() {
       }
       const showings = data?._embedded?.showtimes || data?.showtimes || [];
       for (const s of showings) {
-        if (!hasCode(s.attributes, "fanfaves")) continue;
         const start = s.showDateTimeLocal || s.showDateTimeUtc;
         if (!start) continue;
         const parts = naivePTParts(start) || laParts(start);
         if (!parts || !inWindow(parts.date)) continue;
         const name = decodeEntities(s.movieName || "");
+        const cleaned = cleanTitle(name);
+        if (!hasCode(s.attributes, "fanfaves")) {
+          // First-run programming — record its title so the client can
+          // filter the New Releases list to films playing locally.
+          if (cleaned) AMC_LOCAL_TITLES.add(slugifyTitle(cleaned));
+          continue;
+        }
         out.push({
           theater: theater.slug,
-          title: cleanTitle(name),
+          title: cleaned,
           year: extractYear(name),
           date: parts.date,
           time: parts.time,
@@ -1213,13 +1238,17 @@ function dedupeScreenings(rows) {
 function loadPrevious() {
   try {
     const j = JSON.parse(readFileSync("data/repertory.json", "utf8"));
-    return Array.isArray(j.screenings) ? j.screenings : [];
+    return {
+      screenings: Array.isArray(j.screenings) ? j.screenings : [],
+      amc_local_titles: Array.isArray(j.amc_local_titles) ? j.amc_local_titles : [],
+    };
   } catch {
-    return [];
+    return { screenings: [], amc_local_titles: [] };
   }
 }
 
-const previous = loadPrevious();
+const previousData = loadPrevious();
+const previous = previousData.screenings;
 const allScreenings = [];
 const sourceStatus = [];
 
@@ -1252,6 +1281,11 @@ for (const src of SOURCES) {
       return false;
     });
     allScreenings.push(...kept);
+    // Carry forward the previous AMC first-run title list so the "Only at
+    // my AMCs" filter doesn't suddenly empty when the AMC API hiccups.
+    if (src.id === "amc-preferred") {
+      for (const t of previousData.amc_local_titles) AMC_LOCAL_TITLES.add(t);
+    }
     sourceStatus.push({ id: src.id, count: kept.length, status: `failed: ${e.message}` });
   }
 }
@@ -1301,6 +1335,7 @@ const out = {
   sources: sourceStatus,
   theaters: THEATERS,
   screenings: cleaned,
+  amc_local_titles: [...AMC_LOCAL_TITLES].sort(),
 };
 
 mkdirSync("data", { recursive: true });

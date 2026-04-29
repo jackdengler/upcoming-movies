@@ -13,7 +13,8 @@
       "release_type": "wide",
       "genre": "Action / Comedy / Fantasy",
       "cast": "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris",
-      "notes": "Big Nick Energy"
+      "notes": "Big Nick Energy",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1003596,
@@ -25,7 +26,8 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "399Ez7WHK5s"
     },
     {
       "tmdb_id": 1300926,
@@ -37,7 +39,8 @@
       "release_type": "wide",
       "genre": "Family / Comedy / Adventure / Animation",
       "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "8_nX4qQU1Wc"
     },
     {
       "tmdb_id": 1437882,
@@ -49,7 +52,8 @@
       "release_type": "limited",
       "genre": "Thriller / Drama",
       "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1260649,
@@ -61,7 +65,8 @@
       "release_type": "wide",
       "genre": "Fantasy / Adventure / Comedy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1372443,
@@ -73,7 +78,8 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1421903,
@@ -85,7 +91,8 @@
       "release_type": "limited",
       "genre": "Horror / Mystery",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Ralph Ineson",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     }
   ]
 }

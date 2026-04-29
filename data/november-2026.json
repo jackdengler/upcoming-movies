@@ -13,7 +13,8 @@
       "release_type": "limited",
       "genre": "Science Fiction / Horror / Action",
       "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Munetaka Aoki",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "n-NDYWPXpKg"
     },
     {
       "tmdb_id": 1117898,
@@ -25,7 +26,8 @@
       "release_type": "limited",
       "genre": "Family / Comedy / Animation / Fantasy",
       "cast": "Bill Hader, Xochitl Gomez, Quinta Brunson, Bowen Yang",
-      "notes": "The cat's out of the bag."
+      "notes": "The cat's out of the bag.",
+      "youtube_trailer_id": "jz8pLlPhSeY"
     },
     {
       "tmdb_id": 891621,
@@ -37,7 +39,8 @@
       "release_type": "wide",
       "genre": "Comedy / Crime / Thriller",
       "cast": "John Malkovich, Sam Rockwell, Steve Buscemi, Parker Posey",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "Haw_sznA5aQ"
     },
     {
       "tmdb_id": 1567605,
@@ -49,7 +52,8 @@
       "release_type": "limited",
       "genre": "Fantasy / Drama / Adventure",
       "cast": "Johnny Depp, Andrea Riseborough, Tramell Tillman, Ian McKellen",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1288211,
@@ -61,7 +65,8 @@
       "release_type": "limited",
       "genre": "Drama / Adventure / Action",
       "cast": "Glen Powell, Jenna Ortega, Emma Mackey, Samuel L. Jackson",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1286656,
@@ -73,7 +78,8 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1300968,
@@ -85,7 +91,8 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons, Ralph Fiennes",
-      "notes": "Welcome to the Second Quarter Quell."
+      "notes": "Welcome to the Second Quarter Quell.",
+      "youtube_trailer_id": "fS35YSjopjE"
     },
     {
       "tmdb_id": 1400336,
@@ -97,7 +104,8 @@
       "release_type": "limited",
       "genre": "Comedy / Romance",
       "cast": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson",
-      "notes": "The circle of trust just got bigger."
+      "notes": "The circle of trust just got bigger.",
+      "youtube_trailer_id": "vyISuWUWcFs"
     },
     {
       "tmdb_id": 1538497,
@@ -109,7 +117,8 @@
       "release_type": "limited",
       "genre": "Family / Animation / Fantasy / Adventure",
       "cast": "Hailee Steinfeld, Rashida Jones",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     }
   ]
 }

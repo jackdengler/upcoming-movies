@@ -11,9 +11,10 @@
       "studio": "IFC Films",
       "budget_usd": 1000000,
       "release_type": "wide",
-      "genre": "Drama / Horror / Thriller",
+      "genre": "Drama / Thriller",
       "cast": "Everett Blunck, Kayo Martin, Joel Edgerton, Kenny Rasmussen",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "QGMRkHPAaVU"
     },
     {
       "tmdb_id": 1198984,
@@ -25,7 +26,8 @@
       "release_type": "limited",
       "genre": "Horror / Thriller",
       "cast": "Daisy Ridley, Brenton Thwaites, Mark Coles Smith, Matt Whelan",
-      "notes": "Volunteers needed."
+      "notes": "Volunteers needed.",
+      "youtube_trailer_id": "YmPyNvrzF0A"
     },
     {
       "tmdb_id": 1219620,
@@ -37,7 +39,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Saleh Bakri, Cherien Dabis, Adam Bakri, Maria Zreik",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "obY98vk76Hs"
     },
     {
       "tmdb_id": 1480860,
@@ -49,7 +52,8 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "T.J. Jagodowski, Matt Trudeau, Meir Steinberg, Michael Shannon",
-      "notes": "Throw big or go home."
+      "notes": "Throw big or go home.",
+      "youtube_trailer_id": "aqyQ-AYkkyU"
     },
     {
       "tmdb_id": 840464,
@@ -61,7 +65,8 @@
       "release_type": "wide",
       "genre": "Adventure / Thriller / Science Fiction",
       "cast": "Gerard Butler, Morena Baccarin, Roman Griffin Davis, Tommie Earl Jenkins",
-      "notes": "Hope is uncharted territory."
+      "notes": "Hope is uncharted territory.",
+      "youtube_trailer_id": "hiD3zk0ZRFg"
     },
     {
       "tmdb_id": 1418569,
@@ -73,7 +78,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Yehuda Beinin, Chaya Beinin, Tal Beinin, Joel Beinin",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "kt_xTj352tw"
     },
     {
       "tmdb_id": 975335,
@@ -85,7 +91,8 @@
       "release_type": "limited",
       "genre": "History / Adventure / Drama",
       "cast": "Gael García Bernal, Amado Arjay Babon, Ronnie Lazaro, Ângela Ramos",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "8h7rriQD1qc"
     },
     {
       "tmdb_id": 1212461,
@@ -97,7 +104,8 @@
       "release_type": "limited",
       "genre": "Fantasy / Adventure / Horror",
       "cast": "Albert Birney, Dorothy the Dog, Callie Hernandez, Paisley Isaacs",
-      "notes": "It's just a game..."
+      "notes": "It's just a game...",
+      "youtube_trailer_id": "sTzpC2tpO7I"
     },
     {
       "tmdb_id": 1315303,
@@ -109,19 +117,21 @@
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Johnny Sequoyah, Jessica Alexander, Troy Kotsur, Victoria Wyant",
-      "notes": "Something's wrong with Ben."
+      "notes": "Something's wrong with Ben.",
+      "youtube_trailer_id": "wo87F-va410"
     },
     {
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Lucie Laruelle, Babette Verbeek, Elsa Houben, Janaïna Halloy Fokan",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "br3boRnJ_qE"
     },
     {
       "tmdb_id": 1272837,
@@ -133,7 +143,8 @@
       "release_type": "wide",
       "genre": "Horror / Thriller / Science Fiction",
       "cast": "Ralph Fiennes, Jack O'Connell, Alfie Williams, Erin Kellyman",
-      "notes": "Fear is the new faith."
+      "notes": "Fear is the new faith.",
+      "youtube_trailer_id": "rl_DJZCyEH4"
     },
     {
       "tmdb_id": 1290432,
@@ -145,7 +156,8 @@
       "release_type": "limited",
       "genre": "Drama / Mystery / Crime",
       "cast": "Jodie Foster, Daniel Auteuil, Virginie Efira, Mathieu Amalric",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "2JabG5C6IU8"
     },
     {
       "tmdb_id": 1432547,
@@ -157,7 +169,8 @@
       "release_type": "limited",
       "genre": "Animation / Action / Mystery / Science Fiction",
       "cast": "Ai Mikami, Natsuki Hanae, Kana Hanazawa, Hiccorohee",
-      "notes": "Live for tomorrow. Die today."
+      "notes": "Live for tomorrow. Die today.",
+      "youtube_trailer_id": "0YpXN40vIxM"
     },
     {
       "tmdb_id": 1276521,
@@ -169,7 +182,8 @@
       "release_type": "wide",
       "genre": "Animation / Action / Adventure / Comedy / Family",
       "cast": "Owen Wilson, Dawson Littman, Tabitha St. Germain, Sebastian Billingsley-Rodriguez",
-      "notes": "He's a good boy… most of the time."
+      "notes": "He's a good boy… most of the time.",
+      "youtube_trailer_id": "uUDfO0Q4sog"
     },
     {
       "tmdb_id": 1263012,
@@ -181,7 +195,8 @@
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
       "cast": "Bill Skarsgård, Dacre Montgomery, Cary Elwes, Myha'la",
-      "notes": "His revolution was televised."
+      "notes": "His revolution was televised.",
+      "youtube_trailer_id": "aHAwgnJL78Y"
     },
     {
       "tmdb_id": 858024,
@@ -193,7 +208,8 @@
       "release_type": "wide",
       "genre": "Drama / Romance / History",
       "cast": "Jessie Buckley, Paul Mescal, Emily Watson, Joe Alwyn",
-      "notes": "Keep your heart open."
+      "notes": "Keep your heart open.",
+      "youtube_trailer_id": "xYcgQMxQwmk"
     },
     {
       "tmdb_id": 1323625,
@@ -205,7 +221,8 @@
       "release_type": "wide",
       "genre": "Horror / Mystery / Action",
       "cast": "Jermaine Fowler, Justin Long, RJ Cyler, Freddie Gibbs",
-      "notes": "Defang the police."
+      "notes": "Defang the police.",
+      "youtube_trailer_id": "8J_pMGZScB8"
     },
     {
       "tmdb_id": 1555571,
@@ -217,7 +234,8 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Michael Mosley, Rob Morgan, Mira Sorvino, Marshawn Lynch",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "J-hWOpvJBvo"
     },
     {
       "tmdb_id": 1221061,
@@ -229,7 +247,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Luise Heyer, Lena Urzendowsky, Claudia Geisler-Bading, Lea Drinda",
-      "notes": "The past doesn't fade. It echoes."
+      "notes": "The past doesn't fade. It echoes.",
+      "youtube_trailer_id": "O-jgGbvLgVo"
     },
     {
       "tmdb_id": null,
@@ -241,7 +260,8 @@
       "release_type": "wide",
       "genre": "Action / Drama / Thriller",
       "cast": "Bonko Khoza, Dineo Rasedile, Naturi Naughton, Nathan Castle",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1146458,
@@ -253,7 +273,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Carlos Manuel Gonzalez, Greisy Mena, Anyelo Lopez, David Olaves",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "QU511OMOK_s"
     },
     {
       "tmdb_id": 959646,
@@ -265,7 +286,8 @@
       "release_type": "limited",
       "genre": "Animation / Comedy / Music / Action",
       "cast": "Kaede Hondo, Asami Tano, Risa Taneda, Maki Kawase",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "G1nG-AKY7Yk"
     },
     {
       "tmdb_id": 1393151,
@@ -277,7 +299,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Pavel Talankin, Vladimir Putin, Roman Abalin, Lavrentiy Beria",
-      "notes": "The incredible story of an ordinary Russian teacher who exposed Putin's propaganda machine."
+      "notes": "The incredible story of an ordinary Russian teacher who exposed Putin's propaganda machine.",
+      "youtube_trailer_id": "9150MCMSrgc"
     },
     {
       "tmdb_id": 1450257,
@@ -289,7 +312,8 @@
       "release_type": "limited",
       "genre": "Music / Drama",
       "cast": "Jay Dee, Cristian E. Gutierrez, Daniel 'DoKnows' Lopez, Laura Lopez",
-      "notes": "There are no shortcuts to living your dreams."
+      "notes": "There are no shortcuts to living your dreams.",
+      "youtube_trailer_id": "MonfrfdKzOc"
     },
     {
       "tmdb_id": 1044878,
@@ -301,7 +325,8 @@
       "release_type": "limited",
       "genre": "Horror",
       "cast": "Betsy Sligh, Amna Vegha, Erin O'Meara, Winston Haynes",
-      "notes": "Hear it once, you won't forget."
+      "notes": "Hear it once, you won't forget.",
+      "youtube_trailer_id": "7_K2TV3QY2Q"
     },
     {
       "tmdb_id": 1243006,
@@ -313,7 +338,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Claire Foy, Brendan Gleeson, Angus Cooper, Sam Spruell",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "73V6kQfGyt0"
     },
     {
       "tmdb_id": 1370424,
@@ -325,7 +351,8 @@
       "release_type": "limited",
       "genre": "Horror / Thriller",
       "cast": "Gianni DeCenzo, Jan Luis Castellanos, Elizabeth Yu, Vanessa Rubio",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "XkjpCmcKp78"
     },
     {
       "tmdb_id": 1128377,
@@ -337,7 +364,8 @@
       "release_type": "limited",
       "genre": "Thriller / Crime",
       "cast": "Maika Monroe, Troy Kotsur, Allan Hawco, Helen Hunt",
-      "notes": "Desperate people do dangerous things."
+      "notes": "Desperate people do dangerous things.",
+      "youtube_trailer_id": "S56o2SOFsIc"
     },
     {
       "tmdb_id": 1236153,
@@ -349,7 +377,8 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Thriller / Crime",
       "cast": "Chris Pratt, Rebecca Ferguson, Kali Reis, Kylie Rogers",
-      "notes": "Prove your innocence to an AI judge or face execution."
+      "notes": "Prove your innocence to an AI judge or face execution.",
+      "youtube_trailer_id": "JUADqWkJiiE"
     },
     {
       "tmdb_id": 680493,
@@ -361,7 +390,8 @@
       "release_type": "wide",
       "genre": "Mystery / Drama / Horror",
       "cast": "Jeremy Irvine, Hannah Emily Anderson, Evie Templeton, Pearse Egan",
-      "notes": "Guilt is a place you can never leave."
+      "notes": "Guilt is a place you can never leave.",
+      "youtube_trailer_id": "z10cMFhKbW8"
     },
     {
       "tmdb_id": 1581486,
@@ -373,7 +403,8 @@
       "release_type": "limited",
       "genre": "Drama / Romance",
       "cast": "Anakaren Chablé, Anthony Preston, Tara Reid, Paul Johansson",
-      "notes": "A dream never meant for her"
+      "notes": "A dream never meant for her",
+      "youtube_trailer_id": "-PQ5iY898Nk"
     },
     {
       "tmdb_id": 1219542,
@@ -385,7 +416,8 @@
       "release_type": "limited",
       "genre": "Family / Crime / Adventure",
       "cast": "Julius Weckauf, Nevio Wendt, Levi Brandl, Momo Beier",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1465563,
@@ -397,7 +429,8 @@
       "release_type": "limited",
       "genre": "Comedy / Drama",
       "cast": "Ubeimar Rios, Rebeca Andrade, Guillermo Cardona, Alisson Correa",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "xRyVkKYG3BA"
     },
     {
       "tmdb_id": 1370123,
@@ -409,7 +442,8 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Carmen Machi, Paco León, Melani Olivares, Miren Ibarguren",
-      "notes": "This never happened, but it could've happened."
+      "notes": "This never happened, but it could've happened.",
+      "youtube_trailer_id": "lPUw2yMYQMc"
     },
     {
       "tmdb_id": 650524,
@@ -421,7 +455,8 @@
       "release_type": "limited",
       "genre": "Science Fiction / Action / Comedy",
       "cast": "Louis Koo, Raymond Lam Fung, Bai Baihe, Jessica Hsuan",
-      "notes": "To save tomorrow, they must survive yesterday."
+      "notes": "To save tomorrow, they must survive yesterday.",
+      "youtube_trailer_id": "O22WwXOhb5w"
     },
     {
       "tmdb_id": 1537690,
@@ -433,7 +468,8 @@
       "release_type": "limited",
       "genre": "Comedy / Crime",
       "cast": "Eddie Peng Yu-Yan, Allen, Zhou You, Yan Peilun",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "YJizr6Sgri4"
     },
     {
       "tmdb_id": 1116201,
@@ -445,7 +481,8 @@
       "release_type": "limited",
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Mark Fischbach, Caroline Kaplan, Troy Baker, Elsie Lovelock",
-      "notes": "This is not an expedition. It's an execution."
+      "notes": "This is not an expedition. It's an execution.",
+      "youtube_trailer_id": "7qRf_f_bbUk"
     },
     {
       "tmdb_id": 1128547,
@@ -457,7 +494,8 @@
       "release_type": "limited",
       "genre": "Thriller / Drama / Crime",
       "cast": "Sam Riley, Stacy Martin, Jack Farthing, Dylan Torrell",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "MifpmLyraBE"
     },
     {
       "tmdb_id": 1413097,
@@ -469,7 +507,8 @@
       "release_type": "wide",
       "genre": "Documentary",
       "cast": "Melania Trump, Donald Trump, Barron Trump, Hervé Pierre",
-      "notes": "Twenty days to history"
+      "notes": "Twenty days to history",
+      "youtube_trailer_id": "dxXJAqOU00g"
     },
     {
       "tmdb_id": 1298547,
@@ -481,7 +520,8 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Dan Beirne, Emily Lê, Andrea Werhun, Noah Lamanna",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "6NPGR1MW_4M"
     },
     {
       "tmdb_id": 1198994,
@@ -493,7 +533,8 @@
       "release_type": "limited",
       "genre": "Horror / Thriller / Comedy",
       "cast": "Rachel McAdams, Dylan O'Brien, Edyll Ismail, Dennis Haysbert",
-      "notes": "Meet Linda Liddle... She's from strategy and planning. She's the boss now."
+      "notes": "Meet Linda Liddle... She's from strategy and planning. She's the boss now.",
+      "youtube_trailer_id": "cOmnmFz_Uzs"
     },
     {
       "tmdb_id": 1290821,
@@ -505,7 +546,8 @@
       "release_type": "wide",
       "genre": "Action / Crime / Thriller",
       "cast": "Jason Statham, Bodhi Rae Breathnach, Naomi Ackie, Daniel Mays",
-      "notes": "Her safety. His mission."
+      "notes": "Her safety. His mission.",
+      "youtube_trailer_id": "auHiLFjaIc0"
     },
     {
       "tmdb_id": 1437198,
@@ -517,7 +559,8 @@
       "release_type": "limited",
       "genre": "Animation / Adventure / Family",
       "cast": "Cosima Henman, Steve Hudson, Bürger Lars Dietrich, Thomas Schmuckert",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "gka7s0StdnY"
     },
     {
       "tmdb_id": 1258509,
@@ -529,7 +572,8 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Saga Garðarsdóttir, Sverrir Gudnason, Ída Mekkín Hlynsdóttir, Þorgils Hlynsson",
-      "notes": ""
+      "notes": "",
+      "youtube_trailer_id": "jZ0fdmesr-w"
     },
     {
       "tmdb_id": 1422562,
@@ -541,7 +585,8 @@
       "release_type": "wide",
       "genre": "Music / Comedy / Thriller",
       "cast": "Charli xcx, Alexander Skarsgård, Rosanna Arquette, Hailey Gates",
-      "notes": "and it's a movie about brat and charli and a tour but none of it happened but maybe some of it did."
+      "notes": "and it's a movie about brat and charli and a tour but none of it happened but maybe some of it did.",
+      "youtube_trailer_id": "2oiLhpZp7sY"
     }
   ]
 }

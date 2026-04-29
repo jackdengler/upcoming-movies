@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-04-28",
+  "updated": "2026-04-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -14,18 +14,6 @@
       "genre": "Family / Comedy / Adventure / Fantasy / Animation",
       "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
       "notes": "The galaxy awaits."
-    },
-    {
-      "tmdb_id": 1423251,
-      "date": "2026-04-02",
-      "title": "Biker",
-      "director": "Abhilash Reddy",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Adventure / Drama",
-      "cast": "Sharwanand, Dr. Rajasekhar, Malavika Nair, Shashank",
-      "notes": "Go All The Way"
     },
     {
       "tmdb_id": 1341137,
@@ -52,18 +40,6 @@
       "notes": "It all counts."
     },
     {
-      "tmdb_id": 1542995,
-      "date": "2026-04-03",
-      "title": "Bonolota Express",
-      "director": "Tanim Noor",
-      "studio": "Swapna Scarecrow",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Comedy / Family",
-      "cast": "Mosharraf Karim, Chanchal Chowdhury, Sabila Nur, Sariful Razz",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1410189,
       "date": "2026-04-03",
       "title": "Kontinental '25",
@@ -85,30 +61,6 @@
       "release_type": "limited",
       "genre": "Drama / History",
       "cast": "Shang Wang, Zhang Yanrong, Chuwen Zhang, Caixia Zhang",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1451078,
-      "date": "2026-04-03",
-      "title": "Raakaasa",
-      "director": "Manasa Sharma",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Fantasy / Comedy",
-      "cast": "Sangeeth Shobhan, Nayan Sarika, Raadhya, Vennela Kishore",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1211237,
-      "date": "2026-04-03",
-      "title": "Rabb Da Radio 3",
-      "director": "Harry Bhatti",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Romance",
-      "cast": "Tarsem Jassar, Nimrat Khaira, Ronak Joshi, Nirmal Rishi",
       "notes": ""
     },
     {
@@ -146,18 +98,6 @@
       "genre": "Drama / Crime",
       "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin, Denis Lavant",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1336770,
-      "date": "2026-04-03",
-      "title": "Vaazha II: Biopic of a Billion Bros",
-      "director": "Savin Sa",
-      "studio": "N/A",
-      "budget_usd": 1079884,
-      "release_type": "limited",
-      "genre": "Comedy / Drama / Action",
-      "cast": "Hashir, Alan Bin Siraj, Ajin Joy, Vinayak V",
-      "notes": "Biopic of a Billion Bros"
     },
     {
       "tmdb_id": 1149614,
@@ -220,18 +160,6 @@
       "notes": "He's on the hook."
     },
     {
-      "tmdb_id": 1220522,
-      "date": "2026-04-10",
-      "title": "Dacoit: A Love Story",
-      "director": "Shaneil Deo",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Romance / Thriller",
-      "cast": "Adivi Sesh, Mrunal Thakur, Anurag Kashyap, Prakash Raj",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1408208,
       "date": "2026-04-10",
       "title": "Exit 8",
@@ -278,18 +206,6 @@
       "genre": "Horror / Mystery",
       "cast": "Markian Tarasiuk, Ryan Alexander McDonald, Miranda MacDougall, Christine Willes",
       "notes": "Not all answers want to be found."
-    },
-    {
-      "tmdb_id": 1209511,
-      "date": "2026-04-10",
-      "title": "LIK: Love Insurance Kompany",
-      "director": "Vignesh Shivan",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Romance / Science Fiction / Comedy",
-      "cast": "Pradeep Ranganathan, Krithi Shetty, S. J. Suryah, Yogi Babu",
-      "notes": ""
     },
     {
       "tmdb_id": 1320006,
@@ -340,30 +256,6 @@
       "notes": "She came for the pasta and got lost in the sauce."
     },
     {
-      "tmdb_id": 1640663,
-      "date": "2026-04-11",
-      "title": "BTS WORLD TOUR 'ARIRANG' in GOYANG: LIVE VIEWING",
-      "director": "Ha Jung-jae",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music",
-      "cast": "RM, Jin, Suga, j-hope",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1649999,
-      "date": "2026-04-11",
-      "title": "UFC 327: Procházka vs. Ulberg",
-      "director": "—",
-      "studio": "Iconic Events Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action",
-      "cast": "Carlos Ulberg, Jiří Procházka, Paulo Costa, Azamat Murzakanov",
-      "notes": "Bring on The Heat"
-    },
-    {
       "tmdb_id": 1582296,
       "date": "2026-04-12",
       "title": "Legends of the Lost Ark",
@@ -385,18 +277,6 @@
       "release_type": "limited",
       "genre": "Comedy / Drama / Thriller",
       "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1239134,
-      "date": "2026-04-16",
-      "title": "Bhooth Bangla",
-      "director": "Priyadarshan",
-      "studio": "—",
-      "budget_usd": 14000000,
-      "release_type": "limited",
-      "genre": "Horror / Comedy",
-      "cast": "Akshay Kumar, Wamiqa Gabbi, Paresh Rawal, Tabu",
       "notes": ""
     },
     {
@@ -662,18 +542,6 @@
       "genre": "Crime / Drama / Thriller",
       "cast": "David Jonsson, Tom Blyth, Alex Hassell, Neil Linpow",
       "notes": "A bold new vision of life inside."
-    },
-    {
-      "tmdb_id": 1640677,
-      "date": "2026-04-18",
-      "title": "BTS WORLD TOUR 'ARIRANG' in JAPAN: LIVE VIEWING",
-      "director": "Ha Jung-jae",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music",
-      "cast": "RM, Jin, Suga, j-hope",
-      "notes": ""
     },
     {
       "tmdb_id": 1303613,

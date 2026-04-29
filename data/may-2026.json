@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-04-28",
+  "updated": "2026-04-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -38,18 +38,6 @@
       "genre": "Drama / Western",
       "cast": "John Pyper-Ferguson, Christina Moore, Madison Lawlor, Lou Diamond Phillips",
       "notes": "Nothing stays buried forever."
-    },
-    {
-      "tmdb_id": 1556329,
-      "date": "2026-05-01",
-      "title": "Dhabkaaro",
-      "director": "Abhishek Shah",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Deven Bhojani, Aarjav Trivedi, Tejal Panchasara, Kumud Mishra",
-      "notes": "A journey to reflect, Reconnect and Rediscover."
     },
     {
       "tmdb_id": 1430077,
@@ -100,18 +88,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1363974,
-      "date": "2026-05-01",
-      "title": "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea",
-      "director": "Yasuhito Kikuchi",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Fantasy / Adventure / Comedy",
-      "cast": "Miho Okasaki, Mao Ichimichi, Tomoaki Maeno, Makoto Furukawa",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1314481,
       "date": "2026-05-01",
       "title": "The Devil Wears Prada 2",
@@ -133,18 +109,6 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Filippo Scotti, Sergio Romano, Pierpaolo Capovilla, Roberto Citran",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1642859,
-      "date": "2026-05-07",
-      "title": "Iron Maiden: Burning Ambition",
-      "director": "Malcolm Venville",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "Steve Harris, Bruce Dickinson, Nicko McBrain, Adrian Smith",
       "notes": ""
     },
     {
@@ -340,18 +304,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 910850,
-      "date": "2026-05-15",
-      "title": "Mobile Suit Gundam Hathaway: The Sorcery of Nymph Circe",
-      "director": "Shukou Murase",
-      "studio": "Bandai",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Science Fiction / War / Drama",
-      "cast": "Kensho Ono, Reina Ueda, Junichi Suwabe, Soma Saito",
-      "notes": ""
-    },
-    {
       "tmdb_id": 931285,
       "date": "2026-05-15",
       "title": "Mortal Kombat II",
@@ -386,18 +338,6 @@
       "genre": "Drama",
       "cast": "Paul Dano, Jude Law, Alicia Vikander, Tom Sturridge",
       "notes": "Power was the plan. Putin was the consequence."
-    },
-    {
-      "tmdb_id": 1661205,
-      "date": "2026-05-19",
-      "title": "That They May Be One",
-      "director": "Dan Johnson",
-      "studio": "Fathom Events",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Michael Girgenti, Milton Saul, Michelle Pezent, Eugene Brezany",
-      "notes": ""
     },
     {
       "tmdb_id": 1038727,

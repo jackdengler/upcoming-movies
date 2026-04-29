@@ -1,32 +1,8 @@
 {
   "month": "January 2026",
-  "updated": "2026-04-28",
+  "updated": "2026-04-29",
   "source": "Box Office Mojo",
   "releases": [
-    {
-      "tmdb_id": 1570472,
-      "date": "2026-01-02",
-      "title": "Kidz Bop Live: The Concert Movie",
-      "director": "Alex Kolb",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music / Family",
-      "cast": "Camilla Silva, Savannah Dahan, Peter Hegener, Ivan Newton",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1395140,
-      "date": "2026-01-02",
-      "title": "Lupin the IIIrd: The Movie - The Immortal Bloodline",
-      "director": "Takeshi Koike",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Action / Crime",
-      "cast": "Kanichi Kurita, Akio Otsuka, Daisuke Namikawa, Miyuki Sawashiro",
-      "notes": "You haven't seen the real Lupin III yet."
-    },
     {
       "tmdb_id": 1370814,
       "date": "2026-01-02",
@@ -220,18 +196,6 @@
       "notes": "Keep your heart open."
     },
     {
-      "tmdb_id": 1193128,
-      "date": "2026-01-16",
-      "title": "I Was a Stranger",
-      "director": "Brandt Andersen",
-      "studio": "Angel",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Thriller",
-      "cast": "Yasmine Al Massri, Yahya Mahayni, Omar Sy, Ziad Bakri",
-      "notes": "Based on 14 million true stories."
-    },
-    {
       "tmdb_id": 1323625,
       "date": "2026-01-16",
       "title": "Night Patrol",
@@ -314,30 +278,6 @@
       "genre": "Documentary",
       "cast": "Pavel Talankin, Vladimir Putin, Roman Abalin, Lavrentiy Beria",
       "notes": "The incredible story of an ordinary Russian teacher who exposed Putin's propaganda machine."
-    },
-    {
-      "tmdb_id": 1129188,
-      "date": "2026-01-21",
-      "title": "The Optimist: The Bravest Act Is Truth",
-      "director": "Finn Taylor",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Stephen Lang, Elsie Fisher, Robin Weigert, Luke David Blumm",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1596092,
-      "date": "2026-01-22",
-      "title": "Megadeth: Behind the Mask",
-      "director": "Casey Tebo",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music / Documentary",
-      "cast": "Dave Mustaine",
-      "notes": "The End Begins"
     },
     {
       "tmdb_id": 1450257,
@@ -424,18 +364,6 @@
       "notes": "Guilt is a place you can never leave."
     },
     {
-      "tmdb_id": 1235409,
-      "date": "2026-01-23",
-      "title": "Standout: The Ben Kjar Story",
-      "director": "Tanner Christensen",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Ben Kjar, LaCol Grant, Anthony Robles, Colton Fielding",
-      "notes": "With no chance at an ordinary life, he lived an extraordinary one."
-    },
-    {
       "tmdb_id": 1581486,
       "date": "2026-01-23",
       "title": "The Dreamer Cinderella",
@@ -487,7 +415,7 @@
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
+      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",
@@ -506,18 +434,6 @@
       "genre": "Comedy / Crime",
       "cast": "Eddie Peng Yu-Yan, Allen, Zhou You, Yan Peilun",
       "notes": ""
-    },
-    {
-      "tmdb_id": 1495490,
-      "date": "2026-01-30",
-      "title": "Infinite Icon: A Visual Memoir",
-      "director": "J.J. Duncan, Bruce Robertson",
-      "studio": "CJ 4DPlex",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "Paris Hilton, Sia, Rina Sawayama, Meghan Trainor",
-      "notes": "Music saved my life"
     },
     {
       "tmdb_id": 1116201,
@@ -554,18 +470,6 @@
       "genre": "Documentary",
       "cast": "Melania Trump, Donald Trump, Barron Trump, Hervé Pierre",
       "notes": "Twenty days to history"
-    },
-    {
-      "tmdb_id": 1446824,
-      "date": "2026-01-30",
-      "title": "Moses the Black",
-      "director": "Yelena Popovic",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama",
-      "cast": "Chukwudi Iwuji, Omar Epps, Wiz Khalifa, Skilla Baby",
-      "notes": "Live by the Sword, Die by the Sword"
     },
     {
       "tmdb_id": 1298547,

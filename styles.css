@@ -1312,6 +1312,20 @@ details[open] > .month__summary .month__chevron {
 
 .updates__nav-spacer { display: block; }
 
+.updates__footer {
+  margin: 28px 14px 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+.updates__footer a {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+
 /* Activity tab */
 
 .activity-row {

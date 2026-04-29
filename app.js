@@ -37,6 +37,7 @@ const LEVEL_LABEL = {
 
 const ACTIVE_KIND_KEY = "upcoming:active-kind";
 const ACTIVE_SCOPE_KEY = "upcoming:active-scope";
+const AMC_LOCAL_ONLY_KEY = "upcoming:amc-local-only";
 const LEGACY_CALENDAR_KIND_KEY = "upcoming:calendar-kinds";
 const EXPANDED_KEY = "upcoming:expanded";
 const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
@@ -78,6 +79,26 @@ const saveActiveScope = () => {
 };
 const matchesScope = (m) =>
   activeScope === "both" || (m.release_type || "wide") === activeScope;
+
+// "Only at my AMCs" toggle for the New Releases view: when on, hide releases
+// whose normalized title isn't in the AMC first-run title set scraped from
+// the user's preferred AMC theatres. AMC posts showtimes only ~1–2 weeks
+// ahead, so this is a soft view-mode rather than a guarantee — users
+// understand they're filtering to "what AMC has actually scheduled so far."
+let amcLocalOnly = (() => {
+  try { return localStorage.getItem(AMC_LOCAL_ONLY_KEY) === "1"; }
+  catch { return false; }
+})();
+const saveAmcLocalOnly = () => {
+  try { localStorage.setItem(AMC_LOCAL_ONLY_KEY, amcLocalOnly ? "1" : "0"); } catch {}
+};
+// Populated from repertoryState.data.amc_local_titles after load.
+const amcLocalTitles = new Set();
+const matchesAmcLocal = (m) => {
+  if (!amcLocalOnly) return true;
+  if (!amcLocalTitles.size) return false;
+  return amcLocalTitles.has(slugifyClient(m.title || ""));
+};
 
 // Free-text filter for the List tab (releases + rereleases). Not persisted —
 // each session starts clean to avoid leaving the list in a confusing,
@@ -731,7 +752,9 @@ function renderDateGroup([date, items]) {
 
 function renderMonth(bundle) {
   const key = monthKeyOf(bundle);
-  const filtered = bundle.releases.filter((m) => matchesScope(m) && matchesReleaseQuery(m));
+  const filtered = bundle.releases.filter(
+    (m) => matchesScope(m) && matchesAmcLocal(m) && matchesReleaseQuery(m)
+  );
   if (!filtered.length) return null;
 
   const defaultOpen = key === CURRENT_MONTH_KEY || key === NEXT_MONTH_KEY;
@@ -1353,6 +1376,7 @@ function itemsByDate(bundles) {
     for (const b of bundles) {
       for (const m of b.releases) {
         if (!matchesScope(m)) continue;
+        if (!matchesAmcLocal(m)) continue;
         if (!map.has(m.date)) map.set(m.date, []);
         map.get(m.date).push(m);
       }
@@ -1651,6 +1675,8 @@ function setRepertoryData(data) {
   repertoryState.theatersBySlug = new Map(
     (data?.theaters || []).map((t) => [t.slug, t])
   );
+  amcLocalTitles.clear();
+  for (const t of data?.amc_local_titles || []) amcLocalTitles.add(t);
   invalidateRepertoryCaches();
 }
 
@@ -2304,6 +2330,10 @@ function syncSegmentedChips() {
       chip.setAttribute("aria-selected", on ? "true" : "false");
     }
   }
+  const amcWrap = document.getElementById("amc-local-toggle-wrap");
+  const amcBtn = document.getElementById("amc-local-toggle");
+  if (amcWrap) amcWrap.hidden = activeKind !== "releases";
+  if (amcBtn) amcBtn.setAttribute("aria-pressed", amcLocalOnly ? "true" : "false");
 }
 
 document.getElementById("kind-segmented")?.addEventListener("click", (e) => {
@@ -2319,6 +2349,17 @@ document.getElementById("kind-segmented")?.addEventListener("click", (e) => {
   markAllTabsDirty();
   if (updatesOpen) renderActivityTab();
   else renderActiveTab();
+});
+
+document.getElementById("amc-local-toggle")?.addEventListener("click", () => {
+  amcLocalOnly = !amcLocalOnly;
+  saveAmcLocalOnly();
+  syncSegmentedChips();
+  // Same blast radius as the scope chips: List + Calendar use it,
+  // Interests/Updates ignore it.
+  tabDirty.list = true;
+  tabDirty.calendar = true;
+  if (!updatesOpen) renderActiveTab();
 });
 
 document.getElementById("scope-segmented")?.addEventListener("click", (e) => {

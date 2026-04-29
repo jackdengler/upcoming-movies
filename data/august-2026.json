@@ -1,20 +1,8 @@
 {
   "month": "August 2026",
-  "updated": "2026-04-28",
+  "updated": "2026-04-29",
   "source": "Box Office Mojo",
   "releases": [
-    {
-      "tmdb_id": null,
-      "date": "2026-08-07",
-      "title": "CatVideoFest 2026",
-      "director": "—",
-      "studio": "Oscilloscope",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Family",
-      "cast": "A Bunch of Cats",
-      "notes": ""
-    },
     {
       "tmdb_id": 1596318,
       "date": "2026-08-07",

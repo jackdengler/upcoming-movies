@@ -1,20 +1,8 @@
 {
   "month": "February 2026",
-  "updated": "2026-04-28",
+  "updated": "2026-04-29",
   "source": "Box Office Mojo",
   "releases": [
-    {
-      "tmdb_id": 1548749,
-      "date": "2026-02-05",
-      "title": "Still Hope",
-      "director": "Richie Johns",
-      "studio": "—",
-      "budget_usd": 1000000,
-      "release_type": "limited",
-      "genre": "Drama / Thriller",
-      "cast": "Luna Rivera, John D. Michaels, Alex Veadov, Michelle Haro",
-      "notes": ""
-    },
     {
       "tmdb_id": 1370123,
       "date": "2026-02-06",
@@ -31,7 +19,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Pedro Solís, Juan Jesús García Galocha",
+      "director": "Juan Jesús García Galocha, Pedro Solís",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "limited",
@@ -62,18 +50,6 @@
       "genre": "Horror / Fantasy / Romance",
       "cast": "Caleb Landry Jones, Zoë Bleu Sidel, Christoph Waltz, Matilda De Angelis",
       "notes": "He renounced his faith to become immortal. Passion, anger, vengeance, and hatred will be unleashed into the modern world."
-    },
-    {
-      "tmdb_id": 1291335,
-      "date": "2026-02-06",
-      "title": "Solo Mio",
-      "director": "Daniel Kinnane, Charles Kinnane",
-      "studio": "Angel",
-      "budget_usd": 4000000,
-      "release_type": "wide",
-      "genre": "Romance / Comedy",
-      "cast": "Kevin James, Nicole Grimaudo, Kim Coates, Jonathan Roumie",
-      "notes": "All roads lead to (being left in) Rome."
     },
     {
       "tmdb_id": 1422625,
@@ -292,18 +268,6 @@
       "notes": "One... last... plan."
     },
     {
-      "tmdb_id": 1275574,
-      "date": "2026-02-13",
-      "title": "O' Romeo",
-      "director": "Vishal Bhardwaj",
-      "studio": "—",
-      "budget_usd": 18000000,
-      "release_type": "limited",
-      "genre": "Romance / Action / Drama",
-      "cast": "Shahid Kapoor, Triptii Dimri, Avinash Tiwary, Nana Patekar",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1470130,
       "date": "2026-02-13",
       "title": "The Mortuary Assistant",
@@ -328,18 +292,6 @@
       "notes": "Come undone."
     },
     {
-      "tmdb_id": 1262299,
-      "date": "2026-02-15",
-      "title": "The Apocalypse of St. John",
-      "director": "Patricio Dondo, Simón Delacre",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / History",
-      "cast": "Ricardo Castro, Miguel Angel Marchessi, Héctor Hugo Larriera, Carlos Secilio",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1305781,
       "date": "2026-02-17",
       "title": "Blades of the Guardians",
@@ -350,18 +302,6 @@
       "genre": "Action / Drama / History",
       "cast": "Wu Jing, Nicholas Tse Ting-Fung, Yu Shi, Chen Lijun",
       "notes": "A grand martial arts feast is back!"
-    },
-    {
-      "tmdb_id": 1610536,
-      "date": "2026-02-18",
-      "title": "Chase Atlantic: Lost in Heaven",
-      "director": "Becky Garner",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music",
-      "cast": "Christian Anthony, Mitchel Cave, Clinton Cave",
-      "notes": ""
     },
     {
       "tmdb_id": null,
@@ -421,18 +361,6 @@
       "release_type": "limited",
       "genre": "Documentary / Music",
       "cast": "Billy Preston, Ringo Starr, Olivia Harrison, Eric Clapton",
-      "notes": ""
-    },
-    {
-      "tmdb_id": 1241693,
-      "date": "2026-02-20",
-      "title": "Do Deewane Seher Mein",
-      "director": "Ravi Udyawar",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Romance / Drama / Comedy",
-      "cast": "Siddhant Chaturvedi, Mrunal Thakur, Ila Arun, Joy Sengupta",
       "notes": ""
     },
     {
@@ -544,18 +472,6 @@
       "notes": "Betrayal cuts deep."
     },
     {
-      "tmdb_id": 1612063,
-      "date": "2026-02-26",
-      "title": "Twenty One Pilots: More Than We Ever Imagined",
-      "director": "Mark C. Eshleman",
-      "studio": "Trafalgar Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Music / Documentary",
-      "cast": "Tyler Joseph, Josh Dun, Tyler \"Shap\" Shapard",
-      "notes": "We have never captured a show quite like this."
-    },
-    {
       "tmdb_id": 1270041,
       "date": "2026-02-27",
       "title": "Bring the Law",
@@ -602,30 +518,6 @@
       "genre": "Drama / Comedy / Romance",
       "cast": "Amy Landecker, Bradley Whitford, Nico Hiraga, Gaby Hoffmann",
       "notes": "Love never gets old."
-    },
-    {
-      "tmdb_id": 1412811,
-      "date": "2026-02-27",
-      "title": "Hypnosismic -Division Rap Battle- Interactive Movie",
-      "director": "Takanori Tsujimoto",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Music",
-      "cast": "Kôhei Amasaki, Shintarô Asanuma, Shôta Hayama, Show Hayami",
-      "notes": ""
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-02-27",
-      "title": "Hypnosismic -Division Rap Battle- Rule the Stage -Battle of Pride 2023",
-      "director": "—",
-      "studio": "GKIDS",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
     },
     {
       "tmdb_id": 972232,
@@ -698,18 +590,6 @@
       "genre": "Comedy",
       "cast": "Armen Weitzman, Nick Corirossi, Jamar Malachi Neighbors, Sarah Ramos",
       "notes": "Life has its highs and its merlots."
-    },
-    {
-      "tmdb_id": 1223178,
-      "date": "2026-02-27",
-      "title": "Uma Musume: Pretty Derby - Beginning of a New Era",
-      "director": "Ken Yamamoto",
-      "studio": "Gaga",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Drama / Comedy / Fantasy",
-      "cast": "Yuri Fujimoto, Sumire Uesaka, Yui Ogura, Haruna Fukushima",
-      "notes": ""
     },
     {
       "tmdb_id": 1245084,

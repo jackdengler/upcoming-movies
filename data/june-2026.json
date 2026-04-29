@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-04-28",
+  "updated": "2026-04-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -88,18 +88,6 @@
       "notes": ""
     },
     {
-      "tmdb_id": 1536053,
-      "date": "2026-06-09",
-      "title": "Sacred Heart: His Reign Has No End",
-      "director": "Sabrina Gunnell, Steven Gunnell",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / History / Mystery",
-      "cast": "Grégory Dutoit, Julie Budria, Sabrina Gunnell, Marcel Charlon",
-      "notes": ""
-    },
-    {
       "tmdb_id": 1275779,
       "date": "2026-06-12",
       "title": "Disclosure Day",
@@ -134,18 +122,6 @@
       "genre": "Action / Comedy / Music",
       "cast": "RuPaul, Jujubee, Ginger Minj, Brooke Lynn Hytes",
       "notes": "The greatest trainwreck in herstory."
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-06-14",
-      "title": "UFC Freedom 250",
-      "director": "—",
-      "studio": "Iconic Events Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": ""
     },
     {
       "tmdb_id": null,

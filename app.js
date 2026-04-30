@@ -2296,9 +2296,9 @@ function formatCommitDate(iso) {
   if (Number.isNaN(then.getTime())) return "";
   return new Intl.DateTimeFormat("en-US", {
     timeZone: "America/Los_Angeles",
-    month: "short",
+    month: "numeric",
     day: "numeric",
-    year: "numeric",
+    year: "2-digit",
     hour: "numeric",
     minute: "2-digit",
     timeZoneName: "short",

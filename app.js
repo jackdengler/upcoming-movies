@@ -519,6 +519,72 @@ function renderTrailer({ key, title, year, ytId }) {
   return wrap;
 }
 
+// Split-rendering variant for new-release rows: returns the play-icon button
+// (placed inline in the title row) and a separate frame wrapper (mounted at
+// the bottom of the card) so the iframe stays below the metadata. Returns
+// null entries when no trailer data is available.
+function renderInlineTrailer({ key, title, year, ytId }) {
+  const open = openTrailers.has(key);
+  const ariaLabel = ytId
+    ? (open ? "Hide trailer" : "Play trailer")
+    : "Search trailer on YouTube";
+
+  if (!ytId) {
+    const button = el("a", {
+        class: "row__trailer-btn row__trailer-btn--mini",
+        href: youtubeSearchUrl(title, year),
+        target: "_blank",
+        rel: "noopener noreferrer",
+        "aria-label": ariaLabel,
+        title: ariaLabel,
+        dataset: { trailerSearch: "1" },
+      },
+    );
+    return { button, frameWrap: null };
+  }
+
+  const button = el("button", {
+      type: "button",
+      class: `row__trailer-btn row__trailer-btn--mini${open ? " is-on" : ""}`,
+      "aria-pressed": open ? "true" : "false",
+      "aria-expanded": open ? "true" : "false",
+      "aria-label": ariaLabel,
+      title: ariaLabel,
+      dataset: { trailerToggle: "1", key, yt: ytId },
+    },
+  );
+
+  const frameWrap = el("div", {
+    class: "row__trailer",
+    dataset: { trailerWrap: key },
+  });
+
+  if (open) {
+    const frame = el("div", { class: "row__trailer-frame" },
+      el("iframe", {
+        src: trailerEmbedUrl(ytId),
+        allow: "autoplay; encrypted-media; picture-in-picture; web-share",
+        allowfullscreen: "",
+        loading: "lazy",
+        referrerpolicy: "strict-origin-when-cross-origin",
+        title: `${title || "Trailer"} trailer`,
+      }),
+    );
+    frameWrap.appendChild(frame);
+  }
+
+  return { button, frameWrap };
+}
+
+function renderInlineTrailerSection(m) {
+  return renderInlineTrailer({
+    key: movieKey(m),
+    title: m.title,
+    year: (m.date || "").slice(0, 4) || null,
+    ytId: m.youtube_trailer_id || null,
+  });
+}
+
 function renderTrailerSection(m) {
   return renderTrailer({
     key: movieKey(m),
@@ -634,26 +700,33 @@ function renderRow(m, opts = {}) {
   if (m.genre) metaBits.push(m.genre);
   const meta = metaBits.join(" · ");
 
+  const { button: trailerBtn, frameWrap: trailerFrame } = renderInlineTrailerSection(m);
+
+  const hasBudget = m.budget_usd != null && m.budget_usd !== 0;
+
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
     },
     el("div", { class: "row__title-line" },
       el("h3", { class: "row__title" }, titleLink),
-      el("div", { class: "row__chips" },
-        el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
+      el("div", { class: "row__title-right" },
+        trailerBtn,
+        el("div", { class: "row__chips" },
+          el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
+        ),
       ),
     ),
     meta ? el("div", { class: "row__meta", text: meta }) : null,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
       el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
-      el("dt", { text: "Budget" }), el("dd", { text: fmtBudget(m.budget_usd, m.budget_note) }),
+      hasBudget ? el("dt", { text: "Budget" }) : null,
+      hasBudget ? el("dd", { text: fmtBudget(m.budget_usd, m.budget_note) }) : null,
       m.cast && m.cast !== "—" ? el("dt", { text: "Cast" }) : null,
       m.cast && m.cast !== "—" ? el("dd", { text: m.cast }) : null,
     ),
-    m.notes ? el("p", { class: "row__notes", text: m.notes }) : null,
-    renderTrailerSection(m),
+    trailerFrame,
     renderRatingBar(m),
   );
 }
@@ -2057,7 +2130,11 @@ function handleTrailerClick(e) {
   const key = btn.dataset.key;
   const ytId = btn.dataset.yt;
   if (!key || !ytId) return;
-  const wrap = btn.closest("[data-trailer-wrap]");
+  // New-release rows render the button in the title line and the frame
+  // wrapper at the bottom of the card, so the button is no longer inside
+  // the wrap. Fall back to scoping the lookup to the enclosing card.
+  const wrap = btn.closest("[data-trailer-wrap]")
+    || btn.closest(".row, .rep-title")?.querySelector("[data-trailer-wrap]");
   if (!wrap) return;
   const existing = wrap.querySelector(".row__trailer-frame");
   if (existing) {

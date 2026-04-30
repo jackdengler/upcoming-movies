@@ -739,6 +739,15 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .row__chips > .chip,
 .row__chips > .chip--theater { margin-top: 0; }
 
+/* Trailing cluster on the title line: play button + chip column.
+   Top chip aligns with the title; the play button sits to its left. */
+.row__title-right {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
 /* Interest-level chip — mirrors the active rating button so the row's
    selected category is legible without scrolling to the rating bar. */
 .chip--level {
@@ -1008,6 +1017,24 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   background: currentColor;
   border-radius: 1px;
 }
+
+/* Icon-only play button — sits inline on the title row of a release card. */
+.row__trailer-btn--mini {
+  width: 28px;
+  height: 28px;
+  min-height: 0;
+  padding: 0;
+  gap: 0;
+  border-radius: var(--radius-md);
+  color: var(--color-text-dim);
+  flex-shrink: 0;
+}
+.row__trailer-btn--mini::before {
+  /* Slight optical offset — the triangle's centroid sits left of its
+     bounding box, so nudging right makes it look centered. */
+  margin-left: 2px;
+}
+.row__trailer-btn--mini.is-on::before { margin-left: 0; }
 .row__trailer-frame {
   margin-top: var(--space-3);
   position: relative;

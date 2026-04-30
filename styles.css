@@ -124,13 +124,6 @@
   --safe-bottom: 0px;
   --safe-left:   env(safe-area-inset-left);
   --safe-right:  env(safe-area-inset-right);
-}
-
-@media all and (display-mode: standalone) {
-  :root {
-    --safe-top:    env(safe-area-inset-top);
-    --safe-bottom: env(safe-area-inset-bottom);
-  }
 
   --tabbar-h: 64px;
 
@@ -141,6 +134,13 @@
   --level-potential: var(--color-pending);         /* muted ochre */
   --level-not:       var(--color-text-faint);      /* faint warm gray */
   --level-watched:   var(--color-text-dim);        /* dim — past tense */
+}
+
+@media all and (display-mode: standalone) {
+  :root {
+    --safe-top:    env(safe-area-inset-top);
+    --safe-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -616,10 +616,10 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .row {
   position: relative;
   display: block;
-  padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) + 3px);
+  padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) + 2px);
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
-  border-left: 3px solid transparent;
+  border-left: 4px solid transparent;
   transition: background-color var(--duration-fast) var(--ease-out),
               border-left-color var(--duration-normal) var(--ease-out),
               transform var(--duration-fast) var(--ease-out);
@@ -707,6 +707,30 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 }
 .chip--limited   { background: var(--color-warning-soft); color: var(--color-warning); }
 .chip--streaming { background: var(--color-pending-soft); color: var(--color-pending); }
+
+/* Stack the level chip + scope chip vertically when both are present so the
+   title line never gets squeezed. */
+.row__chips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.row__chips > .chip,
+.row__chips > .chip--theater { margin-top: 0; }
+
+/* Interest-level chip — mirrors the active rating button so the row's
+   selected category is legible without scrolling to the rating bar. */
+.chip--level {
+  border: 1px solid transparent;
+}
+.chip--level-must      { background: var(--level-must);      color: var(--color-accent-text);  border-color: var(--level-must); }
+.chip--level-likely    { background: var(--level-likely);    color: var(--color-warning-text); border-color: var(--level-likely); }
+.chip--level-booked    { background: var(--level-booked);    color: var(--color-success-text); border-color: var(--level-booked); }
+.chip--level-potential { background: var(--color-pending-soft); color: var(--color-pending);   border-color: var(--color-pending-border); }
+.chip--level-not       { background: transparent;            color: var(--color-text-faint);   border-color: var(--color-border-strong); }
+.chip--level-watched   { background: var(--color-accent-soft); color: var(--color-text-dim);   border-color: var(--color-accent-border); }
 
 .row__meta {
   margin-top: var(--space-1);

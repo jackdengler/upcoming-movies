@@ -143,6 +143,19 @@
   }
 }
 
+/* When this app is embedded in another host (the central-optimus launcher
+   iframe is the canonical case), that host already handles the device's
+   notch and home-indicator insets. iOS WebKit nevertheless exposes
+   env(safe-area-inset-*) to the inner iframe, which double-pads the
+   header and tab bar. The `embedded` class is set in app.js the moment
+   we detect window.self !== window.top; the override below uses higher
+   specificity than :root (and any standalone-mode rule above) so it
+   wins regardless of whether env() resolves to a non-zero value. */
+:root.embedded {
+  --safe-top:    0px;
+  --safe-bottom: 0px;
+}
+
 * { box-sizing: border-box; }
 html { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
 

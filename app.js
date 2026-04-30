@@ -1816,7 +1816,13 @@ function renderTheaterFilterBar() {
       ),
     );
   }
-  for (const chip of groupChips) bar.appendChild(chip);
+  // Whitespace text nodes between chips let `text-align: justify` distribute
+  // the slack across the row instead of pooling it on the right.
+  const appendChip = (chip) => {
+    if (bar.lastChild) bar.appendChild(document.createTextNode(" "));
+    bar.appendChild(chip);
+  };
+  for (const chip of groupChips) appendChip(chip);
 
   for (const t of theaters) {
     if (grouped.has(t.slug)) continue;
@@ -1828,7 +1834,7 @@ function renderTheaterFilterBar() {
       },
       t.name.replace(/^AMC /, "").replace(/^The /, ""),
     );
-    bar.appendChild(btn);
+    appendChip(btn);
   }
 
   bar.addEventListener("click", (e) => {

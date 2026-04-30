@@ -304,7 +304,7 @@ body {
 
 /* Segmented control — Linen §16.4. */
 .app-header__segmented {
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
@@ -312,16 +312,25 @@ body {
   background: var(--color-accent-soft);
   border-radius: var(--radius-md);
 }
-.app-header__segmented--scope { margin-top: var(--space-2); grid-template-columns: 1fr 1fr 1fr; }
+.app-header__segmented--scope { margin-top: 0; grid-template-columns: 1fr 1fr 1fr; flex: 1; min-width: 0; }
 .app-header__segmented--scope[hidden] { display: none; }
+
+/* Scope segmented + "My AMCs" pill share one row to save vertical space. */
+.app-header__filter-row {
+  margin-top: var(--space-2);
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-2);
+}
+.app-header__filter-row:not(:has(> :not([hidden]))) { display: none; }
 
 .segmented__btn {
   appearance: none;
   -webkit-appearance: none;
   background: transparent;
   border: 0;
-  padding: var(--space-2) var(--space-3);
-  min-height: 36px;
+  padding: var(--space-1) var(--space-2);
+  min-height: 32px;
   font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 600;
@@ -341,23 +350,23 @@ body {
   box-shadow: var(--shadow-sm), 0 0 0 0.5px rgba(60, 40, 20, 0.06);
 }
 
-/* "Only at my AMCs" — inline filter row. Icon + label + Linen toggle
-   (§16.3): track in border-strong, knob in surface, accent gradient on. */
+/* "My AMCs" — compact pill that sits inline with the scope segmented row.
+   Icon + short label + Linen toggle (§16.3): track in border-strong,
+   knob in surface, accent gradient on. */
 .app-header__amc-toggle {
-  margin-top: var(--space-2);
   display: flex;
+  flex: 0 0 auto;
 }
 .app-header__amc-toggle[hidden] { display: none; }
 
 .amc-toggle {
   appearance: none;
   -webkit-appearance: none;
-  flex: 1;
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-2) var(--space-3);
-  min-height: 44px;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  min-height: 32px;
   font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 600;
@@ -368,6 +377,7 @@ body {
   border-radius: var(--radius-md);
   cursor: pointer;
   text-align: left;
+  white-space: nowrap;
   transition: background-color var(--duration-fast) var(--ease-out),
               border-color var(--duration-fast) var(--ease-out),
               transform var(--duration-fast) var(--ease-out);
@@ -379,22 +389,22 @@ body {
 
 .amc-toggle__icon {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: inline-grid;
   place-items: center;
   color: var(--color-text-dim);
 }
 .amc-toggle[aria-pressed="true"] .amc-toggle__icon { color: var(--color-accent); }
-.amc-toggle__icon svg { width: var(--icon-md); height: var(--icon-md); display: block; }
+.amc-toggle__icon svg { width: var(--icon-sm, 18px); height: var(--icon-sm, 18px); display: block; }
 
-.amc-toggle__label { flex: 1; }
+.amc-toggle__label { flex: 0 0 auto; }
 
 .amc-toggle__switch {
   position: relative;
   flex-shrink: 0;
-  width: 38px;
-  height: 22px;
+  width: 30px;
+  height: 18px;
   border-radius: var(--radius-pill);
   background: rgba(60, 40, 20, 0.16);
   box-shadow: 0 1px 2px rgba(60, 40, 20, 0.08) inset;
@@ -403,8 +413,8 @@ body {
 .amc-toggle__switch::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   background: var(--color-surface);
   border-radius: 50%;
   top: 2px;
@@ -418,7 +428,7 @@ body {
 .amc-toggle[aria-pressed="true"] .amc-toggle__switch {
   background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
 }
-.amc-toggle[aria-pressed="true"] .amc-toggle__switch::after { transform: translateX(16px); }
+.amc-toggle[aria-pressed="true"] .amc-toggle__switch::after { transform: translateX(12px); }
 
 .app-header__sync {
   margin-top: var(--space-2);

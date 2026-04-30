@@ -1019,23 +1019,43 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border-radius: 1px;
 }
 
-/* Icon-only play button — sits inline on the title row of a release card. */
+/* Icon-only play button — sits inline on the title row of a release card.
+   Circular pill that reads as a tappable affordance: soft tan tint at rest,
+   filled accent gradient when the trailer is open. SVG glyphs replace the
+   shared border-triangle for crisper rendering at this size. */
 .row__trailer-btn--mini {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   min-height: 0;
   padding: 0;
   gap: 0;
-  border-radius: var(--radius-md);
-  color: var(--color-text-dim);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent-border);
+  color: var(--color-accent);
   flex-shrink: 0;
+  display: inline-grid;
+  place-items: center;
 }
-.row__trailer-btn--mini::before {
-  /* Slight optical offset — the triangle's centroid sits left of its
-     bounding box, so nudging right makes it look centered. */
-  margin-left: 2px;
+.row__trailer-btn--mini::before { content: none; }
+.row__trailer-btn--mini.is-on {
+  background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  border-color: var(--color-accent);
+  color: var(--color-accent-text);
+  box-shadow: var(--shadow-sm);
 }
-.row__trailer-btn--mini.is-on::before { margin-left: 0; }
+.row__trailer-glyph {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  display: block;
+  pointer-events: none;
+}
+/* Optical centering — triangle centroid sits left of its bounding box. */
+.row__trailer-btn--mini .row__trailer-glyph--play { margin-left: 1px; }
+.row__trailer-btn--mini .row__trailer-glyph--stop { display: none; }
+.row__trailer-btn--mini.is-on .row__trailer-glyph--play { display: none; }
+.row__trailer-btn--mini.is-on .row__trailer-glyph--stop { display: block; margin-left: 0; }
 .row__trailer-frame {
   margin-top: var(--space-3);
   position: relative;
@@ -1315,6 +1335,10 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border: 0;
   padding: 0;
   margin: 0;
+  /* min-width: 0 lets the 1fr track shrink past the cell's intrinsic
+     min-content width — without it, the aspect-ratio square + count badge
+     force the column wider than 1/7th of the grid on narrow viewports. */
+  min-width: 0;
   aspect-ratio: 1 / 1.05;
   display: flex;
   flex-direction: column;

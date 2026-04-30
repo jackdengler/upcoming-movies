@@ -619,7 +619,6 @@ function renderRatingBar(m) {
 function renderRow(m, opts = {}) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
-  const mark = Interests.getMark(key);
 
   const titleLink = el("a", {
       class: "row__titlelink",
@@ -635,13 +634,6 @@ function renderRow(m, opts = {}) {
   if (m.genre) metaBits.push(m.genre);
   const meta = metaBits.join(" · ");
 
-  const bookedBadge = level === "booked" && mark?.booked_date
-    ? el("div", { class: "row__booked", text: `🎟  Booked for ${fmtDateShort(mark.booked_date)}` })
-    : null;
-  const watchedBadge = level === "watched" && mark?.watched_date
-    ? el("div", { class: "row__watched", text: `✓  Watched ${fmtDateShort(mark.watched_date)}` })
-    : null;
-
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
@@ -653,8 +645,6 @@ function renderRow(m, opts = {}) {
       ),
     ),
     meta ? el("div", { class: "row__meta", text: meta }) : null,
-    bookedBadge,
-    watchedBadge,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
       el("dt", { text: "Studio" }), el("dd", { text: m.studio }),

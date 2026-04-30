@@ -642,10 +642,6 @@ function renderRow(m, opts = {}) {
     ? el("div", { class: "row__watched", text: `✓  Watched ${fmtDateShort(mark.watched_date)}` })
     : null;
 
-  const levelChip = level
-    ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] })
-    : null;
-
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
@@ -653,7 +649,6 @@ function renderRow(m, opts = {}) {
     el("div", { class: "row__title-line" },
       el("h3", { class: "row__title" }, titleLink),
       el("div", { class: "row__chips" },
-        levelChip,
         el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
       ),
     ),
@@ -715,10 +710,6 @@ function renderScreening(s, opts = {}) {
     );
   }
 
-  const levelChip = level
-    ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] })
-    : null;
-
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
@@ -726,7 +717,6 @@ function renderScreening(s, opts = {}) {
     el("div", { class: "row__title-line" },
       titleNode,
       el("div", { class: "row__chips" },
-        levelChip,
         el("span", { class: "chip--theater", text: theaterName }),
       ),
     ),

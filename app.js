@@ -2314,23 +2314,18 @@ async function fetchLatestCodeCommit() {
   return result;
 }
 
-function relativeDateText(iso) {
+function formatCommitDate(iso) {
   if (!iso) return "";
   const then = new Date(iso);
   if (Number.isNaN(then.getTime())) return "";
-  const ms = Date.now() - then.getTime();
-  if (ms < 60 * 1000) return "just now";
-  const minutes = Math.round(ms / 60000);
-  if (minutes < 60) return `${minutes} min ago`;
-  const hours = Math.round(ms / 3600000);
-  if (hours < 24) return hours === 1 ? "1 hour ago" : `${hours} hours ago`;
-  const days = Math.round(ms / 86400000);
-  if (days === 1) return "yesterday";
-  if (days < 7) return `${days} days ago`;
   return new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
     month: "short",
     day: "numeric",
-    year: then.getFullYear() === new Date().getFullYear() ? undefined : "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZoneName: "short",
   }).format(then);
 }
 
@@ -2348,11 +2343,11 @@ function paintCodeVersion(el, info, { prefix }) {
     a.href = info.url;
     a.target = "_blank";
     a.rel = "noopener";
-    a.textContent = relativeDateText(info.date);
+    a.textContent = formatCommitDate(info.date);
     if (info.message) a.title = info.message;
     el.append(a);
   } else {
-    el.append(relativeDateText(info.date));
+    el.append(formatCommitDate(info.date));
   }
 }
 

@@ -685,7 +685,6 @@ function renderRatingBar(m) {
 function renderRow(m, opts = {}) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
-  const mark = Interests.getMark(key);
 
   const titleLink = el("a", {
       class: "row__titlelink",
@@ -701,17 +700,6 @@ function renderRow(m, opts = {}) {
   if (m.genre) metaBits.push(m.genre);
   const meta = metaBits.join(" · ");
 
-  const bookedBadge = level === "booked" && mark?.booked_date
-    ? el("div", { class: "row__booked", text: `🎟  Booked for ${fmtDateShort(mark.booked_date)}` })
-    : null;
-  const watchedBadge = level === "watched" && mark?.watched_date
-    ? el("div", { class: "row__watched", text: `✓  Watched ${fmtDateShort(mark.watched_date)}` })
-    : null;
-
-  const levelChip = level
-    ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] })
-    : null;
-
   const { button: trailerBtn, frameWrap: trailerFrame } = renderInlineTrailerSection(m);
 
   const hasBudget = m.budget_usd != null && m.budget_usd !== 0;
@@ -726,13 +714,10 @@ function renderRow(m, opts = {}) {
         trailerBtn,
         el("div", { class: "row__chips" },
           el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
-          levelChip,
         ),
       ),
     ),
     meta ? el("div", { class: "row__meta", text: meta }) : null,
-    bookedBadge,
-    watchedBadge,
     el("dl", { class: "row__sub" },
       el("dt", { text: "Director" }), el("dd", { text: m.director }),
       el("dt", { text: "Studio" }), el("dd", { text: m.studio }),
@@ -788,10 +773,6 @@ function renderScreening(s, opts = {}) {
     );
   }
 
-  const levelChip = level
-    ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] })
-    : null;
-
   return el("div", {
       class: `row${level ? ` row--${level}` : ""}`,
       dataset: { key },
@@ -799,7 +780,6 @@ function renderScreening(s, opts = {}) {
     el("div", { class: "row__title-line" },
       titleNode,
       el("div", { class: "row__chips" },
-        levelChip,
         el("span", { class: "chip--theater", text: theaterName }),
       ),
     ),

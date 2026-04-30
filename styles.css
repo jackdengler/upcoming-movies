@@ -524,16 +524,17 @@ body {
 .search-bar__clear[hidden] { display: none; }
 .search-bar__clear:active { background: var(--color-accent-soft); color: var(--color-accent); }
 
-/* Theater filter bar — chip strip. */
+/* Theater filter bar — chip strip, justified across the row. */
 .theater-filter-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-1);
+  text-align: justify;
+  text-align-last: left;
+  line-height: calc(28px + var(--space-1));
   padding: 0 0 var(--space-2);
   margin-bottom: var(--space-1);
   border-bottom: 1px solid var(--color-border);
 }
 .theater-filter-bar[hidden] { display: none; }
+.theater-filter-bar .theater-chip { display: inline-block; vertical-align: middle; }
 
 /* =============================================================
    Month groupings — list group labels (DM Sans, h2).

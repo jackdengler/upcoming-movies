@@ -819,6 +819,48 @@ function renderInterestsTab(bundles) {
   renderReleasesInterestsTab(bundles);
 }
 
+// SF-Symbols-style line icons for the Interests tab category cards.
+// Monochrome, secondary text color — color cue is the card's left edge stripe.
+const INTEREST_ICONS = {
+  must:
+    '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.7l6.1-.9z"/></svg>',
+  likely:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  booked:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/>' +
+    '<path d="M9 6v12" stroke-dasharray="2.5 2.5"/></svg>',
+  potential:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M6 3h12M6 21h12"/>' +
+    '<path d="M7 3v3a5 5 0 0 0 5 5 5 5 0 0 1 5 5v3"/>' +
+    '<path d="M17 3v3a5 5 0 0 1-5 5 5 5 0 0 0-5 5v3"/></svg>',
+  not:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg>',
+  watched:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
+  interested:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.7l6.1-.9z"/></svg>',
+  past:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 8v4l3 2"/></svg>',
+};
+
+const interestIconNode = (level) => {
+  const svg = INTEREST_ICONS[level];
+  if (!svg) return null;
+  const span = document.createElement("span");
+  span.className = "interest-group__icon";
+  span.setAttribute("aria-hidden", "true");
+  span.innerHTML = svg;
+  return span;
+};
+
 function renderReleasesInterestsTab(bundles) {
   const list = document.getElementById("interest-list");
   list.innerHTML = "";
@@ -910,9 +952,10 @@ function renderReleasesInterestsTab(bundles) {
         dataset: { level: lv },
       },
       el("summary", { class: "month__summary" },
-        el("span", { class: "month__chevron", "aria-hidden": "true" }),
+        interestIconNode(lv),
         el("span", { class: "month__name", text: titles[lv] }),
         el("span", { class: "month__count", text: `${items.length}` }),
+        el("span", { class: "month__chevron", "aria-hidden": "true" }),
       ),
       el("div", { class: "month__body" },
         el("div", { class: "section" },
@@ -1105,9 +1148,10 @@ function renderRereleasesInterestsTab() {
         dataset: { level: cat },
       },
       el("summary", { class: "month__summary" },
-        el("span", { class: "month__chevron", "aria-hidden": "true" }),
+        interestIconNode(cat),
         el("span", { class: "month__name", text: REP_CATEGORY_LABEL[cat] }),
         el("span", { class: "month__count", text: `${items.length}` }),
+        el("span", { class: "month__chevron", "aria-hidden": "true" }),
       ),
       el("div", { class: "month__body" },
         el("div", { class: "section" },

@@ -57,7 +57,7 @@ test.describe("embedded-mode spacing", () => {
     expect(isEmbedded).toBe(false);
   });
 
-  test("--safe-top and --safe-bottom are forced to 0 when embedded", async ({
+  test("--safe-top collapses to a small buffer (--space-2) when embedded; --safe-bottom is zeroed", async ({
     page,
   }) => {
     await loadEmbedded(page);
@@ -77,12 +77,12 @@ test.describe("embedded-mode spacing", () => {
         bottom: cs?.getPropertyValue("--safe-bottom").trim() ?? "",
       };
     });
-    // Accept any zero variant (0, 0px, calc(0px), etc).
-    expect(tokens.top).toMatch(/^(0|0px|calc\(0(px)?\))$/);
-    expect(tokens.bottom).toMatch(/^(0|0px|calc\(0(px)?\))$/);
+    // 8px buffer above; 0 below (host owns home-indicator space).
+    expect(tokens.top).toBe("8px");
+    expect(tokens.bottom).toMatch(/^(0|0px)$/);
   });
 
-  test("header sits flush at the top of the embedded viewport", async ({
+  test("header keeps a small buffer above the title when embedded", async ({
     page,
   }) => {
     await loadEmbedded(page);
@@ -90,17 +90,17 @@ test.describe("embedded-mode spacing", () => {
     await expect(frame.locator("#view-title")).toBeVisible({
       timeout: 15_000,
     });
-    // The "Upcoming" h1 should sit within `--space-3` (12px) of the
-    // iframe's top — anything more is the safe-area double-padding.
+    // The header sits at the iframe's top edge.
     const top = await frame
       .locator(".app-header")
       .evaluate((el) => el.getBoundingClientRect().top);
     expect(top).toBeLessThanOrEqual(1);
-
+    // ...but its top padding is the small embedded buffer, not 0 and not
+    // the device safe-area inset.
     const headerPad = await frame
       .locator(".app-header")
       .evaluate((el) => getComputedStyle(el).paddingTop);
-    expect(headerPad).toBe("0px");
+    expect(headerPad).toBe("8px");
   });
 
   test("tab bar sits flush at the bottom of the embedded viewport", async ({
@@ -176,9 +176,9 @@ test.describe("embedded-mode spacing", () => {
       };
     });
     expect(result).not.toBeNull();
-    expect(result.safeTop).toMatch(/^(0|0px)$/);
+    expect(result.safeTop).toBe("8px");
     expect(result.safeBottom).toMatch(/^(0|0px)$/);
-    expect(result.headerPadTop).toBe("0px");
+    expect(result.headerPadTop).toBe("8px");
     expect(result.tabBarPadBottom).toBe("4px");
   });
 });

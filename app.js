@@ -2467,6 +2467,8 @@ syncSegmentedChips();
 
 const searchInput = document.getElementById("search-input");
 const searchClearBtn = document.getElementById("search-clear");
+const searchBarEl = document.getElementById("search-bar");
+const searchToggleBtn = document.getElementById("open-search");
 
 let searchTimer = null;
 function applySearch(value) {
@@ -2480,6 +2482,34 @@ function applySearch(value) {
   if (activeTab === "list" && !updatesOpen) renderListTab();
 }
 
+// Header search icon toggles the inline search bar. Hidden by default so
+// the chrome reads as 4 controls (search/bell/settings + segmented) rather
+// than 5; revealing the bar is a deliberate gesture.
+function setSearchBarOpen(open) {
+  if (!searchBarEl || !searchInput) return;
+  searchBarEl.hidden = !open;
+  if (searchToggleBtn) {
+    searchToggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    searchToggleBtn.classList.toggle("is-active", !!open);
+  }
+  if (open) {
+    // Defer focus to the next frame so iOS Safari attaches the keyboard
+    // after the row paints — focusing during the same task occasionally
+    // drops the IME on the floor.
+    requestAnimationFrame(() => searchInput.focus());
+  } else {
+    if (searchInput.value) {
+      searchInput.value = "";
+      clearTimeout(searchTimer);
+      applySearch("");
+    }
+  }
+}
+
+searchToggleBtn?.addEventListener("click", () => {
+  setSearchBarOpen(searchBarEl?.hidden !== false);
+});
+
 searchInput?.addEventListener("input", (e) => {
   const value = e.target.value;
   if (searchClearBtn) searchClearBtn.hidden = !value;
@@ -2489,6 +2519,12 @@ searchInput?.addEventListener("input", (e) => {
 searchInput?.addEventListener("search", (e) => {
   clearTimeout(searchTimer);
   applySearch(e.target.value);
+});
+searchInput?.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    e.preventDefault();
+    setSearchBarOpen(false);
+  }
 });
 searchClearBtn?.addEventListener("click", () => {
   if (!searchInput) return;

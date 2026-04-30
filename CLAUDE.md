@@ -26,9 +26,15 @@ change.** It is the source of truth for typography, color, spacing, radii,
 shadows, motion, components, and composition decisions. Read it before
 touching `index.html` or `styles.css`, every time.
 
+**Project override — typography:** the design system's PT Serif rule is
+explicitly rejected for this project. **Use DM Sans for everything**, all
+sizes, all weights, all eyebrows and italic accents included. There is no
+`--font-display` token; only `--font-body`. Do not reintroduce PT Serif or
+any other serif typeface.
+
 The short version:
 - Light mode only, forever. Linen background `#F5EFE6`, tan accent `#B8895A`.
-- PT Serif for display + H1 only; DM Sans for everything else.
+- DM Sans for everything. No serif fonts, ever.
 - Sharp corners (4–8px); `--radius-xl` (16px) is reserved for sheets.
 - Soft, warm-brown shadows — never pure black.
 - Use design tokens only — no raw hex, px sizes, or font names outside

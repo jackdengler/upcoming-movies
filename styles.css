@@ -49,7 +49,6 @@
   --color-focus-ring:       rgba(184,137,90,0.55);
 
   /* Type */
-  --font-display: 'PT Serif', ui-serif, Georgia, serif;
   --font-body:    'DM Sans', -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
 
   --text-display: 32px;
@@ -423,7 +422,7 @@ body {
 
 .app-header__sync {
   margin-top: var(--space-2);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-small);
@@ -597,7 +596,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 }
 
 .section__date {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-small);
@@ -757,7 +756,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   color: var(--color-text-dim);
 }
 .row__sub dt {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   color: var(--color-text-dim);
@@ -777,7 +776,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin-top: var(--space-3);
   padding-top: var(--space-3);
   border-top: 1px solid var(--color-border);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-small);
@@ -1188,7 +1187,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 
 .row__series {
   margin-top: var(--space-1);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-small);
@@ -1213,7 +1212,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin: 0;
   flex: 1;
   text-align: center;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-h1);
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -1359,7 +1358,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 
 .calendar__empty {
   text-align: center;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   color: var(--color-text-dim);
@@ -1490,7 +1489,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 }
 .sheet__title {
   margin: var(--space-3) 0 var(--space-2);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.005em;
@@ -1675,7 +1674,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   place-items: center;
   min-height: 50dvh;
   padding: var(--space-5);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-body);
@@ -1713,7 +1712,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin: var(--space-5) var(--space-3) var(--space-4);
   padding-top: var(--space-3);
   border-top: 1px solid var(--color-border);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-small);

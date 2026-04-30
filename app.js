@@ -55,6 +55,7 @@ const LEVEL_LABEL = {
 const ACTIVE_KIND_KEY = "upcoming:active-kind";
 const ACTIVE_SCOPE_KEY = "upcoming:active-scope";
 const AMC_LOCAL_ONLY_KEY = "upcoming:amc-local-only";
+const HIDE_SKIPPED_KEY = "upcoming:hide-skipped";
 const LEGACY_CALENDAR_KIND_KEY = "upcoming:calendar-kinds";
 const EXPANDED_KEY = "upcoming:expanded";
 const INTEREST_EXPANDED_KEY = "upcoming:interest-expanded";
@@ -116,6 +117,19 @@ const matchesAmcLocal = (m) => {
   if (!amcLocalTitles.size) return false;
   return amcLocalTitles.has(slugifyClient(m.title || ""));
 };
+
+// "Hide skipped" toggle: when on, drop releases the user has marked
+// as "not" (Skip) from the List + Calendar views. Same scoping as the
+// AMC toggle — Interests/Updates always show every marked item.
+let hideSkipped = (() => {
+  try { return localStorage.getItem(HIDE_SKIPPED_KEY) === "1"; }
+  catch { return false; }
+})();
+const saveHideSkipped = () => {
+  try { localStorage.setItem(HIDE_SKIPPED_KEY, hideSkipped ? "1" : "0"); } catch {}
+};
+const matchesNotSkipped = (m) =>
+  !hideSkipped || Interests.getLevel(movieKey(m)) !== "not";
 
 // Free-text filter for the List tab (releases + rereleases). Not persisted —
 // each session starts clean to avoid leaving the list in a confusing,
@@ -806,7 +820,7 @@ function renderDateGroup([date, items]) {
 function renderMonth(bundle) {
   const key = monthKeyOf(bundle);
   const filtered = bundle.releases.filter(
-    (m) => matchesScope(m) && matchesAmcLocal(m) && matchesReleaseQuery(m)
+    (m) => matchesScope(m) && matchesAmcLocal(m) && matchesNotSkipped(m) && matchesReleaseQuery(m)
   );
   if (!filtered.length) return null;
 
@@ -1474,6 +1488,7 @@ function itemsByDate(bundles) {
       for (const m of b.releases) {
         if (!matchesScope(m)) continue;
         if (!matchesAmcLocal(m)) continue;
+        if (!matchesNotSkipped(m)) continue;
         if (!map.has(m.date)) map.set(m.date, []);
         map.get(m.date).push(m);
       }
@@ -2446,6 +2461,10 @@ function syncSegmentedChips() {
   const amcBtn = document.getElementById("amc-local-toggle");
   if (amcWrap) amcWrap.hidden = activeKind !== "releases";
   if (amcBtn) amcBtn.setAttribute("aria-pressed", amcLocalOnly ? "true" : "false");
+  const skipWrap = document.getElementById("hide-skipped-toggle-wrap");
+  const skipBtn = document.getElementById("hide-skipped-toggle");
+  if (skipWrap) skipWrap.hidden = activeKind !== "releases";
+  if (skipBtn) skipBtn.setAttribute("aria-pressed", hideSkipped ? "true" : "false");
 }
 
 document.getElementById("kind-segmented")?.addEventListener("click", (e) => {
@@ -2469,6 +2488,15 @@ document.getElementById("amc-local-toggle")?.addEventListener("click", () => {
   syncSegmentedChips();
   // Same blast radius as the scope chips: List + Calendar use it,
   // Interests/Updates ignore it.
+  tabDirty.list = true;
+  tabDirty.calendar = true;
+  if (!updatesOpen) renderActiveTab();
+});
+
+document.getElementById("hide-skipped-toggle")?.addEventListener("click", () => {
+  hideSkipped = !hideSkipped;
+  saveHideSkipped();
+  syncSegmentedChips();
   tabDirty.list = true;
   tabDirty.calendar = true;
   if (!updatesOpen) renderActiveTab();

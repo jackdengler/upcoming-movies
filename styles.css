@@ -524,8 +524,7 @@ body {
 .theater-filter-bar[hidden] { display: none; }
 
 /* =============================================================
-   Month groupings — editorial section headers.
-   The month name uses PT Serif italic — a serif accent moment.
+   Month groupings — list group labels (DM Sans, h2).
    ============================================================= */
 
 .month { margin-bottom: var(--space-4); }
@@ -536,7 +535,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  padding: var(--space-3) var(--space-1);
+  padding: var(--space-2) var(--space-1);
   border-bottom: 1px solid var(--color-border-strong);
   user-select: none;
   transition: opacity var(--duration-fast) var(--ease-out),
@@ -558,13 +557,13 @@ body {
 details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 
 .month__name {
-  font-family: var(--font-display);
-  font-size: var(--text-h1);
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-family: var(--font-body);
+  font-size: var(--text-h2);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   color: var(--color-text);
   flex: 1;
-  line-height: 1.15;
+  line-height: 1.25;
 }
 
 .month__count {

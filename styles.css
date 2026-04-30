@@ -318,7 +318,7 @@ body {
 .app-header__segmented--scope { margin-top: 0; grid-template-columns: 1fr 1fr 1fr; flex: 1 1 220px; min-width: 220px; }
 .app-header__segmented--scope[hidden] { display: none; }
 
-/* Scope segmented + "My AMCs" pill share one row to save vertical space.
+/* Scope segmented + filter pills share one row to save vertical space.
    Wrap when the toggles can't fit alongside the scope segmented — at narrow
    widths the nowrap pills would otherwise overflow and visually overlap. */
 .app-header__filter-row {
@@ -356,7 +356,7 @@ body {
   box-shadow: var(--shadow-sm), 0 0 0 0.5px rgba(60, 40, 20, 0.06);
 }
 
-/* "My AMCs" — compact pill that sits inline with the scope segmented row.
+/* Filter pill — compact pill that sits inline with the scope segmented row.
    Icon + short label + Linen toggle (§16.3): track in border-strong,
    knob in surface, accent gradient on. */
 .app-header__amc-toggle {

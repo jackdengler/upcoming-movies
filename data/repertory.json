@@ -41,11 +41,6 @@
       "status": "ok"
     },
     {
-      "id": "amc-preferred",
-      "count": 0,
-      "status": "failed: AMC_API_KEY not configured (set it as a GitHub Actions secret)"
-    },
-    {
       "id": "fathom",
       "count": 29,
       "status": "ok"
@@ -2637,6 +2632,5 @@
       "series": "Krzysztof Kieślowski: An American Cinematheque Retrospective",
       "url": "https://www.americancinematheque.com/now-showing/dekalog-five-and-six-6-28-26/"
     }
-  ],
-  "amc_local_titles": []
+  ]
 }

@@ -237,6 +237,9 @@ body {
   font-size: var(--text-small);
   line-height: 1.2;
   color: var(--color-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .app-header__updated[hidden] { display: none; }
 .app-header__updated a {

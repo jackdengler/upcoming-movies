@@ -529,9 +529,9 @@ body {
 .theater-filter-bar {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
-  padding: 0 0 var(--space-3);
-  margin-bottom: var(--space-2);
+  gap: var(--space-1);
+  padding: 0 0 var(--space-2);
+  margin-bottom: var(--space-1);
   border-bottom: 1px solid var(--color-border);
 }
 .theater-filter-bar[hidden] { display: none; }
@@ -1042,8 +1042,8 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-size: var(--text-small);
   font-weight: 600;
   letter-spacing: -0.005em;
-  padding: var(--space-2) var(--space-3);
-  min-height: 36px;
+  padding: var(--space-1) var(--space-2);
+  min-height: 28px;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: background-color var(--duration-fast) var(--ease-out),

@@ -150,9 +150,11 @@
    header and tab bar. The `embedded` class is set in app.js the moment
    we detect window.self !== window.top; the override below uses higher
    specificity than :root (and any standalone-mode rule above) so it
-   wins regardless of whether env() resolves to a non-zero value. */
+   wins regardless of whether env() resolves to a non-zero value. We
+   keep a single --space-2 (8px) of breathing room above the header so
+   the title doesn't crash into the host's chrome border. */
 :root.embedded {
-  --safe-top:    0px;
+  --safe-top:    var(--space-2);
   --safe-bottom: 0px;
 }
 
@@ -463,6 +465,8 @@ body {
   box-shadow: 0 1px 2px rgba(60,40,20,0.06) inset,
               0 0 0 3px var(--color-focus-ring);
 }
+/* Hidden until the user taps the header search icon. */
+.search-bar[hidden] { display: none; }
 .search-bar__icon {
   width: var(--icon-sm);
   height: var(--icon-sm);

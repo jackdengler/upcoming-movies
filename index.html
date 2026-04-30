@@ -34,6 +34,12 @@
           <p class="app-header__updated" id="header-updated" hidden></p>
         </div>
         <div class="app-header__right">
+          <button class="app-header__icon" id="open-search" type="button" aria-label="Search" aria-expanded="false" aria-controls="search-bar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="M21 21l-4.3-4.3"/>
+            </svg>
+          </button>
           <button class="app-header__icon app-header__bell" id="open-updates" type="button" aria-label="Updates">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
@@ -75,7 +81,7 @@
 
     <main class="app-main">
       <section id="tab-list" class="tab-panel" aria-label="List">
-        <div class="search-bar">
+        <div class="search-bar" id="search-bar" hidden>
           <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="11" cy="11" r="7"/>
             <path d="M21 21l-4.3-4.3"/>

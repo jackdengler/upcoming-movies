@@ -2276,17 +2276,15 @@ function relativeDateText(iso) {
   }).format(then);
 }
 
-async function renderCodeVersionFooter() {
-  const el = document.getElementById("code-updated");
+function paintCodeVersion(el, info, { prefix }) {
   if (!el) return;
-  const info = await fetchLatestCodeCommit();
   if (!info?.date) {
     el.hidden = true;
     return;
   }
   el.hidden = false;
   el.textContent = "";
-  el.append("App last updated ");
+  if (prefix) el.append(prefix);
   if (info.url) {
     const a = document.createElement("a");
     a.href = info.url;
@@ -2299,6 +2297,18 @@ async function renderCodeVersionFooter() {
     el.append(relativeDateText(info.date));
   }
 }
+
+async function renderCodeVersion() {
+  const info = await fetchLatestCodeCommit();
+  paintCodeVersion(document.getElementById("code-updated"), info, {
+    prefix: "App last updated ",
+  });
+  paintCodeVersion(document.getElementById("header-updated"), info, {
+    prefix: "Updated ",
+  });
+}
+
+const renderCodeVersionFooter = renderCodeVersion;
 
 function closeUpdates({ silent = false } = {}) {
   updatesOpen = false;
@@ -2679,6 +2689,7 @@ Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
     Activity.ingest({ bundles, screenings: repertory?.screenings || [] });
     updateActivityBadge();
     renderActiveTab();
+    renderCodeVersion();
   })
   .catch((e) => {
     const empty = document.getElementById("empty-year");

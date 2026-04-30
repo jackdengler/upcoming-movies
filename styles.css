@@ -315,13 +315,16 @@ body {
   background: var(--color-accent-soft);
   border-radius: var(--radius-md);
 }
-.app-header__segmented--scope { margin-top: 0; grid-template-columns: 1fr 1fr 1fr; flex: 1; min-width: 0; }
+.app-header__segmented--scope { margin-top: 0; grid-template-columns: 1fr 1fr 1fr; flex: 1 1 220px; min-width: 220px; }
 .app-header__segmented--scope[hidden] { display: none; }
 
-/* Scope segmented + "My AMCs" pill share one row to save vertical space. */
+/* Scope segmented + "My AMCs" pill share one row to save vertical space.
+   Wrap when the toggles can't fit alongside the scope segmented — at narrow
+   widths the nowrap pills would otherwise overflow and visually overlap. */
 .app-header__filter-row {
   margin-top: var(--space-2);
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   gap: var(--space-2);
 }

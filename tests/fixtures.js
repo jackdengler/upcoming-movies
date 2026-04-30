@@ -10,9 +10,20 @@ export const test = base.extend({
   page: async ({ page }, use) => {
     await page.addInitScript(() => {
       try {
+        // Stub `navigator.serviceWorker` with a no-op rather than `undefined`
+        // — `if ("serviceWorker" in navigator)` would still pass for the
+        // latter and then throw when calling `.register`.
+        const stub = {
+          register: () => Promise.reject(new Error("disabled in tests")),
+          ready: new Promise(() => {}),
+          addEventListener: () => {},
+          removeEventListener: () => {},
+          getRegistration: () => Promise.resolve(undefined),
+          getRegistrations: () => Promise.resolve([]),
+        };
         Object.defineProperty(navigator, "serviceWorker", {
           configurable: true,
-          get: () => undefined,
+          get: () => stub,
         });
       } catch {}
     });

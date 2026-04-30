@@ -24,4 +24,25 @@ test.describe("no horizontal overflow at phone width", () => {
       expect(measure.docScroll, JSON.stringify(measure)).toBeLessThanOrEqual(measure.docClient);
     });
   }
+
+  test("filter-row items do not visually overlap", async ({ page }) => {
+    await page.goto("/");
+    await page.waitForLoadState("networkidle");
+    const overlaps = await page.evaluate(() => {
+      const row = document.querySelector(".app-header__filter-row");
+      const kids = [...(row?.children ?? [])].filter((c) => !c.hidden);
+      const rects = kids.map((c) => ({ id: c.id || c.className, ...c.getBoundingClientRect().toJSON() }));
+      const found = [];
+      for (let i = 0; i < rects.length; i++) {
+        for (let j = i + 1; j < rects.length; j++) {
+          const a = rects[i], b = rects[j];
+          const sameRow = !(a.bottom <= b.top || b.bottom <= a.top);
+          const xOverlap = !(a.right <= b.left || b.right <= a.left);
+          if (sameRow && xOverlap) found.push([a.id, b.id]);
+        }
+      }
+      return found;
+    });
+    expect(overlaps, JSON.stringify(overlaps)).toEqual([]);
+  });
 });

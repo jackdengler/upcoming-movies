@@ -1,6 +1,23 @@
 import * as Interests from "./js/interests.js";
 import * as Activity from "./js/activity.js";
 
+// When loaded inside an iframe (e.g. the central-optimus launcher), the
+// host already absorbs the device's notch/home-indicator insets. iOS
+// WebKit still exposes env(safe-area-inset-*) to the iframe, so without
+// this flag the header and tab bar reserve that space a SECOND time —
+// producing visible bands of dead space above "Upcoming" and below the
+// tab bar. Tagging :root lets the stylesheet zero --safe-top /
+// --safe-bottom only when embedded, leaving standalone PWA mode alone.
+try {
+  if (window.self !== window.top) {
+    document.documentElement.classList.add("embedded");
+  }
+} catch {
+  // Cross-origin access to window.top throws in some hosts — that itself
+  // is a reliable signal we're inside a foreign iframe.
+  document.documentElement.classList.add("embedded");
+}
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", async () => {
     try {

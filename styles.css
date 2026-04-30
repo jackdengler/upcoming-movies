@@ -116,12 +116,12 @@
   --tabbar-bg:     rgba(255, 252, 247, 0.92);
   --tabbar-blur:   saturate(140%) blur(24px);
 
-  /* Top/bottom insets only matter when we own the full screen (standalone
-     PWA). In Safari or an embedded launcher webview, the host already
-     reserves space for the status bar / home indicator above and below us,
-     so layering our own inset on top doubles the gap. */
-  --safe-top:    0px;
-  --safe-bottom: 0px;
+  /* viewport-fit=cover makes env() insets meaningful in every host: they
+     return 0 when the host already reserves space (Safari toolbar, embedded
+     launcher webviews) and the device inset only when the page actually
+     extends into the status bar / home indicator zone. */
+  --safe-top:    env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
   --safe-left:   env(safe-area-inset-left);
   --safe-right:  env(safe-area-inset-right);
 

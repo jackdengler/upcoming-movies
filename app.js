@@ -537,6 +537,19 @@ function renderTrailer({ key, title, year, ytId }) {
 // (placed inline in the title row) and a separate frame wrapper (mounted at
 // the bottom of the card) so the iframe stays below the metadata. Returns
 // null entries when no trailer data is available.
+// SVG glyphs sit inside the mini play/stop button. Both are always rendered;
+// CSS swaps which one is visible based on `.is-on`. Crisper than the old
+// border-triangle hack at small sizes and inherits `currentColor` so the
+// icon flips with the button's text color.
+const MINI_TRAILER_ICONS = `
+  <svg class="row__trailer-glyph row__trailer-glyph--play" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.25 4.94a1 1 0 0 1 1.5-.87l11 6.93a1 1 0 0 1 0 1.69l-11 6.93a1 1 0 0 1-1.5-.87V4.94z"/>
+  </svg>
+  <svg class="row__trailer-glyph row__trailer-glyph--stop" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="6" y="6" width="12" height="12" rx="1.5"/>
+  </svg>
+`;
+
 function renderInlineTrailer({ key, title, year, ytId }) {
   const open = openTrailers.has(key);
   const ariaLabel = ytId
@@ -554,6 +567,7 @@ function renderInlineTrailer({ key, title, year, ytId }) {
         dataset: { trailerSearch: "1" },
       },
     );
+    button.innerHTML = MINI_TRAILER_ICONS;
     return { button, frameWrap: null };
   }
 
@@ -567,6 +581,7 @@ function renderInlineTrailer({ key, title, year, ytId }) {
       dataset: { trailerToggle: "1", key, yt: ytId },
     },
   );
+  button.innerHTML = MINI_TRAILER_ICONS;
 
   const frameWrap = el("div", {
     class: "row__trailer",

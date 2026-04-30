@@ -27,17 +27,16 @@ test.describe("layout", () => {
     expect(bg).toMatch(/rgba?\(\s*245,\s*239,\s*230/);
   });
 
-  test("section headers use the PT Serif display font", async ({ page }) => {
+  test("section headers use DM Sans (no serif)", async ({ page }) => {
     await page.goto("/");
     await expect(page.locator("#list .section").first()).toBeVisible({
       timeout: 15_000,
     });
-    // Month section headers are the canonical display-font surface on the
-    // List tab.
     const heading = page.locator("#list .section h2, #list .section .month").first();
-    if ((await heading.count()) === 0) return; // app variant: no h2 in section
+    if ((await heading.count()) === 0) return;
     const family = await heading.evaluate((el) => getComputedStyle(el).fontFamily);
-    expect(family).toMatch(/PT Serif/i);
+    expect(family).toMatch(/DM Sans/i);
+    expect(family).not.toMatch(/PT Serif/i);
   });
 
   test("body text uses the DM Sans default", async ({ page }) => {

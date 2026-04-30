@@ -11,6 +11,11 @@ const state = {
   marks: {},
   sha: null,
   loaded: false,
+  // True only after we've definitively read remote state this session
+  // (200 OK with parsed body, or 404 confirming the file doesn't exist).
+  // Commits are blocked until this flips true so a fresh-install with an
+  // empty local cache can't overwrite a populated remote.
+  remoteLoaded: false,
   pendingTimer: null,
   listeners: new Set(),
 };
@@ -94,7 +99,12 @@ export async function load() {
         writeCache();
         emit();
       }
+      state.remoteLoaded = true;
+    } else if (r.status === 404) {
+      // File doesn't exist yet; commit will create it.
+      state.remoteLoaded = true;
     }
+    // Auth/server errors: leave remoteLoaded false so commit() bails out.
   } catch {}
 }
 
@@ -111,6 +121,15 @@ async function fetchSha() {
 async function commit() {
   const pat = getPat();
   if (!pat) return;
+
+  // Refuse to write until we've successfully read the remote this session.
+  // Otherwise a fresh PWA install (empty localStorage) + new PAT would PUT
+  // an empty marks object over the populated remote file.
+  if (!state.remoteLoaded) {
+    setSync("error");
+    console.warn("Skipping interests commit: remote not yet loaded.");
+    return;
+  }
 
   if (!state.sha) state.sha = await fetchSha();
 
@@ -227,10 +246,13 @@ export function setPat(token) {
   if (!token) {
     localStorage.removeItem(PAT_KEY);
     state.sha = null;
+    state.remoteLoaded = false;
     return;
   }
   localStorage.setItem(PAT_KEY, token);
   state.sha = null;
+  // Fresh token → re-verify remote before allowing commits.
+  state.remoteLoaded = false;
 }
 
 export function hasPat() {

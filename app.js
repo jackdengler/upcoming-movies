@@ -2527,11 +2527,15 @@ function requestPat() {
     dlg.showModal();
 
     const onCancel = () => { dlg.close(); cleanup(); resolve(false); };
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
       e.preventDefault();
       const v = input.value.trim();
       if (!v) return;
       Interests.setPat(v);
+      // Pull remote state with the new token before we let the caller
+      // mutate marks. Without this, a fresh-install + new-PAT scenario
+      // could commit an empty marks object over a populated remote.
+      try { await Interests.load(); } catch {}
       dlg.close();
       cleanup();
       resolve(true);

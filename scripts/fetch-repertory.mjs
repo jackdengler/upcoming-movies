@@ -520,10 +520,88 @@ function jsonLdEvents(html, theaterSlug, fallbackUrl) {
 //   102 = Los Feliz Theatre
 // We chunk the request into 30-day windows since the endpoint appears to
 // return everything in range without pagination metadata.
+const AC_VENUE_TO_THEATER = { 54: "aero", 55: "egyptian", 102: "los-feliz-theatre" };
+
+// Fallback keyword routing for events whose taxonomy IDs are missing — most
+// commonly co-presentations (Beyond Fest, HBO advance screenings) where the
+// AC editors tag the partner taxonomy but forget the venue. Order matters:
+// most specific phrases first, then looser single-word matches. Keys are
+// matched against venue-metadata text only (excerpt / address / venue name
+// fields), never the film title — film titles can legitimately contain
+// venue keywords (e.g. a movie titled "Hollywood").
+const AC_VENUE_KEYWORDS = [
+  ["aero", ["aero theatre", "1328 montana", "montana ave", "santa monica"]],
+  ["egyptian", ["egyptian theatre", "6712 hollywood", "hollywood blvd"]],
+  ["los-feliz-theatre", ["los feliz 3", "los feliz theatre", "1822 vermont", "vermont ave", "los feliz"]],
+  ["aero", ["aero"]],
+  ["egyptian", ["egyptian"]],
+];
+
+function acVenueFromText(text) {
+  const lower = String(text || "").toLowerCase();
+  if (!lower) return null;
+  for (const [slug, kws] of AC_VENUE_KEYWORDS) {
+    for (const kw of kws) if (lower.includes(kw)) return slug;
+  }
+  return null;
+}
+
+function detectACTheater(ev) {
+  if (Array.isArray(ev.event_location)) {
+    for (const loc of ev.event_location) {
+      if (AC_VENUE_TO_THEATER[loc]) return AC_VENUE_TO_THEATER[loc];
+    }
+  }
+  // Algolia + WP Search commonly mirrors taxonomy term *names* on the hit,
+  // either flat (event_location_names) or nested under a taxonomies object.
+  // Walk anything string-shaped and try the keyword matcher.
+  const namedFields = [
+    ev.event_location_names,
+    ev.event_venue,
+    ev.event_venue_name,
+    ev.venue,
+    ev.venue?.name,
+    ev.venue?.venue,
+  ];
+  for (const f of namedFields) {
+    if (typeof f === "string") {
+      const t = acVenueFromText(f);
+      if (t) return t;
+    } else if (Array.isArray(f)) {
+      for (const item of f) {
+        const t = acVenueFromText(typeof item === "string" ? item : item?.name);
+        if (t) return t;
+      }
+    }
+  }
+  if (ev.taxonomies && typeof ev.taxonomies === "object") {
+    for (const v of Object.values(ev.taxonomies)) {
+      if (!Array.isArray(v)) continue;
+      for (const item of v) {
+        const t = acVenueFromText(typeof item === "string" ? item : item?.name);
+        if (t) return t;
+      }
+    }
+  }
+  // Last-ditch: search the rendered card excerpt + event address. Excerpts
+  // typically lead with "Aero Theatre | …" or "Los Feliz 3 | …", but not
+  // every event card carries the venue line, hence the broader signals
+  // above.
+  const meta = [
+    String(ev.event_card_excerpt || "").replace(/<[^>]+>/g, " "),
+    String(ev.event_address || ""),
+  ].join(" ");
+  return acVenueFromText(meta);
+}
+
+const _acDebug = { unrouted: 0, sample: null };
+
 async function scrapeAmericanCinematheque() {
-  const AC_VENUE_TO_THEATER = { 54: "aero", 55: "egyptian", 102: "los-feliz-theatre" };
   const base = "https://www.americancinematheque.com/wp-json/wp/v2/algolia_get_events";
   const env = `production_${TODAY_LA.slice(0, 4)}`;
+
+  _acDebug.unrouted = 0;
+  _acDebug.sample = null;
 
   const out = [];
   const seen = new Set();
@@ -549,21 +627,21 @@ async function scrapeAmericanCinematheque() {
       const time = parse12h(ev.event_start_time || "");
       if (!time) continue;
 
-      let theater = null;
-      if (Array.isArray(ev.event_location)) {
-        for (const loc of ev.event_location) {
-          if (AC_VENUE_TO_THEATER[loc]) { theater = AC_VENUE_TO_THEATER[loc]; break; }
-        }
-      }
+      const theater = detectACTheater(ev);
       if (!theater) {
-        const vname = String(ev.event_card_excerpt || "")
-          .replace(/<[^>]+>/g, " ")
-          .toLowerCase();
-        if (vname.includes("aero")) theater = "aero";
-        else if (vname.includes("egyptian")) theater = "egyptian";
-        else if (vname.includes("los feliz")) theater = "los-feliz-theatre";
+        _acDebug.unrouted++;
+        if (!_acDebug.sample) {
+          _acDebug.sample = {
+            title: ev.title,
+            event_start_date: ev.event_start_date,
+            event_location: ev.event_location,
+            event_card_excerpt: String(ev.event_card_excerpt || "").slice(0, 400),
+            url: ev.url,
+            keys: Object.keys(ev),
+          };
+        }
+        continue;
       }
-      if (!theater) continue;
 
       const name = decodeEntities(ev.title || "");
       const excerptText = decodeEntities(String(ev.event_card_excerpt || "").replace(/<[^>]+>/g, " "));
@@ -1268,6 +1346,10 @@ for (const src of SOURCES) {
         entry.sample_bytes = sample.bytes;
         entry.sample = sample.sample;
       }
+    }
+    if (src.id === "american-cinematheque" && _acDebug.unrouted > 0) {
+      entry.unrouted_count = _acDebug.unrouted;
+      entry.unrouted_sample = _acDebug.sample;
     }
     sourceStatus.push(entry);
     console.log(`${src.id}: ${rows.length} screenings`);

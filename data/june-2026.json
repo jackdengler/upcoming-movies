@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -25,9 +25,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Music",
-      "cast": "Paul Rudd, Nick Jonas, Naoimh Whelton, Jack Reynor",
-      "notes": "Every record has two sides.",
-      "youtube_trailer_id": "Evvpx6oxRZ8"
+      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
+      "notes": "It's time to set the record straight.",
+      "youtube_trailer_id": "t4Grq6r78Sw"
     },
     {
       "tmdb_id": 1273221,
@@ -102,7 +102,7 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Science Fiction / Thriller / Mystery",
+      "genre": "Mystery / Science Fiction / Thriller",
       "cast": "Emily Blunt, Josh O'Connor, Colin Firth, Eve Hewson",
       "notes": "We deserve to know.",
       "youtube_trailer_id": "SCYT8vb2siQ"

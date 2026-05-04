@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -9,9 +9,9 @@
       "title": "Animal Farm",
       "director": "Andy Serkis",
       "studio": "Angel",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Comedy / Family / Drama",
+      "budget_usd": 35000000,
+      "release_type": "wide",
+      "genre": "Animation / Family / Comedy / Drama",
       "cast": "Seth Rogen, Gaten Matarazzo, Woody Harrelson, Kieran Culkin",
       "notes": "It's time for these animals to stand and fight.",
       "youtube_trailer_id": "NN6J7l6ulYk"
@@ -30,6 +30,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1595852,
+      "date": "2026-05-01",
+      "title": "Boulevard",
+      "director": "Sonia Méndez",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance",
+      "cast": "Eve Ryan, Mikel Niso, Luis Zahera, Esther Acebo",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1469164,
       "date": "2026-05-01",
       "title": "Casa Grande",
@@ -43,14 +56,27 @@
       "youtube_trailer_id": "dg7RKym9hzM"
     },
     {
+      "tmdb_id": 1127384,
+      "date": "2026-05-01",
+      "title": "Deep Water",
+      "director": "Renny Harlin",
+      "studio": "Magenta Light Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Horror",
+      "cast": "Aaron Eckhart, Molly Belle Wright, Kelly Gale, Ben Kingsley",
+      "notes": "Surviving the crash is just the beginning.",
+      "youtube_trailer_id": "f0ptq0Lzdh8"
+    },
+    {
       "tmdb_id": 1430077,
       "date": "2026-05-01",
       "title": "Hokum",
       "director": "Damian McCarthy",
       "studio": "Neon",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Mystery / Thriller",
+      "release_type": "wide",
+      "genre": "Horror",
       "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
       "notes": "We've been expecting you.",
       "youtube_trailer_id": "qU_i5e48KzQ"
@@ -102,8 +128,8 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 100000000,
       "release_type": "wide",
-      "genre": "Drama / Comedy",
-      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+      "genre": "Comedy / Drama",
+      "cast": "Meryl Streep, Anne Hathaway, Stanley Tucci, Emily Blunt",
       "notes": "Icons reign forever.",
       "youtube_trailer_id": "PMd1at7OwiE"
     },
@@ -160,17 +186,30 @@
       "youtube_trailer_id": "lAKTiVZT-lw"
     },
     {
-      "tmdb_id": 1313356,
+      "tmdb_id": 1315259,
       "date": "2026-05-08",
       "title": "Influenced",
-      "director": "—",
+      "director": "Rachel Israel",
       "studio": "Menemsha Films",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Gwyneth Paltrow, Drew Barrymore, David Krumholtz, Christine Taylor",
+      "cast": "Jill Kargman, Gwyneth Paltrow, Drew Barrymore, Matt Damon",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "8-YmhYwyqIM"
+    },
+    {
+      "tmdb_id": 931285,
+      "date": "2026-05-08",
+      "title": "Mortal Kombat II",
+      "director": "Simon McQuoid",
+      "studio": "Warner Bros.",
+      "budget_usd": 68000000,
+      "release_type": "wide",
+      "genre": "Action / Fantasy / Adventure",
+      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
+      "notes": "Finish the fight.",
+      "youtube_trailer_id": "zva2PQ-ud5Y"
     },
     {
       "tmdb_id": 1409853,
@@ -220,7 +259,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Tony Benoit, Jimbo McCartney, Shannon McCartney, Madison Oliveira",
+      "cast": "Toby Benoit, Anne Stratton Hilts, Jimbo McCartney, Shannon McCartney",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -230,9 +269,9 @@
       "title": "The Sheep Detectives",
       "director": "Kyle Balda",
       "studio": "Amazon MGM Studios",
-      "budget_usd": null,
+      "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Mystery / Crime / Comedy / Family",
+      "genre": "Mystery / Comedy / Family",
       "cast": "Hugh Jackman, Emma Thompson, Nicholas Braun, Nicholas Galitzine",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
@@ -262,6 +301,19 @@
       "cast": "SUZUKA, Taizo Harada, Aoi Ito, Jun Saito",
       "notes": "Escape the internet.",
       "youtube_trailer_id": "LUAkjKP8sn0"
+    },
+    {
+      "tmdb_id": 1061771,
+      "date": "2026-05-15",
+      "title": "Decorado",
+      "director": "Alberto Vázquez",
+      "studio": "GKIDS",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Comedy / Fantasy / Horror",
+      "cast": "Asier Hormaza, Aintzane Gamiz, Kandido Uranga, Mikel Garmendia",
+      "notes": "The world is a wonderful stage, but it has a deplorable cast.",
+      "youtube_trailer_id": "HYUvmbjRmWk"
     },
     {
       "tmdb_id": 1398050,
@@ -329,19 +381,6 @@
       "youtube_trailer_id": "rJBFMf2KE0s"
     },
     {
-      "tmdb_id": 931285,
-      "date": "2026-05-15",
-      "title": "Mortal Kombat II",
-      "director": "Simon McQuoid",
-      "studio": "Warner Bros.",
-      "budget_usd": 68000000,
-      "release_type": "limited",
-      "genre": "Action / Fantasy / Adventure",
-      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
-      "notes": "Finish the fight.",
-      "youtube_trailer_id": "zva2PQ-ud5Y"
-    },
-    {
       "tmdb_id": 1339713,
       "date": "2026-05-15",
       "title": "Obsession",
@@ -365,7 +404,7 @@
       "genre": "Drama",
       "cast": "Paul Dano, Jude Law, Alicia Vikander, Tom Sturridge",
       "notes": "Power was the plan. Putin was the consequence.",
-      "youtube_trailer_id": "7FreRjptHnU"
+      "youtube_trailer_id": "U7ctYp3zQVA"
     },
     {
       "tmdb_id": 1038727,
@@ -414,7 +453,7 @@
       "studio": "Paramount Pictures International",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Adventure / Thriller",
+      "genre": "Horror / Thriller",
       "cast": "Jacob Scipio, Lou Llobell, Melissa Leo, Joseph Lopez",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"
@@ -455,7 +494,7 @@
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
-      "notes": "Everything must go.",
+      "notes": "You are not supposed to be here.",
       "youtube_trailer_id": "0HjdiohVOik"
     },
     {
@@ -467,9 +506,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Music",
-      "cast": "Paul Rudd, Nick Jonas, Naoimh Whelton, Jack Reynor",
-      "notes": "Every record has two sides.",
-      "youtube_trailer_id": "Evvpx6oxRZ8"
+      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
+      "notes": "It's time to set the record straight.",
+      "youtube_trailer_id": "t4Grq6r78Sw"
     },
     {
       "tmdb_id": 1318413,

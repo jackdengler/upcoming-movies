@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,7 +11,7 @@
       "studio": "IFC Films",
       "budget_usd": 1000000,
       "release_type": "wide",
-      "genre": "Drama / Thriller",
+      "genre": "Drama / Thriller / Horror",
       "cast": "Everett Blunck, Kayo Martin, Joel Edgerton, Kenny Rasmussen",
       "notes": "",
       "youtube_trailer_id": "QGMRkHPAaVU"
@@ -124,7 +124,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Jean-Pierre Dardenne, Luc Dardenne",
+      "director": "Luc Dardenne, Jean-Pierre Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -293,7 +293,7 @@
       "tmdb_id": 1393151,
       "date": "2026-01-21",
       "title": "Mr. Nobody Against Putin",
-      "director": "David Borenstein",
+      "director": "David Borenstein, Pavel Talankin",
       "studio": "Kino Lorber",
       "budget_usd": 800000,
       "release_type": "limited",
@@ -337,7 +337,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Claire Foy, Brendan Gleeson, Angus Cooper, Sam Spruell",
+      "cast": "Claire Foy, Brendan Gleeson, Lindsay Duncan, Denise Gough",
       "notes": "",
       "youtube_trailer_id": "73V6kQfGyt0"
     },
@@ -507,7 +507,7 @@
       "release_type": "wide",
       "genre": "Documentary",
       "cast": "Melania Trump, Donald Trump, Barron Trump, Hervé Pierre",
-      "notes": "Twenty days to history",
+      "notes": "cinema is dead.",
       "youtube_trailer_id": "dxXJAqOU00g"
     },
     {

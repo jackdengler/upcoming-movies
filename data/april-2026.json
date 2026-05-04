@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -193,7 +193,7 @@
       "studio": "IFC Films",
       "budget_usd": 7400000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
       "notes": "You can't unsee it.",
       "youtube_trailer_id": "bKiX2FBBz54"
@@ -261,7 +261,7 @@
       "genre": "Crime / Comedy",
       "cast": "Michaela Coel, Ian McKellen, Jessica Gunning, James Corden",
       "notes": "Art can be copied. Artists cannot.",
-      "youtube_trailer_id": "7CB2nsSBqs0"
+      "youtube_trailer_id": "42GkXhRVLUQ"
     },
     {
       "tmdb_id": 1455079,
@@ -363,7 +363,7 @@
       "budget_usd": 4000000,
       "release_type": "limited",
       "genre": "Thriller / Drama",
-      "cast": "Lena Headey, Enrico Colantoni, Amybeth McNulty, Michael Lipka",
+      "cast": "Lena Headey, Hamza Haq, Amybeth McNulty, Jordan Kronis",
       "notes": "A mother's pain, a bullet's purpose.",
       "youtube_trailer_id": "bxvgiEFR774"
     },
@@ -516,7 +516,7 @@
       "title": "Normal",
       "director": "Ben Wheatley",
       "studio": "Magnolia Pictures",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Action / Crime / Thriller",
       "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Ryan Allen",
@@ -641,6 +641,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1321173,
+      "date": "2026-04-24",
+      "title": "A Blind Bargain",
+      "director": "Paul Bunnell",
+      "studio": "Vitagraph Films",
+      "budget_usd": 2500000,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Crispin Glover, Sean Whalen, Rob Mayes, Annalisa Cochrane",
+      "notes": "",
+      "youtube_trailer_id": "AGezHkWnAxo"
+    },
+    {
       "tmdb_id": 1269644,
       "date": "2026-04-24",
       "title": "Amrum",
@@ -672,9 +685,9 @@
       "title": "Fuze",
       "director": "David Mackenzie",
       "studio": "Roadside Attractions",
-      "budget_usd": null,
+      "budget_usd": 45000000,
       "release_type": "limited",
-      "genre": "Action / Crime / Thriller / Drama",
+      "genre": "Action / Crime / Drama / Thriller",
       "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
       "notes": "Down to the wire.",
       "youtube_trailer_id": "1aNywiElPSY"
@@ -691,6 +704,19 @@
       "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
       "notes": "I blink. I twitch. I jump. I click. I whistle. I shout.",
       "youtube_trailer_id": "10ynpduiRpM"
+    },
+    {
+      "tmdb_id": 1307029,
+      "date": "2026-04-24",
+      "title": "Kangaroo Island",
+      "director": "Timothy David",
+      "studio": "Blue Harbor Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Rebecca Breeds, Erik Thomson, Adelaide Clemens, Joel Jackson",
+      "notes": "No luggage. Just baggage.",
+      "youtube_trailer_id": "6eJZq51A2vQ"
     },
     {
       "tmdb_id": 936075,
@@ -831,7 +857,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Music",
-      "cast": "John Lennon, Yoko Ono, Sha-Na-Na, Stevie Wonder",
+      "cast": "John Lennon, Yoko Ono, Lennie Baker, Jon 'Bowzer' Bauman",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -844,7 +870,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Dr. Stephen C. Meyer, Phd, John Lennox, PhD, Peter Thiel, Brian Keating, PhD",
+      "cast": "Stephen C. Meyer, John Lennox, Peter Thiel, Luke A. Barnes",
       "notes": "The Science That Reveals A Mind Behind The Universe",
       "youtube_trailer_id": "pwL3ZKlwEoc"
     }

@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -182,7 +182,7 @@
       "release_type": "limited",
       "genre": "Comedy / Fantasy / Romance",
       "cast": "Juliette Lewis, Mamoudou Athie, Samantha Mathis, Robin Tunney",
-      "notes": "Have you heard about the movie where Juliette Lewis plays a chair?",
+      "notes": "",
       "youtube_trailer_id": "UihiJkDmukc"
     },
     {
@@ -234,7 +234,7 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Comedy",
       "cast": "Sam Rockwell, Juno Temple, Haley Lu Richardson, Michael Peña",
-      "notes": "",
+      "notes": "Time is running out. Are you ready to join the revolution?",
       "youtube_trailer_id": "Nm4WbapDzDQ"
     },
     {
@@ -260,7 +260,7 @@
       "release_type": "limited",
       "genre": "Comedy / Horror",
       "cast": "Kristoffer Polaha, Moriah Peters, Stephen Tobolowsky, Chris Parnell",
-      "notes": "",
+      "notes": "Love. Laughter. Fergus",
       "youtube_trailer_id": "iJjDrYWmEZw"
     },
     {
@@ -558,7 +558,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Comedy / Romance",
-      "cast": "Amy Landecker, Bradley Whitford, Nico Hiraga, Gaby Hoffmann",
+      "cast": "Amy Landecker, Bradley Whitford, Nico Hiraga, Missi Pyle",
       "notes": "Love never gets old.",
       "youtube_trailer_id": "CvjTYRnSDuU"
     },
@@ -599,7 +599,7 @@
       "genre": "Drama / Comedy",
       "cast": "Teng Shen, Yin Zheng, Johnny Huang, Zhang Benyu",
       "notes": "Let’s lay out the road and race ahead.",
-      "youtube_trailer_id": "R2TrSn8yKJA"
+      "youtube_trailer_id": "zNu476xN6Ao"
     },
     {
       "tmdb_id": 1287141,

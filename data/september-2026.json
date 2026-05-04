@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -77,9 +77,9 @@
       "budget_usd": 80000000,
       "release_type": "limited",
       "genre": "Horror / Science Fiction",
-      "cast": "Austin Abrams, Paul Walter Hauser, Zach Cherry, Kali Reis",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
+      "notes": "A new era of evil.",
+      "youtube_trailer_id": "SJPu1spHqfk"
     },
     {
       "tmdb_id": 1477104,

@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-04-29",
+  "updated": "2026-05-04",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -63,7 +63,7 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 150000000,
       "release_type": "wide",
-      "genre": "Animation / Family / Science Fiction / Comedy / Adventure",
+      "genre": "Adventure / Animation / Comedy / Family / Science Fiction",
       "cast": "Piper Curda, Bobby Moynihan, Jon Hamm, Kathy Najimy",
       "notes": "Act natural.",
       "youtube_trailer_id": "PypDSyIRRSs"
@@ -90,7 +90,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Thriller",
-      "cast": "Milla Jovovich, Matthew Modine, Isabel Myers, D. B. Sweeney",
+      "cast": "Milla Jovovich, Isabel Myers, Matthew Modine, D. B. Sweeney",
       "notes": "Mother. Savior. Killer...",
       "youtube_trailer_id": "IRKGIuL3728"
     },
@@ -311,7 +311,7 @@
       "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Science Fiction / Adventure",
-      "cast": "Ryan Gosling, James Ortiz, Sandra Hüller, Lionel Boyce",
+      "cast": "Ryan Gosling, Sandra Hüller, James Ortiz, Lionel Boyce",
       "notes": "Believe in the Hail Mary.",
       "youtube_trailer_id": "NKYea63tQmI"
     },
@@ -609,8 +609,8 @@
       "studio": "Warner Bros.",
       "budget_usd": 20000000,
       "release_type": "limited",
-      "genre": "Horror / Action / Comedy",
-      "cast": "Zazie Beetz, Patricia Arquette, Myha'la, Paterson Joseph",
+      "genre": "Action / Comedy / Horror",
+      "cast": "Zazie Beetz, Myha'la, Patricia Arquette, Paterson Joseph",
       "notes": "Let them try.",
       "youtube_trailer_id": "s0PGrtw0X1Q"
     },

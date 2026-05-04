@@ -74,7 +74,7 @@
       "title": "Hokum",
       "director": "Damian McCarthy",
       "studio": "Neon",
-      "budget_usd": null,
+      "budget_usd": 5000000,
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Javier Chocobar, Comunidad Chuschagasta",
+      "cast": "Comunidad Chuschagasta, Javier Chocobar",
       "notes": "",
       "youtube_trailer_id": "yPQRXpzx55o"
     },

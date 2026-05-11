@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -67,6 +67,19 @@
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
       "notes": "A new kind of horror remake.",
       "youtube_trailer_id": "o8Wi3ZwdODA"
+    },
+    {
+      "tmdb_id": 1329016,
+      "date": "2026-08-07",
+      "title": "Tony",
+      "director": "Matt Johnson",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Dominic Sessa, Emilia Jones, Leo Woodall, Antonio Banderas",
+      "notes": "\"I was — to be frank — a spoiled, miserable, narcissistic, self-destructive and thoughtless young lout, and badly in need of a good ass-kicking.\"",
+      "youtube_trailer_id": "k1MVnzd2aVc"
     },
     {
       "tmdb_id": null,
@@ -180,7 +193,7 @@
       "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
+      "genre": "Action / Thriller",
       "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
       "notes": "There's blood in the water.",
       "youtube_trailer_id": "FKSdXH89jbo"
@@ -189,7 +202,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
@@ -208,7 +221,7 @@
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
       "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
-      "notes": "",
+      "notes": "Ain’t no one all bad or all good",
       "youtube_trailer_id": null
     },
     {
@@ -251,6 +264,19 @@
       "youtube_trailer_id": "H-43VeYGiPM"
     },
     {
+      "tmdb_id": 1417935,
+      "date": "2026-08-28",
+      "title": "Filipiñana",
+      "director": "Rafael Manuel",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Mystery",
+      "cast": "Jorrybell Agoto, Teroy Guzman, Nour Hooshmand, Carlos Siguion-Reyna",
+      "notes": "",
+      "youtube_trailer_id": "EAZvq-DCJ1I"
+    },
+    {
       "tmdb_id": 1339588,
       "date": "2026-08-28",
       "title": "Finding Emily",
@@ -260,7 +286,7 @@
       "release_type": "limited",
       "genre": "Romance / Comedy",
       "cast": "Spike Fearn, Angourie Rice, Yali Topol Margalith, Ella Maisy Purvis",
-      "notes": "",
+      "notes": "Right name, wrong number.",
       "youtube_trailer_id": "-OGuJf70S0s"
     },
     {

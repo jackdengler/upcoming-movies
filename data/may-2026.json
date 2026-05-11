@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,7 +11,7 @@
       "studio": "Angel",
       "budget_usd": 35000000,
       "release_type": "wide",
-      "genre": "Animation / Family / Comedy / Drama",
+      "genre": "Animation / Family / Comedy",
       "cast": "Seth Rogen, Gaten Matarazzo, Woody Harrelson, Kieran Culkin",
       "notes": "It's time for these animals to stand and fight.",
       "youtube_trailer_id": "NN6J7l6ulYk"
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Comunidad Chuschagasta, Javier Chocobar",
+      "cast": "Javier Chocobar, Comunidad Chuschagasta",
       "notes": "",
       "youtube_trailer_id": "yPQRXpzx55o"
     },
@@ -129,7 +129,7 @@
       "budget_usd": 100000000,
       "release_type": "wide",
       "genre": "Comedy / Drama",
-      "cast": "Meryl Streep, Anne Hathaway, Stanley Tucci, Emily Blunt",
+      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
       "notes": "Icons reign forever.",
       "youtube_trailer_id": "PMd1at7OwiE"
     },
@@ -145,6 +145,19 @@
       "cast": "Filippo Scotti, Sergio Romano, Pierpaolo Capovilla, Roberto Citran",
       "notes": "",
       "youtube_trailer_id": "5kYHufR72P0"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-05-02",
+      "title": "MET Opera: Eugene Onegin",
+      "director": "—",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1515899,
@@ -204,10 +217,10 @@
       "title": "Mortal Kombat II",
       "director": "Simon McQuoid",
       "studio": "Warner Bros.",
-      "budget_usd": 68000000,
+      "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
-      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
+      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Ludi Lin",
       "notes": "Finish the fight.",
       "youtube_trailer_id": "zva2PQ-ud5Y"
     },
@@ -232,7 +245,7 @@
       "studio": "1-2 Special",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / History",
+      "genre": "Drama",
       "cast": "Tony Leung Chiu-wai, Léa Seydoux, Luna Wedler, Enzo Brumm",
       "notes": "",
       "youtube_trailer_id": "TaRZnpAmtJk"
@@ -249,6 +262,19 @@
       "cast": "Quavo, Dave Willis, Danny Boyd Jr., Tetra Lloyd",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1580569,
+      "date": "2026-05-08",
+      "title": "The Misconceived",
+      "director": "James N. Kienitz Wilkins",
+      "studio": "Monument Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Animation",
+      "cast": "Jesse Wakeman, John Magary, Callie Hernandez, Jess Barbagallo",
+      "notes": "",
+      "youtube_trailer_id": "JUtIpvoH7Yo"
     },
     {
       "tmdb_id": 1421979,
@@ -269,9 +295,9 @@
       "title": "The Sheep Detectives",
       "director": "Kyle Balda",
       "studio": "Amazon MGM Studios",
-      "budget_usd": 30000000,
+      "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Mystery / Comedy / Family",
+      "genre": "Comedy / Family / Mystery",
       "cast": "Hugh Jackman, Emma Thompson, Nicholas Braun, Nicholas Galitzine",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
@@ -415,7 +441,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary",
-      "cast": "Patrick Spikes, Dave Ensign, Leonard Kinsey, Dan Bell",
+      "cast": "Patrick Spikes, Dave Ensign, Leonard Kinsey, Matt Sonswa",
       "notes": "Bad things happen at the Happiest Place on Earth.",
       "youtube_trailer_id": "TVNkxUxhqh0"
     },
@@ -472,17 +498,43 @@
       "youtube_trailer_id": "uIY13LD3RUY"
     },
     {
+      "tmdb_id": 1414735,
+      "date": "2026-05-22",
+      "title": "Sick Puppy",
+      "director": "Jay Reid",
+      "studio": "Dark Sky Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Dylan Taylor, Natasha Calis, Brett Geddes, Rachel Boyd",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1228710,
       "date": "2026-05-22",
       "title": "Star Wars: The Mandalorian and Grogu",
       "director": "Jon Favreau",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": 166400000,
+      "budget_usd": 165000000,
       "release_type": "limited",
-      "genre": "Action / Adventure / Science Fiction",
+      "genre": "Adventure / Science Fiction / Action",
       "cast": "Pedro Pascal, Jeremy Allen White, Sigourney Weaver, Jonny Coyne",
       "notes": "If you're searching for new adventure, \"this is the way.\"",
       "youtube_trailer_id": "uwild1rw7Aw"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-05-22",
+      "title": "The Blood Moon Feast 8",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama / Horror",
+      "cast": "Van Son, Le Khanh, Miu Le, Lien Binh Phat",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1083381,
@@ -550,17 +602,17 @@
       "youtube_trailer_id": "sOt8J_tM4Dg"
     },
     {
-      "tmdb_id": 1280738,
+      "tmdb_id": 1596278,
       "date": "2026-05-29",
-      "title": "The Furious",
-      "director": "Kenji Tanigaki",
-      "studio": "Lionsgate",
-      "budget_usd": 20000000,
-      "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
-      "cast": "Xie Miao, Joe Taslim, Yang Enyou, Yayan Ruhian",
-      "notes": "To save their loved ones, they will fight everyone.",
-      "youtube_trailer_id": "Avky8dVaqAI"
+      "title": "Time and Water",
+      "director": "Sara Dosa",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Andri Snær Magnason",
+      "notes": "How do you say goodbye to something you never thought you could lose?",
+      "youtube_trailer_id": "6oR0iVwdY7M"
     },
     {
       "tmdb_id": 1340206,

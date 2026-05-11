@@ -1,8 +1,21 @@
 {
   "month": "June 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1470329,
+      "date": "2026-06-05",
+      "title": "Another World",
+      "director": "Tommy Kai Chung Ng",
+      "studio": "GKIDS",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Drama / Fantasy",
+      "cast": "Chung Suet-Ying, Christy Choi Hiu-Tung, Louis Cheung, Kay Tse",
+      "notes": "To save the future, they must uncover her past.",
+      "youtube_trailer_id": "rvgT9SZU1P4"
+    },
     {
       "tmdb_id": 1329471,
       "date": "2026-06-05",
@@ -95,6 +108,19 @@
       "youtube_trailer_id": "aHntkAmfiNs"
     },
     {
+      "tmdb_id": 1465717,
+      "date": "2026-06-05",
+      "title": "Underland",
+      "director": "Rob Petit",
+      "studio": "Oscilloscope",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Sandra Hüller",
+      "notes": "Why do we seek the void?",
+      "youtube_trailer_id": "2dP2FIJ0p_k"
+    },
+    {
       "tmdb_id": 1275779,
       "date": "2026-06-12",
       "title": "Disclosure Day",
@@ -132,6 +158,19 @@
       "cast": "RuPaul, Jujubee, Ginger Minj, Brooke Lynn Hytes",
       "notes": "The greatest trainwreck in herstory.",
       "youtube_trailer_id": "9O9ZeG6op_Y"
+    },
+    {
+      "tmdb_id": 1280738,
+      "date": "2026-06-12",
+      "title": "The Furious",
+      "director": "Kenji Tanigaki",
+      "studio": "Lionsgate",
+      "budget_usd": 20000000,
+      "release_type": "limited",
+      "genre": "Action / Crime / Thriller",
+      "cast": "Xie Miao, Joe Taslim, Yang Enyou, Yayan Ruhian",
+      "notes": "To save their loved ones, they will fight everyone.",
+      "youtube_trailer_id": "Avky8dVaqAI"
     },
     {
       "tmdb_id": null,
@@ -184,6 +223,19 @@
       "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Tyallah Bullock",
       "notes": "It will never stop.",
       "youtube_trailer_id": "WXuK0vlFxII"
+    },
+    {
+      "tmdb_id": 1517868,
+      "date": "2026-06-19",
+      "title": "Maddie's Secret",
+      "director": "John Early",
+      "studio": "Magnolia Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "John Early, Kate Berlant, Eric Rahill, Kristen Johnston",
+      "notes": "",
+      "youtube_trailer_id": "IjfX8l5XrF8"
     },
     {
       "tmdb_id": 1399525,
@@ -249,6 +301,32 @@
       "cast": "Johnny Knoxville, Steve-O, Chris Pontius, Jason 'Wee Man' Acuña",
       "notes": "One. Last. Ride.",
       "youtube_trailer_id": "sNwzFhGwA94"
+    },
+    {
+      "tmdb_id": 1532704,
+      "date": "2026-06-26",
+      "title": "Jacked",
+      "director": "John Fucile",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Marla Robinson, Tom Koch, Anthony Cipriani, Wynn Reichert",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1484708,
+      "date": "2026-06-26",
+      "title": "Sugar Beach",
+      "director": "Noely Mendoza",
+      "studio": "Seismic Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Zoe Manzotti, Kelli Garner, Michael Landes, Troy Leigh-Anne Johnson",
+      "notes": "Their only escape is each other",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1081003,

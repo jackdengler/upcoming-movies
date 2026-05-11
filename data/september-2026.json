@@ -1,8 +1,21 @@
 {
   "month": "September 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1101412,
+      "date": "2026-09-02",
+      "title": "Fall 2",
+      "director": "Michael Spierig, Peter Spierig",
+      "studio": "Lionsgate",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Thriller",
+      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1514026,
       "date": "2026-09-04",
@@ -51,7 +64,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Fantasy / Drama / Comedy",
-      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Lee Pace",
+      "cast": "Sandra Bullock, Nicole Kidman, Lee Pace, Dianne Wiest",
       "notes": "",
       "youtube_trailer_id": "iSWP2feb4rw"
     },

@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,10 +11,36 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Family / Comedy / Adventure / Fantasy",
-      "cast": "Pierre Coffin, Allison Janney, Christoph Waltz, Jeff Bridges",
+      "genre": "Adventure / Animation / Comedy / Family / Fantasy",
+      "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
       "notes": "Hollywood has a monster problem.",
-      "youtube_trailer_id": "ZSdOwt-G49w"
+      "youtube_trailer_id": "V-O-uBaHk3c"
+    },
+    {
+      "tmdb_id": 1631822,
+      "date": "2026-07-03",
+      "title": "Mary Oliver: Saved by the Beauty of the World",
+      "director": "Sasha Waters",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Mary Oliver, Helena Bonham Carter, Steve Buscemi, Stephen Colbert",
+      "notes": "",
+      "youtube_trailer_id": "ZJMd3u741pA"
+    },
+    {
+      "tmdb_id": 1189807,
+      "date": "2026-07-03",
+      "title": "Swallowtail & Dragonfly",
+      "director": "Julia Jay Pierrepont III",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Vanessa Yao, Vivian Dawson, Albert Lew",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1290417,
@@ -52,8 +78,8 @@
       "release_type": "limited",
       "genre": "Horror",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
-      "notes": "Nowhere to hide.",
-      "youtube_trailer_id": "YYkUkyfjUKg"
+      "notes": "Every family has its demons.",
+      "youtube_trailer_id": "TnHby2cxJzs"
     },
     {
       "tmdb_id": 1476682,
@@ -121,6 +147,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1339666,
+      "date": "2026-07-17",
+      "title": "The Kidnapping of Arabella",
+      "director": "Carolina Cavalli",
+      "studio": "Oscilloscope",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Benedetta Porcaroli, Lucrezia Guglielmino, Chris Pine, Roberto Zibetti",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1368337,
       "date": "2026-07-17",
       "title": "The Odyssey",
@@ -128,10 +167,10 @@
       "studio": "Universal Pictures",
       "budget_usd": 250000000,
       "release_type": "wide",
-      "genre": "Adventure / Drama / Fantasy",
-      "cast": "Matt Damon, Tom Holland, Zendaya, Anne Hathaway",
+      "genre": "Adventure / Action / Fantasy",
+      "cast": "Matt Damon, Tom Holland, Anne Hathaway, Robert Pattinson",
       "notes": "Defy the gods.",
-      "youtube_trailer_id": "Mzw2ttJD2qQ"
+      "youtube_trailer_id": "f_bKjZeJBBI"
     },
     {
       "tmdb_id": 969681,

@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "limited",
@@ -71,7 +71,7 @@
     {
       "tmdb_id": 1600421,
       "date": "2026-02-06",
-      "title": "Stray Kids: The dominATE Experience",
+      "title": "Stray Kids: The Dominate Experience",
       "director": "Paul Dugdale, Farah Khalid",
       "studio": "Bleecker Street Media",
       "budget_usd": null,
@@ -134,6 +134,19 @@
       "youtube_trailer_id": "Dybu5gvuYio"
     },
     {
+      "tmdb_id": 1376400,
+      "date": "2026-02-10",
+      "title": "Crawlers",
+      "director": "Ángel Gómez Hernández",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1391847,
       "date": "2026-02-11",
       "title": "Gale: Yellow Brick Road",
@@ -156,7 +169,7 @@
       "release_type": "limited",
       "genre": "History / Drama",
       "cast": "Yoo Hai-jin, Park Ji-hoon, Yoo Ji-tae, Jeon Mi-do",
-      "notes": "1457 Joseon, a story untold by history",
+      "notes": "1457 Joseon, a story untold by history.",
       "youtube_trailer_id": "bLNauSd-bqY"
     },
     {
@@ -194,7 +207,7 @@
       "budget_usd": 10000000,
       "release_type": "limited",
       "genre": "Horror / Science Fiction / Comedy",
-      "cast": "Joe Keery, Georgina Campbell, Liam Neeson, Lesley Manville",
+      "cast": "Georgina Campbell, Joe Keery, Sosie Bacon, Vanessa Redgrave",
       "notes": "If it spreads, you're dead.",
       "youtube_trailer_id": "kea7gnh1uYA"
     },
@@ -248,7 +261,7 @@
       "genre": "Drama",
       "cast": "Aud Mason-Hyde, Olivia Colman, John Lithgow, Cody Fern",
       "notes": "Every family finds their own language.",
-      "youtube_trailer_id": "xrj5Qj9UL_g"
+      "youtube_trailer_id": "UVOUZBm5vwg"
     },
     {
       "tmdb_id": 1461211,
@@ -399,7 +412,7 @@
       "title": "How to Make a Killing",
       "director": "John Patton Ford",
       "studio": "A24",
-      "budget_usd": 40000000,
+      "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Comedy / Thriller",
       "cast": "Glen Powell, Margaret Qualley, Jessica Henwick, Bill Camp",
@@ -598,7 +611,7 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Teng Shen, Yin Zheng, Johnny Huang, Zhang Benyu",
-      "notes": "Let’s lay out the road and race ahead.",
+      "notes": "Let's lay out the road and race ahead.",
       "youtube_trailer_id": "zNu476xN6Ao"
     },
     {

@@ -1,18 +1,18 @@
 {
   "month": "April 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
       "genre": "Family / Comedy / Adventure / Fantasy / Animation",
-      "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
+      "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black",
       "notes": "The galaxy awaits.",
       "youtube_trailer_id": "En5QZmL5R1s"
     },
@@ -56,15 +56,15 @@
       "youtube_trailer_id": "b9umCIsc-zc"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1421153,
       "date": "2026-04-03",
       "title": "Living the Land",
-      "director": "—",
+      "director": "Huo Meng",
       "studio": "Film Movement",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / History",
-      "cast": "Shang Wang, Zhang Yanrong, Chuwen Zhang, Caixia Zhang",
+      "genre": "Drama / Comedy",
+      "cast": "Wang Shang, Zhang Chuwen, Zhang Yanrong, Zhang Caixia",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -157,7 +157,7 @@
       "genre": "Drama",
       "cast": "Katarina Zhu, Austin Amelio, Perry Yung, Jack Kilmer",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "V5vy1VPkBzk"
     },
     {
       "tmdb_id": 1419053,
@@ -424,7 +424,7 @@
       "date": "2026-04-17",
       "title": "Everyone Is Lying to You for Money",
       "director": "Ben McKenzie, Giorgio Angelini",
-      "studio": "Eammon Films",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
@@ -700,7 +700,7 @@
       "studio": "Sony Pictures Classics",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Drama / History",
+      "genre": "Drama",
       "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
       "notes": "I blink. I twitch. I jump. I click. I whistle. I shout.",
       "youtube_trailer_id": "10ynpduiRpM"
@@ -752,7 +752,7 @@
       "studio": "A24",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Music / Fantasy / Drama",
+      "genre": "Drama / Fantasy / Music / Thriller",
       "cast": "Anne Hathaway, Michaela Coel, Hunter Schafer, FKA twigs",
       "notes": "This is not a ghost story.",
       "youtube_trailer_id": "aqYHOsuje1E"
@@ -849,17 +849,30 @@
       "youtube_trailer_id": "s2LLsEmk7fc"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1539299,
       "date": "2026-04-29",
       "title": "Power to the People",
-      "director": "—",
+      "director": "Simon Hilton",
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "John Lennon, Yoko Ono, Lennie Baker, Jon 'Bowzer' Bauman",
+      "genre": "Music / Documentary",
+      "cast": "John Lennon, Yoko Ono, John Ward, Gary Van Scyoc",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "P7DztEZ86IY"
+    },
+    {
+      "tmdb_id": 768614,
+      "date": "2026-04-30",
+      "title": "Silver Star",
+      "director": "Ruben Amar, Lola Bessis",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller / Comedy",
+      "cast": "Troy Leigh-Anne Johnson, Grace Van Dien, Noa Fisher, Odley Jean",
+      "notes": "Can you survive?",
+      "youtube_trailer_id": "2p5_WMputF0"
     },
     {
       "tmdb_id": 1650789,

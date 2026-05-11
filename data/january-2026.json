@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-05-04",
+  "updated": "2026-05-11",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,7 +11,7 @@
       "studio": "IFC Films",
       "budget_usd": 1000000,
       "release_type": "wide",
-      "genre": "Drama / Thriller / Horror",
+      "genre": "Thriller / Drama / Horror",
       "cast": "Everett Blunck, Kayo Martin, Joel Edgerton, Kenny Rasmussen",
       "notes": "",
       "youtube_trailer_id": "QGMRkHPAaVU"
@@ -129,7 +129,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama",
-      "cast": "Lucie Laruelle, Babette Verbeek, Elsa Houben, Janaïna Halloy Fokan",
+      "cast": "Babette Verbeek, Elsa Houben, Janaïna Halloy Fokan, Lucie Laruelle",
       "notes": "",
       "youtube_trailer_id": "br3boRnJ_qE"
     },
@@ -375,7 +375,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": 60000000,
       "release_type": "wide",
-      "genre": "Science Fiction / Action / Thriller / Crime",
+      "genre": "Science Fiction / Action / Thriller",
       "cast": "Chris Pratt, Rebecca Ferguson, Kali Reis, Kylie Rogers",
       "notes": "Prove your innocence to an AI judge or face execution.",
       "youtube_trailer_id": "JUADqWkJiiE"
@@ -507,7 +507,7 @@
       "release_type": "wide",
       "genre": "Documentary",
       "cast": "Melania Trump, Donald Trump, Barron Trump, Hervé Pierre",
-      "notes": "",
+      "notes": "Twenty days to history",
       "youtube_trailer_id": "dxXJAqOU00g"
     },
     {

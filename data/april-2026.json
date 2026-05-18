@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
+      "director": "Aaron Horvath, Michael Jelenic",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -23,7 +23,7 @@
       "director": "Joshua Enck",
       "studio": "Roadside Attractions",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / History",
       "cast": "John Paul Sneed, Jonathan Blair, JT Schaeffer, Josh Bates",
       "notes": "Before the American Revolution, there was a revelation.",
@@ -38,7 +38,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Teresa Palmer, Joe Dempsie, Eamon Farren, Adrienne Pickering",
+      "cast": "Teresa Palmer, Joe Dempsie, Eamon Farren, Sarah Peirse",
       "notes": "It all counts.",
       "youtube_trailer_id": "ZhCjT82jAfo"
     },
@@ -105,7 +105,7 @@
       "genre": "Drama / Crime",
       "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin, Denis Lavant",
       "notes": "",
-      "youtube_trailer_id": "gR912kHSOlA"
+      "youtube_trailer_id": "aYCze1vl2jU"
     },
     {
       "tmdb_id": 1149614,
@@ -140,7 +140,7 @@
       "director": "Tyler Atkins",
       "studio": "Lionsgate",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Drama",
       "cast": "Daniel MacPherson, Luke Hemsworth, Russell Crowe, Mojean Aria",
       "notes": "Legends are made in the cage.",
@@ -351,7 +351,7 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Joshua Close, Joanne Kelly, Gilbert Owuor",
-      "notes": "",
+      "notes": "Not every battle is won by force.",
       "youtube_trailer_id": "lpc7olNGWS4"
     },
     {
@@ -505,7 +505,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Romance / Music",
+      "genre": "Comedy / Romance / Music / Drama",
       "cast": "Barbie Ferreira, Devon Bostick, Stanley Simons, Juliette Gariépy",
       "notes": "Welcome to the summer of 2011.",
       "youtube_trailer_id": "mzaCmw_VrlI"
@@ -686,7 +686,7 @@
       "director": "David Mackenzie",
       "studio": "Roadside Attractions",
       "budget_usd": 45000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Crime / Drama / Thriller",
       "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
       "notes": "Down to the wire.",

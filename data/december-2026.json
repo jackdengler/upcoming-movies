@@ -1,8 +1,21 @@
 {
   "month": "December 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1198746,
+      "date": "2026-12-04",
+      "title": "Above the Below",
+      "director": "Martin Owen, Idris Elba",
+      "studio": "Lionsgate Premiere",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1078446,
       "date": "2026-12-04",
@@ -34,7 +47,7 @@
       "date": "2026-12-23",
       "title": "The Angry Birds Movie 3",
       "director": "John Rice",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family",
@@ -66,14 +79,14 @@
       "genre": "Fantasy / Adventure / Comedy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "aA0BgavCcKI"
     },
     {
       "tmdb_id": 1372443,
       "date": "2026-12-25",
       "title": "Mr. Irrelevant: The John Tuggle Story",
       "director": "Jonathan Levine",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama",

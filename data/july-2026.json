@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -75,8 +75,8 @@
       "director": "Sébastien Vaniček",
       "studio": "Warner Bros.",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror",
+      "release_type": "wide",
+      "genre": "Horror / Fantasy",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
       "notes": "Every family has its demons.",
       "youtube_trailer_id": "TnHby2cxJzs"
@@ -92,7 +92,7 @@
       "genre": "Comedy",
       "cast": "Zoey Deutch, Jon Hamm, John Slattery, Ben Wang",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "C0MFaaXxEkI"
     },
     {
       "tmdb_id": 1108427,
@@ -101,7 +101,7 @@
       "director": "Thomas Kail",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Family / Fantasy / Comedy / Adventure",
       "cast": "Catherine Laga‘aia, Dwayne Johnson, Rena Owen, John Tui",
       "notes": "The ocean chose her for a reason.",
@@ -173,12 +173,25 @@
       "youtube_trailer_id": "f_bKjZeJBBI"
     },
     {
+      "tmdb_id": 1479537,
+      "date": "2026-07-22",
+      "title": "Bad Counselors",
+      "director": "Chris Dowling",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Matt Cornett, Ramon Reed, Chris Klein, Missi Pyle",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 969681,
       "date": "2026-07-31",
       "title": "Spider-Man: Brand New Day",
       "director": "Destin Daniel Cretton",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
+      "budget_usd": 230000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",

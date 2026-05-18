@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Animation / Drama / Fantasy",
-      "cast": "Chung Suet-Ying, Christy Choi Hiu-Tung, Louis Cheung, Kay Tse",
+      "cast": "Chung Suet-Ying, Christy Choi Hiu-Tung, Louis Cheung, Kay Tse On-Kei",
       "notes": "To save the future, they must uncover her past.",
       "youtube_trailer_id": "rvgT9SZU1P4"
     },
@@ -30,14 +30,27 @@
       "youtube_trailer_id": "fNdC6SJ-TxY"
     },
     {
+      "tmdb_id": 454639,
+      "date": "2026-06-05",
+      "title": "Masters of the Universe",
+      "director": "Travis Knight",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": 200000000,
+      "release_type": "wide",
+      "genre": "Action / Fantasy / Science Fiction",
+      "cast": "Nicholas Galitzine, Camila Mendes, Alison Brie, James Purefoy",
+      "notes": "Witness how he became He-Man.",
+      "youtube_trailer_id": "RZ4dblwZ2TY"
+    },
+    {
       "tmdb_id": 1284016,
       "date": "2026-06-05",
       "title": "Power Ballad",
       "director": "John Carney",
-      "studio": "—",
+      "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Music",
+      "genre": "Comedy / Music / Drama",
       "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
       "notes": "It's time to set the record straight.",
       "youtube_trailer_id": "t4Grq6r78Sw"
@@ -47,10 +60,10 @@
       "date": "2026-06-05",
       "title": "Scary Movie",
       "director": "Michael Tiddes",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Horror",
+      "genre": "Comedy",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "2aMPPfmP5cY"
@@ -121,6 +134,19 @@
       "youtube_trailer_id": "2dP2FIJ0p_k"
     },
     {
+      "tmdb_id": 1695768,
+      "date": "2026-06-08",
+      "title": "Ocean Dreams",
+      "director": "Johan Candert",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Shailene Woodley",
+      "notes": "",
+      "youtube_trailer_id": "I09veUbegoI"
+    },
+    {
       "tmdb_id": 1275779,
       "date": "2026-06-12",
       "title": "Disclosure Day",
@@ -186,19 +212,6 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1537635,
-      "date": "2026-06-19",
-      "title": "Everywhere Man: The Lives and Times of Peter Asher",
-      "director": "Dayna Goldfine, Daniel Geller",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "Peter Asher",
-      "notes": "The legend behind music's biggest legends",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1397485,
       "date": "2026-06-19",
       "title": "Girls Like Girls",
@@ -238,6 +251,19 @@
       "youtube_trailer_id": "IjfX8l5XrF8"
     },
     {
+      "tmdb_id": 1537635,
+      "date": "2026-06-19",
+      "title": "Peter Asher: Everywhere Man",
+      "director": "Dayna Goldfine, Daniel Geller",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Peter Asher",
+      "notes": "The legend behind music's biggest legends",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1399525,
       "date": "2026-06-19",
       "title": "Rose of Nevada",
@@ -270,7 +296,7 @@
       "director": "Andrew Stanton",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Animation / Family / Comedy / Adventure",
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
       "notes": "It's on.",
@@ -294,7 +320,7 @@
       "date": "2026-06-26",
       "title": "Jackass: Best and Last",
       "director": "Jeff Tremaine",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Comedy / Documentary",
@@ -335,7 +361,7 @@
       "director": "Craig Gillespie",
       "studio": "Warner Bros.",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Adventure / Science Fiction",
       "cast": "Milly Alcock, Matthias Schoenaerts, Eve Ridley, David Krumholtz",
       "notes": "Truth. Justice. Whatever.",

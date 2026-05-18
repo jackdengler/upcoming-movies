@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -10,7 +10,7 @@
       "director": "Alejandro G. Iñárritu",
       "studio": "Warner Bros.",
       "budget_usd": 125000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy / Drama",
       "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
       "notes": "A comedy of catastrophic proportions.",
@@ -47,7 +47,7 @@
       "date": "2026-10-09",
       "title": "The Legend of Aang: The Last Airbender",
       "director": "Lauren Montgomery",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Action / Adventure / Fantasy",
@@ -90,7 +90,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Daisy Edgar-Jones, Caitríona Balfe, George MacKay, Bodhi Rae Breathnach",
+      "cast": "Caitríona Balfe, Daisy Edgar-Jones, George MacKay, Fiona Shaw",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -99,9 +99,9 @@
       "date": "2026-10-16",
       "title": "Street Fighter",
       "director": "Kitao Sakurai",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Comedy / Fantasy",
       "cast": "Andrew Koji, Noah Centineo, Callina Liang, David Dastmalchian",
       "notes": "Ready. Set. Fight.",

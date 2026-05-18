@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -23,7 +23,7 @@
       "director": "Zak Hilditch",
       "studio": "Vertical Entertainment",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Daisy Ridley, Brenton Thwaites, Mark Coles Smith, Matt Whelan",
       "notes": "Volunteers needed.",
@@ -82,6 +82,19 @@
       "youtube_trailer_id": "kt_xTj352tw"
     },
     {
+      "tmdb_id": 1140498,
+      "date": "2026-01-09",
+      "title": "Is This Thing On?",
+      "director": "Bradley Cooper",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": 15000000,
+      "release_type": "wide",
+      "genre": "Comedy / Drama / Romance",
+      "cast": "Will Arnett, Laura Dern, Andra Day, Bradley Cooper",
+      "notes": "",
+      "youtube_trailer_id": "dr14-Ebwcns"
+    },
+    {
       "tmdb_id": 975335,
       "date": "2026-01-09",
       "title": "Magellan",
@@ -112,7 +125,7 @@
       "date": "2026-01-09",
       "title": "Primate",
       "director": "Johannes Roberts",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": 21000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
@@ -166,7 +179,7 @@
       "director": "Kenichiro Akimoto",
       "studio": "GKIDS",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Animation / Action / Mystery / Science Fiction",
       "cast": "Ai Mikami, Natsuki Hanae, Kana Hanazawa, Hiccorohee",
       "notes": "Live for tomorrow. Die today.",
@@ -223,6 +236,19 @@
       "cast": "Jermaine Fowler, Justin Long, RJ Cyler, Freddie Gibbs",
       "notes": "Defang the police.",
       "youtube_trailer_id": "8J_pMGZScB8"
+    },
+    {
+      "tmdb_id": 639988,
+      "date": "2026-01-16",
+      "title": "No Other Choice",
+      "director": "Park Chan-wook",
+      "studio": "Neon",
+      "budget_usd": 12200000,
+      "release_type": "wide",
+      "genre": "Comedy / Crime / Thriller",
+      "cast": "Lee Byung-hun, Son Ye-jin, Park Hee-soon, Lee Sung-min",
+      "notes": "Would you kill for a job?",
+      "youtube_trailer_id": "SK_DEabMNVg"
     },
     {
       "tmdb_id": 1555571,
@@ -477,8 +503,8 @@
       "title": "Iron Lung",
       "director": "Mark Fischbach",
       "studio": "Markiplier",
-      "budget_usd": 3000000,
-      "release_type": "limited",
+      "budget_usd": 4000000,
+      "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Mark Fischbach, Caroline Kaplan, Troy Baker, Elsie Lovelock",
       "notes": "This is not an expedition. It's an execution.",
@@ -530,7 +556,7 @@
       "director": "Sam Raimi",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 40000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Thriller / Comedy",
       "cast": "Rachel McAdams, Dylan O'Brien, Edyll Ismail, Dennis Haysbert",
       "notes": "Meet Linda Liddle... She's from strategy and planning. She's the boss now.",

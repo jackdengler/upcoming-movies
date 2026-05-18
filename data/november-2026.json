@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -47,9 +47,9 @@
       "date": "2026-11-13",
       "title": "Ebenezer: A Christmas Carol",
       "director": "Ti West",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Fantasy / Drama / Adventure",
       "cast": "Johnny Depp, Andrea Riseborough, Tramell Tillman, Ian McKellen",
       "notes": "",
@@ -90,7 +90,7 @@
       "budget_usd": 150000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons, Ralph Fiennes",
+      "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons, Elle Fanning",
       "notes": "Welcome to the Second Quarter Quell.",
       "youtube_trailer_id": "fS35YSjopjE"
     },
@@ -99,9 +99,9 @@
       "date": "2026-11-25",
       "title": "Focker-in-Law",
       "director": "John Hamburg",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy / Romance",
       "cast": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson",
       "notes": "The circle of trust just got bigger.",
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Adventure / Animation / Family / Fantasy",
-      "cast": "Hailee Steinfeld, Rashida Jones",
+      "cast": "Hailee Steinfeld, Rashida Jones, Jim Hanks, Cee Lo Green",
       "notes": "",
       "youtube_trailer_id": null
     }

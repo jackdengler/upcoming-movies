@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-05-11",
+  "updated": "2026-05-18",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": 35000000,
       "release_type": "wide",
       "genre": "Animation / Family / Comedy",
-      "cast": "Seth Rogen, Gaten Matarazzo, Woody Harrelson, Kieran Culkin",
+      "cast": "Seth Rogen, Gaten Matarazzo, Steve Buscemi, Glenn Close",
       "notes": "It's time for these animals to stand and fight.",
       "youtube_trailer_id": "NN6J7l6ulYk"
     },
@@ -62,7 +62,7 @@
       "director": "Renny Harlin",
       "studio": "Magenta Light Studios",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Thriller / Horror",
       "cast": "Aaron Eckhart, Molly Belle Wright, Kelly Gale, Ben Kingsley",
       "notes": "Surviving the crash is just the beginning.",
@@ -160,15 +160,28 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1587535,
+      "date": "2026-05-07",
+      "title": "Wasteland Cop",
+      "director": "Angelo Lopes",
+      "studio": "Indican Pictures",
+      "budget_usd": 80000,
+      "release_type": "wide",
+      "genre": "Science Fiction / Fantasy / Action / Adventure / Crime",
+      "cast": "Brendan Guy Murphy, Joseph Franco, Carol Cardenas, Sian Vilaire",
+      "notes": "There's no law in the wasteland",
+      "youtube_trailer_id": "TrFvsZvAPg4"
+    },
+    {
       "tmdb_id": 1515899,
       "date": "2026-05-08",
-      "title": "Billie Eilish: Hit Me Hard and Soft - The Tour Live in 3D",
+      "title": "Billie Eilish: Hit Me Hard and Soft",
       "director": "James Cameron, Billie Eilish",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": 65000000,
       "release_type": "wide",
       "genre": "Music / Documentary",
-      "cast": "Billie Eilish, James Cameron, FINNEAS, Maggie Baird",
+      "cast": "Billie Eilish, FINNEAS, Andrew Marshall, Solomon Smith",
       "notes": "Billie Eilish and James Cameron reinvent the concert experience.",
       "youtube_trailer_id": "9ElURjcuWLQ"
     },
@@ -177,7 +190,7 @@
       "date": "2026-05-08",
       "title": "Blue Film",
       "director": "Elliot Tuttle",
-      "studio": "—",
+      "studio": "Obscured Releasing",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
@@ -207,7 +220,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Jill Kargman, Gwyneth Paltrow, Drew Barrymore, Matt Damon",
+      "cast": "Jill Kargman, Laura Bell Bundy, Christine Taylor, Gwyneth Paltrow",
       "notes": "",
       "youtube_trailer_id": "8-YmhYwyqIM"
     },
@@ -220,7 +233,7 @@
       "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
-      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Ludi Lin",
+      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
       "notes": "Finish the fight.",
       "youtube_trailer_id": "zva2PQ-ud5Y"
     },
@@ -298,7 +311,7 @@
       "budget_usd": 75000000,
       "release_type": "wide",
       "genre": "Comedy / Family / Mystery",
-      "cast": "Hugh Jackman, Emma Thompson, Nicholas Braun, Nicholas Galitzine",
+      "cast": "Hugh Jackman, Julia Louis-Dreyfus, Emma Thompson, Nicholas Braun",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
     },
@@ -329,6 +342,19 @@
       "youtube_trailer_id": "LUAkjKP8sn0"
     },
     {
+      "tmdb_id": 1288229,
+      "date": "2026-05-14",
+      "title": "Forge",
+      "director": "Jing Ai Ng",
+      "studio": "Circle Collective",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Crime",
+      "cast": "Kelly Marie Tran, Andie Ju, Brandon Soo Hoo, Sonya Walger",
+      "notes": "Paint yourself rich.",
+      "youtube_trailer_id": "aCyOh28wpCI"
+    },
+    {
       "tmdb_id": 1061771,
       "date": "2026-05-15",
       "title": "Decorado",
@@ -351,8 +377,8 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Sam Nivola, Sophie Telegadis, Mohana Krishnan, Aidan Laprete",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Follow you heart... and the rules of the road.",
+      "youtube_trailer_id": "NTwuzdjmfTo"
     },
     {
       "tmdb_id": 1122573,
@@ -375,7 +401,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Mystery / Thriller",
+      "genre": "Drama / Thriller",
       "cast": "Kara Young, Mallori Johnson, Sterling K. Brown, Janelle Monáe",
       "notes": "Make your daddy dead. Real dead.",
       "youtube_trailer_id": "pgtdkuNFoKk"
@@ -412,7 +438,7 @@
       "title": "Obsession",
       "director": "Curry Barker",
       "studio": "Focus Features",
-      "budget_usd": 1000000,
+      "budget_usd": 750000,
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
@@ -446,19 +472,6 @@
       "youtube_trailer_id": "TVNkxUxhqh0"
     },
     {
-      "tmdb_id": 1273739,
-      "date": "2026-05-21",
-      "title": "The Catch",
-      "director": "Dave McCary",
-      "studio": "Universal Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Romance",
-      "cast": "Emma Stone, Chris Pine",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1227877,
       "date": "2026-05-22",
       "title": "I Love Boosters",
@@ -466,7 +479,7 @@
       "studio": "Neon",
       "budget_usd": 20000000,
       "release_type": "limited",
-      "genre": "Comedy / Science Fiction",
+      "genre": "Comedy / Science Fiction / Crime / Drama",
       "cast": "Keke Palmer, Naomi Ackie, Taylour Paige, Poppy Liu",
       "notes": "Booster: Somebody who steals clothes from a store and sells them at a discount price, aka community service.",
       "youtube_trailer_id": "I1xZegSgN8w"
@@ -476,11 +489,11 @@
       "date": "2026-05-22",
       "title": "Passenger",
       "director": "André Øvredal",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "Jacob Scipio, Lou Llobell, Melissa Leo, Joseph Lopez",
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Lou Llobell, Jacob Scipio, Melissa Leo, Joseph Lopez",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"
     },
@@ -507,7 +520,7 @@
       "release_type": "limited",
       "genre": "Horror",
       "cast": "Dylan Taylor, Natasha Calis, Brett Geddes, Rachel Boyd",
-      "notes": "",
+      "notes": "Good boy. Bad girl.",
       "youtube_trailer_id": null
     },
     {
@@ -517,7 +530,7 @@
       "director": "Jon Favreau",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 165000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Adventure / Science Fiction / Action",
       "cast": "Pedro Pascal, Jeremy Allen White, Sigourney Weaver, Jonny Coyne",
       "notes": "If you're searching for new adventure, \"this is the way.\"",
@@ -542,10 +555,10 @@
       "title": "Backrooms",
       "director": "Kane Parsons",
       "studio": "A24",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
-      "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
+      "cast": "Renate Reinsve, Chiwetel Ejiofor, Mark Duplass, Finn Bennett",
       "notes": "You are not supposed to be here.",
       "youtube_trailer_id": "0HjdiohVOik"
     },
@@ -554,10 +567,10 @@
       "date": "2026-05-29",
       "title": "Power Ballad",
       "director": "John Carney",
-      "studio": "—",
+      "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Music",
+      "genre": "Comedy / Music / Drama",
       "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
       "notes": "It's time to set the record straight.",
       "youtube_trailer_id": "t4Grq6r78Sw"
@@ -622,7 +635,7 @@
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Crime / Thriller / Comedy",
+      "genre": "Crime / Thriller / Comedy / Music",
       "cast": "Leo Woodall, Dustin Hoffman, Havana Rose Liu, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "rdlOZhl-nSA"

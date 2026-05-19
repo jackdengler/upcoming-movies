@@ -2246,6 +2246,70 @@ document.getElementById("interest-list")?.addEventListener("click", (e) => {
 const CHEVRON_UP_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>`;
 const CHEVRON_DOWN_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
 
+// Lookup of normalized director name → matched releases. Repertory screenings
+// don't carry a director field, so they're not in this index. Built once after
+// loadYear settles; re-render of the Directors tab re-reads it.
+const directorIndex = new Map();
+
+const normalizeDirectorName = (s) =>
+  String(s || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    // Strip punctuation that varies between sources (periods in "J.J." vs
+    // "JJ", apostrophes in O'Connor, hyphens in Wong Kar-wai).
+    .replace(/[.'’\-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+function buildDirectorIndex(bundles) {
+  directorIndex.clear();
+  for (const bundle of bundles || []) {
+    for (const release of bundle.releases || []) {
+      const raw = release.director;
+      if (!raw || raw === "—") continue;
+      // Split on common separators (", ", " & ", " and ").
+      const names = raw.split(/\s*(?:,|&|\band\b)\s*/i).map((s) => s.trim()).filter(Boolean);
+      for (const name of names) {
+        const key = normalizeDirectorName(name);
+        if (!key) continue;
+        if (!directorIndex.has(key)) directorIndex.set(key, []);
+        directorIndex.get(key).push(release);
+      }
+    }
+  }
+  for (const list of directorIndex.values()) {
+    list.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  }
+}
+
+function moviesForDirector(name) {
+  const key = normalizeDirectorName(name);
+  return key ? (directorIndex.get(key) || []) : [];
+}
+
+function renderDirectorFilm(m) {
+  const key = movieKey(m);
+  const level = Interests.getLevel(key);
+  const titleLink = el("a", {
+      class: "director-film__title",
+      href: wikipediaUrl(m.title, m.date),
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    m.title,
+  );
+  const dateLabel = m.date ? fmtDateShort(m.date) : "";
+  return el("li", { class: `director-film${level ? ` director-film--${level}` : ""}` },
+    titleLink,
+    el("div", { class: "director-film__meta" },
+      dateLabel ? el("span", { class: "director-film__date", text: dateLabel }) : null,
+      el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
+      level ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] }) : null,
+    ),
+  );
+}
+
 function renderDirectorsTab() {
   const list = document.getElementById("director-list");
   const empty = document.getElementById("empty-directors");
@@ -2277,9 +2341,15 @@ function renderDirectorsTab() {
     downBtn.innerHTML = CHEVRON_DOWN_SVG;
     if (idx === items.length - 1) downBtn.setAttribute("disabled", "");
 
+    const films = moviesForDirector(d.name);
+    const filmsList = films.length
+      ? el("ul", { class: "director-films" }, ...films.map(renderDirectorFilm))
+      : el("p", { class: "director-row__nofilms", text: "No upcoming films in the schedule." });
+
     const body = el("div", { class: "director-row__body" },
       el("h3", { class: "director-row__name", dataset: { id: d.id }, text: d.name }),
       d.notes ? el("p", { class: "director-row__notes", text: d.notes }) : null,
+      filmsList,
     );
 
     const row = el("li", { class: "director-row", dataset: { id: d.id } },
@@ -2984,6 +3054,7 @@ Interests.onChange(() => {
 Promise.all([loadYear(YEAR), loadRepertory(), Interests.load(), Directors.load()])
   .then(([bundles, repertory]) => {
     allBundles = bundles;
+    buildDirectorIndex(bundles);
     setRepertoryData(repertory);
     Interests.sweepPastBookings(TODAY);
     Activity.ingest({ bundles, screenings: repertory?.screenings || [] });

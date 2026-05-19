@@ -1775,7 +1775,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   position: relative;
   display: grid;
   grid-template-columns: 32px 1fr auto;
-  align-items: center;
+  align-items: start;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) - 2px);
   background: var(--color-surface);
@@ -1853,6 +1853,69 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   color: var(--color-accent);
 }
 .director-move[disabled] { opacity: 0.35; cursor: default; }
+
+.director-films {
+  list-style: none;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.director-film {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-1) 0;
+  border-top: 1px dashed var(--color-border);
+}
+.director-film:first-child {
+  border-top: 0;
+  padding-top: var(--space-1);
+}
+.director-film--not { opacity: 0.5; }
+.director-film--watched { opacity: 0.75; }
+
+.director-film__title {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  -webkit-tap-highlight-color: transparent;
+}
+.director-film__title:active { color: var(--color-accent); }
+
+.director-film__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-2);
+}
+
+.director-film__date {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: 500;
+  color: var(--color-text-dim);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.director-film .chip {
+  margin-top: 0;
+}
+
+.director-row__nofilms {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-style: italic;
+  color: var(--color-text-faint);
+}
 
 /* =============================================================
    Empty states — inline pattern (Decision 8: empty is exceptional

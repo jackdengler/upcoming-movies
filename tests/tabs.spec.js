@@ -29,6 +29,24 @@ test.describe("tab navigation", () => {
     await expect(page.locator("#tab-calendar")).toBeHidden();
   });
 
+  test("switches to Directors tab and adds a director", async ({ page }) => {
+    await page.goto("/");
+    await page.locator('.tab-bar__btn[data-tab="directors"]').click();
+    await expect(page.locator("#tab-directors")).toBeVisible();
+    await expect(page.locator("#tab-list")).toBeHidden();
+
+    await page.locator("#add-director").click();
+    await expect(page.locator("#director-dialog")).toBeVisible();
+    await page.locator("#director-name").fill("Paul Thomas Anderson");
+    await page.locator("#director-notes").fill("There Will Be Blood");
+    await page.locator("#director-form button[type=submit]").click();
+
+    const rows = page.locator(".director-row");
+    await expect(rows).toHaveCount(1);
+    await expect(rows.first().locator(".director-row__name")).toHaveText("Paul Thomas Anderson");
+    await expect(rows.first().locator(".director-row__rank")).toHaveText("1");
+  });
+
   test("opens and closes the Updates overlay", async ({ page }) => {
     await page.goto("/");
     await page.locator("#open-updates").click();

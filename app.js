@@ -1,5 +1,6 @@
 import * as Interests from "./js/interests.js";
 import * as Activity from "./js/activity.js";
+import * as Directors from "./js/directors.js";
 
 // When loaded inside an iframe (e.g. the central-optimus launcher), the
 // host already absorbs the device's notch/home-indicator insets. iOS
@@ -2240,6 +2241,131 @@ document.getElementById("interest-list")?.addEventListener("click", (e) => {
   handleRepCardAction(id, action);
 });
 
+// ---------- Directors tab ----------
+
+const CHEVRON_UP_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>`;
+const CHEVRON_DOWN_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
+
+function renderDirectorsTab() {
+  const list = document.getElementById("director-list");
+  const empty = document.getElementById("empty-directors");
+  if (!list || !empty) return;
+  list.innerHTML = "";
+  const items = Directors.all();
+  if (!items.length) {
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+
+  items.forEach((d, idx) => {
+    const upBtn = el("button", {
+      type: "button",
+      class: "director-move director-move--up",
+      "aria-label": "Move up",
+      dataset: { id: d.id, dir: "-1" },
+    });
+    upBtn.innerHTML = CHEVRON_UP_SVG;
+    if (idx === 0) upBtn.setAttribute("disabled", "");
+
+    const downBtn = el("button", {
+      type: "button",
+      class: "director-move director-move--down",
+      "aria-label": "Move down",
+      dataset: { id: d.id, dir: "1" },
+    });
+    downBtn.innerHTML = CHEVRON_DOWN_SVG;
+    if (idx === items.length - 1) downBtn.setAttribute("disabled", "");
+
+    const body = el("div", { class: "director-row__body" },
+      el("h3", { class: "director-row__name", dataset: { id: d.id }, text: d.name }),
+      d.notes ? el("p", { class: "director-row__notes", text: d.notes }) : null,
+    );
+
+    const row = el("li", { class: "director-row", dataset: { id: d.id } },
+      el("span", { class: "director-row__rank", text: String(idx + 1), "aria-hidden": "true" }),
+      body,
+      el("div", { class: "director-row__actions" }, upBtn, downBtn),
+    );
+    list.appendChild(row);
+  });
+}
+
+document.getElementById("director-list")?.addEventListener("click", (e) => {
+  const moveBtn = e.target.closest(".director-move");
+  if (moveBtn) {
+    if (moveBtn.hasAttribute("disabled")) return;
+    const id = moveBtn.dataset.id;
+    const delta = Number(moveBtn.dataset.dir);
+    if (!id || (delta !== 1 && delta !== -1)) return;
+    if (Directors.move(id, delta)) renderDirectorsTab();
+    return;
+  }
+  const nameEl = e.target.closest(".director-row__name");
+  if (nameEl) {
+    const id = nameEl.dataset.id;
+    if (id) openDirectorDialog(id);
+  }
+});
+
+document.getElementById("add-director")?.addEventListener("click", () => {
+  openDirectorDialog(null);
+});
+
+function openDirectorDialog(id) {
+  const dlg = document.getElementById("director-dialog");
+  const form = document.getElementById("director-form");
+  const titleEl = document.getElementById("director-title");
+  const nameInput = document.getElementById("director-name");
+  const notesInput = document.getElementById("director-notes");
+  const cancel = document.getElementById("director-cancel");
+  const remove = document.getElementById("director-remove");
+  if (!dlg || !form) return;
+
+  const existing = id ? Directors.all().find((d) => d.id === id) : null;
+  titleEl.textContent = existing ? "Edit director" : "Add director";
+  nameInput.value = existing?.name || "";
+  notesInput.value = existing?.notes || "";
+  remove.hidden = !existing;
+
+  dlg.showModal();
+  requestAnimationFrame(() => nameInput.focus());
+
+  const cleanup = () => {
+    cancel.removeEventListener("click", onCancel);
+    remove.removeEventListener("click", onRemove);
+    form.removeEventListener("submit", onSubmit);
+    dlg.removeEventListener("cancel", onEsc);
+  };
+  const onCancel = () => { dlg.close(); cleanup(); };
+  const onEsc = (e) => { e.preventDefault(); onCancel(); };
+  const onRemove = () => {
+    if (existing) Directors.remove(existing.id);
+    dlg.close();
+    cleanup();
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const name = nameInput.value.trim();
+    if (!name) return;
+    const notes = notesInput.value.trim();
+    if (existing) Directors.update(existing.id, { name, notes });
+    else Directors.add(name, notes);
+    dlg.close();
+    cleanup();
+  };
+
+  cancel.addEventListener("click", onCancel);
+  remove.addEventListener("click", onRemove);
+  form.addEventListener("submit", onSubmit);
+  dlg.addEventListener("cancel", onEsc);
+}
+
+Directors.onChange(() => {
+  if (activeTab === "directors") renderDirectorsTab();
+  else tabDirty.directors = true;
+});
+
 // ---------- Tabs ----------
 
 let allBundles = [];
@@ -2249,17 +2375,18 @@ let updatesOpen = false;
 // Track which tabs have been rendered at least once and which need a fresh
 // render before being shown. Switching to a tab whose DOM is up-to-date just
 // flips its `hidden` flag — no rebuild — so navigation feels instant.
-const tabRendered = { list: false, calendar: false, interests: false };
-const tabDirty = { list: true, calendar: true, interests: true };
+const tabRendered = { list: false, calendar: false, interests: false, directors: false };
+const tabDirty = { list: true, calendar: true, interests: true, directors: true };
 
 const markAllTabsDirty = () => {
   tabDirty.list = true;
   tabDirty.calendar = true;
   tabDirty.interests = true;
+  tabDirty.directors = true;
 };
 
 const markOtherTabsDirty = () => {
-  for (const t of ["list", "calendar", "interests"]) {
+  for (const t of ["list", "calendar", "interests", "directors"]) {
     if (t !== activeTab) tabDirty[t] = true;
   }
 };
@@ -2295,6 +2422,7 @@ function renderActiveTab() {
   if (activeTab === "list") renderListTab();
   else if (activeTab === "calendar") renderCalendarTab(allBundles);
   else if (activeTab === "interests") renderInterestsTab(allBundles);
+  else if (activeTab === "directors") renderDirectorsTab();
   tabRendered[activeTab] = true;
   tabDirty[activeTab] = false;
 }
@@ -2311,6 +2439,7 @@ function switchTab(tab) {
       setPanelHidden("tab-list", activeTab !== "list");
       setPanelHidden("tab-calendar", activeTab !== "calendar");
       setPanelHidden("tab-interests", activeTab !== "interests");
+      setPanelHidden("tab-directors", activeTab !== "directors");
     }
     return;
   }
@@ -2323,6 +2452,8 @@ function switchTab(tab) {
   setPanelHidden("tab-list", tab !== "list");
   setPanelHidden("tab-calendar", tab !== "calendar");
   setPanelHidden("tab-interests", tab !== "interests");
+  setPanelHidden("tab-directors", tab !== "directors");
+  syncSegmentedChips();
 
   ensureActiveTabFresh();
 }
@@ -2340,6 +2471,7 @@ function openUpdates() {
   setPanelHidden("tab-list", true);
   setPanelHidden("tab-calendar", true);
   setPanelHidden("tab-interests", true);
+  setPanelHidden("tab-directors", true);
   setPanelHidden("tab-updates", false);
   renderActivityTab();
   renderCodeVersionFooter();
@@ -2449,14 +2581,19 @@ function closeUpdates({ silent = false } = {}) {
   setPanelHidden("tab-list", activeTab !== "list");
   setPanelHidden("tab-calendar", activeTab !== "calendar");
   setPanelHidden("tab-interests", activeTab !== "interests");
+  setPanelHidden("tab-directors", activeTab !== "directors");
 }
 
 document.getElementById("open-updates")?.addEventListener("click", openUpdates);
 document.getElementById("updates-back")?.addEventListener("click", () => closeUpdates());
 
 function syncSegmentedChips() {
+  // Directors has nothing to do with release type or scope — hide the entire
+  // header filter chrome on that tab. (Decision 10: chrome earned.)
+  const onDirectors = activeTab === "directors";
   const bar = document.getElementById("kind-segmented");
   if (bar) {
+    bar.hidden = onDirectors;
     for (const chip of bar.querySelectorAll(".segmented__btn")) {
       const on = chip.dataset.kind === activeKind;
       chip.classList.toggle("is-active", on);
@@ -2465,7 +2602,7 @@ function syncSegmentedChips() {
   }
   const scope = document.getElementById("scope-segmented");
   if (scope) {
-    scope.hidden = activeKind !== "releases";
+    scope.hidden = onDirectors || activeKind !== "releases";
     for (const chip of scope.querySelectorAll(".segmented__btn")) {
       const on = chip.dataset.scope === activeScope;
       chip.classList.toggle("is-active", on);
@@ -2474,11 +2611,11 @@ function syncSegmentedChips() {
   }
   const amcWrap = document.getElementById("amc-local-toggle-wrap");
   const amcBtn = document.getElementById("amc-local-toggle");
-  if (amcWrap) amcWrap.hidden = activeKind !== "releases";
+  if (amcWrap) amcWrap.hidden = onDirectors || activeKind !== "releases";
   if (amcBtn) amcBtn.setAttribute("aria-pressed", amcLocalOnly ? "true" : "false");
   const skipWrap = document.getElementById("hide-skipped-toggle-wrap");
   const skipBtn = document.getElementById("hide-skipped-toggle");
-  if (skipWrap) skipWrap.hidden = activeKind !== "releases";
+  if (skipWrap) skipWrap.hidden = onDirectors || activeKind !== "releases";
   if (skipBtn) skipBtn.setAttribute("aria-pressed", hideSkipped ? "true" : "false");
 }
 
@@ -2641,7 +2778,7 @@ function requestPat() {
       // Pull remote state with the new token before we let the caller
       // mutate marks. Without this, a fresh-install + new-PAT scenario
       // could commit an empty marks object over a populated remote.
-      try { await Interests.load(); } catch {}
+      try { await Promise.all([Interests.load(), Directors.load()]); } catch {}
       dlg.close();
       cleanup();
       resolve(true);
@@ -2844,7 +2981,7 @@ Interests.onChange(() => {
   requestAnimationFrame(flushInterestsChange);
 });
 
-Promise.all([loadYear(YEAR), loadRepertory(), Interests.load()])
+Promise.all([loadYear(YEAR), loadRepertory(), Interests.load(), Directors.load()])
   .then(([bundles, repertory]) => {
     allBundles = bundles;
     setRepertoryData(repertory);

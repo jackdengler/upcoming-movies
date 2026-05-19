@@ -150,6 +150,21 @@
         </p>
       </section>
 
+      <section id="tab-directors" class="tab-panel" aria-label="Directors" hidden>
+        <div class="directors__bar">
+          <button class="directors__add" id="add-director" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+            <span>Add director</span>
+          </button>
+        </div>
+        <ol id="director-list" class="director-list"></ol>
+        <p id="empty-directors" class="empty-state" hidden>
+          No directors yet. Tap + to add the first one.
+        </p>
+      </section>
+
       <section id="tab-updates" class="tab-panel tab-panel--overlay" aria-label="Updates" hidden>
         <div class="updates__nav">
           <button class="calendar__navbtn" id="updates-back" type="button" aria-label="Back">
@@ -192,6 +207,14 @@
         </svg>
         <span>Interests</span>
       </button>
+      <button class="tab-bar__btn" data-tab="directors" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 5h14l4 4v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>
+          <path d="M3 9h18"/>
+          <path d="M7 5l-2 4M12 5l-2 4M17 5l-2 4"/>
+        </svg>
+        <span>Directors</span>
+      </button>
     </nav>
 
     <dialog id="showtime-dialog" class="sheet">
@@ -214,6 +237,22 @@
         <div class="sheet__actions">
           <button type="button" class="sheet__btn sheet__btn--danger" id="book-remove" hidden>Remove</button>
           <button type="button" class="sheet__btn sheet__btn--ghost" id="book-cancel">Cancel</button>
+          <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="director-dialog" class="sheet">
+      <form method="dialog" class="sheet__body" id="director-form">
+        <h2 class="sheet__title" id="director-title">Add director</h2>
+        <p class="sheet__copy">Name, plus an optional one-liner (signature film, vibe — whatever helps you remember).</p>
+        <input id="director-name" class="sheet__input" type="text" autocomplete="off" autocapitalize="words"
+               spellcheck="false" placeholder="Director name" required />
+        <input id="director-notes" class="sheet__input" type="text" autocomplete="off"
+               spellcheck="false" placeholder="Notes (optional)" />
+        <div class="sheet__actions">
+          <button type="button" class="sheet__btn sheet__btn--danger" id="director-remove" hidden>Remove</button>
+          <button type="button" class="sheet__btn sheet__btn--ghost" id="director-cancel">Cancel</button>
           <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
         </div>
       </form>

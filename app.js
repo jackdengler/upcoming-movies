@@ -2792,6 +2792,65 @@ function paintFilmography(container, state) {
   }
 }
 
+// Map a TMDB movie `status` to a short, human-readable chip label. Unknown
+// or future-but-undated entries fall back to "Upcoming".
+const TMDB_STATUS_CHIP = {
+  "Rumored": { label: "Rumored", className: "chip chip--rumored" },
+  "Planned": { label: "Planned", className: "chip chip--rumored" },
+  "In Production": { label: "Filming", className: "chip chip--in-production" },
+  "Post Production": { label: "Post-prod", className: "chip chip--in-production" },
+  "Released": { label: "Upcoming", className: "chip chip--upcoming" },
+};
+function statusChipFor(status) {
+  return TMDB_STATUS_CHIP[status] || { label: "Upcoming", className: "chip chip--upcoming" };
+}
+
+function renderTmdbUpcomingFilm(film) {
+  const chip = statusChipFor(film.status);
+  const titleLink = el("a", {
+      class: "director-film__title",
+      href: wikipediaUrl(film.title, film.date),
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    film.title,
+  );
+  // TMDB-only films have no theatrical date yet; show the year (or "TBD"
+  // when even the year is unknown) so the user can place the project in time.
+  const whenLabel = film.year || "TBD";
+  return el("li", { class: "director-film director-film--tmdb" },
+    titleLink,
+    el("div", { class: "director-film__meta" },
+      el("span", { class: "director-film__date", text: whenLabel }),
+      el("span", { class: chip.className, text: chip.label }),
+    ),
+  );
+}
+
+// Background-load TMDB upcoming/rumored films into the inline list under a
+// director's row, deduped against `localTmdbIds` (already shown via the
+// local schedule). Cache-then-network: cached entries paint immediately,
+// and a follow-up refresh paints again if newer data arrives.
+function loadTmdbUpcomingInto(filmsListEl, nofilmsEl, directorName, localTmdbIds) {
+  if (!filmsListEl || !Tmdb.hasToken()) return;
+  const paint = (upcoming) => {
+    if (!filmsListEl.isConnected) return;
+    // Clear any prior TMDB items so we don't accumulate on refresh.
+    filmsListEl.querySelectorAll(".director-film--tmdb").forEach((n) => n.remove());
+    const fresh = (upcoming || [])
+      .filter((f) => !localTmdbIds.has(f.id) && f.title);
+    if (!fresh.length) return;
+    for (const f of fresh) filmsListEl.appendChild(renderTmdbUpcomingFilm(f));
+    if (nofilmsEl) nofilmsEl.hidden = true;
+  };
+  Tmdb.getFilmography(directorName, (err, fresh) => {
+    if (err) return;
+    paint(fresh.upcoming);
+  })
+    .then((entry) => { if (entry) paint(entry.upcoming); })
+    .catch(() => {});
+}
+
 function tmdbErrorToState(err, name) {
   const msg = err?.message || "";
   if (msg === "no-token") return { kind: "no-token" };
@@ -2803,8 +2862,8 @@ function tmdbErrorToState(err, name) {
 async function loadFilmographyInto(container, name) {
   if (!Tmdb.hasToken()) {
     const cached = Tmdb.getCached(name);
-    if (cached?.films?.length) {
-      paintFilmography(container, { kind: "films", films: cached.films });
+    if (cached?.released?.length) {
+      paintFilmography(container, { kind: "films", films: cached.released });
       return;
     }
     paintFilmography(container, { kind: "no-token" });
@@ -2815,10 +2874,10 @@ async function loadFilmographyInto(container, name) {
     const entry = await Tmdb.getFilmography(name, (err, fresh) => {
       // Background refresh after a stale-cache paint.
       if (err || !container.isConnected) return;
-      paintFilmography(container, { kind: "films", films: fresh.films });
+      paintFilmography(container, { kind: "films", films: fresh.released });
     });
-    if (entry?.films) {
-      paintFilmography(container, { kind: "films", films: entry.films });
+    if (entry?.released) {
+      paintFilmography(container, { kind: "films", films: entry.released });
     } else {
       paintFilmography(container, { kind: "error", message: "No filmography returned." });
     }
@@ -2859,9 +2918,15 @@ function renderDirectorsTab() {
     if (idx === items.length - 1) downBtn.setAttribute("disabled", "");
 
     const films = moviesForDirector(d.name);
-    const filmsList = films.length
-      ? el("ul", { class: "director-films" }, ...films.map(renderDirectorFilm))
-      : el("p", { class: "director-row__nofilms", text: "No upcoming films in the schedule." });
+    const localTmdbIds = new Set(films.map((f) => f.tmdb_id).filter(Boolean));
+    // Always render the UL — TMDB upcoming/rumored entries can append into it
+    // even when the local schedule is empty.
+    const filmsList = el("ul", { class: "director-films" }, ...films.map(renderDirectorFilm));
+    const nofilms = el("p", {
+      class: "director-row__nofilms",
+      text: "No upcoming films in the schedule.",
+      hidden: films.length > 0,
+    });
 
     const expanded = expandedDirectors.has(d.id);
 
@@ -2893,6 +2958,7 @@ function renderDirectorsTab() {
       el("h3", { class: "director-row__name", text: d.name }),
       d.notes ? el("p", { class: "director-row__notes", text: d.notes }) : null,
       filmsList,
+      nofilms,
       expandBtn,
       filmographyEl,
       detailActions,
@@ -2907,6 +2973,11 @@ function renderDirectorsTab() {
       el("div", { class: "director-row__actions" }, upBtn, downBtn),
     );
     list.appendChild(row);
+
+    // Background-enrich the inline films section with TMDB upcoming/rumored
+    // titles. Deduped against the local schedule by tmdb_id; the in-the-
+    // schedule note hides once any TMDB entry lands.
+    loadTmdbUpcomingInto(filmsList, nofilms, d.name, localTmdbIds);
 
     // Kick off filmography load if the row starts expanded (restored from
     // localStorage). Lets the cached payload paint on first render.

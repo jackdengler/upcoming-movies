@@ -1,4 +1,4 @@
-const CACHE = "upcoming-v37";
+const CACHE = "upcoming-v38";
 const SHELL = [
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const SHELL = [
   "./js/interests.js",
   "./js/activity.js",
   "./js/directors.js",
+  "./js/tmdb.js",
   "./manifest.webmanifest",
 ];
 

@@ -248,6 +248,7 @@
         <p class="sheet__copy">Name, plus an optional one-liner (signature film, vibe — whatever helps you remember).</p>
         <input id="director-name" class="sheet__input" type="text" autocomplete="off" autocapitalize="words"
                spellcheck="false" placeholder="Director name" required />
+        <ul id="director-suggestions" class="director-suggestions" hidden></ul>
         <input id="director-notes" class="sheet__input" type="text" autocomplete="off"
                spellcheck="false" placeholder="Notes (optional)" />
         <div class="sheet__actions">
@@ -255,6 +256,26 @@
           <button type="button" class="sheet__btn sheet__btn--ghost" id="director-cancel">Cancel</button>
           <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
         </div>
+      </form>
+    </dialog>
+
+    <dialog id="tmdb-dialog" class="sheet">
+      <form method="dialog" class="sheet__body" id="tmdb-form">
+        <h2 class="sheet__title">Connect TMDB</h2>
+        <p class="sheet__copy">
+          Filmographies on the Directors tab come from
+          <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>.
+          Paste a v4 <strong>Read Access Token</strong> — it stays on this device.
+        </p>
+        <input id="tmdb-input" class="sheet__input" type="password" autocomplete="off"
+               placeholder="eyJhbGciOi…" required />
+        <div class="sheet__actions">
+          <button type="button" class="sheet__btn sheet__btn--danger" id="tmdb-remove" hidden>Disconnect</button>
+          <button type="button" class="sheet__btn sheet__btn--ghost" id="tmdb-cancel">Cancel</button>
+          <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
+        </div>
+        <a class="sheet__link" href="https://www.themoviedb.org/settings/api"
+           target="_blank" rel="noopener">Get a token →</a>
       </form>
     </dialog>
 

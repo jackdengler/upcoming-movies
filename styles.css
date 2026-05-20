@@ -2063,14 +2063,12 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .director-suggestion {
   padding: var(--space-2) var(--space-3);
   font-family: var(--font-body);
-  font-size: var(--text-body);
   color: var(--color-text);
   cursor: pointer;
   border-top: 1px solid var(--color-border);
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-2);
+  flex-direction: column;
+  gap: 1px;
 }
 .director-suggestion:first-child { border-top: 0; }
 .director-suggestion:active,
@@ -2078,11 +2076,21 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   background: var(--color-accent-soft);
   color: var(--color-text);
 }
+.director-suggestion__name {
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: -0.005em;
+}
 .director-suggestion__count {
   font-size: var(--text-small);
   color: var(--color-text-faint);
-  font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
+  font-style: italic;
+  /* Long known-for hints truncate with an ellipsis rather than push the
+     suggestion onto a third visual line. */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* =============================================================

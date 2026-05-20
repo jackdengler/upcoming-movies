@@ -2911,28 +2911,66 @@ function openDirectorDialog(id) {
   dlg.showModal();
   requestAnimationFrame(() => nameInput.focus());
 
-  const renderSuggestions = () => {
+  // Sequence number for in-flight TMDB search requests; later inputs win,
+  // earlier responses are ignored so a slow network can't clobber the list
+  // after the user has typed more.
+  let querySeq = 0;
+  let inputDebounce = null;
+
+  const paintSuggestions = (items) => {
     if (!suggList) return;
-    // Don't suggest when editing — the user explicitly opened this director
-    // to change their notes, not to swap them for a different person.
-    if (existing) { suggList.hidden = true; return; }
-    const hits = suggestDirectors(nameInput.value);
     suggList.innerHTML = "";
-    if (!hits.length) { suggList.hidden = true; return; }
-    for (const h of hits) {
+    if (!items.length) { suggList.hidden = true; return; }
+    for (const h of items) {
       const li = el("li", {
           class: "director-suggestion",
           dataset: { name: h.name },
         },
-        el("span", { text: h.name }),
-        el("span", { class: "director-suggestion__count", text: `${h.count} upcoming` }),
+        el("span", { class: "director-suggestion__name", text: h.name }),
+        h.hint ? el("span", { class: "director-suggestion__count", text: h.hint }) : null,
       );
       suggList.appendChild(li);
     }
     suggList.hidden = false;
   };
 
-  const onInput = () => renderSuggestions();
+  const renderSuggestions = () => {
+    if (!suggList) return;
+    // Don't suggest when editing — the user explicitly opened this director
+    // to change their notes, not to swap them for a different person.
+    if (existing) { suggList.hidden = true; return; }
+    const seq = ++querySeq;
+    const q = nameInput.value;
+    const trimmed = q.trim();
+    const saved = new Set(Directors.all().map((d) => normalizeDirectorName(d.name)));
+
+    // Paint local matches immediately for snappy feedback. TMDB enriches.
+    const local = suggestDirectors(q);
+    paintSuggestions(local.map((e) => ({ name: e.name, hint: `${e.count} upcoming` })));
+
+    if (!Tmdb.hasToken() || trimmed.length < 2) return;
+
+    Tmdb.searchPeople(trimmed).then((people) => {
+      if (seq !== querySeq) return;
+      const hits = people
+        .filter((p) => !saved.has(normalizeDirectorName(p.name)))
+        .map((p) => ({
+          name: p.name,
+          hint: p.knownFor || (p.department && p.department !== "Directing" ? p.department : ""),
+        }));
+      // Only overwrite the local list if TMDB actually returned hits —
+      // otherwise an unrelated 0-result search would erase useful local
+      // matches the user could pick from.
+      if (hits.length) paintSuggestions(hits);
+    }).catch(() => {
+      // Network/auth error: keep whatever's already painted from local.
+    });
+  };
+
+  const onInput = () => {
+    clearTimeout(inputDebounce);
+    inputDebounce = setTimeout(renderSuggestions, 250);
+  };
 
   // Use mousedown so the click fires before the input blurs (which would
   // hide the list before the handler ran).
@@ -2952,6 +2990,8 @@ function openDirectorDialog(id) {
     dlg.removeEventListener("cancel", onEsc);
     nameInput.removeEventListener("input", onInput);
     suggList?.removeEventListener("mousedown", onSuggestClick);
+    clearTimeout(inputDebounce);
+    querySeq++;
   };
   const onCancel = () => { dlg.close(); cleanup(); };
   const onEsc = (e) => { e.preventDefault(); onCancel(); };

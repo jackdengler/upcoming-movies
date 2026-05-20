@@ -103,6 +103,30 @@ async function findPerson(name) {
   return exact || results[0];
 }
 
+// Search TMDB's people database for the Add Director autocomplete. Returns
+// up to 8 hits, with Directing-department people surfaced first and the rest
+// (writer-directors, actor-directors, etc.) kept as backups. Each hit
+// includes a short "known for" hint to disambiguate same-name people.
+export async function searchPeople(query) {
+  const q = String(query || "").trim();
+  if (q.length < 2) return [];
+  if (!hasToken()) return [];
+  const j = await tmdb(`/search/person?include_adult=false&query=${encodeURIComponent(q)}`);
+  const results = Array.isArray(j.results) ? j.results : [];
+  const directing = results.filter((r) => r.known_for_department === "Directing");
+  const others = results.filter((r) => r.known_for_department !== "Directing");
+  return [...directing, ...others].slice(0, 8).map((r) => ({
+    id: r.id,
+    name: r.name,
+    department: r.known_for_department || "",
+    knownFor: (r.known_for || [])
+      .map((k) => k.title || k.name)
+      .filter(Boolean)
+      .slice(0, 2)
+      .join(", "),
+  }));
+}
+
 // Fan out `fn` over `items` with a concurrency cap. Preserves index order.
 async function batchAll(items, limit, fn) {
   const results = new Array(items.length);

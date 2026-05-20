@@ -3,6 +3,7 @@ const PATH = "data/interests.json";
 const BRANCH = "main";
 const PAT_KEY = "upcoming:gh_pat";
 const CACHE_KEY = "upcoming:interests";
+const REP_CACHE_KEY = "upcoming:rereleases-marks";
 const DEBOUNCE_MS = 2500;
 
 const LEVELS = ["watched", "booked", "must", "likely", "potential", "not"];
@@ -18,6 +19,11 @@ const state = {
   remoteLoaded: false,
   pendingTimer: null,
   listeners: new Set(),
+  // Rep marks (rereleases Y/N + booked + watched) live in app.js. We hold a
+  // reference so load() can merge remote into the same map app.js renders
+  // from, and commit() can serialize its current contents alongside `marks`.
+  repMarks: null,
+  repListeners: new Set(),
 };
 
 function emit() {
@@ -66,6 +72,53 @@ function mergeRemote(remoteMarks) {
   return changed;
 }
 
+// Same newer-wins shape as mergeRemote, but for rep marks. Their `at` is
+// stamped per-mutation by app.js. Missing remote entries are left alone —
+// matches the existing marks behavior.
+function mergeRemoteRepInto(map, remoteRep) {
+  if (!map || !remoteRep) return false;
+  let changed = false;
+  for (const [id, remote] of Object.entries(remoteRep)) {
+    if (!remote || typeof remote !== "object") continue;
+    const local = map[id];
+    if (!local) {
+      map[id] = remote;
+      changed = true;
+      continue;
+    }
+    const localAt = local.at || "";
+    const remoteAt = remote.at || "";
+    if (remoteAt && remoteAt > localAt) {
+      map[id] = remote;
+      changed = true;
+    }
+  }
+  return changed;
+}
+
+function writeRepCache() {
+  try { localStorage.setItem(REP_CACHE_KEY, JSON.stringify(state.repMarks || {})); } catch {}
+}
+
+function emitRep() {
+  for (const fn of state.repListeners) fn(state.repMarks);
+}
+
+export function bindRepMarks(map) {
+  state.repMarks = map;
+}
+
+export function onRepChange(fn) {
+  state.repListeners.add(fn);
+  return () => state.repListeners.delete(fn);
+}
+
+// Called by app.js after mutating the bound rep map. The cache write is
+// owned by app.js itself; we only need to schedule the remote commit.
+export function notifyRepChange() {
+  scheduleCommit();
+}
+
 export async function load() {
   // 1. Hydrate from localStorage instantly
   const cached = readCache();
@@ -98,6 +151,11 @@ export async function load() {
       if (mergeRemote(remote)) {
         writeCache();
         emit();
+      }
+      const remoteRep = j.rep_marks || {};
+      if (mergeRemoteRepInto(state.repMarks, remoteRep)) {
+        writeRepCache();
+        emitRep();
       }
       state.remoteLoaded = true;
     } else if (r.status === 404) {
@@ -136,6 +194,7 @@ async function commit() {
   const payload = {
     updated: new Date().toISOString(),
     marks: state.marks,
+    rep_marks: state.repMarks || {},
   };
   const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2) + "\n")));
 

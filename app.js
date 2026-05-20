@@ -324,17 +324,26 @@ const repMarks = (() => {
   } catch {}
   return {};
 })();
+// Share the in-memory map with interests.js so remote sync can merge updates
+// from other devices and commit local changes alongside the new-release marks.
+Interests.bindRepMarks(repMarks);
+
 const saveRepMarks = () => {
   try { localStorage.setItem(REP_MARKS_KEY, JSON.stringify(repMarks)); } catch {}
+  Interests.notifyRepChange();
 };
 const getRepMark = (id) => repMarks[id] || null;
 const getRepInterest = (id) => repMarks[id]?.interest || null;
 const getRepBooked = (id) => repMarks[id]?.booked || null;
 const getRepWatched = (id) => repMarks[id]?.watched || null;
 
+const stampRepMark = (id) => {
+  if (repMarks[id]) repMarks[id].at = new Date().toISOString();
+};
+
 function ensureRepMark(id, meta) {
   if (!repMarks[id]) {
-    repMarks[id] = { interest: null, booked: null, watched: null, meta: meta || null };
+    repMarks[id] = { interest: null, booked: null, watched: null, meta: meta || null, at: null };
   } else if (meta && !repMarks[id].meta) {
     repMarks[id].meta = meta;
   }
@@ -352,10 +361,12 @@ function setRepInterest(id, value, meta) {
   if (value === null) {
     if (repMarks[id]) {
       repMarks[id].interest = null;
+      stampRepMark(id);
       pruneRepMark(id);
     }
   } else {
     ensureRepMark(id, meta).interest = value;
+    stampRepMark(id);
   }
   saveRepMarks();
 }
@@ -364,10 +375,12 @@ function setRepBooked(id, booked, meta) {
   if (booked === null) {
     if (repMarks[id]) {
       repMarks[id].booked = null;
+      stampRepMark(id);
       pruneRepMark(id);
     }
   } else {
     ensureRepMark(id, meta).booked = booked;
+    stampRepMark(id);
   }
   saveRepMarks();
 }
@@ -376,10 +389,12 @@ function setRepWatched(id, watched, meta) {
   if (watched === null) {
     if (repMarks[id]) {
       repMarks[id].watched = null;
+      stampRepMark(id);
       pruneRepMark(id);
     }
   } else {
     ensureRepMark(id, meta).watched = watched;
+    stampRepMark(id);
   }
   saveRepMarks();
 }
@@ -1213,6 +1228,10 @@ function renderRereleasesInterestsTab() {
   }
   empty.hidden = true;
 
+  if (grouped.interested.length) {
+    list.appendChild(renderRereleasesExportBar());
+  }
+
   for (const cat of REP_CATEGORY_ORDER) {
     const items = grouped[cat];
     if (!items.length) continue;
@@ -1261,6 +1280,260 @@ function renderRereleasesInterestsTab() {
     }
 
     list.appendChild(details);
+  }
+}
+
+// Toolbar shown above the Interested group in the rereleases Interests tab.
+// One button: copy an image of all upcoming Interested rereleases (with
+// every upcoming showtime) to the clipboard.
+function renderRereleasesExportBar() {
+  const btn = el("button", {
+    type: "button",
+    class: "rep-export__btn",
+    id: "rep-export-btn",
+  },
+    el("span", { class: "rep-export__icon", "aria-hidden": "true" }),
+    el("span", { class: "rep-export__label", text: "Copy as image" }),
+  );
+  // Inline SVG icon — clipboard with a small download-ish arrow underneath.
+  btn.querySelector(".rep-export__icon").innerHTML =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<rect x="4" y="3" width="14" height="14" rx="2"/>' +
+    '<rect x="8" y="7" width="14" height="14" rx="2"/>' +
+    '</svg>';
+  btn.addEventListener("click", exportRereleasesToClipboard);
+  return el("div", { class: "rep-export" }, btn);
+}
+
+// Returns a best-effort director name for a movie title by scanning the
+// loaded new-releases bundles. Most rereleases are old films that aren't in
+// that data; null means "omit director from the export."
+let _titleDirectorMap = null;
+function directorForTitle(title) {
+  if (_titleDirectorMap === null) {
+    _titleDirectorMap = new Map();
+    for (const bundle of allBundles || []) {
+      for (const release of bundle.releases || []) {
+        const t = (release.title || "").trim().toLowerCase();
+        const d = release.director;
+        if (!t || !d || d === "—") continue;
+        if (!_titleDirectorMap.has(t)) _titleDirectorMap.set(t, d);
+      }
+    }
+  }
+  return _titleDirectorMap.get((title || "").trim().toLowerCase()) || null;
+}
+
+// Build the export image as a PNG Blob. Lists every Interested rerelease
+// with its upcoming showtimes (date · time · theater), grouped by title.
+async function buildRereleasesExportBlob() {
+  if (document.fonts && document.fonts.ready) {
+    try { await document.fonts.ready; } catch {}
+  }
+
+  // 1. Collect items — same selection as the "Interested" category, with
+  //    only future showtimes included.
+  const items = [];
+  for (const [id, mark] of Object.entries(repMarks)) {
+    const entry = repEntryById(id);
+    const cat = categorizeRepMark(id, mark, entry, TODAY);
+    if (cat !== "interested") continue;
+    const title = entry?.title || mark.meta?.title || "Untitled";
+    const year = entry?.year ?? mark.meta?.year ?? null;
+    const showings = (entry?.showings || [])
+      .filter((s) => s.date >= TODAY)
+      .slice()
+      .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    // Fall back to the booked showtime if the run has rotated past.
+    if (!showings.length && mark.booked) {
+      showings.push({
+        date: mark.booked.date,
+        time: mark.booked.time,
+        theater: mark.booked.theater,
+      });
+    }
+    items.push({
+      id,
+      title,
+      year,
+      director: directorForTitle(title),
+      showings,
+    });
+  }
+  items.sort((a, b) => {
+    const da = a.showings[0]?.date || "9999-99-99";
+    const db = b.showings[0]?.date || "9999-99-99";
+    return da.localeCompare(db) || a.title.localeCompare(b.title);
+  });
+
+  // 2. Layout constants — matched between measurement and draw to avoid
+  //    height drift.
+  const W = 720;
+  const PAD_X = 32;
+  const PAD_TOP = 28;
+  const PAD_BOTTOM = 36;
+  const HEADER_BLOCK_H = 60;        // title + subtitle
+  const HEADER_GAP = 16;            // gap before first item
+  const TITLE_ROW_H = 30;
+  const DIR_ROW_H = 22;
+  const SHOWTIME_ROW_H = 24;
+  const ITEM_GAP = 18;
+  const FOOTER_H = 28;
+  const EMPTY_H = 28;
+
+  let H = PAD_TOP + HEADER_BLOCK_H + HEADER_GAP;
+  if (!items.length) {
+    H += EMPTY_H;
+  } else {
+    for (const item of items) {
+      H += TITLE_ROW_H;
+      if (item.director) H += DIR_ROW_H;
+      H += Math.max(1, item.showings.length) * SHOWTIME_ROW_H;
+      H += ITEM_GAP;
+    }
+    H -= ITEM_GAP; // no trailing gap
+  }
+  H += FOOTER_H + PAD_BOTTOM;
+
+  // 3. Draw on a high-DPI canvas.
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(W * dpr);
+  canvas.height = Math.round(H * dpr);
+  const ctx = canvas.getContext("2d");
+  ctx.scale(dpr, dpr);
+  ctx.textBaseline = "alphabetic";
+
+  const FAMILY = `'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif`;
+
+  // Background (Linen) + tan stripe on the left edge.
+  ctx.fillStyle = "#F5EFE6";
+  ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = "#B8895A";
+  ctx.fillRect(0, 0, 4, H);
+
+  // Header.
+  let y = PAD_TOP;
+  ctx.fillStyle = "#2A2520";
+  ctx.font = `700 24px ${FAMILY}`;
+  ctx.fillText("Rereleases I'm catching", PAD_X, y + 24);
+  y += 30;
+
+  ctx.fillStyle = "#6F665B";
+  ctx.font = `500 14px ${FAMILY}`;
+  ctx.fillText(`As of ${fmtDateShort(TODAY)} · ${items.length} title${items.length === 1 ? "" : "s"}`, PAD_X, y + 18);
+  y += HEADER_BLOCK_H - 30 + HEADER_GAP;
+
+  if (!items.length) {
+    ctx.fillStyle = "#6F665B";
+    ctx.font = `400 15px ${FAMILY}`;
+    ctx.fillText("Nothing marked interested yet.", PAD_X, y + 18);
+  }
+
+  for (const item of items) {
+    // Title (Year)
+    ctx.fillStyle = "#2A2520";
+    ctx.font = `700 19px ${FAMILY}`;
+    const titleText = item.year ? `${item.title} (${item.year})` : item.title;
+    drawTruncatedText(ctx, titleText, PAD_X, y + 21, W - PAD_X * 2);
+    y += TITLE_ROW_H;
+
+    if (item.director) {
+      ctx.fillStyle = "#6F665B";
+      ctx.font = `500 13px ${FAMILY}`;
+      drawTruncatedText(ctx, `Dir. ${item.director}`, PAD_X, y + 14, W - PAD_X * 2);
+      y += DIR_ROW_H;
+    }
+
+    const rows = item.showings.length ? item.showings : [null];
+    for (const sh of rows) {
+      ctx.fillStyle = sh ? "#2A2520" : "#877E72";
+      ctx.font = `400 15px ${FAMILY}`;
+      const text = sh
+        ? `${fmtDateShort(sh.date)} · ${fmtTime(sh.time)} · ${shortTheaterName(sh.theater)}`
+        : "No upcoming showtimes";
+      drawTruncatedText(ctx, text, PAD_X + 14, y + 16, W - PAD_X * 2 - 14);
+      y += SHOWTIME_ROW_H;
+    }
+    y += ITEM_GAP;
+  }
+
+  // Footer.
+  ctx.fillStyle = "#877E72";
+  ctx.font = `500 11px ${FAMILY}`;
+  ctx.fillText("Upcoming Movies", PAD_X, H - PAD_BOTTOM + 12);
+
+  return new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+}
+
+function drawTruncatedText(ctx, text, x, y, maxWidth) {
+  if (ctx.measureText(text).width <= maxWidth) {
+    ctx.fillText(text, x, y);
+    return;
+  }
+  const ellipsis = "…";
+  const ellW = ctx.measureText(ellipsis).width;
+  let lo = 0;
+  let hi = text.length;
+  while (lo < hi) {
+    const mid = (lo + hi + 1) >> 1;
+    if (ctx.measureText(text.slice(0, mid)).width + ellW <= maxWidth) lo = mid;
+    else hi = mid - 1;
+  }
+  ctx.fillText(text.slice(0, lo) + ellipsis, x, y);
+}
+
+// Click handler — copies the export image to the clipboard. Updates the
+// button label briefly to give visible feedback. Falls back to a download
+// when ClipboardItem isn't supported (older Android browsers).
+async function exportRereleasesToClipboard() {
+  const btn = document.getElementById("rep-export-btn");
+  if (!btn) return;
+  const labelNode = btn.querySelector(".rep-export__label");
+  const original = labelNode?.textContent || "Copy as image";
+  if (btn.disabled) return;
+  btn.disabled = true;
+  if (labelNode) labelNode.textContent = "Rendering…";
+  const restore = (text) => {
+    if (labelNode) labelNode.textContent = text;
+    setTimeout(() => {
+      if (labelNode) labelNode.textContent = original;
+      btn.disabled = false;
+    }, 1600);
+  };
+
+  try {
+    const supportsClipImage =
+      typeof ClipboardItem !== "undefined" &&
+      navigator.clipboard &&
+      typeof navigator.clipboard.write === "function";
+
+    if (supportsClipImage) {
+      // iOS Safari requires the ClipboardItem to be constructed inside the
+      // user-gesture microtask; passing a Promise<Blob> is permitted.
+      const item = new ClipboardItem({ "image/png": buildRereleasesExportBlob() });
+      await navigator.clipboard.write([item]);
+      restore("Copied ✓");
+      return;
+    }
+
+    const blob = await buildRereleasesExportBlob();
+    if (!blob) {
+      restore("Nothing to export");
+      return;
+    }
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "rereleases.png";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+    restore("Downloaded");
+  } catch (e) {
+    console.warn("Rerelease export failed:", e);
+    restore("Couldn't copy");
   }
 }
 

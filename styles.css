@@ -1762,6 +1762,92 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .rep-export__btn:disabled { opacity: 0.7; cursor: default; }
 .rep-export__icon svg { width: var(--icon-sm); height: var(--icon-sm); display: block; }
 
+/* Export dialog — list of candidate movies with include / star toggles. */
+.rep-export-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: var(--space-1) 0 var(--space-2);
+  max-height: 60dvh;
+  overflow-y: auto;
+}
+.rep-export-empty {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-text-dim);
+  padding: var(--space-3);
+  text-align: center;
+}
+.rep-export-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+.rep-export-row.is-excluded {
+  opacity: 0.4;
+}
+.rep-export-row__body { min-width: 0; }
+.rep-export-row__title {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rep-export-row__sub {
+  font-size: var(--text-small);
+  color: var(--color-text-dim);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px var(--space-2);
+  margin-top: 2px;
+}
+.rep-export-row__dir::after { content: " ·"; opacity: 0.6; }
+.rep-export-row__times { color: var(--color-text-dim); }
+
+.rep-export-include,
+.rep-export-star {
+  appearance: none;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  color: var(--color-text-dim);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1;
+  transition: background-color var(--duration-fast) var(--ease-out),
+              border-color var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+}
+.rep-export-include svg { width: 18px; height: 18px; display: block; }
+.rep-export-include.is-on {
+  background: var(--color-success-soft);
+  border-color: var(--color-success-border);
+  color: var(--color-success);
+}
+.rep-export-star.is-on {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent-border);
+  color: var(--color-accent-dark);
+}
+.rep-export-include:active,
+.rep-export-star:active { transform: scale(var(--press-scale)); }
+
 /* =============================================================
    Directors tab — a single ranked list. Working density, h3 ceiling,
    rank badge is the only accent surface. Reorder via up/down chevrons.

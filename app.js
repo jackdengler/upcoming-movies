@@ -1298,15 +1298,13 @@ function renderRereleasesExportBar() {
     id: "rep-export-btn",
   },
     el("span", { class: "rep-export__icon", "aria-hidden": "true" }),
-    el("span", { class: "rep-export__label", text: "Copy as image" }),
+    el("span", { class: "rep-export__label", text: "Export…" }),
   );
-  // Inline SVG icon — clipboard with a small download-ish arrow underneath.
   btn.querySelector(".rep-export__icon").innerHTML =
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-    '<rect x="4" y="3" width="14" height="14" rx="2"/>' +
-    '<rect x="8" y="7" width="14" height="14" rx="2"/>' +
+    '<path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"/>' +
     '</svg>';
-  btn.addEventListener("click", exportRereleasesToClipboard);
+  btn.addEventListener("click", openRepExportDialog);
   return el("div", { class: "rep-export" }, btn);
 }
 
@@ -1329,17 +1327,11 @@ function directorForTitle(title) {
   return _titleDirectorMap.get((title || "").trim().toLowerCase()) || null;
 }
 
-// Build the export image as a PNG Blob. Lists every Interested rerelease
-// with its upcoming showtimes (date · time · theater), grouped by title.
-async function buildRereleasesExportBlob() {
-  if (document.fonts && document.fonts.ready) {
-    try { await document.fonts.ready; } catch {}
-  }
-
-  // 1. Flatten every Interested rerelease into one row per upcoming
-  //    showing, sorted by date+time. The user wants a chronological agenda,
-  //    not a per-title grouping.
-  const rows = [];
+// Gather every Interested rerelease as a per-movie record, in earliest-
+// showtime order. This is the candidate set the export dialog presents the
+// user — the dialog tracks which ones get included and which are starred.
+function gatherRepExportCandidates() {
+  const out = [];
   for (const [id, mark] of Object.entries(repMarks)) {
     const entry = repEntryById(id);
     const cat = categorizeRepMark(id, mark, entry, TODAY);
@@ -1347,7 +1339,10 @@ async function buildRereleasesExportBlob() {
     const title = entry?.title || mark.meta?.title || "Untitled";
     const year = entry?.year ?? mark.meta?.year ?? null;
     const director = directorForTitle(title);
-    const showings = (entry?.showings || []).filter((s) => s.date >= TODAY);
+    const showings = (entry?.showings || [])
+      .filter((s) => s.date >= TODAY)
+      .slice()
+      .sort((a, b) => (a.date + (a.time || "")).localeCompare(b.date + (b.time || "")));
     if (!showings.length && mark.booked) {
       showings.push({
         date: mark.booked.date,
@@ -1355,66 +1350,56 @@ async function buildRereleasesExportBlob() {
         theater: mark.booked.theater,
       });
     }
-    for (const sh of showings) {
-      rows.push({
-        date: sh.date,
-        time: sh.time,
-        theater: sh.theater,
-        title,
-        year,
-        director,
-      });
-    }
+    out.push({ id, title, year, director, showings });
   }
-  rows.sort((a, b) =>
-    (a.date + (a.time || "")).localeCompare(b.date + (b.time || ""))
-    || a.title.localeCompare(b.title));
+  out.sort((a, b) => {
+    const da = a.showings[0]?.date || "9999-99-99";
+    const db = b.showings[0]?.date || "9999-99-99";
+    return da.localeCompare(db) || a.title.localeCompare(b.title);
+  });
+  return out;
+}
 
-  // Group rows under a date header so a packed week reads cleanly. The rows
-  // themselves stay strictly chronological.
-  const dateGroups = [];
-  for (const row of rows) {
-    const last = dateGroups[dateGroups.length - 1];
-    if (last && last.date === row.date) {
-      last.rows.push(row);
-    } else {
-      dateGroups.push({ date: row.date, rows: [row] });
-    }
+// Build the export image as a PNG Blob from a curated set of {item, starred}
+// records (chosen in the export dialog). One row per movie. Larger fonts
+// than the on-screen UI so it stays readable when shared.
+async function buildRereleasesExportBlob(selection) {
+  if (document.fonts && document.fonts.ready) {
+    try { await document.fonts.ready; } catch {}
   }
 
-  // 2. Layout constants — matched between measurement and draw to avoid
-  //    height drift.
-  const W = 720;
-  const PAD_X = 32;
-  const PAD_TOP = 28;
+  const items = (selection || []).filter((s) => s.included);
+
+  // Layout constants — matched between measurement and draw to avoid
+  // height drift.
+  const W = 760;
+  const PAD_X = 36;
+  const PAD_TOP = 32;
   const PAD_BOTTOM = 36;
-  const HEADER_BLOCK_H = 60;        // title + subtitle
-  const HEADER_GAP = 16;            // gap before first item
-  const DATE_HEADER_H = 28;
-  const ROW_PRIMARY_H = 22;         // showtime + theater
-  const ROW_SECONDARY_H = 20;       // movie · year · director
-  const ROW_GAP = 10;
-  const DATE_GAP = 14;
+  const HEADER_TITLE_H = 36;
+  const HEADER_SUBTITLE_H = 26;
+  const HEADER_GAP = 22;
+  const TITLE_ROW_H = 36;
+  const DIR_ROW_H = 24;
+  const SHOWTIME_ROW_H = 28;
+  const ITEM_GAP = 22;
   const FOOTER_H = 28;
-  const EMPTY_H = 28;
+  const EMPTY_H = 32;
 
-  let H = PAD_TOP + HEADER_BLOCK_H + HEADER_GAP;
-  if (!rows.length) {
+  let H = PAD_TOP + HEADER_TITLE_H + HEADER_SUBTITLE_H + HEADER_GAP;
+  if (!items.length) {
     H += EMPTY_H;
   } else {
-    for (const group of dateGroups) {
-      H += DATE_HEADER_H;
-      for (const row of group.rows) {
-        H += ROW_PRIMARY_H + ROW_SECONDARY_H + ROW_GAP;
-      }
-      H -= ROW_GAP; // no trailing gap inside a date
-      H += DATE_GAP;
+    for (const { item } of items) {
+      H += TITLE_ROW_H;
+      if (item.director) H += DIR_ROW_H;
+      H += Math.max(1, item.showings.length) * SHOWTIME_ROW_H;
+      H += ITEM_GAP;
     }
-    H -= DATE_GAP; // no trailing gap after last date
+    H -= ITEM_GAP;
   }
   H += FOOTER_H + PAD_BOTTOM;
 
-  // 3. Draw on a high-DPI canvas.
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   const canvas = document.createElement("canvas");
   canvas.width = Math.round(W * dpr);
@@ -1434,53 +1419,60 @@ async function buildRereleasesExportBlob() {
   // Header.
   let y = PAD_TOP;
   ctx.fillStyle = "#2A2520";
-  ctx.font = `700 24px ${FAMILY}`;
-  ctx.fillText("Rereleases I'm catching", PAD_X, y + 24);
-  y += 30;
+  ctx.font = `700 28px ${FAMILY}`;
+  ctx.fillText("Rereleases I'm catching", PAD_X, y + 28);
+  y += HEADER_TITLE_H;
 
   ctx.fillStyle = "#6F665B";
-  ctx.font = `500 14px ${FAMILY}`;
-  const summary = `As of ${fmtDateShort(TODAY)} · ${rows.length} showing${rows.length === 1 ? "" : "s"}`;
+  ctx.font = `500 16px ${FAMILY}`;
+  const summary = `As of ${fmtDateShort(TODAY)} · ${items.length} title${items.length === 1 ? "" : "s"}`;
   ctx.fillText(summary, PAD_X, y + 18);
-  y += HEADER_BLOCK_H - 30 + HEADER_GAP;
+  y += HEADER_SUBTITLE_H + HEADER_GAP;
 
-  if (!rows.length) {
+  if (!items.length) {
     ctx.fillStyle = "#6F665B";
-    ctx.font = `400 15px ${FAMILY}`;
-    ctx.fillText("Nothing marked interested yet.", PAD_X, y + 18);
+    ctx.font = `400 17px ${FAMILY}`;
+    ctx.fillText("Nothing selected.", PAD_X, y + 20);
   }
 
-  for (const group of dateGroups) {
-    // Date header — slightly heavier than the rows underneath.
-    ctx.fillStyle = "#9C7148";
-    ctx.font = `600 14px ${FAMILY}`;
-    ctx.fillText(fmtDateShort(group.date).toUpperCase(), PAD_X, y + 18);
-    y += DATE_HEADER_H;
-
-    for (const row of group.rows) {
-      // Line 1: time · theater (the actionable bit).
-      ctx.fillStyle = "#2A2520";
-      ctx.font = `600 16px ${FAMILY}`;
-      const primary = `${fmtTime(row.time)} · ${shortTheaterName(row.theater)}`;
-      drawTruncatedText(ctx, primary, PAD_X + 14, y + 16, W - PAD_X * 2 - 14);
-      y += ROW_PRIMARY_H;
-
-      // Line 2: movie title (year) · director.
-      ctx.fillStyle = "#6F665B";
-      ctx.font = `500 13px ${FAMILY}`;
-      const bits = [];
-      bits.push(row.year ? `${row.title} (${row.year})` : row.title);
-      if (row.director) bits.push(`Dir. ${row.director}`);
-      drawTruncatedText(ctx, bits.join(" · "), PAD_X + 14, y + 14, W - PAD_X * 2 - 14);
-      y += ROW_SECONDARY_H + ROW_GAP;
+  for (const { item, starred } of items) {
+    // Title row — starred items get a filled tan star, slightly bumped weight.
+    const starX = PAD_X;
+    const titleX = starred ? PAD_X + 28 : PAD_X;
+    if (starred) {
+      ctx.fillStyle = "#B8895A";
+      ctx.font = `700 22px ${FAMILY}`;
+      ctx.fillText("★", starX, y + 24);
     }
-    y -= ROW_GAP;
-    y += DATE_GAP;
+    ctx.fillStyle = "#2A2520";
+    ctx.font = `700 22px ${FAMILY}`;
+    const titleText = item.year ? `${item.title} (${item.year})` : item.title;
+    drawTruncatedText(ctx, titleText, titleX, y + 24, W - titleX - PAD_X);
+    y += TITLE_ROW_H;
+
+    if (item.director) {
+      ctx.fillStyle = "#6F665B";
+      ctx.font = `500 15px ${FAMILY}`;
+      drawTruncatedText(ctx, `Dir. ${item.director}`, PAD_X + 4, y + 16, W - PAD_X * 2 - 4);
+      y += DIR_ROW_H;
+    }
+
+    const showings = item.showings.length ? item.showings : [null];
+    for (const sh of showings) {
+      ctx.fillStyle = sh ? "#2A2520" : "#877E72";
+      ctx.font = `500 17px ${FAMILY}`;
+      const text = sh
+        ? `${fmtDateShort(sh.date)} · ${fmtTime(sh.time)} · ${shortTheaterName(sh.theater)}`
+        : "No upcoming showtimes";
+      drawTruncatedText(ctx, text, PAD_X + 4, y + 19, W - PAD_X * 2 - 4);
+      y += SHOWTIME_ROW_H;
+    }
+    y += ITEM_GAP;
   }
 
   // Footer.
   ctx.fillStyle = "#877E72";
-  ctx.font = `500 11px ${FAMILY}`;
+  ctx.font = `500 12px ${FAMILY}`;
   ctx.fillText("Upcoming Movies", PAD_X, H - PAD_BOTTOM + 12);
 
   return new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
@@ -1503,24 +1495,124 @@ function drawTruncatedText(ctx, text, x, y, maxWidth) {
   ctx.fillText(text.slice(0, lo) + ellipsis, x, y);
 }
 
-// Click handler — copies the export image to the clipboard. Updates the
-// button label briefly to give visible feedback. Falls back to a download
-// when ClipboardItem isn't supported (older Android browsers).
-async function exportRereleasesToClipboard() {
-  const btn = document.getElementById("rep-export-btn");
+// Per-dialog-open ephemeral state. Each row tracks whether it's included
+// (default true) and whether it's starred as a must-see (default false).
+const repExportState = new Map();
+
+function openRepExportDialog() {
+  const dialog = document.getElementById("rep-export-dialog");
+  if (!dialog) return;
+  const candidates = gatherRepExportCandidates();
+  repExportState.clear();
+  for (const item of candidates) {
+    repExportState.set(item.id, { item, included: true, starred: false });
+  }
+  renderRepExportDialogList();
+  // Make sure the dialog can be re-opened cleanly if it was closed without
+  // the close() animation completing.
+  if (dialog.open) dialog.close();
+  dialog.showModal();
+}
+
+function renderRepExportDialogList() {
+  const list = document.getElementById("rep-export-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  if (!repExportState.size) {
+    list.appendChild(el("p", {
+      class: "rep-export-empty",
+      text: "No interested rereleases with upcoming showings.",
+    }));
+    document.getElementById("rep-export-copy")?.setAttribute("disabled", "");
+    return;
+  }
+  document.getElementById("rep-export-copy")?.removeAttribute("disabled");
+
+  for (const [id, entry] of repExportState) {
+    const { item, included, starred } = entry;
+    const titleText = item.year ? `${item.title} (${item.year})` : item.title;
+    const showtimeText = item.showings
+      .slice(0, 3)
+      .map((s) => `${fmtDateShort(s.date)} · ${fmtTime(s.time)} · ${shortTheaterName(s.theater)}`)
+      .join(" · ");
+    const moreText = item.showings.length > 3 ? ` · +${item.showings.length - 3} more` : "";
+
+    const includeBtn = el("button", {
+      type: "button",
+      class: `rep-export-include${included ? " is-on" : ""}`,
+      "aria-pressed": included ? "true" : "false",
+      "aria-label": included ? "Remove from export" : "Add to export",
+      dataset: { id, action: "toggle-include" },
+    });
+    includeBtn.innerHTML = included
+      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>';
+
+    const starBtn = el("button", {
+      type: "button",
+      class: `rep-export-star${starred ? " is-on" : ""}`,
+      "aria-pressed": starred ? "true" : "false",
+      "aria-label": starred ? "Unstar" : "Mark as must-see",
+      dataset: { id, action: "toggle-star" },
+    });
+    starBtn.textContent = starred ? "★" : "☆";
+
+    const sub = el("div", { class: "rep-export-row__sub" });
+    if (item.director) {
+      sub.appendChild(el("span", { class: "rep-export-row__dir", text: `Dir. ${item.director}` }));
+    }
+    if (showtimeText) {
+      sub.appendChild(el("span", { class: "rep-export-row__times", text: showtimeText + moreText }));
+    }
+
+    const body = el("div", { class: "rep-export-row__body" },
+      el("div", { class: "rep-export-row__title", text: titleText }),
+      sub,
+    );
+
+    const row = el("div", {
+      class: `rep-export-row${included ? "" : " is-excluded"}`,
+      dataset: { id },
+    },
+      includeBtn,
+      body,
+      starBtn,
+    );
+    list.appendChild(row);
+  }
+}
+
+document.getElementById("rep-export-list")?.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-action]");
   if (!btn) return;
-  const labelNode = btn.querySelector(".rep-export__label");
-  const original = labelNode?.textContent || "Copy as image";
-  if (btn.disabled) return;
-  btn.disabled = true;
-  if (labelNode) labelNode.textContent = "Rendering…";
-  const restore = (text) => {
-    if (labelNode) labelNode.textContent = text;
-    setTimeout(() => {
-      if (labelNode) labelNode.textContent = original;
-      btn.disabled = false;
-    }, 1600);
-  };
+  e.preventDefault();
+  const id = btn.dataset.id;
+  const entry = repExportState.get(id);
+  if (!entry) return;
+  if (btn.dataset.action === "toggle-include") entry.included = !entry.included;
+  else if (btn.dataset.action === "toggle-star") {
+    entry.starred = !entry.starred;
+    // Starring auto-includes — otherwise the toggle is meaningless.
+    if (entry.starred) entry.included = true;
+  }
+  renderRepExportDialogList();
+});
+
+document.getElementById("rep-export-cancel")?.addEventListener("click", () => {
+  document.getElementById("rep-export-dialog")?.close();
+});
+
+document.getElementById("rep-export-copy")?.addEventListener("click", async () => {
+  const copyBtn = document.getElementById("rep-export-copy");
+  if (!copyBtn || copyBtn.hasAttribute("disabled")) return;
+  copyBtn.setAttribute("disabled", "");
+  const originalLabel = copyBtn.textContent;
+  copyBtn.textContent = "Rendering…";
+
+  const selection = [...repExportState.values()].map(({ item, included, starred }) => ({
+    item, included, starred,
+  }));
 
   try {
     const supportsClipImage =
@@ -1529,33 +1621,46 @@ async function exportRereleasesToClipboard() {
       typeof navigator.clipboard.write === "function";
 
     if (supportsClipImage) {
-      // iOS Safari requires the ClipboardItem to be constructed inside the
+      // iOS Safari requires the ClipboardItem to be constructed in the
       // user-gesture microtask; passing a Promise<Blob> is permitted.
-      const item = new ClipboardItem({ "image/png": buildRereleasesExportBlob() });
+      const item = new ClipboardItem({ "image/png": buildRereleasesExportBlob(selection) });
       await navigator.clipboard.write([item]);
-      restore("Copied ✓");
+      copyBtn.textContent = "Copied ✓";
+      setTimeout(() => {
+        document.getElementById("rep-export-dialog")?.close();
+        copyBtn.textContent = originalLabel;
+        copyBtn.removeAttribute("disabled");
+      }, 700);
       return;
     }
 
-    const blob = await buildRereleasesExportBlob();
-    if (!blob) {
-      restore("Nothing to export");
-      return;
+    const blob = await buildRereleasesExportBlob(selection);
+    if (blob) {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "rereleases.png";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+      copyBtn.textContent = "Downloaded";
+    } else {
+      copyBtn.textContent = "Nothing to export";
     }
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "rereleases.png";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 5000);
-    restore("Downloaded");
+    setTimeout(() => {
+      copyBtn.textContent = originalLabel;
+      copyBtn.removeAttribute("disabled");
+    }, 1500);
   } catch (e) {
     console.warn("Rerelease export failed:", e);
-    restore("Couldn't copy");
+    copyBtn.textContent = "Couldn't copy";
+    setTimeout(() => {
+      copyBtn.textContent = originalLabel;
+      copyBtn.removeAttribute("disabled");
+    }, 1500);
   }
-}
+});
 
 // Handle clicks on rep-card action buttons in the Interests tab.
 async function handleRepCardAction(id, action) {

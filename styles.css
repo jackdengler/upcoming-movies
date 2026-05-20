@@ -888,7 +888,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .interest-group--not::before        { background: var(--level-not); }
 .interest-group--watched::before    { background: var(--level-watched); }
 .interest-group--interested::before { background: var(--level-must); }
-.interest-group--past::before       { background: var(--level-watched); }
+.interest-group--already_shown::before { background: var(--level-watched); }
 
 .interest-group > .month__summary {
   padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) + 3px);

@@ -945,7 +945,7 @@ const INTEREST_ICONS = {
   interested:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
     '<path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.7l6.1-.9z"/></svg>',
-  past:
+  already_shown:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
     '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 8v4l3 2"/></svg>',
 };
@@ -1083,33 +1083,38 @@ function renderReleasesInterestsTab(bundles) {
 
 // ---------- Rereleases Interests tab ----------
 
-// Group every rep mark into Interested / Watched / Past / Not interested.
+// Group every rep mark into Interested / Watched / Already shown / Not
+// interested.
 // - "watched" if the user explicitly marked it seen
-// - "not" if interest === "no"
-// - "past" if interest === "yes" AND every showtime in the run is in the past
-//          (the run ended; nothing to book anymore, and it wasn't marked seen)
-// - "interested" otherwise when interest === "yes"
+// - "already_shown" if the run has no more upcoming showings (regardless of
+//                   whether the user said yes or no — once it's gone, it
+//                   shouldn't clutter Interested/Not interested)
+// - "not" if interest === "no" and the run still has upcoming showings
+// - "interested" if interest === "yes" (or a lone booking) and the run still
+//                has upcoming showings
 //
-// Past is computed on the fly from `lastShowDate` so it auto-populates the day
-// after a run's last showtime. When the screening data has rotated out the
-// month entirely, `entry` is null and we fall back to the mark's month key:
-// anything whose YYYY-MM is strictly before the current month is past.
+// Past-ness is computed on the fly from `lastShowDate` so the move happens
+// the day after a run's last showtime. When the screening data has rotated
+// out the month entirely, `entry` is null and we fall back to the mark's
+// month key: anything whose YYYY-MM is strictly before the current month is
+// considered past.
 function categorizeRepMark(id, mark, entry, today) {
   if (mark.watched) return "watched";
-  if (mark.interest === "no") return "not";
+
+  const last = entry ? lastShowDate(entry) : null;
+  const monthKey = id.split("|")[1] || "";
+  const todayMonth = today.slice(0, 7);
+  const isPast = last
+    ? last < today
+    : (monthKey && monthKey < todayMonth);
+
+  if (mark.interest === "no") return isPast ? "already_shown" : "not";
+
   // Treat a lone booking as "interested" — you wouldn't book something you
   // weren't interested in.
   if (mark.interest !== "yes" && !mark.booked) return null;
 
-  const last = entry ? lastShowDate(entry) : null;
-  if (last) {
-    return last < today ? "past" : "interested";
-  }
-  // No current screening data for this run. Infer from the month key.
-  const monthKey = id.split("|")[1] || "";
-  const todayMonth = today.slice(0, 7);
-  if (monthKey && monthKey < todayMonth) return "past";
-  return "interested";
+  return isPast ? "already_shown" : "interested";
 }
 
 function renderRepInterestCard(id, mark, entry) {
@@ -1194,11 +1199,11 @@ function renderRepInterestCard(id, mark, entry) {
   );
 }
 
-const REP_CATEGORY_ORDER = ["interested", "watched", "past", "not"];
+const REP_CATEGORY_ORDER = ["interested", "watched", "already_shown", "not"];
 const REP_CATEGORY_LABEL = {
   interested: "Interested",
   watched: "Watched",
-  past: "Past",
+  already_shown: "Already shown",
   not: "Not interested",
 };
 
@@ -1207,7 +1212,7 @@ function renderRereleasesInterestsTab() {
   const empty = document.getElementById("empty-interests");
   list.innerHTML = "";
 
-  const grouped = { interested: [], watched: [], past: [], not: [] };
+  const grouped = { interested: [], watched: [], already_shown: [], not: [] };
   for (const [id, mark] of Object.entries(repMarks)) {
     const entry = repEntryById(id);
     // Opportunistically backfill meta so we can still render the card after
@@ -1241,7 +1246,7 @@ function renderRereleasesInterestsTab() {
       const amk = (a.id.split("|")[1] || "");
       const bmk = (b.id.split("|")[1] || "");
       const cmp = amk.localeCompare(bmk);
-      return cat === "past" ? -cmp : cmp;
+      return cat === "already_shown" ? -cmp : cmp;
     });
 
     const open = cat in interestExpanded ? interestExpanded[cat] : true;
@@ -1331,20 +1336,18 @@ async function buildRereleasesExportBlob() {
     try { await document.fonts.ready; } catch {}
   }
 
-  // 1. Collect items — same selection as the "Interested" category, with
-  //    only future showtimes included.
-  const items = [];
+  // 1. Flatten every Interested rerelease into one row per upcoming
+  //    showing, sorted by date+time. The user wants a chronological agenda,
+  //    not a per-title grouping.
+  const rows = [];
   for (const [id, mark] of Object.entries(repMarks)) {
     const entry = repEntryById(id);
     const cat = categorizeRepMark(id, mark, entry, TODAY);
     if (cat !== "interested") continue;
     const title = entry?.title || mark.meta?.title || "Untitled";
     const year = entry?.year ?? mark.meta?.year ?? null;
-    const showings = (entry?.showings || [])
-      .filter((s) => s.date >= TODAY)
-      .slice()
-      .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
-    // Fall back to the booked showtime if the run has rotated past.
+    const director = directorForTitle(title);
+    const showings = (entry?.showings || []).filter((s) => s.date >= TODAY);
     if (!showings.length && mark.booked) {
       showings.push({
         date: mark.booked.date,
@@ -1352,19 +1355,32 @@ async function buildRereleasesExportBlob() {
         theater: mark.booked.theater,
       });
     }
-    items.push({
-      id,
-      title,
-      year,
-      director: directorForTitle(title),
-      showings,
-    });
+    for (const sh of showings) {
+      rows.push({
+        date: sh.date,
+        time: sh.time,
+        theater: sh.theater,
+        title,
+        year,
+        director,
+      });
+    }
   }
-  items.sort((a, b) => {
-    const da = a.showings[0]?.date || "9999-99-99";
-    const db = b.showings[0]?.date || "9999-99-99";
-    return da.localeCompare(db) || a.title.localeCompare(b.title);
-  });
+  rows.sort((a, b) =>
+    (a.date + (a.time || "")).localeCompare(b.date + (b.time || ""))
+    || a.title.localeCompare(b.title));
+
+  // Group rows under a date header so a packed week reads cleanly. The rows
+  // themselves stay strictly chronological.
+  const dateGroups = [];
+  for (const row of rows) {
+    const last = dateGroups[dateGroups.length - 1];
+    if (last && last.date === row.date) {
+      last.rows.push(row);
+    } else {
+      dateGroups.push({ date: row.date, rows: [row] });
+    }
+  }
 
   // 2. Layout constants — matched between measurement and draw to avoid
   //    height drift.
@@ -1374,24 +1390,27 @@ async function buildRereleasesExportBlob() {
   const PAD_BOTTOM = 36;
   const HEADER_BLOCK_H = 60;        // title + subtitle
   const HEADER_GAP = 16;            // gap before first item
-  const TITLE_ROW_H = 30;
-  const DIR_ROW_H = 22;
-  const SHOWTIME_ROW_H = 24;
-  const ITEM_GAP = 18;
+  const DATE_HEADER_H = 28;
+  const ROW_PRIMARY_H = 22;         // showtime + theater
+  const ROW_SECONDARY_H = 20;       // movie · year · director
+  const ROW_GAP = 10;
+  const DATE_GAP = 14;
   const FOOTER_H = 28;
   const EMPTY_H = 28;
 
   let H = PAD_TOP + HEADER_BLOCK_H + HEADER_GAP;
-  if (!items.length) {
+  if (!rows.length) {
     H += EMPTY_H;
   } else {
-    for (const item of items) {
-      H += TITLE_ROW_H;
-      if (item.director) H += DIR_ROW_H;
-      H += Math.max(1, item.showings.length) * SHOWTIME_ROW_H;
-      H += ITEM_GAP;
+    for (const group of dateGroups) {
+      H += DATE_HEADER_H;
+      for (const row of group.rows) {
+        H += ROW_PRIMARY_H + ROW_SECONDARY_H + ROW_GAP;
+      }
+      H -= ROW_GAP; // no trailing gap inside a date
+      H += DATE_GAP;
     }
-    H -= ITEM_GAP; // no trailing gap
+    H -= DATE_GAP; // no trailing gap after last date
   }
   H += FOOTER_H + PAD_BOTTOM;
 
@@ -1421,41 +1440,42 @@ async function buildRereleasesExportBlob() {
 
   ctx.fillStyle = "#6F665B";
   ctx.font = `500 14px ${FAMILY}`;
-  ctx.fillText(`As of ${fmtDateShort(TODAY)} · ${items.length} title${items.length === 1 ? "" : "s"}`, PAD_X, y + 18);
+  const summary = `As of ${fmtDateShort(TODAY)} · ${rows.length} showing${rows.length === 1 ? "" : "s"}`;
+  ctx.fillText(summary, PAD_X, y + 18);
   y += HEADER_BLOCK_H - 30 + HEADER_GAP;
 
-  if (!items.length) {
+  if (!rows.length) {
     ctx.fillStyle = "#6F665B";
     ctx.font = `400 15px ${FAMILY}`;
     ctx.fillText("Nothing marked interested yet.", PAD_X, y + 18);
   }
 
-  for (const item of items) {
-    // Title (Year)
-    ctx.fillStyle = "#2A2520";
-    ctx.font = `700 19px ${FAMILY}`;
-    const titleText = item.year ? `${item.title} (${item.year})` : item.title;
-    drawTruncatedText(ctx, titleText, PAD_X, y + 21, W - PAD_X * 2);
-    y += TITLE_ROW_H;
+  for (const group of dateGroups) {
+    // Date header — slightly heavier than the rows underneath.
+    ctx.fillStyle = "#9C7148";
+    ctx.font = `600 14px ${FAMILY}`;
+    ctx.fillText(fmtDateShort(group.date).toUpperCase(), PAD_X, y + 18);
+    y += DATE_HEADER_H;
 
-    if (item.director) {
+    for (const row of group.rows) {
+      // Line 1: time · theater (the actionable bit).
+      ctx.fillStyle = "#2A2520";
+      ctx.font = `600 16px ${FAMILY}`;
+      const primary = `${fmtTime(row.time)} · ${shortTheaterName(row.theater)}`;
+      drawTruncatedText(ctx, primary, PAD_X + 14, y + 16, W - PAD_X * 2 - 14);
+      y += ROW_PRIMARY_H;
+
+      // Line 2: movie title (year) · director.
       ctx.fillStyle = "#6F665B";
       ctx.font = `500 13px ${FAMILY}`;
-      drawTruncatedText(ctx, `Dir. ${item.director}`, PAD_X, y + 14, W - PAD_X * 2);
-      y += DIR_ROW_H;
+      const bits = [];
+      bits.push(row.year ? `${row.title} (${row.year})` : row.title);
+      if (row.director) bits.push(`Dir. ${row.director}`);
+      drawTruncatedText(ctx, bits.join(" · "), PAD_X + 14, y + 14, W - PAD_X * 2 - 14);
+      y += ROW_SECONDARY_H + ROW_GAP;
     }
-
-    const rows = item.showings.length ? item.showings : [null];
-    for (const sh of rows) {
-      ctx.fillStyle = sh ? "#2A2520" : "#877E72";
-      ctx.font = `400 15px ${FAMILY}`;
-      const text = sh
-        ? `${fmtDateShort(sh.date)} · ${fmtTime(sh.time)} · ${shortTheaterName(sh.theater)}`
-        : "No upcoming showtimes";
-      drawTruncatedText(ctx, text, PAD_X + 14, y + 16, W - PAD_X * 2 - 14);
-      y += SHOWTIME_ROW_H;
-    }
-    y += ITEM_GAP;
+    y -= ROW_GAP;
+    y += DATE_GAP;
   }
 
   // Footer.

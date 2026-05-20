@@ -2548,13 +2548,15 @@ function buildDirectorIndex(bundles) {
       if (!raw || raw === "—") continue;
       // Split on common separators (", ", " & ", " and ").
       const names = raw.split(/\s*(?:,|&|\band\b)\s*/i).map((s) => s.trim()).filter(Boolean);
-      for (const name of names) {
-        const key = normalizeDirectorName(name);
-        if (!key) continue;
-        if (!directorIndex.has(key)) directorIndex.set(key, []);
-        directorIndex.get(key).push(release);
-        if (!displayByKey.has(key)) displayByKey.set(key, name);
-      }
+      // "Directed as lead" — only credit films with a single director.
+      // Co-directed films are excluded for both directors so the inline list
+      // and the autocomplete count stay consistent with the TMDB filmography.
+      if (names.length !== 1) continue;
+      const key = normalizeDirectorName(names[0]);
+      if (!key) continue;
+      if (!directorIndex.has(key)) directorIndex.set(key, []);
+      directorIndex.get(key).push(release);
+      if (!displayByKey.has(key)) displayByKey.set(key, names[0]);
     }
   }
   for (const list of directorIndex.values()) {

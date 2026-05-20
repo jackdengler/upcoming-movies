@@ -1,6 +1,7 @@
 import * as Interests from "./js/interests.js";
 import * as Activity from "./js/activity.js";
 import * as Directors from "./js/directors.js";
+import * as Tmdb from "./js/tmdb.js";
 
 // When loaded inside an iframe (e.g. the central-optimus launcher), the
 // host already absorbs the device's notch/home-indicator insets. iOS
@@ -2250,6 +2251,9 @@ const CHEVRON_DOWN_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentCo
 // don't carry a director field, so they're not in this index. Built once after
 // loadYear settles; re-render of the Directors tab re-reads it.
 const directorIndex = new Map();
+// Display-name list (preserves original spelling) sorted alphabetically, used
+// to power autocomplete suggestions in the Add/Edit dialog.
+const directorDisplayList = [];
 
 const normalizeDirectorName = (s) =>
   String(s || "")
@@ -2264,6 +2268,7 @@ const normalizeDirectorName = (s) =>
 
 function buildDirectorIndex(bundles) {
   directorIndex.clear();
+  const displayByKey = new Map();
   for (const bundle of bundles || []) {
     for (const release of bundle.releases || []) {
       const raw = release.director;
@@ -2275,12 +2280,18 @@ function buildDirectorIndex(bundles) {
         if (!key) continue;
         if (!directorIndex.has(key)) directorIndex.set(key, []);
         directorIndex.get(key).push(release);
+        if (!displayByKey.has(key)) displayByKey.set(key, name);
       }
     }
   }
   for (const list of directorIndex.values()) {
     list.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
   }
+  directorDisplayList.length = 0;
+  for (const [key, name] of displayByKey) {
+    directorDisplayList.push({ key, name, count: directorIndex.get(key).length });
+  }
+  directorDisplayList.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function moviesForDirector(name) {
@@ -2308,6 +2319,112 @@ function renderDirectorFilm(m) {
       level ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] }) : null,
     ),
   );
+}
+
+// Track which directors the user has expanded (to reveal filmography + edit/
+// remove). Persisted across sessions because a long Directors list is hard
+// to re-navigate otherwise.
+const DIR_EXPANDED_KEY = "upcoming:directors-expanded";
+const expandedDirectors = (() => {
+  try {
+    const raw = localStorage.getItem(DIR_EXPANDED_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(arr) ? arr : []);
+  } catch { return new Set(); }
+})();
+function saveExpandedDirectors() {
+  try { localStorage.setItem(DIR_EXPANDED_KEY, JSON.stringify([...expandedDirectors])); } catch {}
+}
+
+function renderFilmographyYearGroups(films) {
+  const buckets = new Map();
+  for (const f of films) {
+    const year = f.date ? f.date.slice(0, 4) : "—";
+    if (!buckets.has(year)) buckets.set(year, []);
+    buckets.get(year).push(f);
+  }
+  // Sort years descending; "—" (unknown) sorts to the end.
+  const years = [...buckets.keys()].sort((a, b) => {
+    if (a === "—") return 1;
+    if (b === "—") return -1;
+    return b.localeCompare(a);
+  });
+  return years.map((y) =>
+    el("div", { class: "director-year" },
+      el("div", { class: "director-year__label", text: y }),
+      el("ul", { class: "director-year__films" },
+        ...buckets.get(y).map((f) =>
+          el("li", { class: "director-year__film", text: f.title })
+        )
+      ),
+    )
+  );
+}
+
+function paintFilmography(container, state) {
+  container.innerHTML = "";
+  if (state.kind === "loading") {
+    container.appendChild(el("p", { class: "director-filmography__status", text: "Loading filmography…" }));
+    return;
+  }
+  if (state.kind === "no-token") {
+    container.appendChild(
+      el("div", { class: "director-filmography__connect" },
+        el("p", { class: "director-filmography__connect-copy",
+          text: "Connect TMDB to see this director's full feature history." }),
+        el("button", { type: "button", class: "rep-card-action", dataset: { action: "connect-tmdb" } }, "Connect TMDB"),
+      )
+    );
+    return;
+  }
+  if (state.kind === "error") {
+    container.appendChild(el("p", { class: "director-filmography__status", text: state.message }));
+    return;
+  }
+  if (state.kind === "films") {
+    if (!state.films.length) {
+      container.appendChild(el("p", { class: "director-filmography__status", text: "No directing credits on TMDB." }));
+      return;
+    }
+    for (const group of renderFilmographyYearGroups(state.films)) {
+      container.appendChild(group);
+    }
+  }
+}
+
+function tmdbErrorToState(err, name) {
+  const msg = err?.message || "";
+  if (msg === "no-token") return { kind: "no-token" };
+  if (msg === "bad-token") return { kind: "error", message: "TMDB rejected the token. Reconnect to fix." };
+  if (msg === "not-found") return { kind: "error", message: `No TMDB match for "${name}".` };
+  return { kind: "error", message: "Couldn't load filmography. Check your connection." };
+}
+
+async function loadFilmographyInto(container, name) {
+  if (!Tmdb.hasToken()) {
+    const cached = Tmdb.getCached(name);
+    if (cached?.films?.length) {
+      paintFilmography(container, { kind: "films", films: cached.films });
+      return;
+    }
+    paintFilmography(container, { kind: "no-token" });
+    return;
+  }
+  paintFilmography(container, { kind: "loading" });
+  try {
+    const entry = await Tmdb.getFilmography(name, (err, fresh) => {
+      // Background refresh after a stale-cache paint.
+      if (err || !container.isConnected) return;
+      paintFilmography(container, { kind: "films", films: fresh.films });
+    });
+    if (entry?.films) {
+      paintFilmography(container, { kind: "films", films: entry.films });
+    } else {
+      paintFilmography(container, { kind: "error", message: "No filmography returned." });
+    }
+  } catch (err) {
+    paintFilmography(container, tmdbErrorToState(err, name));
+  }
 }
 
 function renderDirectorsTab() {
@@ -2346,19 +2463,79 @@ function renderDirectorsTab() {
       ? el("ul", { class: "director-films" }, ...films.map(renderDirectorFilm))
       : el("p", { class: "director-row__nofilms", text: "No upcoming films in the schedule." });
 
-    const body = el("div", { class: "director-row__body" },
-      el("h3", { class: "director-row__name", dataset: { id: d.id }, text: d.name }),
-      d.notes ? el("p", { class: "director-row__notes", text: d.notes }) : null,
-      filmsList,
+    const expanded = expandedDirectors.has(d.id);
+
+    const filmographyEl = el("div", {
+      class: "director-filmography",
+      dataset: { directorId: d.id },
+      hidden: !expanded,
+    });
+
+    const detailActions = el("div", {
+      class: "director-row__detail-actions",
+      hidden: !expanded,
+    },
+      el("button", { type: "button", class: "rep-card-action", dataset: { action: "edit", id: d.id } }, "Edit"),
+      el("button", { type: "button", class: "rep-card-action rep-card-action--ghost", dataset: { action: "remove", id: d.id } }, "Remove"),
     );
 
-    const row = el("li", { class: "director-row", dataset: { id: d.id } },
+    const expandBtn = el("button", {
+      type: "button",
+      class: "director-row__expand",
+      dataset: { action: "toggle-expand", id: d.id },
+      "aria-expanded": expanded ? "true" : "false",
+    },
+      el("span", { text: expanded ? "Hide details" : "Show filmography" }),
+    );
+    expandBtn.insertAdjacentHTML("beforeend", CHEVRON_DOWN_SVG);
+
+    const body = el("div", { class: "director-row__body" },
+      el("h3", { class: "director-row__name", text: d.name }),
+      d.notes ? el("p", { class: "director-row__notes", text: d.notes }) : null,
+      filmsList,
+      expandBtn,
+      filmographyEl,
+      detailActions,
+    );
+
+    const row = el("li", {
+        class: "director-row",
+        dataset: { id: d.id, expanded: expanded ? "true" : "false" },
+      },
       el("span", { class: "director-row__rank", text: String(idx + 1), "aria-hidden": "true" }),
       body,
       el("div", { class: "director-row__actions" }, upBtn, downBtn),
     );
     list.appendChild(row);
+
+    // Kick off filmography load if the row starts expanded (restored from
+    // localStorage). Lets the cached payload paint on first render.
+    if (expanded) loadFilmographyInto(filmographyEl, d.name);
   });
+}
+
+function toggleDirectorExpand(id) {
+  const row = document.querySelector(`.director-row[data-id="${CSS.escape(id)}"]`);
+  if (!row) return;
+  const filmography = row.querySelector(".director-filmography");
+  const actions = row.querySelector(".director-row__detail-actions");
+  const button = row.querySelector(".director-row__expand");
+  const label = button?.querySelector("span");
+  const willExpand = !expandedDirectors.has(id);
+  if (willExpand) expandedDirectors.add(id);
+  else expandedDirectors.delete(id);
+  saveExpandedDirectors();
+
+  row.dataset.expanded = willExpand ? "true" : "false";
+  if (filmography) filmography.hidden = !willExpand;
+  if (actions) actions.hidden = !willExpand;
+  if (button) button.setAttribute("aria-expanded", willExpand ? "true" : "false");
+  if (label) label.textContent = willExpand ? "Hide details" : "Show filmography";
+
+  if (willExpand && filmography) {
+    const director = Directors.all().find((d) => d.id === id);
+    if (director) loadFilmographyInto(filmography, director.name);
+  }
 }
 
 document.getElementById("director-list")?.addEventListener("click", (e) => {
@@ -2371,16 +2548,49 @@ document.getElementById("director-list")?.addEventListener("click", (e) => {
     if (Directors.move(id, delta)) renderDirectorsTab();
     return;
   }
-  const nameEl = e.target.closest(".director-row__name");
-  if (nameEl) {
-    const id = nameEl.dataset.id;
+  const expandBtn = e.target.closest('[data-action="toggle-expand"]');
+  if (expandBtn) {
+    const id = expandBtn.dataset.id;
+    if (id) toggleDirectorExpand(id);
+    return;
+  }
+  const editBtn = e.target.closest('[data-action="edit"]');
+  if (editBtn) {
+    const id = editBtn.dataset.id;
     if (id) openDirectorDialog(id);
+    return;
+  }
+  const removeBtn = e.target.closest('[data-action="remove"]');
+  if (removeBtn) {
+    const id = removeBtn.dataset.id;
+    if (id) Directors.remove(id);
+    return;
+  }
+  const connectBtn = e.target.closest('[data-action="connect-tmdb"]');
+  if (connectBtn) {
+    openTmdbDialog();
   }
 });
 
 document.getElementById("add-director")?.addEventListener("click", () => {
   openDirectorDialog(null);
 });
+
+// Filter the local director index for autocomplete suggestions, excluding any
+// director the user has already added. Substring match against normalized
+// names so accents/case/punctuation don't trip the user up.
+function suggestDirectors(query) {
+  const q = normalizeDirectorName(query);
+  if (!q || q.length < 2) return [];
+  const saved = new Set(Directors.all().map((d) => normalizeDirectorName(d.name)));
+  const hits = [];
+  for (const entry of directorDisplayList) {
+    if (saved.has(entry.key)) continue;
+    if (entry.key.includes(q)) hits.push(entry);
+    if (hits.length >= 8) break;
+  }
+  return hits;
+}
 
 function openDirectorDialog(id) {
   const dlg = document.getElementById("director-dialog");
@@ -2390,6 +2600,7 @@ function openDirectorDialog(id) {
   const notesInput = document.getElementById("director-notes");
   const cancel = document.getElementById("director-cancel");
   const remove = document.getElementById("director-remove");
+  const suggList = document.getElementById("director-suggestions");
   if (!dlg || !form) return;
 
   const existing = id ? Directors.all().find((d) => d.id === id) : null;
@@ -2397,15 +2608,55 @@ function openDirectorDialog(id) {
   nameInput.value = existing?.name || "";
   notesInput.value = existing?.notes || "";
   remove.hidden = !existing;
+  if (suggList) {
+    suggList.innerHTML = "";
+    suggList.hidden = true;
+  }
 
   dlg.showModal();
   requestAnimationFrame(() => nameInput.focus());
+
+  const renderSuggestions = () => {
+    if (!suggList) return;
+    // Don't suggest when editing — the user explicitly opened this director
+    // to change their notes, not to swap them for a different person.
+    if (existing) { suggList.hidden = true; return; }
+    const hits = suggestDirectors(nameInput.value);
+    suggList.innerHTML = "";
+    if (!hits.length) { suggList.hidden = true; return; }
+    for (const h of hits) {
+      const li = el("li", {
+          class: "director-suggestion",
+          dataset: { name: h.name },
+        },
+        el("span", { text: h.name }),
+        el("span", { class: "director-suggestion__count", text: `${h.count} upcoming` }),
+      );
+      suggList.appendChild(li);
+    }
+    suggList.hidden = false;
+  };
+
+  const onInput = () => renderSuggestions();
+
+  // Use mousedown so the click fires before the input blurs (which would
+  // hide the list before the handler ran).
+  const onSuggestClick = (e) => {
+    const li = e.target.closest(".director-suggestion");
+    if (!li) return;
+    e.preventDefault();
+    nameInput.value = li.dataset.name || "";
+    if (suggList) suggList.hidden = true;
+    notesInput.focus();
+  };
 
   const cleanup = () => {
     cancel.removeEventListener("click", onCancel);
     remove.removeEventListener("click", onRemove);
     form.removeEventListener("submit", onSubmit);
     dlg.removeEventListener("cancel", onEsc);
+    nameInput.removeEventListener("input", onInput);
+    suggList?.removeEventListener("mousedown", onSuggestClick);
   };
   const onCancel = () => { dlg.close(); cleanup(); };
   const onEsc = (e) => { e.preventDefault(); onCancel(); };
@@ -2423,6 +2674,52 @@ function openDirectorDialog(id) {
     else Directors.add(name, notes);
     dlg.close();
     cleanup();
+  };
+
+  cancel.addEventListener("click", onCancel);
+  remove.addEventListener("click", onRemove);
+  form.addEventListener("submit", onSubmit);
+  dlg.addEventListener("cancel", onEsc);
+  nameInput.addEventListener("input", onInput);
+  suggList?.addEventListener("mousedown", onSuggestClick);
+}
+
+function openTmdbDialog() {
+  const dlg = document.getElementById("tmdb-dialog");
+  const form = document.getElementById("tmdb-form");
+  const input = document.getElementById("tmdb-input");
+  const cancel = document.getElementById("tmdb-cancel");
+  const remove = document.getElementById("tmdb-remove");
+  if (!dlg || !form) return;
+
+  input.value = Tmdb.getToken() || "";
+  remove.hidden = !Tmdb.hasToken();
+  dlg.showModal();
+  requestAnimationFrame(() => input.focus());
+
+  const cleanup = () => {
+    cancel.removeEventListener("click", onCancel);
+    remove.removeEventListener("click", onRemove);
+    form.removeEventListener("submit", onSubmit);
+    dlg.removeEventListener("cancel", onEsc);
+  };
+  const onCancel = () => { dlg.close(); cleanup(); };
+  const onEsc = (e) => { e.preventDefault(); onCancel(); };
+  const onRemove = () => {
+    Tmdb.setToken(null);
+    dlg.close();
+    cleanup();
+    if (activeTab === "directors") renderDirectorsTab();
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const v = input.value.trim();
+    if (!v) return;
+    Tmdb.setToken(v);
+    dlg.close();
+    cleanup();
+    // Re-render so any "Connect TMDB" prompts refresh into loading states.
+    if (activeTab === "directors") renderDirectorsTab();
   };
 
   cancel.addEventListener("click", onCancel);

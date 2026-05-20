@@ -730,6 +730,11 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 }
 .chip--limited   { background: var(--color-warning-soft); color: var(--color-warning); }
 .chip--streaming { background: var(--color-pending-soft); color: var(--color-pending); }
+/* TMDB development status — used on the inline films list when a director's
+   project isn't on the local theatrical schedule yet. */
+.chip--upcoming      { background: var(--color-accent-soft);  color: var(--color-accent-dark); }
+.chip--in-production { background: var(--color-pending-soft); color: var(--color-pending); }
+.chip--rumored       { background: transparent;               color: var(--color-text-faint); border: 1px solid var(--color-border-strong); }
 
 /* Stack the level chip + scope chip vertically when both are present so the
    title line never gets squeezed. */

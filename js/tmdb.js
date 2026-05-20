@@ -9,9 +9,12 @@
 
 const TMDB_BASE = "https://api.themoviedb.org/3";
 const TOKEN_KEY = "upcoming:tmdb_token";
-// Bumped from v1 (unfiltered) to v2 once we started filtering by runtime
-// and sole-director credit. v1 entries are ignored on read.
-const CACHE_PREFIX = "upcoming:filmography:v2:";
+// Cache schema:
+//   v1 — unfiltered films array.
+//   v2 — runtime/sole-director filter; films array.
+//   v3 — split into { released, upcoming } so the inline films section can
+//        surface in-production / rumored titles next to the local schedule.
+const CACHE_PREFIX = "upcoming:filmography:v3:";
 const CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
 
 // AMPAS defines "feature" as any film >40 minutes. Anything shorter is a
@@ -60,19 +63,21 @@ export function getCached(name) {
     const raw = localStorage.getItem(cacheKey(name));
     if (!raw) return null;
     const j = JSON.parse(raw);
-    if (!j?.fetchedAt || !Array.isArray(j.films)) return null;
+    if (!j?.fetchedAt) return null;
+    if (!Array.isArray(j.released) || !Array.isArray(j.upcoming)) return null;
     return j;
   } catch {
     return null;
   }
 }
 
-function writeCache(name, films, tmdbId) {
+function writeCache(name, payload) {
   try {
     localStorage.setItem(cacheKey(name), JSON.stringify({
       fetchedAt: new Date().toISOString(),
-      tmdbId: tmdbId || null,
-      films,
+      tmdbId: payload.tmdbId || null,
+      released: payload.released,
+      upcoming: payload.upcoming,
     }));
   } catch {}
 }
@@ -143,9 +148,12 @@ async function batchAll(items, limit, fn) {
   return results;
 }
 
-// Returns { films: [{ id, title, date }], tmdbId } sorted newest-first.
-// Only feature-length (≥40 min) films where the person is the SOLE
-// "Director" credit. Throws "no-token", "bad-token", "not-found", "tmdb-NNN".
+// Returns { tmdbId, released, upcoming } where each list contains
+// { id, title, date, status, year }. Only feature-length (≥40 min) films
+// where the person is the SOLE "Director" credit. "upcoming" includes
+// Rumored / Planned / In Production / Post Production titles AND any film
+// whose release_date is still in the future. "Canceled" titles are dropped.
+// Throws "no-token", "bad-token", "not-found", "tmdb-NNN".
 async function fetchFresh(name) {
   const person = await findPerson(name);
   if (!person) throw new Error("not-found");
@@ -167,7 +175,9 @@ async function fetchFresh(name) {
     }
   });
 
-  const films = [];
+  const today = new Date().toISOString().slice(0, 10);
+  const released = [];
+  const upcoming = [];
   for (let i = 0; i < directing.length; i++) {
     const credit = directing[i];
     const d = details[i];
@@ -178,14 +188,29 @@ async function fetchFresh(name) {
     // Sole-director check: count Director-job entries on this film's crew.
     const directors = (d.credits?.crew || []).filter((c) => c.job === "Director");
     if (directors.length > 1) continue;
-    films.push({
+    const status = d.status || "";
+    if (status === "Canceled") continue;
+
+    const date = credit.release_date || d.release_date || "";
+    // TMDB returns a `year` only via release_date; many rumored projects have
+    // no date at all, in which case we leave year empty and the UI shows TBD.
+    const year = date ? date.slice(0, 4) : "";
+    const film = {
       id: credit.id,
       title: credit.title || credit.original_title || "",
-      date: credit.release_date || "",
-    });
+      date,
+      year,
+      status,
+    };
+    const isReleased = status === "Released" && date && date <= today;
+    if (isReleased) released.push(film);
+    else upcoming.push(film);
   }
-  films.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  return { tmdbId: person.id, films };
+  released.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  // Upcoming: ascending by date so the soonest releases land first. Films
+  // with no date sort to the end (placeholder "9999-12-31").
+  upcoming.sort((a, b) => (a.date || "9999-12-31").localeCompare(b.date || "9999-12-31"));
+  return { tmdbId: person.id, released, upcoming };
 }
 
 // Cache-then-network. Returns the cached entry immediately if any; the
@@ -204,8 +229,13 @@ export async function getFilmography(name, onFresh) {
   if (!promise) {
     promise = fetchFresh(name)
       .then((res) => {
-        writeCache(name, res.films, res.tmdbId);
-        return { fetchedAt: new Date().toISOString(), films: res.films, tmdbId: res.tmdbId };
+        writeCache(name, res);
+        return {
+          fetchedAt: new Date().toISOString(),
+          tmdbId: res.tmdbId,
+          released: res.released,
+          upcoming: res.upcoming,
+        };
       })
       .finally(() => inflight.delete(key));
     inflight.set(key, promise);

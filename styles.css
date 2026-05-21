@@ -2145,30 +2145,33 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   line-height: 1.4;
 }
 
-.director-year {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: var(--space-2) var(--space-3);
-  align-items: baseline;
+/* One tally at the top of each expanded filmography (e.g. "5 of 16
+   watched"). Always present so toggling marks never adds/removes an
+   element below — the row beneath can't shift. */
+.director-filmography__tally {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--color-success);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
 }
-.director-year__label {
+
+/* Year header sits above its film list (full-width titles, no narrow
+   column wrap). */
+.director-year {
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  font-family: var(--font-body);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.005em;
+  gap: var(--space-1);
 }
-.director-year__year {
+.director-year__label {
+  font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 700;
   color: var(--color-accent);
-}
-.director-year__seen {
-  font-size: var(--text-micro);
-  font-weight: 600;
-  color: var(--color-success);
-  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.005em;
 }
 .director-year__films {
   list-style: none;
@@ -2222,6 +2225,20 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   background: var(--color-success);
   border-color: var(--color-success);
   color: var(--color-success-text);
+}
+/* One-shot "bump" the moment a watched mark is toggled — purely visual
+   feedback, no layout shift. JS adds .is-pulse for one frame; the keyframe
+   runs from 1.0 to 1.18 and back. */
+.director-year__check.is-pulse {
+  animation: director-check-pulse var(--duration-normal) var(--ease-out);
+}
+@keyframes director-check-pulse {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.22); }
+  100% { transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .director-year__check.is-pulse { animation: none; }
 }
 
 .director-row__detail-actions {

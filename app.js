@@ -2736,6 +2736,32 @@ function saveExpandedDirectors() {
   try { localStorage.setItem(DIR_EXPANDED_KEY, JSON.stringify([...expandedDirectors])); } catch {}
 }
 
+// Per-film watched state piggybacks on the Interests storage so it syncs
+// to GitHub alongside the user's other marks. The key is the same
+// `tmdb:${id}` format the rest of the app uses for movies, which means a
+// film that's BOTH on the local schedule and in a director's filmography
+// shares a single watched state across both surfaces.
+const filmWatchedKey = (film) => `tmdb:${film.id}`;
+const isFilmWatched = (film) => Interests.getLevel(filmWatchedKey(film)) === "watched";
+
+const CHECK_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-11"/></svg>`;
+
+function renderFilmographyFilm(film) {
+  const watched = isFilmWatched(film);
+  const btn = el("button", {
+    type: "button",
+    class: "director-year__check",
+    dataset: { action: "toggle-watched", tmdbId: String(film.id) },
+    "aria-pressed": watched ? "true" : "false",
+    "aria-label": watched ? "Mark unwatched" : "Mark watched",
+  });
+  btn.innerHTML = CHECK_SVG;
+  return el("li", { class: `director-year__film${watched ? " is-watched" : ""}` },
+    btn,
+    el("span", { class: "director-year__film-title", text: film.title }),
+  );
+}
+
 function renderFilmographyYearGroups(films) {
   const buckets = new Map();
   for (const f of films) {
@@ -2749,16 +2775,19 @@ function renderFilmographyYearGroups(films) {
     if (b === "—") return -1;
     return b.localeCompare(a);
   });
-  return years.map((y) =>
-    el("div", { class: "director-year" },
-      el("div", { class: "director-year__label", text: y }),
-      el("ul", { class: "director-year__films" },
-        ...buckets.get(y).map((f) =>
-          el("li", { class: "director-year__film", text: f.title })
-        )
+  return years.map((y) => {
+    const bucket = buckets.get(y);
+    const seen = bucket.filter(isFilmWatched).length;
+    return el("div", { class: "director-year" },
+      el("div", { class: "director-year__label" },
+        el("span", { class: "director-year__year", text: y }),
+        seen ? el("span", { class: "director-year__seen", text: `${seen}/${bucket.length}` }) : null,
       ),
-    )
-  );
+      el("ul", { class: "director-year__films" },
+        ...bucket.map(renderFilmographyFilm)
+      ),
+    );
+  });
 }
 
 function paintFilmography(container, state) {
@@ -2827,27 +2856,60 @@ function renderTmdbUpcomingFilm(film) {
   );
 }
 
-// Background-load TMDB upcoming/rumored films into the inline list under a
-// director's row, deduped against `localTmdbIds` (already shown via the
-// local schedule). Cache-then-network: cached entries paint immediately,
-// and a follow-up refresh paints again if newer data arrives.
-function loadTmdbUpcomingInto(filmsListEl, nofilmsEl, directorName, localTmdbIds) {
-  if (!filmsListEl || !Tmdb.hasToken()) return;
-  const paint = (upcoming) => {
-    if (!filmsListEl.isConnected) return;
-    // Clear any prior TMDB items so we don't accumulate on refresh.
-    filmsListEl.querySelectorAll(".director-film--tmdb").forEach((n) => n.remove());
-    const fresh = (upcoming || [])
-      .filter((f) => !localTmdbIds.has(f.id) && f.title);
-    if (!fresh.length) return;
-    for (const f of fresh) filmsListEl.appendChild(renderTmdbUpcomingFilm(f));
-    if (nofilmsEl) nofilmsEl.hidden = true;
+// Patch in TMDB-derived bits of a director's row after the network resolves:
+// the profile thumbnail, the "Latest: …" hint, and any upcoming/rumored
+// films deduped against the local schedule. Cache-then-network: cached
+// entries paint immediately, and a follow-up refresh paints again if newer
+// data arrives.
+function loadDirectorTmdbInto(rowEl, filmsListEl, nofilmsEl, directorName, localTmdbIds) {
+  if (!rowEl || !Tmdb.hasToken()) return;
+  const paint = (entry) => {
+    if (!entry || !rowEl.isConnected) return;
+
+    // Photo: swap the initials placeholder for the real thumbnail.
+    const url = Tmdb.profileImageUrl(entry.profilePath);
+    const photoEl = rowEl.querySelector(".director-row__photo");
+    if (url && photoEl && photoEl.tagName !== "IMG") {
+      const img = el("img", {
+        class: "director-row__photo",
+        src: url, alt: "", loading: "lazy", decoding: "async",
+      });
+      photoEl.replaceWith(img);
+    } else if (url && photoEl?.tagName === "IMG" && photoEl.getAttribute("src") !== url) {
+      photoEl.setAttribute("src", url);
+    }
+
+    // Latest hint: insert or update.
+    const latest = entry.released?.[0];
+    if (latest?.title) {
+      const year = latest.year || (latest.date ? latest.date.slice(0, 4) : "");
+      const text = year ? `Latest: ${latest.title} · ${year}` : `Latest: ${latest.title}`;
+      let latestEl = rowEl.querySelector(".director-row__latest");
+      if (!latestEl) {
+        latestEl = el("p", { class: "director-row__latest", text });
+        const after = rowEl.querySelector(".director-row__notes")
+          || rowEl.querySelector(".director-row__name");
+        after?.after(latestEl);
+      } else {
+        latestEl.textContent = text;
+      }
+    }
+
+    // Upcoming/rumored films. Clear any prior TMDB items so refreshes don't
+    // accumulate, then append the deduped list.
+    if (filmsListEl) {
+      filmsListEl.querySelectorAll(".director-film--tmdb").forEach((n) => n.remove());
+      const fresh = (entry.upcoming || [])
+        .filter((f) => !localTmdbIds.has(f.id) && f.title);
+      for (const f of fresh) filmsListEl.appendChild(renderTmdbUpcomingFilm(f));
+      if (nofilmsEl) nofilmsEl.hidden = filmsListEl.children.length > 0;
+    }
   };
   Tmdb.getFilmography(directorName, (err, fresh) => {
-    if (err) return;
-    paint(fresh.upcoming);
+    if (err || !rowEl.isConnected) return;
+    paint(fresh);
   })
-    .then((entry) => { if (entry) paint(entry.upcoming); })
+    .then((entry) => { if (entry) paint(entry); })
     .catch(() => {});
 }
 
@@ -2886,19 +2948,75 @@ async function loadFilmographyInto(container, name) {
   }
 }
 
+// Search filter applied to the visible Directors list. Stored at module
+// scope so it survives between renders (e.g. interest toggles re-render the
+// tab and shouldn't drop the user's filter). Reset on dialog close isn't
+// needed — typing into the search input flows through setDirectorSearch.
+let directorSearchQuery = "";
+
+const setDirectorSearch = (value) => {
+  const next = normalizeDirectorName(value);
+  if (next === directorSearchQuery) return;
+  directorSearchQuery = next;
+  const clearBtn = document.getElementById("director-search-clear");
+  if (clearBtn) clearBtn.hidden = !value;
+  if (activeTab === "directors") renderDirectorsTab();
+  else tabDirty.directors = true;
+};
+
+const matchesDirectorSearch = (d) => {
+  if (!directorSearchQuery) return true;
+  const hay = normalizeDirectorName(`${d.name} ${d.notes || ""}`);
+  return hay.includes(directorSearchQuery);
+};
+
+const initialsFor = (name) =>
+  String(name || "")
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((w) => w[0] || "")
+    .join("")
+    .toUpperCase();
+
+function directorLatestText(name) {
+  const cached = Tmdb.getCached(name);
+  const film = cached?.released?.[0];
+  if (!film?.title) return "";
+  const year = film.year || (film.date ? film.date.slice(0, 4) : "");
+  return year ? `Latest: ${film.title} · ${year}` : `Latest: ${film.title}`;
+}
+
+function renderRankPhoto(d, rank) {
+  const cached = Tmdb.getCached(d.name);
+  const url = Tmdb.profileImageUrl(cached?.profilePath);
+  const photo = url
+    ? el("img", { class: "director-row__photo", src: url, alt: "", loading: "lazy", decoding: "async" })
+    : el("div", { class: "director-row__photo director-row__photo--placeholder", text: initialsFor(d.name) });
+  return el("div", { class: "director-row__rank-col" },
+    photo,
+    el("span", { class: "director-row__rank", text: String(rank) }),
+  );
+}
+
 function renderDirectorsTab() {
   const list = document.getElementById("director-list");
   const empty = document.getElementById("empty-directors");
+  const emptySearch = document.getElementById("empty-directors-search");
   if (!list || !empty) return;
   list.innerHTML = "";
   const items = Directors.all();
   if (!items.length) {
     empty.hidden = false;
+    if (emptySearch) emptySearch.hidden = true;
     return;
   }
   empty.hidden = true;
 
+  let shown = 0;
   items.forEach((d, idx) => {
+    if (!matchesDirectorSearch(d)) return;
+    shown++;
     const upBtn = el("button", {
       type: "button",
       class: "director-move director-move--up",
@@ -2954,9 +3072,11 @@ function renderDirectorsTab() {
     );
     expandBtn.insertAdjacentHTML("beforeend", CHEVRON_DOWN_SVG);
 
+    const latestText = directorLatestText(d.name);
     const body = el("div", { class: "director-row__body" },
       el("h3", { class: "director-row__name", text: d.name }),
       d.notes ? el("p", { class: "director-row__notes", text: d.notes }) : null,
+      latestText ? el("p", { class: "director-row__latest", text: latestText }) : null,
       filmsList,
       nofilms,
       expandBtn,
@@ -2968,21 +3088,23 @@ function renderDirectorsTab() {
         class: "director-row",
         dataset: { id: d.id, expanded: expanded ? "true" : "false" },
       },
-      el("span", { class: "director-row__rank", text: String(idx + 1), "aria-hidden": "true" }),
+      renderRankPhoto(d, idx + 1),
       body,
       el("div", { class: "director-row__actions" }, upBtn, downBtn),
     );
     list.appendChild(row);
 
-    // Background-enrich the inline films section with TMDB upcoming/rumored
-    // titles. Deduped against the local schedule by tmdb_id; the in-the-
-    // schedule note hides once any TMDB entry lands.
-    loadTmdbUpcomingInto(filmsList, nofilms, d.name, localTmdbIds);
+    // Background-enrich the row with TMDB data: in-flight upcoming titles
+    // appended to the films list, plus photo + latest hint that paint over
+    // the placeholders once the person fetch resolves.
+    loadDirectorTmdbInto(row, filmsList, nofilms, d.name, localTmdbIds);
 
     // Kick off filmography load if the row starts expanded (restored from
     // localStorage). Lets the cached payload paint on first render.
     if (expanded) loadFilmographyInto(filmographyEl, d.name);
   });
+
+  if (emptySearch) emptySearch.hidden = shown > 0 || !directorSearchQuery;
 }
 
 function toggleDirectorExpand(id) {
@@ -3040,11 +3162,59 @@ document.getElementById("director-list")?.addEventListener("click", (e) => {
   const connectBtn = e.target.closest('[data-action="connect-tmdb"]');
   if (connectBtn) {
     openTmdbDialog();
+    return;
+  }
+  const watchedBtn = e.target.closest('[data-action="toggle-watched"]');
+  if (watchedBtn) {
+    const id = watchedBtn.dataset.tmdbId;
+    if (!id) return;
+    const key = `tmdb:${id}`;
+    const next = Interests.getLevel(key) === "watched" ? null : "watched";
+    Interests.set(key, next);
+    // Patch the affected film row + its year-group count in place so the
+    // user gets immediate feedback without a tab-wide rebuild.
+    const filmEl = watchedBtn.closest(".director-year__film");
+    if (filmEl) filmEl.classList.toggle("is-watched", next === "watched");
+    watchedBtn.setAttribute("aria-pressed", next === "watched" ? "true" : "false");
+    watchedBtn.setAttribute("aria-label", next === "watched" ? "Mark unwatched" : "Mark watched");
+    const yearEl = watchedBtn.closest(".director-year");
+    if (yearEl) {
+      const films = yearEl.querySelectorAll(".director-year__film");
+      const seen = yearEl.querySelectorAll(".director-year__film.is-watched").length;
+      let seenLabel = yearEl.querySelector(".director-year__seen");
+      if (seen) {
+        const text = `${seen}/${films.length}`;
+        if (seenLabel) seenLabel.textContent = text;
+        else {
+          seenLabel = el("span", { class: "director-year__seen", text });
+          yearEl.querySelector(".director-year__label")?.appendChild(seenLabel);
+        }
+      } else if (seenLabel) {
+        seenLabel.remove();
+      }
+    }
   }
 });
 
 document.getElementById("add-director")?.addEventListener("click", () => {
   openDirectorDialog(null);
+});
+
+// Directors-tab search input. Filters the visible list as the user types;
+// the rank number stays the user's original ranking (not the filtered index).
+const directorSearchInput = document.getElementById("director-search-input");
+const directorSearchClear = document.getElementById("director-search-clear");
+directorSearchInput?.addEventListener("input", (e) => {
+  const value = e.target.value;
+  if (directorSearchClear) directorSearchClear.hidden = !value;
+  setDirectorSearch(value);
+});
+directorSearchClear?.addEventListener("click", () => {
+  if (!directorSearchInput) return;
+  directorSearchInput.value = "";
+  directorSearchClear.hidden = true;
+  setDirectorSearch("");
+  directorSearchInput.focus();
 });
 
 // Filter the local director index for autocomplete suggestions, excluding any

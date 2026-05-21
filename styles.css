@@ -1860,9 +1860,21 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 
 .directors__bar {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: var(--space-2);
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
 }
+
+/* Search input lives in the same row as the Add Director button — the
+   search field stretches, the button keeps its intrinsic width. */
+.directors__search {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.directors__search .search-bar__input { min-height: 36px; }
+.directors__search .search-bar__icon,
+.directors__search .search-bar__clear svg { width: var(--icon-sm); height: var(--icon-sm); }
 
 .directors__add {
   appearance: none;
@@ -1895,7 +1907,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .director-row {
   position: relative;
   display: grid;
-  grid-template-columns: 32px 1fr auto;
+  grid-template-columns: 56px 1fr auto;
   align-items: start;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) - 2px);
@@ -1909,14 +1921,47 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .director-row:first-child { border-top: 0; }
 .director-row:active { transform: scale(0.997); }
 
+.director-row__rank-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.director-row__photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.director-row__photo--placeholder {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+}
+
 .director-row__rank {
   font-family: var(--font-body);
-  font-size: var(--text-h3);
+  font-size: var(--text-small);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--color-accent);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   text-align: center;
+}
+
+.director-row__latest {
+  margin: 2px 0 0;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-text-dim);
+  line-height: 1.35;
 }
 
 .director-row__body {
@@ -2107,12 +2152,23 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   align-items: baseline;
 }
 .director-year__label {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.005em;
+}
+.director-year__year {
   font-size: var(--text-small);
   font-weight: 700;
   color: var(--color-accent);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.005em;
+}
+.director-year__seen {
+  font-size: var(--text-micro);
+  font-weight: 600;
+  color: var(--color-success);
+  letter-spacing: 0.04em;
 }
 .director-year__films {
   list-style: none;
@@ -2120,13 +2176,52 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: var(--space-1);
 }
 .director-year__film {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   font-family: var(--font-body);
   font-size: var(--text-small);
   color: var(--color-text);
   line-height: 1.35;
+}
+.director-year__film-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+.director-year__film.is-watched .director-year__film-title {
+  color: var(--color-text-faint);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-text-faint);
+}
+
+.director-year__check {
+  appearance: none;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--duration-fast) var(--ease-out),
+              border-color var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+}
+.director-year__check svg { width: 14px; height: 14px; }
+.director-year__check:active { transform: scale(var(--press-scale)); }
+.director-year__check[aria-pressed="true"] {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: var(--color-success-text);
 }
 
 .director-row__detail-actions {

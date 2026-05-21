@@ -1907,10 +1907,14 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .director-row {
   position: relative;
   display: grid;
-  grid-template-columns: 56px 1fr auto;
+  grid-template-columns: 48px 1fr auto;
   align-items: start;
-  gap: var(--space-3);
-  padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) - 2px);
+  /* Tightened from space-3 → space-2 across the board so the page feels
+     denser and the body cell has more room for content. The expanded
+     filmography below grows into the full row width via grid-column. */
+  column-gap: var(--space-2);
+  row-gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) calc(var(--space-3) - 2px);
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   border-left: 8px solid var(--color-accent);
@@ -1925,12 +1929,12 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-1);
+  gap: 2px;
 }
 
 .director-row__photo {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   background: var(--color-accent-soft);
@@ -1954,7 +1958,22 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   color: var(--color-accent);
   letter-spacing: -0.005em;
   text-align: center;
+  line-height: 1;
 }
+
+/* At-a-glance "watched/total" indicator under the rank in the rank column.
+   Updated in place by the toggle-watched handler so toggling never causes a
+   re-render of the row. */
+.director-row__stats {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-success);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.director-row__stats[hidden] { display: none; }
 
 .director-row__latest {
   margin: 2px 0 0;
@@ -1962,6 +1981,14 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-size: var(--text-small);
   color: var(--color-text-dim);
   line-height: 1.35;
+}
+
+/* Filmography + Edit/Remove are siblings of body in the grid; spanning all
+   three columns gives the expanded section the FULL row width so longer
+   titles like "Lock, Stock and Two Smoking Barrels" lay out on one line. */
+.director-filmography,
+.director-row__detail-actions {
+  grid-column: 1 / -1;
 }
 
 .director-row__body {
@@ -1999,8 +2026,8 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border: 1px solid var(--color-border-strong);
   background: var(--color-surface);
   color: var(--color-text-dim);
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: var(--radius-md);
   cursor: pointer;
   display: inline-flex;
@@ -2011,7 +2038,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
               color var(--duration-fast) var(--ease-out),
               transform var(--duration-fast) var(--ease-out);
 }
-.director-move svg { width: var(--icon-sm); height: var(--icon-sm); stroke-width: 2.2; }
+.director-move svg { width: 14px; height: 14px; stroke-width: 2.4; }
 .director-move:active { transform: scale(var(--press-scale)); }
 .director-move:active:not([disabled]) {
   background: var(--color-accent-soft);
@@ -2114,12 +2141,38 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 }
 
 .director-filmography {
-  margin: var(--space-3) 0 0;
+  margin: 0;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
 }
 .director-filmography[hidden] { display: none; }
+
+/* Rumored / In development block, pinned to the top of an expanded
+   filmography. Speculative entries don't get watched checkboxes because
+   they aren't watchable yet. */
+.director-rumored {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.director-rumored__label {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--color-text-dim);
+  letter-spacing: 0.02em;
+}
+.director-rumored__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
 
 .director-filmography__status {
   font-family: var(--font-body);

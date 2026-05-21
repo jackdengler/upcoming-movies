@@ -2894,15 +2894,25 @@ function paintFilmography(container, state) {
     return;
   }
   if (state.kind === "films") {
-    if (!state.films.length) {
+    const films = state.films || [];
+    const rumored = state.rumored || [];
+    if (!films.length && !rumored.length) {
       container.appendChild(el("p", { class: "director-filmography__status", text: "No directing credits on TMDB." }));
       return;
     }
     // One tally for the whole director, updated in place on watched toggles.
     // Always present so toggling never adds/removes an element (which would
     // shift the rows below).
-    container.appendChild(el("p", { class: "director-filmography__tally", text: filmographyTallyText(state.films) }));
-    for (const group of renderFilmographyYearGroups(state.films)) {
+    container.appendChild(el("p", { class: "director-filmography__tally", text: filmographyTallyText(films) }));
+    if (rumored.length) {
+      container.appendChild(el("div", { class: "director-rumored" },
+        el("div", { class: "director-rumored__label", text: "Rumored / In development" }),
+        el("ul", { class: "director-rumored__list" },
+          ...rumored.map(renderTmdbUpcomingFilm),
+        ),
+      ));
+    }
+    for (const group of renderFilmographyYearGroups(films)) {
       container.appendChild(group);
     }
   }
@@ -2982,14 +2992,30 @@ function loadDirectorTmdbInto(rowEl, filmsListEl, nofilmsEl, directorName, local
       }
     }
 
-    // Upcoming/rumored films. Clear any prior TMDB items so refreshes don't
-    // accumulate, then append the deduped list.
+    // Confirmed-only inline: a TMDB film qualifies for the quick view only
+    // when it has a real release_date AND isn't flagged Rumored / Planned.
+    // Undated and speculative entries surface inside the expanded
+    // filmography instead. (See loadFilmographyInto.)
     if (filmsListEl) {
       filmsListEl.querySelectorAll(".director-film--tmdb").forEach((n) => n.remove());
+      const isConfirmed = (f) =>
+        f.date && f.status !== "Rumored" && f.status !== "Planned";
       const fresh = (entry.upcoming || [])
-        .filter((f) => !localTmdbIds.has(f.id) && f.title);
+        .filter((f) => f.title && !localTmdbIds.has(f.id) && isConfirmed(f));
       for (const f of fresh) filmsListEl.appendChild(renderTmdbUpcomingFilm(f));
       if (nofilmsEl) nofilmsEl.hidden = filmsListEl.children.length > 0;
+    }
+
+    // Stats fraction in the rank column (e.g. "5/16") — only meaningful
+    // once we have a real filmography, so update it post-fetch too.
+    const statsEl = rowEl.querySelector(".director-row__stats");
+    if (statsEl && Array.isArray(entry.released)) {
+      const seen = entry.released.filter(isFilmWatched).length;
+      const total = entry.released.length;
+      if (total) {
+        statsEl.textContent = `${seen}/${total}`;
+        statsEl.hidden = false;
+      }
     }
   };
   Tmdb.getFilmography(directorName, (err, fresh) => {
@@ -3008,11 +3034,23 @@ function tmdbErrorToState(err, name) {
   return { kind: "error", message: "Couldn't load filmography. Check your connection." };
 }
 
+// A TMDB upcoming film qualifies as "rumored / in development" — and lives
+// only in the expanded view — if it's undated OR explicitly flagged as
+// Rumored / Planned. Anything with a real release date that isn't speculation
+// stays inline in the quick view.
+const isRumoredFilm = (f) =>
+  !f.date || f.status === "Rumored" || f.status === "Planned";
+
 async function loadFilmographyInto(container, name) {
+  const paintFromEntry = (entry) => {
+    const films = entry?.released || [];
+    const rumored = (entry?.upcoming || []).filter(isRumoredFilm);
+    paintFilmography(container, { kind: "films", films, rumored });
+  };
   if (!Tmdb.hasToken()) {
     const cached = Tmdb.getCached(name);
-    if (cached?.released?.length) {
-      paintFilmography(container, { kind: "films", films: cached.released });
+    if (cached?.released?.length || cached?.upcoming?.length) {
+      paintFromEntry(cached);
       return;
     }
     paintFilmography(container, { kind: "no-token" });
@@ -3023,10 +3061,10 @@ async function loadFilmographyInto(container, name) {
     const entry = await Tmdb.getFilmography(name, (err, fresh) => {
       // Background refresh after a stale-cache paint.
       if (err || !container.isConnected) return;
-      paintFilmography(container, { kind: "films", films: fresh.released });
+      paintFromEntry(fresh);
     });
-    if (entry?.released) {
-      paintFilmography(container, { kind: "films", films: entry.released });
+    if (entry) {
+      paintFromEntry(entry);
     } else {
       paintFilmography(container, { kind: "error", message: "No filmography returned." });
     }
@@ -3074,15 +3112,28 @@ function directorLatestText(name) {
   return year ? `Latest: ${film.title} · ${year}` : `Latest: ${film.title}`;
 }
 
+// Compact at-a-glance "watched / total" indicator for the collapsed row.
+// Returns empty string when no filmography cache exists yet (i.e. before the
+// background TMDB fetch lands) so we don't show a misleading 0/0.
+function directorStatsText(name) {
+  const cached = Tmdb.getCached(name);
+  const films = cached?.released;
+  if (!Array.isArray(films) || !films.length) return "";
+  const seen = films.filter(isFilmWatched).length;
+  return `${seen}/${films.length}`;
+}
+
 function renderRankPhoto(d, rank) {
   const cached = Tmdb.getCached(d.name);
   const url = Tmdb.profileImageUrl(cached?.profilePath);
   const photo = url
     ? el("img", { class: "director-row__photo", src: url, alt: "", loading: "lazy", decoding: "async" })
     : el("div", { class: "director-row__photo director-row__photo--placeholder", text: initialsFor(d.name) });
+  const stats = directorStatsText(d.name);
   return el("div", { class: "director-row__rank-col" },
     photo,
     el("span", { class: "director-row__rank", text: String(rank) }),
+    el("span", { class: "director-row__stats", text: stats, hidden: !stats }),
   );
 }
 
@@ -3167,10 +3218,11 @@ function renderDirectorsTab() {
       filmsList,
       nofilms,
       expandBtn,
-      filmographyEl,
-      detailActions,
     );
 
+    // The filmography and detail-actions are siblings of body in the grid so
+    // they can span all three columns when expanded — gives long titles the
+    // full row width to lay out on a single line.
     const row = el("li", {
         class: "director-row",
         dataset: { id: d.id, expanded: expanded ? "true" : "false" },
@@ -3178,6 +3230,8 @@ function renderDirectorsTab() {
       renderRankPhoto(d, idx + 1),
       body,
       el("div", { class: "director-row__actions" }, upBtn, downBtn),
+      filmographyEl,
+      detailActions,
     );
     list.appendChild(row);
 
@@ -3272,12 +3326,20 @@ document.getElementById("director-list")?.addEventListener("click", (e) => {
     watchedBtn.classList.add("is-pulse");
     // Director-wide tally: recount the whole filmography and update the
     // single header line. Always-present text node means no layout shift.
-    const filmographyEl = watchedBtn.closest(".director-filmography");
-    const tallyEl = filmographyEl?.querySelector(".director-filmography__tally");
-    if (filmographyEl && tallyEl) {
+    // Also patch the collapsed-view stats fraction in the rank column so
+    // the quick view reflects the new mark without a full re-render.
+    const rowEl = watchedBtn.closest(".director-row");
+    const filmographyEl = rowEl?.querySelector(".director-filmography");
+    if (filmographyEl) {
       const total = filmographyEl.querySelectorAll(".director-year__film").length;
       const seen = filmographyEl.querySelectorAll(".director-year__film.is-watched").length;
-      tallyEl.textContent = `${seen} of ${total} watched`;
+      const tallyEl = filmographyEl.querySelector(".director-filmography__tally");
+      if (tallyEl) tallyEl.textContent = `${seen} of ${total} watched`;
+      const statsEl = rowEl.querySelector(".director-row__stats");
+      if (statsEl && total) {
+        statsEl.textContent = `${seen}/${total}`;
+        statsEl.hidden = false;
+      }
     }
   }
 });

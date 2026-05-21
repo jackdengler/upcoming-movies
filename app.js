@@ -399,6 +399,25 @@ function setRepWatched(id, watched, meta) {
   saveRepMarks();
 }
 
+// Export-dialog flags persisted on the rep mark itself so they ride the
+// same GitHub sync and stick across opens.
+function setRepExportFlags(id, { starred, excluded } = {}) {
+  if (!repMarks[id]) return;
+  let changed = false;
+  if (typeof starred === "boolean" && repMarks[id].starred !== starred) {
+    repMarks[id].starred = starred;
+    changed = true;
+  }
+  if (typeof excluded === "boolean" && repMarks[id].excluded !== excluded) {
+    repMarks[id].excluded = excluded;
+    changed = true;
+  }
+  if (changed) {
+    stampRepMark(id);
+    saveRepMarks();
+  }
+}
+
 const fmtTime = (hhmm) => {
   if (!hhmm) return "";
   const [h, m] = hhmm.split(":").map(Number);
@@ -1370,45 +1389,65 @@ async function buildRereleasesExportBlob(selection) {
 
   const items = (selection || []).filter((s) => s.included);
 
-  // Layout constants — matched between measurement and draw to avoid
-  // height drift.
-  const W = 760;
-  const PAD_X = 36;
-  const PAD_TOP = 32;
-  const PAD_BOTTOM = 36;
+  // Narrower portrait layout — messaging apps render attachments at the
+  // bubble's pt-width, so a smaller source width means each source px gets
+  // more display area on the recipient's screen → bigger apparent type.
+  // Layout constants are matched between measurement and draw.
+  const W = 540;
+  const PAD_X = 28;
+  const PAD_TOP = 28;
+  const PAD_BOTTOM = 28;
   const HEADER_TITLE_H = 36;
   const HEADER_SUBTITLE_H = 26;
-  const HEADER_GAP = 22;
-  const TITLE_ROW_H = 36;
-  const DIR_ROW_H = 24;
-  const SHOWTIME_ROW_H = 28;
-  const ITEM_GAP = 22;
-  const FOOTER_H = 28;
-  const EMPTY_H = 32;
+  const HEADER_GAP = 18;
+  const TITLE_LINE_H = 28;          // per line — titles wrap up to 2 lines
+  const DIR_ROW_H = 22;
+  const SHOWTIME_ROW_H = 26;
+  const ITEM_GAP = 18;
+  const FOOTER_H = 24;
+  const EMPTY_H = 28;
+
+  const FAMILY = `'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif`;
+  const TITLE_FONT = `700 22px ${FAMILY}`;
+
+  // Single ctx used for both measurement and drawing — same font metrics
+  // means wrapped titles land where we computed they would.
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  ctx.textBaseline = "alphabetic";
+
+  // Pre-compute per-item title wraps so we can size the canvas correctly.
+  const layouts = items.map(({ item, starred }) => {
+    const titleX = starred ? PAD_X + 28 : PAD_X;
+    ctx.font = TITLE_FONT;
+    const titleLines = wrapText(
+      ctx,
+      item.year ? `${item.title} (${item.year})` : item.title,
+      W - titleX - PAD_X,
+      2,
+    );
+    return { item, starred, titleX, titleLines };
+  });
 
   let H = PAD_TOP + HEADER_TITLE_H + HEADER_SUBTITLE_H + HEADER_GAP;
-  if (!items.length) {
+  if (!layouts.length) {
     H += EMPTY_H;
   } else {
-    for (const { item } of items) {
-      H += TITLE_ROW_H;
-      if (item.director) H += DIR_ROW_H;
-      H += Math.max(1, item.showings.length) * SHOWTIME_ROW_H;
+    for (const layout of layouts) {
+      H += layout.titleLines.length * TITLE_LINE_H;
+      if (layout.item.director) H += DIR_ROW_H;
+      H += Math.max(1, layout.item.showings.length) * SHOWTIME_ROW_H;
       H += ITEM_GAP;
     }
     H -= ITEM_GAP;
   }
   H += FOOTER_H + PAD_BOTTOM;
 
-  const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  const canvas = document.createElement("canvas");
   canvas.width = Math.round(W * dpr);
   canvas.height = Math.round(H * dpr);
-  const ctx = canvas.getContext("2d");
   ctx.scale(dpr, dpr);
   ctx.textBaseline = "alphabetic";
-
-  const FAMILY = `'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif`;
 
   // Background (Linen) + tan stripe on the left edge.
   ctx.fillStyle = "#F5EFE6";
@@ -1425,30 +1464,29 @@ async function buildRereleasesExportBlob(selection) {
 
   ctx.fillStyle = "#6F665B";
   ctx.font = `500 16px ${FAMILY}`;
-  const summary = `As of ${fmtDateShort(TODAY)} · ${items.length} title${items.length === 1 ? "" : "s"}`;
+  const summary = `As of ${fmtDateShort(TODAY)} · ${layouts.length} title${layouts.length === 1 ? "" : "s"}`;
   ctx.fillText(summary, PAD_X, y + 18);
   y += HEADER_SUBTITLE_H + HEADER_GAP;
 
-  if (!items.length) {
+  if (!layouts.length) {
     ctx.fillStyle = "#6F665B";
     ctx.font = `400 17px ${FAMILY}`;
     ctx.fillText("Nothing selected.", PAD_X, y + 20);
   }
 
-  for (const { item, starred } of items) {
-    // Title row — starred items get a filled tan star, slightly bumped weight.
-    const starX = PAD_X;
-    const titleX = starred ? PAD_X + 28 : PAD_X;
+  for (const layout of layouts) {
+    const { item, starred, titleX, titleLines } = layout;
     if (starred) {
       ctx.fillStyle = "#B8895A";
-      ctx.font = `700 22px ${FAMILY}`;
-      ctx.fillText("★", starX, y + 24);
+      ctx.font = TITLE_FONT;
+      ctx.fillText("★", PAD_X, y + 24);
     }
     ctx.fillStyle = "#2A2520";
-    ctx.font = `700 22px ${FAMILY}`;
-    const titleText = item.year ? `${item.title} (${item.year})` : item.title;
-    drawTruncatedText(ctx, titleText, titleX, y + 24, W - titleX - PAD_X);
-    y += TITLE_ROW_H;
+    ctx.font = TITLE_FONT;
+    for (const line of titleLines) {
+      ctx.fillText(line, titleX, y + 24);
+      y += TITLE_LINE_H;
+    }
 
     if (item.director) {
       ctx.fillStyle = "#6F665B";
@@ -1478,6 +1516,40 @@ async function buildRereleasesExportBlob(selection) {
   return new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
 }
 
+// Greedy word wrap to up to `maxLines` lines. Last line is truncated with
+// "…" if it still wouldn't fit.
+function wrapText(ctx, text, maxWidth, maxLines) {
+  if (ctx.measureText(text).width <= maxWidth) return [text];
+  const words = String(text).split(/\s+/);
+  const lines = [];
+  let current = "";
+  for (const w of words) {
+    const trial = current ? current + " " + w : w;
+    if (ctx.measureText(trial).width <= maxWidth) {
+      current = trial;
+    } else {
+      if (current) lines.push(current);
+      current = w;
+      if (lines.length === maxLines - 1) break;
+    }
+  }
+  if (lines.length < maxLines && current) lines.push(current);
+  // If we broke early, the tail of `text` is unrepresented — append an
+  // ellipsis to the last line, trimming chars until it fits.
+  const consumed = lines.join(" ");
+  if (consumed.length < text.length && lines.length) {
+    const ellipsis = "…";
+    while (
+      lines[lines.length - 1].length > 0 &&
+      ctx.measureText(lines[lines.length - 1] + ellipsis).width > maxWidth
+    ) {
+      lines[lines.length - 1] = lines[lines.length - 1].slice(0, -1).trimEnd();
+    }
+    lines[lines.length - 1] = lines[lines.length - 1] + ellipsis;
+  }
+  return lines;
+}
+
 function drawTruncatedText(ctx, text, x, y, maxWidth) {
   if (ctx.measureText(text).width <= maxWidth) {
     ctx.fillText(text, x, y);
@@ -1505,7 +1577,12 @@ function openRepExportDialog() {
   const candidates = gatherRepExportCandidates();
   repExportState.clear();
   for (const item of candidates) {
-    repExportState.set(item.id, { item, included: true, starred: false });
+    const mark = repMarks[item.id];
+    repExportState.set(item.id, {
+      item,
+      included: !(mark?.excluded === true),
+      starred: mark?.starred === true,
+    });
   }
   renderRepExportDialogList();
   // Make sure the dialog can be re-opened cleanly if it was closed without
@@ -1524,10 +1601,10 @@ function renderRepExportDialogList() {
       class: "rep-export-empty",
       text: "No interested rereleases with upcoming showings.",
     }));
-    document.getElementById("rep-export-copy")?.setAttribute("disabled", "");
+    document.getElementById("rep-export-share")?.setAttribute("disabled", "");
     return;
   }
-  document.getElementById("rep-export-copy")?.removeAttribute("disabled");
+  document.getElementById("rep-export-share")?.removeAttribute("disabled");
 
   for (const [id, entry] of repExportState) {
     const { item, included, starred } = entry;
@@ -1596,6 +1673,7 @@ document.getElementById("rep-export-list")?.addEventListener("click", (e) => {
     // Starring auto-includes — otherwise the toggle is meaningless.
     if (entry.starred) entry.included = true;
   }
+  setRepExportFlags(id, { starred: entry.starred, excluded: !entry.included });
   renderRepExportDialogList();
 });
 
@@ -1603,62 +1681,67 @@ document.getElementById("rep-export-cancel")?.addEventListener("click", () => {
   document.getElementById("rep-export-dialog")?.close();
 });
 
-document.getElementById("rep-export-copy")?.addEventListener("click", async () => {
-  const copyBtn = document.getElementById("rep-export-copy");
-  if (!copyBtn || copyBtn.hasAttribute("disabled")) return;
-  copyBtn.setAttribute("disabled", "");
-  const originalLabel = copyBtn.textContent;
-  copyBtn.textContent = "Rendering…";
+document.getElementById("rep-export-share")?.addEventListener("click", async () => {
+  const shareBtn = document.getElementById("rep-export-share");
+  if (!shareBtn || shareBtn.hasAttribute("disabled")) return;
+  shareBtn.setAttribute("disabled", "");
+  const originalLabel = shareBtn.textContent;
+  shareBtn.textContent = "Rendering…";
 
   const selection = [...repExportState.values()].map(({ item, included, starred }) => ({
     item, included, starred,
   }));
 
-  try {
-    const supportsClipImage =
-      typeof ClipboardItem !== "undefined" &&
-      navigator.clipboard &&
-      typeof navigator.clipboard.write === "function";
+  const restore = (text, closeDialog) => {
+    shareBtn.textContent = text;
+    setTimeout(() => {
+      if (closeDialog) document.getElementById("rep-export-dialog")?.close();
+      shareBtn.textContent = originalLabel;
+      shareBtn.removeAttribute("disabled");
+    }, closeDialog ? 700 : 1500);
+  };
 
-    if (supportsClipImage) {
-      // iOS Safari requires the ClipboardItem to be constructed in the
-      // user-gesture microtask; passing a Promise<Blob> is permitted.
-      const item = new ClipboardItem({ "image/png": buildRereleasesExportBlob(selection) });
+  try {
+    const blob = await buildRereleasesExportBlob(selection);
+    if (!blob) { restore("Nothing to share"); return; }
+    const file = new File([blob], "rereleases.png", { type: "image/png" });
+
+    // Preferred path: iOS share sheet. "Copy" lives inside it, so the user's
+    // old copy-image flow is still one tap away.
+    if (navigator.canShare?.({ files: [file] })) {
+      try {
+        await navigator.share({ files: [file], title: "Rereleases" });
+        restore("Shared ✓", true);
+        return;
+      } catch (e) {
+        // User canceled the share sheet — treat as a no-op, not an error.
+        if (e?.name === "AbortError") { restore(originalLabel); return; }
+        throw e;
+      }
+    }
+
+    // Fallback 1: clipboard image.
+    if (typeof ClipboardItem !== "undefined" &&
+        navigator.clipboard?.write) {
+      const item = new ClipboardItem({ "image/png": blob });
       await navigator.clipboard.write([item]);
-      copyBtn.textContent = "Copied ✓";
-      setTimeout(() => {
-        document.getElementById("rep-export-dialog")?.close();
-        copyBtn.textContent = originalLabel;
-        copyBtn.removeAttribute("disabled");
-      }, 700);
+      restore("Copied ✓", true);
       return;
     }
 
-    const blob = await buildRereleasesExportBlob(selection);
-    if (blob) {
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "rereleases.png";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 5000);
-      copyBtn.textContent = "Downloaded";
-    } else {
-      copyBtn.textContent = "Nothing to export";
-    }
-    setTimeout(() => {
-      copyBtn.textContent = originalLabel;
-      copyBtn.removeAttribute("disabled");
-    }, 1500);
+    // Fallback 2: download.
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "rereleases.png";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+    restore("Downloaded");
   } catch (e) {
     console.warn("Rerelease export failed:", e);
-    copyBtn.textContent = "Couldn't copy";
-    setTimeout(() => {
-      copyBtn.textContent = originalLabel;
-      copyBtn.removeAttribute("disabled");
-    }, 1500);
+    restore("Couldn't share");
   }
 });
 

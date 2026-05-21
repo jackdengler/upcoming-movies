@@ -1380,8 +1380,8 @@ function gatherRepExportCandidates() {
 }
 
 // Build the export image as a PNG Blob from a curated set of {item, starred}
-// records (chosen in the export dialog). One row per movie. Larger fonts
-// than the on-screen UI so it stays readable when shared.
+// records (chosen in the export dialog). Movie-per-card layout, starred items
+// get an accented background so they stand out at a glance.
 async function buildRereleasesExportBlob(selection) {
   if (document.fonts && document.fonts.ready) {
     try { await document.fonts.ready; } catch {}
@@ -1389,131 +1389,224 @@ async function buildRereleasesExportBlob(selection) {
 
   const items = (selection || []).filter((s) => s.included);
 
-  // Narrower portrait layout — messaging apps render attachments at the
-  // bubble's pt-width, so a smaller source width means each source px gets
-  // more display area on the recipient's screen → bigger apparent type.
-  // Layout constants are matched between measurement and draw.
+  // Layout constants — kept identical between measurement and draw to avoid
+  // height drift. Source width is narrow because messaging apps render
+  // attachments at the bubble's pt width, so a smaller source = bigger
+  // apparent type on the recipient's phone.
   const W = 540;
-  const PAD_X = 28;
+  const PAD_X = 24;
   const PAD_TOP = 28;
   const PAD_BOTTOM = 28;
-  const HEADER_TITLE_H = 36;
+
+  const HEADER_TITLE_H = 40;
   const HEADER_SUBTITLE_H = 26;
-  const HEADER_GAP = 18;
-  const TITLE_LINE_H = 28;          // per line — titles wrap up to 2 lines
+  const HEADER_RULE_GAP = 18;
+
+  // Card geometry.
+  const CARD_INSET_X = 4;            // pull cards in from the page edge a bit
+  const CARD_PAD_X = 18;
+  const CARD_PAD_TOP = 16;
+  const CARD_PAD_BOTTOM = 16;
+  const CARD_GAP = 12;
+  const CARD_RADIUS = 8;
+
+  // Per-row sizes inside a card.
+  const TITLE_LINE_H = 28;            // title — up to two lines
+  const TITLE_GAP = 4;
   const DIR_ROW_H = 22;
-  const SHOWTIME_ROW_H = 26;
-  const ITEM_GAP = 18;
+  const SHOWTIME_ROW_H = 24;
+  const THEATER_ROW_H = 22;
+  const SHOWING_GAP = 6;              // gap between consecutive showings
+
   const FOOTER_H = 24;
   const EMPTY_H = 28;
 
   const FAMILY = `'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif`;
   const TITLE_FONT = `700 22px ${FAMILY}`;
 
-  // Single ctx used for both measurement and drawing — same font metrics
-  // means wrapped titles land where we computed they would.
+  const cardX = PAD_X + CARD_INSET_X;
+  const cardW = W - (PAD_X + CARD_INSET_X) * 2;
+  const cardTextW = cardW - CARD_PAD_X * 2;
+
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
   ctx.textBaseline = "alphabetic";
 
-  // Pre-compute per-item title wraps so we can size the canvas correctly.
+  // Pre-compute per-card title wraps so we can size the canvas correctly.
   const layouts = items.map(({ item, starred }) => {
-    const titleX = starred ? PAD_X + 28 : PAD_X;
     ctx.font = TITLE_FONT;
+    // Reserve room for the leading star on starred cards.
+    const titleMaxW = starred ? cardTextW - 28 : cardTextW;
     const titleLines = wrapText(
       ctx,
       item.year ? `${item.title} (${item.year})` : item.title,
-      W - titleX - PAD_X,
+      titleMaxW,
       2,
     );
-    return { item, starred, titleX, titleLines };
+    return { item, starred, titleLines };
   });
 
-  let H = PAD_TOP + HEADER_TITLE_H + HEADER_SUBTITLE_H + HEADER_GAP;
+  // Measure total height.
+  let H = PAD_TOP + HEADER_TITLE_H + HEADER_SUBTITLE_H + HEADER_RULE_GAP;
   if (!layouts.length) {
     H += EMPTY_H;
   } else {
     for (const layout of layouts) {
-      H += layout.titleLines.length * TITLE_LINE_H;
-      if (layout.item.director) H += DIR_ROW_H;
-      H += Math.max(1, layout.item.showings.length) * SHOWTIME_ROW_H;
-      H += ITEM_GAP;
+      H += cardHeight(layout);
+      H += CARD_GAP;
     }
-    H -= ITEM_GAP;
+    H -= CARD_GAP;
   }
-  H += FOOTER_H + PAD_BOTTOM;
+  H += HEADER_RULE_GAP + FOOTER_H + PAD_BOTTOM;
 
   canvas.width = Math.round(W * dpr);
   canvas.height = Math.round(H * dpr);
   ctx.scale(dpr, dpr);
   ctx.textBaseline = "alphabetic";
 
-  // Background (Linen) + tan stripe on the left edge.
+  // Background (Linen).
   ctx.fillStyle = "#F5EFE6";
   ctx.fillRect(0, 0, W, H);
-  ctx.fillStyle = "#B8895A";
-  ctx.fillRect(0, 0, 4, H);
 
-  // Header.
+  // ---- Header ----
   let y = PAD_TOP;
   ctx.fillStyle = "#2A2520";
-  ctx.font = `700 28px ${FAMILY}`;
-  ctx.fillText("Rereleases I'm catching", PAD_X, y + 28);
+  ctx.font = `700 32px ${FAMILY}`;
+  ctx.fillText("Rereleases", PAD_X, y + 32);
   y += HEADER_TITLE_H;
 
   ctx.fillStyle = "#6F665B";
-  ctx.font = `500 16px ${FAMILY}`;
-  const summary = `As of ${fmtDateShort(TODAY)} · ${layouts.length} title${layouts.length === 1 ? "" : "s"}`;
-  ctx.fillText(summary, PAD_X, y + 18);
-  y += HEADER_SUBTITLE_H + HEADER_GAP;
+  ctx.font = `500 15px ${FAMILY}`;
+  const counts = layouts.length
+    ? `${layouts.length} film${layouts.length === 1 ? "" : "s"} · ${fmtDateShort(TODAY)}`
+    : `No selections · ${fmtDateShort(TODAY)}`;
+  ctx.fillText(counts, PAD_X, y + 16);
+  y += HEADER_SUBTITLE_H;
+
+  // Thin tan rule under the header.
+  y += HEADER_RULE_GAP / 2;
+  ctx.fillStyle = "rgba(184,137,90,0.32)";
+  ctx.fillRect(PAD_X, y, W - PAD_X * 2, 1);
+  y += HEADER_RULE_GAP / 2;
 
   if (!layouts.length) {
     ctx.fillStyle = "#6F665B";
-    ctx.font = `400 17px ${FAMILY}`;
+    ctx.font = `400 16px ${FAMILY}`;
     ctx.fillText("Nothing selected.", PAD_X, y + 20);
   }
 
+  // ---- Cards ----
   for (const layout of layouts) {
-    const { item, starred, titleX, titleLines } = layout;
-    if (starred) {
-      ctx.fillStyle = "#B8895A";
-      ctx.font = TITLE_FONT;
-      ctx.fillText("★", PAD_X, y + 24);
-    }
-    ctx.fillStyle = "#2A2520";
-    ctx.font = TITLE_FONT;
-    for (const line of titleLines) {
-      ctx.fillText(line, titleX, y + 24);
-      y += TITLE_LINE_H;
-    }
-
-    if (item.director) {
-      ctx.fillStyle = "#6F665B";
-      ctx.font = `500 15px ${FAMILY}`;
-      drawTruncatedText(ctx, `Dir. ${item.director}`, PAD_X + 4, y + 16, W - PAD_X * 2 - 4);
-      y += DIR_ROW_H;
-    }
-
-    const showings = item.showings.length ? item.showings : [null];
-    for (const sh of showings) {
-      ctx.fillStyle = sh ? "#2A2520" : "#877E72";
-      ctx.font = `500 17px ${FAMILY}`;
-      const text = sh
-        ? `${fmtDateShort(sh.date)} · ${fmtTime(sh.time)} · ${shortTheaterName(sh.theater)}`
-        : "No upcoming showtimes";
-      drawTruncatedText(ctx, text, PAD_X + 4, y + 19, W - PAD_X * 2 - 4);
-      y += SHOWTIME_ROW_H;
-    }
-    y += ITEM_GAP;
+    const cardH = cardHeight(layout);
+    drawCard(ctx, layout, cardX, y, cardW, cardH);
+    y += cardH + CARD_GAP;
   }
+  if (layouts.length) y -= CARD_GAP;
 
-  // Footer.
+  // ---- Footer ----
+  ctx.fillStyle = "rgba(184,137,90,0.32)";
+  ctx.fillRect(PAD_X, H - PAD_BOTTOM - FOOTER_H + 8, W - PAD_X * 2, 1);
   ctx.fillStyle = "#877E72";
   ctx.font = `500 12px ${FAMILY}`;
   ctx.fillText("Upcoming Movies", PAD_X, H - PAD_BOTTOM + 12);
 
   return new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+
+  // ---- helpers (close over the layout constants) ----
+  function cardHeight(layout) {
+    const item = layout.item;
+    const titleH = layout.titleLines.length * TITLE_LINE_H + TITLE_GAP;
+    const dirH = item.director ? DIR_ROW_H : 0;
+    const showings = item.showings.length ? item.showings : [null];
+    const showsH = showings.reduce(
+      (acc, sh, i) => acc + SHOWTIME_ROW_H + (sh?.theater ? THEATER_ROW_H : 0) + (i < showings.length - 1 ? SHOWING_GAP : 0),
+      0,
+    );
+    return CARD_PAD_TOP + titleH + dirH + 6 + showsH + CARD_PAD_BOTTOM;
+  }
+
+  function drawCard(ctx, layout, x, y, w, h) {
+    const { item, starred, titleLines } = layout;
+    const bg = starred ? "rgba(184,137,90,0.14)" : "#FFFCF7";
+    const border = starred ? "rgba(184,137,90,0.36)" : "rgba(60,40,20,0.10)";
+
+    roundRectPath(ctx, x, y, w, h, CARD_RADIUS);
+    ctx.fillStyle = bg;
+    ctx.fill();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = border;
+    ctx.stroke();
+
+    const tx = x + CARD_PAD_X;
+    let ty = y + CARD_PAD_TOP;
+
+    // Title (with leading star on must-sees).
+    ctx.font = TITLE_FONT;
+    let titleX = tx;
+    if (starred) {
+      ctx.fillStyle = "#9C7148";
+      ctx.fillText("★", tx, ty + 22);
+      titleX = tx + 28;
+    }
+    ctx.fillStyle = "#2A2520";
+    for (const line of titleLines) {
+      ctx.fillText(line, titleX, ty + 22);
+      ty += TITLE_LINE_H;
+    }
+    ty += TITLE_GAP;
+
+    if (item.director) {
+      ctx.fillStyle = "#6F665B";
+      ctx.font = `500 14px ${FAMILY}`;
+      drawTruncatedText(ctx, `Dir. ${item.director}`, tx, ty + 14, cardTextW);
+      ty += DIR_ROW_H;
+    }
+
+    ty += 6;
+
+    const showings = item.showings.length ? item.showings : [null];
+    showings.forEach((sh, i) => {
+      if (!sh) {
+        ctx.fillStyle = "#877E72";
+        ctx.font = `500 16px ${FAMILY}`;
+        ctx.fillText("No upcoming showtimes", tx, ty + 18);
+        ty += SHOWTIME_ROW_H;
+        return;
+      }
+      ctx.fillStyle = "#2A2520";
+      ctx.font = `600 17px ${FAMILY}`;
+      const dateTimeText = `${fmtDateShort(sh.date)} · ${fmtTime(sh.time)}`;
+      drawTruncatedText(ctx, dateTimeText, tx, ty + 18, cardTextW);
+      ty += SHOWTIME_ROW_H;
+
+      if (sh.theater) {
+        ctx.fillStyle = "#6F665B";
+        ctx.font = `500 14px ${FAMILY}`;
+        drawTruncatedText(ctx, shortTheaterName(sh.theater), tx, ty + 14, cardTextW);
+        ty += THEATER_ROW_H;
+      }
+      if (i < showings.length - 1) ty += SHOWING_GAP;
+    });
+  }
+}
+
+function roundRectPath(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  if (ctx.roundRect) {
+    ctx.roundRect(x, y, w, h, r);
+    return;
+  }
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
 }
 
 // Greedy word wrap to up to `maxLines` lines. Last line is truncated with

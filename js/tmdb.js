@@ -8,13 +8,15 @@
 // list instantly.
 
 const TMDB_BASE = "https://api.themoviedb.org/3";
+const TMDB_IMG_BASE = "https://image.tmdb.org/t/p";
 const TOKEN_KEY = "upcoming:tmdb_token";
 // Cache schema:
 //   v1 — unfiltered films array.
 //   v2 — runtime/sole-director filter; films array.
-//   v3 — split into { released, upcoming } so the inline films section can
-//        surface in-production / rumored titles next to the local schedule.
-const CACHE_PREFIX = "upcoming:filmography:v3:";
+//   v3 — split into { released, upcoming }.
+//   v4 — also stores profilePath so the row thumbnail paints from cache
+//        without a second person lookup.
+const CACHE_PREFIX = "upcoming:filmography:v4:";
 const CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
 
 // AMPAS defines "feature" as any film >40 minutes. Anything shorter is a
@@ -76,10 +78,19 @@ function writeCache(name, payload) {
     localStorage.setItem(cacheKey(name), JSON.stringify({
       fetchedAt: new Date().toISOString(),
       tmdbId: payload.tmdbId || null,
+      profilePath: payload.profilePath || null,
       released: payload.released,
       upcoming: payload.upcoming,
     }));
   } catch {}
+}
+
+// TMDB profile image URL helper. Accepts a profile_path like "/abc123.jpg"
+// and an optional size token ("w92" by default — 92px wide, just right for
+// a row thumbnail). Returns null when the path is empty.
+export function profileImageUrl(profilePath, size = "w92") {
+  if (!profilePath) return null;
+  return `${TMDB_IMG_BASE}/${size}${profilePath}`;
 }
 
 function isFresh(entry) {
@@ -210,7 +221,7 @@ async function fetchFresh(name) {
   // Upcoming: ascending by date so the soonest releases land first. Films
   // with no date sort to the end (placeholder "9999-12-31").
   upcoming.sort((a, b) => (a.date || "9999-12-31").localeCompare(b.date || "9999-12-31"));
-  return { tmdbId: person.id, released, upcoming };
+  return { tmdbId: person.id, profilePath: person.profile_path || null, released, upcoming };
 }
 
 // Cache-then-network. Returns the cached entry immediately if any; the
@@ -233,6 +244,7 @@ export async function getFilmography(name, onFresh) {
         return {
           fetchedAt: new Date().toISOString(),
           tmdbId: res.tmdbId,
+          profilePath: res.profilePath,
           released: res.released,
           upcoming: res.upcoming,
         };

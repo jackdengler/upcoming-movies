@@ -2858,19 +2858,19 @@ function renderFilmographyYearGroups(films) {
     if (b === "—") return -1;
     return b.localeCompare(a);
   });
-  return years.map((y) => {
-    const bucket = buckets.get(y);
-    const seen = bucket.filter(isFilmWatched).length;
-    return el("div", { class: "director-year" },
-      el("div", { class: "director-year__label" },
-        el("span", { class: "director-year__year", text: y }),
-        seen ? el("span", { class: "director-year__seen", text: `${seen}/${bucket.length}` }) : null,
-      ),
+  return years.map((y) =>
+    el("div", { class: "director-year" },
+      el("div", { class: "director-year__label", text: y }),
       el("ul", { class: "director-year__films" },
-        ...bucket.map(renderFilmographyFilm)
+        ...buckets.get(y).map(renderFilmographyFilm)
       ),
-    );
-  });
+    )
+  );
+}
+
+function filmographyTallyText(films) {
+  const seen = films.filter(isFilmWatched).length;
+  return `${seen} of ${films.length} watched`;
 }
 
 function paintFilmography(container, state) {
@@ -2898,6 +2898,10 @@ function paintFilmography(container, state) {
       container.appendChild(el("p", { class: "director-filmography__status", text: "No directing credits on TMDB." }));
       return;
     }
+    // One tally for the whole director, updated in place on watched toggles.
+    // Always present so toggling never adds/removes an element (which would
+    // shift the rows below).
+    container.appendChild(el("p", { class: "director-filmography__tally", text: filmographyTallyText(state.films) }));
     for (const group of renderFilmographyYearGroups(state.films)) {
       container.appendChild(group);
     }
@@ -3254,27 +3258,26 @@ document.getElementById("director-list")?.addEventListener("click", (e) => {
     const key = `tmdb:${id}`;
     const next = Interests.getLevel(key) === "watched" ? null : "watched";
     Interests.set(key, next);
-    // Patch the affected film row + its year-group count in place so the
-    // user gets immediate feedback without a tab-wide rebuild.
+    // Patch the affected film row in place: class toggle for the strike-
+    // through, aria for assistive tech, and a one-shot "is-pulse" class on
+    // the check itself so the tap registers visually without shifting any
+    // surrounding rows.
     const filmEl = watchedBtn.closest(".director-year__film");
     if (filmEl) filmEl.classList.toggle("is-watched", next === "watched");
     watchedBtn.setAttribute("aria-pressed", next === "watched" ? "true" : "false");
     watchedBtn.setAttribute("aria-label", next === "watched" ? "Mark unwatched" : "Mark watched");
-    const yearEl = watchedBtn.closest(".director-year");
-    if (yearEl) {
-      const films = yearEl.querySelectorAll(".director-year__film");
-      const seen = yearEl.querySelectorAll(".director-year__film.is-watched").length;
-      let seenLabel = yearEl.querySelector(".director-year__seen");
-      if (seen) {
-        const text = `${seen}/${films.length}`;
-        if (seenLabel) seenLabel.textContent = text;
-        else {
-          seenLabel = el("span", { class: "director-year__seen", text });
-          yearEl.querySelector(".director-year__label")?.appendChild(seenLabel);
-        }
-      } else if (seenLabel) {
-        seenLabel.remove();
-      }
+    watchedBtn.classList.remove("is-pulse");
+    // Force a reflow so the keyframe restarts even on rapid re-taps.
+    void watchedBtn.offsetWidth;
+    watchedBtn.classList.add("is-pulse");
+    // Director-wide tally: recount the whole filmography and update the
+    // single header line. Always-present text node means no layout shift.
+    const filmographyEl = watchedBtn.closest(".director-filmography");
+    const tallyEl = filmographyEl?.querySelector(".director-filmography__tally");
+    if (filmographyEl && tallyEl) {
+      const total = filmographyEl.querySelectorAll(".director-year__film").length;
+      const seen = filmographyEl.querySelectorAll(".director-year__film.is-watched").length;
+      tallyEl.textContent = `${seen} of ${total} watched`;
     }
   }
 });

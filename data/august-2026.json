@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -168,7 +168,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Science Fiction / Thriller",
-      "cast": "Andrzej Konopka, Noomi Rapace, Reika Kirishima",
+      "cast": "Noomi Rapace, Reika Kirishima, Andrzej Konopka, Filippa Kaye",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -197,6 +197,19 @@
       "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
       "notes": "There's blood in the water.",
       "youtube_trailer_id": "FKSdXH89jbo"
+    },
+    {
+      "tmdb_id": 1144965,
+      "date": "2026-08-21",
+      "title": "Paper Flowers",
+      "director": "Mahesh Pailoor",
+      "studio": "AV Entertainment Company",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Kapil Talwalkar, Olivia Liang, Karan Soni, Tom Everett Scott",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1341138,
@@ -259,7 +272,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Thriller / Horror",
-      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Shin Hyun-been",
+      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",
       "notes": "",
       "youtube_trailer_id": "LW6dpj1uCK8"
     },
@@ -271,7 +284,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Comedy / Family",
+      "genre": "Adventure / Comedy / Family",
       "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "H-43VeYGiPM"

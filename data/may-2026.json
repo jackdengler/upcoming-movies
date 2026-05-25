@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,7 +11,7 @@
       "studio": "Angel",
       "budget_usd": 35000000,
       "release_type": "wide",
-      "genre": "Animation / Family / Comedy",
+      "genre": "Animation / Comedy / Drama / Family / Science Fiction",
       "cast": "Seth Rogen, Gaten Matarazzo, Steve Buscemi, Glenn Close",
       "notes": "It's time for these animals to stand and fight.",
       "youtube_trailer_id": "NN6J7l6ulYk"
@@ -199,6 +199,19 @@
       "youtube_trailer_id": "oZI8G4lfbgc"
     },
     {
+      "tmdb_id": 1499071,
+      "date": "2026-05-08",
+      "title": "Cold War 1994",
+      "director": "Leung Lok-Man",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Drama",
+      "cast": "Daniel Wu, Terrance Lau Chun-Him, Wu Kang-ren, Gardner Tse Kwan-Ho",
+      "notes": "",
+      "youtube_trailer_id": "p841tPb6zMY"
+    },
+    {
       "tmdb_id": 1257868,
       "date": "2026-05-08",
       "title": "Couples Weekend",
@@ -256,7 +269,7 @@
       "title": "Silent Friend",
       "director": "Ildikó Enyedi",
       "studio": "1-2 Special",
-      "budget_usd": null,
+      "budget_usd": 3000000,
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Tony Leung Chiu-wai, Léa Seydoux, Luna Wedler, Enzo Brumm",
@@ -284,7 +297,7 @@
       "studio": "Monument Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Animation",
+      "genre": "Animation / Comedy / Drama",
       "cast": "Jesse Wakeman, John Magary, Callie Hernandez, Jess Barbagallo",
       "notes": "",
       "youtube_trailer_id": "JUtIpvoH7Yo"
@@ -389,7 +402,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Thriller",
-      "cast": "Henry Cavill, Jake Gyllenhaal, Rosamund Pike, Eiza González",
+      "cast": "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem",
       "notes": "When billions get stolen, they are the pros who steal it back.",
       "youtube_trailer_id": "nufP15iN4GE"
     },
@@ -399,10 +412,10 @@
       "title": "Is God Is",
       "director": "Aleshea Harris",
       "studio": "Amazon MGM Studios",
-      "budget_usd": null,
+      "budget_usd": 14800000,
       "release_type": "wide",
       "genre": "Drama / Thriller",
-      "cast": "Kara Young, Mallori Johnson, Sterling K. Brown, Janelle Monáe",
+      "cast": "Kara Young, Mallori Johnson, Vivica A. Fox, Sterling K. Brown",
       "notes": "Make your daddy dead. Real dead.",
       "youtube_trailer_id": "pgtdkuNFoKk"
     },
@@ -418,19 +431,6 @@
       "cast": "Georgie Farmer, Yasmin Finney, Roman Hayeck-Green, James Scholz",
       "notes": "They're coming for your coin.",
       "youtube_trailer_id": "TxxUGasZUNo"
-    },
-    {
-      "tmdb_id": 1282774,
-      "date": "2026-05-15",
-      "title": "Magic Hour",
-      "director": "Katie Aselton",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Mystery / Romance",
-      "cast": "Katie Aselton, Daveed Diggs, Susan Sullivan, D.J. 'Shangela' Pierce",
-      "notes": "",
-      "youtube_trailer_id": "rJBFMf2KE0s"
     },
     {
       "tmdb_id": 1339713,
@@ -472,17 +472,56 @@
       "youtube_trailer_id": "TVNkxUxhqh0"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-05-22",
+      "title": "Blood Moon Rite 8",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama / Horror",
+      "cast": "Van Son, Le Khanh, Miu Le, Lien Binh Phat",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1078581,
+      "date": "2026-05-22",
+      "title": "Giant",
+      "director": "Rowan Athale",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History",
+      "cast": "Amir El-Masry, Pierce Brosnan, Toby Stephens, Katherine Dow Blyton",
+      "notes": "",
+      "youtube_trailer_id": "cqg5PtgeNRc"
+    },
+    {
       "tmdb_id": 1227877,
       "date": "2026-05-22",
       "title": "I Love Boosters",
       "director": "Boots Riley",
       "studio": "Neon",
       "budget_usd": 20000000,
-      "release_type": "limited",
-      "genre": "Comedy / Science Fiction / Crime / Drama",
+      "release_type": "wide",
+      "genre": "Comedy / Science Fiction / Crime",
       "cast": "Keke Palmer, Naomi Ackie, Taylour Paige, Poppy Liu",
-      "notes": "Booster: Somebody who steals clothes from a store and sells them at a discount price, aka community service.",
+      "notes": "",
       "youtube_trailer_id": "I1xZegSgN8w"
+    },
+    {
+      "tmdb_id": 1282774,
+      "date": "2026-05-22",
+      "title": "Magic Hour",
+      "director": "Katie Aselton",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Mystery / Romance",
+      "cast": "Katie Aselton, Daveed Diggs, Susan Sullivan, D.J. 'Shangela' Pierce",
+      "notes": "",
+      "youtube_trailer_id": "rJBFMf2KE0s"
     },
     {
       "tmdb_id": 1368314,
@@ -490,9 +529,9 @@
       "title": "Passenger",
       "director": "André Øvredal",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Thriller",
       "cast": "Lou Llobell, Jacob Scipio, Melissa Leo, Joseph Lopez",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"
@@ -521,33 +560,20 @@
       "genre": "Horror",
       "cast": "Dylan Taylor, Natasha Calis, Brett Geddes, Rachel Boyd",
       "notes": "Good boy. Bad girl.",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "zRpIxQfJaGI"
     },
     {
       "tmdb_id": 1228710,
       "date": "2026-05-22",
-      "title": "Star Wars: The Mandalorian and Grogu",
+      "title": "The Mandalorian and Grogu",
       "director": "Jon Favreau",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 165000000,
       "release_type": "wide",
-      "genre": "Adventure / Science Fiction / Action",
-      "cast": "Pedro Pascal, Jeremy Allen White, Sigourney Weaver, Jonny Coyne",
+      "genre": "Action / Adventure / Science Fiction",
+      "cast": "Pedro Pascal, Jeremy Allen White, Sigourney Weaver, Brendan Wayne",
       "notes": "If you're searching for new adventure, \"this is the way.\"",
       "youtube_trailer_id": "uwild1rw7Aw"
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-05-22",
-      "title": "The Blood Moon Feast 8",
-      "director": "—",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Drama / Horror",
-      "cast": "Van Son, Le Khanh, Miu Le, Lien Binh Phat",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1083381,
@@ -586,7 +612,20 @@
       "genre": "Thriller / History / War",
       "cast": "Andrew Scott, Brendan Fraser, Kerry Condon, Chris Messina",
       "notes": "In the hours before D-Day, one decision changed the world.",
-      "youtube_trailer_id": "_gQwG9Xi13g"
+      "youtube_trailer_id": "xcPgrKoXe_c"
+    },
+    {
+      "tmdb_id": 934584,
+      "date": "2026-05-29",
+      "title": "Rich Flu",
+      "director": "Galder Gaztelu-Urrutia",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Science Fiction",
+      "cast": "Mary Elizabeth Winstead, Rafe Spall, Lorraine Bracco, Dixie Egerickx",
+      "notes": "The richer you are, the faster you die.",
+      "youtube_trailer_id": "kJ_4XQiC4lg"
     },
     {
       "tmdb_id": 1440050,
@@ -635,7 +674,7 @@
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Crime / Thriller / Comedy / Music",
+      "genre": "Crime / Thriller",
       "cast": "Leo Woodall, Dustin Hoffman, Havana Rose Liu, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "rdlOZhl-nSA"

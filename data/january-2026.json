@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,7 +11,7 @@
       "studio": "IFC Films",
       "budget_usd": 1000000,
       "release_type": "wide",
-      "genre": "Thriller / Drama / Horror",
+      "genre": "Drama / Thriller",
       "cast": "Everett Blunck, Kayo Martin, Joel Edgerton, Kenny Rasmussen",
       "notes": "",
       "youtube_trailer_id": "QGMRkHPAaVU"
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -319,7 +319,7 @@
       "tmdb_id": 1393151,
       "date": "2026-01-21",
       "title": "Mr. Nobody Against Putin",
-      "director": "David Borenstein, Pavel Talankin",
+      "director": "David Borenstein",
       "studio": "Kino Lorber",
       "budget_usd": 800000,
       "release_type": "limited",
@@ -440,7 +440,7 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Family / Crime / Adventure",
+      "genre": "Adventure / Family / Crime",
       "cast": "Julius Weckauf, Nevio Wendt, Levi Brandl, Momo Beier",
       "notes": "",
       "youtube_trailer_id": null
@@ -467,7 +467,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Carmen Machi, Paco León, Melani Olivares, Miren Ibarguren",
+      "cast": "Carmen Machi, Paco León, Miren Ibarguren, Mariano Peña",
       "notes": "This never happened, but it could've happened.",
       "youtube_trailer_id": "lPUw2yMYQMc"
     },

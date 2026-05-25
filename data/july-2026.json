@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -92,7 +92,7 @@
       "genre": "Comedy",
       "cast": "Zoey Deutch, Jon Hamm, John Slattery, Ben Wang",
       "notes": "",
-      "youtube_trailer_id": "C0MFaaXxEkI"
+      "youtube_trailer_id": "QMeXh8NcRDQ"
     },
     {
       "tmdb_id": 1108427,
@@ -115,8 +115,8 @@
       "studio": "Radial Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Western / Drama",
-      "cast": "Sean Bean, Mackenzie Foy, Odeya Rush, Jack Kesy",
+      "genre": "Western / Action / Drama",
+      "cast": "Mackenzie Foy, Odeya Rush, Sean Bean, Jack Kesy",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -182,8 +182,34 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Matt Cornett, Ramon Reed, Chris Klein, Missi Pyle",
+      "notes": "Spirit Led. Court Ordered.",
+      "youtube_trailer_id": "EThWaKNRky8"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-07-24",
+      "title": "Her Private Hell",
+      "director": "—",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
+      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1232569,
+      "date": "2026-07-24",
+      "title": "Pinocchio: Unstrung",
+      "director": "Rhys Frake-Waterfield",
+      "studio": "Viva Pictures",
+      "budget_usd": 500000,
+      "release_type": "limited",
+      "genre": "Horror / Fantasy / Mystery",
+      "cast": "Jude Evan Lloyd, Robert Englund, Cameron Bell, Jessica Balmer",
+      "notes": "He has no strings to hold him back now.",
+      "youtube_trailer_id": "Xt3zQ8v2pzk"
     },
     {
       "tmdb_id": 969681,
@@ -197,6 +223,32 @@
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
       "notes": "A brand new day starts now.",
       "youtube_trailer_id": "8TZMtslA3UY"
+    },
+    {
+      "tmdb_id": 1479481,
+      "date": "2026-07-31",
+      "title": "Terrestrial",
+      "director": "Steve Pink",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Science Fiction / Comedy",
+      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
+      "notes": "",
+      "youtube_trailer_id": "cD0fVpDoN8Y"
+    },
+    {
+      "tmdb_id": 1620313,
+      "date": "2026-07-31",
+      "title": "The Samurai and the Prisoner",
+      "director": "Kiyoshi Kurosawa",
+      "studio": "Janus Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Mystery",
+      "cast": "Masahiro Motoki, Masaki Suda, Yuriko Yoshitaka, Munetaka Aoki",
+      "notes": "",
+      "youtube_trailer_id": null
     }
   ]
 }

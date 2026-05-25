@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1596326,
+      "date": "2026-09-04",
+      "title": "Barbara Forever",
+      "director": "Brydie O'Connor",
+      "studio": "Strand Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Barbara Hammer, Florrie Burke, Joey Carducci, Todd Haynes",
+      "notes": "",
+      "youtube_trailer_id": "eve0cPTcQ_g"
     },
     {
       "tmdb_id": 1514026,
@@ -128,7 +141,7 @@
       "studio": "DreamWorks",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Adventure / Animation / Fantasy / Family",
+      "genre": "Adventure / Animation / Comedy / Family / Fantasy",
       "cast": "H.E.R., Liza Soberano, Dave Franco, Jenny Slate",
       "notes": "Go together.",
       "youtube_trailer_id": "a8RHqN93qfo"

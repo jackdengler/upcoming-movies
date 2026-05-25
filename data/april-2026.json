@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -519,7 +519,7 @@
       "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Action / Crime / Thriller",
-      "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Ryan Allen",
+      "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Billy MacLellan",
       "notes": "Small town. Big secret.",
       "youtube_trailer_id": "5OndK0w1lYY"
     },
@@ -649,7 +649,7 @@
       "budget_usd": 2500000,
       "release_type": "limited",
       "genre": "Horror / Thriller",
-      "cast": "Crispin Glover, Sean Whalen, Rob Mayes, Annalisa Cochrane",
+      "cast": "Crispin Glover, Jake Horowitz, Lucy Loken, Annalisa Cochrane",
       "notes": "",
       "youtube_trailer_id": "AGezHkWnAxo"
     },
@@ -700,7 +700,7 @@
       "studio": "Sony Pictures Classics",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Drama",
+      "genre": "Drama / History",
       "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
       "notes": "I blink. I twitch. I jump. I click. I whistle. I shout.",
       "youtube_trailer_id": "10ynpduiRpM"
@@ -752,23 +752,10 @@
       "studio": "A24",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Drama / Fantasy / Music / Thriller",
+      "genre": "Music / Drama / Thriller",
       "cast": "Anne Hathaway, Michaela Coel, Hunter Schafer, FKA twigs",
       "notes": "This is not a ghost story.",
       "youtube_trailer_id": "aqYHOsuje1E"
-    },
-    {
-      "tmdb_id": 1514056,
-      "date": "2026-04-24",
-      "title": "Nika & Madison",
-      "director": "Eva Thomas",
-      "studio": "Indican Pictures",
-      "budget_usd": 2000000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
-      "notes": "",
-      "youtube_trailer_id": "QAAlkFKaUxM"
     },
     {
       "tmdb_id": 1233655,

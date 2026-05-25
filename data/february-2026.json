@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
-      "cast": "Carmen Machi, Paco León, Melani Olivares, Miren Ibarguren",
+      "cast": "Carmen Machi, Paco León, Miren Ibarguren, Mariano Peña",
       "notes": "This never happened, but it could've happened.",
       "youtube_trailer_id": "lPUw2yMYQMc"
     },
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",

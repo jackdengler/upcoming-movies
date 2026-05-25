@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-05-18",
+  "updated": "2026-05-25",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -30,6 +30,19 @@
       "youtube_trailer_id": "fNdC6SJ-TxY"
     },
     {
+      "tmdb_id": 1694978,
+      "date": "2026-06-05",
+      "title": "Chum",
+      "director": "Jonathan Zuck",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Alice Eve, Eric Michael Cole, Elle Haymond, Sarah Siadat",
+      "notes": "There's no hinding in the sea",
+      "youtube_trailer_id": "TdkpsJqNeRY"
+    },
+    {
       "tmdb_id": 454639,
       "date": "2026-06-05",
       "title": "Masters of the Universe",
@@ -40,7 +53,7 @@
       "genre": "Action / Fantasy / Science Fiction",
       "cast": "Nicholas Galitzine, Camila Mendes, Alison Brie, James Purefoy",
       "notes": "Witness how he became He-Man.",
-      "youtube_trailer_id": "RZ4dblwZ2TY"
+      "youtube_trailer_id": "rJSmz-zhDxE"
     },
     {
       "tmdb_id": 1284016,
@@ -56,6 +69,19 @@
       "youtube_trailer_id": "t4Grq6r78Sw"
     },
     {
+      "tmdb_id": 1245859,
+      "date": "2026-06-05",
+      "title": "Savage House",
+      "director": "Peter Glanz",
+      "studio": "Republic Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Richard E. Grant, Claire Foy, Sebastian Armesto, Roger Ashton-Griffiths",
+      "notes": "Polite society has never been so Savage.",
+      "youtube_trailer_id": "4VIIZlzqdKE"
+    },
+    {
       "tmdb_id": 1273221,
       "date": "2026-06-05",
       "title": "Scary Movie",
@@ -63,7 +89,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy",
+      "genre": "Comedy / Horror",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "2aMPPfmP5cY"
@@ -183,7 +209,7 @@
       "genre": "Action / Comedy / Music",
       "cast": "RuPaul, Jujubee, Ginger Minj, Brooke Lynn Hytes",
       "notes": "The greatest trainwreck in herstory.",
-      "youtube_trailer_id": "9O9ZeG6op_Y"
+      "youtube_trailer_id": "yx2YuoAnwlQ"
     },
     {
       "tmdb_id": 1280738,
@@ -210,6 +236,19 @@
       "cast": "Sreehari, Vasudha, Sreehari Devi Mangala Puvvu",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1679751,
+      "date": "2026-06-17",
+      "title": "Gregg Allman: The Music of My Soul",
+      "director": "James Keach",
+      "studio": "Subtext Films",
+      "budget_usd": 2000000,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Gregg Allman, Duane Allman, James Keach, Cher",
+      "notes": "",
+      "youtube_trailer_id": "8Wcx4wirsOw"
     },
     {
       "tmdb_id": 1397485,
@@ -249,6 +288,19 @@
       "cast": "John Early, Kate Berlant, Eric Rahill, Kristen Johnston",
       "notes": "",
       "youtube_trailer_id": "IjfX8l5XrF8"
+    },
+    {
+      "tmdb_id": 1070754,
+      "date": "2026-06-19",
+      "title": "O Horizon",
+      "director": "Madeleine Sackler",
+      "studio": "Variance Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Science Fiction / Drama",
+      "cast": "Maria Bakalova, David Strathairn, Adam Pally, Alysia Reiner",
+      "notes": "",
+      "youtube_trailer_id": "gZS0iFRjk5o"
     },
     {
       "tmdb_id": 1537635,
@@ -301,6 +353,32 @@
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
       "notes": "It's on.",
       "youtube_trailer_id": "c51ND9Hdbw0"
+    },
+    {
+      "tmdb_id": 1517206,
+      "date": "2026-06-26",
+      "title": "Bouchra",
+      "director": "Orian Barki, Meriem Bennani",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Drama",
+      "cast": "Meriem Bennani, Orian Barki, Fayçal Azizi, Ariana Faye Allensworth",
+      "notes": "",
+      "youtube_trailer_id": "-m302Kq_FG4"
+    },
+    {
+      "tmdb_id": 1390382,
+      "date": "2026-06-26",
+      "title": "Couture",
+      "director": "Alice Winocour",
+      "studio": "Vertical Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Angelina Jolie, Anyier Anei, Ella Rumpf, Louis Garrel",
+      "notes": "",
+      "youtube_trailer_id": "lSw01dbUFXg"
     },
     {
       "tmdb_id": 1462889,

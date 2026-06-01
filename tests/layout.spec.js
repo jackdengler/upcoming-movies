@@ -62,7 +62,7 @@ test.describe("layout", () => {
     const viewport = page.viewportSize();
     const tabBar = page.locator(".tab-bar");
     await expect(tabBar).toBeVisible();
-    await expect(page.locator(".tab-bar .tab-bar__btn")).toHaveCount(4);
+    await expect(page.locator(".tab-bar .tab-bar__btn")).toHaveCount(5);
 
     const box = await tabBar.boundingBox();
     expect(box).not.toBeNull();

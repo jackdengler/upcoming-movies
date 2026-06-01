@@ -1,6 +1,7 @@
 import * as Interests from "./js/interests.js";
 import * as Activity from "./js/activity.js";
 import * as Directors from "./js/directors.js";
+import * as Studios from "./js/studios.js";
 import * as Tmdb from "./js/tmdb.js";
 
 // When loaded inside an iframe (e.g. the central-optimus launcher), the
@@ -3655,6 +3656,409 @@ Directors.onChange(() => {
   else tabDirty.directors = true;
 });
 
+// ---------- Studios tab ----------
+//
+// Mirrors the Directors tab structure (reusing its row / film-list styles)
+// but is purely local: it groups the schedule's releases by their `studio`
+// field rather than enriching from TMDB. Each studio shows its upcoming
+// releases inline and its recent (already-released) ones on expand.
+
+// Lookup of normalized studio name → releases in the loaded schedule. Built
+// once after loadYear settles, alongside the director index.
+const studioIndex = new Map();
+// Distinct studios seen in the data (display spelling preserved), for the
+// Add-studio autocomplete.
+const studioDisplayList = [];
+
+const normalizeStudioName = (s) =>
+  String(s || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    // Strip punctuation that varies between listings ("Warner Bros." vs
+    // "Warner Bros", ampersands, hyphens). Keep digits ("20th Century").
+    .replace(/[.,'’&\-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+function buildStudioIndex(bundles) {
+  studioIndex.clear();
+  const displayByKey = new Map();
+  for (const bundle of bundles || []) {
+    for (const release of bundle.releases || []) {
+      const raw = release.studio;
+      if (!raw || raw === "—" || raw === "N/A") continue;
+      const key = normalizeStudioName(raw);
+      if (!key) continue;
+      if (!studioIndex.has(key)) studioIndex.set(key, []);
+      studioIndex.get(key).push(release);
+      if (!displayByKey.has(key)) displayByKey.set(key, raw.trim());
+    }
+  }
+  for (const list of studioIndex.values()) {
+    list.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  }
+  studioDisplayList.length = 0;
+  for (const [key, name] of displayByKey) {
+    studioDisplayList.push({ key, name, count: studioIndex.get(key).length });
+  }
+  studioDisplayList.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// All releases matching a studio entry — its `name` plus any `aliases` —
+// de-duplicated and split into upcoming (today onward) and recent (before
+// today, most-recent first).
+function moviesForStudio(entry) {
+  const keys = [entry.name, ...(entry.aliases || [])]
+    .map(normalizeStudioName)
+    .filter(Boolean);
+  const seen = new Set();
+  const films = [];
+  for (const key of keys) {
+    for (const m of studioIndex.get(key) || []) {
+      const k = movieKey(m);
+      if (seen.has(k)) continue;
+      seen.add(k);
+      films.push(m);
+    }
+  }
+  const upcoming = films
+    .filter((m) => (m.date || "") >= TODAY)
+    .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  const recent = films
+    .filter((m) => (m.date || "") < TODAY)
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  return { upcoming, recent };
+}
+
+// Persisted set of expanded studio rows (mirrors expandedDirectors).
+const STUDIO_EXPANDED_KEY = "upcoming:studios-expanded";
+const expandedStudios = (() => {
+  try {
+    const raw = localStorage.getItem(STUDIO_EXPANDED_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(arr) ? arr : []);
+  } catch { return new Set(); }
+})();
+function saveExpandedStudios() {
+  try { localStorage.setItem(STUDIO_EXPANDED_KEY, JSON.stringify([...expandedStudios])); } catch {}
+}
+
+let studioSearchQuery = "";
+const setStudioSearch = (value) => {
+  const next = normalizeStudioName(value);
+  if (next === studioSearchQuery) return;
+  studioSearchQuery = next;
+  const clearBtn = document.getElementById("studio-search-clear");
+  if (clearBtn) clearBtn.hidden = !value;
+  if (activeTab === "studios") renderStudiosTab();
+  else tabDirty.studios = true;
+};
+const matchesStudioSearch = (s) => {
+  if (!studioSearchQuery) return true;
+  const hay = normalizeStudioName(`${s.name} ${(s.aliases || []).join(" ")} ${s.notes || ""}`);
+  return hay.includes(studioSearchQuery);
+};
+
+function renderStudiosTab() {
+  const list = document.getElementById("studio-list");
+  const empty = document.getElementById("empty-studios");
+  const emptySearch = document.getElementById("empty-studios-search");
+  if (!list || !empty) return;
+  list.innerHTML = "";
+  const items = Studios.all();
+  if (!items.length) {
+    empty.hidden = false;
+    if (emptySearch) emptySearch.hidden = true;
+    return;
+  }
+  empty.hidden = true;
+
+  let shown = 0;
+  items.forEach((s, idx) => {
+    if (!matchesStudioSearch(s)) return;
+    shown++;
+    const { upcoming, recent } = moviesForStudio(s);
+    const expanded = expandedStudios.has(s.id);
+
+    const upBtn = el("button", {
+      type: "button",
+      class: "director-move director-move--up",
+      "aria-label": "Move up",
+      dataset: { id: s.id, dir: "-1" },
+    });
+    upBtn.innerHTML = CHEVRON_UP_SVG;
+    if (idx === 0) upBtn.setAttribute("disabled", "");
+
+    const downBtn = el("button", {
+      type: "button",
+      class: "director-move director-move--down",
+      "aria-label": "Move down",
+      dataset: { id: s.id, dir: "1" },
+    });
+    downBtn.innerHTML = CHEVRON_DOWN_SVG;
+    if (idx === items.length - 1) downBtn.setAttribute("disabled", "");
+
+    const countChip = el("div", { class: "director-row__rank-col" },
+      el("div", {
+        class: `director-row__photo director-row__photo--placeholder studio-row__count${upcoming.length ? "" : " studio-row__count--empty"}`,
+        text: String(upcoming.length),
+      }),
+      el("span", { class: "studio-row__count-label", text: "ahead" }),
+    );
+
+    const upcomingList = el("ul", { class: "director-films" }, ...upcoming.map(renderDirectorFilm));
+    const nofilms = el("p", {
+      class: "director-row__nofilms",
+      text: "No upcoming releases on the schedule.",
+      hidden: upcoming.length > 0,
+    });
+
+    const expandBtn = el("button", {
+      type: "button",
+      class: "director-row__expand",
+      dataset: { action: "toggle-expand", id: s.id },
+      "aria-expanded": expanded ? "true" : "false",
+    },
+      el("span", { text: expanded ? "Hide recent releases" : (recent.length ? `Show recent releases (${recent.length})` : "Show options") }),
+    );
+    expandBtn.insertAdjacentHTML("beforeend", CHEVRON_DOWN_SVG);
+
+    const body = el("div", { class: "director-row__body" },
+      el("h3", { class: "director-row__name", text: s.name }),
+      s.notes ? el("p", { class: "director-row__notes", text: s.notes }) : null,
+      upcomingList,
+      nofilms,
+      expandBtn,
+    );
+
+    const recentSection = el("div", {
+        class: "director-filmography",
+        dataset: { studioId: s.id },
+        hidden: !expanded,
+      },
+      el("p", { class: "studio-section__label", text: "Recent releases" }),
+      recent.length
+        ? el("ul", { class: "director-films" }, ...recent.map(renderDirectorFilm))
+        : el("p", { class: "director-row__nofilms", text: "No recent releases this year." }),
+    );
+
+    const detailActions = el("div", {
+      class: "director-row__detail-actions",
+      hidden: !expanded,
+    },
+      el("button", { type: "button", class: "rep-card-action", dataset: { action: "edit", id: s.id } }, "Edit"),
+      el("button", { type: "button", class: "rep-card-action rep-card-action--ghost", dataset: { action: "remove", id: s.id } }, "Remove"),
+    );
+
+    const row = el("li", {
+        class: "director-row",
+        dataset: { id: s.id, expanded: expanded ? "true" : "false" },
+      },
+      countChip,
+      body,
+      el("div", { class: "director-row__actions" }, upBtn, downBtn),
+      recentSection,
+      detailActions,
+    );
+    list.appendChild(row);
+  });
+
+  if (emptySearch) emptySearch.hidden = shown > 0 || !studioSearchQuery;
+}
+
+function toggleStudioExpand(id) {
+  const row = document.querySelector(`#studio-list .director-row[data-id="${CSS.escape(id)}"]`);
+  if (!row) return;
+  const section = row.querySelector(".director-filmography");
+  const actions = row.querySelector(".director-row__detail-actions");
+  const button = row.querySelector(".director-row__expand");
+  const label = button?.querySelector("span");
+  const willExpand = !expandedStudios.has(id);
+  if (willExpand) expandedStudios.add(id);
+  else expandedStudios.delete(id);
+  saveExpandedStudios();
+
+  row.dataset.expanded = willExpand ? "true" : "false";
+  if (section) section.hidden = !willExpand;
+  if (actions) actions.hidden = !willExpand;
+  if (button) button.setAttribute("aria-expanded", willExpand ? "true" : "false");
+  if (label && !willExpand) {
+    const recentCount = section?.querySelectorAll(".director-films .director-film").length || 0;
+    label.textContent = recentCount ? `Show recent releases (${recentCount})` : "Show options";
+  } else if (label) {
+    label.textContent = "Hide recent releases";
+  }
+}
+
+document.getElementById("studio-list")?.addEventListener("click", (e) => {
+  const moveBtn = e.target.closest(".director-move");
+  if (moveBtn) {
+    if (moveBtn.hasAttribute("disabled")) return;
+    const id = moveBtn.dataset.id;
+    const delta = Number(moveBtn.dataset.dir);
+    if (!id || (delta !== 1 && delta !== -1)) return;
+    if (Studios.move(id, delta)) renderStudiosTab();
+    return;
+  }
+  const expandBtn = e.target.closest('[data-action="toggle-expand"]');
+  if (expandBtn) {
+    const id = expandBtn.dataset.id;
+    if (id) toggleStudioExpand(id);
+    return;
+  }
+  const editBtn = e.target.closest('[data-action="edit"]');
+  if (editBtn) {
+    const id = editBtn.dataset.id;
+    if (id) openStudioDialog(id);
+    return;
+  }
+  const removeBtn = e.target.closest('[data-action="remove"]');
+  if (removeBtn) {
+    const id = removeBtn.dataset.id;
+    if (id) Studios.remove(id);
+    return;
+  }
+});
+
+document.getElementById("add-studio")?.addEventListener("click", () => {
+  openStudioDialog(null);
+});
+
+const studioSearchInput = document.getElementById("studio-search-input");
+const studioSearchClear = document.getElementById("studio-search-clear");
+studioSearchInput?.addEventListener("input", (e) => {
+  const value = e.target.value;
+  if (studioSearchClear) studioSearchClear.hidden = !value;
+  setStudioSearch(value);
+});
+studioSearchClear?.addEventListener("click", () => {
+  if (!studioSearchInput) return;
+  studioSearchInput.value = "";
+  studioSearchClear.hidden = true;
+  setStudioSearch("");
+  studioSearchInput.focus();
+});
+
+// Suggest studios that appear in the schedule but aren't tracked yet.
+function suggestStudios(query) {
+  const q = normalizeStudioName(query);
+  if (!q || q.length < 2) return [];
+  const saved = new Set();
+  for (const s of Studios.all()) {
+    saved.add(normalizeStudioName(s.name));
+    for (const a of s.aliases || []) saved.add(normalizeStudioName(a));
+  }
+  const hits = [];
+  for (const entry of studioDisplayList) {
+    if (saved.has(entry.key)) continue;
+    if (entry.key.includes(q)) hits.push(entry);
+    if (hits.length >= 8) break;
+  }
+  return hits;
+}
+
+function openStudioDialog(id) {
+  const dlg = document.getElementById("studio-dialog");
+  const form = document.getElementById("studio-form");
+  const titleEl = document.getElementById("studio-title");
+  const nameInput = document.getElementById("studio-name");
+  const notesInput = document.getElementById("studio-notes");
+  const cancel = document.getElementById("studio-cancel");
+  const remove = document.getElementById("studio-remove");
+  const suggList = document.getElementById("studio-suggestions");
+  if (!dlg || !form) return;
+
+  const existing = id ? Studios.all().find((s) => s.id === id) : null;
+  titleEl.textContent = existing ? "Edit studio" : "Add studio";
+  nameInput.value = existing?.name || "";
+  notesInput.value = existing?.notes || "";
+  remove.hidden = !existing;
+  if (suggList) {
+    suggList.innerHTML = "";
+    suggList.hidden = true;
+  }
+
+  dlg.showModal();
+  requestAnimationFrame(() => nameInput.focus());
+
+  const paintSuggestions = (items) => {
+    if (!suggList) return;
+    suggList.innerHTML = "";
+    if (!items.length) { suggList.hidden = true; return; }
+    for (const h of items) {
+      const li = el("li", {
+          class: "director-suggestion",
+          dataset: { name: h.name },
+        },
+        el("span", { class: "director-suggestion__name", text: h.name }),
+        h.count ? el("span", { class: "director-suggestion__count", text: `${h.count} on schedule` }) : null,
+      );
+      suggList.appendChild(li);
+    }
+    suggList.hidden = false;
+  };
+
+  const renderSuggestions = () => {
+    if (!suggList) return;
+    if (existing) { suggList.hidden = true; return; }
+    paintSuggestions(suggestStudios(nameInput.value));
+  };
+
+  let inputDebounce = null;
+  const onInput = () => {
+    clearTimeout(inputDebounce);
+    inputDebounce = setTimeout(renderSuggestions, 200);
+  };
+  const onSuggestClick = (e) => {
+    const li = e.target.closest(".director-suggestion");
+    if (!li) return;
+    e.preventDefault();
+    nameInput.value = li.dataset.name || "";
+    if (suggList) suggList.hidden = true;
+    notesInput.focus();
+  };
+
+  const cleanup = () => {
+    cancel.removeEventListener("click", onCancel);
+    remove.removeEventListener("click", onRemove);
+    form.removeEventListener("submit", onSubmit);
+    dlg.removeEventListener("cancel", onEsc);
+    nameInput.removeEventListener("input", onInput);
+    suggList?.removeEventListener("mousedown", onSuggestClick);
+    clearTimeout(inputDebounce);
+  };
+  const onCancel = () => { dlg.close(); cleanup(); };
+  const onEsc = (e) => { e.preventDefault(); onCancel(); };
+  const onRemove = () => {
+    if (existing) Studios.remove(existing.id);
+    dlg.close();
+    cleanup();
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const name = nameInput.value.trim();
+    if (!name) return;
+    const notes = notesInput.value.trim();
+    if (existing) Studios.update(existing.id, { name, notes });
+    else Studios.add(name, notes);
+    dlg.close();
+    cleanup();
+  };
+
+  cancel.addEventListener("click", onCancel);
+  remove.addEventListener("click", onRemove);
+  form.addEventListener("submit", onSubmit);
+  dlg.addEventListener("cancel", onEsc);
+  nameInput.addEventListener("input", onInput);
+  suggList?.addEventListener("mousedown", onSuggestClick);
+}
+
+Studios.onChange(() => {
+  if (activeTab === "studios") renderStudiosTab();
+  else tabDirty.studios = true;
+});
+
 // ---------- Tabs ----------
 
 let allBundles = [];
@@ -3664,18 +4068,19 @@ let updatesOpen = false;
 // Track which tabs have been rendered at least once and which need a fresh
 // render before being shown. Switching to a tab whose DOM is up-to-date just
 // flips its `hidden` flag — no rebuild — so navigation feels instant.
-const tabRendered = { list: false, calendar: false, interests: false, directors: false };
-const tabDirty = { list: true, calendar: true, interests: true, directors: true };
+const tabRendered = { list: false, calendar: false, interests: false, directors: false, studios: false };
+const tabDirty = { list: true, calendar: true, interests: true, directors: true, studios: true };
 
 const markAllTabsDirty = () => {
   tabDirty.list = true;
   tabDirty.calendar = true;
   tabDirty.interests = true;
   tabDirty.directors = true;
+  tabDirty.studios = true;
 };
 
 const markOtherTabsDirty = () => {
-  for (const t of ["list", "calendar", "interests", "directors"]) {
+  for (const t of ["list", "calendar", "interests", "directors", "studios"]) {
     if (t !== activeTab) tabDirty[t] = true;
   }
 };
@@ -3712,6 +4117,7 @@ function renderActiveTab() {
   else if (activeTab === "calendar") renderCalendarTab(allBundles);
   else if (activeTab === "interests") renderInterestsTab(allBundles);
   else if (activeTab === "directors") renderDirectorsTab();
+  else if (activeTab === "studios") renderStudiosTab();
   tabRendered[activeTab] = true;
   tabDirty[activeTab] = false;
 }
@@ -3729,6 +4135,7 @@ function switchTab(tab) {
       setPanelHidden("tab-calendar", activeTab !== "calendar");
       setPanelHidden("tab-interests", activeTab !== "interests");
       setPanelHidden("tab-directors", activeTab !== "directors");
+      setPanelHidden("tab-studios", activeTab !== "studios");
     }
     return;
   }
@@ -3742,6 +4149,7 @@ function switchTab(tab) {
   setPanelHidden("tab-calendar", tab !== "calendar");
   setPanelHidden("tab-interests", tab !== "interests");
   setPanelHidden("tab-directors", tab !== "directors");
+  setPanelHidden("tab-studios", tab !== "studios");
   syncSegmentedChips();
 
   ensureActiveTabFresh();
@@ -3761,6 +4169,7 @@ function openUpdates() {
   setPanelHidden("tab-calendar", true);
   setPanelHidden("tab-interests", true);
   setPanelHidden("tab-directors", true);
+  setPanelHidden("tab-studios", true);
   setPanelHidden("tab-updates", false);
   renderActivityTab();
   renderCodeVersionFooter();
@@ -3871,15 +4280,17 @@ function closeUpdates({ silent = false } = {}) {
   setPanelHidden("tab-calendar", activeTab !== "calendar");
   setPanelHidden("tab-interests", activeTab !== "interests");
   setPanelHidden("tab-directors", activeTab !== "directors");
+  setPanelHidden("tab-studios", activeTab !== "studios");
 }
 
 document.getElementById("open-updates")?.addEventListener("click", openUpdates);
 document.getElementById("updates-back")?.addEventListener("click", () => closeUpdates());
 
 function syncSegmentedChips() {
-  // Directors has nothing to do with release type or scope — hide the entire
-  // header filter chrome on that tab. (Decision 10: chrome earned.)
-  const onDirectors = activeTab === "directors";
+  // Directors and Studios have nothing to do with release type or scope —
+  // hide the entire header filter chrome on those tabs. (Decision 10: chrome
+  // earned.)
+  const onDirectors = activeTab === "directors" || activeTab === "studios";
   const bar = document.getElementById("kind-segmented");
   if (bar) {
     bar.hidden = onDirectors;
@@ -4067,7 +4478,7 @@ function requestPat() {
       // Pull remote state with the new token before we let the caller
       // mutate marks. Without this, a fresh-install + new-PAT scenario
       // could commit an empty marks object over a populated remote.
-      try { await Promise.all([Interests.load(), Directors.load()]); } catch {}
+      try { await Promise.all([Interests.load(), Directors.load(), Studios.load()]); } catch {}
       dlg.close();
       cleanup();
       resolve(true);
@@ -4270,10 +4681,11 @@ Interests.onChange(() => {
   requestAnimationFrame(flushInterestsChange);
 });
 
-Promise.all([loadYear(YEAR), loadRepertory(), Interests.load(), Directors.load()])
+Promise.all([loadYear(YEAR), loadRepertory(), Interests.load(), Directors.load(), Studios.load()])
   .then(([bundles, repertory]) => {
     allBundles = bundles;
     buildDirectorIndex(bundles);
+    buildStudioIndex(bundles);
     setRepertoryData(repertory);
     Interests.sweepPastBookings(TODAY);
     Activity.ingest({ bundles, screenings: repertory?.screenings || [] });

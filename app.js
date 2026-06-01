@@ -3807,36 +3807,34 @@ function renderStudiosTab() {
       el("span", { class: "studio-row__count-label", text: "ahead" }),
     );
 
-    const upcomingList = el("ul", { class: "director-films" }, ...upcoming.map(renderDirectorFilm));
-    const nofilms = el("p", {
-      class: "director-row__nofilms",
-      text: "No upcoming releases on the schedule.",
-      hidden: upcoming.length > 0,
-    });
-
+    // Collapsed by default: the header (count chip + name) is always shown,
+    // and the upcoming + recent release lists live in one collapsible
+    // section so a long studio list stays scannable.
     const expandBtn = el("button", {
       type: "button",
       class: "director-row__expand",
-      dataset: { action: "toggle-expand", id: s.id },
+      dataset: { action: "toggle-expand", id: s.id, upcoming: String(upcoming.length), recent: String(recent.length) },
       "aria-expanded": expanded ? "true" : "false",
     },
-      el("span", { text: expanded ? "Hide recent releases" : (recent.length ? `Show recent releases (${recent.length})` : "Show options") }),
+      el("span", { text: expanded ? "Hide releases" : studioSummary(upcoming.length, recent.length) }),
     );
     expandBtn.insertAdjacentHTML("beforeend", CHEVRON_DOWN_SVG);
 
     const body = el("div", { class: "director-row__body" },
-      el("h3", { class: "director-row__name", text: s.name }),
+      el("h3", { class: "director-row__name", dataset: { action: "toggle-expand", id: s.id }, text: s.name }),
       s.notes ? el("p", { class: "director-row__notes", text: s.notes }) : null,
-      upcomingList,
-      nofilms,
       expandBtn,
     );
 
-    const recentSection = el("div", {
+    const details = el("div", {
         class: "director-filmography",
         dataset: { studioId: s.id },
         hidden: !expanded,
       },
+      el("p", { class: "studio-section__label", text: "Upcoming" }),
+      upcoming.length
+        ? el("ul", { class: "director-films" }, ...upcoming.map(renderDirectorFilm))
+        : el("p", { class: "director-row__nofilms", text: "No upcoming releases on the schedule." }),
       el("p", { class: "studio-section__label", text: "Recent releases" }),
       recent.length
         ? el("ul", { class: "director-films" }, ...recent.map(renderDirectorFilm))
@@ -3858,13 +3856,22 @@ function renderStudiosTab() {
       countChip,
       body,
       el("div", { class: "director-row__actions" }, upBtn, downBtn),
-      recentSection,
+      details,
       detailActions,
     );
     list.appendChild(row);
   });
 
   if (emptySearch) emptySearch.hidden = shown > 0 || !studioSearchQuery;
+}
+
+// Collapsed-row summary line, e.g. "9 upcoming · 4 recent". Drops a zeroed
+// half so a studio with nothing recent reads "9 upcoming", not "9 · 0".
+function studioSummary(upcoming, recent) {
+  const parts = [];
+  parts.push(`${upcoming} upcoming`);
+  if (recent) parts.push(`${recent} recent`);
+  return parts.join(" · ");
 }
 
 function toggleStudioExpand(id) {
@@ -3883,11 +3890,10 @@ function toggleStudioExpand(id) {
   if (section) section.hidden = !willExpand;
   if (actions) actions.hidden = !willExpand;
   if (button) button.setAttribute("aria-expanded", willExpand ? "true" : "false");
-  if (label && !willExpand) {
-    const recentCount = section?.querySelectorAll(".director-films .director-film").length || 0;
-    label.textContent = recentCount ? `Show recent releases (${recentCount})` : "Show options";
-  } else if (label) {
-    label.textContent = "Hide recent releases";
+  if (label) {
+    label.textContent = willExpand
+      ? "Hide releases"
+      : studioSummary(Number(button?.dataset.upcoming) || 0, Number(button?.dataset.recent) || 0);
   }
 }
 

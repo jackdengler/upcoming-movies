@@ -2876,7 +2876,7 @@ function moviesForDirector(name) {
   return key ? (directorIndex.get(key) || []) : [];
 }
 
-function renderDirectorFilm(m) {
+function renderDirectorFilm(m, opts = {}) {
   const key = movieKey(m);
   const level = Interests.getLevel(key);
   const titleLink = el("a", {
@@ -2888,12 +2888,23 @@ function renderDirectorFilm(m) {
     m.title,
   );
   const dateLabel = m.date ? fmtDateShort(m.date) : "";
+  // When `interactive`, the level chip becomes a button that cycles interest
+  // in place (used on the Studios tab); otherwise it's a read-only label that
+  // only appears once a level is set (Directors tab).
+  const levelChip = opts.interactive
+    ? el("button", {
+        type: "button",
+        class: `chip chip--level director-film__rate${level ? ` chip--level-${level}` : " director-film__rate--empty"}`,
+        dataset: { action: "cycle-interest", key, tmdbId: m.tmdb_id ? String(m.tmdb_id) : "", title: m.title || "", date: m.date || "" },
+        "aria-label": level ? `Interest: ${LEVEL_LABEL[level]}. Tap to change.` : "Set interest",
+      }, level ? LEVEL_LABEL[level] : "Rate")
+    : (level ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] }) : null);
   return el("li", { class: `director-film${level ? ` director-film--${level}` : ""}` },
     titleLink,
     el("div", { class: "director-film__meta" },
       dateLabel ? el("span", { class: "director-film__date", text: dateLabel }) : null,
       el("span", { class: chipClass(m.release_type), text: chipLabel(m.release_type) }),
-      level ? el("span", { class: `chip chip--level chip--level-${level}`, text: LEVEL_LABEL[level] }) : null,
+      levelChip,
     ),
   );
 }
@@ -3833,11 +3844,11 @@ function renderStudiosTab() {
       },
       el("p", { class: "studio-section__label", text: "Upcoming" }),
       upcoming.length
-        ? el("ul", { class: "director-films" }, ...upcoming.map(renderDirectorFilm))
+        ? el("ul", { class: "director-films" }, ...upcoming.map((m) => renderDirectorFilm(m, { interactive: true })))
         : el("p", { class: "director-row__nofilms", text: "No upcoming releases on the schedule." }),
       el("p", { class: "studio-section__label", text: "Recent releases" }),
       recent.length
-        ? el("ul", { class: "director-films" }, ...recent.map(renderDirectorFilm))
+        ? el("ul", { class: "director-films" }, ...recent.map((m) => renderDirectorFilm(m, { interactive: true })))
         : el("p", { class: "director-row__nofilms", text: "No recent releases this year." }),
     );
 
@@ -3897,7 +3908,36 @@ function toggleStudioExpand(id) {
   }
 }
 
+// Tap-to-cycle interest order for the studio film chips. Skips booked /
+// watched, which need a date dialog and stay on the List tab; after "not"
+// the next tap clears the mark.
+const INTEREST_CYCLE = ["must", "likely", "potential", "not"];
+
+async function cycleStudioInterest(btn) {
+  const key = btn.dataset.key;
+  if (!key) return;
+  if (!Interests.hasPat()) {
+    const saved = await requestPat();
+    if (!saved) return;
+  }
+  const current = Interests.getLevel(key);
+  const i = INTEREST_CYCLE.indexOf(current);
+  const next = i === -1 ? INTEREST_CYCLE[0] : (i + 1 < INTEREST_CYCLE.length ? INTEREST_CYCLE[i + 1] : null);
+  const meta = {
+    title: btn.dataset.title || "",
+    date: btn.dataset.date || "",
+    tmdb_id: btn.dataset.tmdbId ? Number(btn.dataset.tmdbId) : null,
+  };
+  Interests.set(key, next, meta);
+}
+
 document.getElementById("studio-list")?.addEventListener("click", (e) => {
+  const rateBtn = e.target.closest('[data-action="cycle-interest"]');
+  if (rateBtn) {
+    e.preventDefault();
+    cycleStudioInterest(rateBtn);
+    return;
+  }
   const moveBtn = e.target.closest(".director-move");
   if (moveBtn) {
     if (moveBtn.hasAttribute("disabled")) return;
@@ -4620,6 +4660,9 @@ function flushInterestsChange() {
     didFullRender = true;
   } else if (activeTab === "list" && activeKind === "rereleases") {
     renderRepertoryTab();
+    didFullRender = true;
+  } else if (activeTab === "studios") {
+    renderStudiosTab();
     didFullRender = true;
   }
   if (didFullRender) {

@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -28,6 +28,19 @@
       "cast": "Ari Millen, Benjamin Byron Davis, Karen Cliche, Dylan Hawco",
       "notes": "Watch out for children.",
       "youtube_trailer_id": "5r9Tcfg_bAY"
+    },
+    {
+      "tmdb_id": 1212934,
+      "date": "2026-08-07",
+      "title": "Olmo",
+      "director": "Fernando Eimbcke",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Aivan Uttapa, Gustavo Sánchez Parra, Diego Olmedo, Andrea Suarez Paz",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": null,
@@ -65,8 +78,8 @@
       "release_type": "limited",
       "genre": "Horror / Comedy",
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
-      "notes": "A new kind of horror remake.",
-      "youtube_trailer_id": "o8Wi3ZwdODA"
+      "notes": "Blood. Lust.",
+      "youtube_trailer_id": "j9TsiTgYZGw"
     },
     {
       "tmdb_id": 1329016,
@@ -115,7 +128,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Adventure / Animation / Comedy / Family",
+      "genre": "Adventure / Animation / Comedy / Family",
       "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
       "notes": "Adventure reaches new heights.",
       "youtube_trailer_id": "aHw4PuLCUIc"
@@ -144,7 +157,20 @@
       "genre": "Science Fiction / Mystery / Thriller",
       "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
       "notes": "",
-      "youtube_trailer_id": "s9GKXTbChjE"
+      "youtube_trailer_id": "3oB9AxspVow"
+    },
+    {
+      "tmdb_id": 1482938,
+      "date": "2026-08-14",
+      "title": "Union County",
+      "director": "Adam Meeks",
+      "studio": "Oscilloscope",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Will Poulter, Noah Centineo, Elise Kibler, Emily Meade",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": null,
@@ -221,8 +247,8 @@
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Friendship is a real trip.",
+      "youtube_trailer_id": "9p7j3UvpEQQ"
     },
     {
       "tmdb_id": 1140521,
@@ -232,7 +258,7 @@
       "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Family / Fantasy / Adventure",
+      "genre": "Adventure / Family / Fantasy",
       "cast": "Andrew Garfield, Claire Foy, Nicola Coughlan, Jessica Gunning",
       "notes": "",
       "youtube_trailer_id": "PAUEwUhAjzg"
@@ -272,7 +298,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Thriller / Horror",
-      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",
+      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rok",
       "notes": "",
       "youtube_trailer_id": "LW6dpj1uCK8"
     },
@@ -311,7 +337,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Romance / Comedy",
-      "cast": "Spike Fearn, Angourie Rice, Yali Topol Margalith, Ella Maisy Purvis",
+      "cast": "Spike Fearn, Angourie Rice, Minnie Driver, Yali Topol Margalith",
       "notes": "Right name, wrong number.",
       "youtube_trailer_id": "-OGuJf70S0s"
     },
@@ -326,7 +352,7 @@
       "genre": "Comedy / Crime",
       "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
       "notes": "",
-      "youtube_trailer_id": "8MVqh5L93Bs"
+      "youtube_trailer_id": "SbmR9Jy0vRQ"
     },
     {
       "tmdb_id": 1384216,

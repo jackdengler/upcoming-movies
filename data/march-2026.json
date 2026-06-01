@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -33,14 +33,14 @@
       "tmdb_id": 1366242,
       "date": "2026-03-06",
       "title": "DRAGN",
-      "director": "Peter Webber",
+      "director": "—",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Thriller / Science Fiction",
+      "genre": "Action / Drama / Horror / Sci-Fi / Thriller",
       "cast": "James Paxton, Lilly Krug, Carlos Bardem, Alice Pagani",
       "notes": "",
-      "youtube_trailer_id": "mcmpqAIeIwE"
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1381027,
@@ -102,7 +102,7 @@
       "studio": "Indican Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Drama / Thriller / Comedy",
+      "genre": "Crime / Drama / Comedy",
       "cast": "Troy Leigh-Anne Johnson, Grace Van Dien, Noa Fisher, Odley Jean",
       "notes": "Can you survive?",
       "youtube_trailer_id": "2p5_WMputF0"
@@ -157,7 +157,7 @@
       "genre": "Drama / Family",
       "cast": "Dayahang Rai, Prakash Saput, Srijana Ningleku, Maotse Gurung",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "g2975Nr_u04"
     },
     {
       "tmdb_id": 1323909,
@@ -299,7 +299,7 @@
       "release_type": "limited",
       "genre": "Drama / History / War",
       "cast": "Karim Daoud Anaya, Hiam Abbass, Robert Aramayo, Yasmine Al Massri",
-      "notes": "",
+      "notes": "The uprising that took on an empire",
       "youtube_trailer_id": "14H4J8bewDY"
     },
     {

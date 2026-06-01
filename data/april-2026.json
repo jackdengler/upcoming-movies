@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
+      "director": "Aaron Horvath, Michael Jelenic",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -217,7 +217,7 @@
       "title": "Hunting Matthew Nichols",
       "director": "Markian Tarasiuk",
       "studio": "—",
-      "budget_usd": null,
+      "budget_usd": 275000,
       "release_type": "wide",
       "genre": "Horror / Mystery",
       "cast": "Markian Tarasiuk, Ryan Alexander McDonald, Miranda MacDougall, Christine Willes",
@@ -391,7 +391,7 @@
       "genre": "Action / Thriller / Mystery / Drama",
       "cast": "Kiefer Sutherland, Tommy Martinez, Ashton Sanders, Solly McLeod",
       "notes": "He never planned to fight. But he refuses to fall.",
-      "youtube_trailer_id": "DrG4QkBpqMc"
+      "youtube_trailer_id": "4R6mxR53m10"
     },
     {
       "tmdb_id": 1391074,
@@ -488,12 +488,12 @@
       "tmdb_id": 1364953,
       "date": "2026-04-17",
       "title": "Marama",
-      "director": "Taratoa Stappard",
+      "director": "Toa Stappard",
       "studio": "Dark Sky Films",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Drama / Mystery",
-      "cast": "Ariaana Osborne, Toby Stephens, Umi Myers, Erroll Shand",
+      "cast": "Ariāna Osborne, Toby Stephens, Umi Myers, Erroll Shand",
       "notes": "A Māori gothic story of retribution.",
       "youtube_trailer_id": "uP_BNr2VerM"
     },
@@ -674,8 +674,8 @@
       "studio": "Vertical Entertainment",
       "budget_usd": 150000000,
       "release_type": "wide",
-      "genre": "Action / Drama / History",
-      "cast": "Anthony Mackie, Aiysha Hart, Ben Kingsley, Ghassan Massoud",
+      "genre": "History / War / Action / Drama",
+      "cast": "Anthony Mackie, Aiysha Hart, Sami Bouajila, Sharlto Copley",
       "notes": "One warrior must unite them all.",
       "youtube_trailer_id": "fraAGOuT3sA"
     },
@@ -778,8 +778,8 @@
       "studio": "IFC Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Action / Thriller",
-      "cast": "Jason Segel, Samara Weaving, Timothy Olyphant, Juliette Lewis",
+      "genre": "Action / Comedy / Thriller",
+      "cast": "Samara Weaving, Jason Segel, Paul Guilfoyle, Timothy Olyphant",
       "notes": "Breakups are all in the execution.",
       "youtube_trailer_id": "pGxKTIegUZ4"
     },
@@ -856,7 +856,7 @@
       "studio": "Indican Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Crime / Drama / Thriller / Comedy",
+      "genre": "Crime / Drama / Comedy",
       "cast": "Troy Leigh-Anne Johnson, Grace Van Dien, Noa Fisher, Odley Jean",
       "notes": "Can you survive?",
       "youtube_trailer_id": "2p5_WMputF0"

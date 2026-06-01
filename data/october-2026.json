@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -90,7 +90,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Daisy Edgar-Jones, Caitríona Balfe, Fiona Shaw, Bodhi Rae Breathnach",
+      "cast": "Daisy Edgar-Jones, Fiona Shaw, Caitríona Balfe, Bodhi Rae Breathnach",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -103,7 +103,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Comedy / Fantasy",
-      "cast": "Andrew Koji, Noah Centineo, Callina Liang, David Dastmalchian",
+      "cast": "Noah Centineo, Andrew Koji, Callina Liang, Joe Anoa'i",
       "notes": "Ready. Set. Fight.",
       "youtube_trailer_id": "Xt4X4FvXk2A"
     },

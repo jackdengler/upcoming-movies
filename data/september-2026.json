@@ -1,12 +1,12 @@
 {
   "month": "September 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
-      "title": "Fall 2",
+      "title": "Fall 2: Deadpoint",
       "director": "Michael Spierig, Peter Spierig",
       "studio": "Lionsgate",
       "budget_usd": null,
@@ -102,7 +102,7 @@
       "studio": "Columbia Pictures",
       "budget_usd": 80000000,
       "release_type": "wide",
-      "genre": "Horror / Science Fiction",
+      "genre": "Horror / Science Fiction / Action",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
       "notes": "A new era of evil.",
       "youtube_trailer_id": "SJPu1spHqfk"

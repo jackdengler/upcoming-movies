@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -53,7 +53,7 @@
       "genre": "Drama / Western",
       "cast": "John Pyper-Ferguson, Christina Moore, Madison Lawlor, Lou Diamond Phillips",
       "notes": "Nothing stays buried forever.",
-      "youtube_trailer_id": "dg7RKym9hzM"
+      "youtube_trailer_id": "iIFEYdBGJoU"
     },
     {
       "tmdb_id": 1127384,
@@ -222,7 +222,7 @@
       "genre": "Drama / Comedy",
       "cast": "Alexandra Daddario, Daveed Diggs, Josh Gad, Ashley Park",
       "notes": "",
-      "youtube_trailer_id": "lAKTiVZT-lw"
+      "youtube_trailer_id": "ovTGIs4Al6M"
     },
     {
       "tmdb_id": 1315259,
@@ -261,7 +261,7 @@
       "genre": "Action / Thriller",
       "cast": "Josh Duhamel, Dylan Sprouse, Til Schweiger, Jeremy London",
       "notes": "How far would you go to save your son?",
-      "youtube_trailer_id": "C6awoAc3Dw4"
+      "youtube_trailer_id": "EGl9BwPOLVs"
     },
     {
       "tmdb_id": 1168719,
@@ -472,17 +472,17 @@
       "youtube_trailer_id": "TVNkxUxhqh0"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1591972,
       "date": "2026-05-22",
       "title": "Blood Moon Rite 8",
-      "director": "—",
+      "director": "Phan Gia Nhat Linh",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Drama / Horror",
-      "cast": "Van Son, Le Khanh, Miu Le, Lien Binh Phat",
+      "genre": "Comedy",
+      "cast": "Vân Sơn, Lê Khánh, Miu Lê, Liên Bỉnh Phát",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "LKe1fRKHuTI"
     },
     {
       "tmdb_id": 1078581,
@@ -565,7 +565,7 @@
     {
       "tmdb_id": 1228710,
       "date": "2026-05-22",
-      "title": "The Mandalorian and Grogu",
+      "title": "Star Wars: The Mandalorian and Grogu",
       "director": "Jon Favreau",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 165000000,
@@ -584,7 +584,7 @@
       "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
-      "cast": "Renate Reinsve, Chiwetel Ejiofor, Mark Duplass, Finn Bennett",
+      "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
       "notes": "You are not supposed to be here.",
       "youtube_trailer_id": "0HjdiohVOik"
     },
@@ -633,10 +633,10 @@
       "title": "The Breadwinner",
       "director": "Eric Appel",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
+      "budget_usd": 25000000,
       "release_type": "wide",
       "genre": "Comedy / Family",
-      "cast": "Nate Bargatze, Mandy Moore, Stella Grace Fitzgerald, Birdie Borria",
+      "cast": "Nate Bargatze, Mandy Moore, Colin Jost, Zach Cherry",
       "notes": "One dad. Three kids. Zero clue.",
       "youtube_trailer_id": "m76VzoDfQWQ"
     },
@@ -675,7 +675,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Crime / Thriller",
-      "cast": "Leo Woodall, Dustin Hoffman, Havana Rose Liu, Tovah Feldshuh",
+      "cast": "Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "rdlOZhl-nSA"
     }

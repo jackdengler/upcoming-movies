@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Pedro Solís, Juan Jesús García Galocha",
+      "director": "Juan Jesús García Galocha, Pedro Solís",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -140,7 +140,7 @@
       "director": "Ángel Gómez Hernández",
       "studio": "Roadside Attractions",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
       "notes": "",
@@ -150,14 +150,14 @@
       "tmdb_id": 1391847,
       "date": "2026-02-11",
       "title": "Gale: Yellow Brick Road",
-      "director": "Daniel Alexander",
+      "director": "—",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Thriller / Fantasy",
-      "cast": "Chloë Culligan Crump, Laura Kay bailey, Karen Swan, Dara abasuté",
-      "notes": "Dorothy was Just the beginning",
-      "youtube_trailer_id": "vfdaizGLg1g"
+      "genre": "Fantasy / Horror / Thriller",
+      "cast": "Laura Kay Bailey, Chloë Crump, Rachel Hassett, Hassan Taj",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1321179,
@@ -259,7 +259,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama",
-      "cast": "John Lithgow, Olivia Colman, Aud Mason-Hyde, Cody Fern",
+      "cast": "Olivia Colman, Aud Mason-Hyde, John Lithgow, Daniel Henshall",
       "notes": "Every family finds their own language.",
       "youtube_trailer_id": "UVOUZBm5vwg"
     },

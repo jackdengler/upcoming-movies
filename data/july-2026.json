@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -13,7 +13,7 @@
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family / Fantasy",
       "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
-      "notes": "Hollywood has a monster problem.",
+      "notes": "",
       "youtube_trailer_id": "V-O-uBaHk3c"
     },
     {
@@ -76,7 +76,7 @@
       "studio": "Warner Bros.",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Fantasy",
+      "genre": "Horror",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
       "notes": "Every family has its demons.",
       "youtube_trailer_id": "TnHby2cxJzs"
@@ -92,7 +92,7 @@
       "genre": "Comedy",
       "cast": "Zoey Deutch, Jon Hamm, John Slattery, Ben Wang",
       "notes": "",
-      "youtube_trailer_id": "QMeXh8NcRDQ"
+      "youtube_trailer_id": "GEbaLieo_Kw"
     },
     {
       "tmdb_id": 1108427,
@@ -106,6 +106,19 @@
       "cast": "Catherine Laga‘aia, Dwayne Johnson, Rena Owen, John Tui",
       "notes": "The ocean chose her for a reason.",
       "youtube_trailer_id": "n7f6hlKsxxo"
+    },
+    {
+      "tmdb_id": 1096846,
+      "date": "2026-07-10",
+      "title": "Reading Lolita in Tehran",
+      "director": "Eran Riklis",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Golshifteh Farahani, Zar Amir Ebrahimi, Mina Kavani, Bahar Beihaghi",
+      "notes": "",
+      "youtube_trailer_id": "NDW378WjtoU"
     },
     {
       "tmdb_id": 1404304,
@@ -194,7 +207,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
-      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth",
+      "cast": "Charles Melton, Sophie Thatcher, Havana Rose Liu, Dougray Scott",
       "notes": "",
       "youtube_trailer_id": null
     },

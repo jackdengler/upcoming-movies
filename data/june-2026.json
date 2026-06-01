@@ -1,13 +1,13 @@
 {
   "month": "June 2026",
-  "updated": "2026-05-25",
+  "updated": "2026-06-01",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1470329,
       "date": "2026-06-05",
       "title": "Another World",
-      "director": "Tommy Kai Chung Ng",
+      "director": "Tommy Ng Kai-Chung",
       "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "limited",
@@ -79,7 +79,7 @@
       "genre": "Drama / Comedy",
       "cast": "Richard E. Grant, Claire Foy, Sebastian Armesto, Roger Ashton-Griffiths",
       "notes": "Polite society has never been so Savage.",
-      "youtube_trailer_id": "4VIIZlzqdKE"
+      "youtube_trailer_id": "dB9HuMcaEGM"
     },
     {
       "tmdb_id": 1273221,
@@ -178,12 +178,12 @@
       "title": "Disclosure Day",
       "director": "Steven Spielberg",
       "studio": "Universal Pictures",
-      "budget_usd": null,
+      "budget_usd": 115000000,
       "release_type": "wide",
       "genre": "Mystery / Science Fiction / Thriller",
       "cast": "Emily Blunt, Josh O'Connor, Colin Firth, Eve Hewson",
       "notes": "We deserve to know.",
-      "youtube_trailer_id": "SCYT8vb2siQ"
+      "youtube_trailer_id": "icDuEHSxE-w"
     },
     {
       "tmdb_id": 1441453,
@@ -204,9 +204,9 @@
       "title": "Stop! That! Train!",
       "director": "Adam Shankman",
       "studio": "N/A",
-      "budget_usd": null,
+      "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Action / Comedy / Music",
+      "genre": "Action / Comedy",
       "cast": "RuPaul, Jujubee, Ginger Minj, Brooke Lynn Hytes",
       "notes": "The greatest trainwreck in herstory.",
       "youtube_trailer_id": "yx2YuoAnwlQ"
@@ -267,14 +267,14 @@
       "tmdb_id": 1564614,
       "date": "2026-06-19",
       "title": "Leviticus",
-      "director": "Adrian Chiarella",
+      "director": "—",
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror",
-      "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Tyallah Bullock",
-      "notes": "It will never stop.",
-      "youtube_trailer_id": "WXuK0vlFxII"
+      "genre": "Horror / Romance / Sci-Fi / Thriller",
+      "cast": "Joe Bird, Stacy Clausen, Jeremy Blewitt, Ewen Leslie",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1517868,
@@ -352,7 +352,7 @@
       "genre": "Animation / Family / Comedy / Adventure",
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
       "notes": "It's on.",
-      "youtube_trailer_id": "c51ND9Hdbw0"
+      "youtube_trailer_id": "QftAW9TTmuQ"
     },
     {
       "tmdb_id": 1517206,
@@ -438,7 +438,7 @@
       "title": "Supergirl",
       "director": "Craig Gillespie",
       "studio": "Warner Bros.",
-      "budget_usd": null,
+      "budget_usd": 170000000,
       "release_type": "wide",
       "genre": "Action / Adventure / Science Fiction",
       "cast": "Milly Alcock, Matthias Schoenaerts, Eve Ridley, David Krumholtz",

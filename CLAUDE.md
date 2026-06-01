@@ -13,6 +13,10 @@ Key files:
 - `styles.css` — all styling. Uses Linen design tokens (see below).
 - `app.js` — main app, all rendering and interactions.
 - `js/interests.js`, `js/activity.js` — interests storage and activity feed.
+- `js/directors.js`, `js/studios.js` — editable Directors / Studios lists,
+  synced to the private repo (`data/directors.json`, `data/studios.json`)
+  with the same PAT + last-writer-wins pattern as interests. Studios ships a
+  default seed of major distributors on first run.
 - `sw.js` — service worker. **Bump `CACHE` version when shipping any
   shell/style/JS change**, or returning users keep the old cached copy.
 - `data/*.json` — month-keyed release data + `repertory.json`.

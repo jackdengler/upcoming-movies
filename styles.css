@@ -1451,7 +1451,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   bottom: 0;
   z-index: var(--z-tabbar);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: var(--space-2) var(--space-2)
            calc(var(--space-1) + var(--safe-bottom));
   background: var(--tabbar-bg);
@@ -1974,6 +1974,40 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   line-height: 1;
 }
 .director-row__stats[hidden] { display: none; }
+
+/* Studios tab reuses the director-row grid + film-list styles. The only
+   bespoke piece is the left-column count chip: how many upcoming releases
+   a studio has on the schedule, with a small caption beneath. */
+.studio-row__count {
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-h3);
+  line-height: 1;
+}
+.studio-row__count--empty {
+  background: var(--color-bg);
+  color: var(--color-text-faint);
+}
+.studio-row__count-label {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: 600;
+  color: var(--color-text-dim);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Section caption inside an expanded studio row (e.g. "Recent releases"). */
+.studio-section__label {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--color-text-dim);
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--space-1);
+}
 
 .director-row__latest {
   margin: 2px 0 0;

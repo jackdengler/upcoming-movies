@@ -182,6 +182,38 @@
         </p>
       </section>
 
+      <section id="tab-studios" class="tab-panel" aria-label="Studios" hidden>
+        <div class="directors__bar">
+          <div class="search-bar directors__search" id="studio-search-bar">
+            <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="M21 21l-4.3-4.3"/>
+            </svg>
+            <input id="studio-search-input" class="search-bar__input" type="search"
+                   inputmode="search" autocomplete="off" autocorrect="off"
+                   spellcheck="false" placeholder="Search studios…" />
+            <button id="studio-search-clear" class="search-bar__clear" type="button" aria-label="Clear search" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <button class="directors__add" id="add-studio" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+            <span>Add studio</span>
+          </button>
+        </div>
+        <ol id="studio-list" class="director-list"></ol>
+        <p id="empty-studios" class="empty-state" hidden>
+          Add a studio to track its recent and upcoming releases.
+        </p>
+        <p id="empty-studios-search" class="empty-state" hidden>
+          No matches.
+        </p>
+      </section>
+
       <section id="tab-updates" class="tab-panel tab-panel--overlay" aria-label="Updates" hidden>
         <div class="updates__nav">
           <button class="calendar__navbtn" id="updates-back" type="button" aria-label="Back">
@@ -232,6 +264,14 @@
         </svg>
         <span>Directors</span>
       </button>
+      <button class="tab-bar__btn" data-tab="studios" role="tab" aria-selected="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 21V7l8-4v18"/>
+          <path d="M19 21V11l-6-3"/>
+          <path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/>
+        </svg>
+        <span>Studios</span>
+      </button>
     </nav>
 
     <dialog id="showtime-dialog" class="sheet">
@@ -271,6 +311,23 @@
         <div class="sheet__actions">
           <button type="button" class="sheet__btn sheet__btn--danger" id="director-remove" hidden>Remove</button>
           <button type="button" class="sheet__btn sheet__btn--ghost" id="director-cancel">Cancel</button>
+          <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="studio-dialog" class="sheet">
+      <form method="dialog" class="sheet__body" id="studio-form">
+        <h2 class="sheet__title" id="studio-title">Add studio</h2>
+        <p class="sheet__copy">Distributor name, plus an optional one-liner. Match the spelling used on release listings so films link up.</p>
+        <input id="studio-name" class="sheet__input" type="text" autocomplete="off" autocapitalize="words"
+               spellcheck="false" placeholder="Studio name" required />
+        <ul id="studio-suggestions" class="director-suggestions" hidden></ul>
+        <input id="studio-notes" class="sheet__input" type="text" autocomplete="off"
+               spellcheck="false" placeholder="Notes (optional)" />
+        <div class="sheet__actions">
+          <button type="button" class="sheet__btn sheet__btn--danger" id="studio-remove" hidden>Remove</button>
+          <button type="button" class="sheet__btn sheet__btn--ghost" id="studio-cancel">Cancel</button>
           <button type="submit" class="sheet__btn sheet__btn--primary">Save</button>
         </div>
       </form>

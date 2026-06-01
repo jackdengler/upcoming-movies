@@ -6,7 +6,7 @@ import { test, expect } from "./fixtures.js";
 test.use({ viewport: { width: 390, height: 844 } });
 
 test.describe("no horizontal overflow at phone width", () => {
-  for (const tab of ["list", "calendar", "interests", "directors"]) {
+  for (const tab of ["list", "calendar", "interests", "directors", "studios"]) {
     test(`${tab} tab does not horizontal-scroll`, async ({ page }) => {
       await page.goto("/");
       await page.waitForLoadState("networkidle");

@@ -19,7 +19,7 @@ test.describe("studios tab", () => {
     );
   });
 
-  test("adds a studio and reveals recent releases", async ({ page }) => {
+  test("adds a studio and toggles its releases open and closed", async ({ page }) => {
     await page.goto("/");
     await page.locator('.tab-bar__btn[data-tab="studios"]').click();
 
@@ -32,9 +32,16 @@ test.describe("studios tab", () => {
     await expect(rows).toHaveCount(13);
     await expect(rows.last().locator(".director-row__name")).toHaveText("MUBI");
 
-    // Expanding a row toggles its recent-releases section into view.
+    // Studios start collapsed — the release list is hidden until expanded.
     const first = rows.first();
+    const details = first.locator(".director-filmography");
+    await expect(details).toBeHidden();
+
     await first.locator(".director-row__expand").click();
-    await expect(first.locator(".director-filmography")).toBeVisible();
+    await expect(details).toBeVisible();
+
+    // And it collapses again on a second tap.
+    await first.locator(".director-row__expand").click();
+    await expect(details).toBeHidden();
   });
 });

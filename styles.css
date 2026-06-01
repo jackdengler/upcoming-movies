@@ -2136,6 +2136,22 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin-top: 0;
 }
 
+/* Tappable interest chip on the Studios tab — cycles Must → Likely →
+   Unlikely → Skip → clear in place. The empty state is a dashed ghost so an
+   un-rated film still has an obvious tap target. */
+.director-film__rate {
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+.director-film__rate:active { transform: scale(var(--press-scale)); }
+.director-film__rate--empty {
+  background: transparent;
+  color: var(--color-text-faint);
+  border: 1px dashed var(--color-border-strong);
+}
+
 .director-row__nofilms {
   margin: var(--space-2) 0 0;
   font-family: var(--font-body);

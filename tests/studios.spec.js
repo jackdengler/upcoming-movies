@@ -44,4 +44,24 @@ test.describe("studios tab", () => {
     await first.locator(".director-row__expand").click();
     await expect(details).toBeHidden();
   });
+
+  test("cycles interest by tapping a film chip", async ({ page }) => {
+    // A PAT gates interest writes (same as the List tab); seed a dummy one so
+    // the tap sets interest locally instead of opening the token dialog.
+    await page.addInitScript(() =>
+      localStorage.setItem("upcoming:gh_pat", "test-token")
+    );
+    await page.goto("/");
+    await page.locator('.tab-bar__btn[data-tab="studios"]').click();
+
+    const first = page.locator("#studio-list .director-row").first();
+    await first.locator(".director-row__expand").click();
+
+    const chip = () => first.locator(".director-film__rate").first();
+    await expect(chip()).toHaveText("Rate");
+    await chip().click();
+    await expect(chip()).toHaveText("Must");
+    await chip().click();
+    await expect(chip()).toHaveText("Likely");
+  });
 });

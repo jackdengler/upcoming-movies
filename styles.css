@@ -436,14 +436,28 @@ body {
 }
 .amc-toggle[aria-pressed="true"] .amc-toggle__switch::after { transform: translateX(12px); }
 
+/* Sync status ("Saving…" / "✓ Saved"). Floats above the tab bar as a
+   small pill rather than living in the sticky header — an in-flow row here
+   grows and shrinks the header as it toggles, shifting all content below and
+   making the screen jump on every save. Fixed positioning keeps it out of
+   document flow, so layout never reflows. (Linen §16.9 toast pattern.) */
 .app-header__sync {
-  margin-top: var(--space-2);
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--safe-bottom) + var(--tabbar-h) + var(--space-3));
+  transform: translateX(-50%);
+  z-index: var(--z-toast);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0 0 1px var(--color-border), var(--shadow-md);
   font-family: var(--font-body);
   font-style: italic;
   font-weight: 400;
   font-size: var(--text-small);
   color: var(--color-text-dim);
   letter-spacing: 0;
+  pointer-events: none;
 }
 .app-header__sync[data-status="saved"] { color: var(--color-success); }
 .app-header__sync[data-status="error"] { color: var(--color-error); }

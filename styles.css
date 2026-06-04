@@ -2458,6 +2458,24 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 
 .updates__nav-spacer { display: block; }
 
+.updates__pull {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-5) var(--space-3) 0;
+}
+.updates__pull-status {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 400;
+  color: var(--color-text-dim);
+  text-align: center;
+}
+.updates__pull-status[data-kind="error"] { color: var(--color-error); }
+.updates__pull-status[hidden] { display: none; }
+
 .updates__footer {
   margin: var(--space-5) var(--space-3) var(--space-4);
   padding-top: var(--space-3);

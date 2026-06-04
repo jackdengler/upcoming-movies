@@ -4209,6 +4209,61 @@ document.getElementById("open-pat").addEventListener("click", () => {
   requestPat();
 });
 
+// Manual "Pull latest releases" button in the Updates panel. Kicks the
+// refresh-data.yml workflow in the public repo via workflow_dispatch, using
+// the same stored PAT as interest syncing. The token needs Actions write
+// access on jackdengler/upcoming-movies for this to succeed.
+const PULL_WORKFLOW_URL =
+  "https://api.github.com/repos/jackdengler/upcoming-movies/actions/workflows/refresh-data.yml/dispatches";
+
+async function triggerManualPull() {
+  const btn = document.getElementById("pull-releases");
+  const status = document.getElementById("pull-status");
+  if (!btn) return;
+
+  const setStatus = (msg, kind) => {
+    if (!status) return;
+    if (!msg) { status.hidden = true; status.textContent = ""; delete status.dataset.kind; return; }
+    status.hidden = false;
+    status.textContent = msg;
+    status.dataset.kind = kind || "";
+  };
+
+  if (!Interests.hasPat()) {
+    const saved = await requestPat();
+    if (!saved || !Interests.hasPat()) return;
+  }
+
+  btn.disabled = true;
+  setStatus("Requesting refresh…", "pending");
+  try {
+    const r = await fetch(PULL_WORKFLOW_URL, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${Interests.getPat()}`,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    });
+    if (r.status === 204) {
+      setStatus("Refresh started. New releases should appear within a few minutes.", "ok");
+    } else if (r.status === 401 || r.status === 403) {
+      setStatus("Token can't start a refresh — it needs Actions write access.", "error");
+    } else if (r.status === 404) {
+      setStatus("Couldn't reach the refresh workflow. Check the token's repo access.", "error");
+    } else {
+      setStatus(`Refresh request failed (${r.status}). Try again later.`, "error");
+    }
+  } catch {
+    setStatus("Network error. Try again when you're back online.", "error");
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById("pull-releases").addEventListener("click", triggerManualPull);
+
 function openUpdates() {
   updatesOpen = true;
   setPanelHidden("tab-list", true);

@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -150,14 +150,14 @@
       "tmdb_id": 1391847,
       "date": "2026-02-11",
       "title": "Gale: Yellow Brick Road",
-      "director": "—",
+      "director": "Daniel Alexander",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Fantasy / Horror / Thriller",
-      "cast": "Laura Kay Bailey, Chloë Crump, Rachel Hassett, Hassan Taj",
-      "notes": "",
-      "youtube_trailer_id": null
+      "genre": "Horror / Thriller / Fantasy",
+      "cast": "Chloë Culligan Crump, Laura Kay bailey, Karen Swan, Dara abasuté",
+      "notes": "Dorothy was Just the beginning",
+      "youtube_trailer_id": "vfdaizGLg1g"
     },
     {
       "tmdb_id": 1321179,

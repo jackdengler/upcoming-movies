@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -129,9 +129,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Western / Action / Drama",
-      "cast": "Mackenzie Foy, Odeya Rush, Sean Bean, Jack Kesy",
+      "cast": "Mackenzie Foy, Odeya Rush, Joe Pantoliano, Sean Bean",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "3eVoGaI8mpo"
     },
     {
       "tmdb_id": null,
@@ -147,6 +147,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1596330,
+      "date": "2026-07-17",
+      "title": "American Pachuco: The Legend of Luis Valdez",
+      "director": "David Alvarado",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Luis Valdez, Edward James Olmos",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1451148,
       "date": "2026-07-17",
       "title": "Cut Off",
@@ -156,6 +169,19 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Jonah Hill, Kristen Wiig, Bette Midler, Nathan Lane",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1465818,
+      "date": "2026-07-17",
+      "title": "Horsegirls",
+      "director": "Lauren Meyering",
+      "studio": "Sumerian Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Lillian Carrier, Gretchen Mol, Iqbal Theba, Jerod Haynes",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -230,7 +256,7 @@
       "title": "Spider-Man: Brand New Day",
       "director": "Destin Daniel Cretton",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": 230000000,
+      "budget_usd": null,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
@@ -260,6 +286,19 @@
       "release_type": "limited",
       "genre": "Drama / Mystery",
       "cast": "Masahiro Motoki, Masaki Suda, Yuriko Yoshitaka, Munetaka Aoki",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-07-31",
+      "title": "Wild Inside",
+      "director": "—",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "—",
       "notes": "",
       "youtube_trailer_id": null
     }

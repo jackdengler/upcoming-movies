@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -60,7 +60,7 @@
       "date": "2026-12-25",
       "title": "A Place in Hell",
       "director": "Chloe Domont",
-      "studio": "Neon",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Thriller / Drama",
@@ -79,7 +79,7 @@
       "genre": "Fantasy / Adventure / Comedy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
       "notes": "",
-      "youtube_trailer_id": "aA0BgavCcKI"
+      "youtube_trailer_id": "b0bx1eHicS0"
     },
     {
       "tmdb_id": 1372443,
@@ -87,7 +87,7 @@
       "title": "Mr. Irrelevant: The John Tuggle Story",
       "director": "Jonathan Levine",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 36000000,
       "release_type": "wide",
       "genre": "Drama",
       "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",

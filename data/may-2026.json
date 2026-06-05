@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -206,7 +206,7 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Drama",
+      "genre": "Action / Drama / Crime",
       "cast": "Daniel Wu, Terrance Lau Chun-Him, Wu Kang-ren, Gardner Tse Kwan-Ho",
       "notes": "",
       "youtube_trailer_id": "p841tPb6zMY"
@@ -247,7 +247,7 @@
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
       "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
-      "notes": "Finish the fight.",
+      "notes": "Their fight. Our future.",
       "youtube_trailer_id": "zva2PQ-ud5Y"
     },
     {
@@ -399,11 +399,11 @@
       "title": "In the Grey",
       "director": "Guy Ritchie",
       "studio": "Black Bear",
-      "budget_usd": null,
+      "budget_usd": 70000000,
       "release_type": "wide",
       "genre": "Action / Thriller",
       "cast": "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem",
-      "notes": "When billions get stolen, they are the pros who steal it back.",
+      "notes": "When billions get stolen, meet the pros who steal it back.",
       "youtube_trailer_id": "nufP15iN4GE"
     },
     {
@@ -470,6 +470,19 @@
       "cast": "Patrick Spikes, Dave Ensign, Leonard Kinsey, Matt Sonswa",
       "notes": "Bad things happen at the Happiest Place on Earth.",
       "youtube_trailer_id": "TVNkxUxhqh0"
+    },
+    {
+      "tmdb_id": 1535470,
+      "date": "2026-05-22",
+      "title": "Ask E. Jean",
+      "director": "Ivy Meeropol",
+      "studio": "Abramorama",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "E. Jean Carroll",
+      "notes": "",
+      "youtube_trailer_id": "SgyI8GStcao"
     },
     {
       "tmdb_id": 1591972,
@@ -599,7 +612,7 @@
       "genre": "Comedy / Music / Drama",
       "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
       "notes": "It's time to set the record straight.",
-      "youtube_trailer_id": "t4Grq6r78Sw"
+      "youtube_trailer_id": "-faiHUsbP_U"
     },
     {
       "tmdb_id": 1318413,
@@ -607,12 +620,25 @@
       "title": "Pressure",
       "director": "Anthony Maras",
       "studio": "Focus Features",
-      "budget_usd": null,
+      "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Thriller / History / War",
       "cast": "Andrew Scott, Brendan Fraser, Kerry Condon, Chris Messina",
       "notes": "In the hours before D-Day, one decision changed the world.",
-      "youtube_trailer_id": "xcPgrKoXe_c"
+      "youtube_trailer_id": "EBh1LGRwiis"
+    },
+    {
+      "tmdb_id": 1392527,
+      "date": "2026-05-29",
+      "title": "Renoir",
+      "director": "Chie Hayakawa",
+      "studio": "Film Movement",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Yui Suzuki, Hikari Ishida, Lily Franky, Ayumu Nakajima",
+      "notes": "",
+      "youtube_trailer_id": "eKFce4dpSzk"
     },
     {
       "tmdb_id": 934584,
@@ -636,7 +662,7 @@
       "budget_usd": 25000000,
       "release_type": "wide",
       "genre": "Comedy / Family",
-      "cast": "Nate Bargatze, Mandy Moore, Colin Jost, Zach Cherry",
+      "cast": "Nate Bargatze, Mandy Moore, Stella Grace Fitzgerald, Birdie Borria",
       "notes": "One dad. Three kids. Zero clue.",
       "youtube_trailer_id": "m76VzoDfQWQ"
     },
@@ -672,12 +698,25 @@
       "title": "Tuner",
       "director": "Daniel Roher",
       "studio": "Black Bear",
-      "budget_usd": null,
+      "budget_usd": 7000000,
       "release_type": "wide",
       "genre": "Crime / Thriller",
       "cast": "Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "rdlOZhl-nSA"
+    },
+    {
+      "tmdb_id": 1664011,
+      "date": "2026-05-31",
+      "title": "Revolutionary America",
+      "director": "Ian Anthony Reid",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / History",
+      "cast": "Tom Selleck, Larry P. Arnin, John Grant, John Lovell",
+      "notes": "",
+      "youtube_trailer_id": "fDg303WfCj0"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -13,8 +13,8 @@
       "release_type": "wide",
       "genre": "Thriller",
       "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Are you down?",
+      "youtube_trailer_id": "60YZ4LVTfI0"
     },
     {
       "tmdb_id": 1596326,
@@ -50,10 +50,23 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "History / Drama / Thriller",
-      "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, Giancarlo Esposito",
-      "notes": "",
-      "youtube_trailer_id": null
+      "genre": "Drama / Thriller / History",
+      "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, David Strathairn",
+      "notes": "The FBI couldn't crack it. So they called in the mob.",
+      "youtube_trailer_id": "ej8pjisr0Pc"
+    },
+    {
+      "tmdb_id": 1284046,
+      "date": "2026-09-04",
+      "title": "Onslaught",
+      "director": "Adam Wingard",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Horror / Thriller",
+      "cast": "Adria Arjona, Alex Pereira, Drew Starkey, Rebecca Hall",
+      "notes": "They unleashed their deadliest weapon on us.",
+      "youtube_trailer_id": "06hhVL13HEw"
     },
     {
       "tmdb_id": 1497970,
@@ -64,9 +77,35 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Comedy / Family / Fantasy / Adventure",
-      "cast": "Jiang Wen, Shun Zi, Lan Long, Tu Xiongfei",
+      "cast": "John Shang, Ruan Yifei, Jiang Wen, Shun Zi",
       "notes": "The cat and mouse chase never ends!",
       "youtube_trailer_id": "VBPlpfK6zXg"
+    },
+    {
+      "tmdb_id": 1475440,
+      "date": "2026-09-11",
+      "title": "Beyond Belief",
+      "director": "Johnny Meier",
+      "studio": "Iconic Events Releasing",
+      "budget_usd": 1000000,
+      "release_type": "limited",
+      "genre": "Drama / Family / Music",
+      "cast": "James C. Burns, Libby Smallbone, Sophie Bolen, Debby Gerber",
+      "notes": "Run The Race. Keep The Faith.",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1228834,
+      "date": "2026-09-11",
+      "title": "Hotel Tehran",
+      "director": "Guy Moshe",
+      "studio": "Briarcliff Entertainment",
+      "budget_usd": 32000000,
+      "release_type": "wide",
+      "genre": "Action / Thriller",
+      "cast": "Liam Neeson, Wes Chatham, Titus Welliver, Zachary Levi",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1302904,

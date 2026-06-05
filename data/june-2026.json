@@ -1,8 +1,21 @@
 {
   "month": "June 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": null,
+      "date": "2026-06-03",
+      "title": "The Easy Kind",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Music",
+      "cast": "Elizabeth Cook, Melissa Jackson, Karen Allen, Charles Esten",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1470329,
       "date": "2026-06-05",
@@ -47,11 +60,11 @@
       "date": "2026-06-05",
       "title": "Masters of the Universe",
       "director": "Travis Knight",
-      "studio": "Sony Pictures Releasing",
+      "studio": "Amazon MGM Studios",
       "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Science Fiction",
-      "cast": "Nicholas Galitzine, Camila Mendes, Alison Brie, James Purefoy",
+      "cast": "Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto",
       "notes": "Witness how he became He-Man.",
       "youtube_trailer_id": "rJSmz-zhDxE"
     },
@@ -66,7 +79,7 @@
       "genre": "Comedy / Music / Drama",
       "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
       "notes": "It's time to set the record straight.",
-      "youtube_trailer_id": "t4Grq6r78Sw"
+      "youtube_trailer_id": "-faiHUsbP_U"
     },
     {
       "tmdb_id": 1245859,
@@ -87,12 +100,12 @@
       "title": "Scary Movie",
       "director": "Michael Tiddes",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 35000000,
       "release_type": "wide",
-      "genre": "Comedy / Horror",
+      "genre": "Comedy",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
-      "youtube_trailer_id": "2aMPPfmP5cY"
+      "youtube_trailer_id": "cGgWAHXuTKc"
     },
     {
       "tmdb_id": 1339175,
@@ -129,7 +142,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Adventure / Animation / Family",
-      "cast": "Flemming Stein, Philipp A. Reinheimer, Laura Pfister, Philippa Jarke",
+      "cast": "Vincent Tong, Bruce Dinsmore, Jenna Wheeler-Hughes, Priyanka",
       "notes": "Discover the song within",
       "youtube_trailer_id": "wwIMQDSBjJU"
     },
@@ -145,6 +158,19 @@
       "cast": "Nadia Melliti, Park Ji-min, Amina Ben Mohamed, Rita Benmannana",
       "notes": "",
       "youtube_trailer_id": "aHntkAmfiNs"
+    },
+    {
+      "tmdb_id": 1285959,
+      "date": "2026-06-05",
+      "title": "The Passenger",
+      "director": "Vadim Perelman",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller",
+      "cast": "Djimon Hounsou, Kodi Smit-McPhee, Leigh-Ann Rose, Carolina Campos",
+      "notes": "",
+      "youtube_trailer_id": "jMOow9j8oEw"
     },
     {
       "tmdb_id": 1465717,
@@ -264,17 +290,30 @@
       "youtube_trailer_id": "ZC1kEknG2ro"
     },
     {
+      "tmdb_id": 1053594,
+      "date": "2026-06-19",
+      "title": "La niña de la cabra",
+      "director": "Ana Asensio",
+      "studio": "Outsider Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Lorena López, Javier Pereira, Zaira Romero, Enrique Villén",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1564614,
       "date": "2026-06-19",
       "title": "Leviticus",
-      "director": "—",
+      "director": "Adrian Chiarella",
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Romance / Sci-Fi / Thriller",
-      "cast": "Joe Bird, Stacy Clausen, Jeremy Blewitt, Ewen Leslie",
-      "notes": "",
-      "youtube_trailer_id": null
+      "genre": "Horror",
+      "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Tyallah Bullock",
+      "notes": "It will never stop.",
+      "youtube_trailer_id": "WXuK0vlFxII"
     },
     {
       "tmdb_id": 1517868,
@@ -438,12 +477,12 @@
       "title": "Supergirl",
       "director": "Craig Gillespie",
       "studio": "Warner Bros.",
-      "budget_usd": 170000000,
+      "budget_usd": 175000000,
       "release_type": "wide",
       "genre": "Action / Adventure / Science Fiction",
       "cast": "Milly Alcock, Matthias Schoenaerts, Eve Ridley, David Krumholtz",
       "notes": "Truth. Justice. Whatever.",
-      "youtube_trailer_id": "s1-pfiVMKAs"
+      "youtube_trailer_id": "tzlY8XD1CGg"
     },
     {
       "tmdb_id": 950028,
@@ -456,7 +495,7 @@
       "genre": "Drama / Comedy",
       "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
-      "youtube_trailer_id": "OJ19I9q_hOQ"
+      "youtube_trailer_id": "nelkiuezJxg"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -25,9 +25,22 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror / Thriller",
-      "cast": "Ari Millen, Benjamin Byron Davis, Karen Cliche, Dylan Hawco",
-      "notes": "Watch out for children.",
-      "youtube_trailer_id": "5r9Tcfg_bAY"
+      "cast": "Ari Millen, Charlie Zeltzer, Shiloh O’Reilly, Kiori Mirza Waldman",
+      "notes": "We all scream.",
+      "youtube_trailer_id": "SHxqHdBNm-w"
+    },
+    {
+      "tmdb_id": 1421539,
+      "date": "2026-08-07",
+      "title": "Julian",
+      "director": "Cato Kusters",
+      "studio": "Strand Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Nina Meurisse, Laurence Roothooft, Rosalia Cuevas, Peter Seynaeve",
+      "notes": "",
+      "youtube_trailer_id": "hhyHRQI147E"
     },
     {
       "tmdb_id": 1212934,
@@ -108,17 +121,17 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1706696,
       "date": "2026-08-14",
       "title": "Elijah Peel",
-      "director": "—",
+      "director": "Kevin D. Sepe, Nathan Ross Murphy",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Music",
+      "genre": "Music / Drama",
       "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "He found faith where he least expected it.",
+      "youtube_trailer_id": "5LtxY2e7h5E"
     },
     {
       "tmdb_id": 1185806,
@@ -156,7 +169,7 @@
       "release_type": "wide",
       "genre": "Science Fiction / Mystery / Thriller",
       "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
-      "notes": "",
+      "notes": "Survive the summer.",
       "youtube_trailer_id": "3oB9AxspVow"
     },
     {
@@ -241,7 +254,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
@@ -298,7 +311,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Thriller / Horror",
-      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rok",
+      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Shin Hyun-been",
       "notes": "",
       "youtube_trailer_id": "LW6dpj1uCK8"
     },
@@ -310,7 +323,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Adventure / Comedy / Family",
+      "genre": "Adventure / Comedy / Family / Mystery",
       "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "H-43VeYGiPM"

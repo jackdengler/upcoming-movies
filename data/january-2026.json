@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -194,7 +194,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Action / Adventure / Comedy / Family",
-      "cast": "Owen Wilson, Dawson Littman, Tabitha St. Germain, Sebastian Billingsley-Rodriguez",
+      "cast": "Owen Wilson, Ruairi MacDonald, Dawson Littman, Tabitha St. Germain",
       "notes": "He's a good boy… most of the time.",
       "youtube_trailer_id": "uUDfO0Q4sog"
     },

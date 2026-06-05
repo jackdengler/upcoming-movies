@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-06-01",
+  "updated": "2026-06-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -33,14 +33,14 @@
       "tmdb_id": 1366242,
       "date": "2026-03-06",
       "title": "DRAGN",
-      "director": "—",
+      "director": "Peter Webber",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Drama / Horror / Sci-Fi / Thriller",
+      "genre": "Action / Horror / Thriller / Science Fiction",
       "cast": "James Paxton, Lilly Krug, Carlos Bardem, Alice Pagani",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "mcmpqAIeIwE"
     },
     {
       "tmdb_id": 1381027,
@@ -347,7 +347,7 @@
       "title": "The Pout-Pout Fish",
       "director": "Ricard Cussó",
       "studio": "Viva Pictures",
-      "budget_usd": 10000,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Animation / Family / Adventure / Comedy",
       "cast": "Nick Offerman, Nina Oyama, Miranda Otto, Amy Sedaris",
@@ -570,10 +570,10 @@
       "studio": "WG Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Comedy / Thriller",
-      "cast": "Jaeden Martell, Asa Butterfield, Jennifer Ehle, Pippa Knowles",
+      "genre": "Drama / Comedy",
+      "cast": "Jaeden Martell, Asa Butterfield, Chris Bauer, Pippa Knowles",
       "notes": "Take a shot at friendship.",
-      "youtube_trailer_id": "BjmkWI96YLY"
+      "youtube_trailer_id": "vL4AuYMtr9c"
     },
     {
       "tmdb_id": 1465751,

@@ -126,6 +126,20 @@ const EXCLUDED_LANGUAGES = new Set([
 const WHITELIST_TMDB_IDS = new Set([]);
 const WHITELIST_TITLES = new Set([]);
 
+// US distributor overrides, keyed by tmdb_id. BOM's calendar lists whichever
+// distributor it knows holds the rights, which for some titles is the
+// *international* distributor rather than the US one. This app only tracks US
+// theatrical, so when a film's US distributor differs from the value BOM
+// reports, map it to the correct US distributor here. Keyed by tmdb_id for
+// stability across BOM's title/spelling changes; use the canonical studio
+// name (matching data/studios.json) so the Studios tab groups it correctly.
+//
+//   Focker-in-Law → Universal Pictures releases it in the US/Canada;
+//     Paramount handles every other territory, and BOM lists Paramount.
+const US_DISTRIBUTOR_OVERRIDES = {
+  1400336: "Universal Pictures",
+};
+
 function isWhitelisted(tmdbId, title) {
   if (tmdbId && WHITELIST_TMDB_IDS.has(tmdbId)) return true;
   if (WHITELIST_TITLES.has(title)) return true;
@@ -406,7 +420,8 @@ async function enrich(rows) {
       date: row.date,
       title: row.title,
       director,
-      studio: row.distributor || "—",
+      studio:
+        (tmdb_id && US_DISTRIBUTOR_OVERRIDES[tmdb_id]) || row.distributor || "—",
       budget_usd,
       release_type: row.release_type,
       genre,

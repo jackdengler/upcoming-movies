@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Elizabeth Cook, Melissa Jackson, Karen Allen, Charles Esten",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1667198,
+      "date": "2026-06-04",
+      "title": "The Amazing Digital Circus: The Last Act",
+      "director": "Gooseworx",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Science Fiction / Drama / Thriller",
+      "cast": "Lizzie Freeman, Michael Kovach, Amanda Hufford, Marissa Lenti",
+      "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
+      "youtube_trailer_id": "vNGAtHBhdiM"
     },
     {
       "tmdb_id": 1470329,
@@ -37,7 +50,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Romance / Thriller",
+      "genre": "Crime / Drama / Romance / Thriller",
       "cast": "Samara Weaving, Kyle Gallner, Kyra Sedgwick, Jon Gries",
       "notes": "",
       "youtube_trailer_id": "fNdC6SJ-TxY"
@@ -53,7 +66,7 @@
       "genre": "Horror / Thriller",
       "cast": "Alice Eve, Eric Michael Cole, Elle Haymond, Sarah Siadat",
       "notes": "There's no hinding in the sea",
-      "youtube_trailer_id": "TdkpsJqNeRY"
+      "youtube_trailer_id": "oZWDFelquX4"
     },
     {
       "tmdb_id": 454639,
@@ -77,7 +90,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Music / Drama",
-      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
+      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Rory Keenan",
       "notes": "It's time to set the record straight.",
       "youtube_trailer_id": "-faiHUsbP_U"
     },
@@ -90,7 +103,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Comedy",
-      "cast": "Richard E. Grant, Claire Foy, Sebastian Armesto, Roger Ashton-Griffiths",
+      "cast": "Richard E. Grant, Claire Foy, Jack Farthing, Bel Powley",
       "notes": "Polite society has never been so Savage.",
       "youtube_trailer_id": "dB9HuMcaEGM"
     },
@@ -100,7 +113,7 @@
       "title": "Scary Movie",
       "director": "Michael Tiddes",
       "studio": "Paramount Pictures",
-      "budget_usd": 35000000,
+      "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
@@ -169,7 +182,7 @@
       "release_type": "limited",
       "genre": "Thriller",
       "cast": "Djimon Hounsou, Kodi Smit-McPhee, Leigh-Ann Rose, Carolina Campos",
-      "notes": "",
+      "notes": "No way out. No way back.",
       "youtube_trailer_id": "jMOow9j8oEw"
     },
     {
@@ -311,7 +324,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror",
-      "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Tyallah Bullock",
+      "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Nicholas Hope",
       "notes": "It will never stop.",
       "youtube_trailer_id": "WXuK0vlFxII"
     },

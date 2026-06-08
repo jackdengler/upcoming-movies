@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Pedro Solís, Juan Jesús García Galocha",
+      "director": "Juan Jesús García Galocha, Pedro Solís",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -475,7 +475,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Kevin McManus, Matthew McManus",
+      "director": "Matthew McManus, Kevin McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",
@@ -552,7 +552,7 @@
     {
       "tmdb_id": 1445363,
       "date": "2026-02-27",
-      "title": "EPiC: Elvis Presley in Concert",
+      "title": "Epic: Elvis Presley in Concert",
       "director": "Baz Luhrmann",
       "studio": "Neon",
       "budget_usd": null,
@@ -610,7 +610,7 @@
       "budget_usd": 80000000,
       "release_type": "limited",
       "genre": "Drama / Comedy",
-      "cast": "Teng Shen, Yin Zheng, Johnny Huang, Zhang Benyu",
+      "cast": "Shen Teng, Yin Zheng, Johnny Huang, Zhang Benyu",
       "notes": "Let's lay out the road and race ahead.",
       "youtube_trailer_id": "zNu476xN6Ao"
     },

@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -13,7 +13,7 @@
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family / Fantasy",
       "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
-      "notes": "",
+      "notes": "Hollywood has a monster problem.",
       "youtube_trailer_id": "V-O-uBaHk3c"
     },
     {
@@ -76,7 +76,7 @@
       "studio": "Warner Bros.",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Thriller",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
       "notes": "Every family has its demons.",
       "youtube_trailer_id": "TnHby2cxJzs"
@@ -182,8 +182,8 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Lillian Carrier, Gretchen Mol, Iqbal Theba, Jerod Haynes",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "She's not \"a lot\". You're just underprepared.",
+      "youtube_trailer_id": "JdvV29CGdPs"
     },
     {
       "tmdb_id": 1339666,
@@ -233,7 +233,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
-      "cast": "Charles Melton, Sophie Thatcher, Havana Rose Liu, Dougray Scott",
+      "cast": "Havana Rose Liu, Sophie Thatcher, Charles Melton, Dougray Scott",
       "notes": "",
       "youtube_trailer_id": null
     },

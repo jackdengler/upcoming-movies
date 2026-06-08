@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Per-theater scrapers",
   "sources": [
     {
       "id": "new-beverly",
-      "count": 60,
+      "count": 50,
       "status": "ok"
     },
     {
       "id": "american-cinematheque",
-      "count": 105,
+      "count": 96,
       "status": "ok",
       "unrouted_count": 1,
       "unrouted_sample": {
@@ -57,13 +57,13 @@
       "id": "nuart",
       "count": 0,
       "status": "ok",
-      "sample_url": "https://www.landmarktheatres.com/api/gatsby-source-boxofficeapi/schedule?from=2026-06-05T03%3A00%3A00&to=2026-08-04T03%3A00%3A00&theaters=%7B%22id%22%3A%22X00CW%22%2C%22timeZone%22%3A%22America%2FLos_Angeles%22%7D",
-      "sample_bytes": 80516,
-      "sample": "{\"X00CW\":{\"schedule\":{\"142\":{\"2026-07-10\":[{\"id\":\"142-2026-07-10 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-10T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/665db27f-76d5-5220-8407-e8463451a3b1\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.142&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260710&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"248\":{\"2026-07-03\":[{\"id\":\"248-2026-07-03 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-03T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/67c4ce45-04fc-58e4-804b-bb0f49f3b132\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.248&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260703&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"313\":{\"2026-06-06\":[{\"id\":\"313-2026-06-06 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-06T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/565f2857-5996-5aad-a702-4dc0e4e7a481\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Screen.Accessibility.HearingImpaired,Format.Projection.Digital&perfd=20260606&perft=23:00&code=2D; ORG; 5.1; GA; Open Seating; HI\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":32},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-06-06 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-06T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/a7bf3f97-e515-595b-bbc5-5d98ea202c56\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260606&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":39},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]}],\"2026-06-13\":[{\"id\":\"313-2026-06-13 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-13T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/8c7dfea8-4bb7-50b5-a2b3-61621edfecd2\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260613&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-06-13 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-13T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/22047e26-5c12-584c-9eae-f8b3f1bdb1f7\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260613&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-20\":[{\"id\":\"313-2026-06-20 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-20T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/7b5cf384-6bc7-508f-bd18-86e6100feb07\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260620&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-06-20 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-20T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/def8f0f4-eab0-54a1-b506-650f5c905184\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260620&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-06-27\":[{\"id\":\"313-2026-06-27 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-27T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/9064e0ea-ff86-5e53-aeff-4c5c140f7af9\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260627&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-06-27 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-27T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e636f6c6-11ce-525f-886a-f97a74a105b1\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260627&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-07-04\":[{\"id\":\"313-2026-07-04 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-04T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/1da8ef5e-021d-528c-9221-eff85d8885c3\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260704&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-07-04 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-04T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5bcce9b0-6324-5f8e-9cb4-34cdaef59c32\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260704&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-07-11\":[{\"id\":\"313-2026-07-11 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-11T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6e0c4f45-dc6f-5315-9324-462c9d808c8d\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260711&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-07-11 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-11T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e7c2ea89-b9be-53af-88dd-71fad1d20e51\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260711&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-07-18\":[{\"id\":\"313-2026-07-18 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-18T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5cf68370-92af-5432-9fde-1b29ddf0c34f\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260718&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-07-18 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-18T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/d197f91b-93eb-57f6-8dc5-77c0569e76a5\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260718&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]}],\"2026-07-25\":[{\"id\":\"313-2026-07-25 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-25T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5c7be6e4-4bdb-5b26-877e-b073bdf4d5ff\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260725&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-07-25 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-25T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/beeaf890-6c65-5bd9-8da8-b65ada5450ac\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260725&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-08-01\":[{\"id\":\"313-2026-08-01 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-08-01T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/f71893a8-f897-573b-8b8b-5701af64c88a\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260801&perft=23:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-08-01 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-08-01T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0110f371-97d4-5621-bb04-9741f10b9d95\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Screen.Accessibility.HearingImpaired,Auditorium.Comfort.GeneralSeating,Format.Projection.Digital&perfd=20260801&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}]},\"7045\":{\"2026-07-17\":[{\"id\":\"7045-2026-07-17 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-17T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ac7943b2-c939-5a3e-9286-feddb865e04e\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.7045&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260717&perft=22:30&code=2D; ORG; 5.1; HI; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"18457\":{\"2026-07-31\":[{\"id\":\"18457-2026-07-31 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-31T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/96d2b891-a686-57a0-8ede-d3fba64577c9\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.18457&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260731&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"18598\":{\"2026-06-05\":[{\"id\":\"18598-2026-06-05 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Scope,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-05T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Scope\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0031e7b4-0332-5b4e-a65a-7bdb1977b844\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.18598&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Scope,Screen.Accessibility.HearingImpaired&perfd=20260605&perft=22:30&code=2D; ORG; 5.1; Scope; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":6},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"29757\":{\"2026-07-24\":[{\"id\":\"29757-2026-07-24 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-07-24T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/3170e72d-c0c4-5217-a207-ed084643ebf1\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.29757&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260724&perft=22:30&code=2D; ORG; 5.1; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"47347\":{\"2026-06-12\":[{\"id\":\"47347-2026-06-12 15:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-12T15:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0b641138-6675-593c-add2-138ebeaa9820\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260612&perft=15:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-12 17:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-12T17:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/fc4236e7-72f2-5a0b-8ae4-477d547e6f41\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260612&perft=17:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-12 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-12T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/138502b9-72aa-5c2a-8f5e-7f12b4db3b3b\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260612&perft=19:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-13\":[{\"id\":\"47347-2026-06-13 15:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-13T15:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/968afd7d-5d33-5b20-8d35-4b754565955f\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260613&perft=15:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-13 17:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-13T17:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e6a7769b-0a57-5319-b8d9-68f4952daeab\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260613&perft=17:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-13 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-13T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e4e4073f-4390-5b5a-9a40-beebe2c43099\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260613&perft=19:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-14\":[{\"id\":\"47347-2026-06-14 15:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-14T15:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ce39b0c8-ad25-5d21-891b-84d54c9b3b88\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260614&perft=15:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-14 17:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-14T17:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/130453ba-e6b2-587e-af6d-b499ef7aa958\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260614&perft=17:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-14 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-14T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/cde51c7b-5a2d-59b9-9c1a-fe8867d00f82\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260614&perft=19:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-15\":[{\"id\":\"47347-2026-06-15 15:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-15T15:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/663c7a77-044e-516b-b9b1-96551fe1e998\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260615&perft=15:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-15 17:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-15T17:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/2514f4b1-e055-593a-ae4e-08c060fa4633\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260615&perft=17:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-15 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-15T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ea197f55-0107-5a43-af0c-40da5c9cd06f\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260615&perft=19:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-16\":[{\"id\":\"47347-2026-06-16 15:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-16T15:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/9fa4322f-4445-5178-b8c6-de2da73d4b5e\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260616&perft=15:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-16 17:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-16T17:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/119cb5d2-2048-56b1-b60f-1bc7dddcd5d5\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260616&perft=17:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-16 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-16T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/46268616-be94-54ee-8f65-cfb690d5876e\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260616&perft=19:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}],\"2026-06-17\":[{\"id\":\"47347-2026-06-17 15:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-17T15:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/826fa955-919e-585b-b8ae-f9990cef9d72\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260617&perft=15:00&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-17 17:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-17T17:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6d936b19-bbb8-5d58-82da-515bdde4bf7a\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260617&perft=17:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-17 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-17T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/b09a405d-82a6-52a0-abf5-26b65d164f20\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260617&perft=19:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}],\"2026-06-18\":[{\"id\":\"47347-2026-06-18 14:15:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-18T14:15:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0fe9d63f-cd4f-573a-b2f2-6c59d2a6c64e\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260618&perft=14:15&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"47347-2026-06-18 16:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-18T16:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/b285d55b-34c2-53ae-8a20-e727deeae030\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.47347&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260618&perft=16:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"114782\":{\"2026-06-19\":[{\"id\":\"114782-2026-06-19 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Scope,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-19T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Scope\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e24631d8-eaf4-574c-8d6b-8931ca7840d6\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.114782&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Scope,Screen.Accessibility.HearingImpaired&perfd=20260619&perft=22:30&code=2D; ORG; 5.1; Scope; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":12},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"182991\":{\"2026-06-12\":[{\"id\":\"182991-2026-06-12 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-12T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/cbc44135-c545-5eb7-a080-a55f8ef4aaba\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.182991&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260612&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"221524\":{\"2026-06-26\":[{\"id\":\"221524-2026-06-26 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-06-26T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/321f1358-7f52-52d6-bafc-78e20767cd55\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.221524&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20260626&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"327943\":{\"2026-06-05\":[{\"id\":\"327943-2026-06-05 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-05T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/423f202f-e7e9-5e55-ad86-2292c2051ee0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260605&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-05 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-05T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/695a64e5-2961-5971-8316-94e408cd2447\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260605&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-05 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-05T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/09fa83b8-4535-5bb9-a47b-0762b24570da\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260605&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-06\":[{\"id\":\"327943-2026-06-06 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-06T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/d9588e10-de9c-5095-8bdd-5eba9ee4eccd\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260606&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-06 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-06T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/4f919835-f130-537e-83e0-44238eea3612\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260606&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-06 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-06T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/b8f37419-7077-53b9-8465-e98dd446116a\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260606&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}],\"2026-06-07\":[{\"id\":\"327943-2026-06-07 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-07T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/7ffff87e-3f05-57bd-9281-19b1d980cdfe\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260607&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-07 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-07T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/cca2c986-7691-54c6-b046-6e4a70cc03d9\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260607&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-07 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-07T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/115411ac-bf07-5f4c-b513-e7d509b96ace\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260607&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-08\":[{\"id\":\"327943-2026-06-08 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-08T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/de998701-4a0b-5145-91cc-e9745bfd00b3\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260608&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-08 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-08T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/d027223c-f82d-54d2-8ba8-fa321e1311b5\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260608&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-08 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-08T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0ebb01f6-af7d-5e2f-8f99-50cb4425533a\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260608&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-09\":[{\"id\":\"327943-2026-06-09 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-09T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/38722b87-3f6a-52bc-b4ca-3888fa7db69d\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260609&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-09 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-09T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/cab0d360-41ca-5226-b1b7-6e43b635de12\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260609&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-09 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-09T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0d6670ec-4178-54bc-bbba-b08a85fcba8d\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260609&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-06-10\":[{\"id\":\"327943-2026-06-10 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-10T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/904627ef-14ac-547b-8fa7-18f893a8a1a0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260610&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-10 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-10T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/4dae7b07-378d-54e8-8dab-93571dde5145\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260610&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-10 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-10T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/7dd46030-d0d4-5d76-8951-bc45a80f1753\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260610&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}],\"2026-06-11\":[{\"id\":\"327943-2026-06-11 14:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-11T14:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/fbfad3fb-08ec-5178-a6ee-852c59717c8e\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260611&perft=14:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-11 17:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-11T17:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/148af6b2-4291-5f6f-a0fd-51dea214c6b4\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260611&perft=17:00&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"327943-2026-06-11 19:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-06-11T19:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/74a3c617-2d27-5ac0-81b9-7e8052bc3a54\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.327943&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20260611&perft=19:30&code=2D; ORG; 5.1; EN; SUB; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"1000019577\":{\"2026-06-18\":[{\"id\":\"1000019577-2026-06-18 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Event.QandAEvent\",\"startsAt\":\"2026-06-18T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessib"
+      "sample_url": "https://www.landmarktheatres.com/api/gatsby-source-boxofficeapi/scheduledMovies?theaterId=X00CW",
+      "sample_bytes": 973,
+      "sample": "{\"movieIds\":{\"titleAsc\":[\"29757\",\"142\",\"182991\",\"18457\",\"47347\",\"114782\",\"248\",\"327943\",\"1000019577\",\"7045\",\"221524\",\"313\"],\"releaseAsc\":[\"248\",\"313\",\"142\",\"7045\",\"29757\",\"47347\",\"18457\",\"182991\",\"221524\",\"114782\",\"327943\",\"1000019577\"],\"releaseDesc\":[\"1000019577\",\"327943\",\"114782\",\"221524\",\"182991\",\"18457\",\"47347\",\"29757\",\"7045\",\"142\",\"313\",\"248\"]},\"scheduledDays\":{\"142\":[\"2026-07-10\"],\"248\":[\"2026-07-03\"],\"313\":[\"2026-06-06\",\"2026-06-13\",\"2026-06-20\",\"2026-06-27\",\"2026-07-04\",\"2026-07-11\",\"2026-07-18\",\"2026-07-25\",\"2026-08-01\"],\"7045\":[\"2026-07-17\"],\"18457\":[\"2026-07-31\"],\"29757\":[\"2026-07-24\"],\"47347\":[\"2026-06-12\",\"2026-06-13\",\"2026-06-14\",\"2026-06-15\",\"2026-06-16\",\"2026-06-17\",\"2026-06-18\"],\"114782\":[\"2026-06-19\"],\"182991\":[\"2026-06-12\"],\"221524\":[\"2026-06-26\"],\"327943\":[\"2026-06-07\",\"2026-06-08\",\"2026-06-09\",\"2026-06-10\",\"2026-06-11\"],\"1000019577\":[\"2026-06-18\",\"2026-06-19\",\"2026-06-20\",\"2026-06-21\",\"2026-06-22\",\"2026-06-23\",\"2026-06-24\",\"2026-06-25\"]}}"
     },
     {
       "id": "vista",
-      "count": 84,
+      "count": 79,
       "status": "ok"
     },
     {
@@ -73,12 +73,12 @@
     },
     {
       "id": "academy-museum",
-      "count": 87,
-      "status": "failed: HTTP 403 https://tickets.academymuseum.org/cached_api/events/available?event_session.start_datetime._gte=2026-06-05T07%3A00%3A00.000Z&_withmemberevents=&category._in=Film+Screening%2CFilm+Screening%3A+Matinee%2CFilm+Screening%3A+Double+Feature&_embed=event_session%2Cvenue&_sort=event_session.start_datetime"
+      "count": 97,
+      "status": "ok"
     },
     {
       "id": "brain-dead",
-      "count": 27,
+      "count": 22,
       "status": "ok"
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "id": "fathom",
-      "count": 32,
+      "count": 31,
       "status": "ok"
     }
   ],
@@ -169,556 +169,6 @@
   "screenings": [
     {
       "theater": "los-feliz-theatre",
-      "title": "THE SERPENT'S WAY",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "13:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/the-serpents-way-6-5-26/"
-    },
-    {
-      "theater": "aero",
-      "title": "COME AND SEE",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "15:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/come-and-see-6-5-26/",
-      "youtube_trailer_id": "UHaSQU-4wss"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "MISUNDERSTOOD",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "16:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/misunderstood-6-5-26/",
-      "youtube_trailer_id": "y5fPgFMhXmo"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "EUREKA",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "18:30",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/eureka-06-05-2026/",
-      "youtube_trailer_id": "_o0CONMqKOc"
-    },
-    {
-      "theater": "egyptian",
-      "title": "HEAVEN'S GATE",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "19:00",
-      "format": null,
-      "series": "Isabelle Huppert: A Bleak Week Tribute",
-      "url": "https://www.americancinematheque.com/now-showing/heavens-gate-06-05-2026/",
-      "youtube_trailer_id": "3Q3dHN9uWTY"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Blonde Ransom",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/june-5-blonde-ransom-the-crime-of-the-century/"
-    },
-    {
-      "theater": "aero",
-      "title": "EDDINGTON",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "19:30",
-      "format": null,
-      "series": "Ari Aster: A Bleak Week Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/eddington-06-05-2026/",
-      "youtube_trailer_id": "ytyBfsqN3eI"
-    },
-    {
-      "theater": "vista",
-      "title": "Basic Instinct",
-      "year": 1992,
-      "date": "2026-06-05",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3657?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "r3qzXk-P1fI"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Crime of the Century",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "20:40",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/june-5-blonde-ransom-the-crime-of-the-century/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "PALO Y HUESO",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "22:30",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/palo-y-hueso-06-05-2026/"
-    },
-    {
-      "theater": "vista",
-      "title": "The Doors",
-      "year": 1991,
-      "date": "2026-06-05",
-      "time": "23:00",
-      "format": "70mm",
-      "series": "Late Show",
-      "url": "https://ticketing.uswest.veezi.com/purchase/3658?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "qJu9nfVCQmk"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Inglourious Basterds",
-      "year": null,
-      "date": "2026-06-05",
-      "time": "23:59",
-      "format": null,
-      "series": "Midnight",
-      "url": "https://thenewbev.com/program/june-5-inglourious-basterds-midnight-show/",
-      "youtube_trailer_id": "uSEDz-my7XQ"
-    },
-    {
-      "theater": "vista",
-      "title": "L.A. Story",
-      "year": 1991,
-      "date": "2026-06-06",
-      "time": "10:00",
-      "format": "35mm",
-      "series": "Matinee",
-      "url": "https://ticketing.uswest.veezi.com/purchase/3659?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "tl9WCvUZVrE"
-    },
-    {
-      "theater": "aero",
-      "title": "THE PLAGUE DOGS",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "11:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/the-plague-dogs-6-6-26/",
-      "youtube_trailer_id": "0vqWzquBh0c"
-    },
-    {
-      "theater": "egyptian",
-      "title": "MOTHER JOAN OF THE ANGELS on Nitrate",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "12:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/mother-joan-of-the-angels-on-nitrate-6-6-26/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "BEAU IS AFRAID",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "12:00",
-      "format": null,
-      "series": "Ari Aster: A Bleak Week Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/beau-is-afraid-06-06-2026/",
-      "youtube_trailer_id": "XrCg9G_OHAA"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "E.T. the Extra-Terrestrial",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "14:00",
-      "format": null,
-      "series": "Kiddie Matinee",
-      "url": "https://thenewbev.com/program/june-6-e-t-the-extra-terrestrial-family-matinee/",
-      "youtube_trailer_id": "NsvdZ_z56c0"
-    },
-    {
-      "theater": "aero",
-      "title": "BUSTER AND BILLIE",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "15:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/buster-and-billie-06-06-2026/",
-      "youtube_trailer_id": "M1kNKu-ZAGw"
-    },
-    {
-      "theater": "egyptian",
-      "title": "MIDSOMMAR: DIRECTOR'S CUT",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "15:00",
-      "format": null,
-      "series": "Ari Aster: A Bleak Week Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/midsommar-directors-cut-06-06-2026/",
-      "youtube_trailer_id": "1Vnghdsjmd0"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "WHISKY",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "16:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/whisky-06-06-2026/",
-      "youtube_trailer_id": "ClRUmO7_Bkc"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "The Cremator",
-      "year": 1969,
-      "date": "2026-06-06",
-      "time": "18:30",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1319712/",
-      "youtube_trailer_id": "yMOT553AyAE"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "A Hard Day’s Night",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "18:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/june-6-a-hard-days-night-i-wanna-hold-your-hand/",
-      "youtube_trailer_id": "TWbiVqlSMgc"
-    },
-    {
-      "theater": "aero",
-      "title": "BAD TIMING",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "19:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/bad-timing-06-06-2026/",
-      "youtube_trailer_id": "3BOqQGMdIVE"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "FEAR STRIKES OUT",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "19:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/fear-strikes-out-6-6-26/"
-    },
-    {
-      "theater": "egyptian",
-      "title": "HEART OF GLASS",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "19:30",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/heart-of-glass-6-6-26/"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "I Wanna Hold Your Hand",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "20:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/june-6-a-hard-days-night-i-wanna-hold-your-hand/",
-      "youtube_trailer_id": "QEPDFYuhkDI"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "Nacho Libre",
-      "year": 2006,
-      "date": "2026-06-06",
-      "time": "21:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1319713/",
-      "youtube_trailer_id": "m2Vh4tfnvKk"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "THE DEVIL, PROBABLY",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "22:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/the-devil-probably-6-6-26/",
-      "youtube_trailer_id": "qJ0I09h1c2M"
-    },
-    {
-      "theater": "vista",
-      "title": "Terminator 2: Judgment Day",
-      "year": 1991,
-      "date": "2026-06-06",
-      "time": "23:00",
-      "format": "70mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/3666?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "2aCC9F8cGCc"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "A Nightmare on Elm Street 4: The Dream Master",
-      "year": null,
-      "date": "2026-06-06",
-      "time": "23:59",
-      "format": null,
-      "series": "Midnight",
-      "url": "https://thenewbev.com/program/june-6-a-nightmare-on-elm-street-4-dream-master-midnight-show/",
-      "youtube_trailer_id": "jc-9vF9F_eg"
-    },
-    {
-      "theater": "fathom-18736",
-      "title": "The Birdcage 30th Anniversary",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "09:05",
-      "format": null,
-      "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?mid=244288&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-06-07+09:05:00&cmp=ST_Fathom:The-Birdcage-30th-Anniversary_nat_"
-    },
-    {
-      "theater": "vista",
-      "title": "L.A. Story",
-      "year": 1991,
-      "date": "2026-06-07",
-      "time": "10:00",
-      "format": "35mm",
-      "series": "Matinee",
-      "url": "https://ticketing.uswest.veezi.com/purchase/3660?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "tl9WCvUZVrE"
-    },
-    {
-      "theater": "aero",
-      "title": "TESS",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "11:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/tess-06-07-2026/",
-      "youtube_trailer_id": "hKZQ7xJvTgA"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "THE HUNT",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "11:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/the-hunt-6-5-26/",
-      "youtube_trailer_id": "xoWmwsPU5cQ"
-    },
-    {
-      "theater": "egyptian",
-      "title": "THREADS",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "12:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/threads-6-7-26/",
-      "youtube_trailer_id": "4v0lMqJlkBQ"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "FIVE STAR FINAL",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "13:00",
-      "format": "35mm",
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/five-star-final-6-7-26/",
-      "youtube_trailer_id": "GUUoZLA9Iag"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "E.T. the Extra-Terrestrial",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "14:00",
-      "format": null,
-      "series": "Kiddie Matinee",
-      "url": "https://thenewbev.com/program/june-7-e-t-the-extra-terrestrial-family-matinee/",
-      "youtube_trailer_id": "NsvdZ_z56c0"
-    },
-    {
-      "theater": "aero",
-      "title": "WERCKMEISTER HARMONIES",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "15:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/werckmeister-harmonies-06-07-2026/",
-      "youtube_trailer_id": "-tJVdq_G_Go"
-    },
-    {
-      "theater": "egyptian",
-      "title": "HEREDITARY",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "15:30",
-      "format": null,
-      "series": "Ari Aster: A Bleak Week Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/hereditary-06-07-2026/",
-      "youtube_trailer_id": "MJNR58zaStE"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "The Birdcage 30th Anniversary",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "16:00",
-      "format": null,
-      "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?mid=244288&a=13191&wssaffid=13191&tid=AAEDS&date=2026-06-07+16:00:00&cmp=ST_Fathom:The-Birdcage-30th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "The Birdcage 30th Anniversary",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "16:00",
-      "format": null,
-      "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?mid=244288&a=13191&wssaffid=13191&tid=AAAWX&date=2026-06-07+16:00:00&cmp=ST_Fathom:The-Birdcage-30th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-18736",
-      "title": "The Birdcage 30th Anniversary",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "16:00",
-      "format": null,
-      "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?mid=244288&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-06-07+16:00:00&cmp=ST_Fathom:The-Birdcage-30th-Anniversary_nat_"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "BOY",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "16:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/boy-06-07-2026/",
-      "youtube_trailer_id": "qWkPjI-Brkc"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "The Stairway to the Distant Past",
-      "year": 1995,
-      "date": "2026-06-07",
-      "time": "17:15",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1319720/",
-      "youtube_trailer_id": "DqMgWPRrWhM"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "A Hard Day’s Night",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "18:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/june-7-a-hard-days-night-i-wanna-hold-your-hand/",
-      "youtube_trailer_id": "TWbiVqlSMgc"
-    },
-    {
-      "theater": "egyptian",
-      "title": "INCENDIES",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "19:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/incendies-6-7-26/",
-      "youtube_trailer_id": "XJ69WnwvZhE"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "CASTRATION MOVIE CHAPTER III: JUNIOR GHOSTS—PREMORPHIC DRIFT; A FRAGMENTARY PASSAGE",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "19:00",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/castration-movie-chapter-iii-junior-ghostspremorphic-drift-a-fragmentary-passage-06-07-2026/",
-      "youtube_trailer_id": "w_2bUkKeCUg"
-    },
-    {
-      "theater": "aero",
-      "title": "SOUTHLAND TALES",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "19:30",
-      "format": null,
-      "series": "Bleak Week: Cinema of Despair - Year 5",
-      "url": "https://www.americancinematheque.com/now-showing/southland-tales-06-07-2026/",
-      "youtube_trailer_id": "Sbovtczv99U"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "Burst City",
-      "year": 1982,
-      "date": "2026-06-07",
-      "time": "20:00",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1319719/",
-      "youtube_trailer_id": "ZxPPkDW3gr8"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "I Wanna Hold Your Hand",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "20:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/june-7-a-hard-days-night-i-wanna-hold-your-hand/",
-      "youtube_trailer_id": "QEPDFYuhkDI"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "LETTERS FROM A DEAD MAN",
-      "year": null,
-      "date": "2026-06-07",
-      "time": "22:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/dead-mans-letters-06-07-2026/",
-      "youtube_trailer_id": "anz6k4WTDtY"
-    },
-    {
-      "theater": "los-feliz-theatre",
       "title": "PADDINGTON / PADDINGTON 2 / PADDINGTON IN PERU",
       "year": null,
       "date": "2026-06-08",
@@ -747,16 +197,6 @@
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/spider-noir-06-08-2026/",
       "youtube_trailer_id": "Je3RTDatMIY"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "Dog Movie + Puppygirl",
-      "year": null,
-      "date": "2026-06-08",
-      "time": "19:30",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1317924/"
     },
     {
       "theater": "new-beverly",
@@ -1291,6 +731,16 @@
       "youtube_trailer_id": "oQb8ShgVjJA"
     },
     {
+      "theater": "aero",
+      "title": "LAWRENCE OF ARABIA in 70mm",
+      "year": null,
+      "date": "2026-06-14",
+      "time": "14:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/lawrence-of-arabia-in-70mm-06-14-2026/"
+    },
+    {
       "theater": "new-beverly",
       "title": "Indiana Jones and the Last Crusade",
       "year": null,
@@ -1365,14 +815,15 @@
       "url": "https://www.americancinematheque.com/now-showing/dekalog-one-and-two-6-14-26/"
     },
     {
-      "theater": "brain-dead",
-      "title": "Maps to the Stars with Bruce Wagner",
-      "year": 2014,
+      "theater": "aero",
+      "title": "2001: A SPACE ODYSSEY",
+      "year": null,
       "date": "2026-06-14",
-      "time": "20:00",
-      "format": "dcp",
+      "time": "19:30",
+      "format": null,
       "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1317939/"
+      "url": "https://www.americancinematheque.com/now-showing/2001-a-space-odyssey-06-14-2026/",
+      "youtube_trailer_id": "kR2r-A9H3Kg"
     },
     {
       "theater": "los-feliz-theatre",
@@ -1514,6 +965,16 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
+      "theater": "aero",
+      "title": "INHERENT VICE in 70mm",
+      "year": null,
+      "date": "2026-06-17",
+      "time": "19:30",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/inherent-vice-in-70mm-06-17-2026/"
+    },
+    {
       "theater": "brain-dead",
       "title": "The Decay of Fiction",
       "year": 2002,
@@ -1555,6 +1016,16 @@
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/enys-men-06-17-2026/",
       "youtube_trailer_id": "f7Pwf94_XLY"
+    },
+    {
+      "theater": "aero",
+      "title": "BATMAN in 70mm",
+      "year": null,
+      "date": "2026-06-18",
+      "time": "19:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/batman-in-70mm-06-18-2026/"
     },
     {
       "theater": "los-feliz-theatre",
@@ -1607,8 +1078,7 @@
       "time": "13:00",
       "format": null,
       "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/a-woman-of-paris-06-19-2026/",
-      "youtube_trailer_id": "fKCfP1EBzY8"
+      "url": "https://www.americancinematheque.com/now-showing/a-woman-of-paris-06-19-2026/"
     },
     {
       "theater": "academy-museum",
@@ -1641,6 +1111,16 @@
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "UObTt29qDlo"
+    },
+    {
+      "theater": "aero",
+      "title": "MALCOLM X in 70mm",
+      "year": null,
+      "date": "2026-06-19",
+      "time": "19:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/malcolm-x-in-70mm-06-19-2026/"
     },
     {
       "theater": "new-beverly",
@@ -1719,6 +1199,16 @@
       "url": "https://www.americancinematheque.com/now-showing/no-blood-relation-6-20-26/"
     },
     {
+      "theater": "aero",
+      "title": "LAWRENCE OF ARABIA in 70mm",
+      "year": null,
+      "date": "2026-06-20",
+      "time": "14:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/lawrence-of-arabia-70mm-06-20-2026/"
+    },
+    {
       "theater": "new-beverly",
       "title": "Lilo & Stitch",
       "year": null,
@@ -1760,6 +1250,16 @@
       "series": null,
       "url": "https://studios.wearebraindead.com/purchase/1319761/",
       "youtube_trailer_id": "8X54mKLsaD4"
+    },
+    {
+      "theater": "aero",
+      "title": "ONE FROM THE HEART in 70mm",
+      "year": null,
+      "date": "2026-06-20",
+      "time": "19:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/one-from-the-heart-in-70mm-06-20-2026/"
     },
     {
       "theater": "brain-dead",
@@ -1869,6 +1369,16 @@
       "youtube_trailer_id": "VWqJifMMgZE"
     },
     {
+      "theater": "aero",
+      "title": "NOPE in 70mm",
+      "year": null,
+      "date": "2026-06-21",
+      "time": "15:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/nope-in-70mm-06-21-2026/"
+    },
+    {
       "theater": "fathom-17327",
       "title": "Ocean’s Eleven 25th Anniversary",
       "year": null,
@@ -1928,6 +1438,16 @@
       "format": null,
       "series": null,
       "url": "https://thenewbev.com/program/june-21-that-certain-thing-so-this-is-love/"
+    },
+    {
+      "theater": "aero",
+      "title": "CLOSE ENCOUNTERS OF THE THIRD KIND in 70mm",
+      "year": null,
+      "date": "2026-06-21",
+      "time": "19:00",
+      "format": "70mm",
+      "series": "Ultra Cinematheque 70 Fest 2026",
+      "url": "https://www.americancinematheque.com/now-showing/close-encounters-of-the-third-kind-in-70mm-06-21-2026/"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2088,14 +1608,14 @@
       "youtube_trailer_id": "KUBqMHPy3bI"
     },
     {
-      "theater": "academy-museum",
-      "title": "Notorious with Guillermo Del Toro",
+      "theater": "aero",
+      "title": "ONCE UPON A TIME... IN HOLLYWOOD in 70mm",
       "year": null,
       "date": "2026-06-24",
       "time": "19:00",
-      "format": null,
-      "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar"
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/once-upon-a-time-in-hollywood-in-70mm-06-23-2026-1/"
     },
     {
       "theater": "fathom-17327",
@@ -2172,7 +1692,7 @@
     },
     {
       "theater": "academy-museum",
-      "title": "Shadow of a Doubt with Guillermo Del Toro",
+      "title": "Notorious with Guillermo Del Toro",
       "year": null,
       "date": "2026-06-25",
       "time": "19:00",
@@ -2236,7 +1756,7 @@
     },
     {
       "theater": "academy-museum",
-      "title": "North by Northwest with Guillermo Del Toro",
+      "title": "Shadow of a Doubt with Guillermo Del Toro",
       "year": null,
       "date": "2026-06-26",
       "time": "19:00",
@@ -2254,6 +1774,16 @@
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "d1KQAHPsAdY"
+    },
+    {
+      "theater": "aero",
+      "title": "BOOGIE NIGHTS in 70mm",
+      "year": null,
+      "date": "2026-06-26",
+      "time": "19:30",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/boogie-nights-in-70mm-06-26-2026/"
     },
     {
       "theater": "brain-dead",
@@ -2319,6 +1849,26 @@
       "youtube_trailer_id": "d81IM0loH7o"
     },
     {
+      "theater": "academy-museum",
+      "title": "North by Northwest with Guillermo Del Toro",
+      "year": null,
+      "date": "2026-06-27",
+      "time": "14:00",
+      "format": null,
+      "series": "Film Screening",
+      "url": "https://www.academymuseum.org/en/calendar"
+    },
+    {
+      "theater": "aero",
+      "title": "SPACEBALLS in 70mm",
+      "year": null,
+      "date": "2026-06-27",
+      "time": "14:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/spaceballs-in-70mm-06-27-2026/"
+    },
+    {
       "theater": "new-beverly",
       "title": "Silverado",
       "year": null,
@@ -2358,6 +1908,16 @@
       "format": null,
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar"
+    },
+    {
+      "theater": "aero",
+      "title": "ONE BATTLE AFTER ANOTHER in 70mm",
+      "year": null,
+      "date": "2026-06-27",
+      "time": "19:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/one-battle-after-another-in-70mm-06-27-2026/"
     },
     {
       "theater": "brain-dead",
@@ -2422,6 +1982,16 @@
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "G3mGHWa0CVQ"
+    },
+    {
+      "theater": "aero",
+      "title": "SPARTACUS in 70mm",
+      "year": null,
+      "date": "2026-06-28",
+      "time": "14:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/spartacus-in-70mm-06-28-2026/"
     },
     {
       "theater": "new-beverly",
@@ -2489,6 +2059,16 @@
       "url": "https://www.academymuseum.org/en/calendar"
     },
     {
+      "theater": "aero",
+      "title": "VERTIGO in 70mm",
+      "year": null,
+      "date": "2026-06-28",
+      "time": "19:30",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/vertigo-in-70mm-06-28-2026/"
+    },
+    {
       "theater": "brain-dead",
       "title": "Stolen Kisses",
       "year": 1968,
@@ -2540,6 +2120,17 @@
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "tF4QeO7ScKk"
+    },
+    {
+      "theater": "brain-dead",
+      "title": "Ran",
+      "year": 1985,
+      "date": "2026-06-29",
+      "time": "19:30",
+      "format": "dcp",
+      "series": null,
+      "url": "https://studios.wearebraindead.com/purchase/1333202/",
+      "youtube_trailer_id": "29ukiH4_GvQ"
     },
     {
       "theater": "new-beverly",
@@ -2627,6 +2218,16 @@
       "youtube_trailer_id": "rzwJgFhMbL4"
     },
     {
+      "theater": "aero",
+      "title": "NORTH BY NORTHWEST in 70mm",
+      "year": null,
+      "date": "2026-07-01",
+      "time": "19:30",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/north-by-northwest-in-70mm-07-01-2026/"
+    },
+    {
       "theater": "academy-museum",
       "title": "Some Like It Hot",
       "year": null,
@@ -2636,6 +2237,16 @@
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "97TYs2YXbJw"
+    },
+    {
+      "theater": "aero",
+      "title": "LICORICE PIZZA in 70mm",
+      "year": null,
+      "date": "2026-07-02",
+      "time": "19:30",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/licorice-pizza-in-70mm-07-02-2026/"
     },
     {
       "theater": "academy-museum",
@@ -2690,6 +2301,16 @@
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "X2CQ4EXkdSA"
+    },
+    {
+      "theater": "aero",
+      "title": "2001: A SPACE ODYSSEY in 70mm",
+      "year": null,
+      "date": "2026-07-03",
+      "time": "19:00",
+      "format": "70mm",
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/2001-a-space-odyssey-in-70mm-07-03-2026/"
     },
     {
       "theater": "los-feliz-theatre",
@@ -3007,6 +2628,16 @@
       "format": null,
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/twin-peaks-the-return-parts-7-8-07-09-2026/"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "How Does the Silver Screen Shape the Golden State? Featuring FRIDAY",
+      "year": 1995,
+      "date": "2026-07-10",
+      "time": "19:00",
+      "format": null,
+      "series": "Film Screening",
+      "url": "https://www.academymuseum.org/en/calendar"
     },
     {
       "theater": "academy-museum",
@@ -3430,6 +3061,17 @@
       "url": "https://www.americancinematheque.com/now-showing/twin-peaks-the-return-parts-13-14-07-30-2026/"
     },
     {
+      "theater": "academy-museum",
+      "title": "Who Framed Roger Rabbit?",
+      "year": null,
+      "date": "2026-08-01",
+      "time": "11:00",
+      "format": null,
+      "series": "Film Screening: Matinee",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "XEIJpS26aAw"
+    },
+    {
       "theater": "los-feliz-theatre",
       "title": "DAUGHTERS, WIVES AND A MOTHER",
       "year": null,
@@ -3471,6 +3113,28 @@
       "url": "http://www.fandango.com/redirect.aspx?mid=244292&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-08-02+13:00:00&cmp=ST_Fathom:Willy-Wonka-and-the-Chocolate-Factory-55th-Anniversary_nat_"
     },
     {
+      "theater": "academy-museum",
+      "title": "Out of Africa",
+      "year": null,
+      "date": "2026-08-02",
+      "time": "14:00",
+      "format": null,
+      "series": "Film Screening: Matinee",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "5RrEv9-ks2Y"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "The Cat Returns",
+      "year": null,
+      "date": "2026-08-03",
+      "time": "14:30",
+      "format": null,
+      "series": "Film Screening: Matinee",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "yVnlvaxFQ6E"
+    },
+    {
       "theater": "los-feliz-theatre",
       "title": "Cinematic Void Presents SUBURBIA",
       "year": null,
@@ -3481,6 +3145,17 @@
       "url": "https://www.americancinematheque.com/now-showing/cinematic-void-presents-suburbia-8-3-26/"
     },
     {
+      "theater": "academy-museum",
+      "title": "A Man Escaped",
+      "year": null,
+      "date": "2026-08-03",
+      "time": "19:30",
+      "format": null,
+      "series": "Film Screening",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "o6nHFpKK6Lc"
+    },
+    {
       "theater": "los-feliz-theatre",
       "title": "TWIN PEAKS: THE RETURN Parts 15 & 16",
       "year": null,
@@ -3489,6 +3164,101 @@
       "format": null,
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/twin-peaks-the-return-parts-15-16-08-04-2026/"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "The Cat Returns",
+      "year": null,
+      "date": "2026-08-05",
+      "time": "14:30",
+      "format": null,
+      "series": "Film Screening: Matinee",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "yVnlvaxFQ6E"
+    },
+    {
+      "theater": "fathom-17327",
+      "title": "Willy Wonka and the Chocolate Factory 55th Anniversary",
+      "year": null,
+      "date": "2026-08-05",
+      "time": "19:00",
+      "format": null,
+      "series": "Fathom’s Big Screen Classics",
+      "url": "http://www.fandango.com/redirect.aspx?mid=244292&a=13191&wssaffid=13191&tid=AAEDS&date=2026-08-05+19:00:00&cmp=ST_Fathom:Willy-Wonka-and-the-Chocolate-Factory-55th-Anniversary_nat_"
+    },
+    {
+      "theater": "fathom-17364",
+      "title": "Willy Wonka and the Chocolate Factory 55th Anniversary",
+      "year": null,
+      "date": "2026-08-05",
+      "time": "19:00",
+      "format": null,
+      "series": "Fathom’s Big Screen Classics",
+      "url": "http://www.fandango.com/redirect.aspx?mid=244292&a=13191&wssaffid=13191&tid=AAAWX&date=2026-08-05+19:00:00&cmp=ST_Fathom:Willy-Wonka-and-the-Chocolate-Factory-55th-Anniversary_nat_"
+    },
+    {
+      "theater": "fathom-18736",
+      "title": "Willy Wonka and the Chocolate Factory 55th Anniversary",
+      "year": null,
+      "date": "2026-08-05",
+      "time": "19:00",
+      "format": null,
+      "series": "Fathom’s Big Screen Classics",
+      "url": "http://www.fandango.com/redirect.aspx?mid=244292&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-08-05+19:00:00&cmp=ST_Fathom:Willy-Wonka-and-the-Chocolate-Factory-55th-Anniversary_nat_"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "Titicut Follies",
+      "year": null,
+      "date": "2026-08-05",
+      "time": "19:30",
+      "format": null,
+      "series": "Film Screening",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "FlKUYY9MYQM"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "In the Cut",
+      "year": null,
+      "date": "2026-08-06",
+      "time": "19:30",
+      "format": null,
+      "series": "Film Screening",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "vGbAd8vlzfk"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "TWIN PEAKS: THE RETURN Parts 15 & 16",
+      "year": null,
+      "date": "2026-08-06",
+      "time": "22:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/twin-peaks-the-return-parts-15-16-08-06-2026/"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "The Cat Returns",
+      "year": null,
+      "date": "2026-08-07",
+      "time": "14:30",
+      "format": null,
+      "series": "Film Screening: Matinee",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "yVnlvaxFQ6E"
+    },
+    {
+      "theater": "academy-museum",
+      "title": "Basic Instinct",
+      "year": null,
+      "date": "2026-08-07",
+      "time": "19:30",
+      "format": null,
+      "series": "Film Screening",
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "r3qzXk-P1fI"
     }
   ],
   "amc_local_titles": []

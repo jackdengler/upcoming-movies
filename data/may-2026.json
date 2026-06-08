@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -440,7 +440,7 @@
       "studio": "Focus Features",
       "budget_usd": 750000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Thriller",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
       "notes": "Be careful who you wish for…",
       "youtube_trailer_id": "gMC8kkwbIQQ"
@@ -498,6 +498,19 @@
       "youtube_trailer_id": "LKe1fRKHuTI"
     },
     {
+      "tmdb_id": 1513183,
+      "date": "2026-05-22",
+      "title": "El Kalam Ala Eh",
+      "director": "Sandro Canaan",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Gihan El Shamashergy, Hatim Salah, Mostafa Ghareb, Aya Samaha",
+      "notes": "",
+      "youtube_trailer_id": "xBhXiktP-CA"
+    },
+    {
       "tmdb_id": 1078581,
       "date": "2026-05-22",
       "title": "Giant",
@@ -520,7 +533,7 @@
       "release_type": "wide",
       "genre": "Comedy / Science Fiction / Crime",
       "cast": "Keke Palmer, Naomi Ackie, Taylour Paige, Poppy Liu",
-      "notes": "",
+      "notes": "Booster: Somebody who steals clothes from a store and sells them at a discount price, aka community service.",
       "youtube_trailer_id": "I1xZegSgN8w"
     },
     {
@@ -602,6 +615,19 @@
       "youtube_trailer_id": "0HjdiohVOik"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-05-29",
+      "title": "Chardikala",
+      "director": "—",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1284016,
       "date": "2026-05-29",
       "title": "Power Ballad",
@@ -610,7 +636,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Music / Drama",
-      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
+      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Rory Keenan",
       "notes": "It's time to set the record straight.",
       "youtube_trailer_id": "-faiHUsbP_U"
     },
@@ -704,6 +730,19 @@
       "cast": "Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "rdlOZhl-nSA"
+    },
+    {
+      "tmdb_id": 1479653,
+      "date": "2026-05-30",
+      "title": "Gabriela Lena Frank: El Último Sueño de Frida y Diego",
+      "director": "Yannick Nézet-Séguin, Deborah Colker",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Musical",
+      "cast": "Lianne Coble-Dispensa, Scott Conner, Paul Corona, Kresley Figueroa",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1664011,

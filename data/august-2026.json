@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -254,7 +254,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
@@ -272,7 +272,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Adventure / Family / Fantasy",
-      "cast": "Andrew Garfield, Claire Foy, Nicola Coughlan, Jessica Gunning",
+      "cast": "Billie Gadsdon, Nicola Coughlan, Delilah Bennett-Cardy, Phoenix Laroche",
       "notes": "",
       "youtube_trailer_id": "PAUEwUhAjzg"
     },
@@ -308,10 +308,10 @@
       "title": "Colony",
       "director": "Yeon Sang-ho",
       "studio": "Well Go USA Entertainment",
-      "budget_usd": null,
+      "budget_usd": 12000000,
       "release_type": "limited",
       "genre": "Action / Thriller / Horror",
-      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Shin Hyun-been",
+      "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",
       "notes": "",
       "youtube_trailer_id": "LW6dpj1uCK8"
     },
@@ -323,7 +323,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Adventure / Comedy / Family / Mystery",
+      "genre": "Adventure / Comedy / Family / Mystery / Animation",
       "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "H-43VeYGiPM"

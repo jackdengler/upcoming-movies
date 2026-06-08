@@ -1,20 +1,20 @@
 {
   "month": "September 2026",
-  "updated": "2026-06-05",
+  "updated": "2026-06-08",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Michael Spierig, Peter Spierig",
+      "director": "Peter Spierig, Michael Spierig",
       "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Thriller",
       "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
       "notes": "Are you down?",
-      "youtube_trailer_id": "60YZ4LVTfI0"
+      "youtube_trailer_id": "Rsztt5qDj_A"
     },
     {
       "tmdb_id": 1596326,
@@ -95,19 +95,6 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1228834,
-      "date": "2026-09-11",
-      "title": "Hotel Tehran",
-      "director": "Guy Moshe",
-      "studio": "Briarcliff Entertainment",
-      "budget_usd": 32000000,
-      "release_type": "wide",
-      "genre": "Action / Thriller",
-      "cast": "Liam Neeson, Wes Chatham, Titus Welliver, Zachary Levi",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1302904,
       "date": "2026-09-11",
       "title": "Practical Magic 2",
@@ -119,6 +106,19 @@
       "cast": "Sandra Bullock, Nicole Kidman, Lee Pace, Dianne Wiest",
       "notes": "",
       "youtube_trailer_id": "iSWP2feb4rw"
+    },
+    {
+      "tmdb_id": 1228834,
+      "date": "2026-09-11",
+      "title": "The Fix",
+      "director": "Guy Moshe",
+      "studio": "Briarcliff Entertainment",
+      "budget_usd": 32000000,
+      "release_type": "wide",
+      "genre": "Action / Thriller",
+      "cast": "Liam Neeson, Wes Chatham, Titus Welliver, Zachary Levi",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 977942,
@@ -195,6 +195,19 @@
       "release_type": "wide",
       "genre": "Action / Adventure / Thriller",
       "cast": "Brad Pitt, J.K. Simmons, Anna Lambe",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-09-30",
+      "title": "Christmas at the Kringles",
+      "director": "—",
+      "studio": "Briarcliff Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Comedy / Horror",
+      "cast": "Ron Livingston, Rachel Bilson, Rob Riggle, Thomas Lennon",
       "notes": "",
       "youtube_trailer_id": null
     }

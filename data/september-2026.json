@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -28,19 +28,6 @@
       "cast": "Barbara Hammer, Florrie Burke, Joey Carducci, Todd Haynes",
       "notes": "",
       "youtube_trailer_id": "eve0cPTcQ_g"
-    },
-    {
-      "tmdb_id": 1514026,
-      "date": "2026-09-04",
-      "title": "Buddy",
-      "director": "Casper Kelly",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Comedy",
-      "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1380417,
@@ -173,6 +160,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": null,
+      "date": "2026-09-25",
+      "title": "Deep in the Heart 2: A Texas Rivers Story",
+      "director": "—",
+      "studio": "Fin & Fur Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Ethan Hawke",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1465063,
       "date": "2026-09-25",
       "title": "Forgotten Island",
@@ -193,10 +193,10 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Adventure / Thriller",
+      "genre": "Action / Adventure",
       "cast": "Brad Pitt, J.K. Simmons, Anna Lambe",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Survival depends on their bond.",
+      "youtube_trailer_id": "JFQcDFhNh4o"
     },
     {
       "tmdb_id": null,

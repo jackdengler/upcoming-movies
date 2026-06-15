@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -27,7 +27,7 @@
       "genre": "Horror / Thriller",
       "cast": "Ari Millen, Charlie Zeltzer, Shiloh O’Reilly, Kiori Mirza Waldman",
       "notes": "We all scream.",
-      "youtube_trailer_id": "SHxqHdBNm-w"
+      "youtube_trailer_id": "BjtVXWa3tWI"
     },
     {
       "tmdb_id": 1421539,
@@ -143,8 +143,8 @@
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family",
       "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
-      "notes": "Adventure reaches new heights.",
-      "youtube_trailer_id": "aHw4PuLCUIc"
+      "notes": "An adventure of prehistoric pawportions.",
+      "youtube_trailer_id": "xgI5iYmOf5Q"
     },
     {
       "tmdb_id": 1417019,
@@ -254,14 +254,14 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
       "notes": "Friendship is a real trip.",
-      "youtube_trailer_id": "9p7j3UvpEQQ"
+      "youtube_trailer_id": "FUFyXtlXw7k"
     },
     {
       "tmdb_id": 1140521,
@@ -288,6 +288,19 @@
       "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
       "notes": "Ain’t no one all bad or all good.",
       "youtube_trailer_id": "GwSvAyaMGMo"
+    },
+    {
+      "tmdb_id": 1514026,
+      "date": "2026-08-28",
+      "title": "Buddy",
+      "director": "Casper Kelly",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Comedy",
+      "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1120556,
@@ -323,7 +336,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Adventure / Comedy / Family / Mystery / Animation",
+      "genre": "Comedy / Adventure / Mystery / Family",
       "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "H-43VeYGiPM"
@@ -373,12 +386,12 @@
       "title": "The Dog Stars",
       "director": "Ridley Scott",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
+      "budget_usd": 110000000,
       "release_type": "wide",
       "genre": "Adventure / Science Fiction / Thriller",
       "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
-      "notes": "The end of the world was just the beginning.",
-      "youtube_trailer_id": "cmzVY1goqwQ"
+      "notes": "At the end of the world, no one survives alone.",
+      "youtube_trailer_id": "sVCrTJdNtSs"
     },
     {
       "tmdb_id": null,
@@ -392,6 +405,19 @@
       "cast": "—",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1294972,
+      "date": "2026-08-30",
+      "title": "The Last Blossom",
+      "director": "Baku Kinoshita",
+      "studio": "GKIDS",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Drama / Crime",
+      "cast": "Kaoru Kobayashi, Junki Tozuka, Hikari Mitsushima, Yoshiko Miyazaki",
+      "notes": "",
+      "youtube_trailer_id": "mfq5MFQ58wU"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -324,7 +324,7 @@
       "budget_usd": 14000000,
       "release_type": "wide",
       "genre": "Thriller / Horror / Comedy",
-      "cast": "Samara Weaving, Kathryn Newton, Elijah Wood, Sarah Michelle Gellar",
+      "cast": "Samara Weaving, Kathryn Newton, Sarah Michelle Gellar, Shawn Hatosy",
       "notes": "Double or nothing.",
       "youtube_trailer_id": "jczr0KCloXk"
     },
@@ -609,7 +609,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Action / Comedy / Horror",
+      "genre": "Horror / Comedy / Action",
       "cast": "Zazie Beetz, Myha'la, Patricia Arquette, Paterson Joseph",
       "notes": "Let them try.",
       "youtube_trailer_id": "s0PGrtw0X1Q"

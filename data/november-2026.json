@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -17,6 +17,19 @@
       "youtube_trailer_id": "n-NDYWPXpKg"
     },
     {
+      "tmdb_id": 1241478,
+      "date": "2026-11-06",
+      "title": "Jimmy",
+      "director": "Aaron Burns",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / History",
+      "cast": "KJ Apa, Jason Alexander, Max Casella, Sarah Drew",
+      "notes": "America's most-beloved actor, the iconic role that saved him...",
+      "youtube_trailer_id": "EURriesRel0"
+    },
+    {
       "tmdb_id": 1117898,
       "date": "2026-11-06",
       "title": "The Cat in the Hat",
@@ -24,10 +37,10 @@
       "studio": "Warner Bros.",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Comedy / Family / Fantasy",
-      "cast": "Bill Hader, Xochitl Gomez, Quinta Brunson, Bowen Yang",
+      "genre": "Animation / Comedy / Fantasy / Adventure / Family",
+      "cast": "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry",
       "notes": "The cat's out of the bag.",
-      "youtube_trailer_id": "jz8pLlPhSeY"
+      "youtube_trailer_id": "HT5JAp5z0-o"
     },
     {
       "tmdb_id": 891621,

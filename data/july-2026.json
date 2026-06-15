@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
       "notes": "Hollywood has a monster problem.",
       "youtube_trailer_id": "V-O-uBaHk3c"
+    },
+    {
+      "tmdb_id": 1500890,
+      "date": "2026-07-03",
+      "title": "Lockbox",
+      "director": "Daniel Stamm",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Carla Gugino, Lou Taylor Pucci, Katharine Isabelle, Roman Kinsella",
+      "notes": "",
+      "youtube_trailer_id": "xxiHWdsM1rM"
     },
     {
       "tmdb_id": 1631822,
@@ -100,12 +113,12 @@
       "title": "Moana",
       "director": "Thomas Kail",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
+      "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Family / Fantasy / Comedy / Adventure",
-      "cast": "Catherine Laga‘aia, Dwayne Johnson, Rena Owen, John Tui",
-      "notes": "The ocean chose her for a reason.",
-      "youtube_trailer_id": "n7f6hlKsxxo"
+      "cast": "Catherine Lagaʻaia, Dwayne Johnson, Rena Owen, John Tui",
+      "notes": "The ocean is calling.",
+      "youtube_trailer_id": "EEz5xbzYPKI"
     },
     {
       "tmdb_id": 1096846,
@@ -130,7 +143,7 @@
       "release_type": "limited",
       "genre": "Western / Action / Drama",
       "cast": "Mackenzie Foy, Odeya Rush, Joe Pantoliano, Sean Bean",
-      "notes": "",
+      "notes": "Underestimating her is a grave mistake.",
       "youtube_trailer_id": "3eVoGaI8mpo"
     },
     {
@@ -196,7 +209,7 @@
       "genre": "Drama",
       "cast": "Benedetta Porcaroli, Lucrezia Guglielmino, Chris Pine, Roberto Zibetti",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "siZB56IHSUE"
     },
     {
       "tmdb_id": 1368337,
@@ -225,6 +238,32 @@
       "youtube_trailer_id": "EThWaKNRky8"
     },
     {
+      "tmdb_id": 1712586,
+      "date": "2026-07-23",
+      "title": "Sia: Nostalgic for The Present",
+      "director": "—",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Sia, Maddie Ziegler",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1498729,
+      "date": "2026-07-24",
+      "title": "Brunello: The Gracious Visionary",
+      "director": "Giuseppe Tornatore",
+      "studio": "Blue Fox Entertainment",
+      "budget_usd": 17000000,
+      "release_type": "limited",
+      "genre": "Documentary / Drama",
+      "cast": "Brunello Cucinelli, Oprah Winfrey, Liu Tao, Reid Hoffman",
+      "notes": "",
+      "youtube_trailer_id": "DUSK3uec9SA"
+    },
+    {
       "tmdb_id": null,
       "date": "2026-07-24",
       "title": "Her Private Hell",
@@ -233,7 +272,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
-      "cast": "Havana Rose Liu, Sophie Thatcher, Charles Melton, Dougray Scott",
+      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Dougray Scott",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -249,6 +288,19 @@
       "cast": "Jude Evan Lloyd, Robert Englund, Cameron Bell, Jessica Balmer",
       "notes": "He has no strings to hold him back now.",
       "youtube_trailer_id": "Xt3zQ8v2pzk"
+    },
+    {
+      "tmdb_id": 1288059,
+      "date": "2026-07-31",
+      "title": "I Want Your Sex",
+      "director": "Gregg Araki",
+      "studio": "Magnolia Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Comedy",
+      "cast": "Olivia Wilde, Cooper Hoffman, Mason Gooding, Chase Sui Wonders",
+      "notes": "Don't worry, you'll like it.",
+      "youtube_trailer_id": "kjkTmTmC1iA"
     },
     {
       "tmdb_id": 969681,

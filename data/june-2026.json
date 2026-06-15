@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -25,7 +25,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Science Fiction / Drama / Thriller",
-      "cast": "Lizzie Freeman, Michael Kovach, Amanda Hufford, Marissa Lenti",
+      "cast": "Lizzie Freeman, Alex Rochon, Michael Kovach, Amanda Hufford",
       "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
       "youtube_trailer_id": "vNGAtHBhdiM"
     },
@@ -50,7 +50,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Drama / Romance / Thriller",
+      "genre": "Crime / Drama / Romance",
       "cast": "Samara Weaving, Kyle Gallner, Kyra Sedgwick, Jon Gries",
       "notes": "",
       "youtube_trailer_id": "fNdC6SJ-TxY"
@@ -63,8 +63,8 @@
       "studio": "IFC Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Thriller",
-      "cast": "Alice Eve, Eric Michael Cole, Elle Haymond, Sarah Siadat",
+      "genre": "Horror",
+      "cast": "Alice Eve, Eric Michael Cole, Jim Klock, Elle Haymond",
       "notes": "There's no hinding in the sea",
       "youtube_trailer_id": "oZWDFelquX4"
     },
@@ -115,7 +115,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Comedy",
+      "genre": "Comedy / Horror",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "cGgWAHXuTKc"
@@ -219,8 +219,8 @@
       "studio": "Universal Pictures",
       "budget_usd": 115000000,
       "release_type": "wide",
-      "genre": "Mystery / Science Fiction / Thriller",
-      "cast": "Emily Blunt, Josh O'Connor, Colin Firth, Eve Hewson",
+      "genre": "Action / Science Fiction / Thriller",
+      "cast": "Emily Blunt, Josh O'Connor, Colin Firth, Colman Domingo",
       "notes": "We deserve to know.",
       "youtube_trailer_id": "icDuEHSxE-w"
     },
@@ -257,23 +257,49 @@
       "director": "Kenji Tanigaki",
       "studio": "Lionsgate",
       "budget_usd": 20000000,
-      "release_type": "limited",
-      "genre": "Action / Crime / Thriller",
+      "release_type": "wide",
+      "genre": "Action / Crime",
       "cast": "Xie Miao, Joe Taslim, Yang Enyou, Yayan Ruhian",
       "notes": "To save their loved ones, they will fight everyone.",
       "youtube_trailer_id": "Avky8dVaqAI"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1226834,
+      "date": "2026-06-12",
+      "title": "This Tempting Madness",
+      "director": "Jennifer E. Montgomery",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Drama",
+      "cast": "Simone Ashley, Austin Stowell, Suraj Sharma, Mojean Aria",
+      "notes": "Believe at your own risk.",
+      "youtube_trailer_id": "WuB77rGrlMk"
+    },
+    {
+      "tmdb_id": 1477431,
+      "date": "2026-06-12",
+      "title": "Time of Death",
+      "director": "Will Wernick",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Horror / Mystery",
+      "cast": "Mena Suvari, Michael Kelly, Dennis Haysbert, Kevin Pollak",
+      "notes": "Beneath the darkness lies the truth.",
+      "youtube_trailer_id": "BjTE9AQZDzI"
+    },
+    {
+      "tmdb_id": 1633499,
       "date": "2026-06-16",
       "title": "Diamond Made Man",
-      "director": "—",
+      "director": "Sangeethai",
       "studio": "N/A",
-      "budget_usd": null,
+      "budget_usd": 11000000,
       "release_type": "wide",
-      "genre": "Action / Sci-Fi",
-      "cast": "Sreehari, Vasudha, Sreehari Devi Mangala Puvvu",
-      "notes": "",
+      "genre": "Science Fiction",
+      "cast": "Vasudha, Doctor Sreehari, Vasantha, Hayagreeva",
+      "notes": "Unbreakable, Unstoppable.",
       "youtube_trailer_id": null
     },
     {
@@ -323,7 +349,7 @@
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror",
+      "genre": "Horror / Romance",
       "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Nicholas Hope",
       "notes": "It will never stop.",
       "youtube_trailer_id": "WXuK0vlFxII"
@@ -345,12 +371,12 @@
       "tmdb_id": 1070754,
       "date": "2026-06-19",
       "title": "O Horizon",
-      "director": "Madeleine Sackler",
+      "director": "Madeleine Rotzler",
       "studio": "Variance Films",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Science Fiction / Drama",
-      "cast": "Maria Bakalova, David Strathairn, Adam Pally, Alysia Reiner",
+      "cast": "Maria Bakalova, David Strathairn, Adam Pally, Maggie Grace",
       "notes": "",
       "youtube_trailer_id": "gZS0iFRjk5o"
     },
@@ -363,7 +389,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Music",
-      "cast": "Peter Asher",
+      "cast": "Peter Asher, James Taylor, Linda Ronstadt, Carole King",
       "notes": "The legend behind music's biggest legends",
       "youtube_trailer_id": null
     },
@@ -386,7 +412,7 @@
       "title": "The Death of Robin Hood",
       "director": "Michael Sarnoski",
       "studio": "A24",
-      "budget_usd": null,
+      "budget_usd": 25000000,
       "release_type": "wide",
       "genre": "Drama / Thriller",
       "cast": "Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett",
@@ -405,6 +431,19 @@
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
       "notes": "It's on.",
       "youtube_trailer_id": "QftAW9TTmuQ"
+    },
+    {
+      "tmdb_id": 1495629,
+      "date": "2026-06-20",
+      "title": "Dead Souls",
+      "director": "Alex Cox",
+      "studio": "Kino Lorber",
+      "budget_usd": 214000,
+      "release_type": "limited",
+      "genre": "Western / Drama",
+      "cast": "Alex Cox, Zander Schloss, Edward Tudor-Pole, Dick Rude",
+      "notes": "Good enough for government work.",
+      "youtube_trailer_id": "l16tB6CQfCg"
     },
     {
       "tmdb_id": 1517206,
@@ -493,9 +532,22 @@
       "budget_usd": 175000000,
       "release_type": "wide",
       "genre": "Action / Adventure / Science Fiction",
-      "cast": "Milly Alcock, Matthias Schoenaerts, Eve Ridley, David Krumholtz",
+      "cast": "Milly Alcock, Eve Ridley, Matthias Schoenaerts, David Krumholtz",
       "notes": "Truth. Justice. Whatever.",
       "youtube_trailer_id": "tzlY8XD1CGg"
+    },
+    {
+      "tmdb_id": 1279493,
+      "date": "2026-06-26",
+      "title": "The Get Out",
+      "director": "Derrick Borte",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Russell Crowe, Luke Evans, Aaron Paul, Teresa Palmer",
+      "notes": "The night life is dirty business.",
+      "youtube_trailer_id": "oB6HNuKxLmo"
     },
     {
       "tmdb_id": 950028,

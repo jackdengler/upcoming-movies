@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -90,7 +90,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / Family",
-      "cast": "John Magaro, Molly Belle Wright, Wyatt Solis, Talia Balsam",
+      "cast": "John Magaro, Molly Belle Wright, Talia Balsam, Rachel Alig",
       "notes": "",
       "youtube_trailer_id": "M2OTVoxpetU"
     },
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Javier Chocobar, Comunidad Chuschagasta",
+      "cast": "Comunidad Chuschagasta, Javier Chocobar",
       "notes": "",
       "youtube_trailer_id": "yPQRXpzx55o"
     },
@@ -440,7 +440,7 @@
       "studio": "Focus Features",
       "budget_usd": 750000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
       "notes": "Be careful who you wish for…",
       "youtube_trailer_id": "gMC8kkwbIQQ"

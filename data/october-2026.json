@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -9,7 +9,7 @@
       "title": "Digger",
       "director": "Alejandro G. Iñárritu",
       "studio": "Warner Bros.",
-      "budget_usd": 125000000,
+      "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Comedy / Drama",
       "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
@@ -69,6 +69,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1596300,
+      "date": "2026-10-16",
+      "title": "Once Upon a Time in Harlem",
+      "director": "William Greaves, David Greaves",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Aaron Douglas, Richard Bruce Nugent, Ernest Crichlow, Eubie Blake",
+      "notes": "A film over 50 years in the making.",
+      "youtube_trailer_id": "zIjmgj5rbOY"
+    },
+    {
       "tmdb_id": 1272162,
       "date": "2026-10-16",
       "title": "Poetic License",
@@ -90,7 +103,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Daisy Edgar-Jones, Bodhi Rae Breathnach, Fiona Shaw, Caitríona Balfe",
+      "cast": "Bodhi Rae Breathnach, Daisy Edgar-Jones, Fiona Shaw, Caitríona Balfe",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -117,8 +130,8 @@
       "release_type": "limited",
       "genre": "Thriller",
       "cast": "Austin Abrams, Josh Brolin, Elisabeth Shue, John Ortiz",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Hold your breath.",
+      "youtube_trailer_id": "67ho3OxCmmM"
     },
     {
       "tmdb_id": 1400940,
@@ -147,14 +160,14 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1102464,
+      "tmdb_id": null,
       "date": "2026-10-23",
       "title": "Untitled Jordan Peele Project",
-      "director": "Jordan Peele",
+      "director": "—",
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror / Mystery / Thriller",
       "cast": "—",
       "notes": "",
       "youtube_trailer_id": null

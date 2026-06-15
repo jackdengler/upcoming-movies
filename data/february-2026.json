@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -66,7 +66,7 @@
       "genre": "Documentary",
       "cast": "Gentry Lee, Arthur C. Clarke",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "gxyZ4xh3v2A"
     },
     {
       "tmdb_id": 1600421,
@@ -332,14 +332,14 @@
       "tmdb_id": 1305781,
       "date": "2026-02-17",
       "title": "Blades of the Guardians",
-      "director": "Yuen Woo-Ping",
+      "director": "Yuen Woo-ping",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 123000000,
       "release_type": "limited",
       "genre": "Action / Drama / History",
       "cast": "Wu Jing, Nicholas Tse Ting-Fung, Yu Shi, Chen Lijun",
       "notes": "A grand martial arts feast is back!",
-      "youtube_trailer_id": "9PiEBuwBzSQ"
+      "youtube_trailer_id": "7jkL4-uYriY"
     },
     {
       "tmdb_id": null,
@@ -440,7 +440,7 @@
       "studio": "GKIDS",
       "budget_usd": 8000000,
       "release_type": "wide",
-      "genre": "Drama",
+      "genre": "Drama / Music",
       "cast": "Ryo Yoshizawa, Ryusei Yokohama, Mitsuki Takahata, Shinobu Terajima",
       "notes": "",
       "youtube_trailer_id": "Y0KfXj3Skao"
@@ -475,7 +475,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Matthew McManus, Kevin McManus",
+      "director": "Kevin McManus, Matthew McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",

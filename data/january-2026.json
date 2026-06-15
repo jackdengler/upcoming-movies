@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -271,7 +271,7 @@
       "studio": "MUBI",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / War",
       "cast": "Luise Heyer, Lena Urzendowsky, Claudia Geisler-Bading, Lea Drinda",
       "notes": "The past doesn't fade. It echoes.",
       "youtube_trailer_id": "O-jgGbvLgVo"
@@ -475,7 +475,7 @@
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
+      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",

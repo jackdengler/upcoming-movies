@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-06-08",
+  "updated": "2026-06-15",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -87,7 +87,7 @@
       "title": "The Drama",
       "director": "Kristoffer Borgli",
       "studio": "A24",
-      "budget_usd": 28000000,
+      "budget_usd": 12,
       "release_type": "wide",
       "genre": "Romance / Comedy / Drama",
       "cast": "Zendaya, Robert Pattinson, Mamoudou Athie, Alana Haim",
@@ -700,7 +700,7 @@
       "studio": "Sony Pictures Classics",
       "budget_usd": 3730000,
       "release_type": "wide",
-      "genre": "Drama",
+      "genre": "Drama / History",
       "cast": "Robert Aramayo, Maxine Peake, Peter Mullan, Shirley Henderson",
       "notes": "I blink. I twitch. I jump. I click. I whistle. I shout.",
       "youtube_trailer_id": "10ynpduiRpM"
@@ -766,7 +766,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Family",
-      "cast": "John Magaro, Molly Belle Wright, Wyatt Solis, Talia Balsam",
+      "cast": "John Magaro, Molly Belle Wright, Talia Balsam, Rachel Alig",
       "notes": "",
       "youtube_trailer_id": "M2OTVoxpetU"
     },
@@ -779,7 +779,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Comedy / Thriller",
-      "cast": "Samara Weaving, Jason Segel, Paul Guilfoyle, Timothy Olyphant",
+      "cast": "Samara Weaving, Jason Segel, Timothy Olyphant, Juliette Lewis",
       "notes": "Breakups are all in the execution.",
       "youtube_trailer_id": "pGxKTIegUZ4"
     },

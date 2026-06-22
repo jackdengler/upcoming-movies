@@ -1,8 +1,21 @@
 {
   "month": "October 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1244523,
+      "date": "2026-10-02",
+      "title": "Beware Boiúna",
+      "director": "Mike P. Nelson",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Horror / Thriller",
+      "cast": "Logan Marshall-Green, Kiana Madeira, Jessica Rothe, Jackson Bews",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1248832,
       "date": "2026-10-02",
@@ -103,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Bodhi Rae Breathnach, Daisy Edgar-Jones, Fiona Shaw, Caitríona Balfe",
+      "cast": "Daisy Edgar-Jones, Bodhi Rae Breathnach, Fiona Shaw, Caitríona Balfe",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -142,7 +155,7 @@
       "budget_usd": 40000000,
       "release_type": "limited",
       "genre": "Horror / Thriller / Science Fiction",
-      "cast": "Tom Rhys Harries, Naomi Ackie, David Dencik, Max Minghella",
+      "cast": "Tom Rhys Harries, Naomi Ackie, Eddie Marsan, Max Minghella",
       "notes": "Look fear in the face.",
       "youtube_trailer_id": "6IxPD-jNdwM"
     },
@@ -182,6 +195,32 @@
       "release_type": "wide",
       "genre": "Drama / Thriller",
       "cast": "Benedict Cumberbatch, Rosamund Pike, Anthony Hopkins, Cosmo Jarvis",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 791523,
+      "date": "2026-10-23",
+      "title": "Wildwood",
+      "director": "Travis Knight",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Adventure / Animation / Family / Fantasy",
+      "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
+      "notes": "Beyond their home, a world of magic where one choice can change everything.",
+      "youtube_trailer_id": "POneS8h1jyU"
+    },
+    {
+      "tmdb_id": 1195803,
+      "date": "2026-10-30",
+      "title": "Wicker",
+      "director": "Eleanor Wilson, Alex Huston Fischer",
+      "studio": "Black Bear",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance / Fantasy / Drama",
+      "cast": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
       "notes": "",
       "youtube_trailer_id": null
     }

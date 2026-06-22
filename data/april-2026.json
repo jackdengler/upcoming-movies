@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -87,7 +87,7 @@
       "title": "The Drama",
       "director": "Kristoffer Borgli",
       "studio": "A24",
-      "budget_usd": 12,
+      "budget_usd": 28000000,
       "release_type": "wide",
       "genre": "Romance / Comedy / Drama",
       "cast": "Zendaya, Robert Pattinson, Mamoudou Athie, Alana Haim",
@@ -313,7 +313,7 @@
       "genre": "Documentary",
       "cast": "David Byrne, Janette Sadik-Khan",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "0qR7DaPN-0Q"
     },
     {
       "tmdb_id": 1341341,
@@ -467,7 +467,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary",
-      "cast": "Lorne Michaels, Tina Fey, Maya Rudolph, John Mulaney",
+      "cast": "Lorne Michaels, Steve Higgins, Michael Che, Colin Jost",
       "notes": "The legend behind the legends.",
       "youtube_trailer_id": "8jAzm4a5SLo"
     },
@@ -661,7 +661,7 @@
       "studio": "Kino Lorber",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama",
+      "genre": "Drama / War",
       "cast": "Jasper Billerbeck, Diane Kruger, Kian Köppke, Laura Tonke",
       "notes": "",
       "youtube_trailer_id": "-izT0MKkvZY"

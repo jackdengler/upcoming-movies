@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -129,9 +129,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Adventure / Animation / Family / Fantasy",
-      "cast": "Hailee Steinfeld, Rashida Jones, Jim Hanks, Cee Lo Green",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
+      "notes": "Something is happening to Billie...",
+      "youtube_trailer_id": "mtC4sjABZNw"
     }
   ]
 }

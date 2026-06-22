@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Science Fiction / Drama / Thriller",
+      "genre": "Animation / Drama / Science Fiction / Thriller",
       "cast": "Lizzie Freeman, Alex Rochon, Michael Kovach, Amanda Hufford",
       "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
       "youtube_trailer_id": "vNGAtHBhdiM"
@@ -219,7 +219,7 @@
       "studio": "Universal Pictures",
       "budget_usd": 115000000,
       "release_type": "wide",
-      "genre": "Action / Science Fiction / Thriller",
+      "genre": "Science Fiction / Thriller",
       "cast": "Emily Blunt, Josh O'Connor, Colin Firth, Colman Domingo",
       "notes": "We deserve to know.",
       "youtube_trailer_id": "icDuEHSxE-w"
@@ -232,10 +232,23 @@
       "studio": "Greenwich Entertainment",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Drama",
+      "genre": "Drama / Science Fiction / Animation",
       "cast": "ACE COOL, Taketo Tanaka, Shohei Uno, Remi Tyon",
       "notes": "One life. One hundred years.",
       "youtube_trailer_id": "o_eIe3XJ-80"
+    },
+    {
+      "tmdb_id": 1218412,
+      "date": "2026-06-12",
+      "title": "Promised Sky",
+      "director": "Erige Sehiri",
+      "studio": "Film Movement",
+      "budget_usd": 6800000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Aïssa Maïga, Laëtitia Ky, Déborah Naney, Mohamed Grayaâ",
+      "notes": "",
+      "youtube_trailer_id": "tPDKAAqtPzY"
     },
     {
       "tmdb_id": 1541560,
@@ -331,7 +344,7 @@
     {
       "tmdb_id": 1053594,
       "date": "2026-06-19",
-      "title": "La niña de la cabra",
+      "title": "Goat Girl",
       "director": "Ana Asensio",
       "studio": "Outsider Films",
       "budget_usd": null,
@@ -391,7 +404,7 @@
       "genre": "Documentary / Music",
       "cast": "Peter Asher, James Taylor, Linda Ronstadt, Carole King",
       "notes": "The legend behind music's biggest legends",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "nIpHwQ94WvY"
     },
     {
       "tmdb_id": 1399525,
@@ -425,12 +438,25 @@
       "title": "Toy Story 5",
       "director": "Andrew Stanton",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
+      "budget_usd": 275000000,
       "release_type": "wide",
       "genre": "Animation / Family / Comedy / Adventure",
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
       "notes": "It's on.",
       "youtube_trailer_id": "QftAW9TTmuQ"
+    },
+    {
+      "tmdb_id": 1337438,
+      "date": "2026-06-19",
+      "title": "Unidentified",
+      "director": "Haifaa al-Mansour",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Mystery",
+      "cast": "Mila Al-Zahrani, Aziz Gharbawi, Shafi Al Harthy",
+      "notes": "",
+      "youtube_trailer_id": "jijpvDnis-o"
     },
     {
       "tmdb_id": 1495629,
@@ -541,7 +567,7 @@
       "date": "2026-06-26",
       "title": "The Get Out",
       "director": "Derrick Borte",
-      "studio": "—",
+      "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Thriller",
@@ -558,7 +584,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Comedy",
-      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
+      "cast": "Seth Rogen, Olivia Wilde, Edward Norton, Penélope Cruz",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     }

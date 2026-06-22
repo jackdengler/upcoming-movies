@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -128,7 +128,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 21000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Johnny Sequoyah, Jessica Alexander, Troy Kotsur, Victoria Wyant",
       "notes": "Something's wrong with Ben.",
       "youtube_trailer_id": "wo87F-va410"
@@ -415,7 +415,7 @@
       "budget_usd": 23000000,
       "release_type": "wide",
       "genre": "Mystery / Drama / Horror",
-      "cast": "Jeremy Irvine, Hannah Emily Anderson, Evie Templeton, Pearse Egan",
+      "cast": "Jeremy Irvine, Hannah Emily Anderson, Ljiljana Velimirov, Giulia Pelagatti",
       "notes": "Guilt is a place you can never leave.",
       "youtube_trailer_id": "z10cMFhKbW8"
     },
@@ -475,12 +475,12 @@
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
+      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",
       "genre": "Science Fiction / Action / Comedy",
-      "cast": "Louis Koo, Raymond Lam Fung, Bai Baihe, Jessica Hsuan",
+      "cast": "Louis Koo, Raymond Lam Fung, Bai Baihe, Jessica Hsuan Huen",
       "notes": "To save tomorrow, they must survive yesterday.",
       "youtube_trailer_id": "O22WwXOhb5w"
     },

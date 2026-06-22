@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -206,7 +206,7 @@
       "studio": "Bleecker Street Media",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Horror / Science Fiction",
+      "genre": "Horror / Comedy / Science Fiction",
       "cast": "Shirley Chen, Mckenna Grace, Amelie Zilber, Vivian Wu",
       "notes": "If you can't beat them... be them.",
       "youtube_trailer_id": "FRYAuKuzmn0"
@@ -492,7 +492,7 @@
       "studio": "Blue Fox Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Adventure / Drama",
+      "genre": "Adventure / Comedy / Drama",
       "cast": "Elijah Tamati, Judy Davis, Miriam Margolyes, Jacki Weaver",
       "notes": "Breaking the rules. Keeping the faith.",
       "youtube_trailer_id": "cEQmNfSWMZc"
@@ -610,7 +610,7 @@
       "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Horror / Comedy / Action",
-      "cast": "Zazie Beetz, Myha'la, Patricia Arquette, Paterson Joseph",
+      "cast": "Zazie Beetz, Myha'la, Paterson Joseph, Tom Felton",
       "notes": "Let them try.",
       "youtube_trailer_id": "s0PGrtw0X1Q"
     },

@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,19 +15,6 @@
       "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
       "notes": "Hollywood has a monster problem.",
       "youtube_trailer_id": "V-O-uBaHk3c"
-    },
-    {
-      "tmdb_id": 1500890,
-      "date": "2026-07-03",
-      "title": "Lockbox",
-      "director": "Daniel Stamm",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Horror",
-      "cast": "Carla Gugino, Lou Taylor Pucci, Katharine Isabelle, Roman Kinsella",
-      "notes": "",
-      "youtube_trailer_id": "xxiHWdsM1rM"
     },
     {
       "tmdb_id": 1631822,
@@ -53,7 +40,7 @@
       "genre": "Drama",
       "cast": "Vanessa Yao, Vivian Dawson, Albert Lew",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "mYW3M6urtm8"
     },
     {
       "tmdb_id": 1290417,
@@ -69,17 +56,43 @@
       "youtube_trailer_id": "hzyOsNyDkbM"
     },
     {
-      "tmdb_id": 1308767,
+      "tmdb_id": 1500890,
       "date": "2026-07-03",
-      "title": "Young Washington",
-      "director": "Jon Erwin",
-      "studio": "Angel Films",
+      "title": "Winthrop",
+      "director": "Daniel Stamm",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "History / Drama",
-      "cast": "William Franklyn-Miller, Ben Kingsley, Andy Serkis, Kelsey Grammer",
-      "notes": "250 years of history begins with one man.",
-      "youtube_trailer_id": "LJek-kc384w"
+      "genre": "Horror",
+      "cast": "Carla Gugino, Lou Taylor Pucci, Katharine Isabelle, Roman Kinsella",
+      "notes": "",
+      "youtube_trailer_id": "xxiHWdsM1rM"
+    },
+    {
+      "tmdb_id": 1275007,
+      "date": "2026-07-10",
+      "title": "Baby Doe",
+      "director": "Jessica Earnshaw",
+      "studio": "Persimmon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Gail Eastwood-Ritchey",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1604133,
+      "date": "2026-07-10",
+      "title": "Crossing",
+      "director": "Xu Zhanxiong",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "History / War",
+      "cast": "Liu Ye, Wang Lei, Yu Shi, Timmy Xu",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1212763,
@@ -87,7 +100,7 @@
       "title": "Evil Dead Burn",
       "director": "Sébastien Vaniček",
       "studio": "Warner Bros.",
-      "budget_usd": null,
+      "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
@@ -125,13 +138,13 @@
       "date": "2026-07-10",
       "title": "Reading Lolita in Tehran",
       "director": "Eran Riklis",
-      "studio": "N/A",
+      "studio": "Greenwich Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Golshifteh Farahani, Zar Amir Ebrahimi, Mina Kavani, Bahar Beihaghi",
       "notes": "",
-      "youtube_trailer_id": "NDW378WjtoU"
+      "youtube_trailer_id": "11FiYgU71UU"
     },
     {
       "tmdb_id": 1404304,
@@ -145,6 +158,19 @@
       "cast": "Mackenzie Foy, Odeya Rush, Joe Pantoliano, Sean Bean",
       "notes": "Underestimating her is a grave mistake.",
       "youtube_trailer_id": "3eVoGaI8mpo"
+    },
+    {
+      "tmdb_id": 1715208,
+      "date": "2026-07-10",
+      "title": "Unknown Title",
+      "director": "Britt Bankhead",
+      "studio": "Atlas Distribution Company",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Horror / Mystery",
+      "cast": "Britt Bankhead, Miles Mussenden, Grace Patterson, Mike Markoff",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": null,
@@ -168,9 +194,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Luis Valdez, Edward James Olmos",
+      "cast": "Luis Valdez, Edward James Olmos, Dolores Huerta, Cheech Marin",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "MXESsS8Uskc"
     },
     {
       "tmdb_id": 1451148,
@@ -246,9 +272,22 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Music",
-      "cast": "Sia, Maddie Ziegler",
+      "cast": "Sia, Maddie Ziegler, Nick Lanzisera, Stephanie Mincone",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1376838,
+      "date": "2026-07-24",
+      "title": "A Sad and Beautiful World",
+      "director": "Cyril Aris",
+      "studio": "MPI Media Group",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Romance / Drama / Comedy",
+      "cast": "Mounia Akl, Hasan Akil, Camille Salameh, Julia Kassar",
+      "notes": "",
+      "youtube_trailer_id": "tfhS2aXatiA"
     },
     {
       "tmdb_id": 1498729,
@@ -290,6 +329,19 @@
       "youtube_trailer_id": "Xt3zQ8v2pzk"
     },
     {
+      "tmdb_id": 1715914,
+      "date": "2026-07-28",
+      "title": "WHAM! 10 Days in China",
+      "director": "Mike Christie",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Music / Documentary",
+      "cast": "George Michael, Andrew Ridgeley",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1288059,
       "date": "2026-07-31",
       "title": "I Want Your Sex",
@@ -312,8 +364,8 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
-      "notes": "A brand new day starts now.",
-      "youtube_trailer_id": "8TZMtslA3UY"
+      "notes": "The world may have forgotten Peter Parker, but he hasn't forgotten them.",
+      "youtube_trailer_id": "62bIsvRcPv0"
     },
     {
       "tmdb_id": 1479481,

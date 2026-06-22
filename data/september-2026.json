@@ -1,13 +1,13 @@
 {
   "month": "September 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Peter Spierig, Michael Spierig",
+      "director": "Michael Spierig, Peter Spierig",
       "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "wide",
@@ -41,6 +41,19 @@
       "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, David Strathairn",
       "notes": "The FBI couldn't crack it. So they called in the mob.",
       "youtube_trailer_id": "ej8pjisr0Pc"
+    },
+    {
+      "tmdb_id": 1437511,
+      "date": "2026-09-04",
+      "title": "How to Rob a Bank",
+      "director": "David Leitch",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
+      "notes": "Who's robbing who?",
+      "youtube_trailer_id": "hoXld2b0TCs"
     },
     {
       "tmdb_id": 1284046,
@@ -128,7 +141,7 @@
       "studio": "Columbia Pictures",
       "budget_usd": 80000000,
       "release_type": "wide",
-      "genre": "Horror / Science Fiction / Action",
+      "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
       "notes": "A new era of evil.",
       "youtube_trailer_id": "SJPu1spHqfk"
@@ -160,9 +173,22 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1376400,
+      "date": "2026-09-25",
+      "title": "Crawlers",
+      "director": "Ángel Gómez Hernández",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": null,
       "date": "2026-09-25",
-      "title": "Deep in the Heart 2: A Texas Rivers Story",
+      "title": "Deep in the Heart II: Texas Rivers",
       "director": "—",
       "studio": "Fin & Fur Films",
       "budget_usd": null,

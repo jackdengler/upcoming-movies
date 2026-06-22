@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-06-15",
+  "updated": "2026-06-22",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -50,7 +50,7 @@
       "studio": "Greenwich Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Comedy / Drama",
       "cast": "Aivan Uttapa, Gustavo Sánchez Parra, Diego Olmedo, Andrea Suarez Paz",
       "notes": "",
       "youtube_trailer_id": null
@@ -207,9 +207,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Science Fiction / Thriller",
-      "cast": "Noomi Rapace, Reika Kirishima, Andrzej Konopka, Filippa Kaye",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Andrzej Konopka, Noomi Rapace, Reika Kirishima, Filippa Kaye",
+      "notes": "The system is unstable.",
+      "youtube_trailer_id": "x54MPGBWXA8"
     },
     {
       "tmdb_id": 1291595,
@@ -254,7 +254,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
@@ -275,6 +275,19 @@
       "cast": "Billie Gadsdon, Nicola Coughlan, Delilah Bennett-Cardy, Phoenix Laroche",
       "notes": "",
       "youtube_trailer_id": "PAUEwUhAjzg"
+    },
+    {
+      "tmdb_id": 1000866,
+      "date": "2026-08-21",
+      "title": "The Marching Band",
+      "director": "Emmanuel Courcol",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": 6100000,
+      "release_type": "wide",
+      "genre": "Comedy / Drama / Music",
+      "cast": "Benjamin Lavernhe, Pierre Lottin, Sarah Suco, Clémence Massart-Weit",
+      "notes": "",
+      "youtube_trailer_id": "bhfCXPYIKs8"
     },
     {
       "tmdb_id": 1124142,

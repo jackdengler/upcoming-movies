@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Drama / Science Fiction / Thriller",
+      "genre": "Animation / Science Fiction / Drama / Thriller",
       "cast": "Lizzie Freeman, Alex Rochon, Michael Kovach, Amanda Hufford",
       "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
       "youtube_trailer_id": "vNGAtHBhdiM"
@@ -65,7 +65,7 @@
       "release_type": "limited",
       "genre": "Horror",
       "cast": "Alice Eve, Eric Michael Cole, Jim Klock, Elle Haymond",
-      "notes": "There's no hinding in the sea",
+      "notes": "There's no hinding in the sea.",
       "youtube_trailer_id": "oZWDFelquX4"
     },
     {
@@ -248,7 +248,7 @@
       "genre": "Drama",
       "cast": "Aïssa Maïga, Laëtitia Ky, Déborah Naney, Mohamed Grayaâ",
       "notes": "",
-      "youtube_trailer_id": "tPDKAAqtPzY"
+      "youtube_trailer_id": "Cdq8gcaBcM8"
     },
     {
       "tmdb_id": 1541560,
@@ -360,7 +360,7 @@
       "title": "Leviticus",
       "director": "Adrian Chiarella",
       "studio": "Neon",
-      "budget_usd": null,
+      "budget_usd": 3500000,
       "release_type": "limited",
       "genre": "Horror / Romance",
       "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Nicholas Hope",
@@ -394,19 +394,6 @@
       "youtube_trailer_id": "gZS0iFRjk5o"
     },
     {
-      "tmdb_id": 1537635,
-      "date": "2026-06-19",
-      "title": "Peter Asher: Everywhere Man",
-      "director": "Dayna Goldfine, Daniel Geller",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "Peter Asher, James Taylor, Linda Ronstadt, Carole King",
-      "notes": "The legend behind music's biggest legends",
-      "youtube_trailer_id": "nIpHwQ94WvY"
-    },
-    {
       "tmdb_id": 1399525,
       "date": "2026-06-19",
       "title": "Rose of Nevada",
@@ -427,7 +414,7 @@
       "studio": "A24",
       "budget_usd": 25000000,
       "release_type": "wide",
-      "genre": "Drama / Thriller",
+      "genre": "Adventure / Drama / Thriller / Action",
       "cast": "Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett",
       "notes": "He was no hero.",
       "youtube_trailer_id": "tlSDDuWxO_0"
@@ -438,7 +425,7 @@
       "title": "Toy Story 5",
       "director": "Andrew Stanton",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": 275000000,
+      "budget_usd": 250000000,
       "release_type": "wide",
       "genre": "Animation / Family / Comedy / Adventure",
       "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
@@ -456,7 +443,7 @@
       "genre": "Crime / Mystery",
       "cast": "Mila Al-Zahrani, Aziz Gharbawi, Shafi Al Harthy",
       "notes": "",
-      "youtube_trailer_id": "jijpvDnis-o"
+      "youtube_trailer_id": "53f9ciNWxFA"
     },
     {
       "tmdb_id": 1495629,
@@ -472,6 +459,32 @@
       "youtube_trailer_id": "l16tB6CQfCg"
     },
     {
+      "tmdb_id": 1629051,
+      "date": "2026-06-25",
+      "title": "Never After Dark",
+      "director": "Dave Boyle",
+      "studio": "N/A",
+      "budget_usd": 105,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Kento Kaku, Moeka Hoshi, Kurumi Inagaki, Mutsuo Yoshioka",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1669841,
+      "date": "2026-06-26",
+      "title": "BLEACH: Thousand-Year Blood War - The Calamity",
+      "director": "Hikaru Murata, Chen Dali",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Adventure / Animation / Science Fiction",
+      "cast": "Masakazu Morita, Noriaki Sugiyama, Yuki Matsuoka, Hiroki Yasumoto",
+      "notes": "",
+      "youtube_trailer_id": "DKKZ10FsSBM"
+    },
+    {
       "tmdb_id": 1517206,
       "date": "2026-06-26",
       "title": "Bouchra",
@@ -481,7 +494,7 @@
       "release_type": "limited",
       "genre": "Animation / Drama",
       "cast": "Meriem Bennani, Orian Barki, Fayçal Azizi, Ariana Faye Allensworth",
-      "notes": "",
+      "notes": "\"What's on your heart?\"",
       "youtube_trailer_id": "-m302Kq_FG4"
     },
     {
@@ -516,7 +529,7 @@
       "title": "Jackass: Best and Last",
       "director": "Jeff Tremaine",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Action / Comedy / Documentary",
       "cast": "Johnny Knoxville, Steve-O, Chris Pontius, Jason 'Wee Man' Acuña",
@@ -535,6 +548,45 @@
       "cast": "Marla Robinson, Tom Koch, Anthony Cipriani, Wynn Reichert",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1594914,
+      "date": "2026-06-26",
+      "title": "Lucky Strike",
+      "director": "Rod Lurie",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / War",
+      "cast": "Scott Eastwood, Colin Hanks, Aunjanue Ellis-Taylor, Taylor John Smith",
+      "notes": "One man's fight to survive.",
+      "youtube_trailer_id": "vtEnjikCXyA"
+    },
+    {
+      "tmdb_id": 1537635,
+      "date": "2026-06-26",
+      "title": "Peter Asher: Everywhere Man",
+      "director": "Dayna Goldfine, Daniel Geller",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary / Music",
+      "cast": "Peter Asher, James Taylor, Linda Ronstadt, Carole King",
+      "notes": "The legend behind music's biggest legends",
+      "youtube_trailer_id": "nIpHwQ94WvY"
+    },
+    {
+      "tmdb_id": 1182861,
+      "date": "2026-06-26",
+      "title": "Romería",
+      "director": "Carla Simón",
+      "studio": "Janus Films",
+      "budget_usd": 3735296,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Llúcia Garcia, Mitch, Tristán Ulloa, Celine Tyll",
+      "notes": "",
+      "youtube_trailer_id": "da3CAnPA_EM"
     },
     {
       "tmdb_id": 1484708,
@@ -558,7 +610,7 @@
       "budget_usd": 175000000,
       "release_type": "wide",
       "genre": "Action / Adventure / Science Fiction",
-      "cast": "Milly Alcock, Eve Ridley, Matthias Schoenaerts, David Krumholtz",
+      "cast": "Milly Alcock, Eve Ridley, Matthias Schoenaerts, Jason Momoa",
       "notes": "Truth. Justice. Whatever.",
       "youtube_trailer_id": "tzlY8XD1CGg"
     },

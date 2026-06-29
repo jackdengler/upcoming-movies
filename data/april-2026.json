@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -290,19 +290,6 @@
       "youtube_trailer_id": "12L02ZqwW9o"
     },
     {
-      "tmdb_id": 1226699,
-      "date": "2026-04-14",
-      "title": "The Wrong Girls",
-      "director": "Dylan Meyer",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy / Drama / Thriller",
-      "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1601096,
       "date": "2026-04-16",
       "title": "Changing Lanes",
@@ -581,7 +568,7 @@
       "title": "Wasteman",
       "director": "Cal McMau",
       "studio": "Vertigo Releasing",
-      "budget_usd": null,
+      "budget_usd": 150000,
       "release_type": "limited",
       "genre": "Crime / Drama / Thriller",
       "cast": "David Jonsson, Tom Blyth, Alex Hassell, Neil Linpow",

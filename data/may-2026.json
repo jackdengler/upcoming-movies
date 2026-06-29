@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -323,7 +323,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Comedy / Family / Mystery",
+      "genre": "Comedy / Mystery / Family",
       "cast": "Hugh Jackman, Julia Louis-Dreyfus, Emma Thompson, Nicholas Braun",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
@@ -480,7 +480,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "E. Jean Carroll",
+      "cast": "E. Jean Carroll, Lisa Birnbach, Roberta Kaplan, Carol Martin",
       "notes": "",
       "youtube_trailer_id": "SgyI8GStcao"
     },
@@ -659,7 +659,7 @@
       "title": "Pressure",
       "director": "Anthony Maras",
       "studio": "Focus Features",
-      "budget_usd": 80000000,
+      "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Thriller / History / War",
       "cast": "Andrew Scott, Brendan Fraser, Kerry Condon, Chris Messina",
@@ -739,10 +739,10 @@
       "studio": "Black Bear",
       "budget_usd": 7000000,
       "release_type": "wide",
-      "genre": "Crime / Thriller",
-      "cast": "Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh",
+      "genre": "Crime / Drama / Music / Thriller",
+      "cast": "Leo Woodall, Havana Rose Liu, Dustin Hoffman, Lior Raz",
       "notes": "Everybody has one hidden talent.",
-      "youtube_trailer_id": "rdlOZhl-nSA"
+      "youtube_trailer_id": "XiehvETTjTQ"
     },
     {
       "tmdb_id": 1479653,

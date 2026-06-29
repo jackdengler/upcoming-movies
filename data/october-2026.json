@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,10 +24,10 @@
       "studio": "Warner Bros.",
       "budget_usd": 200000000,
       "release_type": "wide",
-      "genre": "Comedy / Drama",
+      "genre": "Comedy / Drama / Adventure",
       "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
-      "notes": "A comedy of catastrophic proportions.",
-      "youtube_trailer_id": "Rd21PhsDHww"
+      "notes": "A man. A plan. A meltdown.",
+      "youtube_trailer_id": "Pd4Olzi0HEc"
     },
     {
       "tmdb_id": 1283515,
@@ -41,6 +41,19 @@
       "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
       "notes": "There is no light where we're going.",
       "youtube_trailer_id": "wbMNy_djxGk"
+    },
+    {
+      "tmdb_id": 1401459,
+      "date": "2026-10-09",
+      "title": "Fjord",
+      "director": "Cristian Mungiu",
+      "studio": "Neon",
+      "budget_usd": 4800000,
+      "release_type": "limited",
+      "genre": "Drama / Thriller",
+      "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1400837,
@@ -67,6 +80,19 @@
       "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1437396,
+      "date": "2026-10-09",
+      "title": "Your Mother Your Mother Your Mother",
+      "director": "Bassam Tariq",
+      "studio": "Orion Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action",
+      "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
+      "notes": "",
+      "youtube_trailer_id": "hCXfh1oB3oc"
     },
     {
       "tmdb_id": 1511171,
@@ -108,17 +134,17 @@
       "youtube_trailer_id": "TXvbTnrZstA"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1503762,
       "date": "2026-10-16",
       "title": "Sense and Sensibility",
-      "director": "—",
+      "director": "Georgia Oakley",
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Daisy Edgar-Jones, Bodhi Rae Breathnach, Fiona Shaw, Caitríona Balfe",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Daisy Edgar-Jones, Esmé Creed-Miles, Caitríona Balfe, Bodhi Rae Breathnach",
+      "notes": "No one knows your heart like a sister.",
+      "youtube_trailer_id": "mcrwcvad84U"
     },
     {
       "tmdb_id": 1153576,
@@ -167,10 +193,10 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Science Fiction / Drama",
+      "genre": "Science Fiction / Drama / Comedy",
       "cast": "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Meet the future of friendship.",
+      "youtube_trailer_id": "wixzainceAE"
     },
     {
       "tmdb_id": null,
@@ -210,6 +236,32 @@
       "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
       "notes": "Beyond their home, a world of magic where one choice can change everything.",
       "youtube_trailer_id": "POneS8h1jyU"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-10-30",
+      "title": "Sight & sound presents: Joshua live!",
+      "director": "—",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Family / Musical",
+      "cast": "Carl Anderson, Hope Klessig",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1228314,
+      "date": "2026-10-30",
+      "title": "Stiletto",
+      "director": "Samuel Gonzalez Jr.",
+      "studio": "Iconic Events Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Gigi Gustin, Colleen Camp, Tyler Abron, Charlotte McKinney",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1195803,

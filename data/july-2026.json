@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -9,7 +9,7 @@
       "title": "Minions & Monsters",
       "director": "Pierre Coffin",
       "studio": "Universal Pictures",
-      "budget_usd": null,
+      "budget_usd": 85000000,
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family / Fantasy",
       "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
@@ -105,7 +105,7 @@
       "genre": "Horror / Thriller",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
       "notes": "Every family has its demons.",
-      "youtube_trailer_id": "TnHby2cxJzs"
+      "youtube_trailer_id": "RddZObTlmA8"
     },
     {
       "tmdb_id": 1476682,
@@ -132,6 +132,19 @@
       "cast": "Catherine Lagaʻaia, Dwayne Johnson, Rena Owen, John Tui",
       "notes": "The ocean is calling.",
       "youtube_trailer_id": "EEz5xbzYPKI"
+    },
+    {
+      "tmdb_id": 1497325,
+      "date": "2026-07-10",
+      "title": "Mockbuster",
+      "director": "Anthony Frith",
+      "studio": "Giant Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Brendan Petrizzo, David Michael Latt, Michelle Bauer, Bix Krieger",
+      "notes": "If you can't beat Hollywood... knock it off.",
+      "youtube_trailer_id": "UfaKokQbW5A"
     },
     {
       "tmdb_id": 1096846,
@@ -274,7 +287,7 @@
       "genre": "Documentary / Music",
       "cast": "Sia, Maddie Ziegler, Nick Lanzisera, Stephanie Mincone",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "T6ZStfsJQF0"
     },
     {
       "tmdb_id": 1376838,
@@ -303,6 +316,19 @@
       "youtube_trailer_id": "DUSK3uec9SA"
     },
     {
+      "tmdb_id": 1356050,
+      "date": "2026-07-24",
+      "title": "Cruel Hands",
+      "director": "Al Kalyk",
+      "studio": "Dark Sky Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller",
+      "cast": "Mavournee Hazel, Diesel La Torraca, Harry Greenwood, Geneviève Lemon",
+      "notes": "",
+      "youtube_trailer_id": "tlF7Nk2cJi0"
+    },
+    {
       "tmdb_id": null,
       "date": "2026-07-24",
       "title": "Her Private Hell",
@@ -311,7 +337,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
-      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Dougray Scott",
+      "cast": "Havana Rose Liu, Sophie Thatcher, Charles Melton, Dougray Scott",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -339,7 +365,7 @@
       "genre": "Music / Documentary",
       "cast": "George Michael, Andrew Ridgeley",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "P7oAaJqqv8w"
     },
     {
       "tmdb_id": 1288059,
@@ -355,6 +381,19 @@
       "youtube_trailer_id": "kjkTmTmC1iA"
     },
     {
+      "tmdb_id": 1421642,
+      "date": "2026-07-31",
+      "title": "Middle Life",
+      "director": "Pavan Moondi",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Romance / Comedy",
+      "cast": "Leah Fay Goldstein, Peter Dreimanis, Luke Lalonde, Norah Sadava",
+      "notes": "Life could be great.",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 969681,
       "date": "2026-07-31",
       "title": "Spider-Man: Brand New Day",
@@ -364,7 +403,7 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
-      "notes": "The world may have forgotten Peter Parker, but he hasn't forgotten them.",
+      "notes": "A brand new day starts now.",
       "youtube_trailer_id": "62bIsvRcPv0"
     },
     {
@@ -391,20 +430,20 @@
       "genre": "Drama / Mystery",
       "cast": "Masahiro Motoki, Masaki Suda, Yuriko Yoshitaka, Munetaka Aoki",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "dY5kXykdbLo"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1501564,
       "date": "2026-07-31",
       "title": "Wild Inside",
-      "director": "—",
+      "director": "Penny Lane",
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "—",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "GPTWsyD_q6A"
     }
   ]
 }

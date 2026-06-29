@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -66,7 +66,7 @@
       "genre": "Adventure / Animation / Comedy / Family",
       "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
       "notes": "",
-      "youtube_trailer_id": "8_nX4qQU1Wc"
+      "youtube_trailer_id": "a9DB_aUMzME"
     },
     {
       "tmdb_id": 1437882,
@@ -115,9 +115,9 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Mystery",
+      "genre": "Horror",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Ralph Ineson",
-      "notes": "There's a Full Moon Coming...",
+      "notes": "",
       "youtube_trailer_id": null
     }
   ]

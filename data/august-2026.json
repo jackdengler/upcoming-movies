@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-06-22",
+  "updated": "2026-06-29",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -13,8 +13,8 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Ara, Shannon Elizabeth, Nikki, Olive",
-      "notes": "",
-      "youtube_trailer_id": "iJm9EyFKetg"
+      "notes": "Big dreams start small.",
+      "youtube_trailer_id": "nnSQS43Eil8"
     },
     {
       "tmdb_id": 1477712,
@@ -41,6 +41,19 @@
       "cast": "Nina Meurisse, Laurence Roothooft, Rosalia Cuevas, Peter Seynaeve",
       "notes": "",
       "youtube_trailer_id": "hhyHRQI147E"
+    },
+    {
+      "tmdb_id": 1285895,
+      "date": "2026-08-07",
+      "title": "Late Fame",
+      "director": "Kent Jones",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Willem Dafoe, Greta Lee, Edmund Donovan, Stephen Badalamenti",
+      "notes": "",
+      "youtube_trailer_id": "vMKoyngrqBg"
     },
     {
       "tmdb_id": 1212934,
@@ -87,7 +100,7 @@
       "title": "Teenage Sex and Death at Camp Miasma",
       "director": "Jane Schoenbrun",
       "studio": "MUBI",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "limited",
       "genre": "Horror / Comedy",
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
@@ -171,6 +184,19 @@
       "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
       "notes": "Survive the summer.",
       "youtube_trailer_id": "3oB9AxspVow"
+    },
+    {
+      "tmdb_id": 1226699,
+      "date": "2026-08-14",
+      "title": "The Wrong Girls",
+      "director": "Dylan Meyer",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama / Thriller",
+      "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1482938,
@@ -303,6 +329,19 @@
       "youtube_trailer_id": "GwSvAyaMGMo"
     },
     {
+      "tmdb_id": 1475440,
+      "date": "2026-08-28",
+      "title": "Beyond Belief",
+      "director": "Johnny Meier",
+      "studio": "Iconic Events Releasing",
+      "budget_usd": 1000000,
+      "release_type": "limited",
+      "genre": "Drama / Family / Music",
+      "cast": "Carson Lueders, James C. Burns, Debby Gerber, Ryan Barnes",
+      "notes": "Run The Race. Keep The Faith.",
+      "youtube_trailer_id": "R-5dDVHnYA0"
+    },
+    {
       "tmdb_id": 1514026,
       "date": "2026-08-28",
       "title": "Buddy",
@@ -334,7 +373,7 @@
       "title": "Colony",
       "director": "Yeon Sang-ho",
       "studio": "Well Go USA Entertainment",
-      "budget_usd": 12000000,
+      "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Thriller / Horror",
       "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",

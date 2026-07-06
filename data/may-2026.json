@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-06-29",
+  "updated": "2026-07-06",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -63,7 +63,7 @@
       "studio": "Magenta Light Studios",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Thriller / Horror",
+      "genre": "Horror / Thriller",
       "cast": "Aaron Eckhart, Ben Kingsley, Molly Belle Wright, Angus Sampson",
       "notes": "Surviving the crash is just the beginning.",
       "youtube_trailer_id": "f0ptq0Lzdh8"
@@ -323,7 +323,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Comedy / Mystery / Family",
+      "genre": "Mystery / Comedy / Family",
       "cast": "Hugh Jackman, Julia Louis-Dreyfus, Emma Thompson, Nicholas Braun",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
@@ -557,7 +557,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror / Thriller / Adventure",
       "cast": "Lou Llobell, Jacob Scipio, Melissa Leo, Joseph Lopez",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"
@@ -611,7 +611,7 @@
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
-      "notes": "You are not supposed to be here.",
+      "notes": "See how far it goes.",
       "youtube_trailer_id": "0HjdiohVOik"
     },
     {
@@ -739,7 +739,7 @@
       "studio": "Black Bear",
       "budget_usd": 7000000,
       "release_type": "wide",
-      "genre": "Crime / Drama / Music / Thriller",
+      "genre": "Crime / Drama / Thriller",
       "cast": "Leo Woodall, Havana Rose Liu, Dustin Hoffman, Lior Raz",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "XiehvETTjTQ"

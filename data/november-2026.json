@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-06-29",
+  "updated": "2026-07-06",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -65,6 +65,19 @@
       "release_type": "wide",
       "genre": "Drama / Fantasy",
       "cast": "Johnny Depp, Andrea Riseborough, Tramell Tillman, Ian McKellen",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1381273,
+      "date": "2026-11-13",
+      "title": "Paper Tiger",
+      "director": "James Gray",
+      "studio": "Neon",
+      "budget_usd": 15000000,
+      "release_type": "limited",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Adam Driver, Scarlett Johansson, Miles Teller, Gavin Goudey",
       "notes": "",
       "youtube_trailer_id": null
     },

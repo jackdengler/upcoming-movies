@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-06-29",
+  "updated": "2026-07-06",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,19 +15,6 @@
       "cast": "Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin",
       "notes": "",
       "youtube_trailer_id": null
-    },
-    {
-      "tmdb_id": 1437511,
-      "date": "2026-12-04",
-      "title": "How to Rob a Bank",
-      "director": "David Leitch",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Crime / Thriller",
-      "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
-      "notes": "Who's robbing who?",
-      "youtube_trailer_id": "hoXld2b0TCs"
     },
     {
       "tmdb_id": 1078446,
@@ -63,9 +50,9 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Comedy / Family",
+      "genre": "Animation / Comedy / Family",
       "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
-      "notes": "",
+      "notes": "One big angry family.",
       "youtube_trailer_id": "a9DB_aUMzME"
     },
     {
@@ -116,9 +103,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror",
-      "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Ralph Ineson",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Bodhi Rae Breathnach, Willem Dafoe",
+      "notes": "Do not dread the darkness. Embrace it.",
+      "youtube_trailer_id": "cmjpadVj-Vk"
     }
   ]
 }

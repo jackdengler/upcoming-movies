@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-06-29",
+  "updated": "2026-07-06",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -115,7 +115,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Comedy / Horror",
+      "genre": "Comedy",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "cGgWAHXuTKc"
@@ -255,7 +255,7 @@
       "date": "2026-06-12",
       "title": "Stop! That! Train!",
       "director": "Adam Shankman",
-      "studio": "N/A",
+      "studio": "Bleecker Street Media",
       "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Action / Comedy",
@@ -456,7 +456,20 @@
       "genre": "Western / Drama",
       "cast": "Alex Cox, Zander Schloss, Edward Tudor-Pole, Dick Rude",
       "notes": "Good enough for government work.",
-      "youtube_trailer_id": "l16tB6CQfCg"
+      "youtube_trailer_id": "zJ35qrFcNEY"
+    },
+    {
+      "tmdb_id": 1381273,
+      "date": "2026-06-20",
+      "title": "Paper Tiger",
+      "director": "James Gray",
+      "studio": "Neon",
+      "budget_usd": 15000000,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Adam Driver, Scarlett Johansson, Miles Teller, Gavin Goudey",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1629051,
@@ -524,6 +537,19 @@
       "youtube_trailer_id": "I6a_E_YVPi8"
     },
     {
+      "tmdb_id": 1143204,
+      "date": "2026-06-26",
+      "title": "For the Love of a Woman",
+      "director": "Guido Chiesa",
+      "studio": "Panorama",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Ana Ularu, Marc Rissmann, Anastasia Doaga, Alban Ukaj",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1612018,
       "date": "2026-06-26",
       "title": "Jackass: Best and Last",
@@ -547,7 +573,7 @@
       "genre": "Drama",
       "cast": "Marla Robinson, Tom Koch, Anthony Cipriani, Wynn Reichert",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "Z-zlWWYsGtk"
     },
     {
       "tmdb_id": 1594914,
@@ -555,7 +581,7 @@
       "title": "Lucky Strike",
       "director": "Rod Lurie",
       "studio": "N/A",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "limited",
       "genre": "Action / War",
       "cast": "Scott Eastwood, Colin Hanks, Aunjanue Ellis-Taylor, Taylor John Smith",
@@ -636,7 +662,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Comedy",
-      "cast": "Seth Rogen, Olivia Wilde, Edward Norton, Penélope Cruz",
+      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     }

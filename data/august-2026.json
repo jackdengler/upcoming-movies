@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-06-29",
+  "updated": "2026-07-06",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -186,6 +186,19 @@
       "youtube_trailer_id": "3oB9AxspVow"
     },
     {
+      "tmdb_id": 1124142,
+      "date": "2026-08-14",
+      "title": "The Rivals of Amziah King",
+      "director": "Andrew Patterson",
+      "studio": "Black Bear",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
+      "notes": "Ain’t no one all bad or all good.",
+      "youtube_trailer_id": "GwSvAyaMGMo"
+    },
+    {
       "tmdb_id": 1226699,
       "date": "2026-08-14",
       "title": "The Wrong Girls",
@@ -193,7 +206,7 @@
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Drama / Thriller",
+      "genre": "Comedy",
       "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
       "notes": "",
       "youtube_trailer_id": null
@@ -209,7 +222,7 @@
       "genre": "Drama",
       "cast": "Will Poulter, Noah Centineo, Elise Kibler, Emily Meade",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "uA6Fnr2VXkw"
     },
     {
       "tmdb_id": null,
@@ -280,7 +293,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
@@ -296,7 +309,7 @@
       "director": "Ben Gregor",
       "studio": "Vertical Entertainment",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Adventure / Family / Fantasy",
       "cast": "Billie Gadsdon, Nicola Coughlan, Delilah Bennett-Cardy, Phoenix Laroche",
       "notes": "",
@@ -316,17 +329,17 @@
       "youtube_trailer_id": "bhfCXPYIKs8"
     },
     {
-      "tmdb_id": 1124142,
-      "date": "2026-08-21",
-      "title": "The Rivals of Amziah King",
-      "director": "Andrew Patterson",
-      "studio": "Black Bear",
+      "tmdb_id": 1618403,
+      "date": "2026-08-23",
+      "title": "40 Years of Fuckin Up",
+      "director": "James Buddy Day",
+      "studio": "Iconic Events Releasing",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Matthew McConaughey, Angelina LookingGlass, Kurt Russell, Cole Sprouse",
-      "notes": "Ain’t no one all bad or all good.",
-      "youtube_trailer_id": "GwSvAyaMGMo"
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Fat Mike, El Hefe, Eric Melvin, Erik Sandin",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1475440,
@@ -377,7 +390,7 @@
       "release_type": "limited",
       "genre": "Action / Thriller / Horror",
       "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",
-      "notes": "",
+      "notes": "Survive the hive.",
       "youtube_trailer_id": "LW6dpj1uCK8"
     },
     {
@@ -415,7 +428,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Romance / Comedy",
-      "cast": "Spike Fearn, Angourie Rice, Minnie Driver, Yali Topol Margalith",
+      "cast": "Spike Fearn, Angourie Rice, Cora Kirk, Prasanna Puwanarajah",
       "notes": "Right name, wrong number.",
       "youtube_trailer_id": "-OGuJf70S0s"
     },

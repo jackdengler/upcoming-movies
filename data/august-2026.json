@@ -1,8 +1,21 @@
 {
   "month": "August 2026",
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1308858,
+      "date": "2026-08-01",
+      "title": "Dreams in Nightmares",
+      "director": "Shatara Michelle Ford",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Denée Benton, Mars Storm Rucker, Dezi Bing, Sasha Compère",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1596318,
       "date": "2026-08-07",
@@ -134,6 +147,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 730558,
+      "date": "2026-08-10",
+      "title": "Ambleside",
+      "director": "Mitch Jenkins",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance",
+      "cast": "Ellie Bamber, Rupert Penry-Jones, Mehdi Dehbi, Rhona Mitra",
+      "notes": "Love was their greatest rebellion.",
+      "youtube_trailer_id": "OJ9H4m9VY0Q"
+    },
+    {
       "tmdb_id": 1706696,
       "date": "2026-08-14",
       "title": "Elijah Peel",
@@ -173,6 +199,19 @@
       "youtube_trailer_id": "Ow75n9vKpac"
     },
     {
+      "tmdb_id": 1479481,
+      "date": "2026-08-14",
+      "title": "Terrestrial",
+      "director": "Steve Pink",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Science Fiction / Comedy",
+      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
+      "notes": "",
+      "youtube_trailer_id": "cD0fVpDoN8Y"
+    },
+    {
       "tmdb_id": 1101383,
       "date": "2026-08-14",
       "title": "The End of Oak Street",
@@ -208,8 +247,8 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Best buds. Worst adults.",
+      "youtube_trailer_id": "zrcg8YHSys8"
     },
     {
       "tmdb_id": 1482938,
@@ -274,7 +313,7 @@
       "genre": "Action / Thriller",
       "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
       "notes": "There's blood in the water.",
-      "youtube_trailer_id": "FKSdXH89jbo"
+      "youtube_trailer_id": "MPyXlWTZ32E"
     },
     {
       "tmdb_id": 1144965,
@@ -284,16 +323,16 @@
       "studio": "AV Entertainment Company",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / Family",
       "cast": "Kapil Talwalkar, Olivia Liang, Karan Soni, Tom Everett Scott",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "8HCD38mxQMs"
     },
     {
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
@@ -347,7 +386,7 @@
       "title": "Beyond Belief",
       "director": "Johnny Meier",
       "studio": "Iconic Events Releasing",
-      "budget_usd": 1000000,
+      "budget_usd": 1500000,
       "release_type": "limited",
       "genre": "Drama / Family / Music",
       "cast": "Carson Lueders, James C. Burns, Debby Gerber, Ryan Barnes",
@@ -365,7 +404,7 @@
       "genre": "Horror / Comedy",
       "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "0mil0YgOtu8"
     },
     {
       "tmdb_id": 1120556,
@@ -398,7 +437,7 @@
       "date": "2026-08-28",
       "title": "Coyote vs. Acme",
       "director": "Dave Green",
-      "studio": "Warner Bros.",
+      "studio": "Ketchup Entertainment",
       "budget_usd": 72000000,
       "release_type": "wide",
       "genre": "Comedy / Adventure / Mystery / Family",
@@ -443,7 +482,46 @@
       "genre": "Comedy / Crime",
       "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
       "notes": "",
-      "youtube_trailer_id": "SbmR9Jy0vRQ"
+      "youtube_trailer_id": "UoAf0LNAn30"
+    },
+    {
+      "tmdb_id": 843352,
+      "date": "2026-08-28",
+      "title": "Legend of the White Dragon",
+      "director": "Aaron Schoenke",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": 508578,
+      "release_type": "limited",
+      "genre": "Action / Science Fiction",
+      "cast": "Jason David Frank, Aaron Schoenke, Mayling Ng, Chalet Lizette Brannan",
+      "notes": "Legends never die",
+      "youtube_trailer_id": "TJ5bCaaGIx4"
+    },
+    {
+      "tmdb_id": 1514056,
+      "date": "2026-08-28",
+      "title": "Nika & Madison",
+      "director": "Eva Thomas",
+      "studio": "Indican Pictures",
+      "budget_usd": 2000000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
+      "notes": "",
+      "youtube_trailer_id": "QAAlkFKaUxM"
+    },
+    {
+      "tmdb_id": 1537518,
+      "date": "2026-08-28",
+      "title": "The Cycle of Love",
+      "director": "Orlando von Einsiedel",
+      "studio": "Variance Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Chirag Lobo",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1384216,

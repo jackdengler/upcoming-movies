@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -10,11 +10,11 @@
       "director": "Takashi Yamazaki",
       "studio": "GKIDS",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Science Fiction / Horror / Action",
       "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Munetaka Aoki",
-      "notes": "",
-      "youtube_trailer_id": "n-NDYWPXpKg"
+      "notes": "There is no third time. Everything ends here.",
+      "youtube_trailer_id": "Xmy-Z3dHMd8"
     },
     {
       "tmdb_id": 1241478,

@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -37,7 +37,7 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Romance",
+      "genre": "Romance / Drama",
       "cast": "Eve Ryan, Mikel Niso, Luis Zahera, Esther Acebo",
       "notes": "",
       "youtube_trailer_id": null
@@ -323,8 +323,8 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Mystery / Comedy / Family",
-      "cast": "Hugh Jackman, Julia Louis-Dreyfus, Emma Thompson, Nicholas Braun",
+      "genre": "Comedy / Family / Mystery",
+      "cast": "Hugh Jackman, Nicholas Braun, Nicholas Galitzine, Molly Gordon",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
     },
@@ -557,7 +557,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller / Adventure",
+      "genre": "Horror / Thriller",
       "cast": "Lou Llobell, Jacob Scipio, Melissa Leo, Joseph Lopez",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"
@@ -571,7 +571,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Midori Francis, Danielle Macdonald, Madeleine Madden, Joseph Baldwin",
+      "cast": "Trevorr Surej, Midori Francis, Danielle Macdonald, Madeleine Madden",
       "notes": "What's eating you?",
       "youtube_trailer_id": "uIY13LD3RUY"
     },
@@ -636,7 +636,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Horror / Thriller",
-      "cast": "Jordan Claire Robbins, Alex Essoe, Randy Couture, Marshall Williams",
+      "cast": "Marshall Williams, Alex Essoe, Richard Harmon, Jordan Claire Robbins",
       "notes": "If the fall doesn't kill you... He will.",
       "youtube_trailer_id": "eIQzUWhsX4U"
     },

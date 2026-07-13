@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -201,7 +201,7 @@
     {
       "tmdb_id": 1521151,
       "date": "2026-09-18",
-      "title": "Untitled Disney",
+      "title": "Unknown Title",
       "director": "—",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
@@ -249,6 +249,19 @@
       "cast": "Emilia Jones, Nick Robinson, Nicholas Cirillo, Ja'Quan Monroe-Henderson",
       "notes": "is love enough?",
       "youtube_trailer_id": "3EwAPmmNBU4"
+    },
+    {
+      "tmdb_id": 1376400,
+      "date": "2026-09-25",
+      "title": "Crawlers",
+      "director": "Ángel Gómez Hernández",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": null,
@@ -310,7 +323,7 @@
       "studio": "Orion Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action",
+      "genre": "Action / Drama",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
       "youtube_trailer_id": "hCXfh1oB3oc"

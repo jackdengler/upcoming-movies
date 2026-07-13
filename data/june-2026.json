@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Science Fiction / Drama / Thriller",
+      "genre": "Animation / Drama / Science Fiction / Thriller",
       "cast": "Lizzie Freeman, Alex Rochon, Michael Kovach, Amanda Hufford",
       "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
       "youtube_trailer_id": "vNGAtHBhdiM"
@@ -52,7 +52,7 @@
       "release_type": "limited",
       "genre": "Crime / Drama / Romance",
       "cast": "Samara Weaving, Kyle Gallner, Kyra Sedgwick, Jon Gries",
-      "notes": "",
+      "notes": "See the angle.",
       "youtube_trailer_id": "fNdC6SJ-TxY"
     },
     {
@@ -115,7 +115,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Comedy",
+      "genre": "Comedy / Horror",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "cGgWAHXuTKc"
@@ -271,7 +271,7 @@
       "studio": "Lionsgate",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Action / Crime",
+      "genre": "Action / Crime / Thriller",
       "cast": "Xie Miao, Joe Taslim, Yang Enyou, Yayan Ruhian",
       "notes": "To save their loved ones, they will fight everyone.",
       "youtube_trailer_id": "Avky8dVaqAI"
@@ -480,7 +480,7 @@
       "budget_usd": 105,
       "release_type": "limited",
       "genre": "Horror",
-      "cast": "Kento Kaku, Moeka Hoshi, Kurumi Inagaki, Mutsuo Yoshioka",
+      "cast": "Moeka Hoshi, Kurumi Inagaki, Kento Kaku, Tae Kimura",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -561,19 +561,6 @@
       "cast": "Johnny Knoxville, Steve-O, Chris Pontius, Jason 'Wee Man' Acuña",
       "notes": "One. Last. Ride.",
       "youtube_trailer_id": "sNwzFhGwA94"
-    },
-    {
-      "tmdb_id": 1532704,
-      "date": "2026-06-26",
-      "title": "Jacked",
-      "director": "John Fucile",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Marla Robinson, Tom Koch, Anthony Cipriani, Wynn Reichert",
-      "notes": "",
-      "youtube_trailer_id": "Z-zlWWYsGtk"
     },
     {
       "tmdb_id": 1594914,
@@ -662,7 +649,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Comedy",
-      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
+      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     }

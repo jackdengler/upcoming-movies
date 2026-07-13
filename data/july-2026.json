@@ -1,13 +1,13 @@
 {
   "month": "July 2026",
-  "updated": "2026-07-06",
+  "updated": "2026-07-13",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1315772,
       "date": "2026-07-01",
       "title": "Minions & Monsters",
-      "director": "Pierre Coffin",
+      "director": "Pierre Coffin, James",
       "studio": "Universal Pictures",
       "budget_usd": 85000000,
       "release_type": "wide",
@@ -15,6 +15,19 @@
       "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
       "notes": "Hollywood has a monster problem.",
       "youtube_trailer_id": "V-O-uBaHk3c"
+    },
+    {
+      "tmdb_id": 1532704,
+      "date": "2026-07-03",
+      "title": "Jacked",
+      "director": "John Fucile",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Marla Robinson, Tom Koch, Anthony Cipriani, Wynn Reichert",
+      "notes": "",
+      "youtube_trailer_id": "Z-zlWWYsGtk"
     },
     {
       "tmdb_id": 1500890,
@@ -41,19 +54,6 @@
       "cast": "Mary Oliver, Helena Bonham Carter, Steve Buscemi, Stephen Colbert",
       "notes": "",
       "youtube_trailer_id": "ZJMd3u741pA"
-    },
-    {
-      "tmdb_id": 1189807,
-      "date": "2026-07-03",
-      "title": "Swallowtail & Dragonfly",
-      "director": "Julia Jay Pierrepont III",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Vanessa Yao, Vivian Dawson, Albert Lew",
-      "notes": "",
-      "youtube_trailer_id": "mYW3M6urtm8"
     },
     {
       "tmdb_id": 1290417,
@@ -100,7 +100,7 @@
       "title": "Evil Dead Burn",
       "director": "Sébastien Vaniček",
       "studio": "Warner Bros.",
-      "budget_usd": 15000000,
+      "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
@@ -113,7 +113,7 @@
       "title": "Gail Daughtry and the Celebrity Sex Pass",
       "director": "David Wain",
       "studio": "Sony Pictures Classics",
-      "budget_usd": null,
+      "budget_usd": 3500000,
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Zoey Deutch, Jon Hamm, John Slattery, Ben Wang",
@@ -126,10 +126,10 @@
       "title": "Moana",
       "director": "Thomas Kail",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": 200000000,
+      "budget_usd": 250000000,
       "release_type": "wide",
       "genre": "Family / Fantasy / Comedy / Adventure",
-      "cast": "Catherine Lagaʻaia, Dwayne Johnson, Rena Owen, John Tui",
+      "cast": "Catherine Lagaʻaia, Dwayne Johnson, John Tui, Frankie Adams",
       "notes": "The ocean chose her for a reason.",
       "youtube_trailer_id": "EEz5xbzYPKI"
     },
@@ -147,6 +147,19 @@
       "youtube_trailer_id": "UfaKokQbW5A"
     },
     {
+      "tmdb_id": 1596260,
+      "date": "2026-07-10",
+      "title": "Night Nurse",
+      "director": "Georgia Bernstein",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Thriller",
+      "cast": "Cemre Paksoy, Bruce McKenzie, Eléonore Hendricks, Colleen Rose Trundy",
+      "notes": "She's here to help.",
+      "youtube_trailer_id": "JP8Xj5_6VSE"
+    },
+    {
       "tmdb_id": 1329909,
       "date": "2026-07-10",
       "title": "Remake",
@@ -160,6 +173,19 @@
       "youtube_trailer_id": "m013fvFSPRI"
     },
     {
+      "tmdb_id": 1238735,
+      "date": "2026-07-10",
+      "title": "The Floaters",
+      "director": "Rachel Israel",
+      "studio": "Brainstorm Media",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Jackie Tohn, Sarah Podemski, Aya Cash, Seth Green",
+      "notes": "Prepare for a summer meltdown.",
+      "youtube_trailer_id": "wozim11veF4"
+    },
+    {
       "tmdb_id": 950028,
       "date": "2026-07-10",
       "title": "The Invite",
@@ -168,7 +194,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / Comedy",
-      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
+      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     },
@@ -186,14 +212,14 @@
       "youtube_trailer_id": "3eVoGaI8mpo"
     },
     {
-      "tmdb_id": 1715208,
+      "tmdb_id": null,
       "date": "2026-07-10",
-      "title": "Unknown Title",
-      "director": "Britt Bankhead",
+      "title": "The Town That Takes",
+      "director": "—",
       "studio": "Atlas Distribution Company",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Mystery",
+      "genre": "Action / Horror / Mystery / Thriller",
       "cast": "Britt Bankhead, Miles Mussenden, Grace Patterson, Mike Markoff",
       "notes": "",
       "youtube_trailer_id": null
@@ -298,7 +324,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Matt Cornett, Ramon Reed, Chris Klein, Missi Pyle",
+      "cast": "Matt Cornett, Nathan Gamble, Ramon Reed, Chris Klein",
       "notes": "Spirit Led. Court Ordered.",
       "youtube_trailer_id": "EThWaKNRky8"
     },
@@ -310,10 +336,23 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Music",
+      "genre": "Music",
       "cast": "Sia, Maddie Ziegler, Nick Lanzisera, Stephanie Mincone",
       "notes": "",
       "youtube_trailer_id": "T6ZStfsJQF0"
+    },
+    {
+      "tmdb_id": 1220240,
+      "date": "2026-07-24",
+      "title": "A Life Illuminated",
+      "director": "Tasha Van Zandt",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Adventure",
+      "cast": "Edith Widder",
+      "notes": "",
+      "youtube_trailer_id": "zAhjypVft-4"
     },
     {
       "tmdb_id": 1376838,
@@ -365,7 +404,7 @@
       "genre": "Horror / Comedy",
       "cast": "Lil Rel Howery, Tiffany Haddish, Andrew Bachelor, Karlous Miller",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "M327gG_6mC0"
     },
     {
       "tmdb_id": null,
@@ -394,6 +433,19 @@
       "youtube_trailer_id": "Xt3zQ8v2pzk"
     },
     {
+      "tmdb_id": 1189807,
+      "date": "2026-07-24",
+      "title": "Swallowtail & Dragonfly",
+      "director": "Julia Jay Pierrepont III",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Vanessa Yao, Vivian Dawson, Albert Lew",
+      "notes": "",
+      "youtube_trailer_id": "mYW3M6urtm8"
+    },
+    {
       "tmdb_id": 1715914,
       "date": "2026-07-28",
       "title": "WHAM! 10 Days in China",
@@ -405,6 +457,32 @@
       "cast": "George Michael, Andrew Ridgeley",
       "notes": "",
       "youtube_trailer_id": "P7oAaJqqv8w"
+    },
+    {
+      "tmdb_id": 1514682,
+      "date": "2026-07-29",
+      "title": "Above and Below",
+      "director": "Jesse V. Johnson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller / Horror / Crime",
+      "cast": "Laura Marano, Christina Ochoa, Mario Tardón, Antonio Banderas",
+      "notes": "",
+      "youtube_trailer_id": "-tzywH6DVAM"
+    },
+    {
+      "tmdb_id": 1396640,
+      "date": "2026-07-30",
+      "title": "Once Upon a Time in a Cinema",
+      "director": "David Gleeson",
+      "studio": "Myriad Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Colin Morgan, Calam Lynch, Clara Crichton, India Mullen",
+      "notes": "",
+      "youtube_trailer_id": "V4g74xLfR0A"
     },
     {
       "tmdb_id": 1288059,
@@ -444,19 +522,6 @@
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
       "notes": "A brand new day starts now.",
       "youtube_trailer_id": "62bIsvRcPv0"
-    },
-    {
-      "tmdb_id": 1479481,
-      "date": "2026-07-31",
-      "title": "Terrestrial",
-      "director": "Steve Pink",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller / Science Fiction / Comedy",
-      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
-      "notes": "",
-      "youtube_trailer_id": "cD0fVpDoN8Y"
     },
     {
       "tmdb_id": 1620313,

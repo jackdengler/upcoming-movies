@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -13,7 +13,7 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Denée Benton, Mars Storm Rucker, Dezi Bing, Sasha Compère",
-      "notes": "",
+      "notes": "Find your family.",
       "youtube_trailer_id": null
     },
     {
@@ -69,6 +69,19 @@
       "youtube_trailer_id": "vMKoyngrqBg"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-08-07",
+      "title": "Mr. Hero",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Family",
+      "cast": "Thai Hoa, Vo Tan Phat, Doan The Vinh, Phuong Thanh",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1212934,
       "date": "2026-08-07",
       "title": "Olmo",
@@ -79,7 +92,7 @@
       "genre": "Comedy / Drama",
       "cast": "Aivan Uttapa, Gustavo Sánchez Parra, Diego Olmedo, Andrea Suarez Paz",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "Gw9OKjNP1Jw"
     },
     {
       "tmdb_id": null,
@@ -121,19 +134,6 @@
       "youtube_trailer_id": "j9TsiTgYZGw"
     },
     {
-      "tmdb_id": 1329016,
-      "date": "2026-08-07",
-      "title": "Tony",
-      "director": "Matt Johnson",
-      "studio": "A24",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Comedy",
-      "cast": "Dominic Sessa, Emilia Jones, Leo Woodall, Antonio Banderas",
-      "notes": "\"I was — to be frank — a spoiled, miserable, narcissistic, self-destructive and thoughtless young lout, and badly in need of a good ass-kicking.\"",
-      "youtube_trailer_id": "k1MVnzd2aVc"
-    },
-    {
       "tmdb_id": null,
       "date": "2026-08-07",
       "title": "Untitled Disney",
@@ -149,7 +149,7 @@
     {
       "tmdb_id": 730558,
       "date": "2026-08-10",
-      "title": "Ambleside",
+      "title": "Prisoners of Paradise",
       "director": "Mitch Jenkins",
       "studio": "N/A",
       "budget_usd": null,
@@ -355,22 +355,22 @@
       "youtube_trailer_id": "PAUEwUhAjzg"
     },
     {
-      "tmdb_id": 1000866,
+      "tmdb_id": 1329016,
       "date": "2026-08-21",
-      "title": "The Marching Band",
-      "director": "Emmanuel Courcol",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": 6100000,
+      "title": "Tony",
+      "director": "Matt Johnson",
+      "studio": "A24",
+      "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Drama / Music",
-      "cast": "Benjamin Lavernhe, Pierre Lottin, Sarah Suco, Clémence Massart-Weit",
-      "notes": "",
-      "youtube_trailer_id": "bhfCXPYIKs8"
+      "genre": "Drama / Comedy",
+      "cast": "Dominic Sessa, Emilia Jones, Leo Woodall, Antonio Banderas",
+      "notes": "\"I was — to be frank — a spoiled, miserable, narcissistic, self-destructive and thoughtless young lout, and badly in need of a good ass-kicking.\"",
+      "youtube_trailer_id": "k1MVnzd2aVc"
     },
     {
       "tmdb_id": 1618403,
       "date": "2026-08-23",
-      "title": "40 Years of Fuckin Up",
+      "title": "40 Years of Fuckin' Up",
       "director": "James Buddy Day",
       "studio": "Iconic Events Releasing",
       "budget_usd": null,
@@ -456,7 +456,7 @@
       "genre": "Drama / Mystery",
       "cast": "Jorrybell Agoto, Teroy Guzman, Nour Hooshmand, Carlos Siguion-Reyna",
       "notes": "",
-      "youtube_trailer_id": "EAZvq-DCJ1I"
+      "youtube_trailer_id": "Mq-7rJqNJ4I"
     },
     {
       "tmdb_id": 1339588,
@@ -534,7 +534,33 @@
       "genre": "Adventure / Science Fiction / Thriller",
       "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
-      "youtube_trailer_id": "sVCrTJdNtSs"
+      "youtube_trailer_id": "-xSxaE1ClEE"
+    },
+    {
+      "tmdb_id": 1000866,
+      "date": "2026-08-28",
+      "title": "The Marching Band",
+      "director": "Emmanuel Courcol",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": 6100000,
+      "release_type": "wide",
+      "genre": "Comedy / Drama / Music",
+      "cast": "Benjamin Lavernhe, Pierre Lottin, Sarah Suco, Clémence Massart-Weit",
+      "notes": "",
+      "youtube_trailer_id": "bhfCXPYIKs8"
+    },
+    {
+      "tmdb_id": 1490214,
+      "date": "2026-08-28",
+      "title": "The Sun Never Sets",
+      "director": "Joe Swanberg",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Romance / Drama / Comedy",
+      "cast": "Dakota Fanning, Jake Johnson, Cory Michael Smith, Debby Ryan",
+      "notes": "",
+      "youtube_trailer_id": "nTIfzXx8nJY"
     },
     {
       "tmdb_id": null,

@@ -1,8 +1,21 @@
 {
   "month": "November 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1585239,
+      "date": "2026-11-06",
+      "title": "Club Kid",
+      "director": "Jordan Firstman",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Jordan Firstman, Cara Delevingne, Diego Calva, Reggie Absolom",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1381071,
       "date": "2026-11-06",
@@ -77,7 +90,7 @@
       "budget_usd": 15000000,
       "release_type": "limited",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Adam Driver, Scarlett Johansson, Miles Teller, Gavin Goudey",
+      "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -102,10 +115,10 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama",
+      "genre": "Drama / History",
       "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "His whole life was a million-to-one shot.",
+      "youtube_trailer_id": "V_g_Ut0jO-0"
     },
     {
       "tmdb_id": 1300968,
@@ -129,7 +142,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Romance",
-      "cast": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson",
+      "cast": "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo",
       "notes": "The circle of trust just got bigger.",
       "youtube_trailer_id": "vyISuWUWcFs"
     },

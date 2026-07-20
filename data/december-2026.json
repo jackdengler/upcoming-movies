@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1452168,
+      "date": "2026-12-04",
+      "title": "Behemoth!",
+      "director": "Tony Gilroy",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Music / Drama",
+      "cast": "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett",
+      "notes": "A life. In pieces.",
+      "youtube_trailer_id": "TrMGdrCJ5Ck"
     },
     {
       "tmdb_id": 1078446,
@@ -92,7 +105,7 @@
       "genre": "Fantasy / Adventure / Comedy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
       "notes": "",
-      "youtube_trailer_id": "2QKg5SZ_35I"
+      "youtube_trailer_id": "b0bx1eHicS0"
     },
     {
       "tmdb_id": 1372443,

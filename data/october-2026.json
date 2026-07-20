@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -22,12 +22,12 @@
       "title": "Digger",
       "director": "Alejandro G. Iñárritu",
       "studio": "Warner Bros.",
-      "budget_usd": 200000000,
+      "budget_usd": 125000000,
       "release_type": "wide",
-      "genre": "Comedy / Drama",
-      "cast": "Tom Cruise, Sandra Hüller, John Goodman, Riz Ahmed",
+      "genre": "Comedy",
+      "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
       "notes": "A man. A plan. A meltdown.",
-      "youtube_trailer_id": "Pd4Olzi0HEc"
+      "youtube_trailer_id": "qORTe1wW3Wg"
     },
     {
       "tmdb_id": 1283515,
@@ -66,7 +66,7 @@
       "genre": "Drama",
       "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
       "notes": "",
-      "youtube_trailer_id": "rjf2gfKidO0"
+      "youtube_trailer_id": "0gdRZZVoinM"
     },
     {
       "tmdb_id": 1400837,
@@ -78,7 +78,7 @@
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Jessica Chastain, Jay Duplass, Dichen Lachman, Arabella Olivia Clark",
-      "notes": "",
+      "notes": "Your mommy won't save you.",
       "youtube_trailer_id": null
     },
     {
@@ -180,7 +180,7 @@
       "studio": "20th Century Studios",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Thriller",
+      "genre": "Thriller / Horror",
       "cast": "Austin Abrams, Josh Brolin, Elisabeth Shue, John Ortiz",
       "notes": "Hold your breath.",
       "youtube_trailer_id": "67ho3OxCmmM"
@@ -238,7 +238,7 @@
       "youtube_trailer_id": "POneS8h1jyU"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1733243,
       "date": "2026-10-30",
       "title": "Sight & Sound Presents: JOSHUA Live!",
       "director": "—",

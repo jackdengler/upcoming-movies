@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -467,7 +467,7 @@
       "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Adam Driver, Scarlett Johansson, Miles Teller, Gavin Goudey",
+      "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -505,7 +505,7 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Drama",
+      "genre": "Animation / Drama / Comedy",
       "cast": "Meriem Bennani, Orian Barki, Fayçal Azizi, Ariana Faye Allensworth",
       "notes": "\"What's on your heart?\"",
       "youtube_trailer_id": "-m302Kq_FG4"
@@ -531,8 +531,8 @@
       "studio": "Strand Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Laith Khalifeh, Matthew Risch, Joel Isaac, Ezriel Kornel",
+      "genre": "Drama / Romance",
+      "cast": "Laith Khalifeh, Joél Isaac, Ezriel Kornel, Céline Costa",
       "notes": "",
       "youtube_trailer_id": "I6a_E_YVPi8"
     },

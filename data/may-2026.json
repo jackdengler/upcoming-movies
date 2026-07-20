@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -14,7 +14,7 @@
       "genre": "Animation / Comedy / Drama / Family / Science Fiction",
       "cast": "Seth Rogen, Gaten Matarazzo, Steve Buscemi, Glenn Close",
       "notes": "It's time for these animals to stand and fight.",
-      "youtube_trailer_id": "NN6J7l6ulYk"
+      "youtube_trailer_id": "X1b6_699HqY"
     },
     {
       "tmdb_id": 1115030,
@@ -38,7 +38,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Romance / Drama",
-      "cast": "Eve Ryan, Mikel Niso, Luis Zahera, Esther Acebo",
+      "cast": "Eve Ryan, Mikel Niso, Esther Acebo, Luis Zahera",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Javier Chocobar, Comunidad Chuschagasta",
+      "cast": "Comunidad Chuschagasta, Javier Chocobar",
       "notes": "",
       "youtube_trailer_id": "yPQRXpzx55o"
     },
@@ -129,7 +129,7 @@
       "budget_usd": 100000000,
       "release_type": "wide",
       "genre": "Comedy / Drama",
-      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+      "cast": "Anne Hathaway, Meryl Streep, Emily Blunt, Stanley Tucci",
       "notes": "Icons reign forever.",
       "youtube_trailer_id": "PMd1at7OwiE"
     },
@@ -558,7 +558,7 @@
       "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
-      "cast": "Lou Llobell, Jacob Scipio, Melissa Leo, Joseph Lopez",
+      "cast": "Jacob Scipio, Lou Llobell, Melissa Leo, Joseph Lopez",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"
     },
@@ -571,7 +571,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Trevorr Surej, Midori Francis, Danielle Macdonald, Madeleine Madden",
+      "cast": "Midori Francis, Danielle Macdonald, Madeleine Madden, Joseph Baldwin",
       "notes": "What's eating you?",
       "youtube_trailer_id": "uIY13LD3RUY"
     },
@@ -729,7 +729,7 @@
       "genre": "Documentary",
       "cast": "Andri Snær Magnason",
       "notes": "How do you say goodbye to something you never thought you could lose?",
-      "youtube_trailer_id": "6oR0iVwdY7M"
+      "youtube_trailer_id": "UnQPjDyh4PI"
     },
     {
       "tmdb_id": 1340206,

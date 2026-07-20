@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Jean-Pierre Dardenne, Luc Dardenne",
+      "director": "Luc Dardenne, Jean-Pierre Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -219,7 +219,7 @@
       "studio": "Focus Features",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Drama / Romance / History",
+      "genre": "Drama / Romance",
       "cast": "Jessie Buckley, Paul Mescal, Emily Watson, Joe Alwyn",
       "notes": "Keep your heart open.",
       "youtube_trailer_id": "xYcgQMxQwmk"
@@ -475,7 +475,7 @@
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
+      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",

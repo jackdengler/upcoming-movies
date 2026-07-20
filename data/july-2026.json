@@ -1,13 +1,13 @@
 {
   "month": "July 2026",
-  "updated": "2026-07-13",
+  "updated": "2026-07-20",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1315772,
       "date": "2026-07-01",
       "title": "Minions & Monsters",
-      "director": "Pierre Coffin, James",
+      "director": "Pierre Coffin",
       "studio": "Universal Pictures",
       "budget_usd": 85000000,
       "release_type": "wide",
@@ -82,6 +82,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1310573,
+      "date": "2026-07-10",
+      "title": "Barrio Triste",
+      "director": "STILLZ",
+      "studio": "Film Movement",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Drama",
+      "cast": "Juan Pablo Baena, Samuel Velazquez, Tomas Tinoco Higuita, Bryan Erlin Garcia",
+      "notes": "",
+      "youtube_trailer_id": "pAbGrYP8Ooo"
+    },
+    {
       "tmdb_id": 1604133,
       "date": "2026-07-10",
       "title": "Crossing",
@@ -116,7 +129,7 @@
       "budget_usd": 3500000,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Zoey Deutch, Jon Hamm, John Slattery, Ben Wang",
+      "cast": "Zoey Deutch, John Slattery, Ken Marino, Miles Gutierrez-Riley",
       "notes": "It's hammer time... who's your celebrity sex pass?",
       "youtube_trailer_id": "GEbaLieo_Kw"
     },
@@ -129,7 +142,7 @@
       "budget_usd": 250000000,
       "release_type": "wide",
       "genre": "Family / Fantasy / Comedy / Adventure",
-      "cast": "Catherine Lagaʻaia, Dwayne Johnson, John Tui, Frankie Adams",
+      "cast": "Catherine Lagaʻaia, Dwayne Johnson, Rena Owen, John Tui",
       "notes": "The ocean chose her for a reason.",
       "youtube_trailer_id": "EEz5xbzYPKI"
     },
@@ -238,17 +251,43 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1469511,
+      "date": "2026-07-17",
+      "title": "A Year in London",
+      "director": "Flaminia Graziadei",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Romance / Drama",
+      "cast": "Melanie Liburd, Nina Pons, Matteo Bassi, Clementina Aliberti",
+      "notes": "",
+      "youtube_trailer_id": "K6SXLHDKnkI"
+    },
+    {
       "tmdb_id": 1596330,
       "date": "2026-07-17",
       "title": "American Pachuco: The Legend of Luis Valdez",
       "director": "David Alvarado",
-      "studio": "N/A",
+      "studio": "Insignia Films",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Luis Valdez, Edward James Olmos, Dolores Huerta, Cheech Marin",
       "notes": "",
       "youtube_trailer_id": "MXESsS8Uskc"
+    },
+    {
+      "tmdb_id": 1727780,
+      "date": "2026-07-17",
+      "title": "Borderline",
+      "director": "Ryan Jordan",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller",
+      "cast": "Marissa Arguijo, Michael-Eoin Stanney, Marcus Jean Pirae, Dominic Hernandez",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1451148,
@@ -316,6 +355,19 @@
       "youtube_trailer_id": "AyIZ9tiiN8I"
     },
     {
+      "tmdb_id": 1248230,
+      "date": "2026-07-20",
+      "title": "Splash City",
+      "director": "Alex Ferrufino",
+      "studio": "Lionsgate Premiere",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "T.J. Atoms, Reed Shannon, Christopher Ammanuel, Zach Sowers",
+      "notes": "",
+      "youtube_trailer_id": "Vrze2vx3avI"
+    },
+    {
       "tmdb_id": 1479537,
       "date": "2026-07-22",
       "title": "Bad Counselors",
@@ -327,6 +379,19 @@
       "cast": "Matt Cornett, Nathan Gamble, Ramon Reed, Chris Klein",
       "notes": "Spirit Led. Court Ordered.",
       "youtube_trailer_id": "EThWaKNRky8"
+    },
+    {
+      "tmdb_id": 1732977,
+      "date": "2026-07-23",
+      "title": "Pillars of Power the Hidden Secret Behind Achieving Greatness",
+      "director": "Dawna Campbell, Moe Rock",
+      "studio": "Atlas Distribution Company",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Jack Canfield, Rev. Michael Beckwith, Lisa Nichols, Dr. Joe Vitale",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1712586,
@@ -415,7 +480,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
-      "cast": "Havana Rose Liu, Sophie Thatcher, Charles Melton, Dougray Scott",
+      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Dougray Scott",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -498,6 +563,19 @@
       "youtube_trailer_id": "kjkTmTmC1iA"
     },
     {
+      "tmdb_id": 1330271,
+      "date": "2026-07-31",
+      "title": "Jimmy",
+      "director": "Yashaddai Owens",
+      "studio": "Strand Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "History / Drama",
+      "cast": "Benny O. Arthur",
+      "notes": "",
+      "youtube_trailer_id": "uRECkw_63rg"
+    },
+    {
       "tmdb_id": 1421642,
       "date": "2026-07-31",
       "title": "Middle Life",
@@ -516,11 +594,11 @@
       "title": "Spider-Man: Brand New Day",
       "director": "Destin Daniel Cretton",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
+      "budget_usd": 275000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
-      "notes": "A brand new day starts now.",
+      "notes": "The world may have forgotten Peter Parker, but he hasn’t forgotten them.",
       "youtube_trailer_id": "62bIsvRcPv0"
     },
     {

@@ -2148,6 +2148,22 @@ function marksByField(level, field) {
   return map;
 }
 
+// Drop booked/watched entries that don't belong to the calendar's current
+// `activeKind`, so the Calendar stays strictly one-kind-at-a-time: New
+// Releases hides re-release screenings, Rereleases hides new-release rows.
+// Screening keys are `rep:…`; release keys are `tmdb:…` / `ttl:…`.
+function marksForActiveKind(map) {
+  const wantScreening = activeKind === "rereleases";
+  const out = new Map();
+  for (const [date, entries] of map) {
+    const kept = entries.filter(
+      ({ key }) => key.startsWith("rep:") === wantScreening
+    );
+    if (kept.length) out.set(date, kept);
+  }
+  return out;
+}
+
 function topLevelForDate(items) {
   const priority = { watched: 0, booked: 1, must: 2, likely: 3, potential: 4, not: 5 };
   let best = null;
@@ -2223,8 +2239,8 @@ function renderCalendarTab(bundles) {
   const prevMonthDays = new Date(year, monthIdx, 0).getDate();
   const byDate = itemsByDate(bundles);
   const byKey = movieIndex(bundles);
-  const bookedMap = marksByField("booked", "booked_date");
-  const watchedMap = marksByField("watched", "watched_date");
+  const bookedMap = marksForActiveKind(marksByField("booked", "booked_date"));
+  const watchedMap = marksForActiveKind(marksByField("watched", "watched_date"));
 
   const cellCount = Math.ceil((firstDow + daysInMonth) / 7) * 7;
   for (let i = 0; i < cellCount; i++) {

@@ -2087,7 +2087,10 @@ function itemsByDate(bundles) {
     }
   } else {
     for (const s of repertoryState.data?.screenings || []) {
-      if (getRepInterest(repTitleMonthId(s)) !== "yes") continue;
+      // Show every re-release screening on the calendar. (Previously limited
+      // to runs marked "Interested," which hid most of the data.) Still honor
+      // the Hide-skipped toggle by dropping runs explicitly marked "not."
+      if (hideSkipped && getRepInterest(repTitleMonthId(s)) === "no") continue;
       if (!map.has(s.date)) map.set(s.date, []);
       map.get(s.date).push({ ...s, _kind: "screening" });
     }

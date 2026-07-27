@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Drama / Science Fiction / Thriller",
+      "genre": "Animation / Drama / Science Fiction / Thriller / Horror",
       "cast": "Lizzie Freeman, Alex Rochon, Michael Kovach, Amanda Hufford",
       "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
       "youtube_trailer_id": "vNGAtHBhdiM"
@@ -50,7 +50,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Drama / Romance",
+      "genre": "Crime / Drama / Romance / Thriller",
       "cast": "Samara Weaving, Kyle Gallner, Kyra Sedgwick, Jon Gries",
       "notes": "See the angle.",
       "youtube_trailer_id": "fNdC6SJ-TxY"
@@ -69,6 +69,19 @@
       "youtube_trailer_id": "oZWDFelquX4"
     },
     {
+      "tmdb_id": 1629350,
+      "date": "2026-06-05",
+      "title": "Jack Johnson: SURFILMUSIC",
+      "director": "Emmett Malloy",
+      "studio": "Evan Saxon Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Jack Johnson, Kim Johnson, Chris Malloy, Emmett Malloy",
+      "notes": "",
+      "youtube_trailer_id": "f6VztuVWGI0"
+    },
+    {
       "tmdb_id": 454639,
       "date": "2026-06-05",
       "title": "Masters of the Universe",
@@ -78,7 +91,7 @@
       "release_type": "wide",
       "genre": "Action / Fantasy / Science Fiction",
       "cast": "Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto",
-      "notes": "Witness how he became He-Man.",
+      "notes": "Legends aren't born, they're forged.",
       "youtube_trailer_id": "rJSmz-zhDxE"
     },
     {
@@ -115,7 +128,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Comedy / Horror",
+      "genre": "Comedy",
       "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "cGgWAHXuTKc"

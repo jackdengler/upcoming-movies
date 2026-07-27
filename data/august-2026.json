@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -17,6 +17,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1477483,
+      "date": "2026-08-06",
+      "title": "Snoop",
+      "director": "Craig Brewer",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Music",
+      "cast": "Jonathan Daviss",
+      "notes": "Drop it like it's hot",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1596318,
       "date": "2026-08-07",
       "title": "Cookie Queens",
@@ -28,6 +41,19 @@
       "cast": "Ara, Shannon Elizabeth, Nikki, Olive",
       "notes": "Big dreams start small.",
       "youtube_trailer_id": "nnSQS43Eil8"
+    },
+    {
+      "tmdb_id": 1501451,
+      "date": "2026-08-07",
+      "title": "Do Us Part",
+      "director": "Reed Arnold",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Romance / Drama",
+      "cast": "Kelly Russo, Travis Laughlin, Reed Arnold, Ashley Renee Scott",
+      "notes": "Carry torches long enough, someone's getting burned",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1477712,
@@ -95,17 +121,17 @@
       "youtube_trailer_id": "Gw9OKjNP1Jw"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1433367,
       "date": "2026-08-07",
       "title": "One Night Only",
-      "director": "—",
+      "director": "Will Gluck",
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
+      "genre": "Comedy / Romance",
+      "cast": "Monica Barbaro, Callum Turner, Maya Hawke, Julia Fox",
+      "notes": "12 hours can change everything.",
+      "youtube_trailer_id": "AvKoSR3O4NQ"
     },
     {
       "tmdb_id": 675871,
@@ -160,6 +186,32 @@
       "youtube_trailer_id": "OJ9H4m9VY0Q"
     },
     {
+      "tmdb_id": 1731343,
+      "date": "2026-08-13",
+      "title": "Namaslay",
+      "director": "Rish Arhant-Sudhir, Kanish Arhant-Sudhir",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "Kiru Srikanth, Angela Ashton, Alicia Mitchell-Mangual, Usha Krishnan",
+      "notes": "",
+      "youtube_trailer_id": "f8N0ZWgUoIE"
+    },
+    {
+      "tmdb_id": 1596332,
+      "date": "2026-08-14",
+      "title": "American Doctor",
+      "director": "Poh Si Teng",
+      "studio": "Watermelon Pictures",
+      "budget_usd": 875000,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Thaer Ahmad, Mark Perlmutter, Feroze Sidhwa",
+      "notes": "Do no harm.",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1706696,
       "date": "2026-08-14",
       "title": "Elijah Peel",
@@ -173,6 +225,19 @@
       "youtube_trailer_id": "5LtxY2e7h5E"
     },
     {
+      "tmdb_id": 1422011,
+      "date": "2026-08-14",
+      "title": "It Ends",
+      "director": "Alexander Ullom",
+      "studio": "Neon",
+      "budget_usd": 50000,
+      "release_type": "limited",
+      "genre": "Horror / Mystery",
+      "cast": "Noah Toth, Mitchell Cole, Phinehas Yoon, Akira Jackson",
+      "notes": "Some wrong turns last forever.",
+      "youtube_trailer_id": "zFszhQLMNXU"
+    },
+    {
       "tmdb_id": 1185806,
       "date": "2026-08-14",
       "title": "PAW Patrol: The Dino Movie",
@@ -182,7 +247,7 @@
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family",
       "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
-      "notes": "An adventure of prehistoric pawportions.",
+      "notes": "Adventure reaches new heights.",
       "youtube_trailer_id": "xgI5iYmOf5Q"
     },
     {
@@ -221,8 +286,8 @@
       "release_type": "wide",
       "genre": "Science Fiction / Mystery / Thriller",
       "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
-      "notes": "Survive the summer.",
-      "youtube_trailer_id": "3oB9AxspVow"
+      "notes": "Where goes the neighborhood.",
+      "youtube_trailer_id": "u4tgctWuHc0"
     },
     {
       "tmdb_id": 1124142,
@@ -298,7 +363,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror / Thriller",
-      "cast": "Amelia Eve, Brandon Perea, Lin Shaye, Maisie Richardson-Sellers",
+      "cast": "Amelia Eve, Island Austin, Lin Shaye, Sam Spruell",
       "notes": "Evil found a way out.",
       "youtube_trailer_id": "jxU8FU3o75A"
     },
@@ -313,7 +378,7 @@
       "genre": "Action / Thriller",
       "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
       "notes": "There's blood in the water.",
-      "youtube_trailer_id": "MPyXlWTZ32E"
+      "youtube_trailer_id": "2Iqvbe98Gb4"
     },
     {
       "tmdb_id": 1144965,
@@ -363,7 +428,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / Comedy",
-      "cast": "Dominic Sessa, Emilia Jones, Leo Woodall, Antonio Banderas",
+      "cast": "Dominic Sessa, Antonio Banderas, Emilia Jones, Leo Woodall",
       "notes": "\"I was — to be frank — a spoiled, miserable, narcissistic, self-destructive and thoughtless young lout, and badly in need of a good ass-kicking.\"",
       "youtube_trailer_id": "k1MVnzd2aVc"
     },
@@ -377,6 +442,19 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Fat Mike, El Hefe, Eric Melvin, Erik Sandin",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1715598,
+      "date": "2026-08-23",
+      "title": "Pulp: What Do You Do for an Encore?",
+      "director": "Garth Jennings",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Jarvis Cocker, Candida Doyle, Nick Banks, Mark Webber",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -401,10 +479,10 @@
       "studio": "Roadside Attractions",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Comedy",
+      "genre": "Horror",
       "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
       "notes": "",
-      "youtube_trailer_id": "0mil0YgOtu8"
+      "youtube_trailer_id": "2sBRb7Mbg0A"
     },
     {
       "tmdb_id": 1120556,
@@ -427,7 +505,7 @@
       "studio": "Well Go USA Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Thriller / Horror",
+      "genre": "Action / Horror / Science Fiction",
       "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",
       "notes": "Survive the hive.",
       "youtube_trailer_id": "LW6dpj1uCK8"
@@ -440,10 +518,10 @@
       "studio": "Ketchup Entertainment",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Comedy / Adventure / Mystery / Family",
+      "genre": "Comedy / Adventure / Family",
       "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
       "notes": "The movie ACME doesn't want you to see.",
-      "youtube_trailer_id": "H-43VeYGiPM"
+      "youtube_trailer_id": "kMsiD1Nky5I"
     },
     {
       "tmdb_id": 1417935,

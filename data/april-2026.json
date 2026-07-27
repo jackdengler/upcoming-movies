@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -66,7 +66,7 @@
       "genre": "Drama / Comedy",
       "cast": "Wang Shang, Zhang Chuwen, Zhang Yanrong, Zhang Caixia",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "FTmsX3_n_Rs"
     },
     {
       "tmdb_id": 1172265,
@@ -180,7 +180,7 @@
       "studio": "Neon",
       "budget_usd": 1400000,
       "release_type": "limited",
-      "genre": "Horror / Mystery",
+      "genre": "Horror / Mystery / Thriller",
       "cast": "Kazunari Ninomiya, Yamato Kochi, Naru Asanuma, Kotone Hanase",
       "notes": "Turn back.",
       "youtube_trailer_id": "zzEDWwhtAHc"
@@ -661,7 +661,7 @@
       "studio": "Vertical Entertainment",
       "budget_usd": 150000000,
       "release_type": "wide",
-      "genre": "History / War / Action / Drama",
+      "genre": "History / War / Action",
       "cast": "Anthony Mackie, Aiysha Hart, Sami Bouajila, Sharlto Copley",
       "notes": "One warrior must unite them all.",
       "youtube_trailer_id": "fraAGOuT3sA"

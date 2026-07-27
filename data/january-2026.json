@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -167,7 +167,7 @@
       "studio": "Sony Pictures Classics",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Mystery / Crime",
+      "genre": "Mystery / Crime / Drama",
       "cast": "Jodie Foster, Daniel Auteuil, Virginie Efira, Mathieu Amalric",
       "notes": "",
       "youtube_trailer_id": "2JabG5C6IU8"
@@ -475,7 +475,7 @@
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
+      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",

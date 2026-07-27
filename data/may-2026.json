@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Comunidad Chuschagasta, Javier Chocobar",
+      "cast": "Javier Chocobar, Comunidad Chuschagasta",
       "notes": "",
       "youtube_trailer_id": "yPQRXpzx55o"
     },
@@ -248,7 +248,7 @@
       "genre": "Action / Fantasy / Adventure",
       "cast": "Karl Urban, Adeline Rudolph, Ludi Lin, Jessica McNamee",
       "notes": "Their fight. Our future.",
-      "youtube_trailer_id": "zva2PQ-ud5Y"
+      "youtube_trailer_id": "qGyIEis2T2o"
     },
     {
       "tmdb_id": 1409853,
@@ -555,7 +555,7 @@
       "title": "Passenger",
       "director": "André Øvredal",
       "studio": "Paramount Pictures",
-      "budget_usd": 15000000,
+      "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Jacob Scipio, Lou Llobell, Melissa Leo, Joseph Lopez",
@@ -610,7 +610,7 @@
       "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
-      "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett",
+      "cast": "Chiwetel Ejiofor, Renate Reinsve, Finn Bennett, Lukita Maxwell",
       "notes": "See how far it goes.",
       "youtube_trailer_id": "0HjdiohVOik"
     },

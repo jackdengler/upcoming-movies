@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Pedro Solís, Juan Jesús García Galocha",
+      "director": "Juan Jesús García Galocha, Pedro Solís",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -284,7 +284,7 @@
       "studio": "Neon",
       "budget_usd": 1200000,
       "release_type": "limited",
-      "genre": "Comedy / Science Fiction / Adventure / Music",
+      "genre": "Comedy / Science Fiction / Adventure",
       "cast": "Matt Johnson, Jay McCarrol, Ben Petrie, Ethan Eng",
       "notes": "One... last... plan.",
       "youtube_trailer_id": "y2K9ccMREOI"
@@ -586,7 +586,7 @@
       "genre": "Drama / Comedy / Science Fiction",
       "cast": "Sean Astin, Myles Erlick, Ali Astin, Jamie Alexander",
       "notes": "",
-      "youtube_trailer_id": "PG1RHVZkkbg"
+      "youtube_trailer_id": "2sVmA1Tl_vs"
     },
     {
       "tmdb_id": 1462229,

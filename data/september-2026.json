@@ -1,13 +1,13 @@
 {
   "month": "September 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Peter Spierig, Michael Spierig",
+      "director": "Michael Spierig, Peter Spierig",
       "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "wide",
@@ -56,6 +56,19 @@
       "youtube_trailer_id": "389ClHbs25c"
     },
     {
+      "tmdb_id": 1671548,
+      "date": "2026-09-04",
+      "title": "Dear You",
+      "director": "Lan Hongchun",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Family / Comedy",
+      "cast": "Li Sitong, Wang Yantong, Wu Shaoqing, Zheng Runqi",
+      "notes": "Be a person of integrity and loyalty.",
+      "youtube_trailer_id": "qIjOCYltUqA"
+    },
+    {
       "tmdb_id": 1417935,
       "date": "2026-09-04",
       "title": "Filipiñana",
@@ -90,7 +103,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Anais Salazar, Roberto Escobar, Jimmy Dux",
+      "cast": "Anais Salazar, Jimmy Dux, Roberto Escobar",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -119,19 +132,6 @@
       "cast": "Dakota Fanning, Jake Johnson, Cory Michael Smith, Debby Ryan",
       "notes": "",
       "youtube_trailer_id": "nTIfzXx8nJY"
-    },
-    {
-      "tmdb_id": 1354301,
-      "date": "2026-09-08",
-      "title": "You Had to Be There: How the Toronto Godspell Ignited the Comedy Revolution, Spread Love & Overalls, and Created a Community That Changed the World (in a Canadian Kind of Way)",
-      "director": "Nick Davis",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary / Comedy",
-      "cast": "Martin Short, Eugene Levy, Victor Garber, Andrea Martin",
-      "notes": "",
-      "youtube_trailer_id": "ZOsuDPzCTRg"
     },
     {
       "tmdb_id": 1058424,
@@ -207,9 +207,9 @@
       "budget_usd": 32000000,
       "release_type": "wide",
       "genre": "Action / Thriller",
-      "cast": "Liam Neeson, Wes Chatham, Titus Welliver, Zachary Levi",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Zachary Levi, Liam Neeson, Wes Chatham, Titus Welliver",
+      "notes": "Settle the score.",
+      "youtube_trailer_id": "NYC0v8xqQdM"
     },
     {
       "tmdb_id": 977942,
@@ -219,7 +219,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Drama / History / War",
+      "genre": "Drama / Action / History / War",
       "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
@@ -273,8 +273,8 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction / Thriller",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
-      "notes": "A new era of evil.",
-      "youtube_trailer_id": "SJPu1spHqfk"
+      "notes": "No Sweat.",
+      "youtube_trailer_id": "mNd1gb19A-c"
     },
     {
       "tmdb_id": 1477104,
@@ -368,7 +368,7 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1736129,
       "date": "2026-09-25",
       "title": "Deep in the Heart II: Texas Rivers",
       "director": "—",
@@ -407,6 +407,19 @@
       "youtube_trailer_id": "JFQcDFhNh4o"
     },
     {
+      "tmdb_id": 1375441,
+      "date": "2026-09-25",
+      "title": "Primetime",
+      "director": "Lance Oppenheim",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Robert Pattinson, Bokeem Woodbine, Merritt Wever, Skyler Gisondo",
+      "notes": "Are you ready to make television history?",
+      "youtube_trailer_id": "Yrfrf53ttYY"
+    },
+    {
       "tmdb_id": 1554956,
       "date": "2026-09-25",
       "title": "The Incomer",
@@ -430,7 +443,33 @@
       "genre": "Drama / Comedy",
       "cast": "Mimi Davila, Rutanya Alda, Max Rosen, Ikechukwu Ufomadu",
       "notes": "",
-      "youtube_trailer_id": "W-gwE_uORMI"
+      "youtube_trailer_id": "4YamxsIqeRI"
+    },
+    {
+      "tmdb_id": 1562777,
+      "date": "2026-09-25",
+      "title": "The Stunt Driver",
+      "director": "Michael Dowse",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Comedy / Drama",
+      "cast": "Jay Baruchel, Ed Helms, Ben Foster, Laurence Leboeuf",
+      "notes": "",
+      "youtube_trailer_id": "dcbRqIuFAiE"
+    },
+    {
+      "tmdb_id": 1354301,
+      "date": "2026-09-25",
+      "title": "You Had to Be There: How the Toronto Godspell Ignited the Comedy Revolution, Spread Love & Overalls, and Created a Community That Changed the World (in a Canadian Kind of Way)",
+      "director": "Nick Davis",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary / Comedy",
+      "cast": "Martin Short, Eugene Levy, Victor Garber, Andrea Martin",
+      "notes": "",
+      "youtube_trailer_id": "kWNj0ZgfgDk"
     },
     {
       "tmdb_id": 1437396,

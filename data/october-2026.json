@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 125000000,
       "release_type": "wide",
-      "genre": "Comedy",
+      "genre": "Drama / Comedy",
       "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
       "notes": "A man. A plan. A meltdown.",
       "youtube_trailer_id": "qORTe1wW3Wg"
@@ -69,6 +69,19 @@
       "youtube_trailer_id": "0gdRZZVoinM"
     },
     {
+      "tmdb_id": 1381221,
+      "date": "2026-10-09",
+      "title": "Misty Green",
+      "director": "Chris Rock",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Rosalind Eleazar, Adam Driver, Daniel Kaluuya, Anna Kendrick",
+      "notes": "",
+      "youtube_trailer_id": "ACaWuqeLpSk"
+    },
+    {
       "tmdb_id": 1400837,
       "date": "2026-10-09",
       "title": "Other Mommy",
@@ -77,9 +90,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Jessica Chastain, Jay Duplass, Dichen Lachman, Arabella Olivia Clark",
+      "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
       "notes": "Your mommy won't save you.",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "bEpTgowZ1dI"
     },
     {
       "tmdb_id": 1437396,
@@ -105,7 +118,7 @@
       "genre": "Drama",
       "cast": "Mário Bregieira, Pérola Faria, Felipe Folgosi, Alex Kendrick",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "Ji9E5F1LcNw"
     },
     {
       "tmdb_id": 1596300,
@@ -186,6 +199,19 @@
       "youtube_trailer_id": "67ho3OxCmmM"
     },
     {
+      "tmdb_id": 1702350,
+      "date": "2026-10-22",
+      "title": "Fallen Angels",
+      "director": "Annette Jolles, Scott Ellis",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Rose Byrne, Kelli O'Hara, Tracee Chimo, Mark Consuelos",
+      "notes": "",
+      "youtube_trailer_id": "jX3CNE2tfUY"
+    },
+    {
       "tmdb_id": 1400940,
       "date": "2026-10-23",
       "title": "Clayface",
@@ -196,7 +222,7 @@
       "genre": "Horror / Thriller / Science Fiction",
       "cast": "Tom Rhys Harries, Naomi Ackie, Eddie Marsan, Max Minghella",
       "notes": "Look fear in the face.",
-      "youtube_trailer_id": "6IxPD-jNdwM"
+      "youtube_trailer_id": "OGO4Mqvo3jI"
     },
     {
       "tmdb_id": 858035,
@@ -234,21 +260,34 @@
       "release_type": "wide",
       "genre": "Adventure / Animation / Fantasy / Family",
       "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
-      "notes": "There are places you don’t go.",
+      "notes": "Where dark forests hide darker secrets...",
       "youtube_trailer_id": "POneS8h1jyU"
+    },
+    {
+      "tmdb_id": 1714568,
+      "date": "2026-10-30",
+      "title": "Everest: The Other Side",
+      "director": "—",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Sport",
+      "cast": "Hilaree Nelson, Jim Morrison",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1733243,
       "date": "2026-10-30",
       "title": "Sight & Sound Presents: JOSHUA Live!",
-      "director": "—",
+      "director": "Chris Wert",
       "studio": "Roadside Attractions",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Family / Musical",
+      "genre": "Music / Family",
       "cast": "Carl Anderson, Hope Klessig",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "G2UnTTQGh58"
     },
     {
       "tmdb_id": 1228314,
@@ -267,7 +306,7 @@
       "tmdb_id": 1195803,
       "date": "2026-10-30",
       "title": "Wicker",
-      "director": "Eleanor Wilson, Alex Huston Fischer",
+      "director": "Alex Huston Fischer, Eleanor Wilson",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",

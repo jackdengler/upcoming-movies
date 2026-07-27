@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -90,7 +90,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama",
-      "cast": "Juan Pablo Baena, Samuel Velazquez, Tomas Tinoco Higuita, Bryan Erlin Garcia",
+      "cast": "Juan Pablo Baena, Tomas Tinoco Higuita, Bryan Erlin Garcia, Samuel Andres Celis",
       "notes": "",
       "youtube_trailer_id": "pAbGrYP8Ooo"
     },
@@ -115,7 +115,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Souheila Yacoub, Tandi Wright, Hunter Doohan, Luciane Buchanan",
       "notes": "Every family has its demons.",
       "youtube_trailer_id": "RddZObTlmA8"
@@ -222,7 +222,7 @@
       "genre": "Western / Action / Drama",
       "cast": "Mackenzie Foy, Odeya Rush, Joe Pantoliano, Sean Bean",
       "notes": "Underestimating her is a grave mistake.",
-      "youtube_trailer_id": "3eVoGaI8mpo"
+      "youtube_trailer_id": "jSwHRzmEhBI"
     },
     {
       "tmdb_id": null,
@@ -287,7 +287,7 @@
       "genre": "Thriller",
       "cast": "Marissa Arguijo, Michael-Eoin Stanney, Marcus Jean Pirae, Dominic Hernandez",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "ORHBgSvX_24"
     },
     {
       "tmdb_id": 1451148,
@@ -368,6 +368,19 @@
       "youtube_trailer_id": "Vrze2vx3avI"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-07-21",
+      "title": "Evangelion: Death (True)² & Rebirth",
+      "director": "—",
+      "studio": "GKIDS",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1479537,
       "date": "2026-07-22",
       "title": "Bad Counselors",
@@ -376,8 +389,8 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Matt Cornett, Nathan Gamble, Ramon Reed, Chris Klein",
-      "notes": "Spirit Led. Court Ordered.",
+      "cast": "Matt Cornett, Ramon Reed, Nathan Gamble, Chris Klein",
+      "notes": "Spirit led. Court ordered.",
       "youtube_trailer_id": "EThWaKNRky8"
     },
     {
@@ -459,6 +472,19 @@
       "youtube_trailer_id": "tlF7Nk2cJi0"
     },
     {
+      "tmdb_id": 1439808,
+      "date": "2026-07-24",
+      "title": "Hadestown: The Musical",
+      "director": "Brett Sullivan",
+      "studio": "Bleecker Street Media",
+      "budget_usd": 5000000,
+      "release_type": "limited",
+      "genre": "Drama / Fantasy / Romance / Music",
+      "cast": "Reeve Carney, Eva Noblezada, André De Shields, Patrick Page",
+      "notes": "The Myth. The Musical.",
+      "youtube_trailer_id": "76Q5TWHslOE"
+    },
+    {
       "tmdb_id": 1384040,
       "date": "2026-07-24",
       "title": "Haunted Heist",
@@ -472,17 +498,30 @@
       "youtube_trailer_id": "M327gG_6mC0"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1469342,
       "date": "2026-07-24",
       "title": "Her Private Hell",
-      "director": "—",
+      "director": "Nicolas Winding Refn",
       "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Horror / Sci-Fi / Thriller",
-      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Dougray Scott",
-      "notes": "",
-      "youtube_trailer_id": null
+      "budget_usd": 6000000,
+      "release_type": "wide",
+      "genre": "Science Fiction / Horror / Thriller",
+      "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth",
+      "notes": "Revenge wears leather.",
+      "youtube_trailer_id": "C7E-0t1TfzM"
+    },
+    {
+      "tmdb_id": 87513,
+      "date": "2026-07-24",
+      "title": "Motor City",
+      "director": "Potsy Ponciroli",
+      "studio": "IFC Films",
+      "budget_usd": 30000000,
+      "release_type": "wide",
+      "genre": "Action / Thriller / Crime",
+      "cast": "Alan Ritchson, Shailene Woodley, Ben Foster, Amar Chadha-Patel",
+      "notes": "Love will drive you mad.",
+      "youtube_trailer_id": "JHMPxTWI4sQ"
     },
     {
       "tmdb_id": 1232569,
@@ -589,6 +628,19 @@
       "youtube_trailer_id": "TrUgAwA9Z_Y"
     },
     {
+      "tmdb_id": 1553969,
+      "date": "2026-07-31",
+      "title": "Sheep in the Box",
+      "director": "Hirokazu Kore-eda",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Science Fiction",
+      "cast": "Haruka Ayase, Daigo Yamamoto, Kuwaki Rimu, Nana Seino",
+      "notes": "Trust what you cannot see.",
+      "youtube_trailer_id": "j5mlc8TAPNw"
+    },
+    {
       "tmdb_id": 969681,
       "date": "2026-07-31",
       "title": "Spider-Man: Brand New Day",
@@ -598,8 +650,21 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
-      "notes": "The world may have forgotten Peter Parker, but he hasn’t forgotten them.",
-      "youtube_trailer_id": "62bIsvRcPv0"
+      "notes": "A brand new day starts now.",
+      "youtube_trailer_id": "P3uI5sLosKU"
+    },
+    {
+      "tmdb_id": 1458215,
+      "date": "2026-07-31",
+      "title": "The Gentleman Thief",
+      "director": "Randall Emmett",
+      "studio": "Vertical Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Crime / Thriller",
+      "cast": "John Travolta, Lukas Haas, Natali Yura, Emily Skinner",
+      "notes": "",
+      "youtube_trailer_id": "0LB3yWX1R8Y"
     },
     {
       "tmdb_id": 1620313,

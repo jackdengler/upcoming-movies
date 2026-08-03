@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -14,20 +14,7 @@
       "genre": "Drama",
       "cast": "Denée Benton, Mars Storm Rucker, Dezi Bing, Sasha Compère",
       "notes": "Find your family.",
-      "youtube_trailer_id": null
-    },
-    {
-      "tmdb_id": 1477483,
-      "date": "2026-08-06",
-      "title": "Snoop",
-      "director": "Craig Brewer",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Music",
-      "cast": "Jonathan Daviss",
-      "notes": "Drop it like it's hot",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "irnCquH3qB0"
     },
     {
       "tmdb_id": 1596318,
@@ -61,7 +48,7 @@
       "title": "Ice Cream Man",
       "director": "Eli Roth",
       "studio": "Iconic Events Releasing",
-      "budget_usd": null,
+      "budget_usd": 6000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Ari Millen, Charlie Zeltzer, Shiloh O’Reilly, Kiori Mirza Waldman",
@@ -128,10 +115,23 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Romance",
+      "genre": "Comedy / Romance / Science Fiction",
       "cast": "Monica Barbaro, Callum Turner, Maya Hawke, Julia Fox",
       "notes": "12 hours can change everything.",
-      "youtube_trailer_id": "AvKoSR3O4NQ"
+      "youtube_trailer_id": "lDsAVq9lo9g"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-08-07",
+      "title": "rl452690689",
+      "director": "—",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 675871,
@@ -142,7 +142,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Crime / Mystery",
-      "cast": "Jay Chandrasekhar, Paul Soter, Steve Lemme, Erik Stolhanske",
+      "cast": "Jay Chandrasekhar, Kevin Heffernan, Paul Soter, Steve Lemme",
       "notes": "The mustache rides, again. Again.",
       "youtube_trailer_id": "cYFevn5frf0"
     },
@@ -158,19 +158,6 @@
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
       "notes": "Blood. Lust.",
       "youtube_trailer_id": "j9TsiTgYZGw"
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-08-07",
-      "title": "Untitled Disney",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 730558,
@@ -209,7 +196,7 @@
       "genre": "Documentary",
       "cast": "Thaer Ahmad, Mark Perlmutter, Feroze Sidhwa",
       "notes": "Do no harm.",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "Be7_u8jzHzU"
     },
     {
       "tmdb_id": 1706696,
@@ -223,19 +210,6 @@
       "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
       "notes": "He found faith where he least expected it.",
       "youtube_trailer_id": "5LtxY2e7h5E"
-    },
-    {
-      "tmdb_id": 1422011,
-      "date": "2026-08-14",
-      "title": "It Ends",
-      "director": "Alexander Ullom",
-      "studio": "Neon",
-      "budget_usd": 50000,
-      "release_type": "limited",
-      "genre": "Horror / Mystery",
-      "cast": "Noah Toth, Mitchell Cole, Phinehas Yoon, Akira Jackson",
-      "notes": "Some wrong turns last forever.",
-      "youtube_trailer_id": "zFszhQLMNXU"
     },
     {
       "tmdb_id": 1185806,
@@ -262,19 +236,6 @@
       "cast": "Jarneia Richard-Noel, Millie O'Connell, Natalie Paris, Alexia McIntosh",
       "notes": "SEE THE ORIGINAL QUEENS HIT THE BIG SCREEN",
       "youtube_trailer_id": "Ow75n9vKpac"
-    },
-    {
-      "tmdb_id": 1479481,
-      "date": "2026-08-14",
-      "title": "Terrestrial",
-      "director": "Steve Pink",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller / Science Fiction / Comedy",
-      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
-      "notes": "",
-      "youtube_trailer_id": "cD0fVpDoN8Y"
     },
     {
       "tmdb_id": 1101383,
@@ -329,17 +290,17 @@
       "youtube_trailer_id": "uA6Fnr2VXkw"
     },
     {
-      "tmdb_id": null,
-      "date": "2026-08-14",
-      "title": "Untitled Disney",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
+      "tmdb_id": 1506835,
+      "date": "2026-08-21",
+      "title": "Blood Shine",
+      "director": "Emily Bennett, Justin Brooks",
+      "studio": "Dark Sky Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
+      "genre": "Horror",
+      "cast": "Emily Bennett, David Call, Brendan Sexton III, Larry Fessenden",
+      "notes": "You have been chosen to serve the light.",
+      "youtube_trailer_id": "9eASqDdhCTc"
     },
     {
       "tmdb_id": 813418,
@@ -366,6 +327,19 @@
       "cast": "Amelia Eve, Island Austin, Lin Shaye, Sam Spruell",
       "notes": "Evil found a way out.",
       "youtube_trailer_id": "jxU8FU3o75A"
+    },
+    {
+      "tmdb_id": 1422011,
+      "date": "2026-08-21",
+      "title": "It Ends",
+      "director": "Alexander Ullom",
+      "studio": "Neon",
+      "budget_usd": 50000,
+      "release_type": "wide",
+      "genre": "Horror / Mystery",
+      "cast": "Phinehas Yoon, Akira Jackson, Noah Toth, Mitchell Cole",
+      "notes": "Some wrong turns last forever.",
+      "youtube_trailer_id": "zFszhQLMNXU"
     },
     {
       "tmdb_id": 1288445,
@@ -402,9 +376,22 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
-      "cast": "Leslie Mann, Isla Fisher, Michelle Buteau, Anna Faris",
+      "cast": "Leslie Mann, Michelle Buteau, Anna Faris, Isla Fisher",
       "notes": "Friendship is a real trip.",
       "youtube_trailer_id": "FUFyXtlXw7k"
+    },
+    {
+      "tmdb_id": 1479481,
+      "date": "2026-08-21",
+      "title": "Terrestrial",
+      "director": "Steve Pink",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Science Fiction / Comedy",
+      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
+      "notes": "",
+      "youtube_trailer_id": "cD0fVpDoN8Y"
     },
     {
       "tmdb_id": 1140521,
@@ -413,7 +400,7 @@
       "director": "Ben Gregor",
       "studio": "Vertical Entertainment",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Adventure / Family / Fantasy",
       "cast": "Billie Gadsdon, Nicola Coughlan, Delilah Bennett-Cardy, Phoenix Laroche",
       "notes": "",
@@ -576,19 +563,6 @@
       "youtube_trailer_id": "TJ5bCaaGIx4"
     },
     {
-      "tmdb_id": 1514056,
-      "date": "2026-08-28",
-      "title": "Nika & Madison",
-      "director": "Eva Thomas",
-      "studio": "Indican Pictures",
-      "budget_usd": 2000000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
-      "notes": "",
-      "youtube_trailer_id": "QAAlkFKaUxM"
-    },
-    {
       "tmdb_id": 1537518,
       "date": "2026-08-28",
       "title": "The Cycle of Love",
@@ -597,9 +571,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Chirag Lobo",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "PK Mahanandia, Lotta von Schedvin, Chirag Lobo, Mina Dale",
+      "notes": "An impossible journey. An extraordinary love.",
+      "youtube_trailer_id": "biXpA5aJPug"
     },
     {
       "tmdb_id": 1384216,
@@ -639,19 +613,6 @@
       "cast": "Dakota Fanning, Jake Johnson, Cory Michael Smith, Debby Ryan",
       "notes": "",
       "youtube_trailer_id": "nTIfzXx8nJY"
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-08-28",
-      "title": "Untitled IFC Comedy Film",
-      "director": "—",
-      "studio": "IFC Films",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Comedy",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1294972,

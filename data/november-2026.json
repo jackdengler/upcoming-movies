@@ -1,8 +1,21 @@
 {
   "month": "November 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1215281,
+      "date": "2026-11-05",
+      "title": "Naughty",
+      "director": "Olivia Wilde",
+      "studio": "Universal Pictures International (UPI)",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Drama / Adventure",
+      "cast": "Jennifer Aniston, Peter Dinklage",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1585239,
       "date": "2026-11-06",
@@ -50,7 +63,7 @@
       "studio": "Warner Bros.",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Comedy / Fantasy / Adventure / Family",
+      "genre": "Animation / Comedy / Adventure / Fantasy / Family",
       "cast": "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry",
       "notes": "The cat's out of the bag.",
       "youtube_trailer_id": "HT5JAp5z0-o"
@@ -71,7 +84,7 @@
     {
       "tmdb_id": 1567605,
       "date": "2026-11-13",
-      "title": "Ebenezer: A Christmas Carol",
+      "title": "Ebenezer",
       "director": "Ti West",
       "studio": "Paramount Pictures",
       "budget_usd": null,
@@ -134,6 +147,19 @@
       "youtube_trailer_id": "fS35YSjopjE"
     },
     {
+      "tmdb_id": 1599230,
+      "date": "2026-11-25",
+      "title": "Elsinore",
+      "director": "Simon Stone",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / History",
+      "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1400336,
       "date": "2026-11-25",
       "title": "Focker-in-Law",
@@ -145,6 +171,19 @@
       "cast": "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo",
       "notes": "The circle of trust just got bigger.",
       "youtube_trailer_id": "vyISuWUWcFs"
+    },
+    {
+      "tmdb_id": 1461490,
+      "date": "2026-11-25",
+      "title": "Hershey",
+      "director": "Mark Waters",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History / Romance",
+      "cast": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind",
+      "notes": "The true story of an American dreamer.",
+      "youtube_trailer_id": "Dihu6iM__rI"
     },
     {
       "tmdb_id": 1538497,

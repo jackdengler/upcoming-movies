@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -54,6 +54,19 @@
       "cast": "Mary Oliver, Helena Bonham Carter, Steve Buscemi, Stephen Colbert",
       "notes": "",
       "youtube_trailer_id": "ZJMd3u741pA"
+    },
+    {
+      "tmdb_id": 1396640,
+      "date": "2026-07-03",
+      "title": "Once Upon a Time in a Cinema",
+      "director": "David Gleeson",
+      "studio": "Myriad Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Colin Morgan, Calam Lynch, Clara Crichton, India Mullen",
+      "notes": "",
+      "youtube_trailer_id": "V4g74xLfR0A"
     },
     {
       "tmdb_id": 1290417,
@@ -204,10 +217,10 @@
       "title": "The Invite",
       "director": "Olivia Wilde",
       "studio": "A24",
-      "budget_usd": null,
+      "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Drama / Comedy",
-      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
+      "genre": "Drama / Comedy / Romance",
+      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     },
@@ -443,7 +456,7 @@
       "genre": "Romance / Drama / Comedy",
       "cast": "Mounia Akl, Hasan Akil, Camille Salameh, Julia Kassar",
       "notes": "",
-      "youtube_trailer_id": "tfhS2aXatiA"
+      "youtube_trailer_id": "pGHWEz1-W-E"
     },
     {
       "tmdb_id": 1498729,
@@ -466,7 +479,7 @@
       "studio": "Dark Sky Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Thriller",
+      "genre": "Thriller / Horror",
       "cast": "Mavournee Hazel, Diesel La Torraca, Harry Greenwood, Geneviève Lemon",
       "notes": "",
       "youtube_trailer_id": "tlF7Nk2cJi0"
@@ -479,9 +492,9 @@
       "studio": "Bleecker Street Media",
       "budget_usd": 5000000,
       "release_type": "limited",
-      "genre": "Drama / Fantasy / Romance / Music",
+      "genre": "Drama / Fantasy / Romance",
       "cast": "Reeve Carney, Eva Noblezada, André De Shields, Patrick Page",
-      "notes": "The Myth. The Musical.",
+      "notes": "The myth. The musical.",
       "youtube_trailer_id": "76Q5TWHslOE"
     },
     {
@@ -521,7 +534,7 @@
       "genre": "Action / Thriller / Crime",
       "cast": "Alan Ritchson, Shailene Woodley, Ben Foster, Amar Chadha-Patel",
       "notes": "Love will drive you mad.",
-      "youtube_trailer_id": "JHMPxTWI4sQ"
+      "youtube_trailer_id": "t6RklhKu9os"
     },
     {
       "tmdb_id": 1232569,
@@ -537,6 +550,32 @@
       "youtube_trailer_id": "Xt3zQ8v2pzk"
     },
     {
+      "tmdb_id": 1130948,
+      "date": "2026-07-24",
+      "title": "Rosebush Pruning",
+      "director": "Karim Aïnouz",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama / Thriller",
+      "cast": "Callum Turner, Riley Keough, Jamie Bell, Lukas Gage",
+      "notes": "People are roses. Families are rosebushes. Rosebushes need pruning.",
+      "youtube_trailer_id": "rmHD9gZbF7A"
+    },
+    {
+      "tmdb_id": 1553969,
+      "date": "2026-07-24",
+      "title": "Sheep in the Box",
+      "director": "Hirokazu Kore-eda",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Science Fiction",
+      "cast": "Haruka Ayase, Daigo Yamamoto, Kuwaki Rimu, Nana Seino",
+      "notes": "Trust what you cannot see.",
+      "youtube_trailer_id": "j5mlc8TAPNw"
+    },
+    {
       "tmdb_id": 1189807,
       "date": "2026-07-24",
       "title": "Swallowtail & Dragonfly",
@@ -548,6 +587,19 @@
       "cast": "Vanessa Yao, Vivian Dawson, Albert Lew",
       "notes": "",
       "youtube_trailer_id": "mYW3M6urtm8"
+    },
+    {
+      "tmdb_id": 1659161,
+      "date": "2026-07-24",
+      "title": "Ueck",
+      "director": "Steve Farr, Michael T. Vollmann",
+      "studio": "September Club",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Bob Costas, Bud Selig, Joe Torre, Robin Yount",
+      "notes": "The story of the most unlikely baseball legend.",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1715914,
@@ -573,20 +625,7 @@
       "genre": "Action / Thriller / Horror / Crime",
       "cast": "Laura Marano, Christina Ochoa, Mario Tardón, Antonio Banderas",
       "notes": "",
-      "youtube_trailer_id": "-tzywH6DVAM"
-    },
-    {
-      "tmdb_id": 1396640,
-      "date": "2026-07-30",
-      "title": "Once Upon a Time in a Cinema",
-      "director": "David Gleeson",
-      "studio": "Myriad Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Colin Morgan, Calam Lynch, Clara Crichton, India Mullen",
-      "notes": "",
-      "youtube_trailer_id": "V4g74xLfR0A"
+      "youtube_trailer_id": "18wdUGRPUY4"
     },
     {
       "tmdb_id": 1288059,
@@ -594,12 +633,12 @@
       "title": "I Want Your Sex",
       "director": "Gregg Araki",
       "studio": "Magnolia Pictures",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "wide",
-      "genre": "Drama / Comedy",
+      "genre": "Comedy",
       "cast": "Olivia Wilde, Cooper Hoffman, Mason Gooding, Chase Sui Wonders",
       "notes": "Don't worry, you'll like it.",
-      "youtube_trailer_id": "kjkTmTmC1iA"
+      "youtube_trailer_id": "q5oWCPS3akw"
     },
     {
       "tmdb_id": 1330271,
@@ -628,30 +667,30 @@
       "youtube_trailer_id": "TrUgAwA9Z_Y"
     },
     {
-      "tmdb_id": 1553969,
-      "date": "2026-07-31",
-      "title": "Sheep in the Box",
-      "director": "Hirokazu Kore-eda",
-      "studio": "Neon",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Science Fiction",
-      "cast": "Haruka Ayase, Daigo Yamamoto, Kuwaki Rimu, Nana Seino",
-      "notes": "Trust what you cannot see.",
-      "youtube_trailer_id": "j5mlc8TAPNw"
-    },
-    {
       "tmdb_id": 969681,
       "date": "2026-07-31",
       "title": "Spider-Man: Brand New Day",
       "director": "Destin Daniel Cretton",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": 275000000,
+      "budget_usd": 225000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Tom Holland, Zendaya, Sadie Sink, Jacob Batalon",
+      "cast": "Tom Holland, Sadie Sink, Tramell Tillman, Zendaya",
       "notes": "A brand new day starts now.",
       "youtube_trailer_id": "P3uI5sLosKU"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-07-31",
+      "title": "The Choice",
+      "director": "—",
+      "studio": "Abramorama",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Edith Eger, Iris Haim",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1458215,
@@ -662,7 +701,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Crime / Thriller",
-      "cast": "John Travolta, Lukas Haas, Natali Yura, Emily Skinner",
+      "cast": "John Travolta, Lukas Haas, Rebecca De Mornay, Natali Yura",
       "notes": "",
       "youtube_trailer_id": "0LB3yWX1R8Y"
     },
@@ -674,7 +713,7 @@
       "studio": "Janus Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Mystery",
+      "genre": "Drama / History / Mystery",
       "cast": "Masahiro Motoki, Masaki Suda, Yuriko Yoshitaka, Munetaka Aoki",
       "notes": "",
       "youtube_trailer_id": "dY5kXykdbLo"

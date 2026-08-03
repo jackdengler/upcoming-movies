@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,10 +24,23 @@
       "studio": "Warner Bros.",
       "budget_usd": 125000000,
       "release_type": "wide",
-      "genre": "Drama / Comedy",
+      "genre": "Comedy",
       "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
       "notes": "A man. A plan. A meltdown.",
       "youtube_trailer_id": "qORTe1wW3Wg"
+    },
+    {
+      "tmdb_id": 1403519,
+      "date": "2026-10-02",
+      "title": "The Scout",
+      "director": "Paula Andrea Gonzalez-Nasser",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Comedy",
+      "cast": "Mimi Davila, Rutanya Alda, Max Rosen, Ikechukwu Ufomadu",
+      "notes": "",
+      "youtube_trailer_id": "4YamxsIqeRI"
     },
     {
       "tmdb_id": 1283515,
@@ -105,7 +118,20 @@
       "genre": "Action / Drama",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
-      "youtube_trailer_id": "hCXfh1oB3oc"
+      "youtube_trailer_id": "uEcoV-ngH38"
+    },
+    {
+      "tmdb_id": 1376400,
+      "date": "2026-10-16",
+      "title": "Crawlers",
+      "director": "Ángel Gómez Hernández",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1511171,
@@ -167,7 +193,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Comedy / Fantasy",
+      "genre": "Action / Fantasy",
       "cast": "Noah Centineo, Andrew Koji, Callina Liang, Joe Anoa'i",
       "notes": "Ready. Set. Fight.",
       "youtube_trailer_id": "Xt4X4FvXk2A"
@@ -202,14 +228,14 @@
       "tmdb_id": 1702350,
       "date": "2026-10-22",
       "title": "Fallen Angels",
-      "director": "Annette Jolles, Scott Ellis",
+      "director": "Annette Jolles",
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Rose Byrne, Kelli O'Hara, Tracee Chimo, Mark Consuelos",
       "notes": "",
-      "youtube_trailer_id": "jX3CNE2tfUY"
+      "youtube_trailer_id": "UPe63HYOypc"
     },
     {
       "tmdb_id": 1400940,
@@ -218,7 +244,7 @@
       "director": "James Watkins",
       "studio": "Warner Bros.",
       "budget_usd": 40000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Thriller / Science Fiction",
       "cast": "Tom Rhys Harries, Naomi Ackie, Eddie Marsan, Max Minghella",
       "notes": "Look fear in the face.",
@@ -236,19 +262,6 @@
       "cast": "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne",
       "notes": "Meet the future of friendship.",
       "youtube_trailer_id": "wixzainceAE"
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-10-23",
-      "title": "Untitled Jordan Peele Project",
-      "director": "—",
-      "studio": "Universal Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Mystery / Thriller",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 791523,
@@ -310,10 +323,10 @@
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Romance / Fantasy / Drama",
+      "genre": "Romance / Fantasy / Comedy",
       "cast": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Marriage material.",
+      "youtube_trailer_id": "UVAki9SGrlg"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -27,7 +27,7 @@
       "genre": "Music / Drama",
       "cast": "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett",
       "notes": "A life. In pieces.",
-      "youtube_trailer_id": "TrMGdrCJ5Ck"
+      "youtube_trailer_id": "nlHocRZln8c"
     },
     {
       "tmdb_id": 1078446,
@@ -104,13 +104,13 @@
       "release_type": "wide",
       "genre": "Fantasy / Adventure / Comedy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
-      "notes": "",
-      "youtube_trailer_id": "b0bx1eHicS0"
+      "notes": "One. Last. Game.",
+      "youtube_trailer_id": "zhApeaHMvfs"
     },
     {
       "tmdb_id": 1372443,
       "date": "2026-12-25",
-      "title": "Mr. Irrelevant: The John Tuggle Story",
+      "title": "Mr. Irrelevant",
       "director": "Jonathan Levine",
       "studio": "Paramount Pictures",
       "budget_usd": 36000000,
@@ -129,8 +129,8 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror",
-      "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Bodhi Rae Breathnach, Willem Dafoe",
-      "notes": "Do not dread the darkness. Embrace it.",
+      "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
+      "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "cmjpadVj-Vk"
     }
   ]

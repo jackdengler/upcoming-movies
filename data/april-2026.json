@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": 110000000,
       "release_type": "wide",
       "genre": "Family / Comedy / Adventure / Fantasy / Animation",
-      "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black",
+      "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
       "notes": "The galaxy awaits.",
       "youtube_trailer_id": "En5QZmL5R1s"
     },
@@ -440,7 +440,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 22000000,
       "release_type": "wide",
-      "genre": "Horror / Mystery",
+      "genre": "Horror",
       "cast": "Jack Reynor, Laia Costa, May Calamawy, Natalie Grace",
       "notes": "What happened to Katie?",
       "youtube_trailer_id": "6wbMsDmJLCs"
@@ -568,7 +568,7 @@
       "title": "Wasteman",
       "director": "Cal McMau",
       "studio": "Vertigo Releasing",
-      "budget_usd": 150000,
+      "budget_usd": 1200000,
       "release_type": "limited",
       "genre": "Crime / Drama / Thriller",
       "cast": "David Jonsson, Tom Blyth, Alex Hassell, Neil Linpow",

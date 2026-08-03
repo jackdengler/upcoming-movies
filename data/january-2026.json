@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Jean-Pierre Dardenne, Luc Dardenne",
+      "director": "Luc Dardenne, Jean-Pierre Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -558,7 +558,7 @@
       "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Horror / Thriller / Comedy",
-      "cast": "Rachel McAdams, Dylan O'Brien, Edyll Ismail, Dennis Haysbert",
+      "cast": "Rachel McAdams, Dylan O'Brien, Edyll Ismail, Xavier Samuel",
       "notes": "Meet Linda Liddle... She's from strategy and planning. She's the boss now.",
       "youtube_trailer_id": "cOmnmFz_Uzs"
     },

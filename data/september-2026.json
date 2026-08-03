@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-07-27",
+  "updated": "2026-08-03",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -14,7 +14,7 @@
       "genre": "Thriller",
       "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
       "notes": "Are you down?",
-      "youtube_trailer_id": "Rsztt5qDj_A"
+      "youtube_trailer_id": "Krs0VDIjhmE"
     },
     {
       "tmdb_id": 1596326,
@@ -28,6 +28,19 @@
       "cast": "Barbara Hammer, Florrie Burke, Joey Carducci, Todd Haynes",
       "notes": "",
       "youtube_trailer_id": "eve0cPTcQ_g"
+    },
+    {
+      "tmdb_id": 1610748,
+      "date": "2026-09-04",
+      "title": "Brailled It",
+      "director": "Salome Cummins, Isaiah Gauthier, David Grabias, Christopher Morgan, Brendon Schulze",
+      "studio": "Suncatcher Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "—",
+      "notes": "Filmed by the blind, for the blind",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1380417,
@@ -118,7 +131,7 @@
       "genre": "Action / Horror / Thriller",
       "cast": "Adria Arjona, Alex Pereira, Drew Starkey, Rebecca Hall",
       "notes": "They unleashed their deadliest weapon on us.",
-      "youtube_trailer_id": "06hhVL13HEw"
+      "youtube_trailer_id": "AMLCbpM1fRQ"
     },
     {
       "tmdb_id": 1490214,
@@ -143,7 +156,7 @@
       "release_type": "limited",
       "genre": "Science Fiction / Mystery / Action",
       "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Alicia Vikander",
-      "notes": "",
+      "notes": "Is this how it ends?",
       "youtube_trailer_id": "R5jcEBVBEbQ"
     },
     {
@@ -199,6 +212,19 @@
       "youtube_trailer_id": "m8JUmBgHejI"
     },
     {
+      "tmdb_id": 1459062,
+      "date": "2026-09-11",
+      "title": "The Condor Daughter",
+      "director": "Álvaro Olmos",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Music",
+      "cast": "María Magdalena Sanizo, Marisol Vallejos Montaño, Nely Huayta, Alisson Jimenez",
+      "notes": "",
+      "youtube_trailer_id": "_OonSrJ1Fzc"
+    },
+    {
       "tmdb_id": 1228834,
       "date": "2026-09-11",
       "title": "The Fix",
@@ -219,7 +245,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Action / History / War",
+      "genre": "Drama / History / War",
       "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
@@ -264,6 +290,19 @@
       "youtube_trailer_id": "Te8CWh_tUBw"
     },
     {
+      "tmdb_id": 1514056,
+      "date": "2026-09-18",
+      "title": "Nika & Madison",
+      "director": "Eva Thomas",
+      "studio": "Indican Pictures",
+      "budget_usd": 2000000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
+      "notes": "",
+      "youtube_trailer_id": "QAAlkFKaUxM"
+    },
+    {
       "tmdb_id": 1423191,
       "date": "2026-09-18",
       "title": "Resident Evil",
@@ -273,7 +312,7 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction / Thriller",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
-      "notes": "No Sweat.",
+      "notes": "No sweat.",
       "youtube_trailer_id": "mNd1gb19A-c"
     },
     {
@@ -290,6 +329,19 @@
       "youtube_trailer_id": "T3K2uKvi_0s"
     },
     {
+      "tmdb_id": 1280015,
+      "date": "2026-09-18",
+      "title": "Sunny Dancer",
+      "director": "George Jaques",
+      "studio": "Quiver Distribution",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Bella Ramsey, Daniel Quinn-Toye, Ruby Stokes, Earl Cave",
+      "notes": "You'll wish you were there.",
+      "youtube_trailer_id": "UQxRhHK_Bmw"
+    },
+    {
       "tmdb_id": 1433583,
       "date": "2026-09-18",
       "title": "The Weight",
@@ -297,34 +349,21 @@
       "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Thriller / Adventure / Drama",
+      "genre": "Drama / Thriller / Crime",
       "cast": "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio",
       "notes": "",
       "youtube_trailer_id": "7YpuMymmiJ8"
     },
     {
-      "tmdb_id": 1521151,
-      "date": "2026-09-18",
-      "title": "Unknown Title",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Animation / Comedy / Family",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
-      "tmdb_id": null,
+      "tmdb_id": 1685539,
       "date": "2026-09-20",
       "title": "Heaven in Stone and Glass",
-      "director": "—",
+      "director": "Bishop Robert E. Barron",
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary",
-      "cast": "Robert Barron",
+      "cast": "Bishop Robert E. Barron",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -355,19 +394,6 @@
       "youtube_trailer_id": "3EwAPmmNBU4"
     },
     {
-      "tmdb_id": 1376400,
-      "date": "2026-09-25",
-      "title": "Crawlers",
-      "director": "Ángel Gómez Hernández",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Horror / Thriller",
-      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1736129,
       "date": "2026-09-25",
       "title": "Deep in the Heart II: Texas Rivers",
@@ -394,6 +420,19 @@
       "youtube_trailer_id": "f7mFVeWnVLw"
     },
     {
+      "tmdb_id": 1596249,
+      "date": "2026-09-25",
+      "title": "Ha-Chan, Shake Your Booty!",
+      "director": "Josef Kubota Wladyka",
+      "studio": "Sony Pictures Classics",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Drama / Romance",
+      "cast": "Rinko Kikuchi, Alberto Guerra, Alejandro Edda, YOU",
+      "notes": "Rinko Kikuchi Dances Her Way Through Grief",
+      "youtube_trailer_id": "Ik4lJmXgR6U"
+    },
+    {
       "tmdb_id": 1263337,
       "date": "2026-09-25",
       "title": "Heart of the Beast",
@@ -401,10 +440,23 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Adventure",
+      "genre": "Action / Adventure / Drama / Thriller",
       "cast": "Brad Pitt, J.K. Simmons, Anna Lambe",
       "notes": "Survival depends on their bond.",
       "youtube_trailer_id": "JFQcDFhNh4o"
+    },
+    {
+      "tmdb_id": 1638303,
+      "date": "2026-09-25",
+      "title": "No Limbs, No Limits: The NickV Story",
+      "director": "Matthew Thayer",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary",
+      "cast": "Nick Vujicic",
+      "notes": "AN EXTRAORDINARY CINEMATIC JOURNEY",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1375441,
@@ -415,7 +467,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Robert Pattinson, Bokeem Woodbine, Merritt Wever, Skyler Gisondo",
+      "cast": "Robert Pattinson, Merritt Wever, Skyler Gisondo, Phoebe Bridgers",
       "notes": "Are you ready to make television history?",
       "youtube_trailer_id": "Yrfrf53ttYY"
     },
@@ -429,7 +481,7 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott",
-      "notes": "",
+      "notes": "Welcome to Auk Isle. Population: one too many.",
       "youtube_trailer_id": "vJ6TSvmnUEE"
     },
     {
@@ -459,6 +511,19 @@
       "youtube_trailer_id": "dcbRqIuFAiE"
     },
     {
+      "tmdb_id": 1379486,
+      "date": "2026-09-25",
+      "title": "Victorian Psycho",
+      "director": "Zachary Wigon",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "Maika Monroe, Thomasin McKenzie, Ruth Wilson, Jason Isaacs",
+      "notes": "You shan't forget her.",
+      "youtube_trailer_id": "sDiFol_2j2I"
+    },
+    {
       "tmdb_id": 1354301,
       "date": "2026-09-25",
       "title": "You Had to Be There: How the Toronto Godspell Ignited the Comedy Revolution, Spread Love & Overalls, and Created a Community That Changed the World (in a Canadian Kind of Way)",
@@ -482,7 +547,7 @@
       "genre": "Action / Drama",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
-      "youtube_trailer_id": "hCXfh1oB3oc"
+      "youtube_trailer_id": "uEcoV-ngH38"
     },
     {
       "tmdb_id": 939541,

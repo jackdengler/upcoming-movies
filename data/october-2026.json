@@ -1,8 +1,21 @@
 {
   "month": "October 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1401433,
+      "date": "2026-10-02",
+      "title": "Appofeniacs",
+      "director": "Chris Marrs Piliero",
+      "studio": "Magenta Light Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Sean Gunn, Jermaine Fowler, Scarlett DeMeo, Michael Abbott Jr.",
+      "notes": "People are easy to manipulate.",
+      "youtube_trailer_id": "oQK7E26dLL4"
+    },
     {
       "tmdb_id": 1244523,
       "date": "2026-10-02",
@@ -102,10 +115,23 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Mystery",
       "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
       "notes": "Your mommy won't save you.",
       "youtube_trailer_id": "bEpTgowZ1dI"
+    },
+    {
+      "tmdb_id": 1212310,
+      "date": "2026-10-09",
+      "title": "Winter of the Crow",
+      "director": "Kasia Adamik",
+      "studio": "Cohen Media Group",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Thriller / History",
+      "cast": "Lesley Manville, Zofia Wichłacz, Andrzej Konopka, Sascha Ley",
+      "notes": "",
+      "youtube_trailer_id": "5l6HFO4lQwc"
     },
     {
       "tmdb_id": 1437396,
@@ -115,7 +141,7 @@
       "studio": "Orion Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Drama",
+      "genre": "Drama / Crime",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
       "youtube_trailer_id": "uEcoV-ngH38"
@@ -194,9 +220,22 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Fantasy",
-      "cast": "Noah Centineo, Andrew Koji, Callina Liang, Joe Anoa'i",
+      "cast": "Andrew Koji, Noah Centineo, Callina Liang, Joe Anoa'i",
       "notes": "Ready. Set. Fight.",
       "youtube_trailer_id": "Xt4X4FvXk2A"
+    },
+    {
+      "tmdb_id": 1458099,
+      "date": "2026-10-16",
+      "title": "The Only Living Pickpocket in New York",
+      "director": "Noah Segan",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "John Turturro, Giancarlo Esposito, Will Price, Tatiana Maslany",
+      "notes": "",
+      "youtube_trailer_id": "iXA7BmrBBxs"
     },
     {
       "tmdb_id": 1249202,
@@ -319,7 +358,7 @@
       "tmdb_id": 1195803,
       "date": "2026-10-30",
       "title": "Wicker",
-      "director": "Alex Huston Fischer, Eleanor Wilson",
+      "director": "Eleanor Wilson, Alex Huston Fischer",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",

@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -92,7 +92,7 @@
       "genre": "Documentary",
       "cast": "Gail Eastwood-Ritchey",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "FsZbScvIYcE"
     },
     {
       "tmdb_id": 1310573,
@@ -233,7 +233,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Western / Action / Drama",
-      "cast": "Mackenzie Foy, Odeya Rush, Joe Pantoliano, Sean Bean",
+      "cast": "Mackenzie Foy, Odeya Rush, Sean Bean, Joe Pantoliano",
       "notes": "Underestimating her is a grave mistake.",
       "youtube_trailer_id": "jSwHRzmEhBI"
     },
@@ -506,9 +506,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Comedy",
-      "cast": "Lil Rel Howery, Tiffany Haddish, Andrew Bachelor, Karlous Miller",
+      "cast": "Tiffany Haddish, Andrew Bachelor, Karlous Miller, Lil Rel Howery",
       "notes": "",
-      "youtube_trailer_id": "M327gG_6mC0"
+      "youtube_trailer_id": "8kAyn1-oMD4"
     },
     {
       "tmdb_id": 1469342,
@@ -633,7 +633,7 @@
       "title": "I Want Your Sex",
       "director": "Gregg Araki",
       "studio": "Magnolia Pictures",
-      "budget_usd": 10000000,
+      "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Olivia Wilde, Cooper Hoffman, Mason Gooding, Chase Sui Wonders",
@@ -702,7 +702,7 @@
       "release_type": "limited",
       "genre": "Action / Crime / Thriller",
       "cast": "John Travolta, Lukas Haas, Rebecca De Mornay, Natali Yura",
-      "notes": "",
+      "notes": "Trust no one. Take everything.",
       "youtube_trailer_id": "0LB3yWX1R8Y"
     },
     {

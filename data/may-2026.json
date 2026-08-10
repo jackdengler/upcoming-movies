@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -555,7 +555,7 @@
       "title": "Passenger",
       "director": "André Øvredal",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Jacob Scipio, Lou Llobell, Melissa Leo, Joseph Lopez",
@@ -740,7 +740,7 @@
       "budget_usd": 7000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Leo Woodall, Havana Rose Liu, Dustin Hoffman, Lior Raz",
+      "cast": "Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "XiehvETTjTQ"
     },

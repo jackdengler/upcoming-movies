@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -39,8 +39,8 @@
       "release_type": "wide",
       "genre": "Action / Comedy / Fantasy",
       "cast": "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris",
-      "notes": "Big Nick Energy",
-      "youtube_trailer_id": null
+      "notes": "...and to all a good fight.",
+      "youtube_trailer_id": "FmM2giDwLAE"
     },
     {
       "tmdb_id": 1391239,
@@ -82,19 +82,6 @@
       "youtube_trailer_id": "a9DB_aUMzME"
     },
     {
-      "tmdb_id": 1437882,
-      "date": "2026-12-25",
-      "title": "A Place in Hell",
-      "director": "Chloe Domont",
-      "studio": "Paramount Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller / Drama",
-      "cast": "Michelle Williams, Daisy Edgar-Jones, Andrew Scott, Danny Huston",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1260649,
       "date": "2026-12-25",
       "title": "Jumanji: Open World",
@@ -102,7 +89,7 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Fantasy / Adventure / Comedy",
+      "genre": "Adventure / Comedy / Fantasy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
       "notes": "One. Last. Game.",
       "youtube_trailer_id": "zhApeaHMvfs"

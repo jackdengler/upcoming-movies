@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -232,7 +232,7 @@
       "studio": "IFC Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Mystery / Action",
+      "genre": "Horror / Mystery",
       "cast": "Jermaine Fowler, Justin Long, RJ Cyler, Freddie Gibbs",
       "notes": "Defang the police.",
       "youtube_trailer_id": "8J_pMGZScB8"
@@ -414,7 +414,7 @@
       "studio": "Cineverse",
       "budget_usd": 23000000,
       "release_type": "wide",
-      "genre": "Mystery / Drama / Horror",
+      "genre": "Horror / Mystery",
       "cast": "Jeremy Irvine, Hannah Emily Anderson, Ljiljana Velimirov, Giulia Pelagatti",
       "notes": "Guilt is a place you can never leave.",
       "youtube_trailer_id": "z10cMFhKbW8"
@@ -503,7 +503,7 @@
       "title": "Iron Lung",
       "director": "Mark Fischbach",
       "studio": "Markiplier",
-      "budget_usd": 4000000,
+      "budget_usd": 3000000,
       "release_type": "wide",
       "genre": "Horror / Mystery / Science Fiction",
       "cast": "Mark Fischbach, Caroline Kaplan, Troy Baker, Elsie Lovelock",

@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -91,7 +91,7 @@
       "release_type": "wide",
       "genre": "Action / Thriller",
       "cast": "Milla Jovovich, Matthew Modine, Isabel Myers, D. B. Sweeney",
-      "notes": "Mother. Savior. Killer...",
+      "notes": "Never get between a mother and her child.",
       "youtube_trailer_id": "IRKGIuL3728"
     },
     {
@@ -298,7 +298,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / History / War",
-      "cast": "Karim Daoud Anaya, Hiam Abbass, Robert Aramayo, Yasmine Al Massri",
+      "cast": "Karim Daoud Anaya, Hiam Abbass, Robert Aramayo, Billy Howle",
       "notes": "The uprising that took on an empire",
       "youtube_trailer_id": "14H4J8bewDY"
     },
@@ -323,7 +323,7 @@
       "studio": "Searchlight Pictures",
       "budget_usd": 14000000,
       "release_type": "wide",
-      "genre": "Horror / Comedy / Thriller",
+      "genre": "Horror / Comedy",
       "cast": "Samara Weaving, Kathryn Newton, Sarah Michelle Gellar, Shawn Hatosy",
       "notes": "Double or nothing.",
       "youtube_trailer_id": "jczr0KCloXk"

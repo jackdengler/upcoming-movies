@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
       "notes": "Are you down?",
       "youtube_trailer_id": "Krs0VDIjhmE"
+    },
+    {
+      "tmdb_id": 1365593,
+      "date": "2026-09-04",
+      "title": "American Summer",
+      "director": "Michael W. Gray",
+      "studio": "Blue Harbor Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Family",
+      "cast": "Steve Guttenberg, Logan Evan Gray, Christie Brinkley, Mia Talerico",
+      "notes": "Some summers last forever.",
+      "youtube_trailer_id": "TFIPElz8ZBs"
     },
     {
       "tmdb_id": 1596326,
@@ -79,7 +92,7 @@
       "genre": "Drama / Family / Comedy",
       "cast": "Li Sitong, Wang Yantong, Wu Shaoqing, Zheng Runqi",
       "notes": "Be a person of integrity and loyalty.",
-      "youtube_trailer_id": "qIjOCYltUqA"
+      "youtube_trailer_id": "kDPgu6Hxgaw"
     },
     {
       "tmdb_id": 1417935,
@@ -129,7 +142,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Horror / Thriller",
-      "cast": "Adria Arjona, Alex Pereira, Drew Starkey, Rebecca Hall",
+      "cast": "Adria Arjona, Alex Pereira, Dan Stevens, Eric Wareheim",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
     },
@@ -147,6 +160,19 @@
       "youtube_trailer_id": "nTIfzXx8nJY"
     },
     {
+      "tmdb_id": 1497970,
+      "date": "2026-09-04",
+      "title": "Tom and Jerry: Forbidden Compass",
+      "director": "Zhang Gang",
+      "studio": "Viva Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Animation / Comedy / Family / Fantasy / Adventure",
+      "cast": "John Shang, Ruan Yifei, Jiang Wen, Shun Zi",
+      "notes": "The cat and mouse chase never ends!",
+      "youtube_trailer_id": "VBPlpfK6zXg"
+    },
+    {
       "tmdb_id": 1058424,
       "date": "2026-09-09",
       "title": "Hope",
@@ -158,19 +184,6 @@
       "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Alicia Vikander",
       "notes": "Is this how it ends?",
       "youtube_trailer_id": "R5jcEBVBEbQ"
-    },
-    {
-      "tmdb_id": 1497970,
-      "date": "2026-09-09",
-      "title": "Tom and Jerry: Forbidden Compass",
-      "director": "Zhang Gang",
-      "studio": "Viva Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Comedy / Family / Fantasy / Adventure",
-      "cast": "John Shang, Ruan Yifei, Jiang Wen, Shun Zi",
-      "notes": "The cat and mouse chase never ends!",
-      "youtube_trailer_id": "VBPlpfK6zXg"
     },
     {
       "tmdb_id": 1447853,
@@ -186,6 +199,19 @@
       "youtube_trailer_id": "drszHQJtR7o"
     },
     {
+      "tmdb_id": 1215458,
+      "date": "2026-09-11",
+      "title": "On a String",
+      "director": "Isabel Hagen",
+      "studio": "Joke Zero",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Music",
+      "cast": "Isabel Hagen, Dylan Baker, Ling Ling Huang, Frederick Weller",
+      "notes": "",
+      "youtube_trailer_id": "24afAxfiHAY"
+    },
+    {
       "tmdb_id": 1302904,
       "date": "2026-09-11",
       "title": "Practical Magic 2",
@@ -195,7 +221,7 @@
       "release_type": "wide",
       "genre": "Fantasy / Drama / Comedy",
       "cast": "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams",
-      "notes": "",
+      "notes": "Everything you've witched for.",
       "youtube_trailer_id": "Ho10_4IX1jE"
     },
     {
@@ -209,7 +235,7 @@
       "genre": "Action / Comedy / Thriller",
       "cast": "Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George",
       "notes": "",
-      "youtube_trailer_id": "m8JUmBgHejI"
+      "youtube_trailer_id": "B6Z9MM1LhEA"
     },
     {
       "tmdb_id": 1459062,
@@ -264,6 +290,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1629355,
+      "date": "2026-09-18",
+      "title": "Black Zombie",
+      "director": "Maya Annik Bedward",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary / Horror / Thriller",
+      "cast": "Yves-Grégory Francois, Anderson Mojica, Erol Josué, Mambo Labelle Déese Botanica",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1706702,
       "date": "2026-09-18",
       "title": "Daniel",
@@ -310,7 +349,7 @@
       "studio": "Columbia Pictures",
       "budget_usd": 80000000,
       "release_type": "wide",
-      "genre": "Horror / Science Fiction / Thriller",
+      "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
       "notes": "No sweat.",
       "youtube_trailer_id": "mNd1gb19A-c"
@@ -396,7 +435,7 @@
     {
       "tmdb_id": 1736129,
       "date": "2026-09-25",
-      "title": "Deep in the Heart II: Texas Rivers",
+      "title": "Deep in the Heart 2: Texas Rivers",
       "director": "—",
       "studio": "Fin & Fur Films",
       "budget_usd": null,
@@ -446,6 +485,19 @@
       "youtube_trailer_id": "JFQcDFhNh4o"
     },
     {
+      "tmdb_id": 1629051,
+      "date": "2026-09-25",
+      "title": "Never After Dark",
+      "director": "Dave Boyle",
+      "studio": "N/A",
+      "budget_usd": 105,
+      "release_type": "wide",
+      "genre": "Horror",
+      "cast": "Moeka Hoshi, Kurumi Inagaki, Kento Kaku, Tae Kimura",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1638303,
       "date": "2026-09-25",
       "title": "No Limbs, No Limits: The NickV Story",
@@ -467,9 +519,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Robert Pattinson, Merritt Wever, Skyler Gisondo, Phoebe Bridgers",
+      "cast": "Robert Pattinson, Merritt Wever, Anna Faris, Skyler Gisondo",
       "notes": "Are you ready to make television history?",
-      "youtube_trailer_id": "Yrfrf53ttYY"
+      "youtube_trailer_id": "5fHXyqQOKL8"
     },
     {
       "tmdb_id": 1554956,
@@ -544,7 +596,7 @@
       "studio": "Orion Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Drama",
+      "genre": "Drama / Crime",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
       "youtube_trailer_id": "uEcoV-ngH38"

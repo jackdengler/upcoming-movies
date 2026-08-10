@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-08-03",
+  "updated": "2026-08-10",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -440,7 +440,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 22000000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Mystery",
       "cast": "Jack Reynor, Laia Costa, May Calamawy, Natalie Grace",
       "notes": "What happened to Katie?",
       "youtube_trailer_id": "6wbMsDmJLCs"
@@ -475,7 +475,7 @@
       "tmdb_id": 1364953,
       "date": "2026-04-17",
       "title": "Marama",
-      "director": "Toa Stappard",
+      "director": "Taratoa Stappard",
       "studio": "Dark Sky Films",
       "budget_usd": null,
       "release_type": "limited",

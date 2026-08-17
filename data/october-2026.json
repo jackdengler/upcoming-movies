@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -14,7 +14,7 @@
       "genre": "Horror / Thriller",
       "cast": "Sean Gunn, Jermaine Fowler, Scarlett DeMeo, Michael Abbott Jr.",
       "notes": "People are easy to manipulate.",
-      "youtube_trailer_id": "oQK7E26dLL4"
+      "youtube_trailer_id": "J1Fypndcou8"
     },
     {
       "tmdb_id": 1244523,
@@ -26,8 +26,8 @@
       "release_type": "limited",
       "genre": "Action / Horror / Thriller",
       "cast": "Logan Marshall-Green, Kiana Madeira, Jessica Rothe, Jackson Bews",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Witness terror on a gigantic scale.",
+      "youtube_trailer_id": "4fn4UcgzRhg"
     },
     {
       "tmdb_id": 1248832,
@@ -35,7 +35,7 @@
       "title": "Digger",
       "director": "Alejandro G. Iñárritu",
       "studio": "Warner Bros.",
-      "budget_usd": 125000000,
+      "budget_usd": 130000000,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
@@ -66,7 +66,33 @@
       "genre": "Mystery / Thriller",
       "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
       "notes": "There is no light where we're going.",
-      "youtube_trailer_id": "wbMNy_djxGk"
+      "youtube_trailer_id": "xdPMKhjMSFs"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-10-09",
+      "title": "Adam's Fire",
+      "director": "—",
+      "studio": "Outsider Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Family",
+      "cast": "Jennifer Marshall, Hudson Barry, Eileen Grubba, Tom Ohmer",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1669915,
+      "date": "2026-10-09",
+      "title": "Angel and the Badman",
+      "director": "Julio Quintana",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Western / Action / Adventure / Romance",
+      "cast": "Zachary Levi, Neal McDonough, Tommy Lee Jones, Meg Fraser",
+      "notes": "",
+      "youtube_trailer_id": "s11BOqoAAvY"
     },
     {
       "tmdb_id": 980431,
@@ -131,7 +157,7 @@
       "genre": "Drama / Thriller / History",
       "cast": "Lesley Manville, Zofia Wichłacz, Andrzej Konopka, Sascha Ley",
       "notes": "",
-      "youtube_trailer_id": "5l6HFO4lQwc"
+      "youtube_trailer_id": "9qixThYyMEk"
     },
     {
       "tmdb_id": 1437396,
@@ -232,7 +258,7 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Thriller",
+      "genre": "Crime / Drama",
       "cast": "John Turturro, Giancarlo Esposito, Will Price, Tatiana Maslany",
       "notes": "",
       "youtube_trailer_id": "iXA7BmrBBxs"
@@ -329,6 +355,32 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1473148,
+      "date": "2026-10-30",
+      "title": "Gentle Monster",
+      "director": "Marie Kreutzer",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Léa Seydoux, Catherine Deneuve, Jella Haase, Laurence Rupp",
+      "notes": "",
+      "youtube_trailer_id": "hsOgBqDSi9M"
+    },
+    {
+      "tmdb_id": 1021848,
+      "date": "2026-10-30",
+      "title": "Queen at Sea",
+      "director": "Lance Hammer",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Juliette Binoche, Tom Courtenay, Anna Calder-Marshall, Florence Hunt",
+      "notes": "",
+      "youtube_trailer_id": "ydcmoh6FCOc"
+    },
+    {
       "tmdb_id": 1733243,
       "date": "2026-10-30",
       "title": "Sight & Sound Presents: JOSHUA Live!",
@@ -337,7 +389,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Music / Family",
-      "cast": "Carl Anderson, Hope Klessig",
+      "cast": "Abhinav Singh, Carl Anderson, Hope Klessig",
       "notes": "",
       "youtube_trailer_id": "G2UnTTQGh58"
     },

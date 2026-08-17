@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -766,7 +766,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Comedy / Thriller",
-      "cast": "Samara Weaving, Jason Segel, Timothy Olyphant, Juliette Lewis",
+      "cast": "Jason Segel, Samara Weaving, Timothy Olyphant, Juliette Lewis",
       "notes": "Breakups are all in the execution.",
       "youtube_trailer_id": "pGxKTIegUZ4"
     },
@@ -780,8 +780,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Stephan James, Sheryl Lee Ralph, Titus Welliver, Maliq Johnson",
-      "notes": "",
-      "youtube_trailer_id": "6odpzlKJ7ek"
+      "notes": "Freedom begins within.",
+      "youtube_trailer_id": "i67VveNzbyQ"
     },
     {
       "tmdb_id": 1327460,

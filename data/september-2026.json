@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -66,7 +66,7 @@
       "genre": "Drama / Thriller / History",
       "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, David Strathairn",
       "notes": "The FBI couldn't crack it. So they called in the mob.",
-      "youtube_trailer_id": "ej8pjisr0Pc"
+      "youtube_trailer_id": "fvnyrBnUx4E"
     },
     {
       "tmdb_id": 1452267,
@@ -92,7 +92,7 @@
       "genre": "Drama / Family / Comedy",
       "cast": "Li Sitong, Wang Yantong, Wu Shaoqing, Zheng Runqi",
       "notes": "Be a person of integrity and loyalty.",
-      "youtube_trailer_id": "kDPgu6Hxgaw"
+      "youtube_trailer_id": "abeSQSbNXSk"
     },
     {
       "tmdb_id": 1417935,
@@ -183,7 +183,7 @@
       "genre": "Science Fiction / Mystery / Action",
       "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Alicia Vikander",
       "notes": "Is this how it ends?",
-      "youtube_trailer_id": "R5jcEBVBEbQ"
+      "youtube_trailer_id": "mYRc2Gl7geY"
     },
     {
       "tmdb_id": 1447853,
@@ -197,6 +197,19 @@
       "cast": "Noel Gallagher, Liam Gallagher, Paul Arthurs, Gem Archer",
       "notes": "Get ready to experience one of the most anticipated rock ‘n’ roll comebacks of our time.",
       "youtube_trailer_id": "drszHQJtR7o"
+    },
+    {
+      "tmdb_id": 1701141,
+      "date": "2026-09-11",
+      "title": "Gator Face",
+      "director": "Padraig Reynolds",
+      "studio": "Epic Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Amariah Dionne, Tabitha Brownstone, Nicholas Kolasinski, Barron Regan",
+      "notes": "Real alligators. Real teeth. Real terror.",
+      "youtube_trailer_id": "mvSxjFkBdK4"
     },
     {
       "tmdb_id": 1215458,
@@ -219,10 +232,10 @@
       "studio": "Warner Bros.",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Fantasy / Drama / Comedy",
+      "genre": "Romance / Fantasy / Comedy / Drama",
       "cast": "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams",
       "notes": "Everything you've witched for.",
-      "youtube_trailer_id": "Ho10_4IX1jE"
+      "youtube_trailer_id": "NNVKVal7kh8"
     },
     {
       "tmdb_id": 1377237,
@@ -299,13 +312,13 @@
       "release_type": "wide",
       "genre": "Documentary / Horror / Thriller",
       "cast": "Yves-Grégory Francois, Anderson Mojica, Erol Josué, Mambo Labelle Déese Botanica",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "A culture, a legacy, and a people that refuse to die.",
+      "youtube_trailer_id": "qxb3f3XumaE"
     },
     {
       "tmdb_id": 1706702,
       "date": "2026-09-18",
-      "title": "Daniel",
+      "title": "Daniel and the Fiery Furnace",
       "director": "Matthew Kooman, Daniel Kooman",
       "studio": "N/A",
       "budget_usd": null,
@@ -326,7 +339,7 @@
       "genre": "Drama",
       "cast": "Bodhi Dell, J. Alphonse Nicholson, Danielle Brooks, Kelvin Adekunle",
       "notes": "",
-      "youtube_trailer_id": "Te8CWh_tUBw"
+      "youtube_trailer_id": "ziViSCpx1KA"
     },
     {
       "tmdb_id": 1514056,
@@ -351,7 +364,7 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
-      "notes": "No sweat.",
+      "notes": "A new era of evil.",
       "youtube_trailer_id": "mNd1gb19A-c"
     },
     {
@@ -394,10 +407,23 @@
       "youtube_trailer_id": "7YpuMymmiJ8"
     },
     {
+      "tmdb_id": 1493991,
+      "date": "2026-09-18",
+      "title": "Traces of Home",
+      "director": "Colette Ghunim",
+      "studio": "Watermelon Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Colette Ghunim, Hosni Ghunim, Iza Ghunim, Ramsey Ghunim",
+      "notes": "",
+      "youtube_trailer_id": "Kujp9ubL93E"
+    },
+    {
       "tmdb_id": 1685539,
       "date": "2026-09-20",
       "title": "Heaven in Stone and Glass",
-      "director": "Bishop Robert E. Barron",
+      "director": "Rob Kaczmark, Branden J. Stanley",
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
@@ -407,17 +433,17 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1122220,
-      "date": "2026-09-24",
-      "title": "The Blair Witch Project Reboot",
-      "director": "Dylan Clark",
-      "studio": "Lionsgate",
-      "budget_usd": 10000000,
-      "release_type": "wide",
-      "genre": "Horror",
-      "cast": "—",
+      "tmdb_id": 1569461,
+      "date": "2026-09-23",
+      "title": "Take Me Home",
+      "director": "Liz Sargent",
+      "studio": "WILLA",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Anna Sargent, Ali Ahn, Victor Slezak, Marceline Hugot",
       "notes": "",
-      "youtube_trailer_id": "gLgocvY-9rE"
+      "youtube_trailer_id": "YeVLfvn7cLk"
     },
     {
       "tmdb_id": 1126097,
@@ -479,10 +505,10 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Adventure / Drama / Thriller",
+      "genre": "Adventure / Thriller",
       "cast": "Brad Pitt, J.K. Simmons, Anna Lambe",
       "notes": "Survival depends on their bond.",
-      "youtube_trailer_id": "JFQcDFhNh4o"
+      "youtube_trailer_id": "bfCgu83suHs"
     },
     {
       "tmdb_id": 1629051,
@@ -519,7 +545,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Robert Pattinson, Merritt Wever, Anna Faris, Skyler Gisondo",
+      "cast": "Robert Pattinson, Merritt Wever, Skyler Gisondo, Phoebe Bridgers",
       "notes": "Are you ready to make television history?",
       "youtube_trailer_id": "5fHXyqQOKL8"
     },

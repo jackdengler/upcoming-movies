@@ -1,20 +1,20 @@
 {
   "month": "June 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
-      "tmdb_id": null,
+      "tmdb_id": 1340562,
       "date": "2026-06-03",
       "title": "The Easy Kind",
-      "director": "—",
+      "director": "Katy Chevigny",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Music",
-      "cast": "Elizabeth Cook, Melissa Jackson, Karen Allen, Charles Esten",
+      "cast": "Elizabeth Cook, Melissa Jackson, Susie Essman, David Letterman",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "_4DNUPCumjU"
     },
     {
       "tmdb_id": 1667198,
@@ -24,7 +24,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Drama / Science Fiction / Thriller / Horror",
+      "genre": "Animation / Drama / Science Fiction",
       "cast": "Lizzie Freeman, Alex Rochon, Michael Kovach, Amanda Hufford",
       "notes": "Watch the finale of the viral internet phenomenon in theaters, early!",
       "youtube_trailer_id": "vNGAtHBhdiM"
@@ -65,7 +65,7 @@
       "release_type": "limited",
       "genre": "Horror",
       "cast": "Alice Eve, Eric Michael Cole, Jim Klock, Elle Haymond",
-      "notes": "There's no hinding in the sea.",
+      "notes": "There's no hiding in the sea.",
       "youtube_trailer_id": "oZWDFelquX4"
     },
     {
@@ -144,7 +144,7 @@
       "genre": "Drama",
       "cast": "Willem Dafoe, Emma Suárez, Joe Cole, Vic Carmen Sonne",
       "notes": "Family is the most serious business.",
-      "youtube_trailer_id": "LeSzEsiVu4g"
+      "youtube_trailer_id": "7dujBWLtscc"
     },
     {
       "tmdb_id": 1031084,
@@ -324,7 +324,7 @@
       "budget_usd": 11000000,
       "release_type": "wide",
       "genre": "Science Fiction",
-      "cast": "Vasudha, Doctor Sreehari, Vasantha, Hayagreeva",
+      "cast": "Vasudha, Vasantha, Hayagreeva, Dr E.Sreehari",
       "notes": "Unbreakable, Unstoppable.",
       "youtube_trailer_id": null
     },
@@ -388,7 +388,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy",
+      "genre": "Comedy / Drama",
       "cast": "John Early, Kate Berlant, Eric Rahill, Kristen Johnston",
       "notes": "",
       "youtube_trailer_id": "IjfX8l5XrF8"
@@ -441,7 +441,7 @@
       "budget_usd": 250000000,
       "release_type": "wide",
       "genre": "Animation / Family / Comedy / Adventure",
-      "cast": "Tom Hanks, Tim Allen, Joan Cusack, Greta Lee",
+      "cast": "Tom Hanks, Tim Allen, Joan Cusack, Conan O'Brien",
       "notes": "It's on.",
       "youtube_trailer_id": "QftAW9TTmuQ"
     },
@@ -454,7 +454,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Mystery",
-      "cast": "Mila Al-Zahrani, Aziz Gharbawi, Shafi Al Harthy",
+      "cast": "Mila Al-Zahrani, Aziz Gharbawi, Shafi Al Harthy, Abdullah Al-Qahtani",
       "notes": "",
       "youtube_trailer_id": "53f9ciNWxFA"
     },
@@ -482,7 +482,7 @@
       "genre": "Crime / Drama / Thriller",
       "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "ldCb77jXIsM"
     },
     {
       "tmdb_id": 1629051,
@@ -661,7 +661,7 @@
       "studio": "A24",
       "budget_usd": 6000000,
       "release_type": "limited",
-      "genre": "Drama / Comedy / Romance",
+      "genre": "Comedy / Drama / Romance",
       "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"

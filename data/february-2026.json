@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -323,7 +323,7 @@
       "studio": "Well Go USA Entertainment",
       "budget_usd": 123000000,
       "release_type": "limited",
-      "genre": "Action / Adventure",
+      "genre": "Action / Adventure / Drama / Western",
       "cast": "Wu Jing, Nicholas Tse Ting-Fung, Chen Lijun, Yu Shi",
       "notes": "A grand martial arts feast is back!",
       "youtube_trailer_id": "7jkL4-uYriY"
@@ -462,7 +462,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Kevin McManus, Matthew McManus",
+      "director": "Matthew McManus, Kevin McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",

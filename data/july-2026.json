@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": 85000000,
       "release_type": "wide",
       "genre": "Adventure / Animation / Comedy / Family / Fantasy",
-      "cast": "Pierre Coffin, Trey Parker, Allison Janney, Christoph Waltz",
+      "cast": "Pierre Coffin, Trey Parker, Christoph Waltz, Allison Janney",
       "notes": "Hollywood has a monster problem.",
       "youtube_trailer_id": "V-O-uBaHk3c"
     },
@@ -168,7 +168,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Brendan Petrizzo, David Michael Latt, Michelle Bauer, Bix Krieger",
+      "cast": "Anthony Frith, Brendan Petrizzo, David Michael Latt, Michelle Bauer",
       "notes": "If you can't beat Hollywood... knock it off.",
       "youtube_trailer_id": "UfaKokQbW5A"
     },
@@ -219,7 +219,7 @@
       "studio": "A24",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Drama / Comedy / Romance",
+      "genre": "Comedy / Drama / Romance",
       "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
@@ -325,7 +325,7 @@
       "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Lillian Carrier, Gretchen Mol, Iqbal Theba, Jerod Haynes",
-      "notes": "She's not \"a lot\". You're just underprepared.",
+      "notes": "She's not \"a lot.\" You're just underprepared.",
       "youtube_trailer_id": "JdvV29CGdPs"
     },
     {
@@ -633,7 +633,7 @@
       "title": "I Want Your Sex",
       "director": "Gregg Araki",
       "studio": "Magnolia Pictures",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Olivia Wilde, Cooper Hoffman, Mason Gooding, Chase Sui Wonders",
@@ -675,7 +675,7 @@
       "budget_usd": 225000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Tom Holland, Sadie Sink, Tramell Tillman, Zendaya",
+      "cast": "Tom Holland, Zendaya, Mark Ruffalo, Jon Bernthal",
       "notes": "A brand new day starts now.",
       "youtube_trailer_id": "P3uI5sLosKU"
     },

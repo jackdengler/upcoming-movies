@@ -1,21 +1,8 @@
 {
   "month": "November 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
-    {
-      "tmdb_id": 1215281,
-      "date": "2026-11-05",
-      "title": "Naughty",
-      "director": "Olivia Wilde",
-      "studio": "Universal Pictures International (UPI)",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Drama / Adventure",
-      "cast": "Jennifer Aniston, Peter Dinklage",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
     {
       "tmdb_id": 1585239,
       "date": "2026-11-06",
@@ -105,20 +92,7 @@
       "genre": "Crime / Drama / Thriller",
       "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
       "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
-      "tmdb_id": 1288211,
-      "date": "2026-11-13",
-      "title": "The Great Beyond",
-      "director": "J.J. Abrams",
-      "studio": "Warner Bros.",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Adventure / Action",
-      "cast": "Glen Powell, Jenna Ortega, Emma Mackey, Samuel L. Jackson",
-      "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "ldCb77jXIsM"
     },
     {
       "tmdb_id": 1286656,
@@ -134,6 +108,19 @@
       "youtube_trailer_id": "V_g_Ut0jO-0"
     },
     {
+      "tmdb_id": 1299329,
+      "date": "2026-11-20",
+      "title": "Josephine",
+      "director": "Beth de Araújo",
+      "studio": "Sumerian Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Crime / Thriller",
+      "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
+      "notes": "",
+      "youtube_trailer_id": "K32NPBLpqZI"
+    },
+    {
       "tmdb_id": 1300968,
       "date": "2026-11-20",
       "title": "The Hunger Games: Sunrise on the Reaping",
@@ -142,7 +129,7 @@
       "budget_usd": 150000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons, Elle Fanning",
+      "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Mckenna Grace",
       "notes": "Welcome to the Second Quarter Quell.",
       "youtube_trailer_id": "fS35YSjopjE"
     },

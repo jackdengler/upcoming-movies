@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -40,6 +40,19 @@
       "genre": "Comedy / Romance / Drama",
       "cast": "Kelly Russo, Travis Laughlin, Reed Arnold, Ashley Renee Scott",
       "notes": "Carry torches long enough, someone's getting burned",
+      "youtube_trailer_id": "eNwv--nW2aY"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-08-07",
+      "title": "Grateful Dead Meet-Up at the Movies 2026",
+      "director": "—",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Jerry Garcia, Mickey Hart, Bruce Hornsby, Bill Kreutzmann",
+      "notes": "",
       "youtube_trailer_id": null
     },
     {
@@ -51,7 +64,7 @@
       "budget_usd": 5500000,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Ari Millen, Charlie Zeltzer, Shiloh O’Reilly, Kiori Mirza Waldman",
+      "cast": "Ari Millen, Charlie Zeltzer, Kole Parks, Shiloh O’Reilly",
       "notes": "We all scream.",
       "youtube_trailer_id": "Cgw3zNmFtRo"
     },
@@ -113,7 +126,7 @@
       "title": "One Night Only",
       "director": "Will Gluck",
       "studio": "Universal Pictures",
-      "budget_usd": null,
+      "budget_usd": 25000000,
       "release_type": "wide",
       "genre": "Comedy / Romance",
       "cast": "Monica Barbaro, Callum Turner, Maya Hawke, King Princess",
@@ -134,17 +147,17 @@
       "youtube_trailer_id": "cYFevn5frf0"
     },
     {
-      "tmdb_id": 1240889,
+      "tmdb_id": null,
       "date": "2026-08-07",
-      "title": "Teenage Sex and Death at Camp Miasma",
-      "director": "Jane Schoenbrun",
-      "studio": "MUBI",
-      "budget_usd": 8000000,
+      "title": "The Last Picture Shows",
+      "director": "—",
+      "studio": "Foghorn Features",
+      "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Horror / Romance",
-      "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
-      "notes": "Blood. Lust.",
-      "youtube_trailer_id": "j9TsiTgYZGw"
+      "genre": "Documentary",
+      "cast": "Ross Melnick",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 730558,
@@ -154,7 +167,7 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Romance",
+      "genre": "Drama / Romance / Adventure",
       "cast": "Ellie Bamber, Rupert Penry-Jones, Mehdi Dehbi, Rhona Mitra",
       "notes": "Love was their greatest rebellion.",
       "youtube_trailer_id": "OJ9H4m9VY0Q"
@@ -217,11 +230,11 @@
       "title": "PAW Patrol: The Dino Movie",
       "director": "Cal Brunker",
       "studio": "Paramount Pictures",
-      "budget_usd": 30000000,
+      "budget_usd": 40000000,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Comedy / Family",
-      "cast": "Carter Young, Hayden Chamberlen, Mckenna Grace, Rain Janjua",
-      "notes": "Adventure reaches new heights.",
+      "genre": "Animation / Adventure / Family / Fantasy / Comedy",
+      "cast": "Carter Young, Mckenna Grace, Terry Crews, Meredith MacNeill",
+      "notes": "An adventure of prehistoric pawportions.",
       "youtube_trailer_id": "xgI5iYmOf5Q"
     },
     {
@@ -243,7 +256,7 @@
       "title": "The End of Oak Street",
       "director": "David Robert Mitchell",
       "studio": "Warner Bros.",
-      "budget_usd": 85000000,
+      "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Science Fiction / Mystery / Thriller",
       "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
@@ -256,7 +269,7 @@
       "title": "The Rivals of Amziah King",
       "director": "Andrew Patterson",
       "studio": "Black Bear",
-      "budget_usd": null,
+      "budget_usd": 6000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
       "cast": "Matthew McConaughey, Angelina LookingGlass, Jake Horowitz, Scott Shepherd",
@@ -271,7 +284,7 @@
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy",
+      "genre": "Comedy / Crime / Science Fiction",
       "cast": "Kristen Stewart, Alia Shawkat, LaKeith Stanfield, Zack Fox",
       "notes": "Best buds. Worst adults.",
       "youtube_trailer_id": "zrcg8YHSys8"
@@ -290,6 +303,32 @@
       "youtube_trailer_id": "uA6Fnr2VXkw"
     },
     {
+      "tmdb_id": 717787,
+      "date": "2026-08-17",
+      "title": "Your Letter",
+      "director": "Kim Yong-hwan",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Drama / Mystery / Adventure",
+      "cast": "Lee Soo-hyun, Kim Min-ju, Min Seung-woo, Nam Doh-hyeong",
+      "notes": "A magical journey all stars with...",
+      "youtube_trailer_id": "GTKu2mLpeS4"
+    },
+    {
+      "tmdb_id": 1198654,
+      "date": "2026-08-18",
+      "title": "Bad Apples",
+      "director": "Jonatan Etzler",
+      "studio": "Republic Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Thriller",
+      "cast": "Saoirse Ronan, Jacob Anderson, Sean Gilder, Robert Emms",
+      "notes": "It only takes one",
+      "youtube_trailer_id": "4nhu80EmVQE"
+    },
+    {
       "tmdb_id": 1596296,
       "date": "2026-08-18",
       "title": "The History of Concrete",
@@ -298,7 +337,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Comedy",
-      "cast": "John Wilson, Nathan Fielder, Michael Imperioli, Timothée Chalamet",
+      "cast": "John Wilson, Michael Imperioli, Nathan Fielder, Timothée Chalamet",
       "notes": "",
       "youtube_trailer_id": "hF7vGlfTg6w"
     },
@@ -392,6 +431,19 @@
       "cast": "Leslie Mann, Michelle Buteau, Anna Faris, Isla Fisher",
       "notes": "Friendship is a real trip.",
       "youtube_trailer_id": "FUFyXtlXw7k"
+    },
+    {
+      "tmdb_id": 1240889,
+      "date": "2026-08-21",
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "director": "Jane Schoenbrun",
+      "studio": "MUBI",
+      "budget_usd": 8000000,
+      "release_type": "wide",
+      "genre": "Comedy / Horror / Romance",
+      "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
+      "notes": "Blood. Lust.",
+      "youtube_trailer_id": "j9TsiTgYZGw"
     },
     {
       "tmdb_id": 1479481,
@@ -519,7 +571,7 @@
       "budget_usd": 72000000,
       "release_type": "wide",
       "genre": "Comedy / Adventure / Family",
-      "cast": "Will Forte, Lana Condor, Tone Bell, John Cena",
+      "cast": "Will Forte, Lana Condor, John Cena, Tone Bell",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "kMsiD1Nky5I"
     },
@@ -550,6 +602,19 @@
       "youtube_trailer_id": "-OGuJf70S0s"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-08-28",
+      "title": "How to Divorce During the War",
+      "director": "—",
+      "studio": "Zeitgeist Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Žygimantė Elena Jakštaitė, Tomas Seckus, Marius Repšys, Alla Bineeva",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 445466,
       "date": "2026-08-28",
       "title": "Idiots",
@@ -561,6 +626,19 @@
       "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
       "notes": "They're doing their best.",
       "youtube_trailer_id": "UoAf0LNAn30"
+    },
+    {
+      "tmdb_id": 1480574,
+      "date": "2026-08-28",
+      "title": "Just Play Dead",
+      "director": "Martin Campbell",
+      "studio": "Vertical Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller",
+      "cast": "Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 843352,

@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-08-10",
+  "updated": "2026-08-17",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -66,7 +66,7 @@
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
       "notes": "",
-      "youtube_trailer_id": "irVNGjRFZGk"
+      "youtube_trailer_id": "X1aFkAkFASk"
     },
     {
       "tmdb_id": 1300926,
@@ -77,7 +77,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Comedy / Family",
-      "cast": "Jason Sudeikis, Josh Gad, Rachel Bloom, Danny McBride",
+      "cast": "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom",
       "notes": "One big angry family.",
       "youtube_trailer_id": "a9DB_aUMzME"
     },

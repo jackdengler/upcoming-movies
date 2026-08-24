@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -363,7 +363,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Rose Byrne, Dominic Sessa, Demi Lovato, Simon Rex",
+      "cast": "Rose Byrne, Dominic Sessa, Octavia Spencer, Ariana DeBose",
       "notes": "",
       "youtube_trailer_id": "qdkpcsuPAhA"
     },
@@ -609,7 +609,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Action / Comedy / Horror",
+      "genre": "Action / Comedy / Horror / Thriller",
       "cast": "Zazie Beetz, Myha'la, Paterson Joseph, Tom Felton",
       "notes": "Let them try.",
       "youtube_trailer_id": "s0PGrtw0X1Q"

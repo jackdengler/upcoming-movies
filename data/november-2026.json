@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -14,7 +14,7 @@
       "genre": "Comedy / Drama",
       "cast": "Jordan Firstman, Cara Delevingne, Diego Calva, Reggie Absolom",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "guKEdb_iRXw"
     },
     {
       "tmdb_id": 1381071,
@@ -76,10 +76,23 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Fantasy / Comedy",
+      "genre": "Fantasy / Comedy",
       "cast": "Johnny Depp, Rupert Grint, Andrea Riseborough, Tramell Tillman",
       "notes": "Before he was Scrooge, he was...",
       "youtube_trailer_id": "A7lyvgnDuDE"
+    },
+    {
+      "tmdb_id": 1437511,
+      "date": "2026-11-13",
+      "title": "How to Rob a Bank",
+      "director": "David Leitch",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime / Thriller",
+      "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
+      "notes": "Who's robbing who?",
+      "youtube_trailer_id": "hoXld2b0TCs"
     },
     {
       "tmdb_id": 1381273,

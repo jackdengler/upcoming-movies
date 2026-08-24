@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -67,6 +67,19 @@
       "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
       "notes": "",
       "youtube_trailer_id": "X1aFkAkFASk"
+    },
+    {
+      "tmdb_id": 1170608,
+      "date": "2026-12-18",
+      "title": "Dune: Part Three",
+      "director": "Denis Villeneuve",
+      "studio": "Warner Bros.",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Science Fiction / Adventure",
+      "cast": "Timothée Chalamet, Zendaya, Jason Momoa, Florence Pugh",
+      "notes": "The epic conclusion.",
+      "youtube_trailer_id": "NdvqHc56lE0"
     },
     {
       "tmdb_id": 1300926,

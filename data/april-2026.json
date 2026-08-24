@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -193,7 +193,7 @@
       "studio": "IFC Films",
       "budget_usd": 7400000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Thriller",
       "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
       "notes": "You can't unsee it.",
       "youtube_trailer_id": "bKiX2FBBz54"
@@ -209,7 +209,7 @@
       "genre": "Drama",
       "cast": "Riz Ahmed, Morfydd Clark, Timothy Spall, Art Malik",
       "notes": "",
-      "youtube_trailer_id": "mv2iYGYSUtY"
+      "youtube_trailer_id": "TXTA2CUWmsE"
     },
     {
       "tmdb_id": 1308388,
@@ -492,7 +492,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Comedy / Romance / Music / Drama",
+      "genre": "Comedy / Romance / Drama",
       "cast": "Barbie Ferreira, Devon Bostick, Stanley Simons, Juliette Gariépy",
       "notes": "Welcome to the summer of 2011.",
       "youtube_trailer_id": "mzaCmw_VrlI"
@@ -505,7 +505,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": 10000000,
       "release_type": "wide",
-      "genre": "Action / Crime / Thriller",
+      "genre": "Action / Crime / Thriller / Western",
       "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Billy MacLellan",
       "notes": "Small town. Big secret.",
       "youtube_trailer_id": "5OndK0w1lYY"
@@ -534,7 +534,7 @@
       "genre": "Drama",
       "cast": "Blanca Soroa, Patricia López Arnaiz, Miguel Garcés, Juan Minujín",
       "notes": "",
-      "youtube_trailer_id": "FRwwy6W2xh8"
+      "youtube_trailer_id": "wZheAzHOLcM"
     },
     {
       "tmdb_id": 1647277,

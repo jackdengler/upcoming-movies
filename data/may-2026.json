@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -61,7 +61,7 @@
       "title": "Deep Water",
       "director": "Renny Harlin",
       "studio": "Magenta Light Studios",
-      "budget_usd": null,
+      "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Aaron Eckhart, Ben Kingsley, Molly Belle Wright, Angus Sampson",
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Javier Chocobar, Comunidad Chuschagasta",
+      "cast": "Mariana Carrizo",
       "notes": "",
       "youtube_trailer_id": "yPQRXpzx55o"
     },
@@ -246,7 +246,7 @@
       "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
-      "cast": "Karl Urban, Adeline Rudolph, Ludi Lin, Jessica McNamee",
+      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
       "notes": "Their fight. Our future.",
       "youtube_trailer_id": "qGyIEis2T2o"
     },
@@ -258,7 +258,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Thriller",
+      "genre": "Action / Thriller / TV Movie",
       "cast": "Josh Duhamel, Dylan Sprouse, Til Schweiger, Jeremy London",
       "notes": "How far would you go to save your son?",
       "youtube_trailer_id": "EGl9BwPOLVs"
@@ -272,7 +272,7 @@
       "budget_usd": 3000000,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Tony Leung Chiu-wai, Léa Seydoux, Luna Wedler, Enzo Brumm",
+      "cast": "Tony Leung Chiu-wai, Luna Wedler, Enzo Brumm, Léa Seydoux",
       "notes": "",
       "youtube_trailer_id": "TaRZnpAmtJk"
     },
@@ -571,7 +571,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Midori Francis, Danielle Macdonald, Madeleine Madden, Joseph Baldwin",
+      "cast": "Midori Francis, Danielle Macdonald, Madeleine Madden, Robert Taylor",
       "notes": "What's eating you?",
       "youtube_trailer_id": "uIY13LD3RUY"
     },
@@ -649,7 +649,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Music / Drama",
-      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Rory Keenan",
+      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
       "notes": "It's time to set the record straight.",
       "youtube_trailer_id": "-faiHUsbP_U"
     },

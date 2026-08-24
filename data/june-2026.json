@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -103,7 +103,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Music / Drama",
-      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Rory Keenan",
+      "cast": "Paul Rudd, Nick Jonas, Peter McDonald, Marcella Plunkett",
       "notes": "It's time to set the record straight.",
       "youtube_trailer_id": "-faiHUsbP_U"
     },
@@ -316,16 +316,16 @@
       "youtube_trailer_id": "BjTE9AQZDzI"
     },
     {
-      "tmdb_id": 1633499,
+      "tmdb_id": null,
       "date": "2026-06-16",
       "title": "Diamond Made Man",
-      "director": "Sangeethai",
+      "director": "—",
       "studio": "N/A",
-      "budget_usd": 11000000,
+      "budget_usd": null,
       "release_type": "wide",
-      "genre": "Science Fiction",
-      "cast": "Vasudha, Vasantha, Hayagreeva, Dr E.Sreehari",
-      "notes": "Unbreakable, Unstoppable.",
+      "genre": "Action / Sci-Fi",
+      "cast": "Sreehari, Vasudha, Sreehari Devi Mangala Puvvu",
+      "notes": "",
       "youtube_trailer_id": null
     },
     {
@@ -374,7 +374,7 @@
       "director": "Adrian Chiarella",
       "studio": "Neon",
       "budget_usd": 3500000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Romance",
       "cast": "Joe Bird, Stacy Clausen, Mia Wasikowska, Nicholas Hope",
       "notes": "It will never stop.",
@@ -417,7 +417,7 @@
       "genre": "Mystery / Drama",
       "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe",
       "notes": "",
-      "youtube_trailer_id": "bw371ui9cTk"
+      "youtube_trailer_id": "HafsUWXP3UM"
     },
     {
       "tmdb_id": 1284465,
@@ -441,7 +441,7 @@
       "budget_usd": 250000000,
       "release_type": "wide",
       "genre": "Animation / Family / Comedy / Adventure",
-      "cast": "Tom Hanks, Tim Allen, Joan Cusack, Conan O'Brien",
+      "cast": "Joan Cusack, Tom Hanks, Tim Allen, Conan O'Brien",
       "notes": "It's on.",
       "youtube_trailer_id": "QftAW9TTmuQ"
     },
@@ -483,19 +483,6 @@
       "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
       "notes": "",
       "youtube_trailer_id": "ldCb77jXIsM"
-    },
-    {
-      "tmdb_id": 1629051,
-      "date": "2026-06-25",
-      "title": "Never After Dark",
-      "director": "Dave Boyle",
-      "studio": "N/A",
-      "budget_usd": 105,
-      "release_type": "limited",
-      "genre": "Horror",
-      "cast": "Moeka Hoshi, Kurumi Inagaki, Kento Kaku, Tae Kimura",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1669841,

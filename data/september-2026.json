@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -61,7 +61,7 @@
       "title": "By Any Means",
       "director": "Elegance Bratton",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Drama / Thriller / History",
       "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, David Strathairn",
@@ -79,7 +79,7 @@
       "genre": "Animation / Drama / War / TV Movie",
       "cast": "Marika Ito, Hikari Mitsushima, Yoko Hikasa, Rena Motomura",
       "notes": "",
-      "youtube_trailer_id": "389ClHbs25c"
+      "youtube_trailer_id": "M3rLoZ7QGUY"
     },
     {
       "tmdb_id": 1671548,
@@ -91,8 +91,21 @@
       "release_type": "limited",
       "genre": "Drama / Family / Comedy",
       "cast": "Li Sitong, Wang Yantong, Wu Shaoqing, Zheng Runqi",
-      "notes": "Be a person of integrity and loyalty.",
+      "notes": "Every letter leads home.",
       "youtube_trailer_id": "abeSQSbNXSk"
+    },
+    {
+      "tmdb_id": 1438207,
+      "date": "2026-09-04",
+      "title": "Ever After",
+      "director": "László Illés",
+      "studio": "Level 33 Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Fantasy",
+      "cast": "Malcolm McDowell, Mark Sheppard, Bonnie Aarons, Michael Berryman",
+      "notes": "The bloodiest fairy tale.",
+      "youtube_trailer_id": "Yp4ZW6luyV4"
     },
     {
       "tmdb_id": 1417935,
@@ -100,7 +113,7 @@
       "title": "Filipiñana",
       "director": "Rafael Manuel",
       "studio": "Kino Lorber",
-      "budget_usd": null,
+      "budget_usd": 55000,
       "release_type": "wide",
       "genre": "Drama / Mystery",
       "cast": "Jorrybell Agoto, Teroy Guzman, Nour Hooshmand, Carlos Siguion-Reyna",
@@ -108,30 +121,17 @@
       "youtube_trailer_id": "Mq-7rJqNJ4I"
     },
     {
-      "tmdb_id": 1437511,
-      "date": "2026-09-04",
-      "title": "How to Rob a Bank",
-      "director": "David Leitch",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Crime / Thriller",
-      "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
-      "notes": "Who's robbing who?",
-      "youtube_trailer_id": "hoXld2b0TCs"
-    },
-    {
-      "tmdb_id": null,
+      "tmdb_id": 1751884,
       "date": "2026-09-04",
       "title": "La Ultima Oportunidad",
-      "director": "—",
+      "director": "Oscar Becerra",
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Anais Salazar, Jimmy Dux, Roberto Escobar",
+      "cast": "Jimmy Dux, Anaís Salazar, Roberto Escobar",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "oBDbYCAGd6s"
     },
     {
       "tmdb_id": 1284046,
@@ -195,8 +195,8 @@
       "release_type": "wide",
       "genre": "Documentary / Music",
       "cast": "Noel Gallagher, Liam Gallagher, Paul Arthurs, Gem Archer",
-      "notes": "Get ready to experience one of the most anticipated rock ‘n’ roll comebacks of our time.",
-      "youtube_trailer_id": "drszHQJtR7o"
+      "notes": "The great wait is over.",
+      "youtube_trailer_id": "6z_0B_lyRTo"
     },
     {
       "tmdb_id": 1701141,
@@ -232,7 +232,7 @@
       "studio": "Warner Bros.",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Romance / Fantasy / Comedy / Drama",
+      "genre": "Romance / Fantasy / Comedy",
       "cast": "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams",
       "notes": "Everything you've witched for.",
       "youtube_trailer_id": "NNVKVal7kh8"
@@ -247,7 +247,7 @@
       "release_type": "limited",
       "genre": "Action / Comedy / Thriller",
       "cast": "Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George",
-      "notes": "",
+      "notes": "Next-day delivery isn't an option.",
       "youtube_trailer_id": "B6Z9MM1LhEA"
     },
     {
@@ -290,10 +290,10 @@
       "youtube_trailer_id": "lyhCxZN4Ro8"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1733257,
       "date": "2026-09-15",
       "title": "Juan Gabriel: Mi Primer Bellas Artes",
-      "director": "—",
+      "director": "María José Cuevas, Benjamin H. Stavillo",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
@@ -339,7 +339,7 @@
       "genre": "Drama",
       "cast": "Bodhi Dell, J. Alphonse Nicholson, Danielle Brooks, Kelvin Adekunle",
       "notes": "",
-      "youtube_trailer_id": "ziViSCpx1KA"
+      "youtube_trailer_id": "aej2y_BBBFs"
     },
     {
       "tmdb_id": 1514056,
@@ -364,7 +364,7 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
-      "notes": "A new era of evil.",
+      "notes": "No sweat.",
       "youtube_trailer_id": "mNd1gb19A-c"
     },
     {
@@ -375,8 +375,8 @@
       "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Adventure / Science Fiction / Family",
-      "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
+      "genre": "Animation / Comedy / Science Fiction / Family",
+      "cast": "Justin Fletcher, John Sparkes, Kate Harbour, Nina Sosanya",
       "notes": "What's that coming over the hill?",
       "youtube_trailer_id": "T3K2uKvi_0s"
     },
@@ -391,7 +391,7 @@
       "genre": "Drama / Comedy",
       "cast": "Bella Ramsey, Daniel Quinn-Toye, Ruby Stokes, Earl Cave",
       "notes": "You'll wish you were there.",
-      "youtube_trailer_id": "UQxRhHK_Bmw"
+      "youtube_trailer_id": "-W_a2oCFNOY"
     },
     {
       "tmdb_id": 1433583,
@@ -403,7 +403,7 @@
       "release_type": "wide",
       "genre": "Drama / Thriller / Crime",
       "cast": "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio",
-      "notes": "",
+      "notes": "A tale of good and evil.",
       "youtube_trailer_id": "7YpuMymmiJ8"
     },
     {
@@ -508,20 +508,20 @@
       "genre": "Adventure / Thriller",
       "cast": "Brad Pitt, J.K. Simmons, Anna Lambe",
       "notes": "Survival depends on their bond.",
-      "youtube_trailer_id": "bfCgu83suHs"
+      "youtube_trailer_id": "UkMuGKqAux4"
     },
     {
       "tmdb_id": 1629051,
       "date": "2026-09-25",
       "title": "Never After Dark",
       "director": "Dave Boyle",
-      "studio": "N/A",
-      "budget_usd": 105,
+      "studio": "—",
+      "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Moeka Hoshi, Kurumi Inagaki, Kento Kaku, Tae Kimura",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "fu33xTw654A"
     },
     {
       "tmdb_id": 1638303,

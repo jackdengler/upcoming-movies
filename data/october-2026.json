@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Sean Gunn, Jermaine Fowler, Scarlett DeMeo, Michael Abbott Jr.",
       "notes": "People are easy to manipulate.",
       "youtube_trailer_id": "J1Fypndcou8"
+    },
+    {
+      "tmdb_id": 1484085,
+      "date": "2026-10-02",
+      "title": "Atonement",
+      "director": "Reed Van Dyk",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "War / Drama",
+      "cast": "Boyd Holbrook, Kenneth Branagh, Hiam Abbass, Gheed Saleh",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1244523,
@@ -41,6 +54,19 @@
       "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
       "notes": "A man. A plan. A meltdown.",
       "youtube_trailer_id": "qORTe1wW3Wg"
+    },
+    {
+      "tmdb_id": 1310649,
+      "date": "2026-10-02",
+      "title": "Orion",
+      "director": "Jaco Bouwer",
+      "studio": "Blue Harbor Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Science Fiction / Thriller",
+      "cast": "Andrew McCarthy, Drew Van Acker, Debby Ryan, Karin Ann",
+      "notes": "Surviving the mission was just the beginning.",
+      "youtube_trailer_id": "XZi6ekNNsqA"
     },
     {
       "tmdb_id": 1403519,
@@ -82,6 +108,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1557817,
+      "date": "2026-10-09",
+      "title": "André Leon Talley: Style Is Forever",
+      "director": "Zach Stafford, Clay Haskell",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Anna Wintour",
+      "notes": "",
+      "youtube_trailer_id": "YbHTpU4lHds"
+    },
+    {
       "tmdb_id": 1669915,
       "date": "2026-10-09",
       "title": "Angel and the Badman",
@@ -115,7 +154,7 @@
       "studio": "Neon",
       "budget_usd": 4800000,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Family / Drama",
       "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
       "notes": "",
       "youtube_trailer_id": "0gdRZZVoinM"
@@ -173,6 +212,19 @@
       "youtube_trailer_id": "uEcoV-ngH38"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-10-11",
+      "title": "Grandmasters",
+      "director": "—",
+      "studio": "Good Deed Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Documentary / Drama / Sport",
+      "cast": "Magnus Carlsen, Hans Niemann, Levy Rozman, Danny Rensch",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1376400,
       "date": "2026-10-16",
       "title": "Crawlers",
@@ -181,9 +233,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror / Thriller",
-      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Chris Rogers",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Paul S. Tracey",
+      "notes": "Skin will crawl.",
+      "youtube_trailer_id": "uLpZTosf6uI"
     },
     {
       "tmdb_id": 1511171,
@@ -284,10 +336,10 @@
       "studio": "20th Century Studios",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Thriller / Horror",
+      "genre": "Thriller",
       "cast": "Austin Abrams, Josh Brolin, Elisabeth Shue, John Ortiz",
       "notes": "Hold your breath.",
-      "youtube_trailer_id": "67ho3OxCmmM"
+      "youtube_trailer_id": "rN9F6-tbySY"
     },
     {
       "tmdb_id": 1702350,
@@ -336,10 +388,10 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Fantasy / Family",
-      "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
+      "genre": "Animation / Adventure / Fantasy",
+      "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Arthur Knight",
       "notes": "Where dark forests hide darker secrets...",
-      "youtube_trailer_id": "POneS8h1jyU"
+      "youtube_trailer_id": "dtr5JL1zkiM"
     },
     {
       "tmdb_id": 1714568,
@@ -378,7 +430,7 @@
       "genre": "Drama",
       "cast": "Juliette Binoche, Tom Courtenay, Anna Calder-Marshall, Florence Hunt",
       "notes": "",
-      "youtube_trailer_id": "ydcmoh6FCOc"
+      "youtube_trailer_id": "AyYaNvtC2i0"
     },
     {
       "tmdb_id": 1733243,
@@ -389,7 +441,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Music / Family",
-      "cast": "Abhinav Singh, Carl Anderson, Hope Klessig",
+      "cast": "Carl Anderson, Hope Klessig",
       "notes": "",
       "youtube_trailer_id": "G2UnTTQGh58"
     },

@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -92,7 +92,7 @@
       "genre": "Drama",
       "cast": "Willem Dafoe, Greta Lee, Jake Lacy, Graham Campbell",
       "notes": "",
-      "youtube_trailer_id": "vMKoyngrqBg"
+      "youtube_trailer_id": "_qkhd73DE3E"
     },
     {
       "tmdb_id": null,
@@ -194,7 +194,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Crime / Thriller",
-      "cast": "Zach Cherry, Maria Bakalova, Tyler Labine, Emily Hampshire",
+      "cast": "Maria Bakalova, Zach Cherry, Tyler Labine, Emily Hampshire",
       "notes": "Worst first date ever.",
       "youtube_trailer_id": "3HmV37lxfbc"
     },
@@ -207,7 +207,7 @@
       "budget_usd": 875000,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Thaer Ahmad, Mark Perlmutter, Feroze Sidhwa",
+      "cast": "Thaer Ahmad, Mark Perlmutter, Feroze Sidhwa, Dana Bash",
       "notes": "Do no harm.",
       "youtube_trailer_id": "Be7_u8jzHzU"
     },
@@ -223,6 +223,19 @@
       "cast": "Robert Malcolm Cumming, Evelyn Grace Kite, Kevin Sorbo, April Billingsley",
       "notes": "He found faith where he least expected it.",
       "youtube_trailer_id": "5LtxY2e7h5E"
+    },
+    {
+      "tmdb_id": 1432474,
+      "date": "2026-08-14",
+      "title": "Nimrods",
+      "director": "Lee Kirk",
+      "studio": "Falling Forward Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Music",
+      "cast": "Mason Thames, Kylr Coffman, Ryan Foust, Mckenna Grace",
+      "notes": "",
+      "youtube_trailer_id": "5mtbOhpqroo"
     },
     {
       "tmdb_id": 1185806,
@@ -245,7 +258,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Music / History",
+      "genre": "Music / History / Comedy",
       "cast": "Jarneia Richard-Noel, Millie O'Connell, Natalie Paris, Alexia McIntosh",
       "notes": "SEE THE ORIGINAL QUEENS HIT THE BIG SCREEN",
       "youtube_trailer_id": "Ow75n9vKpac"
@@ -373,7 +386,7 @@
       "title": "Insidious: Out of the Further",
       "director": "Jacob Chase",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
+      "budget_usd": 18000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Amelia Eve, Island Austin, Lin Shaye, Sam Spruell",
@@ -381,17 +394,17 @@
       "youtube_trailer_id": "gXjurDkYnEM"
     },
     {
-      "tmdb_id": 1422011,
+      "tmdb_id": 1537638,
       "date": "2026-08-21",
-      "title": "It Ends",
-      "director": "Alexander Ullom",
-      "studio": "Neon",
-      "budget_usd": 50000,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Phinehas Yoon, Akira Jackson, Noah Toth, Mitchell Cole",
-      "notes": "Some wrong turns last forever.",
-      "youtube_trailer_id": "zFszhQLMNXU"
+      "title": "Learning to Fly",
+      "director": "Max Lowe",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Aisha McAdams, Jim Walmsley, Rod Farvard, Eszter Csillag",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1288445,
@@ -399,12 +412,25 @@
       "title": "Mutiny",
       "director": "Jean-François Richet",
       "studio": "Lionsgate",
-      "budget_usd": null,
+      "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Action / Thriller",
-      "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Arnas Fedaravičius",
+      "cast": "Jason Statham, Annabelle Wallis, Roland Møller, Ramon Tikaram",
       "notes": "There's blood in the water.",
       "youtube_trailer_id": "2Iqvbe98Gb4"
+    },
+    {
+      "tmdb_id": 1719764,
+      "date": "2026-08-21",
+      "title": "Never Stop Chasing",
+      "director": "Ken Cole",
+      "studio": "Abramorama",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Reed Timmer, Edgar O'Neal, Connor McCrorey, Mike Scantlin",
+      "notes": "",
+      "youtube_trailer_id": "eEiy7y1ETF8"
     },
     {
       "tmdb_id": 1144965,
@@ -423,14 +449,14 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Leslie Mann, Michelle Buteau, Anna Faris, Isla Fisher",
       "notes": "Friendship is a real trip.",
-      "youtube_trailer_id": "FUFyXtlXw7k"
+      "youtube_trailer_id": "AhsA9ZqRAXQ"
     },
     {
       "tmdb_id": 1240889,
@@ -438,7 +464,7 @@
       "title": "Teenage Sex and Death at Camp Miasma",
       "director": "Jane Schoenbrun",
       "studio": "MUBI",
-      "budget_usd": 8000000,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Comedy / Horror / Romance",
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
@@ -508,7 +534,20 @@
       "genre": "Documentary / Music",
       "cast": "Jarvis Cocker, Candida Doyle, Nick Banks, Mark Webber",
       "notes": "",
-      "youtube_trailer_id": "JA5yvMNyc3M"
+      "youtube_trailer_id": "BPIyAvBd6a4"
+    },
+    {
+      "tmdb_id": 1396875,
+      "date": "2026-08-27",
+      "title": "Wildcards",
+      "director": "Wes Miller",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller",
+      "cast": "Leon, Crew Morrow, Elise Neal, Aries Spears",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1475440,
@@ -524,6 +563,19 @@
       "youtube_trailer_id": "R-5dDVHnYA0"
     },
     {
+      "tmdb_id": 1517111,
+      "date": "2026-08-28",
+      "title": "Boorman and the Devil",
+      "director": "David Kittredge",
+      "studio": "Yellow Veil Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "John Boorman, Louise Fletcher, Karyn Kusama, Mike Flanagan",
+      "notes": "Every artist has his demon.",
+      "youtube_trailer_id": "a_VjhXJ0N54"
+    },
+    {
       "tmdb_id": 1514026,
       "date": "2026-08-28",
       "title": "Buddy",
@@ -531,23 +583,10 @@
       "studio": "Roadside Attractions",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Comedy",
       "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
-      "notes": "",
-      "youtube_trailer_id": "2sBRb7Mbg0A"
-    },
-    {
-      "tmdb_id": 1120556,
-      "date": "2026-08-28",
-      "title": "Cliffhanger",
-      "director": "Jaume Collet-Serra",
-      "studio": "StudioCanal",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Adventure / Thriller",
-      "cast": "Lily James, Pierce Brosnan, Nell Tiger Free, Franz Rogowski",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "It's Buddy!",
+      "youtube_trailer_id": "Pc9MbCNYn3k"
     },
     {
       "tmdb_id": 1375646,
@@ -581,7 +620,7 @@
       "title": "Filipiñana",
       "director": "Rafael Manuel",
       "studio": "Kino Lorber",
-      "budget_usd": null,
+      "budget_usd": 55000,
       "release_type": "limited",
       "genre": "Drama / Mystery",
       "cast": "Jorrybell Agoto, Teroy Guzman, Nour Hooshmand, Carlos Siguion-Reyna",
@@ -628,6 +667,19 @@
       "youtube_trailer_id": "UoAf0LNAn30"
     },
     {
+      "tmdb_id": 1422011,
+      "date": "2026-08-28",
+      "title": "It Ends",
+      "director": "Alexander Ullom",
+      "studio": "Neon",
+      "budget_usd": 80000,
+      "release_type": "wide",
+      "genre": "Horror / Mystery",
+      "cast": "Phinehas Yoon, Akira Jackson, Noah Toth, Mitchell Cole",
+      "notes": "Some wrong turns last forever.",
+      "youtube_trailer_id": "zFszhQLMNXU"
+    },
+    {
       "tmdb_id": 1480574,
       "date": "2026-08-28",
       "title": "Just Play Dead",
@@ -638,7 +690,7 @@
       "genre": "Thriller",
       "cast": "Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "LlAajeOoFBo"
     },
     {
       "tmdb_id": 843352,
@@ -649,7 +701,7 @@
       "budget_usd": 508578,
       "release_type": "limited",
       "genre": "Action / Science Fiction",
-      "cast": "Jason David Frank, Aaron Schoenke, Mayling Ng, Chalet Lizette Brannan",
+      "cast": "Jason David Frank, Aaron Schoenke, Jason Faunt, Rachele Brooke Smith",
       "notes": "Legends never die.",
       "youtube_trailer_id": "TJ5bCaaGIx4"
     },
@@ -687,8 +739,8 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
-      "genre": "Adventure / Science Fiction / Thriller",
-      "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
+      "genre": "Science Fiction / Adventure / Thriller",
+      "cast": "Jacob Elordi, Margaret Qualley, Josh Brolin, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
       "youtube_trailer_id": "-xSxaE1ClEE"
     },
@@ -703,7 +755,7 @@
       "genre": "Comedy / Drama / Music",
       "cast": "Benjamin Lavernhe, Pierre Lottin, Sarah Suco, Clémence Massart-Weit",
       "notes": "",
-      "youtube_trailer_id": "bhfCXPYIKs8"
+      "youtube_trailer_id": "f9i2ImuGEVs"
     },
     {
       "tmdb_id": 1490214,
@@ -726,7 +778,7 @@
       "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Drama / Crime",
+      "genre": "Animation / Drama",
       "cast": "Kaoru Kobayashi, Junki Tozuka, Hikari Mitsushima, Yoshiko Miyazaki",
       "notes": "",
       "youtube_trailer_id": "mfq5MFQ58wU"

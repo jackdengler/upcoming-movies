@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -86,7 +86,7 @@
       "date": "2026-12-23",
       "title": "The Angry Birds Movie 3",
       "director": "John Rice",
-      "studio": "Paramount Pictures",
+      "studio": "Paramount Pictures International",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Comedy / Family",
@@ -112,7 +112,7 @@
       "date": "2026-12-25",
       "title": "Mr. Irrelevant",
       "director": "Jonathan Levine",
-      "studio": "Paramount Pictures",
+      "studio": "Paramount Pictures International",
       "budget_usd": 36000000,
       "release_type": "wide",
       "genre": "Drama",
@@ -128,7 +128,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror",
+      "genre": "Horror / Fantasy",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "cmjpadVj-Vk"

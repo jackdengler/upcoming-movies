@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
+      "director": "Aaron Horvath, Michael Jelenic",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -154,7 +154,7 @@
       "studio": "Utopia",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / Comedy",
       "cast": "Katarina Zhu, Austin Amelio, Perry Yung, Jack Kilmer",
       "notes": "",
       "youtube_trailer_id": "V5vy1VPkBzk"
@@ -193,7 +193,7 @@
       "studio": "IFC Films",
       "budget_usd": 7400000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
       "notes": "You can't unsee it.",
       "youtube_trailer_id": "bKiX2FBBz54"
@@ -649,7 +649,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / War",
-      "cast": "Jasper Billerbeck, Diane Kruger, Kian Köppke, Laura Tonke",
+      "cast": "Jasper Billerbeck, Laura Tonke, Lisa Hagmeister, Kian Köppke",
       "notes": "",
       "youtube_trailer_id": "-izT0MKkvZY"
     },
@@ -674,7 +674,7 @@
       "studio": "Roadside Attractions",
       "budget_usd": 45000000,
       "release_type": "wide",
-      "genre": "Action / Crime / Drama / Thriller",
+      "genre": "Action / Crime / Thriller",
       "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw, Elham Ehsas",
       "notes": "Down to the wire.",
       "youtube_trailer_id": "1aNywiElPSY"
@@ -834,19 +834,6 @@
       "cast": "John Lennon, Yoko Ono, John Ward, Gary Van Scyoc",
       "notes": "",
       "youtube_trailer_id": "P7DztEZ86IY"
-    },
-    {
-      "tmdb_id": 768614,
-      "date": "2026-04-30",
-      "title": "Silver Star",
-      "director": "Ruben Amar, Lola Bessis",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Crime / Drama / Comedy",
-      "cast": "Troy Leigh-Anne Johnson, Grace Van Dien, Noa Fisher, Odley Jean",
-      "notes": "Can you survive?",
-      "youtube_trailer_id": "2p5_WMputF0"
     },
     {
       "tmdb_id": 1650789,

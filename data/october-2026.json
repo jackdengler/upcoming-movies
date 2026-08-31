@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -56,6 +56,19 @@
       "youtube_trailer_id": "qORTe1wW3Wg"
     },
     {
+      "tmdb_id": 1393326,
+      "date": "2026-10-02",
+      "title": "Ghost in the Cell",
+      "director": "Joko Anwar",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Comedy / Thriller",
+      "cast": "Abimana Aryasatya, Bront Palarae, Dimas Danang, Endy Arfian",
+      "notes": "",
+      "youtube_trailer_id": "otL78_pk_A0"
+    },
+    {
       "tmdb_id": 1310649,
       "date": "2026-10-02",
       "title": "Orion",
@@ -67,6 +80,19 @@
       "cast": "Andrew McCarthy, Drew Van Acker, Debby Ryan, Karin Ann",
       "notes": "Surviving the mission was just the beginning.",
       "youtube_trailer_id": "XZi6ekNNsqA"
+    },
+    {
+      "tmdb_id": 1654086,
+      "date": "2026-10-02",
+      "title": "The Influencer Project",
+      "director": "Mike Nybroe",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Chiara King, Luca Storm, Mike Nybroe, Jazmine Summer",
+      "notes": "Where do you hide when everyone is watching?",
+      "youtube_trailer_id": "q5DIxirBMx4"
     },
     {
       "tmdb_id": 1403519,
@@ -103,7 +129,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Family",
-      "cast": "Jennifer Marshall, Hudson Barry, Eileen Grubba, Tom Ohmer",
+      "cast": "Jennifer Marshall, Eileen Grubba, Hudson Barry, Tom Ohmer",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -147,17 +173,30 @@
       "youtube_trailer_id": "7b20GRFZBFE"
     },
     {
+      "tmdb_id": 1443151,
+      "date": "2026-10-09",
+      "title": "Double Trouble",
+      "director": "Shaun Paul Piccinino",
+      "studio": "Seismic Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Comedy",
+      "cast": "Violet McGraw, Madeleine McGraw, Brynne Kurland, Andrew Koji",
+      "notes": "",
+      "youtube_trailer_id": "eEp5VA0gyVc"
+    },
+    {
       "tmdb_id": 1401459,
       "date": "2026-10-09",
       "title": "Fjord",
       "director": "Cristian Mungiu",
       "studio": "Neon",
-      "budget_usd": 4800000,
+      "budget_usd": 4749000,
       "release_type": "limited",
-      "genre": "Family / Drama",
+      "genre": "Drama",
       "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
       "notes": "",
-      "youtube_trailer_id": "0gdRZZVoinM"
+      "youtube_trailer_id": "frg59VOungA"
     },
     {
       "tmdb_id": 1381221,
@@ -180,10 +219,23 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Mystery",
+      "genre": "Horror",
       "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
       "notes": "Your mommy won't save you.",
       "youtube_trailer_id": "bEpTgowZ1dI"
+    },
+    {
+      "tmdb_id": 1756286,
+      "date": "2026-10-09",
+      "title": "Portrait of an Artist: Stephen Curry",
+      "director": "Gotham Chopra",
+      "studio": "Walt Disney Studios Motion Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Stephen Curry",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1212310,
@@ -283,7 +335,7 @@
       "director": "Georgia Oakley",
       "studio": "Focus Features",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / Romance",
       "cast": "Daisy Edgar-Jones, Esmé Creed-Miles, Caitríona Balfe, Bodhi Rae Breathnach",
       "notes": "No one knows your heart like a sister.",
@@ -294,7 +346,7 @@
       "date": "2026-10-16",
       "title": "Street Fighter",
       "director": "Kitao Sakurai",
-      "studio": "Paramount Pictures",
+      "studio": "Paramount Pictures International",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Fantasy",
@@ -324,9 +376,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Comedy",
-      "cast": "Kal Penn, Abbie Cornish, Linda Hamilton, Al Sapienza",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Kal Penn, Linda Hamilton, David Julian Hirsh, Abbie Cornish",
+      "notes": "Sometimes the truth needs a second opinion.",
+      "youtube_trailer_id": "X4zhhkpI3oY"
     },
     {
       "tmdb_id": 1255833,
@@ -353,6 +405,19 @@
       "cast": "Rose Byrne, Kelli O'Hara, Tracee Chimo, Mark Consuelos",
       "notes": "",
       "youtube_trailer_id": "UPe63HYOypc"
+    },
+    {
+      "tmdb_id": 1084409,
+      "date": "2026-10-23",
+      "title": "A Talent for Murder",
+      "director": "Anton Corbijn",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Crime",
+      "cast": "Olivia Cooke, Helen Mirren, Alden Ehrenreich, Juliet Stevenson",
+      "notes": "The end is where the plotting begins.",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1400940,
@@ -390,8 +455,34 @@
       "release_type": "wide",
       "genre": "Animation / Adventure / Fantasy",
       "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Arthur Knight",
-      "notes": "Where dark forests hide darker secrets...",
+      "notes": "How far would you go for those you love?",
       "youtube_trailer_id": "dtr5JL1zkiM"
+    },
+    {
+      "tmdb_id": 1517123,
+      "date": "2026-10-28",
+      "title": "On the Road",
+      "director": "David Pablos",
+      "studio": "Strand Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Thriller / Crime",
+      "cast": "Victor Prieto Simental, Osvaldo Sánchez, Mariano López Sosa, Héctor Cárdenas",
+      "notes": "",
+      "youtube_trailer_id": "92gV-ObLHos"
+    },
+    {
+      "tmdb_id": 939541,
+      "date": "2026-10-30",
+      "title": "Christmas at the Kringles",
+      "director": "Kevin Lewis",
+      "studio": "Briarcliff Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Action / Horror / Comedy",
+      "cast": "Ron Livingston, Rachel Bilson, Rob Riggle, Arden Myrin",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1714568,
@@ -441,7 +532,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Music / Family",
-      "cast": "Carl Anderson, Hope Klessig",
+      "cast": "Carl Anderson, Hope Klessig, Carl MJ Anderson",
       "notes": "",
       "youtube_trailer_id": "G2UnTTQGh58"
     },

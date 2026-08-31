@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -9,7 +9,7 @@
       "title": "The Plague",
       "director": "Charlie Polinger",
       "studio": "IFC Films",
-      "budget_usd": 1000000,
+      "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / Thriller",
       "cast": "Everett Blunck, Kayo Martin, Joel Edgerton, Kenny Rasmussen",
@@ -137,7 +137,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "wide",
@@ -155,7 +155,7 @@
       "budget_usd": 63000000,
       "release_type": "wide",
       "genre": "Horror / Thriller / Science Fiction",
-      "cast": "Ralph Fiennes, Jack O'Connell, Alfie Williams, Erin Kellyman",
+      "cast": "Jack O'Connell, Alfie Williams, Connor Newall, Erin Kellyman",
       "notes": "Fear is the new faith.",
       "youtube_trailer_id": "rl_DJZCyEH4"
     },

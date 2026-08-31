@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -140,7 +140,7 @@
       "director": "David Wain",
       "studio": "Sony Pictures Classics",
       "budget_usd": 3500000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy",
       "cast": "Zoey Deutch, John Slattery, Ken Marino, Miles Gutierrez-Riley",
       "notes": "It's hammer time... who's your celebrity sex pass?",
@@ -491,7 +491,7 @@
       "director": "Brett Sullivan",
       "studio": "Bleecker Street Media",
       "budget_usd": 5000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / Fantasy / Romance",
       "cast": "Reeve Carney, Eva Noblezada, André De Shields, Patrick Page",
       "notes": "The myth. The musical.",
@@ -532,7 +532,7 @@
       "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Action / Thriller / Crime",
-      "cast": "Alan Ritchson, Shailene Woodley, Ben Foster, Amar Chadha-Patel",
+      "cast": "Alan Ritchson, Ben Foster, Shailene Woodley, Lionel Boyce",
       "notes": "Love will drive you mad.",
       "youtube_trailer_id": "t6RklhKu9os"
     },
@@ -545,9 +545,9 @@
       "budget_usd": 500000,
       "release_type": "limited",
       "genre": "Horror / Fantasy / Mystery",
-      "cast": "Jude Evan Lloyd, Robert Englund, Cameron Bell, Jessica Balmer",
+      "cast": "Jude Evan Lloyd, Cameron Bell, Richard Brake, Jessica Balmer",
       "notes": "He has no strings to hold him back now.",
-      "youtube_trailer_id": "Xt3zQ8v2pzk"
+      "youtube_trailer_id": "Y4lZewE6JMI"
     },
     {
       "tmdb_id": 1130948,
@@ -610,7 +610,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Music / Documentary",
-      "cast": "George Michael, Andrew Ridgeley",
+      "cast": "George Michael, Andrew Ridgeley, Pepsi DeMacque, Shirlie Kemp",
       "notes": "",
       "youtube_trailer_id": "P7oAaJqqv8w"
     },

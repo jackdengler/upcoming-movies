@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -462,7 +462,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Kevin McManus, Matthew McManus",
+      "director": "Matthew McManus, Kevin McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",

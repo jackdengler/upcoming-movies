@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
       "notes": "Are you down?",
       "youtube_trailer_id": "Krs0VDIjhmE"
+    },
+    {
+      "tmdb_id": 1675218,
+      "date": "2026-09-02",
+      "title": "Sara Bareilles: Good Grief",
+      "director": "Josh Alexander",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Sara Bareilles, Butterfly Boucher, Misty Boyce, Solomon Dorsey",
+      "notes": "",
+      "youtube_trailer_id": "6zqjPcbvlgM"
     },
     {
       "tmdb_id": 1365593,
@@ -82,6 +95,19 @@
       "youtube_trailer_id": "M3rLoZ7QGUY"
     },
     {
+      "tmdb_id": 1364401,
+      "date": "2026-09-04",
+      "title": "Come with Me",
+      "director": "Aaron Harvey",
+      "studio": "Vertical Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Theo Rossi, Ron Perlman, Kate French, Ronnie Gene Blevins",
+      "notes": "",
+      "youtube_trailer_id": "Mrml6hR4XT4"
+    },
+    {
       "tmdb_id": 1671548,
       "date": "2026-09-04",
       "title": "Dear You",
@@ -108,19 +134,6 @@
       "youtube_trailer_id": "Yp4ZW6luyV4"
     },
     {
-      "tmdb_id": 1417935,
-      "date": "2026-09-04",
-      "title": "Filipiñana",
-      "director": "Rafael Manuel",
-      "studio": "Kino Lorber",
-      "budget_usd": 55000,
-      "release_type": "wide",
-      "genre": "Drama / Mystery",
-      "cast": "Jorrybell Agoto, Teroy Guzman, Nour Hooshmand, Carlos Siguion-Reyna",
-      "notes": "",
-      "youtube_trailer_id": "Mq-7rJqNJ4I"
-    },
-    {
       "tmdb_id": 1751884,
       "date": "2026-09-04",
       "title": "La Ultima Oportunidad",
@@ -141,7 +154,7 @@
       "studio": "A24",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Horror / Thriller",
+      "genre": "Action / Thriller",
       "cast": "Adria Arjona, Alex Pereira, Dan Stevens, Eric Wareheim",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
@@ -186,17 +199,56 @@
       "youtube_trailer_id": "mYRc2Gl7geY"
     },
     {
-      "tmdb_id": 1447853,
+      "tmdb_id": 1627931,
+      "date": "2026-09-09",
+      "title": "Who Moves America",
+      "director": "Yael Bridge",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Sean O’Brien, Justin Alo, Antoine Andrews, Angel Badu",
+      "notes": "",
+      "youtube_trailer_id": "Y96nHSwgGzM"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-09-11",
+      "title": "A Marble in the Jar",
+      "director": "—",
+      "studio": "Level 33 Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Tatiana Weston-Webb, Kelly Slater, Carissa Moore, Rochelle Ballard",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1629355,
+      "date": "2026-09-11",
+      "title": "Black Zombie",
+      "director": "Maya Annik Bedward",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Horror / Thriller",
+      "cast": "Yves-Grégory Francois, Anderson Mojica, Erol Josué, Mambo Labelle Déese Botanica",
+      "notes": "A culture, a legacy, and a people that refuse to die.",
+      "youtube_trailer_id": "qxb3f3XumaE"
+    },
+    {
+      "tmdb_id": null,
       "date": "2026-09-11",
       "title": "Don't Look Back in Anger",
-      "director": "Dylan Southern, Will Lovelace",
+      "director": "—",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary / Music",
-      "cast": "Noel Gallagher, Liam Gallagher, Paul Arthurs, Gem Archer",
-      "notes": "The great wait is over.",
-      "youtube_trailer_id": "6z_0B_lyRTo"
+      "cast": "Liam Gallagher, Noel Gallagher, Oasis, Anaïs Gallagher",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1701141,
@@ -235,7 +287,7 @@
       "genre": "Romance / Fantasy / Comedy",
       "cast": "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams",
       "notes": "Everything you've witched for.",
-      "youtube_trailer_id": "NNVKVal7kh8"
+      "youtube_trailer_id": "Ho10_4IX1jE"
     },
     {
       "tmdb_id": 1377237,
@@ -274,7 +326,7 @@
       "genre": "Action / Thriller",
       "cast": "Zachary Levi, Liam Neeson, Wes Chatham, Titus Welliver",
       "notes": "Settle the score.",
-      "youtube_trailer_id": "NYC0v8xqQdM"
+      "youtube_trailer_id": "l5Luvr9TRRc"
     },
     {
       "tmdb_id": 977942,
@@ -284,7 +336,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / History / War",
+      "genre": "Drama / Action / History",
       "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
@@ -293,27 +345,27 @@
       "tmdb_id": 1733257,
       "date": "2026-09-15",
       "title": "Juan Gabriel: Mi Primer Bellas Artes",
-      "director": "María José Cuevas, Benjamin H. Stavillo",
+      "director": "María José Cuevas, Benjamín Estavillo",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Music",
-      "cast": "Juan Gabriel",
+      "genre": "Music / Documentary",
+      "cast": "Juan Gabriel, Elena Poniatowska, Daniela Romo",
       "notes": "",
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1629355,
+      "tmdb_id": 1198654,
       "date": "2026-09-18",
-      "title": "Black Zombie",
-      "director": "Maya Annik Bedward",
-      "studio": "Kino Lorber",
+      "title": "Bad Apples",
+      "director": "Jonatan Etzler",
+      "studio": "Republic Pictures",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary / Horror / Thriller",
-      "cast": "Yves-Grégory Francois, Anderson Mojica, Erol Josué, Mambo Labelle Déese Botanica",
-      "notes": "A culture, a legacy, and a people that refuse to die.",
-      "youtube_trailer_id": "qxb3f3XumaE"
+      "release_type": "limited",
+      "genre": "Comedy / Thriller",
+      "cast": "Saoirse Ronan, Jacob Anderson, Sean Gilder, Robert Emms",
+      "notes": "It only takes one",
+      "youtube_trailer_id": "4nhu80EmVQE"
     },
     {
       "tmdb_id": 1706702,
@@ -342,19 +394,6 @@
       "youtube_trailer_id": "aej2y_BBBFs"
     },
     {
-      "tmdb_id": 1514056,
-      "date": "2026-09-18",
-      "title": "Nika & Madison",
-      "director": "Eva Thomas",
-      "studio": "Indican Pictures",
-      "budget_usd": 2000000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
-      "notes": "",
-      "youtube_trailer_id": "QAAlkFKaUxM"
-    },
-    {
       "tmdb_id": 1423191,
       "date": "2026-09-18",
       "title": "Resident Evil",
@@ -364,7 +403,7 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
-      "notes": "No sweat.",
+      "notes": "No Sweat.",
       "youtube_trailer_id": "mNd1gb19A-c"
     },
     {
@@ -378,7 +417,7 @@
       "genre": "Animation / Comedy / Science Fiction / Family",
       "cast": "Justin Fletcher, John Sparkes, Kate Harbour, Nina Sosanya",
       "notes": "What's that coming over the hill?",
-      "youtube_trailer_id": "T3K2uKvi_0s"
+      "youtube_trailer_id": "daZMq0AyOMc"
     },
     {
       "tmdb_id": 1280015,
@@ -394,6 +433,32 @@
       "youtube_trailer_id": "-W_a2oCFNOY"
     },
     {
+      "tmdb_id": 1596296,
+      "date": "2026-09-18",
+      "title": "The History of Concrete",
+      "director": "John Wilson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Comedy",
+      "cast": "John Wilson, Michael Imperioli, Nathan Fielder, Timothée Chalamet",
+      "notes": "",
+      "youtube_trailer_id": "O05arcJjOd0"
+    },
+    {
+      "tmdb_id": 1579941,
+      "date": "2026-09-18",
+      "title": "The Musical",
+      "director": "Giselle Bonilla",
+      "studio": "Blue Harbor Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Will Brill, Gillian Jacobs, Rob Lowe, Nevada Jose",
+      "notes": "",
+      "youtube_trailer_id": "DaDzxM68BYc"
+    },
+    {
       "tmdb_id": 1433583,
       "date": "2026-09-18",
       "title": "The Weight",
@@ -405,6 +470,19 @@
       "cast": "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio",
       "notes": "A tale of good and evil.",
       "youtube_trailer_id": "7YpuMymmiJ8"
+    },
+    {
+      "tmdb_id": 1513253,
+      "date": "2026-09-18",
+      "title": "Tiny Fugitives",
+      "director": "Michael Lewen",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Johnny Knoxville, Benjamin Pajak, Aaron D. Harris, Isa Bernal Steiner",
+      "notes": "",
+      "youtube_trailer_id": "C0uuH03Wnks"
     },
     {
       "tmdb_id": 1493991,
@@ -446,6 +524,19 @@
       "youtube_trailer_id": "YeVLfvn7cLk"
     },
     {
+      "tmdb_id": 1715598,
+      "date": "2026-09-24",
+      "title": "Pulp: What Do You Do for an Encore?",
+      "director": "Garth Jennings",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Jarvis Cocker, Candida Doyle, Nick Banks, Mark Webber",
+      "notes": "",
+      "youtube_trailer_id": "BPIyAvBd6a4"
+    },
+    {
       "tmdb_id": 1126097,
       "date": "2026-09-25",
       "title": "Charlie Harper",
@@ -472,6 +563,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1229906,
+      "date": "2026-09-25",
+      "title": "Family",
+      "director": "Benjamin Finkel",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Horror",
+      "cast": "Ruth Wilson, Ben Chaplin, Cameron Dawson Gray, Allan Corduner",
+      "notes": "Some bonds should never be broken.",
+      "youtube_trailer_id": "iSMs7CnxA5g"
+    },
+    {
       "tmdb_id": 1465063,
       "date": "2026-09-25",
       "title": "Forgotten Island",
@@ -494,7 +598,7 @@
       "release_type": "wide",
       "genre": "Comedy / Drama / Romance",
       "cast": "Rinko Kikuchi, Alberto Guerra, Alejandro Edda, YOU",
-      "notes": "Rinko Kikuchi Dances Her Way Through Grief",
+      "notes": "",
       "youtube_trailer_id": "Ik4lJmXgR6U"
     },
     {
@@ -502,7 +606,7 @@
       "date": "2026-09-25",
       "title": "Heart of the Beast",
       "director": "David Ayer",
-      "studio": "Paramount Pictures",
+      "studio": "Paramount Pictures International",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Adventure / Thriller",
@@ -626,19 +730,6 @@
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
       "youtube_trailer_id": "uEcoV-ngH38"
-    },
-    {
-      "tmdb_id": 939541,
-      "date": "2026-09-30",
-      "title": "Christmas at the Kringles",
-      "director": "Kevin Lewis",
-      "studio": "Briarcliff Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Horror / Comedy",
-      "cast": "Ron Livingston, Rachel Bilson, Rob Riggle, Arden Myrin",
-      "notes": "",
-      "youtube_trailer_id": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-08-24",
+  "updated": "2026-08-31",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -101,7 +101,7 @@
       "director": "RZA",
       "studio": "Variance Films",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Drama / Thriller",
       "cast": "Shameik Moore, Blair Underwood, RJ Cyler, Paris Jackson",
       "notes": "He has nowhere to go. They have nowhere to hide.",
@@ -194,7 +194,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Reed Birney, Kieron Moore",
+      "cast": "Reed Birney, Kieron Moore, Turner Beckett",
       "notes": "",
       "youtube_trailer_id": "oZI8G4lfbgc"
     },
@@ -246,7 +246,7 @@
       "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
-      "cast": "Karl Urban, Adeline Rudolph, Jessica McNamee, Josh Lawson",
+      "cast": "Karl Urban, Adeline Rudolph, Ludi Lin, Jessica McNamee",
       "notes": "Their fight. Our future.",
       "youtube_trailer_id": "qGyIEis2T2o"
     },
@@ -258,7 +258,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Thriller / TV Movie",
+      "genre": "Action / Thriller",
       "cast": "Josh Duhamel, Dylan Sprouse, Til Schweiger, Jeremy London",
       "notes": "How far would you go to save your son?",
       "youtube_trailer_id": "EGl9BwPOLVs"

@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -255,7 +255,7 @@
       "date": "2026-08-14",
       "title": "PAW Patrol: The Dino Movie",
       "director": "Cal Brunker",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Animation / Adventure / Family / Fantasy / Comedy",
@@ -285,7 +285,7 @@
       "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Science Fiction / Mystery / Thriller",
-      "cast": "Anne Hathaway, Ewan McGregor, Christian Convery, Maisy Stella",
+      "cast": "Anne Hathaway, Ewan McGregor, Maisy Stella, Christian Convery",
       "notes": "Where goes the neighborhood.",
       "youtube_trailer_id": "u4tgctWuHc0"
     },
@@ -298,7 +298,7 @@
       "budget_usd": 6000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Matthew McConaughey, Angelina LookingGlass, Jake Horowitz, Scott Shepherd",
+      "cast": "Owen Teague, Matthew McConaughey, Angelina LookingGlass, Jake Horowitz",
       "notes": "Ain’t no one all bad or all good.",
       "youtube_trailer_id": "GwSvAyaMGMo"
     },
@@ -368,17 +368,17 @@
       "youtube_trailer_id": "x54MPGBWXA8"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1529024,
       "date": "2026-08-21",
       "title": "How to Divorce During the War",
-      "director": "—",
+      "director": "Andrius Blaževičius",
       "studio": "Zeitgeist Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Žygimantė Elena Jakštaitė, Marius Repšys, Tomas Seckus, Alla Bineeva",
+      "genre": "Drama",
+      "cast": "Marius Repšys, Žygimantė Elena Jakštaitė, Indrė Patkauskaitė, Gintarė Parulytė",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "36eO2GEf0Qs"
     },
     {
       "tmdb_id": 1291595,
@@ -449,9 +449,9 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
-      "budget_usd": null,
+      "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Comedy",
       "cast": "Leslie Mann, Michelle Buteau, Anna Faris, Isla Fisher",
@@ -568,12 +568,12 @@
       "title": "Buddy",
       "director": "Casper Kelly",
       "studio": "Roadside Attractions",
-      "budget_usd": null,
+      "budget_usd": 3000000,
       "release_type": "wide",
-      "genre": "Horror / Comedy",
+      "genre": "Horror / Comedy / Fantasy",
       "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
       "notes": "It's Buddy!",
-      "youtube_trailer_id": "Pc9MbCNYn3k"
+      "youtube_trailer_id": "O1fNEHX9tSM"
     },
     {
       "tmdb_id": 1375646,
@@ -598,21 +598,21 @@
       "release_type": "wide",
       "genre": "Comedy / Adventure / Family",
       "cast": "Will Forte, Lana Condor, John Cena, Tone Bell",
-      "notes": "The movie ACME doesn't want you to see.",
+      "notes": "He's hungry for justice.",
       "youtube_trailer_id": "kMsiD1Nky5I"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1417935,
       "date": "2026-08-28",
       "title": "Filipiñana",
-      "director": "—",
+      "director": "Rafael Manuel",
       "studio": "Kino Lorber",
-      "budget_usd": null,
+      "budget_usd": 55000,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / Mystery",
       "cast": "Jorrybell Agoto, Carmen Castellanos, Teroy Guzman, Carlos Siguion-Reyna",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "Mq-7rJqNJ4I"
     },
     {
       "tmdb_id": 1339588,
@@ -680,19 +680,6 @@
       "youtube_trailer_id": "TJ5bCaaGIx4"
     },
     {
-      "tmdb_id": 1514056,
-      "date": "2026-08-28",
-      "title": "Nika & Madison",
-      "director": "Eva Thomas",
-      "studio": "Indican Pictures",
-      "budget_usd": 2000000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
-      "notes": "",
-      "youtube_trailer_id": "QAAlkFKaUxM"
-    },
-    {
       "tmdb_id": 1462861,
       "date": "2026-08-28",
       "title": "Spider Island",
@@ -726,7 +713,7 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
-      "genre": "Science Fiction / Adventure / Thriller",
+      "genre": "Science Fiction / Drama",
       "cast": "Jacob Elordi, Margaret Qualley, Josh Brolin, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
       "youtube_trailer_id": "-xSxaE1ClEE"

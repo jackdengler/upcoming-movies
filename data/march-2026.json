@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -290,6 +290,19 @@
       "youtube_trailer_id": "UlxEVrEhVes"
     },
     {
+      "tmdb_id": 1513996,
+      "date": "2026-03-20",
+      "title": "Maya & Samar",
+      "director": "Anita Doron",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance / Thriller",
+      "cast": "Nicolette Pearse, Amanda Babaei Vieira, Agni Scott, Harrison Browne",
+      "notes": "",
+      "youtube_trailer_id": "GnqBPZR0hys"
+    },
+    {
       "tmdb_id": 1432596,
       "date": "2026-03-20",
       "title": "Palestine 36",
@@ -299,7 +312,7 @@
       "release_type": "limited",
       "genre": "Drama / History / War",
       "cast": "Karim Daoud Anaya, Hiam Abbass, Robert Aramayo, Billy Howle",
-      "notes": "The uprising that took on an empire",
+      "notes": "The uprising that took on an empire.",
       "youtube_trailer_id": "14H4J8bewDY"
     },
     {
@@ -480,7 +493,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Horror / Comedy",
-      "cast": "Lili Reinhart, Lola Tung, Victoria Pedretti, Alexandra Shipp",
+      "cast": "Lili Reinhart, Jordan Duarte, Victoria Pedretti, Alexandra Shipp",
       "notes": "The coven just clocked in.",
       "youtube_trailer_id": "0nyUCq9k7_0"
     },
@@ -557,7 +570,7 @@
       "studio": "1-2 Special",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama",
+      "genre": "Drama / Mystery",
       "cast": "Paula Beer, Barbara Auer, Matthias Brandt, Enno Trebs",
       "notes": "",
       "youtube_trailer_id": "PqNG8EWydW0"
@@ -610,7 +623,7 @@
       "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Action / Comedy / Horror / Thriller",
-      "cast": "Zazie Beetz, Myha'la, Paterson Joseph, Tom Felton",
+      "cast": "Zazie Beetz, Patricia Arquette, Myha'la, Paterson Joseph",
       "notes": "Let them try.",
       "youtube_trailer_id": "s0PGrtw0X1Q"
     },

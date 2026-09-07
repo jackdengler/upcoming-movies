@@ -1,18 +1,18 @@
 {
   "month": "September 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Michael Spierig, Peter Spierig",
+      "director": "Peter Spierig, Michael Spierig",
       "studio": "Lionsgate",
-      "budget_usd": null,
+      "budget_usd": 3000000,
       "release_type": "wide",
       "genre": "Thriller",
-      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Einar Haraldsson",
+      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Virginia Gardner",
       "notes": "Are you down?",
       "youtube_trailer_id": "Krs0VDIjhmE"
     },
@@ -76,10 +76,23 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Drama / Thriller / History",
-      "cast": "Mark Wahlberg, Yahya Abdul-Mateen II, Nicole Beharie, David Strathairn",
+      "genre": "History / Crime / Drama / Thriller",
+      "cast": "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas",
       "notes": "The FBI couldn't crack it. So they called in the mob.",
       "youtube_trailer_id": "fvnyrBnUx4E"
+    },
+    {
+      "tmdb_id": 1599181,
+      "date": "2026-09-04",
+      "title": "Chronovisor",
+      "director": "Kevin Walker, Jack Auen",
+      "studio": "Grasshopper Film",
+      "budget_usd": 55000,
+      "release_type": "limited",
+      "genre": "Mystery / Science Fiction / Horror",
+      "cast": "Anne Laure Sellier, Nicholas Tebben, Nicole Dombrowski Risser, Alex Kolodkin",
+      "notes": "",
+      "youtube_trailer_id": "KPt2iZg7M50"
     },
     {
       "tmdb_id": 1452267,
@@ -102,7 +115,7 @@
       "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy",
+      "genre": "Crime / Drama / Mystery / Thriller",
       "cast": "Theo Rossi, Ron Perlman, Kate French, Ronnie Gene Blevins",
       "notes": "",
       "youtube_trailer_id": "Mrml6hR4XT4"
@@ -147,17 +160,56 @@
       "youtube_trailer_id": "oBDbYCAGd6s"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-09-04",
+      "title": "Occupational Hazard: The First Coral Reefers",
+      "director": "—",
+      "studio": "Evan Saxon Productions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Roger Bartlett, Jeff Bridges, Jimmy Buffett, Kenny Chesney",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1284046,
       "date": "2026-09-04",
       "title": "Onslaught",
       "director": "Adam Wingard",
       "studio": "A24",
-      "budget_usd": null,
+      "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Action / Thriller",
-      "cast": "Adria Arjona, Alex Pereira, Dan Stevens, Eric Wareheim",
+      "cast": "Adria Arjona, Dan Stevens, Eric Wareheim, Reginald VelJohnson",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
+    },
+    {
+      "tmdb_id": 1657843,
+      "date": "2026-09-04",
+      "title": "P31",
+      "director": "Carl Jackson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Adventure / Family / Musical / Romance",
+      "cast": "Alexis Andrews",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1530121,
+      "date": "2026-09-04",
+      "title": "The Girl in the River",
+      "director": "Brando Benetton",
+      "studio": "Highland Film Group (HFG)",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "Maggie Grace, Devon Sawa, Tiffany Haddish, Ralph Macchio",
+      "notes": "Every lie floats to the surface.",
+      "youtube_trailer_id": "WKPSSLbnh-E"
     },
     {
       "tmdb_id": 1490214,
@@ -171,6 +223,19 @@
       "cast": "Dakota Fanning, Jake Johnson, Cory Michael Smith, Debby Ryan",
       "notes": "",
       "youtube_trailer_id": "nTIfzXx8nJY"
+    },
+    {
+      "tmdb_id": 1748754,
+      "date": "2026-09-04",
+      "title": "The Work in Progress",
+      "director": "Ian Cheney",
+      "studio": "Abramorama",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Robert Reich",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1497970,
@@ -196,31 +261,18 @@
       "genre": "Science Fiction / Mystery / Action",
       "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Alicia Vikander",
       "notes": "Is this how it ends?",
-      "youtube_trailer_id": "mYRc2Gl7geY"
+      "youtube_trailer_id": "OFaJzL83y0Q"
     },
     {
-      "tmdb_id": 1627931,
-      "date": "2026-09-09",
-      "title": "Who Moves America",
-      "director": "Yael Bridge",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Sean O’Brien, Justin Alo, Antoine Andrews, Angel Badu",
-      "notes": "",
-      "youtube_trailer_id": "Y96nHSwgGzM"
-    },
-    {
-      "tmdb_id": null,
+      "tmdb_id": 1765179,
       "date": "2026-09-11",
       "title": "A Marble in the Jar",
-      "director": "—",
+      "director": "Greg Browning",
       "studio": "Level 33 Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Tatiana Weston-Webb, Kelly Slater, Carissa Moore, Rochelle Ballard",
+      "cast": "Kelly Slater, Tatiana Weston-Webb",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -246,9 +298,22 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary / Music",
-      "cast": "Liam Gallagher, Noel Gallagher, Oasis, Anaïs Gallagher",
+      "cast": "Liam Gallagher, Anaïs Gallagher, Noel Gallagher, Oasis",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1375161,
+      "date": "2026-09-11",
+      "title": "Don't Move",
+      "director": "Maclain Nelson",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Lyndsy Fonseca, Russ, Tom Cavanagh, Hunter King",
+      "notes": "Whatever you do…",
+      "youtube_trailer_id": "FwoYYKyJo1g"
     },
     {
       "tmdb_id": 1701141,
@@ -342,6 +407,19 @@
       "youtube_trailer_id": "lyhCxZN4Ro8"
     },
     {
+      "tmdb_id": 1596282,
+      "date": "2026-09-12",
+      "title": "The Friend's House Is Here",
+      "director": "Hossein Keshavarz, Maryam Ataei",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Mahshad Bahram, Hana Mana, Farzad Karen, Zohreh Pirnia",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1733257,
       "date": "2026-09-15",
       "title": "Juan Gabriel: Mi Primer Bellas Artes",
@@ -355,6 +433,32 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1403676,
+      "date": "2026-09-18",
+      "title": "April X",
+      "director": "K-Michel Parandi",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller / Science Fiction",
+      "cast": "Connor Storrie, Lilly Krug, Tudor Chirilă, Șerban Pavlu",
+      "notes": "Find her. Find the truth.",
+      "youtube_trailer_id": "1Dbuam1jvw4"
+    },
+    {
+      "tmdb_id": 1359206,
+      "date": "2026-09-18",
+      "title": "Arsa",
+      "director": "Masbedo",
+      "studio": "Fandango",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Gala Zohar Martinucci, Jacopo Olmo Antinori, Tommaso Ragno, Lino Musella",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1198654,
       "date": "2026-09-18",
       "title": "Bad Apples",
@@ -364,7 +468,7 @@
       "release_type": "limited",
       "genre": "Comedy / Thriller",
       "cast": "Saoirse Ronan, Jacob Anderson, Sean Gilder, Robert Emms",
-      "notes": "It only takes one",
+      "notes": "It only takes one.",
       "youtube_trailer_id": "4nhu80EmVQE"
     },
     {
@@ -403,7 +507,7 @@
       "release_type": "wide",
       "genre": "Horror / Science Fiction",
       "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
-      "notes": "No Sweat.",
+      "notes": "No sweat.",
       "youtube_trailer_id": "mNd1gb19A-c"
     },
     {
@@ -414,7 +518,7 @@
       "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Science Fiction / Family",
+      "genre": "Animation / Comedy / Family / Adventure / Horror",
       "cast": "Justin Fletcher, John Sparkes, Kate Harbour, Nina Sosanya",
       "notes": "What's that coming over the hill?",
       "youtube_trailer_id": "daZMq0AyOMc"
@@ -455,7 +559,7 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Will Brill, Gillian Jacobs, Rob Lowe, Nevada Jose",
-      "notes": "",
+      "notes": "It's not personal. It's middle school.",
       "youtube_trailer_id": "DaDzxM68BYc"
     },
     {
@@ -481,7 +585,7 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Johnny Knoxville, Benjamin Pajak, Aaron D. Harris, Isa Bernal Steiner",
-      "notes": "",
+      "notes": "Summer ain't over yet.",
       "youtube_trailer_id": "C0uuH03Wnks"
     },
     {
@@ -537,6 +641,19 @@
       "youtube_trailer_id": "BPIyAvBd6a4"
     },
     {
+      "tmdb_id": 1627931,
+      "date": "2026-09-24",
+      "title": "Who Moves America",
+      "director": "Yael Bridge",
+      "studio": "8 Above",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary",
+      "cast": "Sean O’Brien, Justin Alo, Antoine Andrews, Angel Badu",
+      "notes": "",
+      "youtube_trailer_id": "Y96nHSwgGzM"
+    },
+    {
       "tmdb_id": 1126097,
       "date": "2026-09-25",
       "title": "Charlie Harper",
@@ -583,7 +700,7 @@
       "studio": "DreamWorks",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Comedy / Family / Fantasy",
+      "genre": "Animation / Adventure / Fantasy / Comedy / Family",
       "cast": "H.E.R., Liza Soberano, Dave Franco, Lea Salonga",
       "notes": "No memory left behind.",
       "youtube_trailer_id": "f7mFVeWnVLw"
@@ -606,7 +723,7 @@
       "date": "2026-09-25",
       "title": "Heart of the Beast",
       "director": "David Ayer",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Adventure / Thriller",
@@ -654,6 +771,19 @@
       "youtube_trailer_id": "5fHXyqQOKL8"
     },
     {
+      "tmdb_id": 1291366,
+      "date": "2026-09-25",
+      "title": "The Deputy",
+      "director": "Matt Sukkar",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Crime / Thriller / Comedy",
+      "cast": "Duke Nicholson, William H. Macy, Tiffany Haddish, Stephen Dorff",
+      "notes": "Trust no body.",
+      "youtube_trailer_id": "ZvQZ6U0UXPQ"
+    },
+    {
       "tmdb_id": 1554956,
       "date": "2026-09-25",
       "title": "The Incomer",
@@ -661,7 +791,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy",
+      "genre": "Comedy / Drama",
       "cast": "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott",
       "notes": "Welcome to Auk Isle. Population: one too many.",
       "youtube_trailer_id": "vJ6TSvmnUEE"

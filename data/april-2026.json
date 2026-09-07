@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "Roadside Attractions",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / History",
+      "genre": "History / Drama",
       "cast": "John Paul Sneed, Jonathan Blair, JT Schaeffer, Josh Bates",
       "notes": "Before the American Revolution, there was a revelation.",
       "youtube_trailer_id": "H4-rMC88ylQ"
@@ -193,10 +193,10 @@
       "studio": "IFC Films",
       "budget_usd": 7400000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Crime",
       "cast": "Barbie Ferreira, Dacre Montgomery, Josie Totah, Aaron Holliday",
       "notes": "You can't unsee it.",
-      "youtube_trailer_id": "bKiX2FBBz54"
+      "youtube_trailer_id": "D6ScdXrsTMo"
     },
     {
       "tmdb_id": 843342,
@@ -272,7 +272,7 @@
       "budget_usd": 18000000,
       "release_type": "wide",
       "genre": "Romance / Comedy",
-      "cast": "Halle Bailey, Regé-Jean Page, Marco Calvani, Lorenzo de Moor",
+      "cast": "Halle Bailey, Regé-Jean Page, Lorenzo de Moor, Marco Calvani",
       "notes": "She came for the pasta and got lost in the sauce.",
       "youtube_trailer_id": "uYTMroh8pjI"
     },
@@ -505,7 +505,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": 10000000,
       "release_type": "wide",
-      "genre": "Action / Crime / Thriller / Western",
+      "genre": "Action / Crime / Thriller",
       "cast": "Bob Odenkirk, Henry Winkler, Lena Headey, Billy MacLellan",
       "notes": "Small town. Big secret.",
       "youtube_trailer_id": "5OndK0w1lYY"

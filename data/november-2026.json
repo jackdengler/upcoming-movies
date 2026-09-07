@@ -1,8 +1,21 @@
 {
   "month": "November 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1050981,
+      "date": "2026-11-06",
+      "title": "Being Heumann",
+      "director": "Sian Heder",
+      "studio": "Apple Original Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Ruth Madeley, Mark Ruffalo, Dylan O'Brien, Madeline Delp",
+      "notes": "Based on a true revolution.",
+      "youtube_trailer_id": "9INUY8uKRyU"
+    },
     {
       "tmdb_id": 1585239,
       "date": "2026-11-06",
@@ -12,9 +25,22 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Drama",
-      "cast": "Jordan Firstman, Cara Delevingne, Diego Calva, Reggie Absolom",
+      "cast": "Jordan Firstman, Reggie Absolom, Diego Calva, Cara Delevingne",
       "notes": "",
       "youtube_trailer_id": "guKEdb_iRXw"
+    },
+    {
+      "tmdb_id": 1562642,
+      "date": "2026-11-06",
+      "title": "Ghost Soldier",
+      "director": "William Eubank",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
+      "notes": "",
+      "youtube_trailer_id": "l0pTZqZWs-c"
     },
     {
       "tmdb_id": 1381071,
@@ -43,6 +69,19 @@
       "youtube_trailer_id": "EURriesRel0"
     },
     {
+      "tmdb_id": 1241052,
+      "date": "2026-11-06",
+      "title": "Mouse",
+      "director": "Alex Thompson, Kelly O'Sullivan",
+      "studio": "IFC Films",
+      "budget_usd": 3000000,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Katherine Mallen Kupferer, Chloe Coleman, Sophie Okonedo, Tara Mallen",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1117898,
       "date": "2026-11-06",
       "title": "The Cat in the Hat",
@@ -64,8 +103,8 @@
       "budget_usd": 5000000,
       "release_type": "wide",
       "genre": "Comedy / Crime / Thriller",
-      "cast": "John Malkovich, Sam Rockwell, Steve Buscemi, Parker Posey",
-      "notes": "",
+      "cast": "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo",
+      "notes": "Sometimes you've got to do a terrible thing for the greater good.",
       "youtube_trailer_id": "Haw_sznA5aQ"
     },
     {
@@ -73,7 +112,7 @@
       "date": "2026-11-13",
       "title": "Ebenezer",
       "director": "Ti West",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Fantasy / Comedy",
@@ -108,6 +147,19 @@
       "youtube_trailer_id": "ldCb77jXIsM"
     },
     {
+      "tmdb_id": 1694097,
+      "date": "2026-11-19",
+      "title": "GIANT - The Play",
+      "director": "Nicholas Hytner",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "John Lithgow, Elliot Levey, Aya Cash, Rachael Stirling",
+      "notes": "A world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends.",
+      "youtube_trailer_id": "iJ6aCRF3_m0"
+    },
+    {
       "tmdb_id": 1286656,
       "date": "2026-11-20",
       "title": "I Play Rocky",
@@ -134,6 +186,19 @@
       "youtube_trailer_id": "K32NPBLpqZI"
     },
     {
+      "tmdb_id": 848700,
+      "date": "2026-11-20",
+      "title": "Minotaur",
+      "director": "Andrey Zvyagintsev",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Crime / Thriller",
+      "cast": "Dmitriy Mazurov, Iris Lebedeva, Varvara Shmykova, Juris Žagars",
+      "notes": "Morality is a maze.",
+      "youtube_trailer_id": "xXJYasEPpMk"
+    },
+    {
       "tmdb_id": 1300968,
       "date": "2026-11-20",
       "title": "The Hunger Games: Sunrise on the Reaping",
@@ -154,7 +219,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / History",
+      "genre": "Drama",
       "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
       "notes": "",
       "youtube_trailer_id": null
@@ -170,7 +235,7 @@
       "genre": "Comedy / Romance",
       "cast": "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo",
       "notes": "The circle of trust just got bigger.",
-      "youtube_trailer_id": "vyISuWUWcFs"
+      "youtube_trailer_id": "9CKu3WoMYCg"
     },
     {
       "tmdb_id": 1461490,
@@ -197,6 +262,19 @@
       "cast": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
       "notes": "Something is happening to Billie...",
       "youtube_trailer_id": "mtC4sjABZNw"
+    },
+    {
+      "tmdb_id": 1457866,
+      "date": "2026-11-25",
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "director": "David Fincher",
+      "studio": "Netflix",
+      "budget_usd": 200000000,
+      "release_type": "limited",
+      "genre": "Drama / Comedy / Thriller",
+      "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino",
+      "notes": "",
+      "youtube_trailer_id": "ik0drfECnPo"
     }
   ]
 }

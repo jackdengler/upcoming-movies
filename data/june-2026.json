@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -350,7 +350,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Romance / Drama",
-      "cast": "Maya da Costa, Myra Molloy, Levon Hawke, Zach Braff",
+      "cast": "Maya da Costa, Myra Molloy, Zach Braff, Levon Hawke",
       "notes": "Love begins when you let it in.",
       "youtube_trailer_id": "ZC1kEknG2ro"
     },
@@ -494,7 +494,7 @@
       "release_type": "limited",
       "genre": "Action / Adventure / Animation",
       "cast": "Masakazu Morita, Noriaki Sugiyama, Yuki Matsuoka, Hiroki Yasumoto",
-      "notes": "One. Last. Battle.",
+      "notes": "The end begins here",
       "youtube_trailer_id": "DKKZ10FsSBM"
     },
     {
@@ -625,7 +625,7 @@
       "genre": "Action / Adventure / Science Fiction",
       "cast": "Milly Alcock, Eve Ridley, Matthias Schoenaerts, Jason Momoa",
       "notes": "Truth. Justice. Whatever.",
-      "youtube_trailer_id": "tzlY8XD1CGg"
+      "youtube_trailer_id": "rbLyjarG_bU"
     },
     {
       "tmdb_id": 1279493,
@@ -646,7 +646,7 @@
       "title": "The Invite",
       "director": "Olivia Wilde",
       "studio": "A24",
-      "budget_usd": 6000000,
+      "budget_usd": 12000000,
       "release_type": "limited",
       "genre": "Comedy / Drama / Romance",
       "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",

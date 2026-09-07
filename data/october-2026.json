@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -27,7 +27,7 @@
       "genre": "War / Drama",
       "cast": "Boyd Holbrook, Kenneth Branagh, Hiam Abbass, Gheed Saleh",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "RBhp78Xt01w"
     },
     {
       "tmdb_id": 1244523,
@@ -69,6 +69,19 @@
       "youtube_trailer_id": "otL78_pk_A0"
     },
     {
+      "tmdb_id": 1313826,
+      "date": "2026-10-02",
+      "title": "Nickels",
+      "director": "Spencer King",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Rob Riggle, Aaron Holliday, Elizabeth Tulloch, Rebecca Gayheart",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1310649,
       "date": "2026-10-02",
       "title": "Orion",
@@ -80,6 +93,19 @@
       "cast": "Andrew McCarthy, Drew Van Acker, Debby Ryan, Karin Ann",
       "notes": "Surviving the mission was just the beginning.",
       "youtube_trailer_id": "XZi6ekNNsqA"
+    },
+    {
+      "tmdb_id": 1336166,
+      "date": "2026-10-02",
+      "title": "Rolling Loud",
+      "director": "Jeremy Garelick",
+      "studio": "Ketchup Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Music",
+      "cast": "Owen Wilson, Matt Rife, Christine Ko, Sexyy Red",
+      "notes": "",
+      "youtube_trailer_id": "o_pIiP1A0RY"
     },
     {
       "tmdb_id": 1654086,
@@ -121,6 +147,32 @@
       "youtube_trailer_id": "xdPMKhjMSFs"
     },
     {
+      "tmdb_id": 1381078,
+      "date": "2026-10-07",
+      "title": "Love of Your Life",
+      "director": "Rachel Morrison",
+      "studio": "Amazon Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance",
+      "cast": "Margaret Qualley, Patrick Schwarzenegger, Gabriel Basso, Aaron Pierre",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-10-08",
+      "title": "SB19 Wakas at Simula: The Trilogy Concert Finale In Cinemas",
+      "director": "—",
+      "studio": "Iconic Events Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "—",
+      "cast": "Stell Ajero, Justin De Dios, Pablo Nase, Josh Cullen Santos",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": null,
       "date": "2026-10-09",
       "title": "Adam's Fire",
@@ -157,7 +209,20 @@
       "genre": "Western / Action / Adventure / Romance",
       "cast": "Zachary Levi, Neal McDonough, Tommy Lee Jones, Meg Fraser",
       "notes": "",
-      "youtube_trailer_id": "s11BOqoAAvY"
+      "youtube_trailer_id": "3hwFBZ6475g"
+    },
+    {
+      "tmdb_id": 1236045,
+      "date": "2026-10-09",
+      "title": "Animals",
+      "director": "Ben Affleck",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Thriller",
+      "cast": "Ben Affleck, Kerry Washington, Steven Yeun, Gillian Anderson",
+      "notes": "Power can't protect you.",
+      "youtube_trailer_id": "TdSRAb-GSu0"
     },
     {
       "tmdb_id": 980431,
@@ -167,7 +232,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Action / Adventure / Fantasy",
+      "genre": "Animation / Adventure / Fantasy / Family",
       "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
       "notes": "The legacy reawakens.",
       "youtube_trailer_id": "7b20GRFZBFE"
@@ -183,7 +248,7 @@
       "genre": "Action / Comedy",
       "cast": "Violet McGraw, Madeleine McGraw, Brynne Kurland, Andrew Koji",
       "notes": "",
-      "youtube_trailer_id": "eEp5VA0gyVc"
+      "youtube_trailer_id": "gBYr2Ymc-lU"
     },
     {
       "tmdb_id": 1401459,
@@ -238,6 +303,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1288069,
+      "date": "2026-10-09",
+      "title": "Tenzing",
+      "director": "Jennifer Peedom",
+      "studio": "Apple Original Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Genden Phuntsok, Tom Hiddleston, Willem Dafoe, Caitríona Balfe",
+      "notes": "The ascent that made history.",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1212310,
       "date": "2026-10-09",
       "title": "Winter of the Crow",
@@ -272,7 +350,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Documentary / Drama / Sport",
-      "cast": "Magnus Carlsen, Hans Niemann, Levy Rozman, Danny Rensch",
+      "cast": "Magnus Carlsen, Hans Niemann, Danny Rensch, Levy Rozman",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -303,6 +381,32 @@
       "youtube_trailer_id": "Ji9E5F1LcNw"
     },
     {
+      "tmdb_id": 1422041,
+      "date": "2026-10-16",
+      "title": "La bola negra",
+      "director": "Javier Ambrossi, Javier Calvo",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / War",
+      "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
+      "notes": "",
+      "youtube_trailer_id": "IRHtqjHYPew"
+    },
+    {
+      "tmdb_id": 1514056,
+      "date": "2026-10-16",
+      "title": "Nika & Madison",
+      "director": "Eva Thomas",
+      "studio": "Indican Pictures",
+      "budget_usd": 2000000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Ellyn Jade, Star Slade, Amanda Brugel, Shawn Doyle",
+      "notes": "",
+      "youtube_trailer_id": "QAAlkFKaUxM"
+    },
+    {
       "tmdb_id": 1596300,
       "date": "2026-10-16",
       "title": "Once Upon a Time in Harlem",
@@ -313,7 +417,7 @@
       "genre": "Documentary",
       "cast": "Aaron Douglas, Richard Bruce Nugent, Ernest Crichlow, Eubie Blake",
       "notes": "A film over 50 years in the making.",
-      "youtube_trailer_id": "zIjmgj5rbOY"
+      "youtube_trailer_id": "ESnX3LQbCVI"
     },
     {
       "tmdb_id": 1272162,
@@ -346,13 +450,13 @@
       "date": "2026-10-16",
       "title": "Street Fighter",
       "director": "Kitao Sakurai",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Fantasy",
       "cast": "Andrew Koji, Noah Centineo, Callina Liang, Joe Anoa'i",
-      "notes": "Ready. Set. Fight.",
-      "youtube_trailer_id": "Xt4X4FvXk2A"
+      "notes": "Ready. Set. Fight!",
+      "youtube_trailer_id": "U6sbm1OaJb8"
     },
     {
       "tmdb_id": 1458099,
@@ -417,7 +521,20 @@
       "genre": "Drama / Crime",
       "cast": "Olivia Cooke, Helen Mirren, Alden Ehrenreich, Juliet Stevenson",
       "notes": "The end is where the plotting begins.",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "IzFgGhFrx0o"
+    },
+    {
+      "tmdb_id": 1727734,
+      "date": "2026-10-23",
+      "title": "Ali G: Who Iz I?",
+      "director": "Sacha Baron Cohen",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Sacha Baron Cohen, Morgana Robinson",
+      "notes": "Livin XXX large.",
+      "youtube_trailer_id": "6t7C4qaHihE"
     },
     {
       "tmdb_id": 1400940,
@@ -446,6 +563,19 @@
       "youtube_trailer_id": "wixzainceAE"
     },
     {
+      "tmdb_id": 1483525,
+      "date": "2026-10-23",
+      "title": "Possible Love",
+      "director": "Lee Chang-dong",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Jeon Do-yeon, Sul Kyung-gu, Zo In-sung, Cho Yeo-jeong",
+      "notes": "",
+      "youtube_trailer_id": "zd3qXH9qN70"
+    },
+    {
       "tmdb_id": 791523,
       "date": "2026-10-23",
       "title": "Wildwood",
@@ -454,9 +584,22 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Adventure / Fantasy",
-      "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Arthur Knight",
+      "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
       "notes": "How far would you go for those you love?",
       "youtube_trailer_id": "dtr5JL1zkiM"
+    },
+    {
+      "tmdb_id": 1596319,
+      "date": "2026-10-28",
+      "title": "Closure",
+      "director": "Michał Marczak",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Daniel Dymiński",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1517123,
@@ -493,7 +636,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Sport",
-      "cast": "Hilaree Nelson, Jim Morrison",
+      "cast": "Hilaree Nelson, Jim Morrison, Mikey Schaefer",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -527,27 +670,53 @@
       "tmdb_id": 1733243,
       "date": "2026-10-30",
       "title": "Sight & Sound Presents: JOSHUA Live!",
-      "director": "Chris Wert",
+      "director": "Ryan Miller",
       "studio": "Roadside Attractions",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Music / Family",
-      "cast": "Carl Anderson, Hope Klessig, Carl MJ Anderson",
+      "cast": "Hope Klessig, Carl MJ Anderson",
       "notes": "",
       "youtube_trailer_id": "G2UnTTQGh58"
     },
     {
-      "tmdb_id": 1228314,
+      "tmdb_id": 1294189,
       "date": "2026-10-30",
-      "title": "Stiletto",
-      "director": "Samuel Gonzalez Jr.",
-      "studio": "Iconic Events Releasing",
+      "title": "The Mongoose",
+      "director": "Mark Vanselow",
+      "studio": "The Samuel Goldwyn Company",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror",
-      "cast": "Gigi Gustin, Colleen Camp, Tyler Abron, Charlotte McKinney",
+      "genre": "Action / Thriller",
+      "cast": "Liam Neeson, Marisa Tomei, Ving Rhames, Michael Chiklis",
+      "notes": "",
+      "youtube_trailer_id": "aHrMFtt40_Q"
+    },
+    {
+      "tmdb_id": 1458300,
+      "date": "2026-10-30",
+      "title": "The Mosquito Bowl",
+      "director": "Peter Berg",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "History / Drama / War",
+      "cast": "Nicholas Galitzine, Bill Skarsgård, Ray Nicholson, Tom Francis",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1162823,
+      "date": "2026-10-30",
+      "title": "Who Killed Alex Odeh?",
+      "director": "Jason Osder, William Lafi Youmans",
+      "studio": "Watermelon Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": "NHt55w3k_TM"
     },
     {
       "tmdb_id": 1195803,

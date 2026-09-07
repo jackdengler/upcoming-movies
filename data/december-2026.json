@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -27,7 +27,46 @@
       "genre": "Music / Drama",
       "cast": "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett",
       "notes": "A life. In pieces.",
-      "youtube_trailer_id": "nlHocRZln8c"
+      "youtube_trailer_id": "xOiIgN2n2v8"
+    },
+    {
+      "tmdb_id": 1378791,
+      "date": "2026-12-04",
+      "title": "Everybody Digs Bill Evans",
+      "director": "Grant Gee",
+      "studio": "Cohen Media Group",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Music",
+      "cast": "Anders Danielsen Lie, Bill Pullman, Laurie Metcalf, Isabelle Harriet",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1370191,
+      "date": "2026-12-04",
+      "title": "Tender Loving Care",
+      "director": "Mike Leigh",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Comedy",
+      "cast": "Kate O'Flynn, Alice Bailey Johnson, Marion Bailey, Paul Jesson",
+      "notes": "",
+      "youtube_trailer_id": "yj2sR3cVET4"
+    },
+    {
+      "tmdb_id": 1379537,
+      "date": "2026-12-04",
+      "title": "The Gallerist",
+      "director": "Cathy Yan",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Natalie Portman, Jenna Ortega, Da'Vine Joy Randolph, Sterling K. Brown",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1078446,
@@ -43,6 +82,32 @@
       "youtube_trailer_id": "FmM2giDwLAE"
     },
     {
+      "tmdb_id": 1649403,
+      "date": "2026-12-11",
+      "title": "George Michael: The Faith Tour",
+      "director": "Andy Morahan, David Austin",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Music",
+      "cast": "George Michael, Herb Ritts",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1532610,
+      "date": "2026-12-11",
+      "title": "Ink",
+      "director": "Danny Boyle",
+      "studio": "Netflix",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History",
+      "cast": "Jack O'Connell, Guy Pearce, Claire Foy, Bertie Carvel",
+      "notes": "They broke the news.",
+      "youtube_trailer_id": "_LE1L4Huyys"
+    },
+    {
       "tmdb_id": 1391239,
       "date": "2026-12-11",
       "title": "The Debut",
@@ -51,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Music / Comedy / Drama",
-      "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Havana Rose Liu",
+      "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Patrick Fabian",
       "notes": "There's a method to the madness.",
       "youtube_trailer_id": "clyzHmBx43E"
     },
@@ -82,17 +147,43 @@
       "youtube_trailer_id": "NdvqHc56lE0"
     },
     {
+      "tmdb_id": 1154730,
+      "date": "2026-12-18",
+      "title": "La Gradiva",
+      "director": "Marine Atlan",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Colas Quignard, Antonia Buresi, Mitia Capellier-Audat, Suzanne Gerin",
+      "notes": "",
+      "youtube_trailer_id": "mJcYelIGoZk"
+    },
+    {
       "tmdb_id": 1300926,
       "date": "2026-12-23",
       "title": "The Angry Birds Movie 3",
       "director": "John Rice",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Comedy / Family",
       "cast": "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom",
       "notes": "One big angry family.",
       "youtube_trailer_id": "a9DB_aUMzME"
+    },
+    {
+      "tmdb_id": 1437981,
+      "date": "2026-12-25",
+      "title": "Coward",
+      "director": "Lukas Dhont",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance / War",
+      "cast": "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver",
+      "notes": "",
+      "youtube_trailer_id": "vyRlBGfVlvQ"
     },
     {
       "tmdb_id": 1260649,
@@ -112,7 +203,7 @@
       "date": "2026-12-25",
       "title": "Mr. Irrelevant",
       "director": "Jonathan Levine",
-      "studio": "Paramount Pictures International",
+      "studio": "Paramount Pictures",
       "budget_usd": 36000000,
       "release_type": "wide",
       "genre": "Drama",

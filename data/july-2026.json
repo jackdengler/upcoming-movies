@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -217,7 +217,7 @@
       "title": "The Invite",
       "director": "Olivia Wilde",
       "studio": "A24",
-      "budget_usd": 6000000,
+      "budget_usd": 12000000,
       "release_type": "wide",
       "genre": "Comedy / Drama / Romance",
       "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
@@ -402,7 +402,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Matt Cornett, Ramon Reed, Nathan Gamble, Chris Klein",
+      "cast": "Matt Cornett, Ramon Reed, Brec Bassinger, Nathan Gamble",
       "notes": "Spirit led. Court ordered.",
       "youtube_trailer_id": "EThWaKNRky8"
     },

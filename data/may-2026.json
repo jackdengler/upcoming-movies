@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Adventure",
+      "genre": "Comedy / Adventure / Animation",
       "cast": "Ryan Reynolds, Jason Momoa, Aubrey Plaza, Dan Levy",
       "notes": "You know you want to stroke it.",
       "youtube_trailer_id": null
@@ -76,7 +76,7 @@
       "studio": "Neon",
       "budget_usd": 5000000,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Thriller",
       "cast": "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh",
       "notes": "We've been expecting you.",
       "youtube_trailer_id": "qU_i5e48KzQ"
@@ -246,7 +246,7 @@
       "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
-      "cast": "Karl Urban, Adeline Rudolph, Ludi Lin, Jessica McNamee",
+      "cast": "Adeline Rudolph, Karl Urban, Martyn Ford, Tati Gabrielle",
       "notes": "Their fight. Our future.",
       "youtube_trailer_id": "qGyIEis2T2o"
     },
@@ -272,7 +272,7 @@
       "budget_usd": 3000000,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Tony Leung Chiu-wai, Luna Wedler, Enzo Brumm, Léa Seydoux",
+      "cast": "Tony Leung Chiu-wai, Luna Wedler, Enzo Brumm, Sylvester Groth",
       "notes": "",
       "youtube_trailer_id": "TaRZnpAmtJk"
     },
@@ -635,7 +635,7 @@
       "studio": "Cineverse",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Thriller",
+      "genre": "Horror / Action / Thriller",
       "cast": "Marshall Williams, Alex Essoe, Richard Harmon, Jordan Claire Robbins",
       "notes": "If the fall doesn't kill you... He will.",
       "youtube_trailer_id": "eIQzUWhsX4U"
@@ -661,7 +661,7 @@
       "studio": "Focus Features",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Thriller / History / War",
+      "genre": "Thriller / History / War / Drama",
       "cast": "Andrew Scott, Brendan Fraser, Kerry Condon, Chris Messina",
       "notes": "In the hours before D-Day, one decision changed the world.",
       "youtube_trailer_id": "jjdOSchcobk"
@@ -740,7 +740,7 @@
       "budget_usd": 7000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh",
+      "cast": "Leo Woodall, Dustin Hoffman, Alisen Richmond-Peck, Ellyn Jameson",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "XiehvETTjTQ"
     },

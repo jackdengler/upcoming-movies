@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -51,9 +51,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Science Fiction / Horror / Action",
-      "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Munetaka Aoki",
+      "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki",
       "notes": "人類の罪と罰。もう、無(ゼロ)には戻れない。",
-      "youtube_trailer_id": "Xmy-Z3dHMd8"
+      "youtube_trailer_id": "-9MA9BnA7Uo"
     },
     {
       "tmdb_id": 1241478,
@@ -92,7 +92,7 @@
       "genre": "Animation / Comedy / Adventure / Fantasy / Family",
       "cast": "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry",
       "notes": "The cat's out of the bag.",
-      "youtube_trailer_id": "HT5JAp5z0-o"
+      "youtube_trailer_id": "Vuv0kqGWjno"
     },
     {
       "tmdb_id": 891621,
@@ -147,6 +147,19 @@
       "youtube_trailer_id": "ldCb77jXIsM"
     },
     {
+      "tmdb_id": 1674139,
+      "date": "2026-11-13",
+      "title": "threeASFOUR: FULL CIRCLE",
+      "director": "Sean Ono Lennon",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Biography / Documentary / Drama",
+      "cast": "Gabi Asfour, Angela Donhauser, Adi Gil, Kai Kühne",
+      "notes": "",
+      "youtube_trailer_id": "E0Sc30mg3CE"
+    },
+    {
       "tmdb_id": 1694097,
       "date": "2026-11-19",
       "title": "GIANT - The Play",
@@ -168,8 +181,8 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / History",
-      "cast": "Anthony Ippolito, Stephan James, Matt Dillon, AnnaSophia Robb",
-      "notes": "His whole life was a million-to-one shot.",
+      "cast": "Anthony Ippolito, AnnaSophia Robb, Stephan James, Matt Dillon",
+      "notes": "The true underdog story.",
       "youtube_trailer_id": "V_g_Ut0jO-0"
     },
     {

@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -584,9 +584,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Vanessa Yao, Vivian Dawson, Albert Lew",
-      "notes": "",
-      "youtube_trailer_id": "mYW3M6urtm8"
+      "cast": "Vanessa Yao, Vivian Dawson, Russell Wong, Candace Kita",
+      "notes": "An epic life story of Lianxia Zhou.",
+      "youtube_trailer_id": "cy9vHEQ4TgI"
     },
     {
       "tmdb_id": 1659161,
@@ -680,10 +680,10 @@
       "youtube_trailer_id": "P3uI5sLosKU"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1768598,
       "date": "2026-07-31",
       "title": "The Choice",
-      "director": "—",
+      "director": "John David Coles",
       "studio": "Abramorama",
       "budget_usd": null,
       "release_type": "limited",

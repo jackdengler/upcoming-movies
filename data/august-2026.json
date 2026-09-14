@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -90,7 +90,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Willem Dafoe, Greta Lee, Jake Lacy, Graham Campbell",
+      "cast": "Willem Dafoe, Greta Lee, Edmund Donovan, Clay Singer",
       "notes": "",
       "youtube_trailer_id": "_qkhd73DE3E"
     },
@@ -128,7 +128,7 @@
       "studio": "Universal Pictures",
       "budget_usd": 25000000,
       "release_type": "wide",
-      "genre": "Comedy / Romance",
+      "genre": "Romance / Comedy",
       "cast": "Monica Barbaro, Callum Turner, Maya Hawke, King Princess",
       "notes": "12 hours can change everything.",
       "youtube_trailer_id": "lDsAVq9lo9g"
@@ -139,7 +139,7 @@
       "title": "Super Troopers 3",
       "director": "Jay Chandrasekhar",
       "studio": "Searchlight Pictures",
-      "budget_usd": null,
+      "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Comedy / Crime / Mystery",
       "cast": "Jay Chandrasekhar, Kevin Heffernan, Steve Lemme, Paul Soter",
@@ -147,10 +147,10 @@
       "youtube_trailer_id": "cYFevn5frf0"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1630504,
       "date": "2026-08-07",
       "title": "The Last Picture Shows",
-      "director": "—",
+      "director": "Rustin Thompson",
       "studio": "Foghorn Features",
       "budget_usd": null,
       "release_type": "limited",
@@ -360,9 +360,9 @@
       "title": "Hot Spot",
       "director": "Agnieszka Smoczyńska",
       "studio": "Focus Features",
-      "budget_usd": null,
+      "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Crime / Science Fiction / Thriller",
+      "genre": "Science Fiction / Action / Crime / Fantasy / Thriller",
       "cast": "Andrzej Konopka, Noomi Rapace, Reika Kirishima, Filippa Kaye",
       "notes": "The system is unstable.",
       "youtube_trailer_id": "x54MPGBWXA8"
@@ -389,7 +389,7 @@
       "budget_usd": 18000000,
       "release_type": "wide",
       "genre": "Horror / Thriller",
-      "cast": "Amelia Eve, Island Austin, Lin Shaye, Sam Spruell",
+      "cast": "Amelia Eve, Island Austin, Brandon Perea, Lin Shaye",
       "notes": "Evil found a way out.",
       "youtube_trailer_id": "gXjurDkYnEM"
     },
@@ -449,7 +449,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Black Bear",
       "budget_usd": 20000000,
       "release_type": "wide",
@@ -570,7 +570,7 @@
       "studio": "Roadside Attractions",
       "budget_usd": 3000000,
       "release_type": "wide",
-      "genre": "Horror / Comedy / Fantasy",
+      "genre": "Horror / Comedy",
       "cast": "Cristin Milioti, Delaney Quinn, Topher Grace, Keegan-Michael Key",
       "notes": "It's Buddy!",
       "youtube_trailer_id": "O1fNEHX9tSM"
@@ -598,7 +598,7 @@
       "release_type": "wide",
       "genre": "Comedy / Adventure / Family",
       "cast": "Will Forte, Lana Condor, John Cena, Tone Bell",
-      "notes": "He's hungry for justice.",
+      "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "kMsiD1Nky5I"
     },
     {
@@ -625,7 +625,7 @@
       "genre": "Romance / Comedy",
       "cast": "Spike Fearn, Angourie Rice, Cora Kirk, Jack Riddiford",
       "notes": "Right name, wrong number.",
-      "youtube_trailer_id": "-OGuJf70S0s"
+      "youtube_trailer_id": "wc2UjmPzN8c"
     },
     {
       "tmdb_id": 445466,
@@ -713,7 +713,7 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
-      "genre": "Science Fiction / Drama",
+      "genre": "Science Fiction / Thriller",
       "cast": "Jacob Elordi, Margaret Qualley, Josh Brolin, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
       "youtube_trailer_id": "-xSxaE1ClEE"

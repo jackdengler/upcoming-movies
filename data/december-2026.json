@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -89,10 +89,10 @@
       "studio": "Bleecker Street Media",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Music",
+      "genre": "Music / Documentary",
       "cast": "George Michael, Herb Ritts",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Experience the iconic 1988 concert.",
+      "youtube_trailer_id": "H_NwyHRY9yk"
     },
     {
       "tmdb_id": 1532610,
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Music / Comedy / Drama",
-      "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Patrick Fabian",
+      "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Jesse Eisenberg",
       "notes": "There's a method to the madness.",
       "youtube_trailer_id": "clyzHmBx43E"
     },
@@ -173,6 +173,19 @@
       "youtube_trailer_id": "a9DB_aUMzME"
     },
     {
+      "tmdb_id": 1492198,
+      "date": "2026-12-25",
+      "title": "Artificial",
+      "director": "Luca Guadagnino",
+      "studio": "Neon",
+      "budget_usd": 40000000,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "Andrew Garfield, Yura Borisov, Jason Schwartzman, Cooper Koch",
+      "notes": "",
+      "youtube_trailer_id": "rDZplZFnbOk"
+    },
+    {
       "tmdb_id": 1437981,
       "date": "2026-12-25",
       "title": "Coward",
@@ -208,8 +221,8 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "He will change the way you see the world.",
+      "youtube_trailer_id": "cwVE1qf6Ixs"
     },
     {
       "tmdb_id": 1421903,

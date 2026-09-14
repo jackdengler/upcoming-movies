@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -220,7 +220,7 @@
       "budget_usd": 500000,
       "release_type": "wide",
       "genre": "Horror / Mystery",
-      "cast": "Nina Kiri, Adam DiMarco, Keana Bastidas, Jeff Yung",
+      "cast": "Nina Kiri, Adam DiMarco, Michèle Duquet, Keana Bastidas",
       "notes": "It wants to be heard.",
       "youtube_trailer_id": "1fCZhJMkBaY"
     },
@@ -412,10 +412,10 @@
       "title": "Whitney Springs",
       "director": "Trey Parker",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 150000000,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Kendrick Lamar, Kellan Tetlow, Trey Parker, Andrea Sevilla",
+      "cast": "Kendrick Lamar, Kellan Tetlow, Trey Parker",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -611,7 +611,7 @@
       "release_type": "wide",
       "genre": "Documentary",
       "cast": "Daniel Roher, Sam Altman, Daniela Amodei, Dario Amodei",
-      "notes": "The future is not automatic",
+      "notes": "The future is not automatic.",
       "youtube_trailer_id": "xkPbV3IRe4Y"
     },
     {

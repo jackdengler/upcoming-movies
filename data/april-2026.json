@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -78,7 +78,7 @@
       "release_type": "limited",
       "genre": "Drama / Adventure / Science Fiction",
       "cast": "Denise Weinberg, Rodrigo Santoro, Miriam Socarrás, Adanilo",
-      "notes": "",
+      "notes": "The road to freedom might be a river.",
       "youtube_trailer_id": "nFQEUuodCQ0"
     },
     {
@@ -246,7 +246,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Amy Goodman",
+      "cast": "Amy Goodman, Juan Gonzalez, Jeremy Scahill, Nermeen Shaikh",
       "notes": "",
       "youtube_trailer_id": "GumfuqgijpY"
     },
@@ -258,7 +258,7 @@
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Comedy",
+      "genre": "Crime / Comedy / Drama",
       "cast": "Michaela Coel, Ian McKellen, Jessica Gunning, James Corden",
       "notes": "Art can be copied. Artists cannot.",
       "youtube_trailer_id": "42GkXhRVLUQ"
@@ -404,7 +404,7 @@
       "genre": "Drama / Comedy",
       "cast": "Charli xcx, Lena Góra, Will Madden, Jeremy O. Harris",
       "notes": "eh-roop-tsyah",
-      "youtube_trailer_id": "v5D_0BJD6CU"
+      "youtube_trailer_id": "qhSTQss7mzs"
     },
     {
       "tmdb_id": 1472844,
@@ -752,8 +752,8 @@
       "studio": "Greenwich Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Family",
-      "cast": "John Magaro, Molly Belle Wright, Talia Balsam, Rachel Alig",
+      "genre": "Drama",
+      "cast": "John Magaro, Molly Belle Wright, Wyatt Solis, Talia Balsam",
       "notes": "",
       "youtube_trailer_id": "M2OTVoxpetU"
     },

@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -323,7 +323,7 @@
       "studio": "Well Go USA Entertainment",
       "budget_usd": 123000000,
       "release_type": "limited",
-      "genre": "Action / Adventure / Drama / Western",
+      "genre": "Action / Adventure / Drama",
       "cast": "Wu Jing, Nicholas Tse Ting-Fung, Chen Lijun, Yu Shi",
       "notes": "A grand martial arts feast is back!",
       "youtube_trailer_id": "7jkL4-uYriY"
@@ -462,7 +462,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Matthew McManus, Kevin McManus",
+      "director": "Kevin McManus, Matthew McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",

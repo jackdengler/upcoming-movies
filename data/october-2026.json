@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -53,7 +53,7 @@
       "genre": "Comedy",
       "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
       "notes": "A man. A plan. A meltdown.",
-      "youtube_trailer_id": "qORTe1wW3Wg"
+      "youtube_trailer_id": "job8V254NAE"
     },
     {
       "tmdb_id": 1393326,
@@ -155,9 +155,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Margaret Qualley, Patrick Schwarzenegger, Gabriel Basso, Aaron Pierre",
+      "cast": "Margaret Qualley, Aaron Pierre, Gabriel Basso, Patrick Schwarzenegger",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "HzGx48E64Xg"
     },
     {
       "tmdb_id": null,
@@ -232,10 +232,23 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Adventure / Fantasy / Family",
+      "genre": "Animation / Adventure / Fantasy / Action",
       "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
       "notes": "The legacy reawakens.",
       "youtube_trailer_id": "7b20GRFZBFE"
+    },
+    {
+      "tmdb_id": 1193550,
+      "date": "2026-10-09",
+      "title": "California Schemin'",
+      "director": "James McAvoy",
+      "studio": "Magenta Light Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Music / Comedy / Drama",
+      "cast": "Séamus McLean Ross, Samuel Bottomley, Lucy Halliday, Rebekah Murrell",
+      "notes": "Get rich or try lying.",
+      "youtube_trailer_id": "oUTSyu4Ovcc"
     },
     {
       "tmdb_id": 1443151,
@@ -313,7 +326,33 @@
       "genre": "Drama",
       "cast": "Genden Phuntsok, Tom Hiddleston, Willem Dafoe, Caitríona Balfe",
       "notes": "The ascent that made history.",
+      "youtube_trailer_id": "rvpLrYx6yBM"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-10-09",
+      "title": "The Sixty-Year Mission: How Star Trek Changed Television and the World",
+      "director": "—",
+      "studio": "Regal Cinemas",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Christina Chong, Simon Pegg, William Shatner, Ethan Peck",
+      "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1630237,
+      "date": "2026-10-09",
+      "title": "Treasure Trekkers",
+      "director": "Kevin Munroe",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Adventure / Family",
+      "cast": "Greg Cipes, Meredith Anne Bull, Alan Cumming, Jack McBrayer",
+      "notes": "Empathy is a superpower.",
+      "youtube_trailer_id": "aQAj4XsHGBE"
     },
     {
       "tmdb_id": 1212310,
@@ -342,15 +381,15 @@
       "youtube_trailer_id": "uEcoV-ngH38"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1768029,
       "date": "2026-10-11",
       "title": "Grandmasters",
-      "director": "—",
+      "director": "Liza Mandelup",
       "studio": "Good Deed Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Documentary / Drama / Sport",
-      "cast": "Magnus Carlsen, Hans Niemann, Danny Rensch, Levy Rozman",
+      "genre": "Documentary",
+      "cast": "Magnus Carlsen, Wesley So, Jan Henric Buettner, Hans Niemann",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -392,6 +431,19 @@
       "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
       "notes": "",
       "youtube_trailer_id": "IRHtqjHYPew"
+    },
+    {
+      "tmdb_id": 1465858,
+      "date": "2026-10-16",
+      "title": "Lucky Strikes",
+      "director": "Darcy Waite",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy",
+      "cast": "Meegwun Fairbrother, Victoria Turko, Gabriel Daniels, Stephanie Sy",
+      "notes": "",
+      "youtube_trailer_id": "xAAseU_4waQ"
     },
     {
       "tmdb_id": 1514056,
@@ -495,7 +547,7 @@
       "genre": "Thriller",
       "cast": "Austin Abrams, Josh Brolin, Elisabeth Shue, John Ortiz",
       "notes": "Hold your breath.",
-      "youtube_trailer_id": "rN9F6-tbySY"
+      "youtube_trailer_id": "Dw-5ZGapGTQ"
     },
     {
       "tmdb_id": 1702350,
@@ -521,7 +573,7 @@
       "genre": "Drama / Crime",
       "cast": "Olivia Cooke, Helen Mirren, Alden Ehrenreich, Juliet Stevenson",
       "notes": "The end is where the plotting begins.",
-      "youtube_trailer_id": "IzFgGhFrx0o"
+      "youtube_trailer_id": "2AMYg6UmmjM"
     },
     {
       "tmdb_id": 1727734,
@@ -574,6 +626,19 @@
       "cast": "Jeon Do-yeon, Sul Kyung-gu, Zo In-sung, Cho Yeo-jeong",
       "notes": "",
       "youtube_trailer_id": "zd3qXH9qN70"
+    },
+    {
+      "tmdb_id": 1195803,
+      "date": "2026-10-23",
+      "title": "Wicker",
+      "director": "Eleanor Wilson, Alex Huston Fischer",
+      "studio": "Black Bear",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Romance / Fantasy / Comedy",
+      "cast": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
+      "notes": "Marriage material.",
+      "youtube_trailer_id": "UVAki9SGrlg"
     },
     {
       "tmdb_id": 791523,
@@ -702,7 +767,7 @@
       "release_type": "limited",
       "genre": "History / Drama / War",
       "cast": "Nicholas Galitzine, Bill Skarsgård, Ray Nicholson, Tom Francis",
-      "notes": "",
+      "notes": "Trained for glory, called to war.",
       "youtube_trailer_id": null
     },
     {
@@ -717,19 +782,6 @@
       "cast": "—",
       "notes": "",
       "youtube_trailer_id": "NHt55w3k_TM"
-    },
-    {
-      "tmdb_id": 1195803,
-      "date": "2026-10-30",
-      "title": "Wicker",
-      "director": "Eleanor Wilson, Alex Huston Fischer",
-      "studio": "Black Bear",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Romance / Fantasy / Comedy",
-      "cast": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
-      "notes": "Marriage material.",
-      "youtube_trailer_id": "UVAki9SGrlg"
     }
   ]
 }

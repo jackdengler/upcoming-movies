@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -256,10 +256,10 @@
       "title": "Hope",
       "director": "Na Hong-jin",
       "studio": "Neon",
-      "budget_usd": 40000000,
+      "budget_usd": 46000000,
       "release_type": "limited",
       "genre": "Science Fiction / Mystery / Action",
-      "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Alicia Vikander",
+      "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Lee Sang-hee",
       "notes": "Is this how it ends?",
       "youtube_trailer_id": "OFaJzL83y0Q"
     },
@@ -311,7 +311,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary / Music",
-      "cast": "Anaïs Gallagher, Liam Gallagher, Noel Gallagher, Oasis",
+      "cast": "Oasis, Liam Gallagher, Noel Gallagher, Paul Arthurs",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -340,6 +340,19 @@
       "cast": "Amariah Dionne, Tabitha Brownstone, Nicholas Kolasinski, Barron Regan",
       "notes": "Real alligators. Real teeth. Real terror.",
       "youtube_trailer_id": "mvSxjFkBdK4"
+    },
+    {
+      "tmdb_id": 1596248,
+      "date": "2026-09-11",
+      "title": "If I Go Will They Miss Me",
+      "director": "Walter Thompson-Hernández",
+      "studio": "N/A",
+      "budget_usd": 120000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Bodhi Dell, J. Alphonse Nicholson, Danielle Brooks, Kelvin Adekunle",
+      "notes": "",
+      "youtube_trailer_id": "aej2y_BBBFs"
     },
     {
       "tmdb_id": 1215458,
@@ -379,6 +392,19 @@
       "cast": "Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George",
       "notes": "Next-day delivery isn't an option.",
       "youtube_trailer_id": "B6Z9MM1LhEA"
+    },
+    {
+      "tmdb_id": 1725104,
+      "date": "2026-09-11",
+      "title": "Sting of Death",
+      "director": "Kevin Murphy",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Science Fiction / Comedy",
+      "cast": "Michael J. Nelson, Kevin Murphy, Bill Corbett, Mary Jo Pehl",
+      "notes": "",
+      "youtube_trailer_id": "KottXcRvssg"
     },
     {
       "tmdb_id": 1459062,
@@ -425,25 +451,12 @@
       "title": "The Uprising",
       "director": "Paul Greengrass",
       "studio": "Focus Features",
-      "budget_usd": null,
+      "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Drama / Action / History",
+      "genre": "Action / History / Drama",
       "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
-    },
-    {
-      "tmdb_id": 1596282,
-      "date": "2026-09-12",
-      "title": "The Friend's House Is Here",
-      "director": "Hossein Keshavarz, Maryam Ataei",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Mahshad Bahram, Hana Mana, Farzad Karen, Zohreh Pirnia",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1733257,
@@ -466,7 +479,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Thriller / Science Fiction",
+      "genre": "Action / Thriller / Science Fiction / Drama",
       "cast": "Connor Storrie, Lilly Krug, Tudor Chirilă, Șerban Pavlu",
       "notes": "Find her. Find the truth.",
       "youtube_trailer_id": "1Dbuam1jvw4"
@@ -493,7 +506,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Thriller",
-      "cast": "Saoirse Ronan, Jacob Anderson, Sean Gilder, Robert Emms",
+      "cast": "Saoirse Ronan, Eddie Waller, Nia Brown, Jacob Anderson",
       "notes": "It only takes one.",
       "youtube_trailer_id": "4nhu80EmVQE"
     },
@@ -502,7 +515,7 @@
       "date": "2026-09-18",
       "title": "Daniel and the Fiery Furnace",
       "director": "Matthew Kooman, Daniel Kooman",
-      "studio": "N/A",
+      "studio": "EKKL Entertainment",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama",
@@ -511,28 +524,15 @@
       "youtube_trailer_id": "FYm_sWSw6Eo"
     },
     {
-      "tmdb_id": 1596248,
-      "date": "2026-09-18",
-      "title": "If I Go Will They Miss Me",
-      "director": "Walter Thompson-Hernández",
-      "studio": "N/A",
-      "budget_usd": 120000,
-      "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Bodhi Dell, J. Alphonse Nicholson, Danielle Brooks, Kelvin Adekunle",
-      "notes": "",
-      "youtube_trailer_id": "aej2y_BBBFs"
-    },
-    {
       "tmdb_id": 1423191,
       "date": "2026-09-18",
       "title": "Resident Evil",
       "director": "Zach Cregger",
       "studio": "Columbia Pictures",
-      "budget_usd": 80000000,
+      "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller / Adventure",
-      "cast": "Austin Abrams, Zach Cherry, Kali Reis, Paul Walter Hauser",
+      "genre": "Horror / Science Fiction / Adventure",
+      "cast": "Austin Abrams, Paul Walter Hauser, Kali Reis, Zach Cherry",
       "notes": "A new era of evil.",
       "youtube_trailer_id": "mNd1gb19A-c"
     },
@@ -545,7 +545,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Animation / Comedy / Family / Adventure / Horror",
-      "cast": "Justin Fletcher, John Sparkes, Kate Harbour, Nina Sosanya",
+      "cast": "Justin Fletcher, John Sparkes, Kate Harbour, Simon Greenall",
       "notes": "What's that coming over the hill?",
       "youtube_trailer_id": "daZMq0AyOMc"
     },
@@ -753,7 +753,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Adventure / Thriller",
-      "cast": "Brad Pitt, Uber, J.K. Simmons, Anna Lambe",
+      "cast": "Brad Pitt, J.K. Simmons, Anna Lambe",
       "notes": "Survival depends on their bond.",
       "youtube_trailer_id": "UkMuGKqAux4"
     },
@@ -781,7 +781,7 @@
       "genre": "Drama",
       "cast": "Jessica Lange, Ed Harris, Ben Foster, Colin Morgan",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "GS2tOk7htKI"
     },
     {
       "tmdb_id": 1629051,
@@ -817,10 +817,10 @@
       "studio": "A24",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Crime / Drama / Thriller",
+      "genre": "Drama / Thriller",
       "cast": "Robert Pattinson, Merritt Wever, Skyler Gisondo, Phoebe Bridgers",
       "notes": "Are you ready to make television history?",
-      "youtube_trailer_id": "5fHXyqQOKL8"
+      "youtube_trailer_id": "C0NZa01qTRU"
     },
     {
       "tmdb_id": 1291366,

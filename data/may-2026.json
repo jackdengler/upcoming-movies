@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -24,7 +24,7 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Adventure / Animation",
+      "genre": "Comedy / Adventure",
       "cast": "Ryan Reynolds, Jason Momoa, Aubrey Plaza, Dan Levy",
       "notes": "You know you want to stroke it.",
       "youtube_trailer_id": null
@@ -63,7 +63,7 @@
       "studio": "Magenta Light Studios",
       "budget_usd": 40000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror / Thriller / Adventure",
       "cast": "Aaron Eckhart, Ben Kingsley, Molly Belle Wright, Angus Sampson",
       "notes": "Surviving the crash is just the beginning.",
       "youtube_trailer_id": "f0ptq0Lzdh8"
@@ -246,7 +246,7 @@
       "budget_usd": 80000000,
       "release_type": "wide",
       "genre": "Action / Fantasy / Adventure",
-      "cast": "Adeline Rudolph, Karl Urban, Martyn Ford, Tati Gabrielle",
+      "cast": "Karl Urban, Adeline Rudolph, Ludi Lin, Jessica McNamee",
       "notes": "Their fight. Our future.",
       "youtube_trailer_id": "qGyIEis2T2o"
     },
@@ -463,7 +463,7 @@
       "date": "2026-05-21",
       "title": "Stolen Kingdom",
       "director": "Joshua Bailey",
-      "studio": "Antenna Entertainment",
+      "studio": "Antenna Entertainments",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary",
@@ -661,7 +661,7 @@
       "studio": "Focus Features",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Thriller / History / War / Drama",
+      "genre": "Thriller / History / War",
       "cast": "Andrew Scott, Brendan Fraser, Kerry Condon, Chris Messina",
       "notes": "In the hours before D-Day, one decision changed the world.",
       "youtube_trailer_id": "jjdOSchcobk"

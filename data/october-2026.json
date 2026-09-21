@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -25,7 +25,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "War / Drama",
-      "cast": "Boyd Holbrook, Kenneth Branagh, Hiam Abbass, Gheed Saleh",
+      "cast": "Boyd Holbrook, Hiam Abbass, Kenneth Branagh, Gheed",
       "notes": "",
       "youtube_trailer_id": "RBhp78Xt01w"
     },
@@ -37,7 +37,7 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Thriller",
+      "genre": "Adventure / Horror / Thriller",
       "cast": "Logan Marshall-Green, Kiana Madeira, Jessica Rothe, Jackson Bews",
       "notes": "Witness terror on a gigantic scale.",
       "youtube_trailer_id": "4fn4UcgzRhg"
@@ -79,7 +79,7 @@
       "genre": "Drama",
       "cast": "Rob Riggle, Aaron Holliday, Elizabeth Tulloch, Rebecca Gayheart",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "HtGkvXA-qPc"
     },
     {
       "tmdb_id": 1310649,
@@ -194,7 +194,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Anna Wintour",
+      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Diane von Fürstenberg",
       "notes": "",
       "youtube_trailer_id": "YbHTpU4lHds"
     },
@@ -222,7 +222,7 @@
       "genre": "Crime / Thriller",
       "cast": "Ben Affleck, Kerry Washington, Steven Yeun, Gillian Anderson",
       "notes": "Power can't protect you.",
-      "youtube_trailer_id": "TdSRAb-GSu0"
+      "youtube_trailer_id": "mlBfQJ8oxB0"
     },
     {
       "tmdb_id": 980431,
@@ -269,11 +269,11 @@
       "title": "Fjord",
       "director": "Cristian Mungiu",
       "studio": "Neon",
-      "budget_usd": 4749000,
+      "budget_usd": 4750000,
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
-      "notes": "",
+      "notes": "When does protection become control?",
       "youtube_trailer_id": "frg59VOungA"
     },
     {
@@ -290,6 +290,19 @@
       "youtube_trailer_id": "ACaWuqeLpSk"
     },
     {
+      "tmdb_id": 1391021,
+      "date": "2026-10-09",
+      "title": "Once Upon a Time in the Middle East",
+      "director": "Wen Muye",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / War",
+      "cast": "Shen Teng, Jiang Qiming, Omar Sherif, Aarif Rahman",
+      "notes": "Eat well, stay alive.",
+      "youtube_trailer_id": "iHDNxZF7LRw"
+    },
+    {
       "tmdb_id": 1400837,
       "date": "2026-10-09",
       "title": "Other Mommy",
@@ -300,7 +313,7 @@
       "genre": "Horror",
       "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
       "notes": "Your mommy won't save you.",
-      "youtube_trailer_id": "bEpTgowZ1dI"
+      "youtube_trailer_id": "-mnTITqqiT0"
     },
     {
       "tmdb_id": 1756286,
@@ -311,9 +324,9 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Stephen Curry",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Stephen Curry, Viola Davis, Rick Rubin, Patti Smith",
+      "notes": "Discover the secret of how one player changed the game.",
+      "youtube_trailer_id": "Gk__Le9Dgxo"
     },
     {
       "tmdb_id": 1288069,
@@ -323,10 +336,10 @@
       "studio": "Apple Original Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / History",
       "cast": "Genden Phuntsok, Tom Hiddleston, Willem Dafoe, Caitríona Balfe",
       "notes": "The ascent that made history.",
-      "youtube_trailer_id": "rvpLrYx6yBM"
+      "youtube_trailer_id": "KkYCY5YR12U"
     },
     {
       "tmdb_id": null,
@@ -337,7 +350,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Christina Chong, Simon Pegg, William Shatner, Ethan Peck",
+      "cast": "Christina Chong, Simon Pegg, William Shatner, Walter Koenig",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -628,6 +641,19 @@
       "youtube_trailer_id": "zd3qXH9qN70"
     },
     {
+      "tmdb_id": 1493307,
+      "date": "2026-10-23",
+      "title": "Seniors",
+      "director": "Lance Clark",
+      "studio": "Collide Distribution",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Drama",
+      "cast": "John Rhys-Davies, Paris Brosnan, Bethany Anne Lind, Eric Mendenhall",
+      "notes": "Every good story deserves the right ending.",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1195803,
       "date": "2026-10-23",
       "title": "Wicker",
@@ -651,7 +677,7 @@
       "genre": "Animation / Adventure / Fantasy",
       "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
       "notes": "How far would you go for those you love?",
-      "youtube_trailer_id": "dtr5JL1zkiM"
+      "youtube_trailer_id": "bJQGtSeLPII"
     },
     {
       "tmdb_id": 1596319,
@@ -690,7 +716,7 @@
       "genre": "Action / Horror / Comedy",
       "cast": "Ron Livingston, Rachel Bilson, Rob Riggle, Arden Myrin",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "zql0pXIpELI"
     },
     {
       "tmdb_id": 1714568,
@@ -729,7 +755,7 @@
       "genre": "Drama",
       "cast": "Juliette Binoche, Tom Courtenay, Anna Calder-Marshall, Florence Hunt",
       "notes": "",
-      "youtube_trailer_id": "AyYaNvtC2i0"
+      "youtube_trailer_id": "UVyH8QYENxI"
     },
     {
       "tmdb_id": 1733243,

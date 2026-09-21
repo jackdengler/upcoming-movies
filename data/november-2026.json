@@ -1,8 +1,21 @@
 {
   "month": "November 2026",
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1753205,
+      "date": "2026-11-04",
+      "title": "Rammstein - Live in Mexico City",
+      "director": "Paul Dugdale",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Till Lindemann, Richard Kruspe, Christoph Schneider, Paul Landers",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
     {
       "tmdb_id": 1050981,
       "date": "2026-11-06",
@@ -28,19 +41,6 @@
       "cast": "Jordan Firstman, Reggie Absolom, Diego Calva, Cara Delevingne",
       "notes": "",
       "youtube_trailer_id": "guKEdb_iRXw"
-    },
-    {
-      "tmdb_id": 1562642,
-      "date": "2026-11-06",
-      "title": "Ghost Soldier",
-      "director": "William Eubank",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Action / Thriller",
-      "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
-      "notes": "",
-      "youtube_trailer_id": "l0pTZqZWs-c"
     },
     {
       "tmdb_id": 1381071,
@@ -76,10 +76,10 @@
       "studio": "IFC Films",
       "budget_usd": 3000000,
       "release_type": "limited",
-      "genre": "Comedy / Drama",
-      "cast": "Katherine Mallen Kupferer, Chloe Coleman, Sophie Okonedo, Tara Mallen",
+      "genre": "Drama / Comedy",
+      "cast": "Sophie Okonedo, Katherine Mallen Kupferer, Chloe Coleman, David Hyde Pierce",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "sfvh4VZsFuY"
     },
     {
       "tmdb_id": 1117898,
@@ -108,6 +108,32 @@
       "youtube_trailer_id": "Haw_sznA5aQ"
     },
     {
+      "tmdb_id": 1562642,
+      "date": "2026-11-11",
+      "title": "Ghost Soldier",
+      "director": "William Eubank",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
+      "notes": "He's not a threat, he's a guarantee.",
+      "youtube_trailer_id": "l0pTZqZWs-c"
+    },
+    {
+      "tmdb_id": 1591604,
+      "date": "2026-11-11",
+      "title": "Soul Patrol",
+      "director": "J.M. Harper",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary",
+      "cast": "Danielle Lyn, Michael Oloyede, Deion Smith",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1567605,
       "date": "2026-11-13",
       "title": "Ebenezer",
@@ -131,7 +157,7 @@
       "genre": "Crime / Thriller",
       "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
       "notes": "Who's robbing who?",
-      "youtube_trailer_id": "hoXld2b0TCs"
+      "youtube_trailer_id": "MVvWKh336m4"
     },
     {
       "tmdb_id": 1381273,
@@ -209,7 +235,7 @@
       "genre": "Drama / Crime / Thriller",
       "cast": "Dmitriy Mazurov, Iris Lebedeva, Varvara Shmykova, Juris Žagars",
       "notes": "Morality is a maze.",
-      "youtube_trailer_id": "xXJYasEPpMk"
+      "youtube_trailer_id": "hTHeFP0mcuk"
     },
     {
       "tmdb_id": 1300968,
@@ -222,7 +248,7 @@
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Mckenna Grace",
       "notes": "Welcome to the Second Quarter Quell.",
-      "youtube_trailer_id": "fS35YSjopjE"
+      "youtube_trailer_id": "lYXtL5TreOE"
     },
     {
       "tmdb_id": 1599230,
@@ -287,7 +313,20 @@
       "genre": "Drama / Comedy / Thriller",
       "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino",
       "notes": "",
-      "youtube_trailer_id": "ik0drfECnPo"
+      "youtube_trailer_id": "RjEZaUBbUvU"
+    },
+    {
+      "tmdb_id": 947502,
+      "date": "2026-11-27",
+      "title": "In Waves",
+      "director": "Phuong Mai Nguyen",
+      "studio": "Netflix",
+      "budget_usd": 7000000,
+      "release_type": "limited",
+      "genre": "Animation / Romance / Drama",
+      "cast": "Rio Vega, Lyna Khoudri, Paul Kircher, Birane Ba",
+      "notes": "Like a storm, grief comes in waves.",
+      "youtube_trailer_id": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -53,7 +53,7 @@
       "genre": "Drama / Comedy",
       "cast": "Kate O'Flynn, Alice Bailey Johnson, Marion Bailey, Paul Jesson",
       "notes": "",
-      "youtube_trailer_id": "yj2sR3cVET4"
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1379537,
@@ -103,7 +103,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / History",
-      "cast": "Jack O'Connell, Guy Pearce, Claire Foy, Bertie Carvel",
+      "cast": "Jack O'Connell, Guy Pearce, Claire Foy, Blake Harrison",
       "notes": "They broke the news.",
       "youtube_trailer_id": "_LE1L4Huyys"
     },
@@ -117,8 +117,21 @@
       "release_type": "limited",
       "genre": "Music / Comedy / Drama",
       "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Jesse Eisenberg",
-      "notes": "There's a method to the madness.",
+      "notes": "There’s a method to the madness.",
       "youtube_trailer_id": "clyzHmBx43E"
+    },
+    {
+      "tmdb_id": 1596282,
+      "date": "2026-12-12",
+      "title": "The Friend's House Is Here",
+      "director": "Hossein Keshavarz, Maryam Ataei",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Mahshad Bahram, Hana Mana, Farzad Karen, Zohreh Pirnia",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1003596,
@@ -232,7 +245,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Fantasy",
+      "genre": "Horror",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "cmjpadVj-Vk"

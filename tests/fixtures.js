@@ -27,6 +27,15 @@ export const test = base.extend({
         });
       } catch {}
     });
+    // Keep the shell deterministic across machines: the header's "Updated
+    // …" line comes from the live GitHub commits API and trailer stills
+    // from YouTube, so CI (network) and a sandbox (no network) painted
+    // different screenshots. Abort external calls; the app already
+    // handles them failing (offline path).
+    await page.route(
+      /^https:\/\/(api\.github\.com|i\.ytimg\.com|fonts\.googleapis\.com|fonts\.gstatic\.com)\//,
+      (route) => route.abort(),
+    );
     await use(page);
   },
 });

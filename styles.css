@@ -48,6 +48,7 @@
   --color-brand:            #A32929;          /* Movies band (launcher) */
   --color-brand-ink:        #F5F2EA;
   --color-brand-past:       #3A3A3A;          /* past months */
+  --color-thumb-bg:         #000000;
   --color-accent-soft:      rgba(255,229,0,0.12);
   --color-accent-border:    rgba(255,229,0,0.32);
 
@@ -85,6 +86,21 @@
   --text-body:    15px;
   --text-small:   13px;
   --text-micro:   11px;
+  --text-nano:    10px;
+
+  /* Big Type display sizes (Anton) */
+  --display-xl:   40px;
+  --display-lg:   34px;
+  --display-md:   28px;
+  --display-sm:   26px;
+  --display-xs:   24px;
+  --rule:         3px;       /* heavy rule under headers / dates */
+  --band-cut:     14px;      /* month band diagonal */
+  --thumb-w:      104px;     /* trailer still, 16:9 */
+  --thumb-h:      58px;
+  --glyph:        26px;
+  --glyph-pad:    6px;
+  --dt-w:         72px;
 
   --measure-display: 28ch;
   --measure-body:    62ch;
@@ -175,7 +191,7 @@
   --color-border:           rgba(11,11,11,0.10);
   --color-border-strong:    rgba(11,11,11,0.20);
   --color-accent-ink:       #7A6300;
-  --color-brand-past:       #8F897E;
+  --color-brand-past:       #6B665D;
   --color-accent-border:    rgba(122,99,0,0.35);
   --color-success:          #2F6B3F;
   --color-success-soft:     rgba(47,107,63,0.10);
@@ -2681,14 +2697,14 @@ html { font-synthesis: none; }
 /* Header: big Anton title, heavy rule under the whole header block. */
 .app-header h1 {
   font-family: var(--font-display);
-  font-size: 34px;
+  font-size: var(--display-lg);
   font-weight: 400;
   line-height: 0.9;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 .app-header {
-  border-bottom: 3px solid var(--color-text);
+  border-bottom: var(--rule) solid var(--color-text);
 }
 .segmented__btn {
   font-size: var(--text-micro);
@@ -2711,15 +2727,15 @@ html { font-synthesis: none; }
 .month { margin-bottom: var(--space-5); }
 .month__summary {
   margin: var(--space-3) calc(-1 * var(--space-4)) 0;
-  padding: var(--space-4) var(--space-4) calc(var(--space-4) + 14px);
+  padding: var(--space-4) var(--space-4) calc(var(--space-4) + var(--band-cut));
   background: var(--color-brand);
   color: var(--color-brand-ink);
   border-bottom: 0;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--band-cut)), 0 100%);
 }
 .month__name {
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--display-xl);
   font-weight: 400;
   line-height: 0.9;
   letter-spacing: 0;
@@ -2744,13 +2760,13 @@ html { font-synthesis: none; }
 /* Dates: Anton over a heavy rule; the count sits right in mono. */
 .section__header {
   align-items: flex-end;
-  border-top: 3px solid var(--color-text);
+  border-top: var(--rule) solid var(--color-text);
   padding: var(--space-2) 0 var(--space-2);
 }
 .section__date {
   font-family: var(--font-display);
   font-style: normal;
-  font-size: 26px;
+  font-size: var(--display-sm);
   line-height: 0.95;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -2772,11 +2788,10 @@ html { font-synthesis: none; }
   border-top: 0;
   border-bottom: 1px solid var(--color-border-strong);
   padding: var(--space-4) 0 var(--space-4) var(--space-3);
-  border-left-width: 6px;
 }
 .row__title {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: var(--display-md);
   font-weight: 400;
   line-height: 0.92;
   letter-spacing: 0;
@@ -2788,7 +2803,7 @@ html { font-synthesis: none; }
 .row__title-right {
   flex-direction: column;
   align-items: flex-end;
-  gap: 6px;
+  gap: var(--space-2);
 }
 .row__meta {
   margin-top: var(--space-2);
@@ -2799,13 +2814,13 @@ html { font-synthesis: none; }
 }
 .row__sub {
   margin-top: var(--space-3);
-  grid-template-columns: 72px 1fr;
-  gap: 4px var(--space-3);
-  font-size: 12px;
+  grid-template-columns: var(--dt-w) 1fr;
+  gap: var(--space-1) var(--space-3);
+  font-size: var(--text-small);
 }
 .row__sub dt {
   font-style: normal;
-  font-size: 10px;
+  font-size: var(--text-nano);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-dim);
@@ -2820,7 +2835,7 @@ html { font-synthesis: none; }
 .chip--theater,
 .chip--format {
   border-radius: 0;
-  font-size: 10px;
+  font-size: var(--text-nano);
   font-weight: 500;
   letter-spacing: 0.12em;
 }
@@ -2837,8 +2852,8 @@ html { font-synthesis: none; }
 
 /* No trailer on file: a square search-on-YouTube button. */
 .row__trailer-btn--mini {
-  width: 40px;
-  height: 40px;
+  width: var(--display-xl);
+  height: var(--display-xl);
   border-radius: 0;
   background: transparent;
   border: 1px solid var(--color-accent-border);
@@ -2846,11 +2861,11 @@ html { font-synthesis: none; }
 /* Trailer: the play button is the trailer's own still, 16:9. */
 .row__trailer-btn--thumb {
   position: relative;
-  width: 104px;
-  height: 58px;
+  width: var(--thumb-w);
+  height: var(--thumb-h);
   border-radius: 0;
   border: 0;
-  background: #000;
+  background: var(--color-thumb-bg);
   overflow: hidden;
 }
 .row__thumb {
@@ -2863,11 +2878,11 @@ html { font-synthesis: none; }
 }
 .row__trailer-btn--thumb .row__trailer-glyph {
   position: relative;
-  width: 26px;
-  height: 26px;
-  padding: 6px;
+  width: var(--glyph);
+  height: var(--glyph);
+  padding: var(--glyph-pad);
   background: var(--color-accent);
-  color: #0B0B0B;
+  color: var(--color-accent-text);
   fill: currentColor;
 }
 .row__trailer-btn--thumb.is-on .row__thumb { opacity: 0.35; }
@@ -2881,10 +2896,10 @@ html { font-synthesis: none; }
   border-top: 0;
 }
 .rating__btn {
-  min-height: 40px;
+  min-height: var(--display-xl);
   border-radius: 0;
   margin-left: -1px;
-  font-size: 9.5px;
+  font-size: var(--text-nano);
   font-weight: 500;
   letter-spacing: 0.08em;
   background: transparent;
@@ -2903,7 +2918,7 @@ html { font-synthesis: none; }
 .calendar__month {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 34px;
+  font-size: var(--display-lg);
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -2918,22 +2933,22 @@ html { font-synthesis: none; }
   clip-path: none;
   background: var(--color-bg);
   color: var(--color-text);
-  border-top: 3px solid var(--color-text);
+  border-top: var(--rule) solid var(--color-text);
   border-bottom: 1px solid var(--color-border-strong);
 }
 .interest-group > .month__summary .month__name {
-  font-size: 26px;
+  font-size: var(--display-sm);
 }
 .director-row__photo { border-radius: 0; }
 .director-row__name {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: var(--display-xs);
   line-height: 0.95;
 }
 
 /* Tab bar: uppercase mono labels. */
 .tab-bar__btn {
-  font-size: 9.5px;
+  font-size: var(--text-nano);
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -2948,4 +2963,126 @@ html { font-synthesis: none; }
   font-weight: 400;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+/* ---- Big Type skin: review fixes ---- */
+
+/* Taps on the trailer still land on the button, not the image. */
+.row__thumb { pointer-events: none; }
+/* Open trailer: black frame with a yellow outline; stop glyph inverts. */
+.row__trailer-btn--mini.row__trailer-btn--thumb.is-on {
+  background: var(--color-thumb-bg);
+  outline: var(--rule) solid var(--color-accent);
+  outline-offset: calc(-1 * var(--rule));
+}
+.row__trailer-btn--thumb.is-on .row__trailer-glyph {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+/* No still on file: keep the original side-by-side title line. */
+.row__title-right:not(:has(.row__trailer-btn--thumb)) {
+  flex-direction: row;
+  align-items: flex-start;
+}
+/* With a still, the scope chip rides its corner instead of adding a row. */
+.row__title-right:has(.row__trailer-btn--thumb) { position: relative; }
+.row__title-right:has(.row__trailer-btn--thumb) .row__chips {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  align-items: flex-start;
+  pointer-events: none;
+}
+.row__title-right:has(.row__trailer-btn--thumb) .chip {
+  background: var(--color-bg);
+}
+
+/* Every chip: square outline in the mono micro style (WIDE is plain .chip). */
+.chip {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid currentColor;
+  font-size: var(--text-nano);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+.chip--streaming,
+.chip--upcoming,
+.chip--in-production {
+  background: transparent;
+  border: 1px solid currentColor;
+}
+.chip--upcoming { color: var(--color-accent-ink); }
+
+/* Interest strip: readable labels; the selected cell's border wins. */
+.rating__btn {
+  font-size: var(--text-nano);
+  letter-spacing: 0.02em;
+}
+.rating__btn[aria-pressed="true"] {
+  position: relative;
+  z-index: 1;
+}
+
+/* Interests tab: groups sit flush; names in Anton; rows keep a gutter. */
+.interest-group > .month__summary {
+  margin: 0;
+}
+.interest-group > .month__summary > .month__name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+.interest-group .row { padding-right: var(--space-3); }
+
+/* Sticky header: opaque, so cards never show through the controls. */
+.app-header {
+  background: var(--color-bg);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+/* Breathing room above UPCOMING when not inside the launcher (embedded
+   mode already sets its own 8px via --safe-top). */
+:root:not(.embedded) .app-header {
+  padding-top: calc(var(--safe-top) + var(--space-2));
+}
+
+/* Buttons that still spoke in mixed case. */
+.directors__add,
+.director-row__expand,
+.rep-card-action,
+.sheet__btn {
+  border-radius: 0;
+  font-size: var(--text-micro);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.updates__title {
+  font-size: var(--display-md);
+  line-height: 0.95;
+}
+
+/* Rereleases theater chips: left-aligned rows, even gaps. */
+.theater-filter-bar {
+  text-align: left;
+  text-align-last: left;
+}
+.theater-filter-bar .theater-chip {
+  margin: 0 var(--space-1) var(--space-1) 0;
+}
+
+/* Month band: clip-path hides an outline, so draw focus inside it. */
+.month__summary:focus-visible {
+  outline: var(--rule) solid var(--color-accent);
+  outline-offset: calc(-2 * var(--rule));
+}
+
+/* Tab bar: 10px labels; a bolder active bar that shows on cream too. */
+.tab-bar__btn { font-size: var(--text-nano); }
+.tab-bar__btn.is-active::before {
+  width: var(--display-xs);
+  height: var(--rule);
+  background: var(--color-accent-ink);
 }

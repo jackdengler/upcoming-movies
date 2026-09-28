@@ -587,6 +587,18 @@ const MINI_TRAILER_ICONS = `
   </svg>
 `;
 
+// Trailer stills: hide one that fails to load (offline) or that YouTube
+// replaced with its 120px grey "no thumbnail" placeholder (removed video;
+// real mqdefault stills are 320px wide). Capture phase, since load/error
+// don't bubble; display only.
+function hideDeadThumb(e) {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement) || !img.classList.contains("row__thumb")) return;
+  if (e.type === "error" || img.naturalWidth <= 120) img.hidden = true;
+}
+document.addEventListener("error", hideDeadThumb, true);
+document.addEventListener("load", hideDeadThumb, true);
+
 function renderInlineTrailer({ key, title, year, ytId }) {
   const open = openTrailers.has(key);
   const ariaLabel = ytId
@@ -620,8 +632,8 @@ function renderInlineTrailer({ key, title, year, ytId }) {
   );
   // The trailer's own still (YouTube serves one per video) makes the play
   // button a thumbnail; the glyph sits on top. Lazy so only on-screen
-  // cards fetch; a frame that fails (offline, removed video) just hides.
-  button.innerHTML = `<img class="row__thumb" src="https://i.ytimg.com/vi/${encodeURIComponent(ytId)}/mqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">${MINI_TRAILER_ICONS}`;
+  // cards fetch; a frame that fails just hides (see hideDeadThumb).
+  button.innerHTML = `<img class="row__thumb" src="https://i.ytimg.com/vi/${encodeURIComponent(ytId)}/mqdefault.jpg" alt="" loading="lazy" decoding="async">${MINI_TRAILER_ICONS}`;
 
   const frameWrap = el("div", {
     class: "row__trailer",

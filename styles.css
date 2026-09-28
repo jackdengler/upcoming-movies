@@ -44,6 +44,7 @@
   --color-accent:           #FFE500;
   --color-accent-dark:      #E6CE00;
   --color-accent-text:      #0B0B0B;
+  --color-accent-ink:       #FFE500;          /* accent as text / line */
   --color-accent-soft:      rgba(255,229,0,0.12);
   --color-accent-border:    rgba(255,229,0,0.32);
 
@@ -70,6 +71,7 @@
   --color-focus-ring:       rgba(255,229,0,0.6);
 
   /* Type */
+  --tint: 245, 242, 234;                      /* overlays: light on dark */
   --font-body:    'DM Mono', ui-monospace, "SF Mono", Menlo, monospace;
   --font-display: 'Anton', Impact, sans-serif;
 
@@ -149,13 +151,57 @@
   --tabbar-h: 64px;
 
   /* Interest-level palette — restrained, in-system warm tones */
-  --level-must:      var(--color-accent);          /* primary tan */
+  --level-must:      var(--color-accent);          /* Optimus yellow */
   --level-likely:    var(--color-warning);         /* ochre */
   --level-booked:    var(--color-success);         /* deep green */
   --level-potential: var(--color-pending);         /* muted ochre */
   --level-not:       var(--color-text-faint);      /* faint warm gray */
   --level-watched:   var(--color-text-dim);        /* dim — past tense */
 }
+
+
+/* Light mode (co.theme = "light", applied in index.html before first
+   paint). Yellow stays for fills; text/lines use a dark mustard. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg:               #F5F2EA;
+  --color-surface:          #FFFDF8;
+  --color-text:             #0B0B0B;
+  --color-text-dim:         #5E5950;
+  --color-text-faint:       #7F796F;
+  --color-border:           rgba(11,11,11,0.10);
+  --color-border-strong:    rgba(11,11,11,0.20);
+  --color-accent-ink:       #7A6300;
+  --color-accent-border:    rgba(122,99,0,0.35);
+  --color-success:          #2F6B3F;
+  --color-success-soft:     rgba(47,107,63,0.10);
+  --color-success-border:   rgba(47,107,63,0.24);
+  --color-success-text:     #FFFFFF;
+  --color-warning:          #8A5A00;
+  --color-warning-soft:     rgba(138,90,0,0.10);
+  --color-warning-border:   rgba(138,90,0,0.26);
+  --color-warning-text:     #FFFFFF;
+  --color-error:            #B3261E;
+  --color-error-soft:       rgba(179,38,30,0.08);
+  --color-error-border:     rgba(179,38,30,0.24);
+  --color-error-text:       #FFFFFF;
+  --color-pending:          #7A6230;
+  --color-pending-soft:     rgba(122,98,48,0.10);
+  --color-pending-border:   rgba(122,98,48,0.22);
+  --color-focus-ring:       rgba(122,99,0,0.5);
+  --tint:                   11, 11, 11;
+  --shadow-sm:  0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md:  0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.05);
+  --shadow-lg:  0 4px 8px rgba(0,0,0,0.08), 0 12px 28px rgba(0,0,0,0.08);
+  --shadow-xl:  0 8px 16px rgba(0,0,0,0.10), 0 24px 48px rgba(0,0,0,0.12);
+  --shadow-up:  0 -8px 16px rgba(0,0,0,0.04), 0 -20px 40px rgba(0,0,0,0.06);
+  --header-bg:  rgba(245, 242, 234, 0.85);
+  --tabbar-bg:  rgba(255, 253, 248, 0.92);
+}
+/* Theme toggle icon: sun in dark (tap for light), moon in light. */
+.app-header__theme .i-moon,
+:root[data-theme="light"] .app-header__theme .i-sun { display: none; }
+:root[data-theme="light"] .app-header__theme .i-moon { display: block; }
 
 @media all and (display-mode: standalone) {
   :root {
@@ -213,7 +259,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent-ink);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
@@ -305,7 +351,7 @@ body {
               transform var(--duration-fast) var(--ease-out);
 }
 .app-header__icon svg { width: var(--icon-md); height: var(--icon-md); stroke-width: 1.8; }
-.app-header__icon:active { color: var(--color-accent); background: var(--color-accent-soft); transform: scale(var(--press-scale)); }
+.app-header__icon:active { color: var(--color-accent-ink); background: var(--color-accent-soft); transform: scale(var(--press-scale)); }
 .app-header__settings svg { width: 18px; height: 18px; }
 
 .app-header__badge {
@@ -375,7 +421,7 @@ body {
 .segmented__btn.is-active {
   background: var(--color-accent);
   color: var(--color-accent-text);
-  box-shadow: var(--shadow-sm), 0 0 0 0.5px rgba(245,242,234,0.06);
+  box-shadow: var(--shadow-sm), 0 0 0 0.5px rgba(var(--tint), 0.06);
 }
 
 /* "My AMCs" — compact pill that sits inline with the scope segmented row.
@@ -423,7 +469,7 @@ body {
   place-items: center;
   color: var(--color-text-dim);
 }
-.amc-toggle[aria-pressed="true"] .amc-toggle__icon { color: var(--color-accent); }
+.amc-toggle[aria-pressed="true"] .amc-toggle__icon { color: var(--color-accent-ink); }
 .amc-toggle__icon svg { width: var(--icon-sm, 18px); height: var(--icon-sm, 18px); display: block; }
 
 .amc-toggle__label { flex: 0 0 auto; }
@@ -434,8 +480,8 @@ body {
   width: 30px;
   height: 18px;
   border-radius: var(--radius-pill);
-  background: rgba(245,242,234,0.16);
-  box-shadow: 0 1px 2px rgba(245,242,234,0.08) inset;
+  background: rgba(var(--tint), 0.16);
+  box-shadow: 0 1px 2px rgba(var(--tint), 0.08) inset;
   transition: background var(--duration-fast) var(--ease-out);
 }
 .amc-toggle__switch::after {
@@ -507,13 +553,13 @@ body {
   background: var(--color-surface);
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-md);
-  box-shadow: 0 1px 2px rgba(245,242,234,0.04) inset;
+  box-shadow: 0 1px 2px rgba(var(--tint), 0.04) inset;
   transition: border-color var(--duration-fast) var(--ease-out),
               box-shadow var(--duration-fast) var(--ease-out);
 }
 .search-bar:focus-within {
-  border-color: var(--color-accent);
-  box-shadow: 0 1px 2px rgba(245,242,234,0.06) inset,
+  border-color: var(--color-accent-ink);
+  box-shadow: 0 1px 2px rgba(var(--tint), 0.06) inset,
               0 0 0 3px var(--color-focus-ring);
 }
 /* Hidden until the user taps the header search icon. */
@@ -561,7 +607,7 @@ body {
 }
 .search-bar__clear svg { width: var(--icon-sm); height: var(--icon-sm); stroke-width: 2.4; }
 .search-bar__clear[hidden] { display: none; }
-.search-bar__clear:active { background: var(--color-accent-soft); color: var(--color-accent); }
+.search-bar__clear:active { background: var(--color-accent-soft); color: var(--color-accent-ink); }
 
 /* Theater filter bar — chip strip, justified across the row. */
 .theater-filter-bar {
@@ -654,7 +700,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-weight: 400;
   font-size: var(--text-small);
   letter-spacing: 0;
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   text-transform: none;
 }
 
@@ -728,7 +774,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
-.row__titlelink:active { color: var(--color-accent); }
+.row__titlelink:active { color: var(--color-accent-ink); }
 
 .row__title-line {
   display: flex;
@@ -1044,7 +1090,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .row__trailer-btn.is-on {
   background: var(--color-accent);
   color: var(--color-accent-text);
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-ink);
 }
 .row__trailer-btn::before {
   content: "";
@@ -1076,7 +1122,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border-radius: var(--radius-pill);
   background: var(--color-accent-soft);
   border-color: var(--color-accent-border);
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   flex-shrink: 0;
   display: inline-grid;
   place-items: center;
@@ -1084,7 +1130,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .row__trailer-btn--mini::before { content: none; }
 .row__trailer-btn--mini.is-on {
   background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-ink);
   color: var(--color-accent-text);
   box-shadow: var(--shadow-sm);
 }
@@ -1145,7 +1191,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .theater-chip.is-active {
   background: var(--color-accent);
   color: var(--color-accent-text);
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-ink);
 }
 
 .row__time {
@@ -1167,7 +1213,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border-radius: var(--radius-sm);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: rgba(245,242,234,0.06);
+  background: rgba(var(--tint), 0.06);
   color: var(--color-text-dim);
   white-space: nowrap;
   margin-top: 2px;
@@ -1182,7 +1228,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background: var(--color-accent-soft);
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   margin-left: var(--space-2);
   vertical-align: middle;
 }
@@ -1196,9 +1242,9 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border-top: 1px solid var(--color-border);
 }
 .rep-title:first-child { border-top: 0; }
-.rep-title[open] { background: rgba(245,242,234,0.02); }
+.rep-title[open] { background: rgba(var(--tint), 0.02); }
 .rep-title--on {
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-accent-ink);
   padding-left: calc(var(--space-3) - 3px);
 }
 
@@ -1239,7 +1285,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   color: var(--color-text);
 }
 .rep-title__showing a {
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   text-decoration: none;
   font-weight: 600;
 }
@@ -1342,7 +1388,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
               color var(--duration-fast) var(--ease-out),
               transform var(--duration-fast) var(--ease-out);
 }
-.calendar__navbtn:active { transform: scale(var(--press-scale)); color: var(--color-accent); }
+.calendar__navbtn:active { transform: scale(var(--press-scale)); color: var(--color-accent-ink); }
 .calendar__navbtn svg { width: var(--icon-md); height: var(--icon-md); }
 
 .calendar__weekdays {
@@ -1432,11 +1478,11 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   min-width: 16px;
   padding: 1px var(--space-1);
   border-radius: var(--radius-sm);
-  background: rgba(245,242,234,0.06);
+  background: rgba(var(--tint), 0.06);
   line-height: 1.2;
 }
 
-.calendar__cell--has  .calendar__count { background: var(--color-accent-soft);  color: var(--color-accent); }
+.calendar__cell--has  .calendar__count { background: var(--color-accent-soft);  color: var(--color-accent-ink); }
 .calendar__cell--must      .calendar__count { background: var(--level-must);      color: var(--color-accent-text); }
 .calendar__cell--likely    .calendar__count { background: var(--level-likely);    color: var(--color-warning-text); }
 .calendar__cell--booked    .calendar__count { background: var(--level-booked);    color: var(--color-success-text); }
@@ -1527,7 +1573,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   stroke-width: 1.8;
 }
 
-.tab-bar__btn.is-active { color: var(--color-accent); }
+.tab-bar__btn.is-active { color: var(--color-accent-ink); }
 .tab-bar__btn.is-active svg { stroke-width: 2.2; }
 .tab-bar__btn.is-active::before {
   content: "";
@@ -1593,7 +1639,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   transform: translateX(-50%);
   width: 36px;
   height: 4px;
-  background: rgba(245,242,234,0.16);
+  background: rgba(var(--tint), 0.16);
   border-radius: var(--radius-pill);
 }
 .sheet__title {
@@ -1616,7 +1662,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .sheet__copy code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
-  background: rgba(245,242,234,0.06);
+  background: rgba(var(--tint), 0.06);
   padding: 1px var(--space-1);
   border-radius: var(--radius-sm);
 }
@@ -1631,13 +1677,13 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   background: var(--color-surface);
   color: var(--color-text);
   outline: none;
-  box-shadow: 0 1px 2px rgba(245,242,234,0.04) inset;
+  box-shadow: 0 1px 2px rgba(var(--tint), 0.04) inset;
   transition: border-color var(--duration-fast) var(--ease-out),
               box-shadow var(--duration-fast) var(--ease-out);
 }
 .sheet__input:focus {
-  border-color: var(--color-accent);
-  box-shadow: 0 1px 2px rgba(245,242,234,0.06) inset,
+  border-color: var(--color-accent-ink);
+  box-shadow: 0 1px 2px rgba(var(--tint), 0.06) inset,
               0 0 0 3px var(--color-focus-ring);
 }
 .sheet__actions {
@@ -1685,7 +1731,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin-top: var(--space-3);
   font-family: var(--font-body);
   font-size: var(--text-small);
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   text-decoration: none;
   font-weight: 600;
 }
@@ -1719,7 +1765,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 }
 .showtime-option:active { transform: scale(0.99); }
 .showtime-option.is-selected {
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-ink);
   background: var(--color-accent-soft);
 }
 .showtime-option__when {
@@ -1953,7 +1999,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   padding: var(--space-2) var(--space-3) var(--space-2) calc(var(--space-3) - 2px);
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
-  border-left: 8px solid var(--color-accent);
+  border-left: 8px solid var(--color-accent-ink);
   transition: background-color var(--duration-fast) var(--ease-out),
               transform var(--duration-fast) var(--ease-out);
   contain: layout style;
@@ -1982,7 +2028,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   letter-spacing: 0.02em;
 }
 
@@ -1991,7 +2037,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-size: var(--text-small);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   letter-spacing: -0.005em;
   text-align: center;
   line-height: 1;
@@ -2113,7 +2159,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .director-move:active:not([disabled]) {
   background: var(--color-accent-soft);
   border-color: var(--color-accent-border);
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
 }
 .director-move[disabled] { opacity: 0.35; cursor: default; }
 
@@ -2150,7 +2196,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   line-height: 1.3;
   -webkit-tap-highlight-color: transparent;
 }
-.director-film__title:active { color: var(--color-accent); }
+.director-film__title:active { color: var(--color-accent-ink); }
 
 .director-film__meta {
   display: flex;
@@ -2210,7 +2256,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   letter-spacing: -0.005em;
   cursor: pointer;
   border-top: 1px solid var(--color-border);
@@ -2308,7 +2354,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.005em;
 }
@@ -2557,7 +2603,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin-top: 2px;
 }
 .activity-chip--added    { background: var(--color-success-soft); color: var(--color-success); }
-.activity-chip--removed  { background: rgba(245,242,234,0.06);       color: var(--color-text-dim); }
+.activity-chip--removed  { background: rgba(var(--tint), 0.06);       color: var(--color-text-dim); }
 .activity-chip--date     { background: var(--color-pending-soft); color: var(--color-pending); }
 .activity-chip--type     { background: var(--color-warning-soft); color: var(--color-warning); }
 .activity-chip--studio,

@@ -30,8 +30,13 @@ request (2026-09-28). This replaces the old Linen look; `linen-design-system-v3
 (1).md` still describes spacing, radii, motion and composition, but its
 colours and type no longer apply.
 
-- Dark only: ground `#0B0B0B`, surfaces `#151515`, cream ink `#F5F2EA`,
+- Dark by default: ground `#0B0B0B`, surfaces `#151515`, cream ink `#F5F2EA`,
   Optimus yellow accent `#FFE500` with near-black text on it.
+- Light mode: `:root[data-theme="light"]` overrides the same tokens. The
+  theme is the shared `co.theme` localStorage key ("dark" | "light"), read by
+  the head script in `index.html` and shared with the launcher and other apps
+  on this origin. Accent as *text or line* uses `--color-accent-ink` (dark
+  mustard in light mode); `--color-accent` is for fills only.
 - Type: DM Mono for everything (`--font-body`), Anton (`--font-display`) for
   titles and headings only. Both are self-hosted in `fonts/`; no serif, ever.
   (DM Sans is still loaded solely for the canvas share-image export.)

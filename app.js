@@ -4224,6 +4224,18 @@ document.querySelectorAll(".tab-bar__btn").forEach((b) => {
   b.addEventListener("click", () => switchTab(b.dataset.tab));
 });
 
+// Light / dark: index.html's head script owns the shared co.theme key.
+function labelThemeButton() {
+  const btn = document.getElementById("toggle-theme");
+  if (!btn) return;
+  const light = window.coTheme?.get() === "light";
+  btn.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+  btn.setAttribute("aria-pressed", String(light));
+}
+document.getElementById("toggle-theme")?.addEventListener("click", () => window.coTheme?.toggle());
+document.addEventListener("co:theme", labelThemeButton);
+labelThemeButton();
+
 document.getElementById("open-pat").addEventListener("click", () => {
   requestPat();
 });

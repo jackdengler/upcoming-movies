@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -63,8 +63,8 @@
       "studio": "Iconic Events Releasing",
       "budget_usd": 5500000,
       "release_type": "wide",
-      "genre": "Horror / Comedy / Thriller",
-      "cast": "Ari Millen, Charlie Zeltzer, Kole Parks, Shiloh O’Reilly",
+      "genre": "Comedy / Horror / Thriller",
+      "cast": "Ari Millen, Charlie Zeltzer, Shiloh O’Reilly, Kiori Mirza Waldman",
       "notes": "We all scream.",
       "youtube_trailer_id": "Cgw3zNmFtRo"
     },
@@ -95,15 +95,15 @@
       "youtube_trailer_id": "_qkhd73DE3E"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1641479,
       "date": "2026-08-07",
       "title": "Mr. Hero",
-      "director": "—",
+      "director": "Võ Thạch Thảo",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Family",
-      "cast": "Thai Hoa, Vo Tan Phat, Doan The Vinh, Phuong Thanh",
+      "genre": "Family / Drama",
+      "cast": "Thái Hòa, Võ Tấn Phát, Phương Thanh, Đoàn Thế Vinh",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -157,7 +157,7 @@
       "genre": "Documentary",
       "cast": "Ross Melnick",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "dbAyrFj5Ihs"
     },
     {
       "tmdb_id": 730558,
@@ -404,7 +404,7 @@
       "genre": "Documentary",
       "cast": "Aisha McAdams, Jim Walmsley, Rod Farvard, Eszter Csillag",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "MnZlcm0KZrk"
     },
     {
       "tmdb_id": 1288445,
@@ -449,7 +449,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Black Bear",
       "budget_usd": 20000000,
       "release_type": "wide",
@@ -472,19 +472,6 @@
       "youtube_trailer_id": "j9TsiTgYZGw"
     },
     {
-      "tmdb_id": 1479481,
-      "date": "2026-08-21",
-      "title": "Terrestrial",
-      "director": "Steve Pink",
-      "studio": "Indican Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Thriller / Science Fiction / Comedy",
-      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
-      "notes": "",
-      "youtube_trailer_id": "cD0fVpDoN8Y"
-    },
-    {
       "tmdb_id": 1140521,
       "date": "2026-08-21",
       "title": "The Magic Faraway Tree",
@@ -505,7 +492,7 @@
       "studio": "A24",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Drama / Comedy / Romance",
+      "genre": "Drama / Comedy",
       "cast": "Dominic Sessa, Antonio Banderas, Emilia Jones, Leo Woodall",
       "notes": "\"I was — to be frank — a spoiled, miserable, narcissistic, self-destructive and thoughtless young lout, and badly in need of a good ass-kicking.\"",
       "youtube_trailer_id": "k1MVnzd2aVc"
@@ -557,7 +544,7 @@
       "studio": "Yellow Veil Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary",
+      "genre": "Documentary / Horror",
       "cast": "John Boorman, Louise Fletcher, Karyn Kusama, Mike Flanagan",
       "notes": "Every artist has his demon.",
       "youtube_trailer_id": "a_VjhXJ0N54"
@@ -573,7 +560,7 @@
       "genre": "Horror / Comedy / Fantasy",
       "cast": "Keegan-Michael Key, Cristin Milioti, Delaney Quinn, Caleb Williams",
       "notes": "It's Buddy!",
-      "youtube_trailer_id": "O1fNEHX9tSM"
+      "youtube_trailer_id": "udPBHzBnXKA"
     },
     {
       "tmdb_id": 1375646,
@@ -623,7 +610,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Romance / Comedy",
-      "cast": "Spike Fearn, Angourie Rice, Prasanna Puwanarajah, Minnie Driver",
+      "cast": "Spike Fearn, Angourie Rice, Cora Kirk, Jack Riddiford",
       "notes": "Right name, wrong number.",
       "youtube_trailer_id": "wc2UjmPzN8c"
     },
@@ -674,7 +661,7 @@
       "studio": "Well Go USA Entertainment",
       "budget_usd": 508578,
       "release_type": "limited",
-      "genre": "Action / Science Fiction",
+      "genre": "Action / Fantasy",
       "cast": "Jason David Frank, Aaron Schoenke, Jason Faunt, Rachele Brooke Smith",
       "notes": "Legends never die.",
       "youtube_trailer_id": "eqcTr34Y1Zw"
@@ -689,8 +676,21 @@
       "release_type": "limited",
       "genre": "Comedy / Horror",
       "cast": "Rose Williams, Tim McInnerny, Avani Gregg, Abraham Lewis",
-      "notes": "Eight legs, one bite, no chance",
+      "notes": "Eight legs, one bite, no chance.",
       "youtube_trailer_id": "u69TJzLmCPo"
+    },
+    {
+      "tmdb_id": 1646142,
+      "date": "2026-08-28",
+      "title": "Terrestrial",
+      "director": "Alex Farnham",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Dane-randall bacon, Deena Bacon, Randall J. Bacon, Rayden Bacon",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1537518,

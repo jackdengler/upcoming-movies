@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -427,7 +427,7 @@
       "studio": "Iconic Events Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Thriller / Crime",
+      "genre": "Crime / Thriller",
       "cast": "Georgie Farmer, Yasmin Finney, Roman Hayeck-Green, James Scholz",
       "notes": "They're coming for your coin.",
       "youtube_trailer_id": "TxxUGasZUNo"
@@ -740,7 +740,7 @@
       "budget_usd": 7000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Leo Woodall, Dustin Hoffman, Alisen Richmond-Peck, Ellyn Jameson",
+      "cast": "Leo Woodall, Dustin Hoffman, Havana Rose Liu, Lior Raz",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "XiehvETTjTQ"
     },

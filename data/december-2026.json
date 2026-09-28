@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -41,6 +41,19 @@
       "cast": "Anders Danielsen Lie, Bill Pullman, Laurie Metcalf, Isabelle Harriet",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 940009,
+      "date": "2026-12-04",
+      "title": "Ray Gunn",
+      "director": "Brad Bird",
+      "studio": "Netflix",
+      "budget_usd": 150000000,
+      "release_type": "limited",
+      "genre": "Animation / Science Fiction / Crime / Mystery",
+      "cast": "Sam Rockwell, Scarlett Johansson, Tom Waits, Matt Berry",
+      "notes": "The taller the skyscrapers, the longer the shadows.",
+      "youtube_trailer_id": "VL-xjzQFWsY"
     },
     {
       "tmdb_id": 1370191,
@@ -170,7 +183,7 @@
       "genre": "Drama",
       "cast": "Colas Quignard, Antonia Buresi, Mitia Capellier-Audat, Suzanne Gerin",
       "notes": "",
-      "youtube_trailer_id": "mJcYelIGoZk"
+      "youtube_trailer_id": "5yY6V9MbEoE"
     },
     {
       "tmdb_id": 1300926,
@@ -248,7 +261,7 @@
       "genre": "Horror",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
-      "youtube_trailer_id": "cmjpadVj-Vk"
+      "youtube_trailer_id": "CL1EFACsWag"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -37,10 +37,10 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Adventure / Horror / Thriller",
+      "genre": "Horror / Thriller",
       "cast": "Logan Marshall-Green, Kiana Madeira, Jessica Rothe, Jackson Bews",
       "notes": "Witness terror on a gigantic scale.",
-      "youtube_trailer_id": "4fn4UcgzRhg"
+      "youtube_trailer_id": "MQKqgFVU4dQ"
     },
     {
       "tmdb_id": 1248832,
@@ -118,7 +118,7 @@
       "genre": "Horror / Thriller",
       "cast": "Chiara King, Luca Storm, Mike Nybroe, Jazmine Summer",
       "notes": "Where do you hide when everyone is watching?",
-      "youtube_trailer_id": "q5DIxirBMx4"
+      "youtube_trailer_id": "6FjeyMfs2mY"
     },
     {
       "tmdb_id": 1403519,
@@ -142,7 +142,7 @@
       "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Mystery / Thriller",
-      "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Ismael Cruz Cordova",
+      "cast": "Anne Hathaway, Dakota Johnson, Josh Hartnett, Brady Wagner",
       "notes": "There is no light where we're going.",
       "youtube_trailer_id": "xdPMKhjMSFs"
     },
@@ -160,17 +160,17 @@
       "youtube_trailer_id": "HzGx48E64Xg"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1776482,
       "date": "2026-10-08",
       "title": "SB19 Wakas at Simula: The Trilogy Concert Finale In Cinemas",
-      "director": "—",
+      "director": "Yoon Dong Oh",
       "studio": "Iconic Events Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "—",
+      "genre": "Music",
       "cast": "Stell Ajero, Justin De Dios, Pablo Nase, Josh Cullen Santos",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "The Trilogy Concert Finale",
+      "youtube_trailer_id": "S0uwY6qY-v4"
     },
     {
       "tmdb_id": null,
@@ -181,7 +181,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Family",
-      "cast": "Jennifer Marshall, Eileen Grubba, Hudson Barry, Tom Ohmer",
+      "cast": "Jennifer Marshall, Hudson Barry, Eileen Grubba, Tom Ohmer",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -194,7 +194,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Diane von Fürstenberg",
+      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Kimora Lee Simmons",
       "notes": "",
       "youtube_trailer_id": "YbHTpU4lHds"
     },
@@ -205,7 +205,7 @@
       "director": "Julio Quintana",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Western / Action / Adventure / Romance",
       "cast": "Zachary Levi, Neal McDonough, Tommy Lee Jones, Meg Fraser",
       "notes": "",
@@ -236,6 +236,32 @@
       "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
       "notes": "The legacy reawakens.",
       "youtube_trailer_id": "7b20GRFZBFE"
+    },
+    {
+      "tmdb_id": 1775692,
+      "date": "2026-10-09",
+      "title": "Brother Joseph Again",
+      "director": "Daylen Pollard",
+      "studio": "Purdie Distribution",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / History",
+      "cast": "Patrick Bishop, Joseph Brickey",
+      "notes": "Exploring the Visual Image of Joseph Smith Jr.",
+      "youtube_trailer_id": "-xyFFKfCSBU"
+    },
+    {
+      "tmdb_id": 1716919,
+      "date": "2026-10-09",
+      "title": "Brotherhood: A Cinematic Musical",
+      "director": "Ross Boothe",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Music / Family",
+      "cast": "Mauricio Martínez, Casey Elliott, Gabriela Bañuelos, Charlotte Hemmings",
+      "notes": "Two Worlds. Next Door.",
+      "youtube_trailer_id": "PMsJHQaavIU"
     },
     {
       "tmdb_id": 1193550,
@@ -287,7 +313,7 @@
       "genre": "Drama / Comedy",
       "cast": "Rosalind Eleazar, Adam Driver, Daniel Kaluuya, Anna Kendrick",
       "notes": "",
-      "youtube_trailer_id": "ACaWuqeLpSk"
+      "youtube_trailer_id": "5SohUK9E_eo"
     },
     {
       "tmdb_id": 1391021,
@@ -312,7 +338,7 @@
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
-      "notes": "Your mommy won't save you.",
+      "notes": "Can I go inside your heart?",
       "youtube_trailer_id": "-mnTITqqiT0"
     },
     {
@@ -342,6 +368,19 @@
       "youtube_trailer_id": "KkYCY5YR12U"
     },
     {
+      "tmdb_id": 1185344,
+      "date": "2026-10-09",
+      "title": "The Beast",
+      "director": "Renny Harlin",
+      "studio": "Aura Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Samuel L. Jackson, Joel Kinnaman, Guy Burnet, Eoin Macken",
+      "notes": "You know Air Force One. Now meet...",
+      "youtube_trailer_id": "5ckqV_uf8E0"
+    },
+    {
       "tmdb_id": null,
       "date": "2026-10-09",
       "title": "The Sixty-Year Mission: How Star Trek Changed Television and the World",
@@ -350,7 +389,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Christina Chong, Simon Pegg, William Shatner, Walter Koenig",
+      "cast": "Mark A. Altman, Steve Bingen, André Bormanis, Brannon Braga",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -361,11 +400,24 @@
       "director": "Kevin Munroe",
       "studio": "N/A",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Animation / Adventure / Family",
       "cast": "Greg Cipes, Meredith Anne Bull, Alan Cumming, Jack McBrayer",
       "notes": "Empathy is a superpower.",
       "youtube_trailer_id": "aQAj4XsHGBE"
+    },
+    {
+      "tmdb_id": 1742441,
+      "date": "2026-10-09",
+      "title": "V/H/S/Mixtape",
+      "director": "David Moreau, Renee Zhan, RZA, Ernest R. Dickerson, Flying Lotus, Tobias Forge",
+      "studio": "Shudder",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Music / Thriller",
+      "cast": "Mike Derks, Michael BIshop, Brad Roberts, Casey Orr",
+      "notes": "Low fidelity. High body count.",
+      "youtube_trailer_id": "GrIouRKyPDw"
     },
     {
       "tmdb_id": 1212310,
@@ -378,7 +430,7 @@
       "genre": "Drama / Thriller / History",
       "cast": "Lesley Manville, Zofia Wichłacz, Andrzej Konopka, Sascha Ley",
       "notes": "",
-      "youtube_trailer_id": "9qixThYyMEk"
+      "youtube_trailer_id": "LBiv3VwAdwM"
     },
     {
       "tmdb_id": 1437396,
@@ -388,7 +440,7 @@
       "studio": "Orion Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Crime",
+      "genre": "Action / Crime / Drama",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
       "youtube_trailer_id": "uEcoV-ngH38"
@@ -405,6 +457,32 @@
       "cast": "Magnus Carlsen, Wesley So, Jan Henric Buettner, Hans Niemann",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1737740,
+      "date": "2026-10-12",
+      "title": "Fresh Meat",
+      "director": "James A. Janisse",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "James A. Janisse, Chelsea Rebecca, Zoran Gvojic, Elle Riot Fox",
+      "notes": "Only some will make the cut.",
+      "youtube_trailer_id": "HrFLrIrFQyI"
+    },
+    {
+      "tmdb_id": 1452110,
+      "date": "2026-10-16",
+      "title": "Clean Hands",
+      "director": "Jake Allyn",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Drama",
+      "cast": "Zach Braff, Esther-Rose McGregor, Abigail Spencer, Lucas Till",
+      "notes": "",
+      "youtube_trailer_id": "p0izMCPGdGE"
     },
     {
       "tmdb_id": 1376400,
@@ -442,7 +520,7 @@
       "release_type": "limited",
       "genre": "Drama / War",
       "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
-      "notes": "",
+      "notes": "Love leaves a legacy.",
       "youtube_trailer_id": "IRHtqjHYPew"
     },
     {
@@ -457,6 +535,19 @@
       "cast": "Meegwun Fairbrother, Victoria Turko, Gabriel Daniels, Stephanie Sy",
       "notes": "",
       "youtube_trailer_id": "xAAseU_4waQ"
+    },
+    {
+      "tmdb_id": 1096228,
+      "date": "2026-10-16",
+      "title": "Musk",
+      "director": "Alex Gibney",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Elon Musk, Justine Musk, Ashley St. Clair, Kara Swisher",
+      "notes": "An unflinching look at Earth's most unchecked man.",
+      "youtube_trailer_id": "eY_8SyndC10"
     },
     {
       "tmdb_id": 1514056,
@@ -520,8 +611,21 @@
       "release_type": "wide",
       "genre": "Action / Fantasy",
       "cast": "Andrew Koji, Noah Centineo, Callina Liang, Joe Anoa'i",
-      "notes": "Ready. Set. Fight!",
+      "notes": "Ready. Set. Fight.",
       "youtube_trailer_id": "U6sbm1OaJb8"
+    },
+    {
+      "tmdb_id": 1394740,
+      "date": "2026-10-16",
+      "title": "Tazza: The Song of Beelzebub",
+      "director": "Choi Kook-hee",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Crime / Drama",
+      "cast": "Byun Yo-han, Roh Jae-won, Ayaka Miyoshi, Jo Woo-jin",
+      "notes": "",
+      "youtube_trailer_id": "gDgTGFltqBw"
     },
     {
       "tmdb_id": 1458099,
@@ -563,6 +667,19 @@
       "youtube_trailer_id": "Dw-5ZGapGTQ"
     },
     {
+      "tmdb_id": 1765072,
+      "date": "2026-10-16",
+      "title": "You Can See Everything",
+      "director": "Nathan Fielder, Lance Oppenheim",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Elizabeth Holmes, Nathan Fielder, Billy Evans, Amanda Seyfried",
+      "notes": "",
+      "youtube_trailer_id": "HvW_N5p1q44"
+    },
+    {
       "tmdb_id": 1702350,
       "date": "2026-10-22",
       "title": "Fallen Angels",
@@ -584,7 +701,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Crime",
-      "cast": "Olivia Cooke, Helen Mirren, Alden Ehrenreich, Juliet Stevenson",
+      "cast": "Helen Mirren, Alden Ehrenreich, Olivia Cooke, Juliet Stevenson",
       "notes": "The end is where the plotting begins.",
       "youtube_trailer_id": "2AMYg6UmmjM"
     },
@@ -597,7 +714,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Sacha Baron Cohen, Morgana Robinson",
+      "cast": "Sacha Baron Cohen, Morgana Robinson, Ed Sheeran, C. Stewart Rodeheaver",
       "notes": "Livin XXX large.",
       "youtube_trailer_id": "6t7C4qaHihE"
     },
@@ -612,7 +729,7 @@
       "genre": "Horror / Thriller / Science Fiction",
       "cast": "Tom Rhys Harries, Naomi Ackie, Eddie Marsan, Max Minghella",
       "notes": "Look fear in the face.",
-      "youtube_trailer_id": "OGO4Mqvo3jI"
+      "youtube_trailer_id": "KCR-rz0YfD4"
     },
     {
       "tmdb_id": 858035,
@@ -637,7 +754,7 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Jeon Do-yeon, Sul Kyung-gu, Zo In-sung, Cho Yeo-jeong",
-      "notes": "",
+      "notes": "Thou Shalt Not Covet",
       "youtube_trailer_id": "zd3qXH9qN70"
     },
     {
@@ -652,6 +769,19 @@
       "cast": "John Rhys-Davies, Paris Brosnan, Bethany Anne Lind, Eric Mendenhall",
       "notes": "Every good story deserves the right ending.",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1479481,
+      "date": "2026-10-23",
+      "title": "Terrestrial",
+      "director": "Steve Pink",
+      "studio": "Indican Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Science Fiction / Comedy",
+      "cast": "Jermaine Fowler, James Morosini, Pauline Chalamet, Violett Beane",
+      "notes": "",
+      "youtube_trailer_id": "cD0fVpDoN8Y"
     },
     {
       "tmdb_id": 1195803,
@@ -680,6 +810,19 @@
       "youtube_trailer_id": "bJQGtSeLPII"
     },
     {
+      "tmdb_id": 1496696,
+      "date": "2026-10-28",
+      "title": "Breeder",
+      "director": "Alex Goyette",
+      "studio": "IFC Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Daniel Doheny, Dot-Marie Jones, Maddie Phillips, Tanaya Beatty",
+      "notes": "Perfection has its price.",
+      "youtube_trailer_id": "9MeILB0M274"
+    },
+    {
       "tmdb_id": 1596319,
       "date": "2026-10-28",
       "title": "Closure",
@@ -690,7 +833,7 @@
       "genre": "Documentary",
       "cast": "Daniel Dymiński",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "C-Q9Zl259yU"
     },
     {
       "tmdb_id": 1517123,

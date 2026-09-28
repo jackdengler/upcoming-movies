@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -82,6 +82,19 @@
       "youtube_trailer_id": "sfvh4VZsFuY"
     },
     {
+      "tmdb_id": 1584855,
+      "date": "2026-11-06",
+      "title": "Paradise Lost",
+      "director": "Yeon Sang-ho",
+      "studio": "Well Go USA Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Drama / Science Fiction",
+      "cast": "Kim Hyun-joo, Bae Hyeon-seong, Kim Jong-tae, Lee Hyun-kyun",
+      "notes": "",
+      "youtube_trailer_id": "ZpM8YNGNaow"
+    },
+    {
       "tmdb_id": 1117898,
       "date": "2026-11-06",
       "title": "The Cat in the Hat",
@@ -100,12 +113,12 @@
       "title": "Wild Horse Nine",
       "director": "Martin McDonagh",
       "studio": "Searchlight Pictures",
-      "budget_usd": 5000000,
+      "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy / Crime / Thriller",
       "cast": "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo",
       "notes": "Sometimes you've got to do a terrible thing for the greater good.",
-      "youtube_trailer_id": "Haw_sznA5aQ"
+      "youtube_trailer_id": "kqxuamKxRTo"
     },
     {
       "tmdb_id": 1562642,
@@ -168,9 +181,22 @@
       "budget_usd": 15000000,
       "release_type": "limited",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
+      "cast": "Miles Teller, Adam Driver, Scarlett Johansson, Gavin Goudey",
+      "notes": "All debts are paid in blood.",
+      "youtube_trailer_id": "MLwTyQOhBkw"
+    },
+    {
+      "tmdb_id": 1756787,
+      "date": "2026-11-13",
+      "title": "Search Party: Where's PawPaw?",
+      "director": "Victoria Monai Richards",
+      "studio": "Atlas Distribution Company",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Adventure / Mystery / Comedy / Family",
+      "cast": "Victoria Monai Richards, Nijah Brenea, Daisy Fernandez, Tichina Arnold",
       "notes": "",
-      "youtube_trailer_id": "ldCb77jXIsM"
+      "youtube_trailer_id": "DZPMP3vDGVk"
     },
     {
       "tmdb_id": 1674139,
@@ -186,6 +212,32 @@
       "youtube_trailer_id": "E0Sc30mg3CE"
     },
     {
+      "tmdb_id": 1379486,
+      "date": "2026-11-13",
+      "title": "Victorian Psycho",
+      "director": "Zachary Wigon",
+      "studio": "Bleecker Street Media",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Horror / Thriller",
+      "cast": "Maika Monroe, Thomasin McKenzie, Ruth Wilson, Jason Isaacs",
+      "notes": "You shan't forget her.",
+      "youtube_trailer_id": "sDiFol_2j2I"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-11-14",
+      "title": "Festive Fun with Peppa Cinema Experience",
+      "director": "—",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Family",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1694097,
       "date": "2026-11-19",
       "title": "GIANT - The Play",
@@ -199,6 +251,19 @@
       "youtube_trailer_id": "iJ6aCRF3_m0"
     },
     {
+      "tmdb_id": 1752150,
+      "date": "2026-11-20",
+      "title": "Ash and Crayons",
+      "director": "Evgeny Afineevsky",
+      "studio": "Briarcliff Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Animation",
+      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Vladyslav Buriak",
+      "notes": "A story of innocence and resilience in the shadow of war.",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1286656,
       "date": "2026-11-20",
       "title": "I Play Rocky",
@@ -209,7 +274,7 @@
       "genre": "Drama / History",
       "cast": "Anthony Ippolito, AnnaSophia Robb, Stephan James, Matt Dillon",
       "notes": "The true underdog story.",
-      "youtube_trailer_id": "V_g_Ut0jO-0"
+      "youtube_trailer_id": "Kpc4o2J28QE"
     },
     {
       "tmdb_id": 1299329,
@@ -221,7 +286,7 @@
       "release_type": "limited",
       "genre": "Drama / Crime / Thriller",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
-      "notes": "",
+      "notes": "Too young to understand. Too old to forget.",
       "youtube_trailer_id": "K32NPBLpqZI"
     },
     {
@@ -264,26 +329,13 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1400336,
-      "date": "2026-11-25",
-      "title": "Focker-in-Law",
-      "director": "John Hamburg",
-      "studio": "Universal Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Romance",
-      "cast": "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo",
-      "notes": "The circle of trust just got bigger.",
-      "youtube_trailer_id": "9CKu3WoMYCg"
-    },
-    {
       "tmdb_id": 1461490,
       "date": "2026-11-25",
       "title": "Hershey",
       "director": "Mark Waters",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / History / Romance",
       "cast": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind",
       "notes": "The true story of an American dreamer.",
@@ -314,6 +366,19 @@
       "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino",
       "notes": "",
       "youtube_trailer_id": "RjEZaUBbUvU"
+    },
+    {
+      "tmdb_id": 1400336,
+      "date": "2026-11-27",
+      "title": "Focker-in-Law",
+      "director": "John Hamburg",
+      "studio": "Universal Pictures",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Comedy / Romance",
+      "cast": "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo",
+      "notes": "The circle of trust just got bigger.",
+      "youtube_trailer_id": "9CKu3WoMYCg"
     },
     {
       "tmdb_id": 947502,

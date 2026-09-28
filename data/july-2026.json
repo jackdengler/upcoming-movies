@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -34,7 +34,7 @@
       "date": "2026-07-03",
       "title": "Lockbox",
       "director": "Daniel Stamm",
-      "studio": "—",
+      "studio": "Aura Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror",
@@ -220,7 +220,7 @@
       "budget_usd": 12000000,
       "release_type": "wide",
       "genre": "Comedy / Drama / Romance",
-      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
+      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     },
@@ -238,14 +238,14 @@
       "youtube_trailer_id": "jSwHRzmEhBI"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1715208,
       "date": "2026-07-10",
       "title": "The Town That Takes",
-      "director": "—",
+      "director": "Britt Bankhead",
       "studio": "Atlas Distribution Company",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Mystery / Thriller",
+      "genre": "Action / Horror / Mystery",
       "cast": "Britt Bankhead, Miles Mussenden, Grace Patterson, Mike Markoff",
       "notes": "",
       "youtube_trailer_id": null
@@ -619,7 +619,7 @@
       "date": "2026-07-29",
       "title": "Above and Below",
       "director": "Jesse V. Johnson",
-      "studio": "—",
+      "studio": "Aura Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Thriller / Crime",

@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -129,7 +129,7 @@
       "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Comedy",
-      "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
+      "cast": "Anna Faris, Regina Hall, Marlon Wayans, Shawn Wayans",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "cGgWAHXuTKc"
     },
@@ -480,9 +480,9 @@
       "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Adam Driver, Miles Teller, Scarlett Johansson, Gavin Goudey",
-      "notes": "",
-      "youtube_trailer_id": "ldCb77jXIsM"
+      "cast": "Miles Teller, Adam Driver, Scarlett Johansson, Gavin Goudey",
+      "notes": "All debts are paid in blood.",
+      "youtube_trailer_id": "MLwTyQOhBkw"
     },
     {
       "tmdb_id": 1669841,
@@ -649,7 +649,7 @@
       "budget_usd": 12000000,
       "release_type": "limited",
       "genre": "Comedy / Drama / Romance",
-      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
+      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
       "notes": "It'll be fun.",
       "youtube_trailer_id": "nelkiuezJxg"
     }

@@ -34,7 +34,9 @@ export const test = base.extend({
     // handles them failing (offline path).
     await page.route(
       /^https:\/\/(api\.github\.com|i\.ytimg\.com|fonts\.googleapis\.com|fonts\.gstatic\.com)\//,
-      (route) => route.abort(),
+      // "internetdisconnected": these calls behave as if offline, which the
+      // smoke test's console filter already treats as expected.
+      (route) => route.abort("internetdisconnected"),
     );
     await use(page);
   },

@@ -610,7 +610,7 @@ function renderInlineTrailer({ key, title, year, ytId }) {
 
   const button = el("button", {
       type: "button",
-      class: `row__trailer-btn row__trailer-btn--mini${open ? " is-on" : ""}`,
+      class: `row__trailer-btn row__trailer-btn--mini row__trailer-btn--thumb${open ? " is-on" : ""}`,
       "aria-pressed": open ? "true" : "false",
       "aria-expanded": open ? "true" : "false",
       "aria-label": ariaLabel,
@@ -618,7 +618,10 @@ function renderInlineTrailer({ key, title, year, ytId }) {
       dataset: { trailerToggle: "1", key, yt: ytId },
     },
   );
-  button.innerHTML = MINI_TRAILER_ICONS;
+  // The trailer's own still (YouTube serves one per video) makes the play
+  // button a thumbnail; the glyph sits on top. Lazy so only on-screen
+  // cards fetch; a frame that fails (offline, removed video) just hides.
+  button.innerHTML = `<img class="row__thumb" src="https://i.ytimg.com/vi/${encodeURIComponent(ytId)}/mqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">${MINI_TRAILER_ICONS}`;
 
   const frameWrap = el("div", {
     class: "row__trailer",

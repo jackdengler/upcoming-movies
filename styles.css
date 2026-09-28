@@ -45,6 +45,9 @@
   --color-accent-dark:      #E6CE00;
   --color-accent-text:      #0B0B0B;
   --color-accent-ink:       #FFE500;          /* accent as text / line */
+  --color-brand:            #A32929;          /* Movies band (launcher) */
+  --color-brand-ink:        #F5F2EA;
+  --color-brand-past:       #3A3A3A;          /* past months */
   --color-accent-soft:      rgba(255,229,0,0.12);
   --color-accent-border:    rgba(255,229,0,0.32);
 
@@ -95,10 +98,10 @@
   --space-6: 32px;
 
   /* Radius — sharp */
-  --radius-sm:   4px;
-  --radius-md:   6px;
-  --radius-lg:   8px;
-  --radius-xl:   16px;
+  --radius-sm:   0;
+  --radius-md:   0;
+  --radius-lg:   0;
+  --radius-xl:   0;          /* Optimus is square edge to edge */
   --radius-pill: 100px;
 
   /* Shadow — black on the Optimus ground */
@@ -172,6 +175,7 @@
   --color-border:           rgba(11,11,11,0.10);
   --color-border-strong:    rgba(11,11,11,0.20);
   --color-accent-ink:       #7A6300;
+  --color-brand-past:       #8F897E;
   --color-accent-border:    rgba(122,99,0,0.35);
   --color-success:          #2F6B3F;
   --color-success-soft:     rgba(47,107,63,0.10);
@@ -2656,4 +2660,292 @@ html { font-synthesis: none; }
   font-family: var(--font-display);
   font-weight: 400;
   letter-spacing: 0;
+}
+
+/* =============================================================
+   Big Type skin — the Central Optimus launcher's language.
+   Square edges (radius tokens are 0), flat surfaces, Anton for
+   titles and dates, uppercase mono micro-labels, the launcher's
+   Movies wine for month bands, yellow for "selected / do this".
+   Restyles existing classes only; behaviour is unchanged.
+   ============================================================= */
+:root {
+  --shadow-sm: none;
+  --shadow-md: none;
+}
+:root[data-theme="light"] {
+  --shadow-sm: none;
+  --shadow-md: none;
+}
+
+/* Header: big Anton title, heavy rule under the whole header block. */
+.app-header h1 {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.app-header {
+  border-bottom: 3px solid var(--color-text);
+}
+.segmented__btn {
+  font-size: var(--text-micro);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.amc-toggle,
+.theater-chip,
+.search-bar {
+  border-radius: 0;
+}
+.amc-toggle {
+  font-size: var(--text-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Month: a wine band with the launcher's diagonal cut, full bleed. */
+.month { margin-bottom: var(--space-5); }
+.month__summary {
+  margin: var(--space-3) calc(-1 * var(--space-4)) 0;
+  padding: var(--space-4) var(--space-4) calc(var(--space-4) + 14px);
+  background: var(--color-brand);
+  color: var(--color-brand-ink);
+  border-bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), 0 100%);
+}
+.month__name {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: inherit;
+}
+.month__count {
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: inherit;
+  opacity: 0.85;
+}
+.month__chevron {
+  border-color: currentColor;
+}
+.month--past .month__summary {
+  opacity: 1;
+  background: var(--color-brand-past);
+}
+.month--past .month__name { color: inherit; }
+
+/* Dates: Anton over a heavy rule; the count sits right in mono. */
+.section__header {
+  align-items: flex-end;
+  border-top: 3px solid var(--color-text);
+  padding: var(--space-2) 0 var(--space-2);
+}
+.section__date {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 26px;
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+.section__count {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.section__list {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--color-border-strong);
+}
+
+/* Movie card: flat on the ground, hairline between, level stripe kept. */
+.row {
+  background: var(--color-bg);
+  border-top: 0;
+  border-bottom: 1px solid var(--color-border-strong);
+  padding: var(--space-4) 0 var(--space-4) var(--space-3);
+  border-left-width: 6px;
+}
+.row__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.row__title-line {
+  align-items: flex-start;
+}
+.row__title-right {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+.row__meta {
+  margin-top: var(--space-2);
+  font-size: var(--text-micro);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+.row__sub {
+  margin-top: var(--space-3);
+  grid-template-columns: 72px 1fr;
+  gap: 4px var(--space-3);
+  font-size: 12px;
+}
+.row__sub dt {
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  padding-top: 1px;
+}
+.row__sub dd {
+  color: var(--color-text);
+}
+.chip--wide,
+.chip--limited,
+.chip--streaming,
+.chip--theater,
+.chip--format {
+  border-radius: 0;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+.chip--wide {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+}
+.chip--limited {
+  background: transparent;
+  color: var(--color-accent-ink);
+  border: 1px solid var(--color-accent-ink);
+}
+
+/* No trailer on file: a square search-on-YouTube button. */
+.row__trailer-btn--mini {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--color-accent-border);
+}
+/* Trailer: the play button is the trailer's own still, 16:9. */
+.row__trailer-btn--thumb {
+  position: relative;
+  width: 104px;
+  height: 58px;
+  border-radius: 0;
+  border: 0;
+  background: #000;
+  overflow: hidden;
+}
+.row__thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+.row__trailer-btn--thumb .row__trailer-glyph {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  padding: 6px;
+  background: var(--color-accent);
+  color: #0B0B0B;
+  fill: currentColor;
+}
+.row__trailer-btn--thumb.is-on .row__thumb { opacity: 0.35; }
+.row__trailer-frame { border-radius: 0; }
+
+/* Interest strip: one square segmented control. */
+.rating {
+  gap: 0;
+  margin-top: var(--space-3);
+  padding-top: 0;
+  border-top: 0;
+}
+.rating__btn {
+  min-height: 40px;
+  border-radius: 0;
+  margin-left: -1px;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  background: transparent;
+}
+.rating__btn:first-child { margin-left: 0; }
+
+/* Rereleases theater chips + row buttons */
+.theater-chip {
+  font-size: var(--text-micro);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Calendar */
+.calendar__month {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.calendar__cell--today .calendar__daynum {
+  border-radius: 0;
+}
+
+/* Interests, directors, studios: groups and rows */
+.interest-group > .month__summary {
+  margin: var(--space-3) 0 0;
+  padding: var(--space-3);
+  clip-path: none;
+  background: var(--color-bg);
+  color: var(--color-text);
+  border-top: 3px solid var(--color-text);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+.interest-group > .month__summary .month__name {
+  font-size: 26px;
+}
+.director-row__photo { border-radius: 0; }
+.director-row__name {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 0.95;
+}
+
+/* Tab bar: uppercase mono labels. */
+.tab-bar__btn {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Sheets / dialogs: square, Anton headings. */
+.sheet__title,
+.dialog__title,
+.sheet h2,
+.updates__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }

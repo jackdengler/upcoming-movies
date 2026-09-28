@@ -42,7 +42,12 @@ colours and type no longer apply.
   (DM Sans is still loaded solely for the canvas share-image export.)
 - Use design tokens only — no raw hex, px sizes, or font names outside
   `:root`. Change the palette in `:root`, not in rules.
-- Sharp corners (4–8px); `--radius-xl` (16px) is reserved for sheets.
+- Square edges: the radius tokens are 0 (pills only for switches, badges,
+  dots). Soft shadows are off (`--shadow-sm/md: none`).
+- "Big Type skin" at the end of `styles.css`: Anton titles/dates, wine
+  month bands (`--color-brand`, the launcher's Movies colour) with the
+  diagonal cut, flat cards on hairlines, square interest strip. Trailer
+  buttons show the trailer's YouTube still (`i.ytimg.com`, lazy).
 
 ## Workflow
 

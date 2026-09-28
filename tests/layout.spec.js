@@ -8,7 +8,7 @@ import { test, expect } from "./fixtures.js";
 // height, segmented buttons wrapping onto two lines.
 
 test.describe("layout", () => {
-  test("header has linen-tinted background and reasonable height", async ({
+  test("header has the Optimus ground background and reasonable height", async ({
     page,
   }) => {
     await page.goto("/");
@@ -20,14 +20,14 @@ test.describe("layout", () => {
     expect(box.height).toBeGreaterThan(80);
     expect(box.height).toBeLessThan(360);
 
-    // Linen base is rgb(245, 239, 230). The default is the translucent
+    // Optimus ground is rgb(11, 11, 11). The default is the translucent
     // `--header-bg` (rgba 0.85), but the @supports fallback uses the solid
-    // token. Either way the tint should be 245/239/230.
+    // token. Either way the tint should be 11/11/11.
     const bg = await header.evaluate((el) => getComputedStyle(el).background);
-    expect(bg).toMatch(/rgba?\(\s*245,\s*239,\s*230/);
+    expect(bg).toMatch(/rgba?\(\s*11,\s*11,\s*11/);
   });
 
-  test("section headers use DM Sans (no serif)", async ({ page }) => {
+  test("section headers use Anton or DM Mono (no serif)", async ({ page }) => {
     await page.goto("/");
     await expect(page.locator("#list .section").first()).toBeVisible({
       timeout: 15_000,
@@ -35,17 +35,17 @@ test.describe("layout", () => {
     const heading = page.locator("#list .section h2, #list .section .month").first();
     if ((await heading.count()) === 0) return;
     const family = await heading.evaluate((el) => getComputedStyle(el).fontFamily);
-    expect(family).toMatch(/DM Sans/i);
+    expect(family).toMatch(/Anton|DM Mono/i);
     expect(family).not.toMatch(/PT Serif/i);
   });
 
-  test("body text uses the DM Sans default", async ({ page }) => {
+  test("body text uses the DM Mono default", async ({ page }) => {
     await page.goto("/");
     const family = await page
       .locator(".tab-bar__btn span")
       .first()
       .evaluate((el) => getComputedStyle(el).fontFamily);
-    expect(family).toMatch(/DM Sans/i);
+    expect(family).toMatch(/DM Mono/i);
   });
 
   test("tab bar is anchored to the bottom of the viewport", async ({

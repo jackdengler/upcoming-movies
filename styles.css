@@ -3,53 +3,75 @@
    Light mode only, forever. No raw values outside :root.
    ============================================================= */
 
+@font-face {
+  font-family: "Anton";
+  src: url("./fonts/Anton-400.woff2") format("woff2");
+  font-weight: 1 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Mono";
+  src: url("./fonts/DMMono-400.woff2") format("woff2");
+  font-weight: 1 499;
+  font-display: swap;
+}
+/* Heavier weights (500–700) all land on DM Mono Medium; no faux bold. */
+@font-face {
+  font-family: "DM Mono";
+  src: url("./fonts/DMMono-500.woff2") format("woff2");
+  font-weight: 500 1000;
+  font-display: swap;
+}
+
 :root {
-  color-scheme: light only;
+  color-scheme: dark;
+  accent-color: #FFE500;
 
   /* Surfaces */
-  --color-bg:               #F5EFE6;          /* linen */
-  --color-surface:          #FFFCF7;          /* warm white */
+  --color-bg:               #0B0B0B;          /* Optimus ground */
+  --color-surface:          #151515;
 
   /* Text */
-  --color-text:             #2A2520;
-  --color-text-dim:         #6F665B;
-  --color-text-faint:       #877E72;
+  --color-text:             #F5F2EA;
+  --color-text-dim:         #A8A49B;
+  --color-text-faint:       #7A766E;
 
   /* Borders */
-  --color-border:           rgba(60,40,20,0.08);
-  --color-border-strong:    rgba(60,40,20,0.16);
+  --color-border:           rgba(245,242,234,0.10);
+  --color-border-strong:    rgba(245,242,234,0.22);
 
-  /* Accent — tan */
-  --color-accent:           #B8895A;
-  --color-accent-dark:      #9C7148;
-  --color-accent-text:      #FFFFFF;
-  --color-accent-soft:      rgba(184,137,90,0.14);
-  --color-accent-border:    rgba(184,137,90,0.28);
+  /* Accent — Optimus yellow */
+  --color-accent:           #FFE500;
+  --color-accent-dark:      #E6CE00;
+  --color-accent-text:      #0B0B0B;
+  --color-accent-soft:      rgba(255,229,0,0.12);
+  --color-accent-border:    rgba(255,229,0,0.32);
 
   /* Status matrix */
-  --color-success:          #3F6B3F;
-  --color-success-soft:     rgba(63,107,63,0.10);
-  --color-success-border:   rgba(63,107,63,0.22);
-  --color-success-text:     #FFFFFF;
+  --color-success:          #5FD38A;
+  --color-success-soft:     rgba(95,211,138,0.12);
+  --color-success-border:   rgba(95,211,138,0.30);
+  --color-success-text:     #0B0B0B;
 
-  --color-warning:          #A6741F;
-  --color-warning-soft:     rgba(166,116,31,0.12);
-  --color-warning-border:   rgba(166,116,31,0.26);
-  --color-warning-text:     #FFFFFF;
+  --color-warning:          #FFB612;
+  --color-warning-soft:     rgba(255,182,18,0.12);
+  --color-warning-border:   rgba(255,182,18,0.30);
+  --color-warning-text:     #0B0B0B;
 
-  --color-error:            #8C3A2E;
-  --color-error-soft:       rgba(140,58,46,0.10);
-  --color-error-border:     rgba(140,58,46,0.24);
-  --color-error-text:       #FFFFFF;
+  --color-error:            #FF5A4F;
+  --color-error-soft:       rgba(255,90,79,0.12);
+  --color-error-border:     rgba(255,90,79,0.30);
+  --color-error-text:       #0B0B0B;
 
-  --color-pending:          #8A6F3D;
-  --color-pending-soft:     rgba(138,111,61,0.10);
-  --color-pending-border:   rgba(138,111,61,0.22);
+  --color-pending:          #C9A86A;
+  --color-pending-soft:     rgba(201,168,106,0.12);
+  --color-pending-border:   rgba(201,168,106,0.30);
 
-  --color-focus-ring:       rgba(184,137,90,0.55);
+  --color-focus-ring:       rgba(255,229,0,0.6);
 
   /* Type */
-  --font-body:    'DM Sans', -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  --font-body:    'DM Mono', ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display: 'Anton', Impact, sans-serif;
 
   --text-display: 32px;
   --text-h1:      26px;
@@ -77,12 +99,12 @@
   --radius-xl:   16px;
   --radius-pill: 100px;
 
-  /* Shadow — warm brown */
-  --shadow-sm:  0 1px 2px rgba(60,40,20,0.06);
-  --shadow-md:  0 1px 3px rgba(60,40,20,0.06), 0 4px 12px rgba(60,40,20,0.05);
-  --shadow-lg:  0 4px 8px rgba(60,40,20,0.08), 0 12px 28px rgba(60,40,20,0.08);
-  --shadow-xl:  0 8px 16px rgba(60,40,20,0.10), 0 24px 48px rgba(60,40,20,0.12);
-  --shadow-up:  0 -8px 16px rgba(60,40,20,0.04), 0 -20px 40px rgba(60,40,20,0.06);
+  /* Shadow — black on the Optimus ground */
+  --shadow-sm:  0 1px 2px rgba(0,0,0,0.24);
+  --shadow-md:  0 1px 3px rgba(0,0,0,0.24), 0 4px 12px rgba(0,0,0,0.20);
+  --shadow-lg:  0 4px 8px rgba(0,0,0,0.32), 0 12px 28px rgba(0,0,0,0.32);
+  --shadow-xl:  0 8px 16px rgba(0,0,0,0.40), 0 24px 48px rgba(0,0,0,0.48);
+  --shadow-up:  0 -8px 16px rgba(0,0,0,0.16), 0 -20px 40px rgba(0,0,0,0.24);
 
   /* Motion */
   --duration-fast:    180ms;
@@ -110,9 +132,9 @@
   --icon-xl:  24px;
 
   /* App-specific derived tokens */
-  --header-bg:     rgba(245, 239, 230, 0.85);
+  --header-bg:     rgba(11, 11, 11, 0.85);
   --header-blur:   saturate(140%) blur(20px);
-  --tabbar-bg:     rgba(255, 252, 247, 0.92);
+  --tabbar-bg:     rgba(21, 21, 21, 0.92);
   --tabbar-blur:   saturate(140%) blur(24px);
 
   /* viewport-fit=cover makes env() insets meaningful in every host: they
@@ -312,7 +334,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   padding: 3px;
-  background: var(--color-accent-soft);
+  background: var(--color-surface);
   border-radius: var(--radius-md);
 }
 .app-header__segmented[hidden] { display: none; }
@@ -351,9 +373,9 @@ body {
 }
 .segmented__btn:active { transform: scale(var(--press-scale)); }
 .segmented__btn.is-active {
-  background: var(--color-surface);
-  color: var(--color-text);
-  box-shadow: var(--shadow-sm), 0 0 0 0.5px rgba(60, 40, 20, 0.06);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  box-shadow: var(--shadow-sm), 0 0 0 0.5px rgba(245,242,234,0.06);
 }
 
 /* "My AMCs" — compact pill that sits inline with the scope segmented row.
@@ -412,8 +434,8 @@ body {
   width: 30px;
   height: 18px;
   border-radius: var(--radius-pill);
-  background: rgba(60, 40, 20, 0.16);
-  box-shadow: 0 1px 2px rgba(60, 40, 20, 0.08) inset;
+  background: rgba(245,242,234,0.16);
+  box-shadow: 0 1px 2px rgba(245,242,234,0.08) inset;
   transition: background var(--duration-fast) var(--ease-out);
 }
 .amc-toggle__switch::after {
@@ -485,13 +507,13 @@ body {
   background: var(--color-surface);
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-md);
-  box-shadow: 0 1px 2px rgba(60,40,20,0.04) inset;
+  box-shadow: 0 1px 2px rgba(245,242,234,0.04) inset;
   transition: border-color var(--duration-fast) var(--ease-out),
               box-shadow var(--duration-fast) var(--ease-out);
 }
 .search-bar:focus-within {
   border-color: var(--color-accent);
-  box-shadow: 0 1px 2px rgba(60,40,20,0.06) inset,
+  box-shadow: 0 1px 2px rgba(245,242,234,0.06) inset,
               0 0 0 3px var(--color-focus-ring);
 }
 /* Hidden until the user taps the header search icon. */
@@ -1145,7 +1167,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border-radius: var(--radius-sm);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: rgba(60,40,20,0.06);
+  background: rgba(245,242,234,0.06);
   color: var(--color-text-dim);
   white-space: nowrap;
   margin-top: 2px;
@@ -1174,7 +1196,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   border-top: 1px solid var(--color-border);
 }
 .rep-title:first-child { border-top: 0; }
-.rep-title[open] { background: rgba(60,40,20,0.02); }
+.rep-title[open] { background: rgba(245,242,234,0.02); }
 .rep-title--on {
   border-left: 3px solid var(--color-accent);
   padding-left: calc(var(--space-3) - 3px);
@@ -1410,7 +1432,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   min-width: 16px;
   padding: 1px var(--space-1);
   border-radius: var(--radius-sm);
-  background: rgba(60,40,20,0.06);
+  background: rgba(245,242,234,0.06);
   line-height: 1.2;
 }
 
@@ -1553,7 +1575,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   max-height: 90dvh;
 }
 .sheet::backdrop {
-  background: rgba(60, 40, 20, 0.45);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
 }
 .sheet__body {
@@ -1571,7 +1593,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   transform: translateX(-50%);
   width: 36px;
   height: 4px;
-  background: rgba(60,40,20,0.16);
+  background: rgba(245,242,234,0.16);
   border-radius: var(--radius-pill);
 }
 .sheet__title {
@@ -1594,7 +1616,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
 .sheet__copy code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
-  background: rgba(60,40,20,0.06);
+  background: rgba(245,242,234,0.06);
   padding: 1px var(--space-1);
   border-radius: var(--radius-sm);
 }
@@ -1609,13 +1631,13 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   background: var(--color-surface);
   color: var(--color-text);
   outline: none;
-  box-shadow: 0 1px 2px rgba(60,40,20,0.04) inset;
+  box-shadow: 0 1px 2px rgba(245,242,234,0.04) inset;
   transition: border-color var(--duration-fast) var(--ease-out),
               box-shadow var(--duration-fast) var(--ease-out);
 }
 .sheet__input:focus {
   border-color: var(--color-accent);
-  box-shadow: 0 1px 2px rgba(60,40,20,0.06) inset,
+  box-shadow: 0 1px 2px rgba(245,242,234,0.06) inset,
               0 0 0 3px var(--color-focus-ring);
 }
 .sheet__actions {
@@ -2535,7 +2557,7 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   margin-top: 2px;
 }
 .activity-chip--added    { background: var(--color-success-soft); color: var(--color-success); }
-.activity-chip--removed  { background: rgba(60,40,20,0.06);       color: var(--color-text-dim); }
+.activity-chip--removed  { background: rgba(245,242,234,0.06);       color: var(--color-text-dim); }
 .activity-chip--date     { background: var(--color-pending-soft); color: var(--color-pending); }
 .activity-chip--type     { background: var(--color-warning-soft); color: var(--color-warning); }
 .activity-chip--studio,
@@ -2573,4 +2595,19 @@ details[open] > .month__summary .month__chevron { transform: rotate(45deg); }
   .app-header__icon:active {
     transform: none !important;
   }
+}
+
+/* Central Optimus type: titles and headings in Anton, everything else
+   in DM Mono (--font-body). */
+html { font-synthesis: none; }
+.app-header h1,
+.month__name,
+.calendar__month,
+.row__title,
+.director-row__name,
+.updates__title,
+.studio-row__count {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0;
 }

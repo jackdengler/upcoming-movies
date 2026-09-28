@@ -1,4 +1,4 @@
-const CACHE = "upcoming-v52";
+const CACHE = "upcoming-v53";
 const SHELL = [
   "./",
   "./index.html",
@@ -10,6 +10,9 @@ const SHELL = [
   "./js/studios.js",
   "./js/tmdb.js",
   "./manifest.webmanifest",
+  "./fonts/Anton-400.woff2",
+  "./fonts/DMMono-400.woff2",
+  "./fonts/DMMono-500.woff2",
 ];
 
 self.addEventListener("install", (e) => {

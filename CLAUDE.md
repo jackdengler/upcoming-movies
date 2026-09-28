@@ -23,33 +23,21 @@ Key files:
 - `scripts/fetch-*.mjs` — refresh release data, run by a workflow in
   `.github/workflows/`.
 
-## Design system — non-negotiable
+## Design system — Central Optimus
 
-**Always follow `linen-design-system-v3 (1).md` for any visual or layout
-change.** It is the source of truth for typography, color, spacing, radii,
-shadows, motion, components, and composition decisions. Read it before
-touching `index.html` or `styles.css`, every time.
+The app matches the Central Optimus launcher ("Big Type"), by the owner's
+request (2026-09-28). This replaces the old Linen look; `linen-design-system-v3
+(1).md` still describes spacing, radii, motion and composition, but its
+colours and type no longer apply.
 
-**Project override — typography:** the design system's PT Serif rule is
-explicitly rejected for this project. **Use DM Sans for everything**, all
-sizes, all weights, all eyebrows and italic accents included. There is no
-`--font-display` token; only `--font-body`. Do not reintroduce PT Serif or
-any other serif typeface.
-
-The short version:
-- Light mode only, forever. Linen background `#F5EFE6`, tan accent `#B8895A`.
-- DM Sans for everything. No serif fonts, ever.
-- Sharp corners (4–8px); `--radius-xl` (16px) is reserved for sheets.
-- Soft, warm-brown shadows — never pure black.
+- Dark only: ground `#0B0B0B`, surfaces `#151515`, cream ink `#F5F2EA`,
+  Optimus yellow accent `#FFE500` with near-black text on it.
+- Type: DM Mono for everything (`--font-body`), Anton (`--font-display`) for
+  titles and headings only. Both are self-hosted in `fonts/`; no serif, ever.
+  (DM Sans is still loaded solely for the canvas share-image export.)
 - Use design tokens only — no raw hex, px sizes, or font names outside
-  `:root`. If a value isn't on the scale, round to the nearest token.
-- Caps per screen: 2 font weights, 3 text colors, 2 accent surfaces, 1
-  active status color.
-- One `--text-display` element per screen, max one display screen per app.
-
-Before generating any new screen or large layout change, walk the 12
-composition decisions in Part I of the design system and state the answers.
-After implementing, run the smell tests in §3.
+  `:root`. Change the palette in `:root`, not in rules.
+- Sharp corners (4–8px); `--radius-xl` (16px) is reserved for sheets.
 
 ## Workflow
 

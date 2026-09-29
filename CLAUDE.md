@@ -37,6 +37,11 @@ colours and type no longer apply.
   the head script in `index.html` and shared with the launcher and other apps
   on this origin. Accent as *text or line* uses `--color-accent-ink` (dark
   mustard in light mode); `--color-accent` is for fills only.
+- Team colours: the shared `co.team` key ("" | "steelers" | "psu" |
+  "amherst") sets `<html data-team>`. Each team has a dark and a light token
+  set in `styles.css`, right after the light block, with the launcher's
+  values. Text on an accent fill uses `--color-accent-text`. The team is
+  picked in the launcher (or Fitness); this app follows it live.
 - Type: DM Mono for everything (`--font-body`), Anton (`--font-display`) for
   titles and headings only. Both are self-hosted in `fonts/`; no serif, ever.
   (DM Sans is still loaded solely for the canvas share-image export.)

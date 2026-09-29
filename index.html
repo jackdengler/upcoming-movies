@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0B0B0B" />
     <script>
-      /* Light / dark theme shared with Central Optimus (same origin): one
-         localStorage key, co.theme = "dark" | "light" (default dark), applied
+      /* Light / dark theme plus team colours, shared with Central Optimus (same
+         origin). co.theme = "dark" | "light" (default dark); co.team = "" |
+         "steelers" | "psu" | "amherst" (default ""), on <html data-team>. Applied
          before first paint and kept in step via the storage event. Keep this
          contract identical to central-optimus/launcher/theme.js. */
       (function () {
         var KEY = "co.theme";
-        var BAR = { dark: "#0B0B0B", light: "#F5F2EA" };
+        var TEAM_KEY = "co.team";
+        var TEAMS = ["", "steelers", "psu", "amherst"];
+        var BAR = {
+          "": { dark: "#0b0b0b", light: "#f5f2ea" },
+          steelers: { dark: "#101820", light: "#f8edcf" },
+          psu: { dark: "#041e42", light: "#f3f6fb" },
+          amherst: { dark: "#1a0f2e", light: "#f6f3fa" },
+        };
         function read() {
           try {
             return localStorage.getItem(KEY) === "light" ? "light" : "dark";
@@ -21,26 +29,51 @@
             return "dark";
           }
         }
-        function apply(theme) {
-          document.documentElement.dataset.theme = theme;
-          var meta = document.querySelector('meta[name="theme-color"]');
-          if (meta) meta.setAttribute("content", BAR[theme]);
-          document.dispatchEvent(new CustomEvent("co:theme", { detail: theme }));
+        function readTeam() {
+          try {
+            var t = localStorage.getItem(TEAM_KEY) || "";
+            return TEAMS.indexOf(t) >= 0 ? t : "";
+          } catch (_) {
+            return "";
+          }
         }
-        apply(read());
+        function apply() {
+          var theme = read();
+          var team = readTeam();
+          var root = document.documentElement;
+          root.dataset.theme = theme;
+          if (team) root.dataset.team = team;
+          else delete root.dataset.team;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", BAR[team][theme]);
+          document.dispatchEvent(new CustomEvent("co:theme", { detail: { theme: theme, team: team } }));
+        }
+        function save(key, value) {
+          try {
+            if (value) localStorage.setItem(key, value);
+            else localStorage.removeItem(key);
+          } catch (_) {}
+          apply();
+        }
+        apply();
         window.addEventListener("storage", function (e) {
-          if (e.key === KEY) apply(read());
+          if (e.key === KEY || e.key === TEAM_KEY) apply();
         });
         window.coTheme = {
           get: read,
           set: function (theme) {
-            try {
-              localStorage.setItem(KEY, theme);
-            } catch (_) {}
-            apply(theme);
+            save(KEY, theme);
           },
           toggle: function () {
             this.set(read() === "light" ? "dark" : "light");
+          },
+          teams: TEAMS.slice(),
+          getTeam: readTeam,
+          setTeam: function (team) {
+            save(TEAM_KEY, TEAMS.indexOf(team) >= 0 ? team : "");
+          },
+          nextTeam: function () {
+            this.setTeam(TEAMS[(TEAMS.indexOf(readTeam()) + 1) % TEAMS.length]);
           },
         };
       })();

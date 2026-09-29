@@ -25,7 +25,7 @@
 
 :root {
   color-scheme: dark;
-  accent-color: #FFE500;
+  accent-color: var(--color-accent);
 
   /* Surfaces */
   --color-bg:               #0B0B0B;          /* Optimus ground */
@@ -217,6 +217,123 @@
   --shadow-up:  0 -8px 16px rgba(0,0,0,0.04), 0 -20px 40px rgba(0,0,0,0.06);
   --header-bg:  rgba(245, 242, 234, 0.85);
   --tabbar-bg:  rgba(255, 253, 248, 0.92);
+}
+/* Team colours (shared co.team key, same values as the launcher): each
+   team has a dark and a light set over the plain mode above. The Movies
+   wine stays this app's colour. */
+:root[data-team="steelers"]:not([data-theme="light"]) {
+  --color-bg:            #101820;
+  --color-surface:       #16212C;
+  --color-text:          #F5F2EA;
+  --color-text-dim:      #A8A49B;
+  --color-text-faint:    #7A766E;
+  --color-border:        rgba(245, 242, 234, 0.10);
+  --color-border-strong: rgba(245, 242, 234, 0.22);
+  --color-accent:        #FFB612;
+  --color-accent-dark:   #FFB612;
+  --color-accent-text:   #101820;
+  --color-accent-ink:    #FFB612;
+  --color-accent-soft:   rgba(255, 182, 18, 0.12);
+  --color-accent-border: rgba(255, 182, 18, 0.35);
+  --color-focus-ring:    rgba(255, 182, 18, 0.6);
+  --tint:                245, 242, 234;
+  --header-bg:           rgba(16, 24, 32, 0.85);
+  --tabbar-bg:           rgba(22, 33, 44, 0.92);
+}
+:root[data-team="steelers"][data-theme="light"] {
+  --color-bg:            #F8EDCF;
+  --color-surface:       #FFF8E6;
+  --color-text:          #101820;
+  --color-text-dim:      #55534B;
+  --color-text-faint:    #76705F;
+  --color-border:        rgba(16, 24, 32, 0.10);
+  --color-border-strong: rgba(16, 24, 32, 0.20);
+  --color-accent:        #FFB612;
+  --color-accent-dark:   #FFB612;
+  --color-accent-text:   #101820;
+  --color-accent-ink:    #855600;
+  --color-accent-soft:   rgba(133, 86, 0, 0.12);
+  --color-accent-border: rgba(133, 86, 0, 0.35);
+  --color-focus-ring:    rgba(133, 86, 0, 0.6);
+  --tint:                16, 24, 32;
+  --header-bg:           rgba(248, 237, 207, 0.85);
+  --tabbar-bg:           rgba(255, 248, 230, 0.92);
+}
+:root[data-team="psu"]:not([data-theme="light"]) {
+  --color-bg:            #041E42;
+  --color-surface:       #0A2A55;
+  --color-text:          #F5F7FB;
+  --color-text-dim:      #A3B4CF;
+  --color-text-faint:    #7890B3;
+  --color-border:        rgba(245, 247, 251, 0.10);
+  --color-border-strong: rgba(245, 247, 251, 0.22);
+  --color-accent:        #FFFFFF;
+  --color-accent-dark:   #FFFFFF;
+  --color-accent-text:   #041E42;
+  --color-accent-ink:    #96BEE6;
+  --color-accent-soft:   rgba(150, 190, 230, 0.12);
+  --color-accent-border: rgba(150, 190, 230, 0.35);
+  --color-focus-ring:    rgba(150, 190, 230, 0.6);
+  --tint:                245, 247, 251;
+  --header-bg:           rgba(4, 30, 66, 0.85);
+  --tabbar-bg:           rgba(10, 42, 85, 0.92);
+}
+:root[data-team="psu"][data-theme="light"] {
+  --color-bg:            #F3F6FB;
+  --color-surface:       #FFFFFF;
+  --color-text:          #041E42;
+  --color-text-dim:      #4B6084;
+  --color-text-faint:    #6D7F9E;
+  --color-border:        rgba(4, 30, 66, 0.10);
+  --color-border-strong: rgba(4, 30, 66, 0.20);
+  --color-accent:        #041E42;
+  --color-accent-dark:   #041E42;
+  --color-accent-text:   #FFFFFF;
+  --color-accent-ink:    #1E407C;
+  --color-accent-soft:   rgba(30, 64, 124, 0.12);
+  --color-accent-border: rgba(30, 64, 124, 0.35);
+  --color-focus-ring:    rgba(30, 64, 124, 0.6);
+  --tint:                4, 30, 66;
+  --header-bg:           rgba(243, 246, 251, 0.85);
+  --tabbar-bg:           rgba(255, 255, 255, 0.92);
+}
+:root[data-team="amherst"]:not([data-theme="light"]) {
+  --color-bg:            #1A0F2E;
+  --color-surface:       #25173F;
+  --color-text:          #F6F3FA;
+  --color-text-dim:      #ADA2C3;
+  --color-text-faint:    #82779A;
+  --color-border:        rgba(246, 243, 250, 0.10);
+  --color-border-strong: rgba(246, 243, 250, 0.22);
+  --color-accent:        #C9B8E8;
+  --color-accent-dark:   #C9B8E8;
+  --color-accent-text:   #3F1F69;
+  --color-accent-ink:    #C9B8E8;
+  --color-accent-soft:   rgba(201, 184, 232, 0.12);
+  --color-accent-border: rgba(201, 184, 232, 0.35);
+  --color-focus-ring:    rgba(201, 184, 232, 0.6);
+  --tint:                246, 243, 250;
+  --header-bg:           rgba(26, 15, 46, 0.85);
+  --tabbar-bg:           rgba(37, 23, 63, 0.92);
+}
+:root[data-team="amherst"][data-theme="light"] {
+  --color-bg:            #F6F3FA;
+  --color-surface:       #FFFFFF;
+  --color-text:          #1F0F38;
+  --color-text-dim:      #665A7F;
+  --color-text-faint:    #7D7294;
+  --color-border:        rgba(31, 15, 56, 0.10);
+  --color-border-strong: rgba(31, 15, 56, 0.20);
+  --color-accent:        #3F1F69;
+  --color-accent-dark:   #3F1F69;
+  --color-accent-text:   #FFFFFF;
+  --color-accent-ink:    #3F1F69;
+  --color-accent-soft:   rgba(63, 31, 105, 0.12);
+  --color-accent-border: rgba(63, 31, 105, 0.35);
+  --color-focus-ring:    rgba(63, 31, 105, 0.6);
+  --tint:                31, 15, 56;
+  --header-bg:           rgba(246, 243, 250, 0.85);
+  --tabbar-bg:           rgba(255, 255, 255, 0.92);
 }
 /* Theme toggle icon: sun in dark (tap for light), moon in light. */
 .app-header__theme .i-moon,

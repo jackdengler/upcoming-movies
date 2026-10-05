@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -22,8 +22,8 @@
       "title": "Behemoth!",
       "director": "Tony Gilroy",
       "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
+      "budget_usd": 36000000,
+      "release_type": "wide",
       "genre": "Music / Drama",
       "cast": "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett",
       "notes": "A life. In pieces.",
@@ -62,11 +62,11 @@
       "director": "Mike Leigh",
       "studio": "Bleecker Street Media",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / Comedy",
       "cast": "Kate O'Flynn, Alice Bailey Johnson, Marion Bailey, Paul Jesson",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "WQmGOezOOvQ"
     },
     {
       "tmdb_id": 1379537,
@@ -95,13 +95,39 @@
       "youtube_trailer_id": "FmM2giDwLAE"
     },
     {
+      "tmdb_id": 1630464,
+      "date": "2026-12-11",
+      "title": "Clarissa",
+      "director": "Chuko Esiri, Arie Esiri",
+      "studio": "Neon",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Sophie Okonedo, David Oyelowo, India Ria Amarteifio, Ayo Edebiri",
+      "notes": "",
+      "youtube_trailer_id": "sJAqmdXaM8U"
+    },
+    {
+      "tmdb_id": 1599230,
+      "date": "2026-12-11",
+      "title": "Elsinore",
+      "director": "Simon Stone",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
+      "notes": "The fight of his life. The triumph of a lifetime.",
+      "youtube_trailer_id": "SzopCeFAWF0"
+    },
+    {
       "tmdb_id": 1649403,
       "date": "2026-12-11",
       "title": "George Michael: The Faith Tour",
       "director": "Andy Morahan, David Austin",
       "studio": "Bleecker Street Media",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Music / Documentary",
       "cast": "George Michael, Herb Ritts",
       "notes": "Experience the iconic 1988 concert.",
@@ -119,6 +145,19 @@
       "cast": "Jack O'Connell, Guy Pearce, Claire Foy, Blake Harrison",
       "notes": "They broke the news.",
       "youtube_trailer_id": "_LE1L4Huyys"
+    },
+    {
+      "tmdb_id": 1176962,
+      "date": "2026-12-11",
+      "title": "Rose",
+      "director": "Markus Schleinzer",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History / War",
+      "cast": "Sandra Hüller, Caro Braun, Marisa Growaldt, Robert Gwisdek",
+      "notes": "",
+      "youtube_trailer_id": "KrmkNoxS6t4"
     },
     {
       "tmdb_id": 1391239,
@@ -205,7 +244,7 @@
       "director": "Luca Guadagnino",
       "studio": "Neon",
       "budget_usd": 40000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy / Drama",
       "cast": "Andrew Garfield, Yura Borisov, Jason Schwartzman, Cooper Koch",
       "notes": "",
@@ -257,7 +296,7 @@
       "director": "Robert Eggers",
       "studio": "Focus Features",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",

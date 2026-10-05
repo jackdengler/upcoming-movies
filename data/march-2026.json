@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -37,7 +37,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Thriller / Science Fiction",
+      "genre": "Science Fiction / Action / Horror / Thriller",
       "cast": "James Paxton, Lilly Krug, Carlos Bardem, Alice Pagani",
       "notes": "",
       "youtube_trailer_id": "QPYGs7Mi47g"
@@ -51,7 +51,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Thriller / Drama / Mystery / Horror",
-      "cast": "Stephen Graham, Andrea Riseborough, Anson Boon, Kit Rakusen",
+      "cast": "Anson Boon, Stephen Graham, Andrea Riseborough, Kit Rakusen",
       "notes": "Some people only learn the hard way.",
       "youtube_trailer_id": "qWkPjI-Brkc"
     },

@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -251,19 +251,6 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": null,
-      "date": "2026-07-10",
-      "title": "Untitled Disney",
-      "director": "—",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "—",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1469511,
       "date": "2026-07-17",
       "title": "A Year in London",
@@ -349,7 +336,7 @@
       "studio": "Oscilloscope",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / Comedy",
       "cast": "Benedetta Porcaroli, Lucrezia Guglielmino, Chris Pine, Roberto Zibetti",
       "notes": "",
       "youtube_trailer_id": "siZB56IHSUE"
@@ -467,7 +454,7 @@
       "budget_usd": 17000000,
       "release_type": "limited",
       "genre": "Documentary / Drama",
-      "cast": "Brunello Cucinelli, Oprah Winfrey, Liu Tao, Reid Hoffman",
+      "cast": "Brunello Cucinelli, Saul Nanni, Francesco Cannevale, Francesco Ferroni",
       "notes": "",
       "youtube_trailer_id": "DUSK3uec9SA"
     },
@@ -701,7 +688,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Crime / Thriller",
-      "cast": "John Travolta, Lukas Haas, Rebecca De Mornay, Natali Yura",
+      "cast": "John Travolta, Lukas Haas, Rebecca De Mornay, Danny Pardo",
       "notes": "Trust no one. Take everything.",
       "youtube_trailer_id": "0LB3yWX1R8Y"
     },

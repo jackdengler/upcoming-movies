@@ -1,8 +1,21 @@
 {
   "month": "November 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1481600,
+      "date": "2026-11-03",
+      "title": "Operation Kabul",
+      "director": "Zsombor Dyga",
+      "studio": "N/A",
+      "budget_usd": 8000000,
+      "release_type": "limited",
+      "genre": "Action / History / Drama",
+      "cast": "Gábor Jászberényi, Blanka Mészáros, Tamás Borovics, Dávid Hajmási",
+      "notes": "",
+      "youtube_trailer_id": "ugwhMlTiONc"
+    },
     {
       "tmdb_id": 1753205,
       "date": "2026-11-04",
@@ -17,6 +30,19 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1642568,
+      "date": "2026-11-04",
+      "title": "The Last Temptation of Becky",
+      "director": "Jenn Wexler",
+      "studio": "Quiver Distribution",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Action / Horror / Thriller",
+      "cast": "Lulu Wilson, Neil Patrick Harris, James Urbaniak, Kate Siegel",
+      "notes": "",
+      "youtube_trailer_id": "xVBszgNSh2I"
+    },
+    {
       "tmdb_id": 1050981,
       "date": "2026-11-06",
       "title": "Being Heumann",
@@ -24,7 +50,7 @@
       "studio": "Apple Original Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
+      "genre": "Drama / History",
       "cast": "Ruth Madeley, Mark Ruffalo, Dylan O'Brien, Madeline Delp",
       "notes": "Based on a true revolution.",
       "youtube_trailer_id": "9INUY8uKRyU"
@@ -101,11 +127,11 @@
       "director": "Erica Rivinoja, Alessandro Carloni",
       "studio": "Warner Bros.",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Animation / Comedy / Adventure / Fantasy / Family",
       "cast": "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry",
       "notes": "The cat's out of the bag.",
-      "youtube_trailer_id": "Vuv0kqGWjno"
+      "youtube_trailer_id": "tkZpcypT8Z4"
     },
     {
       "tmdb_id": 891621,
@@ -127,7 +153,7 @@
       "director": "William Eubank",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Thriller",
       "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
       "notes": "He's not a threat, he's a guarantee.",
@@ -152,12 +178,25 @@
       "title": "Ebenezer",
       "director": "Ti West",
       "studio": "Paramount Pictures",
-      "budget_usd": null,
+      "budget_usd": 38000000,
       "release_type": "wide",
-      "genre": "Fantasy / Comedy",
-      "cast": "Johnny Depp, Rupert Grint, Andrea Riseborough, Tramell Tillman",
-      "notes": "Before he was Scrooge, he was...",
-      "youtube_trailer_id": "A7lyvgnDuDE"
+      "genre": "Drama / Fantasy / Comedy",
+      "cast": "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough",
+      "notes": "The name you know. The story you don’t.",
+      "youtube_trailer_id": "l_Ozo1xUgbU"
+    },
+    {
+      "tmdb_id": 1568267,
+      "date": "2026-11-13",
+      "title": "God with Us",
+      "director": "Jimmy Jenkins",
+      "studio": "Variance Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Ashley Olivia Fisher, Aspen Kennedy Wilson, Lil Rel Howery, Rotimi",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1437511,
@@ -171,19 +210,6 @@
       "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
       "notes": "Who's robbing who?",
       "youtube_trailer_id": "MVvWKh336m4"
-    },
-    {
-      "tmdb_id": 1381273,
-      "date": "2026-11-13",
-      "title": "Paper Tiger",
-      "director": "James Gray",
-      "studio": "Neon",
-      "budget_usd": 15000000,
-      "release_type": "limited",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Miles Teller, Adam Driver, Scarlett Johansson, Gavin Goudey",
-      "notes": "All debts are paid in blood.",
-      "youtube_trailer_id": "MLwTyQOhBkw"
     },
     {
       "tmdb_id": 1756787,
@@ -209,7 +235,7 @@
       "genre": "Biography / Documentary / Drama",
       "cast": "Gabi Asfour, Angela Donhauser, Adi Gil, Kai Kühne",
       "notes": "",
-      "youtube_trailer_id": "E0Sc30mg3CE"
+      "youtube_trailer_id": "JKK7RIlRJ8o"
     },
     {
       "tmdb_id": 1379486,
@@ -259,9 +285,35 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Vladyslav Buriak",
+      "cast": "Pope Francis, Olena Zelenska, Oleksandra Paskal, Yana Stepanenko",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1615596,
+      "date": "2026-11-20",
+      "title": "Best Pancakes in the County",
+      "director": "Ken Sanzel",
+      "studio": "N/A",
+      "budget_usd": 9000000,
+      "release_type": "limited",
+      "genre": "Action / Thriller",
+      "cast": "Nicolas Cage, Justin Long, Shelley Hennig, Ravi Patel",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1599230,
+      "date": "2026-11-20",
+      "title": "Elsinore",
+      "director": "Simon Stone",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
+      "notes": "The fight of his life. The triumph of a lifetime.",
+      "youtube_trailer_id": "SzopCeFAWF0"
     },
     {
       "tmdb_id": 1286656,
@@ -303,12 +355,25 @@
       "youtube_trailer_id": "hTHeFP0mcuk"
     },
     {
+      "tmdb_id": 1381273,
+      "date": "2026-11-20",
+      "title": "Paper Tiger",
+      "director": "James Gray",
+      "studio": "Neon",
+      "budget_usd": 15000000,
+      "release_type": "wide",
+      "genre": "Crime / Drama / Thriller",
+      "cast": "Miles Teller, Adam Driver, Scarlett Johansson, Gavin Goudey",
+      "notes": "All debts are paid in blood.",
+      "youtube_trailer_id": "MLwTyQOhBkw"
+    },
+    {
       "tmdb_id": 1300968,
       "date": "2026-11-20",
       "title": "The Hunger Games: Sunrise on the Reaping",
       "director": "Francis Lawrence",
       "studio": "Lionsgate",
-      "budget_usd": 150000000,
+      "budget_usd": 170000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Mckenna Grace",
@@ -316,17 +381,17 @@
       "youtube_trailer_id": "lYXtL5TreOE"
     },
     {
-      "tmdb_id": 1599230,
+      "tmdb_id": 1088548,
       "date": "2026-11-25",
-      "title": "Elsinore",
-      "director": "Simon Stone",
-      "studio": "Focus Features",
-      "budget_usd": null,
+      "title": "Bitter Christmas",
+      "director": "Pedro Almodóvar",
+      "studio": "Sony Pictures Classics",
+      "budget_usd": 11700000,
       "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
-      "notes": "",
-      "youtube_trailer_id": null
+      "genre": "Drama / Comedy",
+      "cast": "Bárbara Lennie, Leonardo Sbaraglia, Aitana Sánchez-Gijón, Victoria Luengo",
+      "notes": "You’re confusing fiction with reality.",
+      "youtube_trailer_id": "NUvdMKtFXBw"
     },
     {
       "tmdb_id": 1461490,
@@ -348,7 +413,7 @@
       "director": "Jason Hand, Fawn Veerasunthorn",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Adventure / Animation / Family / Fantasy",
       "cast": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
       "notes": "Something is happening to Billie...",

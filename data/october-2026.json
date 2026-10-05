@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -43,14 +43,27 @@
       "youtube_trailer_id": "MQKqgFVU4dQ"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-10-02",
+      "title": "Buddy: The Sing-Along Version",
+      "director": "—",
+      "studio": "Roadside Attractions",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "—",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1248832,
       "date": "2026-10-02",
       "title": "Digger",
       "director": "Alejandro G. Iñárritu",
       "studio": "Warner Bros.",
-      "budget_usd": 130000000,
+      "budget_usd": 180000000,
       "release_type": "wide",
-      "genre": "Comedy",
+      "genre": "Comedy / Drama",
       "cast": "Tom Cruise, Riz Ahmed, John Goodman, Sandra Hüller",
       "notes": "A man. A plan. A meltdown.",
       "youtube_trailer_id": "job8V254NAE"
@@ -90,7 +103,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Science Fiction / Thriller",
-      "cast": "Andrew McCarthy, Drew Van Acker, Debby Ryan, Karin Ann",
+      "cast": "Drew Van Acker, Andrew McCarthy, Debby Ryan, Theodora Miranne",
       "notes": "Surviving the mission was just the beginning.",
       "youtube_trailer_id": "XZi6ekNNsqA"
     },
@@ -102,9 +115,9 @@
       "studio": "Ketchup Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Music",
-      "cast": "Owen Wilson, Matt Rife, Christine Ko, Sexyy Red",
-      "notes": "",
+      "genre": "Comedy",
+      "cast": "Owen Wilson, Christian Convery, Jolene, Travis Scott",
+      "notes": "One epic night.",
       "youtube_trailer_id": "o_pIiP1A0RY"
     },
     {
@@ -115,7 +128,7 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Chiara King, Luca Storm, Mike Nybroe, Jazmine Summer",
       "notes": "Where do you hide when everyone is watching?",
       "youtube_trailer_id": "6FjeyMfs2mY"
@@ -142,9 +155,22 @@
       "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Mystery / Thriller",
-      "cast": "Anne Hathaway, Dakota Johnson, Josh Hartnett, Brady Wagner",
+      "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Brady Wagner",
       "notes": "There is no light where we're going.",
       "youtube_trailer_id": "xdPMKhjMSFs"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-10-04",
+      "title": "Mozart: Cosi Fan Tutte",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Musical",
+      "cast": "Federica Lombardi, Samantha Hankey, Ana María Martinez, Duke Kim",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1381078,
@@ -153,7 +179,7 @@
       "director": "Rachel Morrison",
       "studio": "Amazon Studios",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / Romance",
       "cast": "Margaret Qualley, Aaron Pierre, Gabriel Basso, Patrick Schwarzenegger",
       "notes": "",
@@ -181,7 +207,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Family",
-      "cast": "Jennifer Marshall, Hudson Barry, Eileen Grubba, Tom Ohmer",
+      "cast": "Hudson Barry, Jennifer Marshall, Eileen Grubba, Tom Ohmer",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -194,7 +220,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Kimora Lee Simmons",
+      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Veronica Webb",
       "notes": "",
       "youtube_trailer_id": "YbHTpU4lHds"
     },
@@ -338,7 +364,7 @@
       "release_type": "wide",
       "genre": "Horror",
       "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
-      "notes": "Can I go inside your heart?",
+      "notes": "Your mommy won't save you.",
       "youtube_trailer_id": "-mnTITqqiT0"
     },
     {
@@ -348,7 +374,7 @@
       "director": "Gotham Chopra",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Documentary",
       "cast": "Stephen Curry, Viola Davis, Rick Rubin, Patti Smith",
       "notes": "Discover the secret of how one player changed the game.",
@@ -389,9 +415,22 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Mark A. Altman, Steve Bingen, André Bormanis, Brannon Braga",
+      "cast": "Mark A. Altman, Steve Bingen, Chris Black, André Bormanis",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1281331,
+      "date": "2026-10-09",
+      "title": "The Social Reckoning",
+      "director": "Aaron Sorkin",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Thriller",
+      "cast": "Jeremy Strong, Mikey Madison, Jeremy Allen White, Wunmi Mosaku",
+      "notes": "We're way past making friends.",
+      "youtube_trailer_id": "R8ANzYpaZaY"
     },
     {
       "tmdb_id": 1630237,
@@ -521,7 +560,7 @@
       "genre": "Drama / War",
       "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
       "notes": "Love leaves a legacy.",
-      "youtube_trailer_id": "IRHtqjHYPew"
+      "youtube_trailer_id": "lBVxKt0gKDY"
     },
     {
       "tmdb_id": 1465858,
@@ -543,7 +582,7 @@
       "director": "Alex Gibney",
       "studio": "Bleecker Street Media",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Documentary",
       "cast": "Elon Musk, Justine Musk, Ashley St. Clair, Kara Swisher",
       "notes": "An unflinching look at Earth's most unchecked man.",
@@ -572,7 +611,7 @@
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Aaron Douglas, Richard Bruce Nugent, Ernest Crichlow, Eubie Blake",
-      "notes": "A film over 50 years in the making.",
+      "notes": "You are cordially invited to a film 50 years in the making.",
       "youtube_trailer_id": "ESnX3LQbCVI"
     },
     {
@@ -599,7 +638,7 @@
       "genre": "Drama / Romance",
       "cast": "Daisy Edgar-Jones, Esmé Creed-Miles, Caitríona Balfe, Bodhi Rae Breathnach",
       "notes": "No one knows your heart like a sister.",
-      "youtube_trailer_id": "mcrwcvad84U"
+      "youtube_trailer_id": "OFLyW0lxFU0"
     },
     {
       "tmdb_id": 1153576,
@@ -624,21 +663,8 @@
       "release_type": "limited",
       "genre": "Crime / Drama",
       "cast": "Byun Yo-han, Roh Jae-won, Ayaka Miyoshi, Jo Woo-jin",
-      "notes": "",
+      "notes": "All or nothing",
       "youtube_trailer_id": "gDgTGFltqBw"
-    },
-    {
-      "tmdb_id": 1458099,
-      "date": "2026-10-16",
-      "title": "The Only Living Pickpocket in New York",
-      "director": "Noah Segan",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Drama",
-      "cast": "John Turturro, Giancarlo Esposito, Will Price, Tatiana Maslany",
-      "notes": "",
-      "youtube_trailer_id": "iXA7BmrBBxs"
     },
     {
       "tmdb_id": 1249202,
@@ -647,7 +673,7 @@
       "director": "Thane Economou",
       "studio": "Briarcliff Entertainment",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / Comedy",
       "cast": "Kal Penn, Linda Hamilton, David Julian Hirsh, Abbie Cornish",
       "notes": "Sometimes the truth needs a second opinion.",
@@ -660,24 +686,11 @@
       "director": "Brian Duffield",
       "studio": "20th Century Studios",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Thriller",
       "cast": "Austin Abrams, Josh Brolin, Elisabeth Shue, John Ortiz",
       "notes": "Hold your breath.",
       "youtube_trailer_id": "Dw-5ZGapGTQ"
-    },
-    {
-      "tmdb_id": 1765072,
-      "date": "2026-10-16",
-      "title": "You Can See Everything",
-      "director": "Nathan Fielder, Lance Oppenheim",
-      "studio": "A24",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Elizabeth Holmes, Nathan Fielder, Billy Evans, Amanda Seyfried",
-      "notes": "",
-      "youtube_trailer_id": "HvW_N5p1q44"
     },
     {
       "tmdb_id": 1702350,
@@ -699,7 +712,7 @@
       "director": "Anton Corbijn",
       "studio": "Bleecker Street Media",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / Crime",
       "cast": "Helen Mirren, Alden Ehrenreich, Olivia Cooke, Juliet Stevenson",
       "notes": "The end is where the plotting begins.",
@@ -712,7 +725,7 @@
       "director": "Sacha Baron Cohen",
       "studio": "Amazon MGM Studios",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy",
       "cast": "Sacha Baron Cohen, Morgana Robinson, Ed Sheeran, C. Stewart Rodeheaver",
       "notes": "Livin XXX large.",
@@ -738,11 +751,24 @@
       "director": "Taika Waititi",
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Science Fiction / Drama / Comedy",
       "cast": "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne",
       "notes": "Meet the future of friendship.",
       "youtube_trailer_id": "wixzainceAE"
+    },
+    {
+      "tmdb_id": 1371730,
+      "date": "2026-10-23",
+      "title": "Love Language",
+      "director": "Joey Power",
+      "studio": "Vertical Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Romance / Comedy",
+      "cast": "Chloë Grace Moretz, Anthony Ramos, Manny Jacinto, Isabel May",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1483525,
@@ -810,6 +836,19 @@
       "youtube_trailer_id": "bJQGtSeLPII"
     },
     {
+      "tmdb_id": 1765072,
+      "date": "2026-10-23",
+      "title": "You Can See Everything",
+      "director": "Nathan Fielder, Lance Oppenheim",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary",
+      "cast": "Elizabeth Holmes, Nathan Fielder, Billy Evans, Amanda Seyfried",
+      "notes": "",
+      "youtube_trailer_id": "IEx8D1Wb__U"
+    },
+    {
       "tmdb_id": 1496696,
       "date": "2026-10-28",
       "title": "Breeder",
@@ -846,7 +885,7 @@
       "genre": "Drama / Thriller / Crime",
       "cast": "Victor Prieto Simental, Osvaldo Sánchez, Mariano López Sosa, Héctor Cárdenas",
       "notes": "",
-      "youtube_trailer_id": "92gV-ObLHos"
+      "youtube_trailer_id": "vDFkdSdYiEs"
     },
     {
       "tmdb_id": 939541,
@@ -868,7 +907,7 @@
       "director": "—",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Documentary / Sport",
       "cast": "Hilaree Nelson, Jim Morrison, Mikey Schaefer",
       "notes": "",
@@ -914,13 +953,26 @@
       "youtube_trailer_id": "G2UnTTQGh58"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-10-30",
+      "title": "The Canvas",
+      "director": "—",
+      "studio": "Vertical Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Angus Macfadyen, John Real, Nicolette McKeown, Sabrina Culver",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1294189,
       "date": "2026-10-30",
       "title": "The Mongoose",
       "director": "Mark Vanselow",
       "studio": "The Samuel Goldwyn Company",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Thriller",
       "cast": "Liam Neeson, Marisa Tomei, Ving Rhames, Michael Chiklis",
       "notes": "",
@@ -937,7 +989,20 @@
       "genre": "History / Drama / War",
       "cast": "Nicholas Galitzine, Bill Skarsgård, Ray Nicholson, Tom Francis",
       "notes": "Trained for glory, called to war.",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "-rWIE3-SIOg"
+    },
+    {
+      "tmdb_id": 1458099,
+      "date": "2026-10-30",
+      "title": "The Only Living Pickpocket in New York",
+      "director": "Noah Segan",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Crime / Drama",
+      "cast": "John Turturro, Giancarlo Esposito, Will Price, Tatiana Maslany",
+      "notes": "",
+      "youtube_trailer_id": "iXA7BmrBBxs"
     },
     {
       "tmdb_id": 1162823,

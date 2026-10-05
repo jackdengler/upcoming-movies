@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
+      "director": "Aaron Horvath, Michael Jelenic",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -106,19 +106,6 @@
       "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin, Denis Lavant",
       "notes": "",
       "youtube_trailer_id": "aYCze1vl2jU"
-    },
-    {
-      "tmdb_id": 1149614,
-      "date": "2026-04-03",
-      "title": "Yes",
-      "director": "Nadav Lapid",
-      "studio": "Kino Lorber",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Comedy",
-      "cast": "Ariel Bronz, Efrat Dor, Naama Preis, Aleksey Serebryakov",
-      "notes": "",
-      "youtube_trailer_id": "Z7dOWWLczN0"
     },
     {
       "tmdb_id": 1418657,
@@ -452,7 +439,7 @@
       "director": "Morgan Neville",
       "studio": "Focus Features",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Documentary",
       "cast": "Lorne Michaels, Steve Higgins, Michael Che, Colin Jost",
       "notes": "The legend behind the legends.",
@@ -491,7 +478,7 @@
       "director": "Chandler Levack",
       "studio": "Sumerian Films",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Comedy / Romance / Drama",
       "cast": "Barbie Ferreira, Devon Bostick, Stanley Simons, Juliette Gariépy",
       "notes": "Welcome to the summer of 2011.",
@@ -516,7 +503,7 @@
       "title": "Panda Plan 2: The Magical Tribe",
       "director": "Derek Hui Wang-Yu",
       "studio": "Well Go USA Entertainment",
-      "budget_usd": null,
+      "budget_usd": 2500,
       "release_type": "limited",
       "genre": "Action / Comedy / Family / Fantasy",
       "cast": "Jackie Chan, Ma Li, Qiao Shan, Yu Yang",

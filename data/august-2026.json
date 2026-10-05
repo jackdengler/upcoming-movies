@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -131,7 +131,7 @@
       "genre": "Romance / Comedy",
       "cast": "Monica Barbaro, Callum Turner, Maya Hawke, King Princess",
       "notes": "12 hours can change everything.",
-      "youtube_trailer_id": "lDsAVq9lo9g"
+      "youtube_trailer_id": "AvKoSR3O4NQ"
     },
     {
       "tmdb_id": 675871,
@@ -297,7 +297,7 @@
       "studio": "Black Bear",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Thriller / Crime / Drama",
+      "genre": "Drama / Crime",
       "cast": "Matthew McConaughey, Kurt Russell, Angelina LookingGlass, Cole Sprouse",
       "notes": "Ain’t no one all bad or all good.",
       "youtube_trailer_id": "GwSvAyaMGMo"
@@ -337,7 +337,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Animation / Drama / Mystery / Adventure",
-      "cast": "Lee Soo-hyun, Kim Min-ju, Min Seung-woo, Nam Doh-hyeong",
+      "cast": "Lee Su-hyun, Kim Min-ju, Min Seung-woo, Nam Doh-hyeong",
       "notes": "A magical journey all stars with...",
       "youtube_trailer_id": "GTKu2mLpeS4"
     },
@@ -392,6 +392,19 @@
       "cast": "Amelia Eve, Island Austin, Brandon Perea, Lin Shaye",
       "notes": "Evil found a way out.",
       "youtube_trailer_id": "gXjurDkYnEM"
+    },
+    {
+      "tmdb_id": 1422011,
+      "date": "2026-08-21",
+      "title": "It Ends",
+      "director": "Alexander Ullom",
+      "studio": "Neon",
+      "budget_usd": 80000,
+      "release_type": "limited",
+      "genre": "Horror / Mystery",
+      "cast": "Phinehas Yoon, Akira Jackson, Noah Toth, Mitchell Cole",
+      "notes": "Some wrong turns last forever.",
+      "youtube_trailer_id": "mQj2Hm7TXLQ"
     },
     {
       "tmdb_id": 1537638,
@@ -449,7 +462,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": 20000000,
       "release_type": "wide",
@@ -478,7 +491,7 @@
       "director": "Ben Gregor",
       "studio": "Vertical Entertainment",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Adventure / Family / Fantasy",
       "cast": "Billie Gadsdon, Nicola Coughlan, Delilah Bennett-Cardy, Phoenix Laroche",
       "notes": "",
@@ -544,7 +557,7 @@
       "studio": "Yellow Veil Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Horror",
+      "genre": "Documentary",
       "cast": "John Boorman, Louise Fletcher, Karyn Kusama, Mike Flanagan",
       "notes": "Every artist has his demon.",
       "youtube_trailer_id": "a_VjhXJ0N54"
@@ -560,7 +573,7 @@
       "genre": "Horror / Comedy / Fantasy",
       "cast": "Keegan-Michael Key, Cristin Milioti, Delaney Quinn, Caleb Williams",
       "notes": "It's Buddy!",
-      "youtube_trailer_id": "udPBHzBnXKA"
+      "youtube_trailer_id": "Pc9MbCNYn3k"
     },
     {
       "tmdb_id": 1375646,
@@ -570,7 +583,7 @@
       "studio": "Well Go USA Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Horror / Science Fiction",
+      "genre": "Horror / Action / Science Fiction",
       "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",
       "notes": "Survive the hive.",
       "youtube_trailer_id": "LW6dpj1uCK8"
@@ -621,24 +634,11 @@
       "director": "Macon Blair",
       "studio": "IFC Films",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy / Crime",
       "cast": "Dave Franco, O'Shea Jackson Jr., Mason Thames, Kiernan Shipka",
       "notes": "They're doing their best.",
       "youtube_trailer_id": "UoAf0LNAn30"
-    },
-    {
-      "tmdb_id": 1422011,
-      "date": "2026-08-28",
-      "title": "It Ends",
-      "director": "Alexander Ullom",
-      "studio": "Neon",
-      "budget_usd": 80000,
-      "release_type": "wide",
-      "genre": "Horror / Mystery",
-      "cast": "Phinehas Yoon, Akira Jackson, Noah Toth, Mitchell Cole",
-      "notes": "Some wrong turns last forever.",
-      "youtube_trailer_id": "mQj2Hm7TXLQ"
     },
     {
       "tmdb_id": 1480574,
@@ -690,7 +690,7 @@
       "genre": "Horror",
       "cast": "Dane-randall bacon, Deena Bacon, Randall J. Bacon, Rayden Bacon",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "bzWECQkLSXI"
     },
     {
       "tmdb_id": 1537518,

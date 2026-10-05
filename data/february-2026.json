@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Carmen Machi, Paco León, Miren Ibarguren, Mariano Peña",
       "notes": "This never happened, but it could've happened.",
       "youtube_trailer_id": "lPUw2yMYQMc"
+    },
+    {
+      "tmdb_id": 1578018,
+      "date": "2026-02-06",
+      "title": "Bendito Corazon",
+      "director": "Miguel Ángel Pérez",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Juan Manuel Azcona, Nora Cervantes, Manjarrez Belinda, Humberto Fuentes",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1154304,
@@ -54,6 +67,19 @@
       "cast": "Caleb Landry Jones, Zoë Bleu Sidel, Christoph Waltz, Matilda De Angelis",
       "notes": "He renounced his faith to become immortal. Passion, anger, vengeance, and hatred will be unleashed into the modern world.",
       "youtube_trailer_id": "hverb7siYJ8"
+    },
+    {
+      "tmdb_id": 1287141,
+      "date": "2026-02-06",
+      "title": "Pillion",
+      "director": "Harry Lighton",
+      "studio": "A24",
+      "budget_usd": 1000000,
+      "release_type": "limited",
+      "genre": "Romance / Drama / Comedy",
+      "cast": "Harry Melling, Alexander Skarsgård, Lesley Sharp, Douglas Hodge",
+      "notes": "",
+      "youtube_trailer_id": "Gl8n5I-IIHU"
     },
     {
       "tmdb_id": 1422625,
@@ -182,7 +208,7 @@
       "release_type": "limited",
       "genre": "Comedy / Fantasy / Romance",
       "cast": "Juliette Lewis, Mamoudou Athie, Samantha Mathis, Robin Tunney",
-      "notes": "",
+      "notes": "Have you heard about the movie where Juliette Lewis plays a chair?",
       "youtube_trailer_id": "UihiJkDmukc"
     },
     {
@@ -364,19 +390,6 @@
       "release_type": "limited",
       "genre": "—",
       "cast": "Taika Waititi",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
-      "tmdb_id": 1578018,
-      "date": "2026-02-20",
-      "title": "Bendito Corazon",
-      "director": "Miguel Ángel Pérez",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Juan Manuel Azcona, Nora Cervantes, Manjarrez Belinda, Humberto Fuentes",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -600,19 +613,6 @@
       "cast": "Shen Teng, Yin Zheng, Johnny Huang, Zhang Benyu",
       "notes": "Let's lay out the road and race ahead.",
       "youtube_trailer_id": "zNu476xN6Ao"
-    },
-    {
-      "tmdb_id": 1287141,
-      "date": "2026-02-27",
-      "title": "Pillion",
-      "director": "Harry Lighton",
-      "studio": "A24",
-      "budget_usd": 1000000,
-      "release_type": "wide",
-      "genre": "Romance / Drama / Comedy",
-      "cast": "Harry Melling, Alexander Skarsgård, Lesley Sharp, Douglas Hodge",
-      "notes": "",
-      "youtube_trailer_id": "Gl8n5I-IIHU"
     },
     {
       "tmdb_id": 1159559,

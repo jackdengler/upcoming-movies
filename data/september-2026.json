@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -180,7 +180,7 @@
       "studio": "A24",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Action / Thriller",
+      "genre": "Action / Thriller / Horror",
       "cast": "Adria Arjona, Dan Stevens, Eric Wareheim, Reginald VelJohnson",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
@@ -210,19 +210,6 @@
       "cast": "Maggie Grace, Devon Sawa, Ralph Macchio, Tiffany Haddish",
       "notes": "The truth will surface.",
       "youtube_trailer_id": "WKPSSLbnh-E"
-    },
-    {
-      "tmdb_id": 1490214,
-      "date": "2026-09-04",
-      "title": "The Sun Never Sets",
-      "director": "Joe Swanberg",
-      "studio": "IFC Films",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Romance / Drama / Comedy",
-      "cast": "Dakota Fanning, Jake Johnson, Cory Michael Smith, Debby Ryan",
-      "notes": "",
-      "youtube_trailer_id": "nTIfzXx8nJY"
     },
     {
       "tmdb_id": 1748754,
@@ -257,24 +244,11 @@
       "director": "Na Hong-jin",
       "studio": "Neon",
       "budget_usd": 46000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Science Fiction / Mystery / Action",
       "cast": "Hwang Jung-min, Zo In-sung, Hoyeon, Alicia Vikander",
       "notes": "Is this how it ends?",
       "youtube_trailer_id": "OFaJzL83y0Q"
-    },
-    {
-      "tmdb_id": 1417668,
-      "date": "2026-09-10",
-      "title": "Star Wars: Starfighter",
-      "director": "Shawn Levy",
-      "studio": "Walt Disney Studios Motion Pictures",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Science Fiction / Adventure / Action",
-      "cast": "Ryan Gosling, Flynn Gray, Mia Goth, Amy Adams",
-      "notes": "",
-      "youtube_trailer_id": "uJ97kvnA3Yw"
     },
     {
       "tmdb_id": 1765179,
@@ -337,7 +311,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Thriller",
-      "cast": "Amariah Dionne, Tabitha Brownstone, Nicholas Kolasinski, Barron Regan",
+      "cast": "Kiara Mitjans, Ellie Shaddix, Amariah Dionne, Nicholas Kolasinski",
       "notes": "Real alligators. Real teeth. Real terror.",
       "youtube_trailer_id": "mvSxjFkBdK4"
     },
@@ -387,7 +361,7 @@
       "director": "Scott Waugh",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Action / Comedy",
       "cast": "Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George",
       "notes": "Next-day delivery isn't an option.",
@@ -453,8 +427,8 @@
       "studio": "Focus Features",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Action / History / Drama",
-      "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
+      "genre": "History / Drama / Action",
+      "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Woody Norman",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
     },
@@ -524,6 +498,19 @@
       "youtube_trailer_id": "FYm_sWSw6Eo"
     },
     {
+      "tmdb_id": 1629360,
+      "date": "2026-09-18",
+      "title": "First They Came for My College",
+      "director": "Patrick Bresnan",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Gaby Batista, Joshua Janniere, Libby Harrity, Lindsey Jennings",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1215921,
       "date": "2026-09-18",
       "title": "Last Train to Fortune",
@@ -584,7 +571,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Comedy",
-      "cast": "John Wilson, Michael Imperioli, Nathan Fielder, Timothée Chalamet",
+      "cast": "John Wilson, Michael Imperioli, Jack Macco, Nathan Fielder",
       "notes": "",
       "youtube_trailer_id": "O05arcJjOd0"
     },
@@ -699,9 +686,9 @@
       "director": "Tom Dean, Mac Eldridge",
       "studio": "Row K Entertainment",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Romance / Drama",
-      "cast": "Nick Robinson, Emilia Jones, Nicholas Cirillo, Jessica Blackmore",
+      "cast": "Nick Robinson, Emilia Jones, Nicholas Cirillo, Jonathan Gregg",
       "notes": "is love enough?",
       "youtube_trailer_id": "3EwAPmmNBU4"
     },
@@ -728,7 +715,7 @@
       "release_type": "limited",
       "genre": "Drama / Horror",
       "cast": "Ruth Wilson, Ben Chaplin, Cameron Dawson Gray, Allan Corduner",
-      "notes": "We hurt the ones we love",
+      "notes": "We hurt the ones we love.",
       "youtube_trailer_id": "iSMs7CnxA5g"
     },
     {
@@ -751,7 +738,7 @@
       "director": "Josef Kubota Wladyka",
       "studio": "Sony Pictures Classics",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Comedy / Drama / Romance",
       "cast": "Rinko Kikuchi, Alberto Guerra, Alejandro Edda, YOU",
       "notes": "",
@@ -803,7 +790,7 @@
       "director": "Dave Boyle",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Horror",
       "cast": "Moeka Hoshi, Kurumi Inagaki, Kento Kaku, Tae Kimura",
       "notes": "",
@@ -830,7 +817,7 @@
       "studio": "A24",
       "budget_usd": 14500000,
       "release_type": "wide",
-      "genre": "Crime / Thriller / Drama",
+      "genre": "Thriller / Drama",
       "cast": "Robert Pattinson, Skyler Gisondo, Merritt Wever, Phoebe Bridgers",
       "notes": "Are you ready to make television history?",
       "youtube_trailer_id": "C0NZa01qTRU"
@@ -933,11 +920,11 @@
       "director": "Yuval Abraham, Rachel Szor",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Documentary",
       "cast": "Yuval Abraham",
-      "notes": "",
-      "youtube_trailer_id": "YIBRLEEaueo"
+      "notes": "A window into systems of mass killing.",
+      "youtube_trailer_id": "40KW6knYMo4"
     }
   ]
 }

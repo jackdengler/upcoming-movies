@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -144,7 +144,7 @@
       "genre": "Drama",
       "cast": "Willem Dafoe, Emma Suárez, Joe Cole, Vic Carmen Sonne",
       "notes": "Family is the most serious business.",
-      "youtube_trailer_id": "7dujBWLtscc"
+      "youtube_trailer_id": "LeSzEsiVu4g"
     },
     {
       "tmdb_id": 1031084,
@@ -167,7 +167,7 @@
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Adventure / Animation / Family",
+      "genre": "Animation / Adventure / Family",
       "cast": "Vincent Tong, Bruce Dinsmore, Jenna Wheeler-Hughes, Priyanka",
       "notes": "Discover the song within",
       "youtube_trailer_id": "wwIMQDSBjJU"
@@ -337,7 +337,7 @@
       "budget_usd": 2000000,
       "release_type": "limited",
       "genre": "Documentary / Music",
-      "cast": "Gregg Allman, Duane Allman, James Keach, Cher",
+      "cast": "Gregg Allman, Duane Allman, James Keach, Cher Bono",
       "notes": "",
       "youtube_trailer_id": "8Wcx4wirsOw"
     },
@@ -414,7 +414,7 @@
       "studio": "1-2 Special",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Mystery / Drama",
+      "genre": "Mystery / Drama / Horror / Fantasy",
       "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe",
       "notes": "",
       "youtube_trailer_id": "HafsUWXP3UM"
@@ -470,19 +470,6 @@
       "cast": "Alex Cox, Zander Schloss, Edward Tudor-Pole, Dick Rude",
       "notes": "Good enough for government work.",
       "youtube_trailer_id": "zJ35qrFcNEY"
-    },
-    {
-      "tmdb_id": 1381273,
-      "date": "2026-06-20",
-      "title": "Paper Tiger",
-      "director": "James Gray",
-      "studio": "Neon",
-      "budget_usd": 15000000,
-      "release_type": "wide",
-      "genre": "Crime / Drama / Thriller",
-      "cast": "Miles Teller, Adam Driver, Scarlett Johansson, Gavin Goudey",
-      "notes": "All debts are paid in blood.",
-      "youtube_trailer_id": "MLwTyQOhBkw"
     },
     {
       "tmdb_id": 1669841,

@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -33,7 +33,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Pedro Solís, Juan Jesús García Galocha",
+      "director": "Juan Jesús García Galocha, Pedro Solís",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -220,7 +220,7 @@
       "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Horror / Science Fiction / Comedy",
-      "cast": "Georgina Campbell, Joe Keery, Sosie Bacon, Vanessa Redgrave",
+      "cast": "Georgina Campbell, Joe Keery, Liam Neeson, Ellora Torchia",
       "notes": "If it spreads, you're dead.",
       "youtube_trailer_id": "kea7gnh1uYA"
     },
@@ -475,11 +475,11 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Kevin McManus, Matthew McManus",
+      "director": "Matthew McManus, Kevin McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Science Fiction / Thriller / Horror / Crime",
+      "genre": "Science Fiction / Thriller",
       "cast": "Michaela McManus, Stella Marcus, Jeremy Holm, Jim Cummings",
       "notes": "Revenge is a vicious cycle.",
       "youtube_trailer_id": "FeccBZFKP_U"

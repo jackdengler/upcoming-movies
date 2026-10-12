@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -297,7 +297,7 @@
       "studio": "Black Bear",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Drama / Crime",
+      "genre": "Crime / Drama / Thriller",
       "cast": "Matthew McConaughey, Kurt Russell, Angelina LookingGlass, Cole Sprouse",
       "notes": "Ain’t no one all bad or all good.",
       "youtube_trailer_id": "GwSvAyaMGMo"
@@ -353,6 +353,19 @@
       "cast": "Emily Bennett, David Call, Brendan Sexton III, Larry Fessenden",
       "notes": "You have been chosen to serve the light.",
       "youtube_trailer_id": "9eASqDdhCTc"
+    },
+    {
+      "tmdb_id": 1157322,
+      "date": "2026-08-21",
+      "title": "Franz",
+      "director": "Agnieszka Holland",
+      "studio": "Cohen Media Group",
+      "budget_usd": 6500000,
+      "release_type": "limited",
+      "genre": "Drama / History",
+      "cast": "Idan Weiss, Peter Kurth, Katharina Stark, Sebastian Schwarz",
+      "notes": "",
+      "youtube_trailer_id": "WFPrlEa294Q"
     },
     {
       "tmdb_id": 813418,
@@ -581,7 +594,7 @@
       "title": "Colony",
       "director": "Yeon Sang-ho",
       "studio": "Well Go USA Entertainment",
-      "budget_usd": null,
+      "budget_usd": 12000000,
       "release_type": "limited",
       "genre": "Horror / Action / Science Fiction",
       "cast": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook, Kim Shin-rock",

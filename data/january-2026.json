@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -124,7 +124,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Luc Dardenne, Jean-Pierre Dardenne",
+      "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "limited",
@@ -262,19 +262,6 @@
       "cast": "Luise Heyer, Lena Urzendowsky, Claudia Geisler-Bading, Lea Drinda",
       "notes": "The past doesn't fade. It echoes.",
       "youtube_trailer_id": "O-jgGbvLgVo"
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-01-16",
-      "title": "The Nowhere Man",
-      "director": "—",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Drama / Thriller",
-      "cast": "Bonko Khoza, Dineo Rasedile, Naturi Naughton, Nathan Castle",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1146458,

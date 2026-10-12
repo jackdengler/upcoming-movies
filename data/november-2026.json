@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -15,6 +15,19 @@
       "cast": "Gábor Jászberényi, Blanka Mészáros, Tamás Borovics, Dávid Hajmási",
       "notes": "",
       "youtube_trailer_id": "ugwhMlTiONc"
+    },
+    {
+      "tmdb_id": 1165366,
+      "date": "2026-11-04",
+      "title": "De Gaulle: Résistance",
+      "director": "Antonin Baudry",
+      "studio": "The Samuel Goldwyn Company",
+      "budget_usd": 25000000,
+      "release_type": "limited",
+      "genre": "History / Drama",
+      "cast": "Simon Abkarian, Simon Russell Beale, Florian Lesieur, Benoît Magimel",
+      "notes": "Some wars are won by armies. Others by those who refuse to surrender.",
+      "youtube_trailer_id": "dKUArYoZ_0U"
     },
     {
       "tmdb_id": 1753205,
@@ -40,7 +53,7 @@
       "genre": "Action / Horror / Thriller",
       "cast": "Lulu Wilson, Neil Patrick Harris, James Urbaniak, Kate Siegel",
       "notes": "",
-      "youtube_trailer_id": "xVBszgNSh2I"
+      "youtube_trailer_id": "aQrxHLuqJCk"
     },
     {
       "tmdb_id": 1050981,
@@ -79,7 +92,7 @@
       "genre": "Science Fiction / Horror / Action",
       "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki",
       "notes": "人類の罪と罰。もう、無(ゼロ)には戻れない。",
-      "youtube_trailer_id": "-9MA9BnA7Uo"
+      "youtube_trailer_id": "pWJjYoqVSjQ"
     },
     {
       "tmdb_id": 1241478,
@@ -92,7 +105,7 @@
       "genre": "Drama / History",
       "cast": "KJ Apa, Jason Alexander, Max Casella, Sarah Drew",
       "notes": "America's most-beloved actor, the iconic role that saved him...",
-      "youtube_trailer_id": "EURriesRel0"
+      "youtube_trailer_id": "4nrB_T3F53Y"
     },
     {
       "tmdb_id": 1241052,
@@ -147,6 +160,19 @@
       "youtube_trailer_id": "kqxuamKxRTo"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-11-07",
+      "title": "Stray Kids World Tour 'RUN IT' LIVE VIEWING",
+      "director": "—",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Felix Lee, Bang Chan, Lee Know, Han Jisung",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1562642,
       "date": "2026-11-11",
       "title": "Ghost Soldier",
@@ -160,6 +186,19 @@
       "youtube_trailer_id": "l0pTZqZWs-c"
     },
     {
+      "tmdb_id": 1131943,
+      "date": "2026-11-11",
+      "title": "Madden",
+      "director": "David O. Russell",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History",
+      "cast": "Nicolas Cage, Christian Bale, John Mulaney, Kathryn Hahn",
+      "notes": "",
+      "youtube_trailer_id": "xzh7HzLXXpk"
+    },
+    {
       "tmdb_id": 1591604,
       "date": "2026-11-11",
       "title": "Soul Patrol",
@@ -170,7 +209,7 @@
       "genre": "Documentary",
       "cast": "Danielle Lyn, Michael Oloyede, Deion Smith",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "D8LIYqag82E"
     },
     {
       "tmdb_id": 1567605,
@@ -180,9 +219,9 @@
       "studio": "Paramount Pictures",
       "budget_usd": 38000000,
       "release_type": "wide",
-      "genre": "Drama / Fantasy / Comedy",
+      "genre": "Fantasy / Comedy",
       "cast": "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough",
-      "notes": "The name you know. The story you don’t.",
+      "notes": "Before he was Scrooge, he was…",
       "youtube_trailer_id": "l_Ozo1xUgbU"
     },
     {
@@ -212,6 +251,32 @@
       "youtube_trailer_id": "MVvWKh336m4"
     },
     {
+      "tmdb_id": 1091227,
+      "date": "2026-11-13",
+      "title": "Hurricanna",
+      "director": "Francesca Gregorini",
+      "studio": "Magenta Light Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Sylvia Hoeks, Holly Hunter, Mark Duplass, Nicholas Hamilton",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1517117,
+      "date": "2026-11-13",
+      "title": "Orfeo",
+      "director": "Virgilio Villoresi",
+      "studio": "Oscilloscope",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance / Fantasy / Animation",
+      "cast": "Luca Vergoni, Giulia Maenza, Aomi Muyock, Vinicio Marchioni",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1756787,
       "date": "2026-11-13",
       "title": "Search Party: Where's PawPaw?",
@@ -225,11 +290,24 @@
       "youtube_trailer_id": "DZPMP3vDGVk"
     },
     {
+      "tmdb_id": 1404169,
+      "date": "2026-11-13",
+      "title": "Space Cadet",
+      "director": "Kid Koala",
+      "studio": "Viva Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Family / Science Fiction",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": "EejHPOl16u0"
+    },
+    {
       "tmdb_id": 1674139,
       "date": "2026-11-13",
       "title": "threeASFOUR: FULL CIRCLE",
       "director": "Sean Ono Lennon",
-      "studio": "N/A",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Biography / Documentary / Drama",
@@ -285,7 +363,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Oleksandra Paskal, Yana Stepanenko",
+      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Oleksandra Paskal",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
     },
@@ -312,8 +390,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
-      "notes": "The fight of his life. The triumph of a lifetime.",
-      "youtube_trailer_id": "SzopCeFAWF0"
+      "notes": "Live. Gloriously.",
+      "youtube_trailer_id": "TpNEh5vvAns"
     },
     {
       "tmdb_id": 1286656,
@@ -352,7 +430,20 @@
       "genre": "Drama / Crime / Thriller",
       "cast": "Dmitriy Mazurov, Iris Lebedeva, Varvara Shmykova, Juris Žagars",
       "notes": "Morality is a maze.",
-      "youtube_trailer_id": "hTHeFP0mcuk"
+      "youtube_trailer_id": "wdFIMrC4oW8"
+    },
+    {
+      "tmdb_id": 1287520,
+      "date": "2026-11-20",
+      "title": "November 1963",
+      "director": "Roland Joffé",
+      "studio": "Ketchup Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "History / Crime / Thriller / Drama",
+      "cast": "John Travolta, Robert Carlyle, Dermot Mulroney, Jefferson White",
+      "notes": "Betrayed by power. Fuelled by revenge.",
+      "youtube_trailer_id": "8N9e-skJ3hw"
     },
     {
       "tmdb_id": 1381273,
@@ -373,12 +464,12 @@
       "title": "The Hunger Games: Sunrise on the Reaping",
       "director": "Francis Lawrence",
       "studio": "Lionsgate",
-      "budget_usd": 170000000,
+      "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Mckenna Grace",
       "notes": "Welcome to the Second Quarter Quell.",
-      "youtube_trailer_id": "lYXtL5TreOE"
+      "youtube_trailer_id": "Dr060OLTodE"
     },
     {
       "tmdb_id": 1088548,
@@ -391,7 +482,7 @@
       "genre": "Drama / Comedy",
       "cast": "Bárbara Lennie, Leonardo Sbaraglia, Aitana Sánchez-Gijón, Victoria Luengo",
       "notes": "You’re confusing fiction with reality.",
-      "youtube_trailer_id": "NUvdMKtFXBw"
+      "youtube_trailer_id": "R-9dlnkY448"
     },
     {
       "tmdb_id": 1461490,
@@ -414,7 +505,7 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Family / Fantasy",
+      "genre": "Adventure / Animation / Family / Fantasy / Comedy",
       "cast": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
       "notes": "Something is happening to Billie...",
       "youtube_trailer_id": "mtC4sjABZNw"

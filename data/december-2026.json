@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -30,6 +30,19 @@
       "youtube_trailer_id": "xOiIgN2n2v8"
     },
     {
+      "tmdb_id": 1125822,
+      "date": "2026-12-04",
+      "title": "Eternal Return",
+      "director": "Yaniv Raz",
+      "studio": "Quiver Distribution",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Romance / Science Fiction",
+      "cast": "Naomi Scott, Kit Harington, Sonoya Mizuno, Jay Lycurgo",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1378791,
       "date": "2026-12-04",
       "title": "Everybody Digs Bill Evans",
@@ -41,6 +54,32 @@
       "cast": "Anders Danielsen Lie, Bill Pullman, Laurie Metcalf, Isabelle Harriet",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1547524,
+      "date": "2026-12-04",
+      "title": "Game",
+      "director": "John Minton",
+      "studio": "Oscilloscope",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Thriller / Horror",
+      "cast": "Marc Bessant, Jason Williamson, Alison Campbell, Nathan Benham",
+      "notes": "I've watched someone die before... takes a while sometimes.",
+      "youtube_trailer_id": "8ZbCB48JPME"
+    },
+    {
+      "tmdb_id": 1736335,
+      "date": "2026-12-04",
+      "title": "Gods Don't Give Gifts",
+      "director": "Zack London",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Science Fiction",
+      "cast": "Mark Lewis, Mike Majlak, Sam Dale, Sam Dale",
+      "notes": "",
+      "youtube_trailer_id": "1G5LArU7tmE"
     },
     {
       "tmdb_id": 940009,
@@ -89,7 +128,7 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Comedy / Fantasy",
+      "genre": "Action / Comedy",
       "cast": "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris",
       "notes": "...and to all a good fight.",
       "youtube_trailer_id": "FmM2giDwLAE"
@@ -117,8 +156,8 @@
       "release_type": "wide",
       "genre": "Drama",
       "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
-      "notes": "The fight of his life. The triumph of a lifetime.",
-      "youtube_trailer_id": "SzopCeFAWF0"
+      "notes": "Live. Gloriously.",
+      "youtube_trailer_id": "TpNEh5vvAns"
     },
     {
       "tmdb_id": 1649403,
@@ -297,7 +336,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Fantasy",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "CL1EFACsWag"

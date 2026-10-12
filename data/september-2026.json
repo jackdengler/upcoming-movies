@@ -1,13 +1,13 @@
 {
   "month": "September 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Michael Spierig, Peter Spierig",
+      "director": "Peter Spierig, Michael Spierig",
       "studio": "Lionsgate",
       "budget_usd": 3000000,
       "release_type": "wide",
@@ -180,7 +180,7 @@
       "studio": "A24",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Action / Thriller / Horror",
+      "genre": "Action / Horror / Thriller",
       "cast": "Adria Arjona, Dan Stevens, Eric Wareheim, Reginald VelJohnson",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
@@ -277,17 +277,17 @@
       "youtube_trailer_id": "qxb3f3XumaE"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1447853,
       "date": "2026-09-11",
       "title": "Don't Look Back in Anger",
-      "director": "—",
+      "director": "Dylan Southern, Will Lovelace",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary / Music",
-      "cast": "Oasis, Liam Gallagher, Noel Gallagher, Paul Arthurs",
-      "notes": "",
-      "youtube_trailer_id": null
+      "cast": "Liam Gallagher, Noel Gallagher, Paul Arthurs, Gem Archer",
+      "notes": "The great wait is over.",
+      "youtube_trailer_id": "X9sIYLtgc_s"
     },
     {
       "tmdb_id": 1375161,
@@ -817,8 +817,8 @@
       "studio": "A24",
       "budget_usd": 14500000,
       "release_type": "wide",
-      "genre": "Thriller / Drama",
-      "cast": "Robert Pattinson, Skyler Gisondo, Merritt Wever, Phoebe Bridgers",
+      "genre": "Drama / Thriller",
+      "cast": "Robert Pattinson, Merritt Wever, Skyler Gisondo, Matthew Maher",
       "notes": "Are you ready to make television history?",
       "youtube_trailer_id": "C0NZa01qTRU"
     },

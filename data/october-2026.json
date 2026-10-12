@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Thriller",
-      "cast": "Sean Gunn, Jermaine Fowler, Scarlett DeMeo, Michael Abbott Jr.",
+      "cast": "Aaron Holliday, Jermaine Fowler, Sean Gunn, Michael Abbott Jr.",
       "notes": "People are easy to manipulate.",
       "youtube_trailer_id": "J1Fypndcou8"
     },
@@ -34,7 +34,7 @@
       "date": "2026-10-02",
       "title": "Beware Boiúna",
       "director": "Mike P. Nelson",
-      "studio": "N/A",
+      "studio": "Lionsgate",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Thriller",
@@ -86,7 +86,7 @@
       "date": "2026-10-02",
       "title": "Nickels",
       "director": "Spencer King",
-      "studio": "N/A",
+      "studio": "Briarcliff Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
@@ -116,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Owen Wilson, Christian Convery, Jolene, Travis Scott",
+      "cast": "Owen Wilson, Matt Rife, Christian Convery, Jolene",
       "notes": "One epic night.",
       "youtube_trailer_id": "o_pIiP1A0RY"
     },
@@ -125,7 +125,7 @@
       "date": "2026-10-02",
       "title": "The Influencer Project",
       "director": "Mike Nybroe",
-      "studio": "N/A",
+      "studio": "Variance Films",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror",
@@ -155,7 +155,7 @@
       "budget_usd": 40000000,
       "release_type": "wide",
       "genre": "Mystery / Thriller",
-      "cast": "Dakota Johnson, Anne Hathaway, Josh Hartnett, Brady Wagner",
+      "cast": "Anne Hathaway, Dakota Johnson, Josh Hartnett, Brady Wagner",
       "notes": "There is no light where we're going.",
       "youtube_trailer_id": "xdPMKhjMSFs"
     },
@@ -188,7 +188,7 @@
     {
       "tmdb_id": 1776482,
       "date": "2026-10-08",
-      "title": "SB19 Wakas at Simula: The Trilogy Concert Finale In Cinemas",
+      "title": "SB19 Wakas at Simula: The Trilogy Concert Finale in Cinemas",
       "director": "Yoon Dong Oh",
       "studio": "Iconic Events Releasing",
       "budget_usd": null,
@@ -199,17 +199,30 @@
       "youtube_trailer_id": "S0uwY6qY-v4"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1241046,
+      "date": "2026-10-09",
+      "title": "A Prayer for the Dying",
+      "director": "Dara Van Dusen",
+      "studio": "Quiver Distribution",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Thriller",
+      "cast": "Johnny Flynn, John C. Reilly, Kristine Kujath Thorp, Gustav Lindh",
+      "notes": "Redemption is coming.",
+      "youtube_trailer_id": "xbQjXVk9Sps"
+    },
+    {
+      "tmdb_id": 1792919,
       "date": "2026-10-09",
       "title": "Adam's Fire",
-      "director": "—",
+      "director": "Bob Ahmed",
       "studio": "Outsider Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Family",
+      "genre": "Drama / Family",
       "cast": "Hudson Barry, Jennifer Marshall, Eileen Grubba, Tom Ohmer",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "From the ashes of grief, a flame of hope.",
+      "youtube_trailer_id": "6PpZXZjBL44"
     },
     {
       "tmdb_id": 1557817,
@@ -220,7 +233,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Isabella Rossellini, Tom Ford, Law Roach, Veronica Webb",
+      "cast": "Jonathan Becker, Derek Blasberg, Philip Bloch, Bradley Bowers",
       "notes": "",
       "youtube_trailer_id": "YbHTpU4lHds"
     },
@@ -245,23 +258,10 @@
       "studio": "Netflix",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Thriller",
-      "cast": "Ben Affleck, Kerry Washington, Steven Yeun, Gillian Anderson",
+      "genre": "Thriller / Drama",
+      "cast": "Ben Affleck, Kerry Washington, Gillian Anderson, Steven Yeun",
       "notes": "Power can't protect you.",
-      "youtube_trailer_id": "mlBfQJ8oxB0"
-    },
-    {
-      "tmdb_id": 980431,
-      "date": "2026-10-09",
-      "title": "Avatar Aang: The Last Airbender",
-      "director": "Lauren Montgomery",
-      "studio": "Paramount Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Animation / Adventure / Fantasy / Action",
-      "cast": "Eric Nam, Dave Bautista, Jessica Matten, Román Zaragoza",
-      "notes": "The legacy reawakens.",
-      "youtube_trailer_id": "7b20GRFZBFE"
+      "youtube_trailer_id": "ZkN2M4ODdys"
     },
     {
       "tmdb_id": 1775692,
@@ -281,7 +281,7 @@
       "date": "2026-10-09",
       "title": "Brotherhood: A Cinematic Musical",
       "director": "Ross Boothe",
-      "studio": "N/A",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Music / Family",
@@ -316,17 +316,17 @@
       "youtube_trailer_id": "gBYr2Ymc-lU"
     },
     {
-      "tmdb_id": 1401459,
+      "tmdb_id": 1308980,
       "date": "2026-10-09",
-      "title": "Fjord",
-      "director": "Cristian Mungiu",
-      "studio": "Neon",
-      "budget_usd": 4750000,
+      "title": "Falling",
+      "director": "James Krisel, Colin Krisel",
+      "studio": "Brainstorm Media",
+      "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama",
-      "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
-      "notes": "When does protection become control?",
-      "youtube_trailer_id": "frg59VOungA"
+      "genre": "Romance / Drama",
+      "cast": "KJ Apa, Archie Renaux, Isabel May, Emma Laird",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1381221,
@@ -342,6 +342,19 @@
       "youtube_trailer_id": "5SohUK9E_eo"
     },
     {
+      "tmdb_id": 1594307,
+      "date": "2026-10-09",
+      "title": "My Undesirable Friends: Part II - Exile",
+      "director": "Julia Loktev",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Anna Nemzer, Valeria Ratnikova, Ksenia Mironova, Alesya Marokhovskaya",
+      "notes": "",
+      "youtube_trailer_id": "pCVB13sFJ8w"
+    },
+    {
       "tmdb_id": 1391021,
       "date": "2026-10-09",
       "title": "Once Upon a Time in the Middle East",
@@ -352,7 +365,7 @@
       "genre": "Drama / War",
       "cast": "Shen Teng, Jiang Qiming, Omar Sherif, Aarif Rahman",
       "notes": "Eat well, stay alive.",
-      "youtube_trailer_id": "iHDNxZF7LRw"
+      "youtube_trailer_id": "TYKHXxCdGiU"
     },
     {
       "tmdb_id": 1400837,
@@ -360,10 +373,10 @@
       "title": "Other Mommy",
       "director": "Rob Savage",
       "studio": "Universal Pictures",
-      "budget_usd": null,
+      "budget_usd": 18000000,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman",
+      "cast": "Jessica Chastain, Jay Duplass, Arabella Olivia Clark, Karen Allen",
       "notes": "Your mommy won't save you.",
       "youtube_trailer_id": "-mnTITqqiT0"
     },
@@ -407,6 +420,19 @@
       "youtube_trailer_id": "5ckqV_uf8E0"
     },
     {
+      "tmdb_id": 1783785,
+      "date": "2026-10-09",
+      "title": "The Jesus Tapes",
+      "director": "Rick Pamplin",
+      "studio": "Atlas Distribution Company",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Family / Mystery",
+      "cast": "Kevin Ganci, Ellen Jacoby, Louise Levison, Greg Hauptner",
+      "notes": "",
+      "youtube_trailer_id": "yJMCiA4aJSE"
+    },
+    {
       "tmdb_id": null,
       "date": "2026-10-09",
       "title": "The Sixty-Year Mission: How Star Trek Changed Television and the World",
@@ -427,8 +453,8 @@
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Thriller",
-      "cast": "Jeremy Strong, Mikey Madison, Jeremy Allen White, Wunmi Mosaku",
+      "genre": "Drama / History / Thriller",
+      "cast": "Mikey Madison, Jeremy Allen White, Jeremy Strong, Bill Burr",
       "notes": "We're way past making friends.",
       "youtube_trailer_id": "R8ANzYpaZaY"
     },
@@ -454,7 +480,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Music / Thriller",
-      "cast": "Mike Derks, Michael BIshop, Brad Roberts, Casey Orr",
+      "cast": "Mike Derks, Michael Bishop, Brad Roberts, Casey Orr",
       "notes": "Low fidelity. High body count.",
       "youtube_trailer_id": "GrIouRKyPDw"
     },
@@ -502,7 +528,7 @@
       "date": "2026-10-12",
       "title": "Fresh Meat",
       "director": "James A. Janisse",
-      "studio": "N/A",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror",
@@ -534,7 +560,7 @@
       "genre": "Horror / Thriller",
       "cast": "Matilda Lutz, Gregg Sulkin, Melina Matthews, Paul S. Tracey",
       "notes": "Skin will crawl.",
-      "youtube_trailer_id": "uLpZTosf6uI"
+      "youtube_trailer_id": "fGi9K7YTxGQ"
     },
     {
       "tmdb_id": 1511171,
@@ -555,7 +581,7 @@
       "title": "La bola negra",
       "director": "Javier Ambrossi, Javier Calvo",
       "studio": "Netflix",
-      "budget_usd": null,
+      "budget_usd": 11100000,
       "release_type": "limited",
       "genre": "Drama / War",
       "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
@@ -663,8 +689,21 @@
       "release_type": "limited",
       "genre": "Crime / Drama",
       "cast": "Byun Yo-han, Roh Jae-won, Ayaka Miyoshi, Jo Woo-jin",
-      "notes": "All or nothing",
+      "notes": "All or nothing.",
       "youtube_trailer_id": "gDgTGFltqBw"
+    },
+    {
+      "tmdb_id": 1559764,
+      "date": "2026-10-16",
+      "title": "The Trial of Alec Baldwin",
+      "director": "Rory Kennedy",
+      "studio": "Abramorama",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary",
+      "cast": "Alec Baldwin",
+      "notes": "Convicted by the headlines before the courtroom.",
+      "youtube_trailer_id": "4V8MZy5Zl_U"
     },
     {
       "tmdb_id": 1249202,
@@ -727,9 +766,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Comedy",
-      "cast": "Sacha Baron Cohen, Morgana Robinson, Ed Sheeran, C. Stewart Rodeheaver",
+      "cast": "Sacha Baron Cohen, Morgana Robinson, C. Stewart Rodeheaver",
       "notes": "Livin XXX large.",
-      "youtube_trailer_id": "6t7C4qaHihE"
+      "youtube_trailer_id": "pV32AcPa-iA"
     },
     {
       "tmdb_id": 1400940,
@@ -743,6 +782,19 @@
       "cast": "Tom Rhys Harries, Naomi Ackie, Eddie Marsan, Max Minghella",
       "notes": "Look fear in the face.",
       "youtube_trailer_id": "KCR-rz0YfD4"
+    },
+    {
+      "tmdb_id": 1214958,
+      "date": "2026-10-23",
+      "title": "Human",
+      "director": "Matt Stuertz",
+      "studio": "Dark Sky Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Jackie Kelly, Jeffrey Decker, Brock Russell, Cecily Dowd",
+      "notes": "",
+      "youtube_trailer_id": "NinlByMdwoA"
     },
     {
       "tmdb_id": 858035,
@@ -768,7 +820,7 @@
       "genre": "Romance / Comedy",
       "cast": "Chloë Grace Moretz, Anthony Ramos, Manny Jacinto, Isabel May",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "hrXydegMePY"
     },
     {
       "tmdb_id": 1483525,
@@ -780,7 +832,7 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Jeon Do-yeon, Sul Kyung-gu, Zo In-sung, Cho Yeo-jeong",
-      "notes": "Thou Shalt Not Covet",
+      "notes": "",
       "youtube_trailer_id": "zd3qXH9qN70"
     },
     {
@@ -801,7 +853,7 @@
       "date": "2026-10-23",
       "title": "Terrestrial",
       "director": "Steve Pink",
-      "studio": "Indican Pictures",
+      "studio": "Aerofilms",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Thriller / Science Fiction / Comedy",
@@ -875,6 +927,19 @@
       "youtube_trailer_id": "C-Q9Zl259yU"
     },
     {
+      "tmdb_id": 1401459,
+      "date": "2026-10-28",
+      "title": "Fjord",
+      "director": "Cristian Mungiu",
+      "studio": "Neon",
+      "budget_usd": 4750000,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
+      "notes": "When does protection become control?",
+      "youtube_trailer_id": "frg59VOungA"
+    },
+    {
       "tmdb_id": 1517123,
       "date": "2026-10-28",
       "title": "On the Road",
@@ -897,11 +962,11 @@
       "release_type": "wide",
       "genre": "Action / Horror / Comedy",
       "cast": "Ron Livingston, Rachel Bilson, Rob Riggle, Arden Myrin",
-      "notes": "",
-      "youtube_trailer_id": "zql0pXIpELI"
+      "notes": "Tidings of discomfort and joy.",
+      "youtube_trailer_id": "IsGccGqcNNE"
     },
     {
-      "tmdb_id": 1714568,
+      "tmdb_id": null,
       "date": "2026-10-30",
       "title": "Everest: The Other Side",
       "director": "—",
@@ -925,6 +990,19 @@
       "cast": "Léa Seydoux, Catherine Deneuve, Jella Haase, Laurence Rupp",
       "notes": "",
       "youtube_trailer_id": "hsOgBqDSi9M"
+    },
+    {
+      "tmdb_id": 1756268,
+      "date": "2026-10-30",
+      "title": "Paging Hezbollah",
+      "director": "Justin Folk",
+      "studio": "Hammond Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Benjamin Netanyahu, David Barnea, David Petraeus, Michael Oren",
+      "notes": "Outsmarted, Infiltrated, Humiliated.",
+      "youtube_trailer_id": "oTNnqivCH2Y"
     },
     {
       "tmdb_id": 1021848,

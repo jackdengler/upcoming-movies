@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -316,19 +316,6 @@
       "youtube_trailer_id": "BjTE9AQZDzI"
     },
     {
-      "tmdb_id": null,
-      "date": "2026-06-16",
-      "title": "Diamond Made Man",
-      "director": "—",
-      "studio": "N/A",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Sci-Fi",
-      "cast": "Sreehari, Vasudha, Sreehari Devi Mangala Puvvu",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1679751,
       "date": "2026-06-17",
       "title": "Gregg Allman: The Music of My Soul",
@@ -337,7 +324,7 @@
       "budget_usd": 2000000,
       "release_type": "limited",
       "genre": "Documentary / Music",
-      "cast": "Gregg Allman, Duane Allman, James Keach, Cher Bono",
+      "cast": "Gregg Allman, Duane Allman, James Keach, Cher",
       "notes": "",
       "youtube_trailer_id": "8Wcx4wirsOw"
     },
@@ -584,7 +571,7 @@
       "budget_usd": 3735296,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Llúcia Garcia, Mitch, Tristán Ulloa, Celine Tyll",
+      "cast": "Llúcia Garcia, Mitch Martín, Tristán Ulloa, Alberto Gracia",
       "notes": "",
       "youtube_trailer_id": "da3CAnPA_EM"
     },

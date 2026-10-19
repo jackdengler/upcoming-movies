@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -56,6 +56,19 @@
       "youtube_trailer_id": "aQrxHLuqJCk"
     },
     {
+      "tmdb_id": 1525810,
+      "date": "2026-11-04",
+      "title": "Trauma or, Monsters All",
+      "director": "Larry Fessenden",
+      "studio": "Dark Sky Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror",
+      "cast": "Laetitia Hollard, Aitana Doyle, Addison Timlin, Alex Hurt",
+      "notes": "",
+      "youtube_trailer_id": "ASXDqENMnOA"
+    },
+    {
       "tmdb_id": 1050981,
       "date": "2026-11-06",
       "title": "Being Heumann",
@@ -66,7 +79,7 @@
       "genre": "Drama / History",
       "cast": "Ruth Madeley, Mark Ruffalo, Dylan O'Brien, Madeline Delp",
       "notes": "Based on a true revolution.",
-      "youtube_trailer_id": "9INUY8uKRyU"
+      "youtube_trailer_id": "CQp2pUXLvJk"
     },
     {
       "tmdb_id": 1585239,
@@ -77,7 +90,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Drama",
-      "cast": "Jordan Firstman, Reggie Absolom, Diego Calva, Cara Delevingne",
+      "cast": "Jamil Zraikat, Jordan Firstman, Cara Delevingne, Travis Jackson",
       "notes": "",
       "youtube_trailer_id": "guKEdb_iRXw"
     },
@@ -91,7 +104,7 @@
       "release_type": "wide",
       "genre": "Science Fiction / Horror / Action",
       "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki",
-      "notes": "人類の罪と罰。もう、無(ゼロ)には戻れない。",
+      "notes": "Feel it all.",
       "youtube_trailer_id": "pWJjYoqVSjQ"
     },
     {
@@ -104,7 +117,7 @@
       "release_type": "wide",
       "genre": "Drama / History",
       "cast": "KJ Apa, Jason Alexander, Max Casella, Sarah Drew",
-      "notes": "America's most-beloved actor, the iconic role that saved him...",
+      "notes": "A Hollywood icon. An American hero. A Wonderful Life.",
       "youtube_trailer_id": "4nrB_T3F53Y"
     },
     {
@@ -121,6 +134,19 @@
       "youtube_trailer_id": "sfvh4VZsFuY"
     },
     {
+      "tmdb_id": 1595210,
+      "date": "2026-11-06",
+      "title": "Nuisance Bear",
+      "director": "Gabriela Osio Vanden, Jack Weisman",
+      "studio": "MUBI",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Mike Tunalaaq Gibbons, Saad Kassis-Mohamed",
+      "notes": "The bear is back.",
+      "youtube_trailer_id": "xy0kJ3CliMA"
+    },
+    {
       "tmdb_id": 1584855,
       "date": "2026-11-06",
       "title": "Paradise Lost",
@@ -132,6 +158,19 @@
       "cast": "Kim Hyun-joo, Bae Hyeon-seong, Kim Jong-tae, Lee Hyun-kyun",
       "notes": "",
       "youtube_trailer_id": "ZpM8YNGNaow"
+    },
+    {
+      "tmdb_id": 1021848,
+      "date": "2026-11-06",
+      "title": "Queen at Sea",
+      "director": "Lance Hammer",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Juliette Binoche, Tom Courtenay, Anna Calder-Marshall, Florence Hunt",
+      "notes": "",
+      "youtube_trailer_id": "UVyH8QYENxI"
     },
     {
       "tmdb_id": 1117898,
@@ -160,15 +199,15 @@
       "youtube_trailer_id": "kqxuamKxRTo"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1795555,
       "date": "2026-11-07",
-      "title": "Stray Kids World Tour 'RUN IT' LIVE VIEWING",
+      "title": "Stray Kids World Tour 'Run It' Live Viewing",
       "director": "—",
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Music",
-      "cast": "Felix Lee, Bang Chan, Lee Know, Han Jisung",
+      "genre": "Documentary / &middot; / Music",
+      "cast": "Felix Lee, Bang Chan, Lee Know, Hwang Hyun-jin",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -183,7 +222,7 @@
       "genre": "Action / Thriller",
       "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
       "notes": "He's not a threat, he's a guarantee.",
-      "youtube_trailer_id": "l0pTZqZWs-c"
+      "youtube_trailer_id": "UKaWzMf9Ybc"
     },
     {
       "tmdb_id": 1131943,
@@ -245,7 +284,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Crime / Thriller",
+      "genre": "Action / Crime / Thriller",
       "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
       "notes": "Who's robbing who?",
       "youtube_trailer_id": "MVvWKh336m4"
@@ -260,8 +299,8 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Sylvia Hoeks, Holly Hunter, Mark Duplass, Nicholas Hamilton",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "The final days of Anna Nicole Smith.",
+      "youtube_trailer_id": "tsDfE5toccI"
     },
     {
       "tmdb_id": 1517117,
@@ -310,7 +349,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Biography / Documentary / Drama",
+      "genre": "Biography / &middot; / Documentary / &middot; / Drama",
       "cast": "Gabi Asfour, Angela Donhauser, Adi Gil, Kai Kühne",
       "notes": "",
       "youtube_trailer_id": "JKK7RIlRJ8o"
@@ -336,7 +375,7 @@
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Family",
+      "genre": "Animation / &middot; / Family",
       "cast": "—",
       "notes": "",
       "youtube_trailer_id": null
@@ -363,7 +402,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Oleksandra Paskal",
+      "cast": "Pope Francis, Olena Zelenska, Vladyslav Buriak, Bohdan Yermokhin",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
     },
@@ -417,7 +456,7 @@
       "genre": "Drama / Crime / Thriller",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
       "notes": "Too young to understand. Too old to forget.",
-      "youtube_trailer_id": "K32NPBLpqZI"
+      "youtube_trailer_id": "d7NLG3IfowQ"
     },
     {
       "tmdb_id": 848700,
@@ -431,19 +470,6 @@
       "cast": "Dmitriy Mazurov, Iris Lebedeva, Varvara Shmykova, Juris Žagars",
       "notes": "Morality is a maze.",
       "youtube_trailer_id": "wdFIMrC4oW8"
-    },
-    {
-      "tmdb_id": 1287520,
-      "date": "2026-11-20",
-      "title": "November 1963",
-      "director": "Roland Joffé",
-      "studio": "Ketchup Entertainment",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "History / Crime / Thriller / Drama",
-      "cast": "John Travolta, Robert Carlyle, Dermot Mulroney, Jefferson White",
-      "notes": "Betrayed by power. Fuelled by revenge.",
-      "youtube_trailer_id": "8N9e-skJ3hw"
     },
     {
       "tmdb_id": 1381273,
@@ -506,9 +532,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Adventure / Animation / Family / Fantasy / Comedy",
-      "cast": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
+      "cast": "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins",
       "notes": "Something is happening to Billie...",
-      "youtube_trailer_id": "mtC4sjABZNw"
+      "youtube_trailer_id": "KXO21xZdUaM"
     },
     {
       "tmdb_id": 1457866,

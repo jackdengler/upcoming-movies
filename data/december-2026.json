@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -76,10 +76,36 @@
       "studio": "N/A",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Science Fiction",
+      "genre": "Science Fiction / Animation",
       "cast": "Mark Lewis, Mike Majlak, Sam Dale, Sam Dale",
       "notes": "",
       "youtube_trailer_id": "1G5LArU7tmE"
+    },
+    {
+      "tmdb_id": 1299329,
+      "date": "2026-12-04",
+      "title": "Josephine",
+      "director": "Beth de Araújo",
+      "studio": "Sumerian Films",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama / Crime / Thriller",
+      "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
+      "notes": "Too young to understand. Too old to forget.",
+      "youtube_trailer_id": "d7NLG3IfowQ"
+    },
+    {
+      "tmdb_id": 1287520,
+      "date": "2026-12-04",
+      "title": "November 1963",
+      "director": "Roland Joffé",
+      "studio": "Ketchup Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "History / Crime / Thriller / Drama",
+      "cast": "John Travolta, Robert Carlyle, Dermot Mulroney, Jefferson White",
+      "notes": "Betrayed by power. Fuelled by revenge.",
+      "youtube_trailer_id": "8N9e-skJ3hw"
     },
     {
       "tmdb_id": 940009,
@@ -139,7 +165,7 @@
       "title": "Clarissa",
       "director": "Chuko Esiri, Arie Esiri",
       "studio": "Neon",
-      "budget_usd": null,
+      "budget_usd": 5000000,
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Sophie Okonedo, David Oyelowo, India Ria Amarteifio, Ayo Edebiri",
@@ -183,7 +209,7 @@
       "genre": "Drama / History",
       "cast": "Jack O'Connell, Guy Pearce, Claire Foy, Blake Harrison",
       "notes": "They broke the news.",
-      "youtube_trailer_id": "_LE1L4Huyys"
+      "youtube_trailer_id": "eokBqEFiVHs"
     },
     {
       "tmdb_id": 1176962,
@@ -222,7 +248,7 @@
       "genre": "Drama",
       "cast": "Mahshad Bahram, Hana Mana, Farzad Karen, Zohreh Pirnia",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "ld465IU0NGY"
     },
     {
       "tmdb_id": 1003596,
@@ -336,7 +362,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror / Fantasy",
+      "genre": "Horror",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "CL1EFACsWag"

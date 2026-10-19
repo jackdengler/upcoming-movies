@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -50,7 +50,7 @@
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Music",
+      "genre": "Documentary / &middot; / Music",
       "cast": "Jerry Garcia, Mickey Hart, Bruce Hornsby, Bill Kreutzmann",
       "notes": "",
       "youtube_trailer_id": null
@@ -475,7 +475,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Scott Moore, Jon Lucas",
+      "director": "Jon Lucas, Scott Moore",
       "studio": "Black Bear",
       "budget_usd": 20000000,
       "release_type": "wide",
@@ -490,7 +490,7 @@
       "title": "Teenage Sex and Death at Camp Miasma",
       "director": "Jane Schoenbrun",
       "studio": "MUBI",
-      "budget_usd": 8000000,
+      "budget_usd": 10000000,
       "release_type": "wide",
       "genre": "Comedy / Horror / Romance",
       "cast": "Hannah Einbinder, Gillian Anderson, Amanda Fix, Arthur Conti",
@@ -726,7 +726,7 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
-      "genre": "Science Fiction / Thriller / Adventure",
+      "genre": "Drama / Thriller / Adventure",
       "cast": "Jacob Elordi, Margaret Qualley, Josh Brolin, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
       "youtube_trailer_id": "-xSxaE1ClEE"

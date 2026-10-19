@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -33,7 +33,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -414,7 +414,7 @@
       "studio": "A24",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Comedy / Thriller",
+      "genre": "Comedy / Thriller / Crime",
       "cast": "Glen Powell, Margaret Qualley, Jessica Henwick, Bill Camp",
       "notes": "$28 billion inheritance. 7 relatives standing in the way.",
       "youtube_trailer_id": "B7RslMKZ2Yc"

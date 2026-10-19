@@ -1,6 +1,6 @@
 {
   "month": "April 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": 110000000,
       "release_type": "wide",
       "genre": "Family / Comedy / Adventure / Fantasy / Animation",
-      "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black",
+      "cast": "Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black",
       "notes": "The galaxy awaits.",
       "youtube_trailer_id": "En5QZmL5R1s"
     },
@@ -126,7 +126,7 @@
       "title": "Beast",
       "director": "Tyler Atkins",
       "studio": "Lionsgate",
-      "budget_usd": null,
+      "budget_usd": 13000000,
       "release_type": "wide",
       "genre": "Action / Drama",
       "cast": "Daniel MacPherson, Luke Hemsworth, Russell Crowe, Mojean Aria",
@@ -245,7 +245,7 @@
       "studio": "Neon",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Comedy / Drama",
+      "genre": "Comedy / Drama / Crime",
       "cast": "Michaela Coel, Ian McKellen, Jessica Gunning, James Corden",
       "notes": "Art can be copied. Artists cannot.",
       "youtube_trailer_id": "42GkXhRVLUQ"
@@ -321,7 +321,7 @@
       "title": "American Solitaire",
       "director": "Aaron Davidman",
       "studio": "N/A",
-      "budget_usd": 1,
+      "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Joshua Close, Joanne Kelly, Gilbert Owuor",
@@ -440,7 +440,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary",
+      "genre": "Comedy / Documentary",
       "cast": "Lorne Michaels, Steve Higgins, Michael Che, Colin Jost",
       "notes": "The legend behind the legends.",
       "youtube_trailer_id": "8jAzm4a5SLo"
@@ -609,7 +609,7 @@
       "studio": "Janus Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Drama / History / War",
+      "genre": "Comedy / &middot; / Drama / &middot; / History / &middot; / War",
       "cast": "Pierre Doris, Jacqueline Dufranne, Agathe Natanson, Hervé Lévy",
       "notes": "",
       "youtube_trailer_id": null

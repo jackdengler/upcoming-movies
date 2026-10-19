@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -258,7 +258,7 @@
       "studio": "Firestorm Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Drama / Thriller",
+      "genre": "Action / &middot; / Drama / &middot; / Thriller",
       "cast": "Quavo, Dave Willis, Danny Boyd Jr., Tetra Lloyd",
       "notes": "",
       "youtube_trailer_id": null
@@ -375,7 +375,7 @@
       "studio": "Black Bear",
       "budget_usd": 70000000,
       "release_type": "wide",
-      "genre": "Action / Thriller",
+      "genre": "Action / Thriller / Crime",
       "cast": "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem",
       "notes": "When billions get stolen, meet the pros who steal it back.",
       "youtube_trailer_id": "nufP15iN4GE"
@@ -415,7 +415,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Mystery / Romance",
-      "cast": "Katie Aselton, Daveed Diggs, Susan Sullivan, D.J. 'Shangela' Pierce",
+      "cast": "Katie Aselton, Daveed Diggs, Susan Sullivan, Shangela",
       "notes": "",
       "youtube_trailer_id": "rJBFMf2KE0s"
     },
@@ -531,7 +531,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Horror",
       "cast": "Lou Llobell, Jacob Scipio, Joseph Lopez, Melissa Leo",
       "notes": "130 million people take road trips every year. 15,400 of them are never seen again.",
       "youtube_trailer_id": "eNIn8kW1kyE"

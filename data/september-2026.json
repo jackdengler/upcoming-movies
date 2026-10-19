@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -12,7 +12,7 @@
       "budget_usd": 3000000,
       "release_type": "wide",
       "genre": "Thriller",
-      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Virginia Gardner",
+      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Sahajak Boonthanakit",
       "notes": "Are you down?",
       "youtube_trailer_id": "Krs0VDIjhmE"
     },
@@ -53,7 +53,7 @@
       "genre": "Documentary",
       "cast": "Barbara Hammer, Florrie Burke, Joey Carducci, Todd Haynes",
       "notes": "",
-      "youtube_trailer_id": "eve0cPTcQ_g"
+      "youtube_trailer_id": "8WW89Vm5O6A"
     },
     {
       "tmdb_id": 1610748,
@@ -89,7 +89,7 @@
       "studio": "Grasshopper Film",
       "budget_usd": 55000,
       "release_type": "limited",
-      "genre": "Mystery / Science Fiction / Horror",
+      "genre": "Mystery / Science Fiction / Thriller",
       "cast": "Anne Laure Sellier, Nicholas Tebben, Nicole Dombrowski Risser, Alex Kolodkin",
       "notes": "",
       "youtube_trailer_id": "KPt2iZg7M50"
@@ -167,7 +167,7 @@
       "studio": "Evan Saxon Productions",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / Music",
+      "genre": "Documentary / &middot; / Music",
       "cast": "Roger Bartlett, Jeff Bridges, Jimmy Buffett, Kenny Chesney",
       "notes": "",
       "youtube_trailer_id": null
@@ -193,7 +193,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Adventure / Family / Musical / Romance",
+      "genre": "Adventure / &middot; / Family / &middot; / Musical / &middot; / Romance",
       "cast": "Alexis Andrews",
       "notes": "",
       "youtube_trailer_id": null
@@ -355,19 +355,6 @@
       "youtube_trailer_id": "Ho10_4IX1jE"
     },
     {
-      "tmdb_id": 1377237,
-      "date": "2026-09-11",
-      "title": "Runner",
-      "director": "Scott Waugh",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Action / Comedy",
-      "cast": "Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George",
-      "notes": "Next-day delivery isn't an option.",
-      "youtube_trailer_id": "B6Z9MM1LhEA"
-    },
-    {
       "tmdb_id": 1725104,
       "date": "2026-09-11",
       "title": "Sting of Death",
@@ -427,7 +414,7 @@
       "studio": "Focus Features",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "History / Drama / Action",
+      "genre": "Action / Drama / History",
       "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Woody Norman",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
@@ -544,7 +531,7 @@
       "studio": "GKIDS",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Family / Adventure / Horror",
+      "genre": "Animation / Comedy / Family",
       "cast": "Justin Fletcher, John Sparkes, Nina Sosanya, Kate Harbour",
       "notes": "What's that coming over the hill?",
       "youtube_trailer_id": "daZMq0AyOMc"
@@ -921,8 +908,8 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Yuval Abraham",
+      "genre": "Documentary / War",
+      "cast": "Yuval Abraham, Benjamin Netanyahu",
       "notes": "A window into systems of mass killing.",
       "youtube_trailer_id": "40KW6knYMo4"
     }

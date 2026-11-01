@@ -451,8 +451,17 @@ if (bomRows.length === 0) {
   console.error(
     `No listings parsed for ${MONTH}; leaving existing data untouched. ` +
       `Page: ${html.length} bytes, <title>${pageTitle}</title>, ` +
-      `${(html.match(/mojo-group-label/g) || []).length} date dividers.`,
+      `${(html.match(/mojo-group-label/g) || []).length} date dividers, ` +
+      `${(html.match(/\/release\/rl\d+/g) || []).length} release links.`,
   );
+  // Show the markup around the first date divider and first release link so
+  // a layout change can be diagnosed straight from the workflow log.
+  const snippet = (re) => {
+    const i = html.search(re);
+    return i < 0 ? "(not found)" : html.slice(Math.max(0, i - 300), i + 1200).replace(/\s+/g, " ");
+  };
+  console.error(`--- around first divider ---\n${snippet(/mojo-group-label/)}`);
+  console.error(`--- around first release link ---\n${snippet(/\/release\/rl\d+/)}`);
   process.exit(1);
 }
 

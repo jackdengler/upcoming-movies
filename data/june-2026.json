@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -38,7 +38,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Animation / Drama / Fantasy",
-      "cast": "Chung Suet-Ying, Christy Choi Hiu-Tung, Louis Cheung, Kay Tse On-Kei",
+      "cast": "Chung Suet-ying, Christy Choi Hiu-Tung, Louis Cheung, Kay Tse On-Kei",
       "notes": "To save the future, they must uncover her past.",
       "youtube_trailer_id": "rvgT9SZU1P4"
     },
@@ -401,10 +401,10 @@
       "studio": "1-2 Special",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Mystery / Drama",
+      "genre": "Drama / Mystery / Fantasy",
       "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe",
       "notes": "",
-      "youtube_trailer_id": "HafsUWXP3UM"
+      "youtube_trailer_id": "3v-DLPMztqs"
     },
     {
       "tmdb_id": 1284465,
@@ -544,7 +544,7 @@
       "studio": "N/A",
       "budget_usd": 10000000,
       "release_type": "limited",
-      "genre": "Action / War",
+      "genre": "War / Action",
       "cast": "Scott Eastwood, Colin Hanks, Aunjanue Ellis-Taylor, Taylor John Smith",
       "notes": "One man's fight to survive.",
       "youtube_trailer_id": "vtEnjikCXyA"

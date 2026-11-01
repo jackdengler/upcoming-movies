@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -63,7 +63,7 @@
       "studio": "Iconic Events Releasing",
       "budget_usd": 5500000,
       "release_type": "wide",
-      "genre": "Comedy / Horror / Thriller",
+      "genre": "Horror / Comedy / Thriller",
       "cast": "Ari Millen, Charlie Zeltzer, Shiloh O’Reilly, Kiori Mirza Waldman",
       "notes": "We all scream.",
       "youtube_trailer_id": "Cgw3zNmFtRo"
@@ -475,7 +475,7 @@
       "tmdb_id": 1341138,
       "date": "2026-08-21",
       "title": "Spa Weekend",
-      "director": "Jon Lucas, Scott Moore",
+      "director": "Scott Moore, Jon Lucas",
       "studio": "Black Bear",
       "budget_usd": 20000000,
       "release_type": "wide",
@@ -584,7 +584,7 @@
       "budget_usd": 3000000,
       "release_type": "wide",
       "genre": "Horror / Comedy / Fantasy",
-      "cast": "Keegan-Michael Key, Cristin Milioti, Delaney Quinn, Caleb Williams",
+      "cast": "Keegan-Michael Key, Delaney Quinn, Tristan Borders, Madison Skyy Polan",
       "notes": "It's Buddy!",
       "youtube_trailer_id": "Pc9MbCNYn3k"
     },
@@ -609,7 +609,7 @@
       "studio": "Ketchup Entertainment",
       "budget_usd": 72000000,
       "release_type": "wide",
-      "genre": "Comedy / Adventure / Family",
+      "genre": "Comedy / Adventure / Family / Animation",
       "cast": "Will Forte, Lana Condor, John Cena, Tone Bell",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "kMsiD1Nky5I"
@@ -726,8 +726,8 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
-      "genre": "Drama / Thriller / Adventure",
-      "cast": "Jacob Elordi, Margaret Qualley, Josh Brolin, Guy Pearce",
+      "genre": "Action / Thriller / Science Fiction",
+      "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
       "youtube_trailer_id": "-xSxaE1ClEE"
     },

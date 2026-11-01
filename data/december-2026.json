@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -11,10 +11,10 @@
       "studio": "Lionsgate Premiere",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Thriller",
+      "genre": "Action / Thriller / Science Fiction",
       "cast": "Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Rise to survive.",
+      "youtube_trailer_id": "uO4wsV7HEUY"
     },
     {
       "tmdb_id": 1452168,
@@ -27,7 +27,7 @@
       "genre": "Music / Drama",
       "cast": "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett",
       "notes": "A life. In pieces.",
-      "youtube_trailer_id": "xOiIgN2n2v8"
+      "youtube_trailer_id": "I6tMFYT9s7E"
     },
     {
       "tmdb_id": 1125822,
@@ -39,21 +39,8 @@
       "release_type": "limited",
       "genre": "Romance / Science Fiction",
       "cast": "Naomi Scott, Kit Harington, Sonoya Mizuno, Jay Lycurgo",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
-      "tmdb_id": 1378791,
-      "date": "2026-12-04",
-      "title": "Everybody Digs Bill Evans",
-      "director": "Grant Gee",
-      "studio": "Cohen Media Group",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / Music",
-      "cast": "Anders Danielsen Lie, Bill Pullman, Laurie Metcalf, Isabelle Harriet",
-      "notes": "",
-      "youtube_trailer_id": null
+      "notes": "Time is fleeting. Love endures.",
+      "youtube_trailer_id": "2iIBYPng3uI"
     },
     {
       "tmdb_id": 1547524,
@@ -89,7 +76,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Crime / Thriller",
+      "genre": "Drama / Crime",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
       "notes": "Too young to understand. Too old to forget.",
       "youtube_trailer_id": "d7NLG3IfowQ"
@@ -144,7 +131,7 @@
       "genre": "Comedy / Drama",
       "cast": "Natalie Portman, Jenna Ortega, Da'Vine Joy Randolph, Sterling K. Brown",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "01fRwOaEvjc"
     },
     {
       "tmdb_id": 1078446,
@@ -154,10 +141,23 @@
       "studio": "Universal Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Action / Comedy",
+      "genre": "Action / Comedy / Fantasy",
       "cast": "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris",
       "notes": "...and to all a good fight.",
       "youtube_trailer_id": "FmM2giDwLAE"
+    },
+    {
+      "tmdb_id": 951018,
+      "date": "2026-12-11",
+      "title": "A Fox Under a Pink Moon",
+      "director": "Mehrdad Oskouei",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Documentary",
+      "cast": "—",
+      "notes": "",
+      "youtube_trailer_id": "HBlaV0xOBLI"
     },
     {
       "tmdb_id": 1630464,
@@ -233,13 +233,13 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Music / Comedy / Drama",
-      "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Jesse Eisenberg",
+      "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Colton Ryan",
       "notes": "There’s a method to the madness.",
-      "youtube_trailer_id": "clyzHmBx43E"
+      "youtube_trailer_id": "QZFOUWJULvU"
     },
     {
       "tmdb_id": 1596282,
-      "date": "2026-12-12",
+      "date": "2026-12-11",
       "title": "The Friend's House Is Here",
       "director": "Hossein Keshavarz, Maryam Ataei",
       "studio": "Greenwich Entertainment",
@@ -260,7 +260,7 @@
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
-      "notes": "",
+      "notes": "Meet your doom.",
       "youtube_trailer_id": "X1aFkAkFASk"
     },
     {
@@ -269,12 +269,12 @@
       "title": "Dune: Part Three",
       "director": "Denis Villeneuve",
       "studio": "Warner Bros.",
-      "budget_usd": null,
+      "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Science Fiction / Adventure",
       "cast": "Timothée Chalamet, Zendaya, Jason Momoa, Florence Pugh",
       "notes": "The epic conclusion.",
-      "youtube_trailer_id": "NdvqHc56lE0"
+      "youtube_trailer_id": "uJqaGLmZpGo"
     },
     {
       "tmdb_id": 1154730,
@@ -288,6 +288,19 @@
       "cast": "Colas Quignard, Antonia Buresi, Mitia Capellier-Audat, Suzanne Gerin",
       "notes": "",
       "youtube_trailer_id": "5yY6V9MbEoE"
+    },
+    {
+      "tmdb_id": 1675264,
+      "date": "2026-12-22",
+      "title": "Spin Wars",
+      "director": "Philip Byron",
+      "studio": "N/A",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Katie Couric, Mary Beth Barone, Brandon Kyle Goodman, Ruth Zukerman",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1300926,
@@ -310,9 +323,9 @@
       "studio": "Neon",
       "budget_usd": 40000000,
       "release_type": "wide",
-      "genre": "Comedy / Drama",
+      "genre": "Comedy / Drama / Horror",
       "cast": "Andrew Garfield, Yura Borisov, Jason Schwartzman, Cooper Koch",
-      "notes": "",
+      "notes": "Save. Delete.",
       "youtube_trailer_id": "rDZplZFnbOk"
     },
     {
@@ -326,7 +339,7 @@
       "genre": "Drama / Romance / War",
       "cast": "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver",
       "notes": "",
-      "youtube_trailer_id": "vyRlBGfVlvQ"
+      "youtube_trailer_id": "T1SAZTIZnrQ"
     },
     {
       "tmdb_id": 1260649,
@@ -338,8 +351,8 @@
       "release_type": "wide",
       "genre": "Adventure / Comedy / Fantasy",
       "cast": "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan",
-      "notes": "One. Last. Game.",
-      "youtube_trailer_id": "zhApeaHMvfs"
+      "notes": "Two worlds collide. One final game.",
+      "youtube_trailer_id": "nIw1O3zvOfE"
     },
     {
       "tmdb_id": 1372443,
@@ -366,6 +379,19 @@
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "CL1EFACsWag"
+    },
+    {
+      "tmdb_id": 1591675,
+      "date": "2026-12-30",
+      "title": "Look Back",
+      "director": "Hirokazu Kore-eda",
+      "studio": "GKIDS",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Natsuki Deguchi, Aju Makita, Fuuri Nanase, Rokka Okada",
+      "notes": "\"Keep your eyes on my back and you'll grow too.\"",
+      "youtube_trailer_id": "ILBDFlYMGAY"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -181,7 +181,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Action / Drama / Crime",
-      "cast": "Daniel Wu, Terrance Lau Chun-Him, Wu Kang-ren, Gardner Tse Kwan-Ho",
+      "cast": "Daniel Wu, Terrance Lau Chun-Him, Wu Kang-ren, Gardner Tse Kwan-ho",
       "notes": "",
       "youtube_trailer_id": "p841tPb6zMY"
     },
@@ -287,7 +287,7 @@
       "genre": "Documentary",
       "cast": "Toby Benoit, Anne Stratton Hilts, Jimbo McCartney, Shannon McCartney",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "iKJI5XGZh9o"
     },
     {
       "tmdb_id": 1301421,
@@ -349,7 +349,7 @@
       "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / Comedy / Fantasy / Horror",
+      "genre": "Animation / Comedy / Fantasy",
       "cast": "Asier Hormaza, Aintzane Gamiz, Kandido Uranga, Mikel Garmendia",
       "notes": "The world is a wonderful stage, but it has a deplorable cast.",
       "youtube_trailer_id": "HYUvmbjRmWk"
@@ -364,7 +364,7 @@
       "release_type": "limited",
       "genre": "Comedy",
       "cast": "Sam Nivola, Sophie Telegadis, Mohana Krishnan, Aidan Laprete",
-      "notes": "Follow you heart... and the rules of the road.",
+      "notes": "Follow your heart... and the rules of the road.",
       "youtube_trailer_id": "NTwuzdjmfTo"
     },
     {
@@ -583,7 +583,7 @@
       "studio": "Black Bear",
       "budget_usd": 7000000,
       "release_type": "limited",
-      "genre": "Crime / Drama / Thriller",
+      "genre": "Crime / Music / Romance",
       "cast": "Leo Woodall, Dustin Hoffman, Havana Rose Liu, Lior Raz",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "XiehvETTjTQ"
@@ -619,7 +619,7 @@
       "date": "2026-05-29",
       "title": "Pitfall",
       "director": "James Kondelik",
-      "studio": "Cineverse",
+      "studio": "Cineverse Camera",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Action / Thriller",

@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -124,7 +124,7 @@
       "tmdb_id": 1242015,
       "date": "2026-01-09",
       "title": "Young Mothers",
-      "director": "Jean-Pierre Dardenne, Luc Dardenne",
+      "director": "Luc Dardenne, Jean-Pierre Dardenne",
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "limited",
@@ -194,22 +194,9 @@
       "budget_usd": 13000000,
       "release_type": "wide",
       "genre": "Crime / Drama / Thriller",
-      "cast": "Bill Skarsgård, Dacre Montgomery, Cary Elwes, Myha'la",
+      "cast": "Bill Skarsgård, Dacre Montgomery, Al Pacino, Colman Domingo",
       "notes": "His revolution was televised.",
       "youtube_trailer_id": "aHAwgnJL78Y"
-    },
-    {
-      "tmdb_id": 858024,
-      "date": "2026-01-16",
-      "title": "Hamnet",
-      "director": "Chloé Zhao",
-      "studio": "Focus Features",
-      "budget_usd": 35000000,
-      "release_type": "wide",
-      "genre": "Drama / Romance",
-      "cast": "Jessie Buckley, Paul Mescal, Emily Watson, Joe Alwyn",
-      "notes": "Keep your heart open.",
-      "youtube_trailer_id": "xYcgQMxQwmk"
     },
     {
       "tmdb_id": 1323625,
@@ -385,7 +372,7 @@
       "date": "2026-01-23",
       "title": "Return to Silent Hill",
       "director": "Christophe Gans",
-      "studio": "Cineverse",
+      "studio": "Cineverse Camera",
       "budget_usd": 23000000,
       "release_type": "wide",
       "genre": "Horror / Mystery",
@@ -467,7 +454,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Crime",
-      "cast": "Eddie Peng Yu-Yan, Allen, Zhou You, Yan Peilun",
+      "cast": "Eddie Peng, Allen, Zhou You, Yan Peilun",
       "notes": "",
       "youtube_trailer_id": "YJizr6Sgri4"
     },
@@ -582,7 +569,7 @@
       "director": "Aidan Zamiri",
       "studio": "A24",
       "budget_usd": 4000000,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Music / Comedy / Thriller",
       "cast": "Charli xcx, Alexander Skarsgård, Rosanna Arquette, Hailey Benton Gates",
       "notes": "and it's a movie about brat and charli and a tour but none of it happened but maybe some of it did",

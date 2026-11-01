@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -74,9 +74,9 @@
       "title": "Thrash",
       "director": "Tommy Wirkola",
       "studio": "Sony Pictures Releasing",
-      "budget_usd": null,
+      "budget_usd": 50000000,
       "release_type": "wide",
-      "genre": "Horror / Thriller",
+      "genre": "Thriller / Horror",
       "cast": "Phoebe Dynevor, Whitney Peak, Djimon Hounsou, Alyla Browne",
       "notes": "If the flood doesn't kill you...",
       "youtube_trailer_id": "hzyOsNyDkbM"
@@ -102,7 +102,7 @@
       "studio": "Film Movement",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Crime / Drama",
+      "genre": "Crime / Drama / Fantasy / Horror / Science Fiction",
       "cast": "Juan Pablo Baena, Tomas Tinoco Higuita, Bryan Erlin Garcia, Samuel Andres Celis",
       "notes": "",
       "youtube_trailer_id": "pAbGrYP8Ooo"
@@ -233,7 +233,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Western / Action / Drama",
-      "cast": "Mackenzie Foy, Odeya Rush, Sean Bean, Joe Pantoliano",
+      "cast": "Sean Bean, Mackenzie Foy, Odeya Rush, Joe Pantoliano",
       "notes": "Underestimating her is a grave mistake.",
       "youtube_trailer_id": "jSwHRzmEhBI"
     },
@@ -248,7 +248,7 @@
       "genre": "Action / Horror / Mystery",
       "cast": "Britt Bankhead, Miles Mussenden, Grace Patterson, Mike Markoff",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "W9dNlOeOagk"
     },
     {
       "tmdb_id": 1469511,
@@ -375,7 +375,7 @@
       "studio": "GKIDS",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "—",
+      "genre": "Action / &middot; / Animation / &middot; / Drama / &middot; / Sci-Fi",
       "cast": "—",
       "notes": "",
       "youtube_trailer_id": null
@@ -505,7 +505,7 @@
       "studio": "Neon",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Science Fiction / Horror / Thriller",
+      "genre": "Thriller / Horror",
       "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth",
       "notes": "Revenge wears leather.",
       "youtube_trailer_id": "C7E-0t1TfzM"
@@ -518,7 +518,7 @@
       "studio": "IFC Films",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Action / Thriller / Crime",
+      "genre": "Action / Thriller / Crime / Drama",
       "cast": "Alan Ritchson, Ben Foster, Shailene Woodley, Lionel Boyce",
       "notes": "Love will drive you mad.",
       "youtube_trailer_id": "t6RklhKu9os"
@@ -714,7 +714,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Jeremy Workman, Marjon Savelsberg, Emma Marris, Javier Sandoval",
+      "cast": "Jeremy Workman, JP Borum, Robyn Fleming, MJ Ansbro",
       "notes": "",
       "youtube_trailer_id": "GPTWsyD_q6A"
     }

@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Michael Jelenic, Aaron Horvath",
+      "director": "Aaron Horvath, Michael Jelenic",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -63,7 +63,7 @@
       "studio": "Film Movement",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Comedy",
+      "genre": "Drama",
       "cast": "Wang Shang, Zhang Chuwen, Zhang Yanrong, Zhang Caixia",
       "notes": "",
       "youtube_trailer_id": "FTmsX3_n_Rs"
@@ -397,7 +397,7 @@
       "tmdb_id": 1472844,
       "date": "2026-04-17",
       "title": "Everyone Is Lying to You for Money",
-      "director": "Ben McKenzie, Giorgio Angelini",
+      "director": "Ben McKenzie",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
@@ -726,7 +726,7 @@
       "studio": "A24",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Music / Drama / Thriller",
+      "genre": "Music / Thriller / Horror / Drama",
       "cast": "Anne Hathaway, Michaela Coel, Hunter Schafer, FKA twigs",
       "notes": "This is not a ghost story.",
       "youtube_trailer_id": "aqYHOsuje1E"
@@ -753,7 +753,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Action / Comedy / Thriller",
-      "cast": "Jason Segel, Samara Weaving, Timothy Olyphant, Juliette Lewis",
+      "cast": "Jason Segel, Samara Weaving, Paul Guilfoyle, Keith Jardine",
       "notes": "Breakups are all in the execution.",
       "youtube_trailer_id": "pGxKTIegUZ4"
     },

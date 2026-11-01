@@ -1,13 +1,13 @@
 {
   "month": "September 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Peter Spierig, Michael Spierig",
+      "director": "Michael Spierig, Peter Spierig",
       "studio": "Lionsgate",
       "budget_usd": 3000000,
       "release_type": "wide",
@@ -76,7 +76,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "History / Crime / Drama",
+      "genre": "Thriller / History / Crime / Drama",
       "cast": "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas",
       "notes": "The FBI couldn't crack it. So they called in the mob.",
       "youtube_trailer_id": "fvnyrBnUx4E"
@@ -128,7 +128,7 @@
       "studio": "Well Go USA Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Family / Comedy",
+      "genre": "Drama / Comedy",
       "cast": "Li Sitong, Wang Yantong, Wu Shaoqing, Zheng Runqi",
       "notes": "Every letter leads home.",
       "youtube_trailer_id": "abeSQSbNXSk"
@@ -180,7 +180,7 @@
       "studio": "A24",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Action / Horror / Thriller",
+      "genre": "Action / Thriller / Horror",
       "cast": "Adria Arjona, Dan Stevens, Eric Wareheim, Reginald VelJohnson",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
@@ -365,7 +365,7 @@
       "genre": "Science Fiction / Comedy",
       "cast": "Michael J. Nelson, Kevin Murphy, Bill Corbett, Mary Jo Pehl",
       "notes": "",
-      "youtube_trailer_id": "KottXcRvssg"
+      "youtube_trailer_id": "AI7DyveLQFw"
     },
     {
       "tmdb_id": 1459062,
@@ -423,7 +423,7 @@
       "tmdb_id": 1733257,
       "date": "2026-09-15",
       "title": "Juan Gabriel: Mi Primer Bellas Artes",
-      "director": "María José Cuevas, Benjamín Estavillo",
+      "director": "María José Cuevas",
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
@@ -531,7 +531,7 @@
       "studio": "GKIDS",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Family",
+      "genre": "Animation / Science Fiction / Comedy",
       "cast": "Justin Fletcher, John Sparkes, Nina Sosanya, Kate Harbour",
       "notes": "What's that coming over the hill?",
       "youtube_trailer_id": "daZMq0AyOMc"
@@ -571,7 +571,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Will Brill, Gillian Jacobs, Rob Lowe, Nevada Jose",
+      "cast": "Rob Lowe, Will Brill, Gillian Jacobs, Nevada Jose",
       "notes": "It's not personal. It's middle school.",
       "youtube_trailer_id": "DaDzxM68BYc"
     },
@@ -583,7 +583,7 @@
       "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Thriller / Crime",
+      "genre": "Drama / Thriller",
       "cast": "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio",
       "notes": "A tale of good and evil.",
       "youtube_trailer_id": "7YpuMymmiJ8"
@@ -677,7 +677,7 @@
       "genre": "Romance / Drama",
       "cast": "Nick Robinson, Emilia Jones, Nicholas Cirillo, Jonathan Gregg",
       "notes": "is love enough?",
-      "youtube_trailer_id": "3EwAPmmNBU4"
+      "youtube_trailer_id": "Syp1bGpWTSs"
     },
     {
       "tmdb_id": 1736129,
@@ -880,9 +880,9 @@
       "title": "Your Mother Your Mother Your Mother",
       "director": "Bassam Tariq",
       "studio": "Orion Pictures",
-      "budget_usd": null,
+      "budget_usd": 10000000,
       "release_type": "limited",
-      "genre": "Action / Crime / Drama",
+      "genre": "Action / Crime / Drama / Thriller",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "",
       "youtube_trailer_id": "uEcoV-ngH38"

@@ -1,8 +1,21 @@
 {
   "month": "November 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
+    {
+      "tmdb_id": 1310387,
+      "date": "2026-11-01",
+      "title": "The Irregular at Magic High School THE MOVIE -Yotsuba Succession Arc-",
+      "director": "Jimmy Stone",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Fantasy / Science Fiction / Romance",
+      "cast": "Yuichi Nakamura, Saori Hayami, Chiwa Saito, Ai Kayano",
+      "notes": "",
+      "youtube_trailer_id": "a_9GBimvx9Y"
+    },
     {
       "tmdb_id": 1481600,
       "date": "2026-11-03",
@@ -11,10 +24,10 @@
       "studio": "N/A",
       "budget_usd": 8000000,
       "release_type": "limited",
-      "genre": "Action / History / Drama",
+      "genre": "Action / History / Drama / War",
       "cast": "Gábor Jászberényi, Blanka Mészáros, Tamás Borovics, Dávid Hajmási",
-      "notes": "",
-      "youtube_trailer_id": "ugwhMlTiONc"
+      "notes": "Bound by loyalty.",
+      "youtube_trailer_id": "N7Gu6GUfazA"
     },
     {
       "tmdb_id": 1165366,
@@ -24,10 +37,23 @@
       "studio": "The Samuel Goldwyn Company",
       "budget_usd": 25000000,
       "release_type": "limited",
-      "genre": "History / Drama",
+      "genre": "History / Drama / War",
       "cast": "Simon Abkarian, Simon Russell Beale, Florian Lesieur, Benoît Magimel",
       "notes": "Some wars are won by armies. Others by those who refuse to surrender.",
       "youtube_trailer_id": "dKUArYoZ_0U"
+    },
+    {
+      "tmdb_id": 1108343,
+      "date": "2026-11-04",
+      "title": "Defectors",
+      "director": "Kim Hyun-kyung",
+      "studio": "First Run",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Hyun Kyung Kim",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1753205,
@@ -90,7 +116,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Drama",
-      "cast": "Jamil Zraikat, Jordan Firstman, Cara Delevingne, Travis Jackson",
+      "cast": "Jordan Firstman, Reggie Absolom, Cara Delevingne, Diego Calva",
       "notes": "",
       "youtube_trailer_id": "guKEdb_iRXw"
     },
@@ -104,8 +130,21 @@
       "release_type": "wide",
       "genre": "Science Fiction / Horror / Action",
       "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki",
-      "notes": "Feel it all.",
+      "notes": "There is no third time. Everything ends here.",
       "youtube_trailer_id": "pWJjYoqVSjQ"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-11-06",
+      "title": "Heated Rivalry",
+      "director": "—",
+      "studio": "Regal Cinemas",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / &middot; / Romance / &middot; / Sport",
+      "cast": "Hudson Williams, Connor Storrie, François Arnaud, Callan Potter",
+      "notes": "",
+      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1241478,
@@ -144,7 +183,7 @@
       "genre": "Documentary",
       "cast": "Mike Tunalaaq Gibbons, Saad Kassis-Mohamed",
       "notes": "The bear is back.",
-      "youtube_trailer_id": "xy0kJ3CliMA"
+      "youtube_trailer_id": "dL4lFKY8Cy4"
     },
     {
       "tmdb_id": 1584855,
@@ -157,7 +196,7 @@
       "genre": "Thriller / Drama / Science Fiction",
       "cast": "Kim Hyun-joo, Bae Hyeon-seong, Kim Jong-tae, Lee Hyun-kyun",
       "notes": "",
-      "youtube_trailer_id": "ZpM8YNGNaow"
+      "youtube_trailer_id": "Yhdt5zJ1_Jc"
     },
     {
       "tmdb_id": 1021848,
@@ -206,8 +245,8 @@
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / &middot; / Music",
-      "cast": "Felix Lee, Bang Chan, Lee Know, Hwang Hyun-jin",
+      "genre": "Music",
+      "cast": "Felix Lee, Bang Chan, Lee Know, Han Jisung",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -249,6 +288,19 @@
       "cast": "Danielle Lyn, Michael Oloyede, Deion Smith",
       "notes": "",
       "youtube_trailer_id": "D8LIYqag82E"
+    },
+    {
+      "tmdb_id": 1505424,
+      "date": "2026-11-13",
+      "title": "Dead of Night",
+      "director": "Derek Sulek",
+      "studio": "Level 33 Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Dermot Mulroney, Scott Grimes, Kirrilee Berger, Jake Busey",
+      "notes": "Nowhere is safe.",
+      "youtube_trailer_id": "JEGVSaEjs1A"
     },
     {
       "tmdb_id": 1567605,
@@ -368,15 +420,15 @@
       "youtube_trailer_id": "sDiFol_2j2I"
     },
     {
-      "tmdb_id": null,
+      "tmdb_id": 1778515,
       "date": "2026-11-14",
       "title": "Festive Fun with Peppa Cinema Experience",
       "director": "—",
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Animation / &middot; / Family",
-      "cast": "—",
+      "genre": "Animation / Family",
+      "cast": "Morwenna Banks, Richard Ridings, Amelie Bea Smith",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -402,7 +454,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Vladyslav Buriak, Bohdan Yermokhin",
+      "cast": "Pope Francis, Olena Zelenska, Vladyslav Buriak, Roman Oleksiv",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
     },
@@ -414,10 +466,10 @@
       "studio": "N/A",
       "budget_usd": 9000000,
       "release_type": "limited",
-      "genre": "Action / Thriller",
+      "genre": "Action / Thriller / Crime",
       "cast": "Nicolas Cage, Justin Long, Shelley Hennig, Ravi Patel",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "JQsr_JLAiq0"
     },
     {
       "tmdb_id": 1599230,
@@ -441,9 +493,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / History",
-      "cast": "Anthony Ippolito, AnnaSophia Robb, Stephan James, Matt Dillon",
+      "cast": "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell",
       "notes": "The true underdog story.",
-      "youtube_trailer_id": "Kpc4o2J28QE"
+      "youtube_trailer_id": "jq5oCjhQtIc"
     },
     {
       "tmdb_id": 1299329,
@@ -453,7 +505,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Crime / Thriller",
+      "genre": "Drama / Crime",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
       "notes": "Too young to understand. Too old to forget.",
       "youtube_trailer_id": "d7NLG3IfowQ"
@@ -493,7 +545,7 @@
       "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Mckenna Grace",
+      "cast": "Joseph Zada, Mckenna Grace, Maya Hawke, Ralph Fiennes",
       "notes": "Welcome to the Second Quarter Quell.",
       "youtube_trailer_id": "Dr060OLTodE"
     },
@@ -507,21 +559,8 @@
       "release_type": "wide",
       "genre": "Drama / Comedy",
       "cast": "Bárbara Lennie, Leonardo Sbaraglia, Aitana Sánchez-Gijón, Victoria Luengo",
-      "notes": "You’re confusing fiction with reality.",
+      "notes": "",
       "youtube_trailer_id": "R-9dlnkY448"
-    },
-    {
-      "tmdb_id": 1461490,
-      "date": "2026-11-25",
-      "title": "Hershey",
-      "director": "Mark Waters",
-      "studio": "—",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / History / Romance",
-      "cast": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind",
-      "notes": "The true story of an American dreamer.",
-      "youtube_trailer_id": "Dihu6iM__rI"
     },
     {
       "tmdb_id": 1538497,
@@ -534,7 +573,7 @@
       "genre": "Adventure / Animation / Family / Fantasy / Comedy",
       "cast": "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins",
       "notes": "Something is happening to Billie...",
-      "youtube_trailer_id": "KXO21xZdUaM"
+      "youtube_trailer_id": "IuosV-TRxDU"
     },
     {
       "tmdb_id": 1457866,
@@ -544,7 +583,7 @@
       "studio": "Netflix",
       "budget_usd": 200000000,
       "release_type": "limited",
-      "genre": "Drama / Comedy / Thriller",
+      "genre": "Drama / Comedy / Thriller / Crime",
       "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino",
       "notes": "",
       "youtube_trailer_id": "RjEZaUBbUvU"
@@ -559,7 +598,7 @@
       "release_type": "wide",
       "genre": "Comedy / Romance",
       "cast": "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo",
-      "notes": "The circle of trust just got bigger.",
+      "notes": "Every family has its traditions.",
       "youtube_trailer_id": "9CKu3WoMYCg"
     },
     {
@@ -573,6 +612,19 @@
       "genre": "Animation / Romance / Drama",
       "cast": "Rio Vega, Lyna Khoudri, Paul Kircher, Birane Ba",
       "notes": "Like a storm, grief comes in waves.",
+      "youtube_trailer_id": "pzg0OkKku2M"
+    },
+    {
+      "tmdb_id": null,
+      "date": "2026-11-28",
+      "title": "Doctor Who",
+      "director": "—",
+      "studio": "—",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Adventure / &middot; / Drama / &middot; / Sci-Fi",
+      "cast": "Jodie Whittaker, Peter Capaldi, Pearl Mackie, Matt Smith",
+      "notes": "",
       "youtube_trailer_id": null
     }
   ]

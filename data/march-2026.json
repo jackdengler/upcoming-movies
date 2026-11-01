@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -50,7 +50,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Thriller / Drama / Mystery / Horror",
+      "genre": "Drama / Mystery / Horror",
       "cast": "Anson Boon, Stephen Graham, Andrea Riseborough, Kit Rakusen",
       "notes": "Some people only learn the hard way.",
       "youtube_trailer_id": "qWkPjI-Brkc"
@@ -63,7 +63,7 @@
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": 150000000,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Comedy / Family / Science Fiction",
+      "genre": "Animation / Adventure / Comedy / Family / Science Fiction",
       "cast": "Piper Curda, Bobby Moynihan, Jon Hamm, Kathy Najimy",
       "notes": "Act natural.",
       "youtube_trailer_id": "PypDSyIRRSs"
@@ -622,7 +622,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Action / Comedy / Horror / Thriller",
+      "genre": "Action / Comedy / Horror",
       "cast": "Zazie Beetz, Patricia Arquette, Myha'la, Paterson Joseph",
       "notes": "Let them try.",
       "youtube_trailer_id": "s0PGrtw0X1Q"

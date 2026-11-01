@@ -204,17 +204,18 @@ async function bomGet(url) {
   return r.text();
 }
 
+// Keyed by the first three letters, so full and abbreviated names both match.
 const MONTH_NAMES = {
-  January: "01", February: "02", March: "03", April: "04",
-  May: "05", June: "06", July: "07", August: "08",
-  September: "09", October: "10", November: "11", December: "12",
+  jan: "01", feb: "02", mar: "03", apr: "04", may: "05", jun: "06",
+  jul: "07", aug: "08", sep: "09", oct: "10", nov: "11", dec: "12",
 };
 
-// "May 1, 2026" → "2026-05-01". Returns null on anything we don't recognize.
+// "May 1, 2026" or (BOM's format since late Oct 2026) "Fri May 1, 2026"
+// → "2026-05-01". Returns null on anything we don't recognize.
 function parseDateHeader(text) {
-  const m = text.match(/^([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})$/);
+  const m = text.match(/^(?:[A-Za-z]+,?\s+)?([A-Za-z]+)\.?\s+(\d{1,2}),\s+(\d{4})$/);
   if (!m) return null;
-  const month = MONTH_NAMES[m[1]];
+  const month = MONTH_NAMES[m[1].slice(0, 3).toLowerCase()];
   if (!month) return null;
   return `${m[3]}-${month}-${String(+m[2]).padStart(2, "0")}`;
 }

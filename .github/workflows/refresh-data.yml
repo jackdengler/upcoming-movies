@@ -47,15 +47,19 @@ jobs:
           fi
 
       - name: Fetch from Box Office Mojo
+        id: bom
         env:
           TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
           MONTHS: ${{ steps.plan.outputs.months }}
         run: |
+          # A failed month keeps its existing file; the rest still refresh.
+          FAILED=""
           for m in $MONTHS; do
             echo "::group::Fetch $m"
-            MONTH="$m" node scripts/fetch-bom.mjs
+            MONTH="$m" node scripts/fetch-bom.mjs || FAILED="$FAILED $m"
             echo "::endgroup::"
           done
+          echo "failed=$FAILED" >> "$GITHUB_OUTPUT"
 
       - name: Fetch LA repertory theaters
         continue-on-error: true
@@ -94,4 +98,10 @@ jobs:
           # Final attempt with no further sleep.
           git pull --rebase origin main && git push && exit 0
           echo "Push failed after retries" >&2
+          exit 1
+
+      - name: Fail if any BOM month failed
+        if: steps.bom.outputs.failed != ''
+        run: |
+          echo "::error::BOM fetch failed for:${{ steps.bom.outputs.failed }} (existing data kept)"
           exit 1

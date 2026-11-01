@@ -442,6 +442,20 @@ const html = await bomGet(calendarUrl);
 const bomRows = parseCalendar(html, MONTH);
 console.log(`BOM: ${bomRows.length} listing(s) for ${MONTH}`);
 
+// A real BOM calendar month always has dozens of listings. Zero means BOM
+// served something other than the calendar (bot wall, markup change) —
+// refuse to overwrite good data with an empty month. On 2026-10-26 this
+// wiped every month file and left the app blank.
+if (bomRows.length === 0) {
+  const pageTitle = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1]?.trim() ?? "(none)";
+  console.error(
+    `No listings parsed for ${MONTH}; leaving existing data untouched. ` +
+      `Page: ${html.length} bytes, <title>${pageTitle}</title>, ` +
+      `${(html.match(/mojo-group-label/g) || []).length} date dividers.`,
+  );
+  process.exit(1);
+}
+
 const releases = await enrich(bomRows);
 releases.sort(
   (a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title),

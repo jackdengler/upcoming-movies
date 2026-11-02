@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -119,6 +119,19 @@
       "cast": "Kate O'Flynn, Alice Bailey Johnson, Marion Bailey, Paul Jesson",
       "notes": "",
       "youtube_trailer_id": "WQmGOezOOvQ"
+    },
+    {
+      "tmdb_id": 1045968,
+      "date": "2026-12-04",
+      "title": "The Fox",
+      "director": "Dario Russo",
+      "studio": "Aura Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Comedy / Fantasy",
+      "cast": "Jai Courtney, Emily Browning, Olivia Colman, Claudia Doumit",
+      "notes": "",
+      "youtube_trailer_id": "_XEZHlWlZ_o"
     },
     {
       "tmdb_id": 1379537,

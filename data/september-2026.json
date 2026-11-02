@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -482,7 +482,7 @@
       "genre": "Drama",
       "cast": "Mena Massoud, Elijah Alexander, Sophia Decaro, Vladimir Angelove",
       "notes": "Stand for the truth.",
-      "youtube_trailer_id": "FYm_sWSw6Eo"
+      "youtube_trailer_id": "hLhsAThjo4c"
     },
     {
       "tmdb_id": 1629360,
@@ -910,7 +910,7 @@
       "release_type": "limited",
       "genre": "Documentary / War",
       "cast": "Yuval Abraham, Benjamin Netanyahu",
-      "notes": "A window into systems of mass killing.",
+      "notes": "A window into systems of mass killing",
       "youtube_trailer_id": "40KW6knYMo4"
     }
   ]

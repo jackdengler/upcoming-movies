@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -232,7 +232,7 @@
       "studio": "Radial Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Western / Action / Drama",
+      "genre": "Action / Drama / Western",
       "cast": "Sean Bean, Mackenzie Foy, Odeya Rush, Joe Pantoliano",
       "notes": "Underestimating her is a grave mistake.",
       "youtube_trailer_id": "jSwHRzmEhBI"
@@ -714,7 +714,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Jeremy Workman, JP Borum, Robyn Fleming, MJ Ansbro",
+      "cast": "Jeremy Workman, D. Bruce Yolton, MJ Ansbro, Reilly Richardson",
       "notes": "",
       "youtube_trailer_id": "GPTWsyD_q6A"
     }

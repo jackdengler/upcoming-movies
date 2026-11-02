@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -597,7 +597,7 @@
       "budget_usd": 11100000,
       "release_type": "limited",
       "genre": "Drama / War",
-      "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
+      "cast": "Guitarricadelafuente, Miguel Bernardeau, Camilo Joaquín Villarruel, Carlos González",
       "notes": "Love leaves a legacy.",
       "youtube_trailer_id": "lBVxKt0gKDY"
     },
@@ -674,7 +674,7 @@
       "studio": "Focus Features",
       "budget_usd": 25000000,
       "release_type": "wide",
-      "genre": "Drama / Romance / History",
+      "genre": "Romance / Drama / History",
       "cast": "Daisy Edgar-Jones, Esmé Creed-Miles, Caitríona Balfe, Frank Dillane",
       "notes": "No one knows your heart like a sister.",
       "youtube_trailer_id": "OFLyW0lxFU0"
@@ -1049,7 +1049,7 @@
       "title": "Breeder",
       "director": "Alex Goyette",
       "studio": "IFC Films",
-      "budget_usd": null,
+      "budget_usd": 2000000,
       "release_type": "limited",
       "genre": "Horror / Thriller",
       "cast": "Daniel Doheny, Dot-Marie Jones, Maddie Phillips, Tanaya Beatty",
@@ -1231,7 +1231,7 @@
       "title": "The Mosquito Bowl",
       "director": "Peter Berg",
       "studio": "Netflix",
-      "budget_usd": null,
+      "budget_usd": 30000000,
       "release_type": "limited",
       "genre": "History / Drama / War",
       "cast": "Nicholas Galitzine, Bill Skarsgård, Ray Nicholson, Tom Francis",

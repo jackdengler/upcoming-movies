@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -163,7 +163,7 @@
       "tmdb_id": 1241052,
       "date": "2026-11-06",
       "title": "Mouse",
-      "director": "Alex Thompson, Kelly O'Sullivan",
+      "director": "Kelly O'Sullivan, Alex Thompson",
       "studio": "IFC Films",
       "budget_usd": 3000000,
       "release_type": "limited",
@@ -454,7 +454,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Vladyslav Buriak, Roman Oleksiv",
+      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Oleksandra Paskal",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
     },

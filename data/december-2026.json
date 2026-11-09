@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -41,6 +41,19 @@
       "cast": "Naomi Scott, Kit Harington, Sonoya Mizuno, Jay Lycurgo",
       "notes": "Time is fleeting. Love endures.",
       "youtube_trailer_id": "2iIBYPng3uI"
+    },
+    {
+      "tmdb_id": 1129104,
+      "date": "2026-12-04",
+      "title": "Flavia de Luce: Girl Detective",
+      "director": "Bharat Nalluri",
+      "studio": "Magenta Light Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Family / Adventure / Mystery / Comedy",
+      "cast": "Molly Belle Wright, Martin Freeman, Toby Jones, Jonathan Pryce",
+      "notes": "A little genius goes a long way.",
+      "youtube_trailer_id": "IXZMB2cSnls"
     },
     {
       "tmdb_id": 1547524,
@@ -116,9 +129,9 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Drama / Comedy",
-      "cast": "Kate O'Flynn, Alice Bailey Johnson, Marion Bailey, Paul Jesson",
+      "cast": "Marion Bailey, Paul Jesson, Kate O'Flynn, Alice Bailey Johnson",
       "notes": "",
-      "youtube_trailer_id": "WQmGOezOOvQ"
+      "youtube_trailer_id": "-CDgxJgiQY4"
     },
     {
       "tmdb_id": 1045968,
@@ -144,7 +157,7 @@
       "genre": "Comedy / Drama",
       "cast": "Natalie Portman, Jenna Ortega, Da'Vine Joy Randolph, Sterling K. Brown",
       "notes": "",
-      "youtube_trailer_id": "01fRwOaEvjc"
+      "youtube_trailer_id": "2ZW9QDB_PHA"
     },
     {
       "tmdb_id": 1078446,
@@ -206,8 +219,8 @@
       "studio": "Bleecker Street Media",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Music / Documentary",
-      "cast": "George Michael, Herb Ritts",
+      "genre": "Music",
+      "cast": "George Michael",
       "notes": "Experience the iconic 1988 concert.",
       "youtube_trailer_id": "H_NwyHRY9yk"
     },
@@ -323,10 +336,10 @@
       "studio": "Paramount Pictures",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Family",
+      "genre": "Adventure / Animation / Comedy / Family / Science Fiction",
       "cast": "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom",
       "notes": "One big angry family.",
-      "youtube_trailer_id": "a9DB_aUMzME"
+      "youtube_trailer_id": "FjYzudbOzlY"
     },
     {
       "tmdb_id": 1492198,
@@ -336,7 +349,7 @@
       "studio": "Neon",
       "budget_usd": 40000000,
       "release_type": "wide",
-      "genre": "Comedy / Drama / Horror",
+      "genre": "Comedy / Drama / History",
       "cast": "Andrew Garfield, Yura Borisov, Jason Schwartzman, Cooper Koch",
       "notes": "Save. Delete.",
       "youtube_trailer_id": "rDZplZFnbOk"

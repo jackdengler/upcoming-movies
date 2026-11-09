@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -126,7 +126,7 @@
       "title": "Godzilla Minus Zero",
       "director": "Takashi Yamazaki",
       "studio": "GKIDS",
-      "budget_usd": null,
+      "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Science Fiction / Horror / Action",
       "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki",
@@ -156,14 +156,14 @@
       "release_type": "wide",
       "genre": "Drama / History",
       "cast": "KJ Apa, Jason Alexander, Max Casella, Sarah Drew",
-      "notes": "A Hollywood icon. An American hero. A Wonderful Life.",
+      "notes": "A Hollywood icon. An American hero. A wonderful life.",
       "youtube_trailer_id": "4nrB_T3F53Y"
     },
     {
       "tmdb_id": 1241052,
       "date": "2026-11-06",
       "title": "Mouse",
-      "director": "Kelly O'Sullivan, Alex Thompson",
+      "director": "Alex Thompson, Kelly O'Sullivan",
       "studio": "IFC Films",
       "budget_usd": 3000000,
       "release_type": "limited",
@@ -217,9 +217,9 @@
       "title": "The Cat in the Hat",
       "director": "Erica Rivinoja, Alessandro Carloni",
       "studio": "Warner Bros.",
-      "budget_usd": null,
+      "budget_usd": 86000000,
       "release_type": "wide",
-      "genre": "Animation / Comedy / Adventure / Fantasy / Family",
+      "genre": "Animation / Fantasy / Adventure / Family / Comedy",
       "cast": "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry",
       "notes": "The cat's out of the bag.",
       "youtube_trailer_id": "tkZpcypT8Z4"
@@ -239,14 +239,14 @@
     },
     {
       "tmdb_id": 1795555,
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "title": "Stray Kids World Tour 'Run It' Live Viewing",
       "director": "—",
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Music",
-      "cast": "Felix Lee, Bang Chan, Lee Know, Han Jisung",
+      "cast": "Bang Chan, Lee Know, Seo Chang-bin, Hwang Hyun-jin",
       "notes": "",
       "youtube_trailer_id": null
     },
@@ -260,7 +260,7 @@
       "release_type": "wide",
       "genre": "Action / Thriller",
       "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
-      "notes": "He's not a threat, he's a guarantee.",
+      "notes": "Heaven sent. Hell to pay.",
       "youtube_trailer_id": "UKaWzMf9Ybc"
     },
     {
@@ -284,8 +284,8 @@
       "studio": "Kino Lorber",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Danielle Lyn, Michael Oloyede, Deion Smith",
+      "genre": "Documentary / History / War",
+      "cast": "Danielle Lyn, Michael Oloyede, Deion Smith, Okea Eme-Akwari",
       "notes": "",
       "youtube_trailer_id": "D8LIYqag82E"
     },
@@ -311,7 +311,7 @@
       "budget_usd": 38000000,
       "release_type": "wide",
       "genre": "Fantasy / Comedy",
-      "cast": "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough",
+      "cast": "Johnny Depp, Rupert Grint, Daisy Ridley, Sam Claflin",
       "notes": "Before he was Scrooge, he was…",
       "youtube_trailer_id": "l_Ozo1xUgbU"
     },
@@ -454,7 +454,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Oleksandra Paskal",
+      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Roman Oleksiv",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
     },
@@ -490,7 +490,7 @@
       "title": "I Play Rocky",
       "director": "Peter Farrelly",
       "studio": "Amazon MGM Studios",
-      "budget_usd": null,
+      "budget_usd": 27000000,
       "release_type": "wide",
       "genre": "Drama / History",
       "cast": "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell",
@@ -545,9 +545,22 @@
       "budget_usd": 200000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Joseph Zada, Mckenna Grace, Maya Hawke, Ralph Fiennes",
+      "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Whitney Peak",
       "notes": "Welcome to the Second Quarter Quell.",
       "youtube_trailer_id": "Dr060OLTodE"
+    },
+    {
+      "tmdb_id": 1500908,
+      "date": "2026-11-20",
+      "title": "The Vile",
+      "director": "Majid al-Ansari",
+      "studio": "Dark Sky Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Horror / Thriller",
+      "cast": "Bdoor Mohammad, Sarah Taibah, Jasem Alkharraz, Samira Al-Wahaibi",
+      "notes": "Nothing is what it seems.",
+      "youtube_trailer_id": "JqvU-xl_rqk"
     },
     {
       "tmdb_id": 1088548,
@@ -583,10 +596,23 @@
       "studio": "Netflix",
       "budget_usd": 200000000,
       "release_type": "limited",
-      "genre": "Drama / Comedy / Thriller / Crime",
-      "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino",
+      "genre": "Drama / Comedy / Thriller",
+      "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Yahya Abdul-Mateen II",
       "notes": "",
-      "youtube_trailer_id": "RjEZaUBbUvU"
+      "youtube_trailer_id": "fJH-wfSXnWg"
+    },
+    {
+      "tmdb_id": 1748001,
+      "date": "2026-11-26",
+      "title": "Andrew Lloyd Webber's Starlight Express - Live on Stage",
+      "director": "Brett Sullivan",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Music",
+      "cast": "Jeevan Braich, Kayna Montecillo, Jade Marvin, Olivia Ringrose",
+      "notes": "Every dream has a destination",
+      "youtube_trailer_id": "lV42yurkaGA"
     },
     {
       "tmdb_id": 1400336,
@@ -613,6 +639,19 @@
       "cast": "Rio Vega, Lyna Khoudri, Paul Kircher, Birane Ba",
       "notes": "Like a storm, grief comes in waves.",
       "youtube_trailer_id": "pzg0OkKku2M"
+    },
+    {
+      "tmdb_id": 1520514,
+      "date": "2026-11-27",
+      "title": "Who Is Still Alive",
+      "director": "Nicolas Wadimoff",
+      "studio": "Watermelon Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Jawdat Khoudary, Mahmoud Jouda, Adel Altaweel, Haneen Harara",
+      "notes": "",
+      "youtube_trailer_id": "YdIaLT_lmNw"
     },
     {
       "tmdb_id": null,

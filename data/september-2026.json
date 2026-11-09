@@ -1,6 +1,6 @@
 {
   "month": "September 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -336,7 +336,7 @@
       "studio": "Joke Zero",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Music",
+      "genre": "Comedy / Music / Drama",
       "cast": "Isabel Hagen, Dylan Baker, Ling Ling Huang, Frederick Weller",
       "notes": "",
       "youtube_trailer_id": "24afAxfiHAY"
@@ -404,7 +404,7 @@
       "genre": "Documentary",
       "cast": "Ann Blackwell, Violet Brown, Genia Carter, Beryl Condillac",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "Ju0dtWT8GQ0"
     },
     {
       "tmdb_id": 977942,
@@ -415,7 +415,7 @@
       "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Action / Drama / History",
-      "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Woody Norman",
+      "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
     },
@@ -531,7 +531,7 @@
       "studio": "GKIDS",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Animation / Science Fiction / Comedy",
+      "genre": "Animation / Science Fiction / Comedy / Family",
       "cast": "Justin Fletcher, John Sparkes, Nina Sosanya, Kate Harbour",
       "notes": "What's that coming over the hill?",
       "youtube_trailer_id": "daZMq0AyOMc"
@@ -804,7 +804,7 @@
       "studio": "A24",
       "budget_usd": 14500000,
       "release_type": "wide",
-      "genre": "Drama / Thriller",
+      "genre": "Thriller / Drama / Crime",
       "cast": "Robert Pattinson, Merritt Wever, Skyler Gisondo, Matthew Maher",
       "notes": "Are you ready to make television history?",
       "youtube_trailer_id": "C0NZa01qTRU"
@@ -882,9 +882,9 @@
       "studio": "Orion Pictures",
       "budget_usd": 10000000,
       "release_type": "limited",
-      "genre": "Action / Crime / Drama / Thriller",
+      "genre": "Drama / Crime / Thriller / Action",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
-      "notes": "",
+      "notes": "To be a parent is to be at war.",
       "youtube_trailer_id": "uEcoV-ngH38"
     },
     {
@@ -910,7 +910,7 @@
       "release_type": "limited",
       "genre": "Documentary / War",
       "cast": "Yuval Abraham, Benjamin Netanyahu",
-      "notes": "A window into systems of mass killing",
+      "notes": "A window into systems of mass killing.",
       "youtube_trailer_id": "40KW6knYMo4"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -33,7 +33,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Pedro Solís, Juan Jesús García Galocha",
+      "director": "Juan Jesús García Galocha, Pedro Solís",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -349,7 +349,7 @@
       "studio": "Warner Bros.",
       "budget_usd": 80000000,
       "release_type": "wide",
-      "genre": "Romance / Drama / History",
+      "genre": "Romance / Drama",
       "cast": "Margot Robbie, Jacob Elordi, Hong Chau, Shazad Latif",
       "notes": "Come undone.",
       "youtube_trailer_id": "HWFdeoeBNV0"
@@ -488,7 +488,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Kevin McManus, Matthew McManus",
+      "director": "Matthew McManus, Kevin McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",

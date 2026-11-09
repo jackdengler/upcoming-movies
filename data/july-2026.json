@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -507,7 +507,7 @@
       "release_type": "wide",
       "genre": "Thriller / Horror",
       "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth",
-      "notes": "Revenge wears leather.",
+      "notes": "Revenge wears leather",
       "youtube_trailer_id": "C7E-0t1TfzM"
     },
     {
@@ -687,7 +687,7 @@
       "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Crime / Thriller",
+      "genre": "Action / Crime / Thriller / TV Movie",
       "cast": "John Travolta, Lukas Haas, Rebecca De Mornay, Danny Pardo",
       "notes": "Trust no one. Take everything.",
       "youtube_trailer_id": "0LB3yWX1R8Y"

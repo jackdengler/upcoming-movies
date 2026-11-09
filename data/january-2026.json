@@ -1,6 +1,6 @@
 {
   "month": "January 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -436,12 +436,12 @@
       "tmdb_id": 650524,
       "date": "2026-01-30",
       "title": "Back to the Past",
-      "director": "Ng Yuen-Fai, Jack Lai Jan-Lung",
+      "director": "Jack Lai Jan-Lung, Ng Yuen-Fai",
       "studio": "Well Go USA Entertainment",
       "budget_usd": 45000000,
       "release_type": "limited",
       "genre": "Science Fiction / Action / Comedy",
-      "cast": "Louis Koo, Raymond Lam Fung, Bai Baihe, Jessica Hsuan Huen",
+      "cast": "Louis Koo, Raymond Lam, Bai Baihe, Jessica Hsuan Huen",
       "notes": "To save tomorrow, they must survive yesterday.",
       "youtube_trailer_id": "O22WwXOhb5w"
     },

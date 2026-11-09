@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -116,7 +116,7 @@
       "budget_usd": 100000000,
       "release_type": "wide",
       "genre": "Comedy / Drama",
-      "cast": "Anne Hathaway, Meryl Streep, Emily Blunt, Stanley Tucci",
+      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
       "notes": "Icons reign forever.",
       "youtube_trailer_id": "PMd1at7OwiE"
     },
@@ -297,7 +297,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Comedy / Family / Mystery / Crime",
+      "genre": "Comedy / Family / Mystery",
       "cast": "Hugh Jackman, Nicholas Braun, Nicholas Galitzine, Molly Gordon",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
@@ -375,7 +375,7 @@
       "studio": "Black Bear",
       "budget_usd": 70000000,
       "release_type": "wide",
-      "genre": "Action / Thriller / Crime",
+      "genre": "Action / Crime",
       "cast": "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem",
       "notes": "When billions get stolen, meet the pros who steal it back.",
       "youtube_trailer_id": "nufP15iN4GE"
@@ -429,7 +429,7 @@
       "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless",
-      "notes": "Be careful who you wish for…",
+      "notes": "You only get one wish.",
       "youtube_trailer_id": "gMC8kkwbIQQ"
     },
     {

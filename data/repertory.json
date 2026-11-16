@@ -1,28 +1,28 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Per-theater scrapers",
   "sources": [
     {
       "id": "new-beverly",
-      "count": 57,
+      "count": 39,
       "status": "ok"
     },
     {
       "id": "american-cinematheque",
-      "count": 88,
+      "count": 87,
       "status": "ok"
     },
     {
       "id": "nuart",
       "count": 0,
       "status": "ok",
-      "sample_url": "https://www.landmarktheatres.com/api/gatsby-source-boxofficeapi/schedule?from=2026-11-09T03%3A00%3A00&to=2027-01-08T03%3A00%3A00&theaters=%7B%22id%22%3A%22X00CW%22%2C%22timeZone%22%3A%22America%2FLos_Angeles%22%7D",
-      "sample_bytes": 29775,
-      "sample": "{\"X00CW\":{\"schedule\":{\"313\":{\"2026-11-14\":[{\"id\":\"313-2026-11-14 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-14T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/dcb6b662-109f-5e5b-b691-52477b460a1c\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Screen.Accessibility.HearingImpaired,Auditorium.Comfort.GeneralSeating,Format.Projection.Digital&perfd=20261114&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":35},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-11-14 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Internal.Data.AlmostSoldOut,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-14T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Internal.Data.AlmostSoldOut\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/3a041113-9796-5872-bcc9-d8c0d20f0b2f\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Internal.Data.AlmostSoldOut,Screen.Accessibility.HearingImpaired&perfd=20261114&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":78},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-21\":[{\"id\":\"313-2026-11-21 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-21T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6f67a2ac-f0fd-57d8-b139-c4b1b5b05e57\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261121&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":13},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-11-21 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-21T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/a17a9231-2ecb-5fa1-9f22-cb8f2a972c66\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261121&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-11-28\":[{\"id\":\"313-2026-11-28 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-28T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/58a2ad24-db97-500a-b6a8-e2bb18017ad6\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261128&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":7},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-11-28 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-28T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/87fc27c6-1a4c-5eaf-8aea-b70216cf2150\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261128&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":3},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-12-05\":[{\"id\":\"313-2026-12-05 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-05T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/4fd12785-dd3f-592b-9e05-2a8db8a71bb6\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261205&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-12-05 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-05T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/98a3926f-706d-5ff2-906c-3b6eda841057\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261205&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":7},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-12-12\":[{\"id\":\"313-2026-12-12 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-12T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/8f48da44-66fd-57b8-b2f9-4c99e3764483\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261212&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-12-12 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-12T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5cdf896c-035c-5ce6-8f73-e5280bcb7938\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261212&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-12-19\":[{\"id\":\"313-2026-12-19 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-19T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/b10f1782-55bd-5dff-b73b-7bc96806c2bb\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261219&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-12-19 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-19T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5738ca09-d51a-5e31-b4a9-ce52ff05b54a\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261219&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}]},\"2252\":{\"2026-12-04\":[{\"id\":\"2252-2026-12-04 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-04T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/8ca5cc64-35b1-5306-a298-6184101f0648\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.2252&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261204&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"27624\":{\"2026-12-18\":[{\"id\":\"27624-2026-12-18 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption\",\"startsAt\":\"2026-12-18T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/1cd40d8f-46b0-5061-853d-55664555a9b0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.27624&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption&perfd=20261218&perft=22:30&code=2D; ORG; 5.1; CC; HI; Ensemble; Alt Con; Retro Replay; Fantasy; Romance; Drama; Non-IP; 25-39; 40-49; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"40638\":{\"2026-12-11\":[{\"id\":\"40638-2026-12-11 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-11T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5d3bf4ec-9f47-5f22-a4e8-3952788560e0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.40638&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261211&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"55142\":{\"2026-12-25\":[{\"id\":\"55142-2026-12-25 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-25T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/c65064ea-cb19-5f9a-a5f3-9dbceae841ba\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.55142&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261225&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"56061\":{\"2026-11-20\":[{\"id\":\"56061-2026-11-20 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption\",\"startsAt\":\"2026-11-20T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6a35245e-50f7-50fd-9ce5-33c6364da229\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.56061&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption&perfd=20261120&perft=22:30&code=2D; ORG; 5.1; CC; HI; Alt Con; Film Noir; Crime; Comedy; Non-IP; 25-39; 50-59; 40-49; Retro Replay; One-Off; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"187420\":{\"2026-11-27\":[{\"id\":\"187420-2026-11-27 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-27T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ab5c4bf3-0fb7-5b9a-9d98-eb2448c7b098\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.187420&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261127&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"1000024810\":{\"2026-11-09\":[{\"id\":\"1000024810-2026-11-09 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-09T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/9187fce2-e6dd-559e-a25d-1dfad700357b\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261109&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-09 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-09T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/cec9f670-cf4e-50e3-94e0-870a6f0870dc\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261109&perft=15:40&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-09 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-09T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/7ba28af2-ee9f-5f26-a0bc-4898e258d1aa\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261109&perft=19:00&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":4},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-10\":[{\"id\":\"1000024810-2026-11-10 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-10T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/c186d4e5-1c37-5e37-9019-dd30493890d0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261110&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-10 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-10T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e1bc438a-43d0-59da-8710-2d557f6c602c\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261110&perft=15:40&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-10 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-10T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/c2828cb6-4c0b-598e-8343-573b9ccf8823\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Showtime.Accessibility.Subtitled,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Auditorium.Comfort.ReservedSeating&perfd=20261110&perft=19:00&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":3},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-11\":[{\"id\":\"1000024810-2026-11-11 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-11T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e3ce8abf-1b2e-5962-94db-f1c68ac39c83\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261111&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-11 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-11T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/3f8c82b1-5724-5f21-b714-22adccfce98c\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261111&perft=15:40&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":4},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-11 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-11T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0e701b3d-770a-5d4a-8492-aa7f77498b62\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Showtime.Accessibility.Subtitled,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Auditorium.Comfort.ReservedSeating&perfd=20261111&perft=19:00&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-12\":[{\"id\":\"1000024810-2026-11-12 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-12T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/814e0ce3-08d4-5f0f-ad1c-da0933ab23c6\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261112&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-12 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-12T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/1f7f339a-8f72-55a7-adff-b814b5b6d9f9\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261112&perft=15:40&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-12 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-12T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.35mm\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/78d1fa1f-1a46-554f-b7db-f7c4c9feef55\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.35mm,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261112&perft=19:00&code=35 MM; ORG; 5.1; EN; 35MM; Flat; HI; SUB; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"1000050842\":{\"2026-11-13\":[{\"id\":\"1000050842-2026-11-13 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-13T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/fc63c3d5-9c92-5ddc-8009-6badffc7e0bf\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000050842&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261113&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":8},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]}},\"moviesTags\":{\"313\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Auditorium.Comfort.ReservedSeating\",\"Internal.Data.AlmostSoldOut\"],\"2252\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"27624\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"40638\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"55142\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"56061\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"187420\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"1000024810\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\",\"Format.Projection.35mm\"],\"1000050842\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"]},\"showtimesDates\":[\"2026-11-09\",\"2026-11-10\",\"2026-11-11\",\"2026-11-12\",\"2026-11-13\",\"2026-11-14\",\"2026-11-20\",\"2026-11-21\",\"2026-11-27\",\"2026-11-28\",\"2026-12-04\",\"2026-12-05\",\"2026-12-11\",\"2026-12-12\",\"2026-12-18\",\"2026-12-19\",\"2026-12-25\"]}}"
+      "sample_url": "https://www.landmarktheatres.com/api/gatsby-source-boxofficeapi/schedule?from=2026-11-16T03%3A00%3A00&to=2027-01-15T03%3A00%3A00&theaters=%7B%22id%22%3A%22X00CW%22%2C%22timeZone%22%3A%22America%2FLos_Angeles%22%7D",
+      "sample_bytes": 26965,
+      "sample": "{\"X00CW\":{\"schedule\":{\"313\":{\"2026-11-21\":[{\"id\":\"313-2026-11-21 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-21T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6f67a2ac-f0fd-57d8-b139-c4b1b5b05e57\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261121&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":15},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-11-21 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-21T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/51ab7b98-770e-54d2-af69-0e2f3e0f41f2\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261121&perft=23:00&code=2D; ORG; 5.1; GA; Open Seating; HI; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-11-28\":[{\"id\":\"313-2026-11-28 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-28T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/58a2ad24-db97-500a-b6a8-e2bb18017ad6\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261128&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":11},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-11-28 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-28T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/87fc27c6-1a4c-5eaf-8aea-b70216cf2150\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261128&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":3},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]}],\"2026-12-05\":[{\"id\":\"313-2026-12-05 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-05T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/4fd12785-dd3f-592b-9e05-2a8db8a71bb6\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261205&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":3},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-12-05 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-05T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/98a3926f-706d-5ff2-906c-3b6eda841057\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261205&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":9},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]}],\"2026-12-12\":[{\"id\":\"313-2026-12-12 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-12T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5cdf896c-035c-5ce6-8f73-e5280bcb7938\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261212&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-12-12 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-12T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/8f48da44-66fd-57b8-b2f9-4c99e3764483\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261212&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]}],\"2026-12-19\":[{\"id\":\"313-2026-12-19 23:00:00-Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-19T23:00:00\",\"tags\":[\"Auditorium.Comfort.GeneralSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5738ca09-d51a-5e31-b4a9-ce52ff05b54a\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.GeneralSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261219&perft=23:00&code=2D; ORG; 5.1; GA; HI; Open Seating; Exclude\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Screen One\"},\"nextShowtimes\":[]},{\"id\":\"313-2026-12-19 23:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-19T23:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/b10f1782-55bd-5dff-b73b-7bc96806c2bb\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.313&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261219&perft=23:00&code=2D; ORG; 5.1; RSVD; HI; Exclude; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":4},\"screen\":{\"name\":\"Theatre 1\"},\"nextShowtimes\":[]}]},\"2252\":{\"2026-12-04\":[{\"id\":\"2252-2026-12-04 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-04T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/8ca5cc64-35b1-5306-a298-6184101f0648\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.2252&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261204&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"27624\":{\"2026-12-18\":[{\"id\":\"27624-2026-12-18 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption\",\"startsAt\":\"2026-12-18T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/1cd40d8f-46b0-5061-853d-55664555a9b0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.27624&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption&perfd=20261218&perft=22:30&code=2D; ORG; 5.1; CC; HI; Ensemble; Alt Con; Retro Replay; Fantasy; Romance; Drama; Non-IP; 25-39; 40-49; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"40638\":{\"2026-12-11\":[{\"id\":\"40638-2026-12-11 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-11T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/5d3bf4ec-9f47-5f22-a4e8-3952788560e0\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.40638&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261211&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"55142\":{\"2026-12-25\":[{\"id\":\"55142-2026-12-25 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-12-25T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/c65064ea-cb19-5f9a-a5f3-9dbceae841ba\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.55142&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261225&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"56061\":{\"2026-11-20\":[{\"id\":\"56061-2026-11-20 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption\",\"startsAt\":\"2026-11-20T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6a35245e-50f7-50fd-9ce5-33c6364da229\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.56061&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.ClosedCaption&perfd=20261120&perft=22:30&code=2D; ORG; 5.1; CC; HI; Alt Con; Film Noir; Crime; Comedy; Non-IP; 25-39; 50-59; 40-49; Retro Replay; One-Off; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]},\"187420\":{\"2026-11-27\":[{\"id\":\"187420-2026-11-27 22:30:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired\",\"startsAt\":\"2026-11-27T22:30:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ab5c4bf3-0fb7-5b9a-9d98-eb2448c7b098\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.187420&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired&perfd=20261127&perft=22:30&code=2D; ORG; 5.1; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"Screen 1\"},\"nextShowtimes\":[]}]},\"1000024810\":{\"2026-11-16\":[{\"id\":\"1000024810-2026-11-16 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-16T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/c77f9b0c-0337-5c24-91e3-fe1982ae7329\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261116&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-16 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-16T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/8b765a53-cf9a-5bc7-8656-93d3a7904b0d\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261116&perft=15:40&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-16 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-16T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/001b0a3e-96c5-516e-811a-fed54cdbb385\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Showtime.Accessibility.Subtitled,Screen.Accessibility.HearingImpaired,Auditorium.Comfort.ReservedSeating,Format.Projection.Digital&perfd=20261116&perft=19:00&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":5},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-17\":[{\"id\":\"1000024810-2026-11-17 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-17T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ddc3b96b-fa63-5e2e-bc2d-2f4f9b976aef\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261117&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-17 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-17T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/528c18bb-fc5f-5a09-9afe-477e36ddbb6e\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261117&perft=15:40&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-17 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-17T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/0a2ce982-058c-5e58-8906-f4efec258e0b\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261117&perft=19:00&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-18\":[{\"id\":\"1000024810-2026-11-18 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-18T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/6e2d7090-6c71-5d33-b378-d3166eaa9db9\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261118&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-18 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-18T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/2fc34daa-50a0-52ed-9453-e67e8ffa0553\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261118&perft=15:40&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-18 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-18T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/db3a349e-6c83-5bbb-825c-9b426a3d4abe\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261118&perft=19:00&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":2},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}],\"2026-11-19\":[{\"id\":\"1000024810-2026-11-19 12:20:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-19T12:20:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/ff116bf2-aef7-5e67-b368-9fef80279903\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261119&perft=12:20&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-19 15:40:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-19T15:40:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/bacbb505-48ec-5eb2-bb71-ec7abf6ac359\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261119&perft=15:40&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":0},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]},{\"id\":\"1000024810-2026-11-19 19:00:00-Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled\",\"startsAt\":\"2026-11-19T19:00:00\",\"tags\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"],\"isExpired\":false,\"data\":{\"ticketing\":[{\"urls\":[\"https://booking.landmarktheatres.com/launch/ticketing/e67f9837-0f0f-56f6-8ff8-285fe2056e56\"],\"type\":\"DESKTOP\",\"provider\":\"default\"},{\"urls\":[\"https://relay.mvtx.us/ticketing/dbz?code_theater=X00CW&gid_entity=movie.movie._.1000024810&tags=Auditorium.Comfort.ReservedSeating,Format.Projection.Digital,Screen.Accessibility.HearingImpaired,Showtime.Accessibility.Subtitled&perfd=20261119&perft=19:00&code=2D; ORG; 5.1; EN; SUB; Flat; HI; Reserved Seating\"],\"type\":\"DESKTOP\",\"provider\":\"relay\"}]},\"occupancy\":{\"rate\":1},\"screen\":{\"name\":\"1\"},\"nextShowtimes\":[]}]}},\"moviesTags\":{\"313\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Auditorium.Comfort.GeneralSeating\"],\"2252\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"27624\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"40638\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"55142\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"56061\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.ClosedCaption\"],\"187420\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\"],\"1000024810\":[\"Auditorium.Comfort.ReservedSeating\",\"Format.Projection.Digital\",\"Screen.Accessibility.HearingImpaired\",\"Showtime.Accessibility.Subtitled\"]},\"showtimesDates\":[\"2026-11-16\",\"2026-11-17\",\"2026-11-18\",\"2026-11-19\",\"2026-11-20\",\"2026-11-21\",\"2026-11-27\",\"2026-11-28\",\"2026-12-04\",\"2026-12-05\",\"2026-12-11\",\"2026-12-12\",\"2026-12-18\",\"2026-12-19\",\"2026-12-25\"]}}"
     },
     {
       "id": "vista",
-      "count": 84,
+      "count": 63,
       "status": "ok"
     },
     {
@@ -32,12 +32,12 @@
     },
     {
       "id": "academy-museum",
-      "count": 28,
+      "count": 17,
       "status": "ok"
     },
     {
       "id": "brain-dead",
-      "count": 31,
+      "count": 23,
       "status": "ok"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "id": "fathom",
-      "count": 86,
+      "count": 54,
       "status": "ok"
     }
   ],
@@ -130,1333 +130,23 @@
       "theater": "fathom-17364",
       "title": "JIMMY",
       "year": null,
-      "date": "2026-11-09",
-      "time": "10:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-09+10:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "13:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-09+13:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Some Like It Hot",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "14:30",
-      "format": null,
-      "series": "Film Screening: Matinee",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "97TYs2YXbJw"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-09",
-      "time": "15:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4241?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "16:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-09+16:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "16:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-09+16:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-09+19:00:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-09+19:00:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "Cinematic Void Presents PHASE IV",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:00",
-      "format": "35mm",
-      "series": "Cinematic Void",
-      "url": "https://www.americancinematheque.com/now-showing/cinematic-void-presents-phase-iv-11-09-2026/"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-09+19:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-09+19:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Moss",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:30",
-      "format": null,
-      "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "TJc8u9xv3LU"
-    },
-    {
-      "theater": "aero",
-      "title": "GODZILLA MINUS ZERO",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/godzilla-minus-zero-11-09-2026/",
-      "youtube_trailer_id": "pWJjYoqVSjQ"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Destiny",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-9-destiny-flesh-and-fantasy/",
-      "youtube_trailer_id": "i7Tfg_azi28"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-09",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4248?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Flesh and Fantasy",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "21:05",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-9-destiny-flesh-and-fantasy/",
-      "youtube_trailer_id": "5QdToO2qmtw"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "MIKEY AND NICKY",
-      "year": null,
-      "date": "2026-11-09",
-      "time": "22:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/mikey-and-nicky-11-09-2026/",
-      "youtube_trailer_id": "ipCY7DhWb6g"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "10:10",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-10+10:10:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "10:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-10+10:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "13:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-10+13:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "13:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-10+13:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-10",
-      "time": "15:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4242?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "16:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-10+16:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "16:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-10+16:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-10+19:00:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-10+19:00:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-10+19:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-10+19:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "aero",
-      "title": "PATERSON",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/paterson-11-10-2026/",
-      "youtube_trailer_id": "E8_L9kqie7s"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Robot Carnival",
-      "year": 1987,
-      "date": "2026-11-10",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1453440/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "THE BODY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:30",
-      "format": null,
-      "series": "THE BODY Los Feliz Theatre Takeover",
-      "url": "https://www.americancinematheque.com/now-showing/the-body-730pm-11-10-2026/",
-      "youtube_trailer_id": "e_brmjvATLc"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Getaway (IB Tech Print)",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-10-the-getaway-charley-varrick/"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-10",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4249?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "THE BODY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "20:00",
-      "format": null,
-      "series": "THE BODY Los Feliz Theatre Takeover",
-      "url": "https://www.americancinematheque.com/now-showing/the-body-8pm-11-10-2026/",
-      "youtube_trailer_id": "e_brmjvATLc"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Charley Varrick",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "22:00",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-10-the-getaway-charley-varrick/",
-      "youtube_trailer_id": "vTaHRkAdBAw"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-10",
-      "time": "22:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-10+22:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "09:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+09:20:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "10:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-11+10:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "10:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+10:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "13:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-11+13:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "13:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+13:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Some Like It Hot",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "14:30",
-      "format": null,
-      "series": "Film Screening: Matinee",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "97TYs2YXbJw"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-11",
-      "time": "15:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4243?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "16:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-11+16:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "16:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+16:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "\"The Music Store\"",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "17:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/the-music-store-11-12-2026/"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Telefantasy Studios Presents Neurocrash w/ Blake Anderson & Friends",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://dice.fm/partner/tickets/event/mxw7ow-cybercon-telefantasy-studios-presents-neurocrash-w-blake-anderson-friends-11th-nov-brain-dead-studios-los-angeles-tickets?dice_id=10811632&amp;dice_channel=web&amp;dice_tags=organic&amp;dice_campaign=Brain+Dead+Amusements+LLC&amp;dice_feature=mio_marketing&amp;_branch_match_id=1256662425127165609&amp;utm_source=web&amp;utm_campaign=Brain+Dead+Amusements+LLC&amp;utm_medium=mio_marketing&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q8wSzZIS0xMTEs0S7GvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQBuWgtnOwAAAA%3D%3D"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-11+19:00:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+19:00:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "GUGU'S WORLD",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/gugus-world-11-11-2026/",
-      "youtube_trailer_id": "Tq9dwToYGsY"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-11+19:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+19:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "War for the Planet of the Apes",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:30",
-      "format": null,
-      "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "1TxqmlIv1Iw"
-    },
-    {
-      "theater": "aero",
-      "title": "TEENAGE SEX AND DEATH AT CAMP MIASMA",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/teenage-sex-and-death-at-camp-miasma-11-11-2026/",
-      "youtube_trailer_id": "j9TsiTgYZGw"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Getaway (IB Tech Print)",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-11-the-getaway-charley-varrick/"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-11",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4250?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "Rocky 50th Anniversary",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "21:45",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=247308&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+21:45:00&cmp=ST_Fathom:Rocky-50th-Anniversary_nat_"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "HAPPINESS",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "22:00",
-      "format": null,
-      "series": "You Can't Stream That On Television",
-      "url": "https://www.americancinematheque.com/now-showing/happiness-11-11-2026/"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Charley Varrick",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "22:00",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-11-the-getaway-charley-varrick/",
-      "youtube_trailer_id": "vTaHRkAdBAw"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "22:10",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-11+22:10:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-11",
-      "time": "22:20",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-11+22:20:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-12",
+      "date": "2026-11-16",
       "time": "10:30",
       "format": null,
       "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-12+10:30:00&cmp=ST_Fathom:JIMMY_nat_",
+      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-16+10:30:00&cmp=ST_Fathom:JIMMY_nat_",
       "youtube_trailer_id": "4nrB_T3F53Y"
     },
     {
       "theater": "fathom-17327",
       "title": "JIMMY",
       "year": null,
-      "date": "2026-11-12",
-      "time": "13:30",
+      "date": "2026-11-16",
+      "time": "10:45",
       "format": null,
       "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-12+13:30:00&cmp=ST_Fathom:JIMMY_nat_",
+      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-16+10:45:00&cmp=ST_Fathom:JIMMY_nat_",
       "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-12",
-      "time": "15:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4244?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "16:40",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-12+16:40:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "aero",
-      "title": "CLUB KID in 35mm",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "17:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/club-kid-11-12-2026/"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Forge Your Node – Build Your Own Mesh Network Device Workshop W/ Lisa Winter",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "18:30",
-      "format": null,
-      "series": null,
-      "url": "https://dice.fm/partner/tickets/event/3o862p-cybercon-forge-your-node-build-your-own-mesh-network-device-workshop-w-lisa-winter-12th-nov-brain-dead-studios-los-angeles-tickets?dice_id=10811529&amp;dice_channel=web&amp;dice_tags=organic&amp;dice_campaign=Brain+Dead+Amusements+LLC&amp;dice_feature=mio_marketing&amp;_branch_match_id=1256662425127165609&amp;utm_source=web&amp;utm_campaign=Brain+Dead+Amusements+LLC&amp;utm_medium=mio_marketing&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fdLsTRIMjc0MDE2NbSvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQAhf3M6OwAAAA%3D%3D"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "ONE FINE MORNING",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "19:00",
-      "format": null,
-      "series": "Léa Seydoux: An American Cinematheque Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/one-fine-morning-11-12-2026/",
-      "youtube_trailer_id": "36aObn0Iges"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-12+19:30:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Getaway (IB Tech Print)",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-12-the-getaway-charley-varrick/"
-    },
-    {
-      "theater": "vista",
-      "title": "Beau Geste",
-      "year": 1926,
-      "date": "2026-11-12",
-      "time": "19:30",
-      "format": "35mm",
-      "series": null,
-      "url": "https://ticketing.uswest.veezi.com/purchase/4251?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Iggor Cavalera Live Score to Angels Egg",
-      "year": 1985,
-      "date": "2026-11-12",
-      "time": "20:30",
-      "format": "dcp",
-      "series": null,
-      "url": "https://dice.fm/partner/tickets/event/eo9ydd-cybercon-iggor-cavalera-live-score-to-angels-egg-1985-12th-nov-brain-dead-studios-los-angeles-tickets?dice_id=10811556&amp;dice_channel=web&amp;dice_tags=organic&amp;dice_campaign=Brain+Dead+Amusements+LLC&amp;dice_feature=mio_marketing&amp;_branch_match_id=1256662425127165609&amp;utm_source=web&amp;utm_campaign=Brain+Dead+Amusements+LLC&amp;utm_medium=mio_marketing&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fczSjFINDdPMTS2MLKvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDyoqE6OwAAAA%3D%3D"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "\"Gavotte\" / LULU",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "22:00",
-      "format": null,
-      "series": "The Immoral Tales of Walerian Borowczyk",
-      "url": "https://www.americancinematheque.com/now-showing/gavotte-lulu-11-12-2026/"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Charley Varrick",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "22:00",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-12-the-getaway-charley-varrick/",
-      "youtube_trailer_id": "vTaHRkAdBAw"
-    },
-    {
-      "theater": "fathom-17327",
-      "title": "JIMMY",
-      "year": null,
-      "date": "2026-11-12",
-      "time": "22:15",
-      "format": null,
-      "series": null,
-      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-12+22:15:00&cmp=ST_Fathom:JIMMY_nat_",
-      "youtube_trailer_id": "4nrB_T3F53Y"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "BLUE VELVET",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "13:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/blue-velvet-11-13-2026/",
-      "youtube_trailer_id": "R9ZB7OldM6Y"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Snatch",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "14:00",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-13-snatch-friday-matinee/",
-      "youtube_trailer_id": "ni4tEtuTccc"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Some Like It Hot",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "14:30",
-      "format": null,
-      "series": "Film Screening: Matinee",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "97TYs2YXbJw"
-    },
-    {
-      "theater": "aero",
-      "title": "BACKROOMS",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "14:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/backrooms-11-13-2026/",
-      "youtube_trailer_id": "0HjdiohVOik"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "IF I GO WILL THEY MISS ME",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "16:00",
-      "format": null,
-      "series": "Walter Thompson-Hernández's IF I GO WILL THEY MISS ME Limited Engagement",
-      "url": "https://www.americancinematheque.com/now-showing/if-i-go-will-they-miss-me-11-13-2026/",
-      "youtube_trailer_id": "aej2y_BBBFs"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Peow Studio Book Launch & Exhibition W/ Zimmerit Panel + Godzilla: Final Wars",
-      "year": 2004,
-      "date": "2026-11-13",
-      "time": "18:30",
-      "format": null,
-      "series": null,
-      "url": "https://dice.fm/partner/tickets/event/l8p5yr-cybercon-peow-studio-book-launch-exhibition-w-zimmerit-panel-godzilla-final-wars-13th-nov-brain-dead-studios-los-angeles-tickets?dice_id=10811685&amp;dice_channel=web&amp;dice_tags=organic&amp;dice_campaign=Brain+Dead+Amusements+LLC&amp;dice_feature=mio_marketing&amp;_branch_match_id=1256662425127165609&amp;utm_source=web&amp;utm_campaign=Brain+Dead+Amusements+LLC&amp;utm_medium=mio_marketing&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1a%2BwNDQzsExMTjawNLevK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQCKTT9uOwAAAA%3D%3D"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Burning",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "18:30",
-      "format": null,
-      "series": "Grindhouse",
-      "url": "https://thenewbev.com/program/november-13-the-burning-madman/",
-      "youtube_trailer_id": "KTvr0SJQ_WM"
-    },
-    {
-      "theater": "egyptian",
-      "title": "LA LA LAND in 70mm",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "19:00",
-      "format": "70mm",
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/la-la-land-in-70mm-11-13-2026/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "ASH AND CRAYONS",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/ash-and-crayons-11-13-2026/"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Black Fire",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "19:30",
-      "format": null,
-      "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar"
-    },
-    {
-      "theater": "aero",
-      "title": "GENTLE MONSTER",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "19:30",
-      "format": null,
-      "series": "Léa Seydoux: An American Cinematheque Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/gentle-monster-11-13-2026/",
-      "youtube_trailer_id": "hsOgBqDSi9M"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Madman",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "20:30",
-      "format": null,
-      "series": "Grindhouse",
-      "url": "https://thenewbev.com/program/november-13-the-burning-madman/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "RAISE THE RED LANTERN",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "22:00",
-      "format": null,
-      "series": "Zhang Yimou's RAISE THE RED LANTERN Limited Engagement",
-      "url": "https://www.americancinematheque.com/now-showing/raise-the-red-lantern-11-13-2026/",
-      "youtube_trailer_id": "tLYJzEtmavg"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Once Upon A Time In… Hollywood",
-      "year": null,
-      "date": "2026-11-13",
-      "time": "23:59",
-      "format": null,
-      "series": "Midnight",
-      "url": "https://thenewbev.com/program/november-13-once-upon-a-time-in-hollywood-midnight-show/",
-      "youtube_trailer_id": "vKgITiP1UMg"
-    },
-    {
-      "theater": "vista",
-      "title": "Lady Terminator",
-      "year": 1988,
-      "date": "2026-11-13",
-      "time": "23:59",
-      "format": "35mm",
-      "series": "Midnight",
-      "url": "https://ticketing.uswest.veezi.com/purchase/4258?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "Wx_agCH3xmk"
-    },
-    {
-      "theater": "egyptian",
-      "title": "LA BOLA NEGRA",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "10:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/la-bola-negra-11-14-2026/",
-      "youtube_trailer_id": "lBVxKt0gKDY"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Kung Fu Panda",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "10:00",
-      "format": null,
-      "series": "Kiddie Matinee",
-      "url": "https://thenewbev.com/program/november-14-kung-fu-panda-cartoon-club-presents/",
-      "youtube_trailer_id": "NRc-ze7Wrxw"
-    },
-    {
-      "theater": "vista",
-      "title": "The Westerner",
-      "year": 1940,
-      "date": "2026-11-14",
-      "time": "10:00",
-      "format": "35mm",
-      "series": "Matinee",
-      "url": "https://ticketing.uswest.veezi.com/purchase/4260?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "NISDm92yv3A"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Frankenweenie",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "11:00",
-      "format": null,
-      "series": "Film Screening: Matinee",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "2e1_XxakM-I"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "TWO SEASONS, TWO STRANGERS",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "12:00",
-      "format": null,
-      "series": "Unspoken Gestures: A Shō Miyake Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/two-seasons-two-strangers-11-14-2026/",
-      "youtube_trailer_id": "lC0xyNHI5fc"
-    },
-    {
-      "theater": "aero",
-      "title": "POSSIBLE LOVE",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "13:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/possible-love-11-14-2026/",
-      "youtube_trailer_id": "zd3qXH9qN70"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Ratatouille",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "14:00",
-      "format": null,
-      "series": "Kiddie Matinee",
-      "url": "https://thenewbev.com/program/november-14-ratatouille-family-matinee/",
-      "youtube_trailer_id": "NgsQ8mVkN8w"
-    },
-    {
-      "theater": "egyptian",
-      "title": "BLUE IS THE WARMEST COLOR",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "14:30",
-      "format": null,
-      "series": "Léa Seydoux: An American Cinematheque Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/blue-is-the-warmest-color-11-14-2026/",
-      "youtube_trailer_id": "J_ekBcdPzIk"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "DÉJÀ VU",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "15:00",
-      "format": null,
-      "series": "Unspoken Gestures: A Shō Miyake Retrospective",
-      "url": "https://www.americancinematheque.com/now-showing/deja-vu-11-14-2026/",
-      "youtube_trailer_id": "VdCRypsfZDE"
-    },
-    {
-      "theater": "aero",
-      "title": "THREE BILLBOARDS OUTSIDE EBBING, MISSOURI / WILD HORSE NINE / Surprise Film",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "17:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/three-billboards-outside-ebbing-missouri-wild-horse-nine-surprise-film-11-14-2026/",
-      "youtube_trailer_id": "nefD7UOhLCo"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "ALL OF A SUDDEN",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "17:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/all-of-a-sudden-11-14-2026/",
-      "youtube_trailer_id": "2AxtdPvDojA"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Jealousy Is My Middle Name",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "18:30",
-      "format": null,
-      "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "CELz0jcflUE"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: SOSUPERSAM & Kyle Ng Live Score to Interstella 5555",
-      "year": 2003,
-      "date": "2026-11-14",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://dice.fm/partner/tickets/event/3o86vp-cybercon-sosupersam-kyle-ng-live-score-to-interstella-5555-2003-14th-nov-brain-dead-studios-los-angeles-tickets?dice_id=10811396&amp;dice_channel=web&amp;dice_tags=organic&amp;dice_campaign=DICE&amp;dice_feature=mio_marketing&amp;_branch_match_id=1256662425127165609&amp;utm_source=web&amp;utm_campaign=DICE&amp;utm_medium=mio_marketing&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fc2sUhLNjO0NDVKtLSvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQCeS4ipOwAAAA%3D%3D"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Last Picture Show (Director’s Cut)",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-14-the-last-picture-show/"
-    },
-    {
-      "theater": "egyptian",
-      "title": "LA LA LAND in 70mm",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "19:30",
-      "format": "70mm",
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/la-la-land-in-70mm-11-14-2026/"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Rubber’s Lover",
-      "year": 1996,
-      "date": "2026-11-14",
-      "time": "21:15",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1453313/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "BENEDETTA",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "21:45",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/benedetta-11-14-2026/",
-      "youtube_trailer_id": "jMpPVqyOTw8"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Jerk",
-      "year": null,
-      "date": "2026-11-14",
-      "time": "23:59",
-      "format": null,
-      "series": "Midnight",
-      "url": "https://thenewbev.com/program/november-14-the-jerk-midnight-show/",
-      "youtube_trailer_id": "lduFFNqBFPs"
-    },
-    {
-      "theater": "vista",
-      "title": "Lady Terminator",
-      "year": 1988,
-      "date": "2026-11-14",
-      "time": "23:59",
-      "format": "35mm",
-      "series": "Midnight",
-      "url": "https://ticketing.uswest.veezi.com/purchase/4259?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "Wx_agCH3xmk"
-    },
-    {
-      "theater": "aero",
-      "title": "YOU CAN SEE EVERYTHING",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "10:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/you-can-see-everything-11-15-2026/",
-      "youtube_trailer_id": "IEx8D1Wb__U"
-    },
-    {
-      "theater": "vista",
-      "title": "The Westerner",
-      "year": 1940,
-      "date": "2026-11-15",
-      "time": "10:00",
-      "format": "35mm",
-      "series": "Matinee",
-      "url": "https://ticketing.uswest.veezi.com/purchase/4261?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
-      "youtube_trailer_id": "NISDm92yv3A"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Blade Runner",
-      "year": 1982,
-      "date": "2026-11-15",
-      "time": "13:00",
-      "format": "35mm",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1441038/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "THE PATSY",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "13:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/the-patsy-11-15-2026/",
-      "youtube_trailer_id": "8uQDU364YGk"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "The Grand Budapest Hotel",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "14:00",
-      "format": null,
-      "series": "Film Screening: Matinee",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "G1jG8HUY4zI"
-    },
-    {
-      "theater": "egyptian",
-      "title": "LA LA LAND in 70mm",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "14:00",
-      "format": "70mm",
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/la-la-land-in-70mm-11-15-2026/"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "Ratatouille",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "14:00",
-      "format": null,
-      "series": "Kiddie Matinee",
-      "url": "https://thenewbev.com/program/november-15-ratatouille-family-matinee/",
-      "youtube_trailer_id": "NgsQ8mVkN8w"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Paisàn",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "14:30",
-      "format": null,
-      "series": "Film Screening: Matinee",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "JM_KpDmdF98"
-    },
-    {
-      "theater": "aero",
-      "title": "PRIMETIME / LICORICE PIZZA",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "14:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/primetime-licorice-pizza-11-15-2026/"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "CYBERCON: Blade Runner 2049",
-      "year": 2017,
-      "date": "2026-11-15",
-      "time": "15:15",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1441040/"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "ALL THE LONG NIGHTS",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "16:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/all-the-long-nights-11-15-2026/",
-      "youtube_trailer_id": "eFxbmiDW6lo"
-    },
-    {
-      "theater": "egyptian",
-      "title": "LAWRENCE OF ARABIA in 70MM",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "18:00",
-      "format": "70mm",
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/lawrence-of-arabia-in-70mm-11-15-2026/"
-    },
-    {
-      "theater": "new-beverly",
-      "title": "The Last Picture Show (Director’s Cut)",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "18:30",
-      "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-15-the-last-picture-show/"
-    },
-    {
-      "theater": "academy-museum",
-      "title": "Germany Year Zero",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "19:00",
-      "format": null,
-      "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "JM_KpDmdF98"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "BELA LUGOSI MEETS A BROOKLYN GORILLA",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "19:00",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/bela-lugosi-meets-a-brooklyn-gorilla-11-15-2026/",
-      "youtube_trailer_id": "OrRtIp3jylk"
-    },
-    {
-      "theater": "los-feliz-theatre",
-      "title": "THE BEAST",
-      "year": null,
-      "date": "2026-11-15",
-      "time": "21:30",
-      "format": null,
-      "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/the-beast-11-15-2026/",
-      "youtube_trailer_id": "UkMuGKqAux4"
     },
     {
       "theater": "academy-museum",
@@ -1467,7 +157,7 @@
       "format": null,
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "X2CQ4EXkdSA"
+      "youtube_trailer_id": "m_nT4r4-vkQ"
     },
     {
       "theater": "los-feliz-theatre",
@@ -1488,7 +178,8 @@
       "time": "19:30",
       "format": null,
       "series": "Film Screening",
-      "url": "https://www.academymuseum.org/en/calendar"
+      "url": "https://www.academymuseum.org/en/calendar",
+      "youtube_trailer_id": "hverb7siYJ8"
     },
     {
       "theater": "aero",
@@ -1499,7 +190,7 @@
       "format": null,
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/the-debut-11-16-2026/",
-      "youtube_trailer_id": "QZFOUWJULvU"
+      "youtube_trailer_id": "lF9n06SMDPU"
     },
     {
       "theater": "new-beverly",
@@ -1535,6 +226,39 @@
     },
     {
       "theater": "los-feliz-theatre",
+      "title": "BLUE VELVET",
+      "year": null,
+      "date": "2026-11-16",
+      "time": "22:15",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/blue-velvet-11-16-2026/",
+      "youtube_trailer_id": "R9ZB7OldM6Y"
+    },
+    {
+      "theater": "fathom-17327",
+      "title": "JIMMY",
+      "year": null,
+      "date": "2026-11-17",
+      "time": "10:45",
+      "format": null,
+      "series": null,
+      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-17+10:45:00&cmp=ST_Fathom:JIMMY_nat_",
+      "youtube_trailer_id": "4nrB_T3F53Y"
+    },
+    {
+      "theater": "fathom-17364",
+      "title": "JIMMY",
+      "year": null,
+      "date": "2026-11-17",
+      "time": "11:15",
+      "format": null,
+      "series": null,
+      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-17+11:15:00&cmp=ST_Fathom:JIMMY_nat_",
+      "youtube_trailer_id": "4nrB_T3F53Y"
+    },
+    {
+      "theater": "los-feliz-theatre",
       "title": "TO CATCH A THIEF",
       "year": null,
       "date": "2026-11-17",
@@ -1554,6 +278,17 @@
       "series": "Walter Thompson-Hernández's IF I GO WILL THEY MISS ME Limited Engagement",
       "url": "https://www.americancinematheque.com/now-showing/if-i-go-will-they-miss-me-11-17-2026/",
       "youtube_trailer_id": "aej2y_BBBFs"
+    },
+    {
+      "theater": "aero",
+      "title": "THE SPIRAL",
+      "year": null,
+      "date": "2026-11-17",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/the-spiral-11-17-2026/",
+      "youtube_trailer_id": "7dgjBjEpMsM"
     },
     {
       "theater": "new-beverly",
@@ -1584,9 +319,31 @@
       "date": "2026-11-17",
       "time": "22:15",
       "format": null,
-      "series": null,
+      "series": "Zhang Yimou's RAISE THE RED LANTERN Limited Engagement",
       "url": "https://www.americancinematheque.com/now-showing/raise-the-red-lantern-11-17-2026/",
       "youtube_trailer_id": "tLYJzEtmavg"
+    },
+    {
+      "theater": "fathom-17327",
+      "title": "JIMMY",
+      "year": null,
+      "date": "2026-11-18",
+      "time": "10:45",
+      "format": null,
+      "series": null,
+      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAEDS&date=2026-11-18+10:45:00&cmp=ST_Fathom:JIMMY_nat_",
+      "youtube_trailer_id": "4nrB_T3F53Y"
+    },
+    {
+      "theater": "fathom-17364",
+      "title": "JIMMY",
+      "year": null,
+      "date": "2026-11-18",
+      "time": "12:15",
+      "format": null,
+      "series": null,
+      "url": "http://www.fandango.com/redirect.aspx?mid=243764&a=13191&wssaffid=13191&tid=AAAWX&date=2026-11-18+12:15:00&cmp=ST_Fathom:JIMMY_nat_",
+      "youtube_trailer_id": "4nrB_T3F53Y"
     },
     {
       "theater": "los-feliz-theatre",
@@ -1596,7 +353,8 @@
       "time": "16:47",
       "format": null,
       "series": null,
-      "url": "https://www.americancinematheque.com/now-showing/the-sacrifice-11-18-2026/"
+      "url": "https://www.americancinematheque.com/now-showing/the-sacrifice-11-18-2026/",
+      "youtube_trailer_id": "nZmsramIzf4"
     },
     {
       "theater": "academy-museum",
@@ -1610,6 +368,17 @@
       "youtube_trailer_id": "5ILKbeW4Fd8"
     },
     {
+      "theater": "aero",
+      "title": "THE CHANGELING",
+      "year": null,
+      "date": "2026-11-18",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/the-changeling-11-18-2026/",
+      "youtube_trailer_id": "UwUI7d5TgGA"
+    },
+    {
       "theater": "new-beverly",
       "title": "Deliverance",
       "year": null,
@@ -1619,6 +388,17 @@
       "series": null,
       "url": "https://thenewbev.com/program/november-18-deliverance-zardoz/",
       "youtube_trailer_id": "iuOUF1-4P3c"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "BLUE VELVET",
+      "year": null,
+      "date": "2026-11-18",
+      "time": "19:45",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/blue-velvet-11-18-2026/",
+      "youtube_trailer_id": "R9ZB7OldM6Y"
     },
     {
       "theater": "new-beverly",
@@ -1648,7 +428,7 @@
       "date": "2026-11-19",
       "time": "16:47",
       "format": null,
-      "series": null,
+      "series": "Golden Hour",
       "url": "https://www.americancinematheque.com/now-showing/days-of-heaven-golden-hour-11-19-2026/",
       "youtube_trailer_id": "7LAqRFoT97o"
     },
@@ -1672,6 +452,17 @@
       "format": "dcp",
       "series": null,
       "url": "https://dice.fm/partner/tickets/event/v3556v-after-presents-the-cell-2000-19th-nov-brain-dead-studios-los-angeles-tickets?dice_id=10891673&amp;dice_channel=web&amp;dice_tags=organic&amp;dice_campaign=Brain+Dead+Amusements+LLC&amp;dice_feature=mio_marketing&amp;_branch_match_id=1644066407311623944&amp;utm_source=web&amp;utm_campaign=Brain+Dead+Amusements+LLC&amp;utm_medium=mio_marketing&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1XdJNDJOM0o2MU5KNLWvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDP6%2F8fOwAAAA%3D%3D"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "FRIDAY NIGHT LIGHTS",
+      "year": null,
+      "date": "2026-11-19",
+      "time": "19:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/friday-night-lights-11-19-2026/",
+      "youtube_trailer_id": "dzwJFNZLvxo"
     },
     {
       "theater": "academy-museum",
@@ -1708,12 +499,23 @@
     },
     {
       "theater": "los-feliz-theatre",
+      "title": "GREEN ROOM",
+      "year": null,
+      "date": "2026-11-19",
+      "time": "22:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/green-room-11-19-2026/",
+      "youtube_trailer_id": "T_Tklsuiako"
+    },
+    {
+      "theater": "los-feliz-theatre",
       "title": "RAISE THE RED LANTERN",
       "year": null,
       "date": "2026-11-20",
       "time": "13:00",
       "format": null,
-      "series": null,
+      "series": "Zhang Yimou's RAISE THE RED LANTERN Limited Engagement",
       "url": "https://www.americancinematheque.com/now-showing/raise-the-red-lantern-11-20-2026/",
       "youtube_trailer_id": "tLYJzEtmavg"
     },
@@ -1737,7 +539,7 @@
       "format": null,
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "X2CQ4EXkdSA"
+      "youtube_trailer_id": "m_nT4r4-vkQ"
     },
     {
       "theater": "los-feliz-theatre",
@@ -1781,6 +583,17 @@
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/the-last-picture-show-11-20-2026/",
       "youtube_trailer_id": "NufO2KXHbKQ"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "THE VIOLINIST",
+      "year": null,
+      "date": "2026-11-20",
+      "time": "19:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/the-violinist-11-20-2026/",
+      "youtube_trailer_id": "AeE2e-r8ukQ"
     },
     {
       "theater": "new-beverly",
@@ -1893,6 +706,17 @@
       "youtube_trailer_id": "tJp5pLsXhgo"
     },
     {
+      "theater": "egyptian",
+      "title": "CONTEMPT",
+      "year": null,
+      "date": "2026-11-21",
+      "time": "11:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/contempt-11-21-2026/",
+      "youtube_trailer_id": "y-zc8r3F_QY"
+    },
+    {
       "theater": "brain-dead",
       "title": "Chicken Run",
       "year": 2000,
@@ -1902,6 +726,17 @@
       "series": null,
       "url": "https://studios.wearebraindead.com/purchase/1452413/",
       "youtube_trailer_id": "rUSoF2nwPw8"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "THE TREASURE OF THE SIERRA MADRE",
+      "year": null,
+      "date": "2026-11-21",
+      "time": "13:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/the-treasure-of-the-sierra-madre-11-21-2026/",
+      "youtube_trailer_id": "1DwXNmorsa0"
     },
     {
       "theater": "aero",
@@ -1934,7 +769,7 @@
       "format": null,
       "series": "Film Screening: Matinee",
       "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "X2CQ4EXkdSA"
+      "youtube_trailer_id": "m_nT4r4-vkQ"
     },
     {
       "theater": "brain-dead",
@@ -1946,6 +781,17 @@
       "series": null,
       "url": "https://studios.wearebraindead.com/purchase/1452417/",
       "youtube_trailer_id": "XZF3VRGgxTU"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "THE SACRIFICE",
+      "year": null,
+      "date": "2026-11-21",
+      "time": "16:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/the-sacrifice-11-21-2026/",
+      "youtube_trailer_id": "nZmsramIzf4"
     },
     {
       "theater": "aero",
@@ -1979,6 +825,17 @@
       "series": null,
       "url": "https://studios.wearebraindead.com/purchase/1452418/",
       "youtube_trailer_id": "GVL5_I4CvTc"
+    },
+    {
+      "theater": "aero",
+      "title": "THE MOSQUITO BOWL",
+      "year": null,
+      "date": "2026-11-21",
+      "time": "19:00",
+      "format": null,
+      "series": "Peter Berg: An American Cinematheque Retrospective",
+      "url": "https://www.americancinematheque.com/now-showing/the-mosquito-bowl-11-21-2026/",
+      "youtube_trailer_id": "F6YDzPfjH4I"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2066,6 +923,17 @@
       "series": "Matinee",
       "url": "https://ticketing.uswest.veezi.com/purchase/4263?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
       "youtube_trailer_id": "BgHNF35fau8"
+    },
+    {
+      "theater": "egyptian",
+      "title": "THAT DAY, ON THE BEACH",
+      "year": null,
+      "date": "2026-11-22",
+      "time": "12:00",
+      "format": null,
+      "series": "Transcendental Appointments",
+      "url": "https://www.americancinematheque.com/now-showing/that-day-on-the-beach-11-22-2026/",
+      "youtube_trailer_id": "WUk7PRE0W9c"
     },
     {
       "theater": "brain-dead",
@@ -2174,6 +1042,17 @@
       "youtube_trailer_id": "NK8ETgSLRpA"
     },
     {
+      "theater": "los-feliz-theatre",
+      "title": "RAISE THE RED LANTERN",
+      "year": null,
+      "date": "2026-11-22",
+      "time": "16:00",
+      "format": null,
+      "series": "Zhang Yimou's RAISE THE RED LANTERN Limited Engagement",
+      "url": "https://www.americancinematheque.com/now-showing/raise-the-red-lantern-11-22-2026/",
+      "youtube_trailer_id": "tLYJzEtmavg"
+    },
+    {
       "theater": "aero",
       "title": "CAMERON WINTER AT CARNEGIE HALL",
       "year": null,
@@ -2191,19 +1070,9 @@
       "date": "2026-11-22",
       "time": "16:45",
       "format": null,
-      "series": null,
+      "series": "Golden Hour",
       "url": "https://www.americancinematheque.com/now-showing/the-new-world-11-22-2026/",
       "youtube_trailer_id": "i2LdlqW26zc"
-    },
-    {
-      "theater": "brain-dead",
-      "title": "Stardust: A Story of Love and Architecture",
-      "year": 2025,
-      "date": "2026-11-22",
-      "time": "18:00",
-      "format": "dcp",
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1459911/"
     },
     {
       "theater": "academy-museum",
@@ -2227,6 +1096,17 @@
       "url": "https://thenewbev.com/program/november-22-hot-water/"
     },
     {
+      "theater": "los-feliz-theatre",
+      "title": "LONE SURVIVOR",
+      "year": null,
+      "date": "2026-11-22",
+      "time": "19:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/lone-survivor-11-22-2026/",
+      "youtube_trailer_id": "0cPJ1ifjBDs"
+    },
+    {
       "theater": "aero",
       "title": "CAMERON WINTER AT CARNEGIE HALL",
       "year": null,
@@ -2236,6 +1116,16 @@
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/cameron-winter-at-carnegie-hall-11-22-2026/",
       "youtube_trailer_id": "E8olY56RpkU"
+    },
+    {
+      "theater": "brain-dead",
+      "title": "Stardust: A Story of Love and Architecture",
+      "year": 2025,
+      "date": "2026-11-22",
+      "time": "20:00",
+      "format": "dcp",
+      "series": null,
+      "url": "https://studios.wearebraindead.com/purchase/1478546/"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2329,7 +1219,7 @@
       "format": null,
       "series": null,
       "url": "https://thenewbev.com/program/november-23-paper-moon-nickelodeon/",
-      "youtube_trailer_id": "5DMaI93ODTM"
+      "youtube_trailer_id": "QDVQOaphlHU"
     },
     {
       "theater": "new-beverly",
@@ -2399,14 +1289,13 @@
     },
     {
       "theater": "new-beverly",
-      "title": "Paper Moon",
+      "title": "Paper Moon (Special Guests)",
       "year": null,
       "date": "2026-11-24",
       "time": "19:30",
       "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-24-paper-moon-nickelodeon/",
-      "youtube_trailer_id": "5DMaI93ODTM"
+      "series": "Special Event",
+      "url": "https://thenewbev.com/program/november-24-paper-moon-nickelodeon/"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2421,14 +1310,13 @@
     },
     {
       "theater": "new-beverly",
-      "title": "Nickelodeon",
+      "title": "Nickelodeon (Special Guest)",
       "year": null,
       "date": "2026-11-24",
       "time": "21:40",
       "format": null,
-      "series": null,
-      "url": "https://thenewbev.com/program/november-24-paper-moon-nickelodeon/",
-      "youtube_trailer_id": "i5mHxgRvGDw"
+      "series": "Special Event",
+      "url": "https://thenewbev.com/program/november-24-paper-moon-nickelodeon/"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2541,6 +1429,17 @@
       "youtube_trailer_id": "fJH-wfSXnWg"
     },
     {
+      "theater": "los-feliz-theatre",
+      "title": "INSIDE JOB",
+      "year": null,
+      "date": "2026-11-27",
+      "time": "13:00",
+      "format": null,
+      "series": "Film by the Foot",
+      "url": "https://www.americancinematheque.com/now-showing/inside-job-11-27-2026/",
+      "youtube_trailer_id": "FzrBurlJUNk"
+    },
+    {
       "theater": "new-beverly",
       "title": "Once Upon A Time In… Hollywood",
       "year": null,
@@ -2550,6 +1449,17 @@
       "series": null,
       "url": "https://thenewbev.com/program/november-27-once-upon-a-time-in-hollywood-friday-matinee/",
       "youtube_trailer_id": "vKgITiP1UMg"
+    },
+    {
+      "theater": "egyptian",
+      "title": "TO LIVE AND DIE IN L.A.",
+      "year": null,
+      "date": "2026-11-27",
+      "time": "15:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/to-live-and-die-in-la-11-29-2026/",
+      "youtube_trailer_id": "BQGB-wufbQU"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2583,6 +1493,37 @@
       "series": null,
       "url": "https://thenewbev.com/program/november-27-the-further-mis-adventures-of-cliff-booth/",
       "youtube_trailer_id": "fJH-wfSXnWg"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "TO DIE FOR",
+      "year": null,
+      "date": "2026-11-27",
+      "time": "19:15",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/to-die-for-11-27-2026/"
+    },
+    {
+      "theater": "aero",
+      "title": "BEING THERE / DR. STRANGELOVE",
+      "year": null,
+      "date": "2026-11-27",
+      "time": "19:30",
+      "format": null,
+      "series": "Title Design By",
+      "url": "https://www.americancinematheque.com/now-showing/being-there-dr-strangelove-11-27-2026/"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "MALLRATS",
+      "year": null,
+      "date": "2026-11-27",
+      "time": "22:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/mallrats-11-27-2026/",
+      "youtube_trailer_id": "XpshU8YDYjw"
     },
     {
       "theater": "new-beverly",
@@ -2640,6 +1581,17 @@
       "youtube_trailer_id": "VuIaCvIFWIA"
     },
     {
+      "theater": "egyptian",
+      "title": "ALICE IN WONDERLAND",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "13:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/alice-in-wonderland-11-28-2026/",
+      "youtube_trailer_id": "9POCgSRVvf0"
+    },
+    {
       "theater": "new-beverly",
       "title": "Batman Returns",
       "year": null,
@@ -2662,6 +1614,28 @@
       "youtube_trailer_id": "iZOTTxwzyMU"
     },
     {
+      "theater": "aero",
+      "title": "SINGIN' IN THE RAIN",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "16:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/singin-in-the-rain-11-28-2026/",
+      "youtube_trailer_id": "lSE8sl2-PZg"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "DEVIL IN A BLUE DRESS",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "16:00",
+      "format": null,
+      "series": "Title Design By",
+      "url": "https://www.americancinematheque.com/now-showing/devil-in-a-blue-dress-11-28-2026/",
+      "youtube_trailer_id": "7bWekMNDfT8"
+    },
+    {
       "theater": "egyptian",
       "title": "ISHTAR",
       "year": null,
@@ -2671,6 +1645,17 @@
       "series": null,
       "url": "https://www.americancinematheque.com/now-showing/ishtar-11-28-2026/",
       "youtube_trailer_id": "z6_Odb-Bd1E"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "A CLOCKWORK ORANGE",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "19:00",
+      "format": null,
+      "series": "Title Design By",
+      "url": "https://www.americancinematheque.com/now-showing/a-clockwork-orange-11-28-2026/",
+      "youtube_trailer_id": "2meAsIclTzQ"
     },
     {
       "theater": "new-beverly",
@@ -2693,6 +1678,38 @@
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
       "youtube_trailer_id": "kjorQxtgyks"
+    },
+    {
+      "theater": "aero",
+      "title": "STOP MAKING SENSE",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "19:30",
+      "format": null,
+      "series": "Title Design By",
+      "url": "https://www.americancinematheque.com/now-showing/stop-making-sense-11-28-2026/",
+      "youtube_trailer_id": "-rjMwSTeVeo"
+    },
+    {
+      "theater": "egyptian",
+      "title": "EVIL DEAD Trilogy",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/evil-dead-trilogy-11-28-2026/"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "BRAM STOKER'S DRACULA",
+      "year": null,
+      "date": "2026-11-28",
+      "time": "22:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/bram-stokers-dracula-11-28-2026/",
+      "youtube_trailer_id": "xD6JMxOGBLQ"
     },
     {
       "theater": "new-beverly",
@@ -2726,6 +1743,17 @@
       "series": "Matinee",
       "url": "https://ticketing.uswest.veezi.com/purchase/4265?siteToken=20xhpa3yt2hhkwt4zjvfcwsaww",
       "youtube_trailer_id": "mZee6XQy0Ws"
+    },
+    {
+      "theater": "aero",
+      "title": "THE VIRGIN SUICIDES",
+      "year": null,
+      "date": "2026-11-29",
+      "time": "13:00",
+      "format": null,
+      "series": "Transcendental Appointments",
+      "url": "https://www.americancinematheque.com/now-showing/the-virgin-suicides-11-29-2026/",
+      "youtube_trailer_id": "8kDcCGlaBwY"
     },
     {
       "theater": "academy-museum",
@@ -2780,7 +1808,7 @@
       "format": null,
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar",
-      "youtube_trailer_id": "PnmTi7hSjrA"
+      "youtube_trailer_id": "7f-8kO-YY1A"
     },
     {
       "theater": "new-beverly",
@@ -2792,6 +1820,27 @@
       "series": null,
       "url": "https://thenewbev.com/program/november-29-the-further-mis-adventures-of-cliff-booth/",
       "youtube_trailer_id": "fJH-wfSXnWg"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "TO DIE FOR",
+      "year": null,
+      "date": "2026-11-29",
+      "time": "19:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/to-die-for-11-29-2026/"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "A CLOCKWORK ORANGE",
+      "year": null,
+      "date": "2026-11-29",
+      "time": "22:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/a-clockwork-orange-11-29-2026/",
+      "youtube_trailer_id": "2meAsIclTzQ"
     },
     {
       "theater": "los-feliz-theatre",
@@ -2812,6 +1861,17 @@
       "format": null,
       "series": "Film Screening",
       "url": "https://www.academymuseum.org/en/calendar"
+    },
+    {
+      "theater": "aero",
+      "title": "TANGLES",
+      "year": null,
+      "date": "2026-11-30",
+      "time": "19:30",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/tangles-11-30-2026/",
+      "youtube_trailer_id": "mdGrH_f4wJw"
     },
     {
       "theater": "brain-dead",
@@ -2858,6 +1918,17 @@
       "youtube_trailer_id": "fJH-wfSXnWg"
     },
     {
+      "theater": "los-feliz-theatre",
+      "title": "FILIPIÑANA",
+      "year": null,
+      "date": "2026-12-02",
+      "time": "19:00",
+      "format": null,
+      "series": null,
+      "url": "https://www.americancinematheque.com/now-showing/filipinana-12-02-2026/",
+      "youtube_trailer_id": "Mq-7rJqNJ4I"
+    },
+    {
       "theater": "new-beverly",
       "title": "The Further Mis-Adventures of Cliff Booth",
       "year": null,
@@ -2869,17 +1940,6 @@
       "youtube_trailer_id": "fJH-wfSXnWg"
     },
     {
-      "theater": "brain-dead",
-      "title": "Lemonade Blessing",
-      "year": 2025,
-      "date": "2026-12-03",
-      "time": "19:30",
-      "format": null,
-      "series": null,
-      "url": "https://studios.wearebraindead.com/purchase/1447613/",
-      "youtube_trailer_id": "VXtRCQk_Jvo"
-    },
-    {
       "theater": "new-beverly",
       "title": "The Further Mis-Adventures of Cliff Booth",
       "year": null,
@@ -2889,6 +1949,28 @@
       "series": null,
       "url": "https://thenewbev.com/program/december-3-the-further-mis-adventures-of-cliff-booth/",
       "youtube_trailer_id": "fJH-wfSXnWg"
+    },
+    {
+      "theater": "brain-dead",
+      "title": "Lemonade Blessing",
+      "year": 2025,
+      "date": "2026-12-03",
+      "time": "21:15",
+      "format": null,
+      "series": null,
+      "url": "https://studios.wearebraindead.com/purchase/1447613/",
+      "youtube_trailer_id": "VXtRCQk_Jvo"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "THE MATCH FACTORY GIRL",
+      "year": null,
+      "date": "2026-12-04",
+      "time": "13:00",
+      "format": null,
+      "series": "Film by the Foot",
+      "url": "https://www.americancinematheque.com/now-showing/the-match-factory-girl-12-04-2026/",
+      "youtube_trailer_id": "Vf_D3ZzYLy0"
     },
     {
       "theater": "new-beverly",
@@ -2994,6 +2076,16 @@
       "format": null,
       "series": null,
       "url": "http://www.fandango.com/redirect.aspx?mid=248198&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-07+19:00:00&cmp=ST_Fathom:Romeo-Juliet_nat_"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "Cinematic Void Presents SANTO Y LA VENGANZA DE LA MOMIA",
+      "year": null,
+      "date": "2026-12-07",
+      "time": "19:00",
+      "format": "35mm",
+      "series": "Cinematic Void",
+      "url": "https://www.americancinematheque.com/now-showing/cinematic-void-presents-santo-y-la-venganza-de-la-momia-12-07-2026/"
     },
     {
       "theater": "new-beverly",
@@ -3108,6 +2200,26 @@
       "url": "http://www.fandango.com/redirect.aspx?mid=248199&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-13+19:00:00&cmp=ST_Fathom:Moulin-Rouge!_nat_"
     },
     {
+      "theater": "los-feliz-theatre",
+      "title": "Cinematic Void Presents LOS LEPROSOS Y EL SEXO",
+      "year": null,
+      "date": "2026-12-14",
+      "time": "19:00",
+      "format": null,
+      "series": "Cinematic Void",
+      "url": "https://www.americancinematheque.com/now-showing/cinematic-void-presents-los-leprosos-y-el-sexo-12-14-2026/"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "STUDENT CONFIDENTIAL",
+      "year": null,
+      "date": "2026-12-17",
+      "time": "19:00",
+      "format": null,
+      "series": "Killer Movies with Josh Miller",
+      "url": "https://www.americancinematheque.com/now-showing/student-confidential-12-17-2026/"
+    },
+    {
       "theater": "fathom-17327",
       "title": "It’s A Wonderful Life 80th Anniversary",
       "year": null,
@@ -3175,17 +2287,7 @@
       "time": "13:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-19+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "It’s A Wonderful Life 80th Anniversary",
-      "year": null,
-      "date": "2026-12-19",
-      "time": "13:00",
-      "format": null,
-      "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-19+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-19+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3195,7 +2297,17 @@
       "time": "13:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-19+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-19+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+    },
+    {
+      "theater": "fathom-17364",
+      "title": "It’s A Wonderful Life 80th Anniversary",
+      "year": null,
+      "date": "2026-12-19",
+      "time": "13:30",
+      "format": null,
+      "series": "Fathom’s Big Screen Classics",
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-19+13:30:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17327",
@@ -3205,7 +2317,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-19+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-19+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17364",
@@ -3215,7 +2327,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-19+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-19+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3225,7 +2337,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-19+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-19+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17327",
@@ -3235,17 +2347,7 @@
       "time": "13:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-20+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
-    },
-    {
-      "theater": "fathom-17364",
-      "title": "It’s A Wonderful Life 80th Anniversary",
-      "year": null,
-      "date": "2026-12-20",
-      "time": "13:00",
-      "format": null,
-      "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-20+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-20+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3255,7 +2357,17 @@
       "time": "13:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-20+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-20+13:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+    },
+    {
+      "theater": "fathom-17364",
+      "title": "It’s A Wonderful Life 80th Anniversary",
+      "year": null,
+      "date": "2026-12-20",
+      "time": "13:30",
+      "format": null,
+      "series": "Fathom’s Big Screen Classics",
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-20+13:30:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17327",
@@ -3265,7 +2377,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-20+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-20+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17364",
@@ -3275,7 +2387,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-20+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-20+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3285,7 +2397,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-20+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-20+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17327",
@@ -3295,7 +2407,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-21+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-21+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17364",
@@ -3305,7 +2417,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-21+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-21+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3315,7 +2427,17 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-21+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-21+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "Cinematic Void Presents SANTO CONTRA LA HIJA DE FRANKENSTEIN",
+      "year": null,
+      "date": "2026-12-21",
+      "time": "19:00",
+      "format": "35mm",
+      "series": "Cinematic Void",
+      "url": "https://www.americancinematheque.com/now-showing/cinematic-void-presents-santo-contra-la-hija-de-frankenstein-12-21-2026/"
     },
     {
       "theater": "fathom-17327",
@@ -3325,7 +2447,7 @@
       "time": "16:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-22+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-22+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17364",
@@ -3335,7 +2457,7 @@
       "time": "16:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-22+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-22+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3345,7 +2467,7 @@
       "time": "16:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-22+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-22+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17327",
@@ -3355,7 +2477,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-23+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-23+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17364",
@@ -3365,7 +2487,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-23+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-23+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3375,7 +2497,7 @@
       "time": "19:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-23+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-23+19:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17327",
@@ -3385,7 +2507,7 @@
       "time": "16:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-24+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAEDS&date=2026-12-24+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-17364",
@@ -3395,7 +2517,7 @@
       "time": "16:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-24+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAAWX&date=2026-12-24+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
     },
     {
       "theater": "fathom-18736",
@@ -3405,7 +2527,17 @@
       "time": "16:00",
       "format": null,
       "series": "Fathom’s Big Screen Classics",
-      "url": "http://www.fandango.com/redirect.aspx?partnertoken=6af244d9&mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-24+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+      "url": "http://www.fandango.com/redirect.aspx?mid=244296&a=13191&wssaffid=13191&tid=AAQZZ&date=2026-12-24+16:00:00&cmp=ST_Fathom:It's-A-Wonderful-Life-80th-Anniversary_nat_"
+    },
+    {
+      "theater": "los-feliz-theatre",
+      "title": "Cinematic Void Presents SANTO CONTRA HOMBRES INFERNALES",
+      "year": null,
+      "date": "2026-12-28",
+      "time": "19:00",
+      "format": null,
+      "series": "Cinematic Void",
+      "url": "https://www.americancinematheque.com/now-showing/cinematic-void-presents-santo-contra-hombres-infernales-12-28-2026/"
     }
   ],
   "amc_local_titles": []

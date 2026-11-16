@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -36,24 +36,11 @@
       "director": "Mike P. Nelson",
       "studio": "Lionsgate",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Thriller / Action",
       "cast": "Kiana Madeira, Jessica Rothe, Will Close, Juan Pablo Shuk",
       "notes": "Witness terror on a gigantic scale.",
       "youtube_trailer_id": "MQKqgFVU4dQ"
-    },
-    {
-      "tmdb_id": null,
-      "date": "2026-10-02",
-      "title": "Buddy: The Sing-Along Version",
-      "director": "—",
-      "studio": "Roadside Attractions",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "—",
-      "cast": "—",
-      "notes": "",
-      "youtube_trailer_id": null
     },
     {
       "tmdb_id": 1248832,
@@ -78,7 +65,7 @@
       "release_type": "limited",
       "genre": "Horror / Comedy",
       "cast": "Abimana Aryasatya, Almanzo Konoralma, Aming, Arswendy Bening Swara",
-      "notes": "",
+      "notes": "A bloody good time.",
       "youtube_trailer_id": "otL78_pk_A0"
     },
     {
@@ -114,7 +101,7 @@
       "director": "Jeremy Garelick",
       "studio": "Ketchup Entertainment",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Comedy",
       "cast": "Owen Wilson, Matt Rife, Christian Convery, Jolene",
       "notes": "One epic night.",
@@ -127,24 +114,11 @@
       "director": "Mike Nybroe",
       "studio": "Variance Films",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror",
       "cast": "Chiara King, Luca Storm, Mike Nybroe, Jazmine Summer",
       "notes": "Where do you hide when everyone is watching?",
       "youtube_trailer_id": "q5DIxirBMx4"
-    },
-    {
-      "tmdb_id": 1403519,
-      "date": "2026-10-02",
-      "title": "The Scout",
-      "director": "Paula Andrea Gonzalez-Nasser",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Comedy",
-      "cast": "Mimi Davila, Rutanya Alda, Max Rosen, Ikechukwu Ufomadu",
-      "notes": "",
-      "youtube_trailer_id": "4YamxsIqeRI"
     },
     {
       "tmdb_id": 1283515,
@@ -194,7 +168,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Horror / Romance",
-      "cast": "Nell Verlaque, Jason Isaacs, Paulina Chávez, Kieron Moore",
+      "cast": "Nell Verlaque, Jason Isaacs, Kieron Moore, Paulina Chávez",
       "notes": "",
       "youtube_trailer_id": "ZiseQc567b4"
     },
@@ -329,6 +303,19 @@
       "youtube_trailer_id": "7e_3_oJktV8"
     },
     {
+      "tmdb_id": 1401459,
+      "date": "2026-10-09",
+      "title": "Fjord",
+      "director": "Cristian Mungiu",
+      "studio": "Neon",
+      "budget_usd": 4750000,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
+      "notes": "When does protection become control?",
+      "youtube_trailer_id": "frg59VOungA"
+    },
+    {
       "tmdb_id": 1381221,
       "date": "2026-10-09",
       "title": "Misty Green",
@@ -340,6 +327,19 @@
       "cast": "Rosalind Eleazar, Adam Driver, Daniel Kaluuya, Anna Kendrick",
       "notes": "",
       "youtube_trailer_id": "5SohUK9E_eo"
+    },
+    {
+      "tmdb_id": 1096228,
+      "date": "2026-10-09",
+      "title": "Musk",
+      "director": "Alex Gibney",
+      "studio": "Bleecker Street Media",
+      "budget_usd": 10000000,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Elon Musk, Alex Gibney, Justine Musk, Ashley St. Clair",
+      "notes": "An unflinching look at Earth's most unchecked man.",
+      "youtube_trailer_id": "eY_8SyndC10"
     },
     {
       "tmdb_id": 1594307,
@@ -363,7 +363,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / War",
-      "cast": "Shen Teng, Jiang Qiming, Omar Sherif, Aarif Rahman",
+      "cast": "Shen Teng, Jiang Qiming, Omar Sherif, Sherif Sobhy",
       "notes": "Eat well, stay alive.",
       "youtube_trailer_id": "TYKHXxCdGiU"
     },
@@ -376,7 +376,7 @@
       "budget_usd": 18000000,
       "release_type": "wide",
       "genre": "Horror",
-      "cast": "Jessica Chastain, Jay Duplass, Arabella Olivia Clark, Karen Allen",
+      "cast": "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Karen Allen",
       "notes": "Your mommy won't save you.",
       "youtube_trailer_id": "-mnTITqqiT0"
     },
@@ -387,7 +387,7 @@
       "director": "Gotham Chopra",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Documentary",
       "cast": "Stephen Curry, Viola Davis, Rick Rubin, Patti Smith",
       "notes": "Discover the secret of how one player changed the game.",
@@ -505,7 +505,7 @@
       "studio": "Orion Pictures",
       "budget_usd": 10000000,
       "release_type": "wide",
-      "genre": "Drama / Crime / Thriller / Action",
+      "genre": "Drama / Crime / Thriller",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "To be a parent is to be at war.",
       "youtube_trailer_id": "uEcoV-ngH38"
@@ -534,7 +534,7 @@
       "genre": "Horror",
       "cast": "James A. Janisse, Chelsea Rebecca, Zoran Gvojic, Elle Riot Fox",
       "notes": "Only some will make the cut.",
-      "youtube_trailer_id": "HrFLrIrFQyI"
+      "youtube_trailer_id": "qZlhHntlcBk"
     },
     {
       "tmdb_id": 1294698,
@@ -558,7 +558,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Crime / Drama",
-      "cast": "Zach Braff, Esther McGregor, Abigail Spencer, Lucas Till",
+      "cast": "Zach Braff, Esther McGregor, Holt McCallany, Abigail Spencer",
       "notes": "",
       "youtube_trailer_id": "p0izMCPGdGE"
     },
@@ -582,7 +582,7 @@
       "director": "Alessandro Barros",
       "studio": "Sony Pictures Releasing",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Drama",
       "cast": "Mário Bregieira, Pérola Faria, Felipe Folgosi, Alex Kendrick",
       "notes": "",
@@ -594,7 +594,7 @@
       "title": "La bola negra",
       "director": "Javier Ambrossi, Javier Calvo",
       "studio": "Netflix",
-      "budget_usd": 11100000,
+      "budget_usd": 17000000,
       "release_type": "limited",
       "genre": "Drama / War",
       "cast": "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes",
@@ -613,19 +613,6 @@
       "cast": "Meegwun Fairbrother, Victoria Turko, Gabriel Daniels, Stephanie Sy",
       "notes": "",
       "youtube_trailer_id": "xAAseU_4waQ"
-    },
-    {
-      "tmdb_id": 1096228,
-      "date": "2026-10-16",
-      "title": "Musk",
-      "director": "Alex Gibney",
-      "studio": "Bleecker Street Media",
-      "budget_usd": 10000000,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Elon Musk, Alex Gibney, Justine Musk, Ashley St. Clair",
-      "notes": "An unflinching look at Earth's most unchecked man.",
-      "youtube_trailer_id": "eY_8SyndC10"
     },
     {
       "tmdb_id": 1514056,
@@ -687,7 +674,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 82000000,
       "release_type": "wide",
-      "genre": "Action / Fantasy / Comedy",
+      "genre": "Action / Comedy / Fantasy",
       "cast": "Andrew Koji, Noah Centineo, Callina Liang, David Dastmalchian",
       "notes": "Ready. Set. Fight.",
       "youtube_trailer_id": "U6sbm1OaJb8"
@@ -719,26 +706,13 @@
       "youtube_trailer_id": "dFfX7p46mZY"
     },
     {
-      "tmdb_id": 1559764,
-      "date": "2026-10-16",
-      "title": "The Trial of Alec Baldwin",
-      "director": "Rory Kennedy",
-      "studio": "Abramorama",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Alec Baldwin",
-      "notes": "Tragedy. Tabloid. Truth.",
-      "youtube_trailer_id": "4V8MZy5Zl_U"
-    },
-    {
       "tmdb_id": 1249202,
       "date": "2026-10-16",
       "title": "Trust Me, I'm a Doctor",
       "director": "Thane Economou",
       "studio": "Briarcliff Entertainment",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Drama / Comedy",
       "cast": "Kal Penn, Linda Hamilton, Abbie Cornish, Al Sapienza",
       "notes": "Sometimes the truth needs a second opinion.",
@@ -777,7 +751,7 @@
       "director": "Scott Windhauser",
       "studio": "—",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Horror / Mystery / Thriller",
       "cast": "Spencer Boldman, Paola Andino, Taylor Murphy, Cameron Inman",
       "notes": "",
@@ -851,11 +825,11 @@
     {
       "tmdb_id": 1727734,
       "date": "2026-10-23",
-      "title": "Ali G: Who Iz I?",
+      "title": "Ali G: Who Iz I? (Limited release)",
       "director": "Sacha Baron Cohen",
       "studio": "Amazon MGM Studios",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Comedy",
       "cast": "Sacha Baron Cohen, Morgana Robinson, Alpha Miknas, Clive Russell",
       "notes": "Livin XXX large.",
@@ -922,7 +896,7 @@
       "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Science Fiction / Drama",
-      "cast": "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne",
+      "cast": "Jenna Ortega, Amy Adams, Mia Tharia, Aran Murphy",
       "notes": "Meet the future of friendship.",
       "youtube_trailer_id": "wixzainceAE"
     },
@@ -960,7 +934,7 @@
       "studio": "Netflix",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Romance",
+      "genre": "Drama",
       "cast": "Jeon Do-yeon, Sul Kyung-gu, Zo In-sung, Cho Yeo-jeong",
       "notes": "",
       "youtube_trailer_id": "zd3qXH9qN70"
@@ -995,7 +969,7 @@
       "tmdb_id": 1195803,
       "date": "2026-10-23",
       "title": "Wicker",
-      "director": "Alex Huston Fischer, Eleanor Wilson",
+      "director": "Eleanor Wilson, Alex Huston Fischer",
       "studio": "Black Bear",
       "budget_usd": 10000000,
       "release_type": "wide",
@@ -1012,7 +986,7 @@
       "studio": "—",
       "budget_usd": 100000000,
       "release_type": "wide",
-      "genre": "Animation / Adventure / Fantasy",
+      "genre": "Animation / Fantasy / Adventure",
       "cast": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali",
       "notes": "How far would you go for those you love?",
       "youtube_trailer_id": "bJQGtSeLPII"
@@ -1050,7 +1024,7 @@
       "director": "Alex Goyette",
       "studio": "IFC Films",
       "budget_usd": 2000000,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Horror / Thriller",
       "cast": "Daniel Doheny, Dot-Marie Jones, Maddie Phillips, Tanaya Beatty",
       "notes": "Perfection has its price.",
@@ -1068,19 +1042,6 @@
       "cast": "Daniel Dymiński",
       "notes": "",
       "youtube_trailer_id": "C-Q9Zl259yU"
-    },
-    {
-      "tmdb_id": 1401459,
-      "date": "2026-10-28",
-      "title": "Fjord",
-      "director": "Cristian Mungiu",
-      "studio": "Neon",
-      "budget_usd": 4750000,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen",
-      "notes": "When does protection become control?",
-      "youtube_trailer_id": "frg59VOungA"
     },
     {
       "tmdb_id": 1517123,
@@ -1128,7 +1089,7 @@
       "director": "Jimmy Chin, Elizabeth Chai Vasarhelyi",
       "studio": "Walt Disney Studios Motion Pictures",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Documentary",
       "cast": "Hilaree Nelson, Jim Morrison, Jimmy Chin, Elizabeth Chai Vasarhelyi",
       "notes": "",

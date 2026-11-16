@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -37,9 +37,9 @@
       "studio": "Quiver Distribution",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Romance / Science Fiction",
+      "genre": "Romance / Fantasy",
       "cast": "Naomi Scott, Kit Harington, Sonoya Mizuno, Jay Lycurgo",
-      "notes": "Time is fleeting. Love endures.",
+      "notes": "Find your way back",
       "youtube_trailer_id": "2iIBYPng3uI"
     },
     {
@@ -65,15 +65,15 @@
       "release_type": "limited",
       "genre": "Thriller / Horror",
       "cast": "Marc Bessant, Jason Williamson, Alison Campbell, Nathan Benham",
-      "notes": "I've watched someone die before... takes a while sometimes.",
-      "youtube_trailer_id": "8ZbCB48JPME"
+      "notes": "\"I've watched someone die before... takes a while sometimes.\"",
+      "youtube_trailer_id": "4oM1ITYOIE8"
     },
     {
       "tmdb_id": 1736335,
       "date": "2026-12-04",
       "title": "Gods Don't Give Gifts",
       "director": "Zack London",
-      "studio": "N/A",
+      "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Science Fiction / Animation",
@@ -89,7 +89,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Crime",
+      "genre": "Drama / Crime / Thriller",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
       "notes": "Too young to understand. Too old to forget.",
       "youtube_trailer_id": "d7NLG3IfowQ"
@@ -118,7 +118,7 @@
       "genre": "Animation / Science Fiction / Crime / Mystery",
       "cast": "Sam Rockwell, Scarlett Johansson, Tom Waits, Matt Berry",
       "notes": "The taller the skyscrapers, the longer the shadows.",
-      "youtube_trailer_id": "VL-xjzQFWsY"
+      "youtube_trailer_id": "oAmCTknTA6I"
     },
     {
       "tmdb_id": 1370191,
@@ -155,8 +155,8 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Drama",
-      "cast": "Natalie Portman, Jenna Ortega, Da'Vine Joy Randolph, Sterling K. Brown",
-      "notes": "",
+      "cast": "Natalie Portman, Jenna Ortega, Zach Galifianakis, Catherine Zeta-Jones",
+      "notes": "Lie, cheat and deal.",
       "youtube_trailer_id": "2ZW9QDB_PHA"
     },
     {
@@ -181,7 +181,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Documentary",
-      "cast": "—",
+      "cast": "Soraya Akhlaghi",
       "notes": "",
       "youtube_trailer_id": "HBlaV0xOBLI"
     },
@@ -235,7 +235,7 @@
       "genre": "Drama / History",
       "cast": "Jack O'Connell, Guy Pearce, Claire Foy, Blake Harrison",
       "notes": "They broke the news.",
-      "youtube_trailer_id": "eokBqEFiVHs"
+      "youtube_trailer_id": "-IK_cCkRqfU"
     },
     {
       "tmdb_id": 1176962,
@@ -260,8 +260,8 @@
       "release_type": "limited",
       "genre": "Music / Comedy / Drama",
       "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Colton Ryan",
-      "notes": "There’s a method to the madness.",
-      "youtube_trailer_id": "QZFOUWJULvU"
+      "notes": "",
+      "youtube_trailer_id": "lF9n06SMDPU"
     },
     {
       "tmdb_id": 1596282,
@@ -320,13 +320,13 @@
       "date": "2026-12-22",
       "title": "Spin Wars",
       "director": "Philip Byron",
-      "studio": "N/A",
+      "studio": "Greenwich Entertainment",
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
       "cast": "Katie Couric, Mary Beth Barone, Brandon Kyle Goodman, Ruth Zukerman",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "IdnVlkhGpP0"
     },
     {
       "tmdb_id": 1300926,
@@ -401,7 +401,7 @@
       "studio": "Focus Features",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Horror",
+      "genre": "Horror / Fantasy",
       "cast": "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach",
       "notes": "Devoureth all mankynde.",
       "youtube_trailer_id": "CL1EFACsWag"

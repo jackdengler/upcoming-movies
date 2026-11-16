@@ -1,21 +1,8 @@
 {
   "month": "February 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
-    {
-      "tmdb_id": 1370123,
-      "date": "2026-02-06",
-      "title": "Aida: The Movie",
-      "director": "Paco León",
-      "studio": "Outsider Pictures",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy",
-      "cast": "Carmen Machi, Paco León, Miren Ibarguren, Mariano Peña",
-      "notes": "This never happened, but it could've happened.",
-      "youtube_trailer_id": "lPUw2yMYQMc"
-    },
     {
       "tmdb_id": 1578018,
       "date": "2026-02-06",
@@ -67,6 +54,19 @@
       "cast": "Caleb Landry Jones, Zoë Bleu Sidel, Christoph Waltz, Matilda De Angelis",
       "notes": "He renounced his faith to become immortal. Passion, anger, vengeance, and hatred will be unleashed into the modern world.",
       "youtube_trailer_id": "hverb7siYJ8"
+    },
+    {
+      "tmdb_id": 1286491,
+      "date": "2026-02-06",
+      "title": "Jimpa",
+      "director": "Sophie Hyde",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Olivia Colman, Aud Mason-Hyde, John Lithgow, Daniel Henshall",
+      "notes": "Every family finds their own language.",
+      "youtube_trailer_id": "UVOUZBm5vwg"
     },
     {
       "tmdb_id": 1287141,
@@ -264,19 +264,6 @@
       "youtube_trailer_id": "Nm4WbapDzDQ"
     },
     {
-      "tmdb_id": 1286491,
-      "date": "2026-02-13",
-      "title": "Jimpa",
-      "director": "Sophie Hyde",
-      "studio": "Kino Lorber",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Olivia Colman, Aud Mason-Hyde, John Lithgow, Daniel Henshall",
-      "notes": "Every family finds their own language.",
-      "youtube_trailer_id": "UVOUZBm5vwg"
-    },
-    {
       "tmdb_id": 1461211,
       "date": "2026-02-13",
       "title": "Mimics",
@@ -334,8 +321,8 @@
       "title": "The Mortuary Assistant",
       "director": "Jeremiah Kipp",
       "studio": "Seismic Releasing",
-      "budget_usd": null,
-      "release_type": "wide",
+      "budget_usd": 18000000,
+      "release_type": "limited",
       "genre": "Horror / Mystery",
       "cast": "Willa Holland, Paul Sparks, John Adams, Mark Steger",
       "notes": "Alone with the dead.",
@@ -446,19 +433,6 @@
       "youtube_trailer_id": "8MLqWdUOZYQ"
     },
     {
-      "tmdb_id": 1379266,
-      "date": "2026-02-20",
-      "title": "Kokuho",
-      "director": "Sang-il Lee",
-      "studio": "GKIDS",
-      "budget_usd": 8000000,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Ryo Yoshizawa, Ryusei Yokohama, Mitsuki Takahata, Shinobu Terajima",
-      "notes": "",
-      "youtube_trailer_id": "p6k9Y-irvOE"
-    },
-    {
       "tmdb_id": 1125701,
       "date": "2026-02-20",
       "title": "Midwinter Break",
@@ -488,7 +462,7 @@
       "tmdb_id": 1340110,
       "date": "2026-02-20",
       "title": "Redux Redux",
-      "director": "Matthew McManus, Kevin McManus",
+      "director": "Kevin McManus, Matthew McManus",
       "studio": "Saban Films",
       "budget_usd": null,
       "release_type": "limited",
@@ -522,19 +496,6 @@
       "cast": "Olivia Holt, Froy Gutierrez, Carson MacCormac, Corteon Moore",
       "notes": "School's out for the zombie apocalypse.",
       "youtube_trailer_id": "DXAjPhglafE"
-    },
-    {
-      "tmdb_id": 799882,
-      "date": "2026-02-25",
-      "title": "The Bluff",
-      "director": "Frank E. Flowers",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Action / Thriller",
-      "cast": "Priyanka Chopra Jonas, Karl Urban, Safia Oakley-Green, Ismael Cruz Cordova",
-      "notes": "Betrayal cuts deep.",
-      "youtube_trailer_id": "uUYMqRjNxhM"
     },
     {
       "tmdb_id": 1270041,
@@ -589,19 +550,6 @@
       "youtube_trailer_id": "CvjTYRnSDuU"
     },
     {
-      "tmdb_id": 972232,
-      "date": "2026-02-27",
-      "title": "K-Pops!",
-      "director": "Anderson .Paak",
-      "studio": "Aura Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Drama / Music",
-      "cast": "Anderson .Paak, Jee Young Han, Soul Rasheed, Kevin Woo",
-      "notes": "",
-      "youtube_trailer_id": "idqmEVQIVaY"
-    },
-    {
       "tmdb_id": 1473027,
       "date": "2026-02-27",
       "title": "Matter of Time",
@@ -647,7 +595,7 @@
       "director": "Nick Corirossi",
       "studio": "Magnolia Pictures",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Comedy",
       "cast": "Armen Weitzman, Nick Corirossi, Jamar Malachi Neighbors, Sarah Ramos",
       "notes": "Life has its highs and its merlots.",

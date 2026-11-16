@@ -1,6 +1,6 @@
 {
   "month": "November 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -129,9 +129,9 @@
       "budget_usd": 15000000,
       "release_type": "wide",
       "genre": "Science Fiction / Horror / Action",
-      "cast": "Ryunosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki",
+      "cast": "Ryunosuke Kamiki, Minami Hamabe, Min Tanaka, Hidetaka Yoshioka",
       "notes": "There is no third time. Everything ends here.",
-      "youtube_trailer_id": "pWJjYoqVSjQ"
+      "youtube_trailer_id": "Pu0pH5BuCPM"
     },
     {
       "tmdb_id": null,
@@ -140,11 +140,24 @@
       "director": "—",
       "studio": "Regal Cinemas",
       "budget_usd": null,
-      "release_type": "limited",
+      "release_type": "wide",
       "genre": "Drama / &middot; / Romance / &middot; / Sport",
       "cast": "Hudson Williams, Connor Storrie, François Arnaud, Callan Potter",
       "notes": "",
       "youtube_trailer_id": null
+    },
+    {
+      "tmdb_id": 1382513,
+      "date": "2026-11-06",
+      "title": "Hen",
+      "director": "György Pálfi",
+      "studio": "Dekanalog",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Adventure / Drama",
+      "cast": "Yannis Kokiasmenos, Maria Diakopanagiotou, Argyris Pandazaras, Antonis Kafetzopoulos",
+      "notes": "",
+      "youtube_trailer_id": "Zd9CGEUsIFA"
     },
     {
       "tmdb_id": 1241478,
@@ -163,7 +176,7 @@
       "tmdb_id": 1241052,
       "date": "2026-11-06",
       "title": "Mouse",
-      "director": "Alex Thompson, Kelly O'Sullivan",
+      "director": "Kelly O'Sullivan, Alex Thompson",
       "studio": "IFC Films",
       "budget_usd": 3000000,
       "release_type": "limited",
@@ -199,19 +212,6 @@
       "youtube_trailer_id": "Yhdt5zJ1_Jc"
     },
     {
-      "tmdb_id": 1021848,
-      "date": "2026-11-06",
-      "title": "Queen at Sea",
-      "director": "Lance Hammer",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Juliette Binoche, Tom Courtenay, Anna Calder-Marshall, Florence Hunt",
-      "notes": "",
-      "youtube_trailer_id": "UVyH8QYENxI"
-    },
-    {
       "tmdb_id": 1117898,
       "date": "2026-11-06",
       "title": "The Cat in the Hat",
@@ -230,7 +230,7 @@
       "title": "Wild Horse Nine",
       "director": "Martin McDonagh",
       "studio": "Searchlight Pictures",
-      "budget_usd": null,
+      "budget_usd": 13000000,
       "release_type": "wide",
       "genre": "Comedy / Crime / Thriller",
       "cast": "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo",
@@ -239,7 +239,7 @@
     },
     {
       "tmdb_id": 1795555,
-      "date": "2026-11-08",
+      "date": "2026-11-07",
       "title": "Stray Kids World Tour 'Run It' Live Viewing",
       "director": "—",
       "studio": "Trafalgar Releasing",
@@ -262,19 +262,6 @@
       "cast": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt",
       "notes": "Heaven sent. Hell to pay.",
       "youtube_trailer_id": "UKaWzMf9Ybc"
-    },
-    {
-      "tmdb_id": 1131943,
-      "date": "2026-11-11",
-      "title": "Madden",
-      "director": "David O. Russell",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Drama / History",
-      "cast": "Nicolas Cage, Christian Bale, John Mulaney, Kathryn Hahn",
-      "notes": "",
-      "youtube_trailer_id": "xzh7HzLXXpk"
     },
     {
       "tmdb_id": 1591604,
@@ -300,7 +287,7 @@
       "genre": "Horror / Thriller",
       "cast": "Dermot Mulroney, Scott Grimes, Kirrilee Berger, Jake Busey",
       "notes": "Nowhere is safe.",
-      "youtube_trailer_id": "JEGVSaEjs1A"
+      "youtube_trailer_id": "zUFqKa2Sa3g"
     },
     {
       "tmdb_id": 1567605,
@@ -311,9 +298,9 @@
       "budget_usd": 38000000,
       "release_type": "wide",
       "genre": "Fantasy / Comedy",
-      "cast": "Johnny Depp, Rupert Grint, Daisy Ridley, Sam Claflin",
+      "cast": "Johnny Depp, Rupert Grint, Ian McKellen, Andrea Riseborough",
       "notes": "Before he was Scrooge, he was…",
-      "youtube_trailer_id": "l_Ozo1xUgbU"
+      "youtube_trailer_id": "D-n-lqKVr78"
     },
     {
       "tmdb_id": 1568267,
@@ -334,10 +321,10 @@
       "title": "How to Rob a Bank",
       "director": "David Leitch",
       "studio": "Amazon MGM Studios",
-      "budget_usd": null,
+      "budget_usd": 60000000,
       "release_type": "wide",
       "genre": "Action / Crime / Thriller",
-      "cast": "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz",
+      "cast": "Nicholas Hoult, Zoë Kravitz, Pete Davidson, John C. Reilly",
       "notes": "Who's robbing who?",
       "youtube_trailer_id": "MVvWKh336m4"
     },
@@ -433,6 +420,32 @@
       "youtube_trailer_id": null
     },
     {
+      "tmdb_id": 1418665,
+      "date": "2026-11-16",
+      "title": "Dive in Wonderland",
+      "director": "Toshiya Shinohara",
+      "studio": "Sony Pictures Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Animation / Adventure / Fantasy / Family",
+      "cast": "Nanoka Hara, Maika Pugh, Mayu Matsuoka, Koji Yamamoto",
+      "notes": "",
+      "youtube_trailer_id": "Y6fNuySFktc"
+    },
+    {
+      "tmdb_id": 1131943,
+      "date": "2026-11-18",
+      "title": "Madden",
+      "director": "David O. Russell",
+      "studio": "Amazon MGM Studios",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History",
+      "cast": "Nicolas Cage, Christian Bale, John Mulaney, Kathryn Hahn",
+      "notes": "",
+      "youtube_trailer_id": "xzh7HzLXXpk"
+    },
+    {
       "tmdb_id": 1694097,
       "date": "2026-11-19",
       "title": "GIANT - The Play",
@@ -454,7 +467,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary / Animation",
-      "cast": "Pope Francis, Olena Zelenska, Yana Stepanenko, Roman Oleksiv",
+      "cast": "Pope Francis, Olena Zelenska, Saad Kassis-Mohamed, Yana Stepanenko",
       "notes": "A story of innocence and resilience in the shadow of war.",
       "youtube_trailer_id": null
     },
@@ -463,7 +476,7 @@
       "date": "2026-11-20",
       "title": "Best Pancakes in the County",
       "director": "Ken Sanzel",
-      "studio": "N/A",
+      "studio": "—",
       "budget_usd": 9000000,
       "release_type": "limited",
       "genre": "Action / Thriller / Crime",
@@ -505,7 +518,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Drama / Crime",
+      "genre": "Drama / Crime / Thriller",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
       "notes": "Too young to understand. Too old to forget.",
       "youtube_trailer_id": "d7NLG3IfowQ"
@@ -514,9 +527,9 @@
       "tmdb_id": 848700,
       "date": "2026-11-20",
       "title": "Minotaur",
-      "director": "Andrey Zvyagintsev",
+      "director": "Andrei Zvyagintsev",
       "studio": "MUBI",
-      "budget_usd": null,
+      "budget_usd": 7500000,
       "release_type": "limited",
       "genre": "Drama / Crime / Thriller",
       "cast": "Dmitriy Mazurov, Iris Lebedeva, Varvara Shmykova, Juris Žagars",
@@ -542,10 +555,10 @@
       "title": "The Hunger Games: Sunrise on the Reaping",
       "director": "Francis Lawrence",
       "studio": "Lionsgate",
-      "budget_usd": 200000000,
+      "budget_usd": 185000000,
       "release_type": "wide",
       "genre": "Science Fiction / Action / Adventure",
-      "cast": "Joseph Zada, Ralph Fiennes, Jesse Plemons, Whitney Peak",
+      "cast": "Joseph Zada, Mckenna Grace, Ralph Fiennes, Jesse Plemons",
       "notes": "Welcome to the Second Quarter Quell.",
       "youtube_trailer_id": "Dr060OLTodE"
     },
@@ -596,7 +609,7 @@
       "studio": "Netflix",
       "budget_usd": 200000000,
       "release_type": "limited",
-      "genre": "Drama / Comedy / Thriller",
+      "genre": "Comedy / Drama / Thriller",
       "cast": "Brad Pitt, Elizabeth Debicki, Scott Caan, Yahya Abdul-Mateen II",
       "notes": "",
       "youtube_trailer_id": "fJH-wfSXnWg"
@@ -604,7 +617,7 @@
     {
       "tmdb_id": 1748001,
       "date": "2026-11-26",
-      "title": "Andrew Lloyd Webber's Starlight Express - Live on Stage",
+      "title": "Andrew Lloyd Webber's Starlight Express",
       "director": "Brett Sullivan",
       "studio": "Trafalgar Releasing",
       "budget_usd": null,
@@ -613,6 +626,19 @@
       "cast": "Jeevan Braich, Kayna Montecillo, Jade Marvin, Olivia Ringrose",
       "notes": "Every dream has a destination",
       "youtube_trailer_id": "lV42yurkaGA"
+    },
+    {
+      "tmdb_id": 1597242,
+      "date": "2026-11-26",
+      "title": "Cameron Winter at Carnegie Hall",
+      "director": "Paul Thomas Anderson",
+      "studio": "Janus Films",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Cameron Winter",
+      "notes": "On tour. On film. This fall.",
+      "youtube_trailer_id": "E8olY56RpkU"
     },
     {
       "tmdb_id": 1400336,

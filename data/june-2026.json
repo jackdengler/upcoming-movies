@@ -1,6 +1,6 @@
 {
   "month": "June 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -82,6 +82,19 @@
       "youtube_trailer_id": "f6VztuVWGI0"
     },
     {
+      "tmdb_id": 1441453,
+      "date": "2026-06-05",
+      "title": "Jinsei",
+      "director": "Ryuya Suzuki",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Science Fiction / Animation",
+      "cast": "ACE COOL, Taketo Tanaka, Shohei Uno, Remi Tyon",
+      "notes": "One life. One hundred years.",
+      "youtube_trailer_id": "o_eIe3XJ-80"
+    },
+    {
       "tmdb_id": 454639,
       "date": "2026-06-05",
       "title": "Masters of the Universe",
@@ -129,7 +142,7 @@
       "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Comedy",
-      "cast": "Anna Faris, Regina Hall, Marlon Wayans, Shawn Wayans",
+      "cast": "Marlon Wayans, Shawn Wayans, Anna Faris, Regina Hall",
       "notes": "Every line will be crossed.",
       "youtube_trailer_id": "cGgWAHXuTKc"
     },
@@ -145,19 +158,6 @@
       "cast": "Willem Dafoe, Emma Suárez, Joe Cole, Vic Carmen Sonne",
       "notes": "Family is the most serious business.",
       "youtube_trailer_id": "LeSzEsiVu4g"
-    },
-    {
-      "tmdb_id": 1031084,
-      "date": "2026-06-05",
-      "title": "The Currents",
-      "director": "Milagros Mumenthaler",
-      "studio": "Kino Lorber",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Isabel Aimé González Sola, Esteban Bigliardi, Claudia Sánchez, Ernestina Gatti",
-      "notes": "",
-      "youtube_trailer_id": "sOt8J_tM4Dg"
     },
     {
       "tmdb_id": 677558,
@@ -238,17 +238,17 @@
       "youtube_trailer_id": "icDuEHSxE-w"
     },
     {
-      "tmdb_id": 1441453,
+      "tmdb_id": 1070754,
       "date": "2026-06-12",
-      "title": "Jinsei",
-      "director": "Ryuya Suzuki",
-      "studio": "Greenwich Entertainment",
+      "title": "O Horizon",
+      "director": "Madeleine Rotzler",
+      "studio": "Variance Films",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Science Fiction / Animation",
-      "cast": "ACE COOL, Taketo Tanaka, Shohei Uno, Remi Tyon",
-      "notes": "One life. One hundred years.",
-      "youtube_trailer_id": "o_eIe3XJ-80"
+      "release_type": "limited",
+      "genre": "Science Fiction / Drama",
+      "cast": "Maria Bakalova, David Strathairn, Adam Pally, Maggie Grace",
+      "notes": "If you're honest about what you want... astonishing things can happen.",
+      "youtube_trailer_id": "gZS0iFRjk5o"
     },
     {
       "tmdb_id": 1218412,
@@ -381,17 +381,17 @@
       "youtube_trailer_id": "IjfX8l5XrF8"
     },
     {
-      "tmdb_id": 1070754,
+      "tmdb_id": 1537635,
       "date": "2026-06-19",
-      "title": "O Horizon",
-      "director": "Madeleine Rotzler",
-      "studio": "Variance Films",
+      "title": "Peter Asher: Everywhere Man",
+      "director": "Dayna Goldfine, Daniel Geller",
+      "studio": "Greenwich Entertainment",
       "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Science Fiction / Drama",
-      "cast": "Maria Bakalova, David Strathairn, Adam Pally, Maggie Grace",
-      "notes": "If you're honest about what you want... astonishing things can happen.",
-      "youtube_trailer_id": "gZS0iFRjk5o"
+      "release_type": "limited",
+      "genre": "Documentary / Music",
+      "cast": "Peter Asher, James Taylor, Linda Ronstadt, Carole King",
+      "notes": "The legend behind music's biggest legends",
+      "youtube_trailer_id": "nIpHwQ94WvY"
     },
     {
       "tmdb_id": 1399525,
@@ -491,7 +491,7 @@
       "director": "Alice Winocour",
       "studio": "Vertical Entertainment",
       "budget_usd": null,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Drama",
       "cast": "Angelina Jolie, Anyier Anei, Ella Rumpf, Louis Garrel",
       "notes": "",
@@ -506,7 +506,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Drama / Romance",
-      "cast": "Laith Khalifeh, Joél Isaac, Ezriel Kornel, Céline Costa",
+      "cast": "Laith Khalifeh, Joél Isaac, Ezriel Kornel, Matthew Risch",
       "notes": "",
       "youtube_trailer_id": "I6a_E_YVPi8"
     },
@@ -548,19 +548,6 @@
       "cast": "Scott Eastwood, Colin Hanks, Aunjanue Ellis-Taylor, Taylor John Smith",
       "notes": "One man's fight to survive.",
       "youtube_trailer_id": "vtEnjikCXyA"
-    },
-    {
-      "tmdb_id": 1537635,
-      "date": "2026-06-26",
-      "title": "Peter Asher: Everywhere Man",
-      "director": "Dayna Goldfine, Daniel Geller",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary / Music",
-      "cast": "Peter Asher, James Taylor, Linda Ronstadt, Carole King",
-      "notes": "The legend behind music's biggest legends",
-      "youtube_trailer_id": "nIpHwQ94WvY"
     },
     {
       "tmdb_id": 1182861,

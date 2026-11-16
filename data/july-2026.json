@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -69,19 +69,6 @@
       "youtube_trailer_id": "V4g74xLfR0A"
     },
     {
-      "tmdb_id": 1290417,
-      "date": "2026-07-03",
-      "title": "Thrash",
-      "director": "Tommy Wirkola",
-      "studio": "Sony Pictures Releasing",
-      "budget_usd": 50000000,
-      "release_type": "wide",
-      "genre": "Thriller / Horror",
-      "cast": "Phoebe Dynevor, Whitney Peak, Djimon Hounsou, Alyla Browne",
-      "notes": "If the flood doesn't kill you...",
-      "youtube_trailer_id": "hzyOsNyDkbM"
-    },
-    {
       "tmdb_id": 1275007,
       "date": "2026-07-10",
       "title": "Baby Doe",
@@ -104,7 +91,7 @@
       "release_type": "limited",
       "genre": "Crime / Drama / Fantasy / Horror / Science Fiction",
       "cast": "Juan Pablo Baena, Tomas Tinoco Higuita, Bryan Erlin Garcia, Samuel Andres Celis",
-      "notes": "",
+      "notes": "I can show you the light.",
       "youtube_trailer_id": "pAbGrYP8Ooo"
     },
     {
@@ -186,6 +173,19 @@
       "youtube_trailer_id": "JP8Xj5_6VSE"
     },
     {
+      "tmdb_id": 1096846,
+      "date": "2026-07-10",
+      "title": "Reading Lolita in Tehran",
+      "director": "Eran Riklis",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama",
+      "cast": "Golshifteh Farahani, Zar Amir Ebrahimi, Mina Kavani, Bahar Beihaghi",
+      "notes": "",
+      "youtube_trailer_id": "11FiYgU71UU"
+    },
+    {
       "tmdb_id": 1329909,
       "date": "2026-07-10",
       "title": "Remake",
@@ -207,7 +207,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Jackie Tohn, Sarah Podemski, Aya Cash, Seth Green",
+      "cast": "Jackie Tohn, Sarah Podemski, Aya Cash, Judah Lewis",
       "notes": "Prepare for a summer meltdown.",
       "youtube_trailer_id": "wozim11veF4"
     },
@@ -314,19 +314,6 @@
       "cast": "Gretchen Mol, Lillian Carrier, Jerod Haynes, Tony Hale",
       "notes": "She's not \"a lot.\" You're just underprepared.",
       "youtube_trailer_id": "JdvV29CGdPs"
-    },
-    {
-      "tmdb_id": 1096846,
-      "date": "2026-07-17",
-      "title": "Reading Lolita in Tehran",
-      "director": "Eran Riklis",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Golshifteh Farahani, Zar Amir Ebrahimi, Mina Kavani, Bahar Beihaghi",
-      "notes": "",
-      "youtube_trailer_id": "11FiYgU71UU"
     },
     {
       "tmdb_id": 1339666,
@@ -622,7 +609,7 @@
       "studio": "Magnolia Pictures",
       "budget_usd": 10000000,
       "release_type": "wide",
-      "genre": "Comedy",
+      "genre": "Comedy / Thriller / Mystery",
       "cast": "Olivia Wilde, Cooper Hoffman, Mason Gooding, Chase Sui Wonders",
       "notes": "Don't worry, you'll like it.",
       "youtube_trailer_id": "q5oWCPS3akw"

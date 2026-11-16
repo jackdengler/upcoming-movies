@@ -1,6 +1,6 @@
 {
   "month": "August 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -206,7 +206,7 @@
       "studio": "CMC Pictures",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy / Animation / Fantasy / Adventure",
+      "genre": "Animation / Adventure / Comedy / Fantasy",
       "cast": "Chen Hao, Li Shaozhe, Lidong, Huang Guo",
       "notes": "",
       "youtube_trailer_id": "mvpFrJ5O2Ww"
@@ -219,8 +219,8 @@
       "studio": "Watermelon Pictures",
       "budget_usd": 875000,
       "release_type": "limited",
-      "genre": "Documentary",
-      "cast": "Thaer Ahmad, Mark Perlmutter, Feroze Sidhwa, Dana Bash",
+      "genre": "Documentary / War",
+      "cast": "Thaer Ahmad, Mark Perlmutter, Feroze Sidhwa, Rizk Abu Shaaira",
       "notes": "Do no harm.",
       "youtube_trailer_id": "Be7_u8jzHzU"
     },
@@ -325,7 +325,7 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Will Poulter, Noah Centineo, Elise Kibler, Emily Meade",
-      "notes": "",
+      "notes": "For two brothers, recovery is just the beginning.",
       "youtube_trailer_id": "uA6Fnr2VXkw"
     },
     {
@@ -340,6 +340,19 @@
       "cast": "Lee Su-hyun, Kim Min-ju, Min Seung-woo, Nam Doh-hyeong",
       "notes": "A magical journey all stars with...",
       "youtube_trailer_id": "GTKu2mLpeS4"
+    },
+    {
+      "tmdb_id": 1497463,
+      "date": "2026-08-21",
+      "title": "All That We Never Were",
+      "director": "Jorge Alonso",
+      "studio": "Capelight Pictures",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Romance",
+      "cast": "Margarida Corceiro, Maxi Iglesias, Natalia Rodríguez, Sebastián Zurita",
+      "notes": "",
+      "youtube_trailer_id": "bMM-vqUyO3w"
     },
     {
       "tmdb_id": 1506835,
@@ -374,7 +387,7 @@
       "director": "Agnieszka Smoczyńska",
       "studio": "Focus Features",
       "budget_usd": 6000000,
-      "release_type": "wide",
+      "release_type": "limited",
       "genre": "Science Fiction / Action / Crime / Fantasy / Thriller",
       "cast": "Andrzej Konopka, Noomi Rapace, Reika Kirishima, Filippa Kaye",
       "notes": "The system is unstable.",
@@ -511,6 +524,19 @@
       "youtube_trailer_id": "PAUEwUhAjzg"
     },
     {
+      "tmdb_id": 1000866,
+      "date": "2026-08-21",
+      "title": "The Marching Band",
+      "director": "Emmanuel Courcol",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": 6100000,
+      "release_type": "limited",
+      "genre": "Comedy / Drama / Music",
+      "cast": "Benjamin Lavernhe, Pierre Lottin, Sarah Suco, Clémence Massart-Weit",
+      "notes": "",
+      "youtube_trailer_id": "f9i2ImuGEVs"
+    },
+    {
       "tmdb_id": 1329016,
       "date": "2026-08-21",
       "title": "Tony",
@@ -586,7 +612,7 @@
       "genre": "Horror / Comedy / Fantasy",
       "cast": "Keegan-Michael Key, Delaney Quinn, Tristan Borders, Madison Skyy Polan",
       "notes": "It's Buddy!",
-      "youtube_trailer_id": "Pc9MbCNYn3k"
+      "youtube_trailer_id": "acPJ1EUhA5M"
     },
     {
       "tmdb_id": 1375646,
@@ -610,7 +636,7 @@
       "budget_usd": 72000000,
       "release_type": "wide",
       "genre": "Comedy / Adventure / Family / Animation",
-      "cast": "Will Forte, Lana Condor, Tone Bell, Luis Guzmán",
+      "cast": "Will Forte, Lana Condor, John Cena, Tone Bell",
       "notes": "The movie ACME doesn't want you to see.",
       "youtube_trailer_id": "kMsiD1Nky5I"
     },
@@ -622,9 +648,9 @@
       "studio": "Kino Lorber",
       "budget_usd": 55000,
       "release_type": "limited",
-      "genre": "Drama / Mystery",
+      "genre": "Comedy / Drama / Mystery",
       "cast": "Jorrybell Agoto, Carmen Castellanos, Teroy Guzman, Carlos Siguion-Reyna",
-      "notes": "",
+      "notes": "Beneath the pristine fairways, something is rotting.",
       "youtube_trailer_id": "Mq-7rJqNJ4I"
     },
     {
@@ -672,9 +698,9 @@
       "title": "Legend of the White Dragon",
       "director": "Aaron Schoenke",
       "studio": "Well Go USA Entertainment",
-      "budget_usd": 508578,
+      "budget_usd": 4500000,
       "release_type": "limited",
-      "genre": "Action / Fantasy",
+      "genre": "Action / Fantasy / Science Fiction",
       "cast": "Jason David Frank, Aaron Schoenke, Jason Faunt, Rachele Brooke Smith",
       "notes": "Legends never die.",
       "youtube_trailer_id": "eqcTr34Y1Zw"
@@ -688,7 +714,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy / Horror",
-      "cast": "Rose Williams, Tim McInnerny, Avani Gregg, Abraham Lewis",
+      "cast": "Rose Williams, Tim McInnerny, Avani Gregg, Andy Nyman",
       "notes": "Eight legs, one bite, no chance.",
       "youtube_trailer_id": "u69TJzLmCPo"
     },
@@ -730,19 +756,6 @@
       "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley, Guy Pearce",
       "notes": "At the end of the world, no one survives alone.",
       "youtube_trailer_id": "-xSxaE1ClEE"
-    },
-    {
-      "tmdb_id": 1000866,
-      "date": "2026-08-28",
-      "title": "The Marching Band",
-      "director": "Emmanuel Courcol",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": 6100000,
-      "release_type": "wide",
-      "genre": "Comedy / Drama / Music",
-      "cast": "Benjamin Lavernhe, Pierre Lottin, Sarah Suco, Clémence Massart-Weit",
-      "notes": "",
-      "youtube_trailer_id": "f9i2ImuGEVs"
     },
     {
       "tmdb_id": 1490214,

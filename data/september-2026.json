@@ -1,13 +1,13 @@
 {
   "month": "September 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Michael Spierig, Peter Spierig",
+      "director": "Peter Spierig, Michael Spierig",
       "studio": "Lionsgate",
       "budget_usd": 3000000,
       "release_type": "wide",
@@ -76,7 +76,7 @@
       "studio": "Paramount Pictures",
       "budget_usd": 30000000,
       "release_type": "wide",
-      "genre": "Thriller / History / Crime / Drama",
+      "genre": "Thriller / History / Crime",
       "cast": "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas",
       "notes": "The FBI couldn't crack it. So they called in the mob.",
       "youtube_trailer_id": "fvnyrBnUx4E"
@@ -350,7 +350,7 @@
       "budget_usd": 75000000,
       "release_type": "wide",
       "genre": "Romance / Fantasy / Comedy",
-      "cast": "Sandra Bullock, Nicole Kidman, Joey King, Maisie Williams",
+      "cast": "Sandra Bullock, Nicole Kidman, Dianne Wiest, Stockard Channing",
       "notes": "Everything you've witched for.",
       "youtube_trailer_id": "Ho10_4IX1jE"
     },
@@ -402,7 +402,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Ann Blackwell, Violet Brown, Genia Carter, Beryl Condillac",
+      "cast": "Sam Green, Susannah Mushatt Jones, Lavilla Mushatt Watson, Emma Morano",
       "notes": "",
       "youtube_trailer_id": "Ju0dtWT8GQ0"
     },
@@ -559,7 +559,7 @@
       "release_type": "limited",
       "genre": "Documentary / Comedy",
       "cast": "John Wilson, Michael Imperioli, Jack Macco, Nathan Fielder",
-      "notes": "",
+      "notes": "Wow! What a Material! It Makes Up Sidewalks!",
       "youtube_trailer_id": "O05arcJjOd0"
     },
     {
@@ -571,7 +571,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Comedy",
-      "cast": "Rob Lowe, Will Brill, Gillian Jacobs, Nevada Jose",
+      "cast": "Will Brill, Gillian Jacobs, Rob Lowe, Nevada Jose",
       "notes": "It's not personal. It's middle school.",
       "youtube_trailer_id": "DaDzxM68BYc"
     },
@@ -615,6 +615,19 @@
       "youtube_trailer_id": "Kujp9ubL93E"
     },
     {
+      "tmdb_id": 1354301,
+      "date": "2026-09-18",
+      "title": "You Had to Be There: How the Toronto Godspell Ignited the Comedy Revolution, Spread Love & Overalls, and Created a Community That Changed the World (in a Canadian Kind of Way)",
+      "director": "Nick Davis",
+      "studio": "Greenwich Entertainment",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary / Comedy",
+      "cast": "Martin Short, Eugene Levy, Victor Garber, Andrea Martin",
+      "notes": "",
+      "youtube_trailer_id": "kWNj0ZgfgDk"
+    },
+    {
       "tmdb_id": 1685539,
       "date": "2026-09-20",
       "title": "Heaven in Stone and Glass",
@@ -654,19 +667,6 @@
       "youtube_trailer_id": "BPIyAvBd6a4"
     },
     {
-      "tmdb_id": 1627931,
-      "date": "2026-09-24",
-      "title": "Who Moves America",
-      "director": "Yael Bridge",
-      "studio": "8 Above",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Sean O’Brien, Justin Alo, Antoine Andrews, Angel Badu",
-      "notes": "",
-      "youtube_trailer_id": "Y96nHSwgGzM"
-    },
-    {
       "tmdb_id": 1126097,
       "date": "2026-09-25",
       "title": "Charlie Harper",
@@ -675,7 +675,7 @@
       "budget_usd": null,
       "release_type": "wide",
       "genre": "Romance / Drama",
-      "cast": "Nick Robinson, Emilia Jones, Nicholas Cirillo, Jonathan Gregg",
+      "cast": "Nick Robinson, Emilia Jones, Kareemah Muhammad, Ja'Quan Monroe-Henderson",
       "notes": "is love enough?",
       "youtube_trailer_id": "Syp1bGpWTSs"
     },
@@ -862,19 +862,6 @@
       "youtube_trailer_id": "dcbRqIuFAiE"
     },
     {
-      "tmdb_id": 1354301,
-      "date": "2026-09-25",
-      "title": "You Had to Be There: How the Toronto Godspell Ignited the Comedy Revolution, Spread Love & Overalls, and Created a Community That Changed the World (in a Canadian Kind of Way)",
-      "director": "Nick Davis",
-      "studio": "Greenwich Entertainment",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary / Comedy",
-      "cast": "Martin Short, Eugene Levy, Victor Garber, Andrea Martin",
-      "notes": "",
-      "youtube_trailer_id": "kWNj0ZgfgDk"
-    },
-    {
       "tmdb_id": 1437396,
       "date": "2026-09-25",
       "title": "Your Mother Your Mother Your Mother",
@@ -882,7 +869,7 @@
       "studio": "Orion Pictures",
       "budget_usd": 10000000,
       "release_type": "limited",
-      "genre": "Drama / Crime / Thriller / Action",
+      "genre": "Drama / Crime / Thriller",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "To be a parent is to be at war.",
       "youtube_trailer_id": "uEcoV-ngH38"
@@ -908,7 +895,7 @@
       "studio": "—",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Documentary / War",
+      "genre": "Documentary",
       "cast": "Yuval Abraham, Benjamin Netanyahu",
       "notes": "A window into systems of mass killing.",
       "youtube_trailer_id": "40KW6knYMo4"

@@ -1,6 +1,6 @@
 {
   "month": "March 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -181,7 +181,7 @@
       "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Romance / Drama",
-      "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow, Bradley Whitford",
+      "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow, Lainey Wilson",
       "notes": "Everyone deserves a second chance.",
       "youtube_trailer_id": "i36Zw32GfRQ"
     },
@@ -290,6 +290,19 @@
       "youtube_trailer_id": "UlxEVrEhVes"
     },
     {
+      "tmdb_id": 1517069,
+      "date": "2026-03-20",
+      "title": "Marc by Sofia",
+      "director": "Sofia Coppola",
+      "studio": "A24",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Documentary",
+      "cast": "Marc Jacobs, Sofia Coppola, Spike Jonze, Romy Mars",
+      "notes": "A portrait of Marc Jacobs.",
+      "youtube_trailer_id": "Ae8qAH0CZv4"
+    },
+    {
       "tmdb_id": 1513996,
       "date": "2026-03-20",
       "title": "Maya & Samar",
@@ -301,6 +314,19 @@
       "cast": "Nicolette Pearse, Amanda Babaei Vieira, Agni Scott, Harrison Browne",
       "notes": "",
       "youtube_trailer_id": "GnqBPZR0hys"
+    },
+    {
+      "tmdb_id": 1178602,
+      "date": "2026-03-20",
+      "title": "Miroirs No. 3",
+      "director": "Christian Petzold",
+      "studio": "1-2 Special",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / Mystery",
+      "cast": "Paula Beer, Barbara Auer, Matthias Brandt, Enno Trebs",
+      "notes": "",
+      "youtube_trailer_id": "PqNG8EWydW0"
     },
     {
       "tmdb_id": 1432596,
@@ -548,32 +574,6 @@
       "cast": "Eszter Tompa, Gabriel Spahiu, Adonis Tanța, Oana Mardare",
       "notes": "",
       "youtube_trailer_id": "b9umCIsc-zc"
-    },
-    {
-      "tmdb_id": 1517069,
-      "date": "2026-03-27",
-      "title": "Marc by Sofia",
-      "director": "Sofia Coppola",
-      "studio": "A24",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Documentary",
-      "cast": "Marc Jacobs, Sofia Coppola, Spike Jonze, Romy Mars",
-      "notes": "A portrait of Marc Jacobs.",
-      "youtube_trailer_id": "Ae8qAH0CZv4"
-    },
-    {
-      "tmdb_id": 1178602,
-      "date": "2026-03-27",
-      "title": "Miroirs No. 3",
-      "director": "Christian Petzold",
-      "studio": "1-2 Special",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / Mystery",
-      "cast": "Paula Beer, Barbara Auer, Matthias Brandt, Enno Trebs",
-      "notes": "",
-      "youtube_trailer_id": "PqNG8EWydW0"
     },
     {
       "tmdb_id": 1465557,

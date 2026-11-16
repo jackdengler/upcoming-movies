@@ -1,13 +1,13 @@
 {
   "month": "April 2026",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1226863,
       "date": "2026-04-01",
       "title": "The Super Mario Galaxy Movie",
-      "director": "Aaron Horvath, Michael Jelenic",
+      "director": "Michael Jelenic, Aaron Horvath",
       "studio": "Universal Pictures",
       "budget_usd": 110000000,
       "release_type": "wide",
@@ -41,19 +41,6 @@
       "cast": "Teresa Palmer, Joe Dempsie, Eamon Farren, Sarah Peirse",
       "notes": "It all counts.",
       "youtube_trailer_id": "ZhCjT82jAfo"
-    },
-    {
-      "tmdb_id": 1410189,
-      "date": "2026-04-03",
-      "title": "Kontinental '25",
-      "director": "Radu Jude",
-      "studio": "1-2 Special",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Comedy / Drama",
-      "cast": "Eszter Tompa, Gabriel Spahiu, Adonis Tanța, Oana Mardare",
-      "notes": "",
-      "youtube_trailer_id": "b9umCIsc-zc"
     },
     {
       "tmdb_id": 1421153,
@@ -290,19 +277,6 @@
       "youtube_trailer_id": "0qR7DaPN-0Q"
     },
     {
-      "tmdb_id": 1341341,
-      "date": "2026-04-17",
-      "title": "4 Kids Walk Into a Bank",
-      "director": "Frankie Shaw",
-      "studio": "Amazon MGM Studios",
-      "budget_usd": null,
-      "release_type": "limited",
-      "genre": "Crime / Comedy / Mystery",
-      "cast": "Liam Neeson, Spike Fearn, Jim Sturgess, Talia Ryder",
-      "notes": "",
-      "youtube_trailer_id": null
-    },
-    {
       "tmdb_id": 1152014,
       "date": "2026-04-17",
       "title": "A Little Something Extra",
@@ -329,6 +303,19 @@
       "youtube_trailer_id": "lpc7olNGWS4"
     },
     {
+      "tmdb_id": 1269644,
+      "date": "2026-04-17",
+      "title": "Amrum",
+      "director": "Fatih Akin",
+      "studio": "Kino Lorber",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / War",
+      "cast": "Jasper Billerbeck, Laura Tonke, Lisa Hagmeister, Kian Köppke",
+      "notes": "",
+      "youtube_trailer_id": "-izT0MKkvZY"
+    },
+    {
       "tmdb_id": 1243741,
       "date": "2026-04-17",
       "title": "Ballistic",
@@ -351,7 +338,7 @@
       "release_type": "limited",
       "genre": "Drama",
       "cast": "Eylul Guven, Iringó Réti, Ádám Tompa, Edik Beddoes",
-      "notes": "",
+      "notes": "A testament to the things we carry with us.",
       "youtube_trailer_id": "JeWg8wUlQVo"
     },
     {
@@ -628,19 +615,6 @@
       "youtube_trailer_id": null
     },
     {
-      "tmdb_id": 1269644,
-      "date": "2026-04-24",
-      "title": "Amrum",
-      "director": "Fatih Akin",
-      "studio": "Kino Lorber",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama / War",
-      "cast": "Jasper Billerbeck, Laura Tonke, Lisa Hagmeister, Kian Köppke",
-      "notes": "",
-      "youtube_trailer_id": "-izT0MKkvZY"
-    },
-    {
       "tmdb_id": 898704,
       "date": "2026-04-24",
       "title": "Desert Warrior",
@@ -726,7 +700,7 @@
       "studio": "A24",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Music / Thriller / Horror / Drama",
+      "genre": "Music / Thriller / Drama",
       "cast": "Anne Hathaway, Michaela Coel, Hunter Schafer, FKA twigs",
       "notes": "This is not a ghost story.",
       "youtube_trailer_id": "aqYHOsuje1E"

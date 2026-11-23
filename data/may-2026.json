@@ -1,6 +1,6 @@
 {
   "month": "May 2026",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -90,7 +90,7 @@
       "budget_usd": 100000000,
       "release_type": "wide",
       "genre": "Comedy / Drama",
-      "cast": "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+      "cast": "Anne Hathaway, Meryl Streep, Emily Blunt, Stanley Tucci",
       "notes": "Icons reign forever.",
       "youtube_trailer_id": "PMd1at7OwiE"
     },
@@ -102,7 +102,7 @@
       "studio": "Music Box Films",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Comedy",
+      "genre": "Drama / Comedy",
       "cast": "Filippo Scotti, Sergio Romano, Pierpaolo Capovilla, Roberto Citran",
       "notes": "One last drink. And then one more.",
       "youtube_trailer_id": "5kYHufR72P0"
@@ -284,7 +284,7 @@
       "studio": "Amazon MGM Studios",
       "budget_usd": 75000000,
       "release_type": "wide",
-      "genre": "Comedy / Family / Mystery",
+      "genre": "Comedy / Crime / Mystery / Family",
       "cast": "Hugh Jackman, Nicholas Braun, Nicholas Galitzine, Molly Gordon",
       "notes": "A new breed of mystery.",
       "youtube_trailer_id": "826SRt1CFbg"
@@ -544,7 +544,7 @@
       "studio": "Black Bear",
       "budget_usd": 7000000,
       "release_type": "limited",
-      "genre": "Crime / Thriller",
+      "genre": "Crime / Romance / Music",
       "cast": "Leo Woodall, Dustin Hoffman, Lior Raz, Havana Rose Liu",
       "notes": "Everybody has one hidden talent.",
       "youtube_trailer_id": "XiehvETTjTQ"

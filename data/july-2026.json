@@ -1,6 +1,6 @@
 {
   "month": "July 2026",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -105,7 +105,7 @@
       "genre": "History / War",
       "cast": "Liu Ye, Wang Lei, Yu Shi, Timmy Xu",
       "notes": "",
-      "youtube_trailer_id": null
+      "youtube_trailer_id": "K_gfrRiduBY"
     },
     {
       "tmdb_id": 1212763,
@@ -492,9 +492,9 @@
       "studio": "Neon",
       "budget_usd": 6000000,
       "release_type": "wide",
-      "genre": "Thriller / Horror",
+      "genre": "Horror / Thriller / Science Fiction",
       "cast": "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth",
-      "notes": "Revenge wears leather",
+      "notes": "Revenge wears leather.",
       "youtube_trailer_id": "C7E-0t1TfzM"
     },
     {
@@ -506,7 +506,7 @@
       "budget_usd": 30000000,
       "release_type": "wide",
       "genre": "Action / Thriller / Crime / Drama",
-      "cast": "Alan Ritchson, Ben Foster, Shailene Woodley, Lionel Boyce",
+      "cast": "Alan Ritchson, Ben Foster, Pablo Schreiber, Lionel Boyce",
       "notes": "Love will drive you mad.",
       "youtube_trailer_id": "t6RklhKu9os"
     },
@@ -674,7 +674,7 @@
       "studio": "Vertical Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "Action / Crime / Thriller / TV Movie",
+      "genre": "Action / Crime / Thriller",
       "cast": "John Travolta, Lukas Haas, Rebecca De Mornay, Danny Pardo",
       "notes": "Trust no one. Take everything.",
       "youtube_trailer_id": "0LB3yWX1R8Y"
@@ -701,7 +701,7 @@
       "budget_usd": null,
       "release_type": "limited",
       "genre": "Documentary",
-      "cast": "Jeremy Workman, D. Bruce Yolton, MJ Ansbro, Reilly Richardson",
+      "cast": "Jeremy Workman, MJ Ansbro, Rita Azul Huhndorf-Lima, Pam Fairclough",
       "notes": "",
       "youtube_trailer_id": "GPTWsyD_q6A"
     }

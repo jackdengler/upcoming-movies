@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -20,7 +20,7 @@
       "tmdb_id": 1154304,
       "date": "2026-02-06",
       "title": "Buffalo Kids",
-      "director": "Juan Jesús García Galocha, Pedro Solís",
+      "director": "Pedro Solís, Juan Jesús García Galocha",
       "studio": "Viva Pictures",
       "budget_usd": null,
       "release_type": "wide",
@@ -258,7 +258,7 @@
       "studio": "Briarcliff Entertainment",
       "budget_usd": 20000000,
       "release_type": "wide",
-      "genre": "Science Fiction / Action / Comedy",
+      "genre": "Science Fiction / Action / Adventure / Comedy",
       "cast": "Sam Rockwell, Juno Temple, Haley Lu Richardson, Michael Peña",
       "notes": "Time is running out. Are you ready to join the revolution?",
       "youtube_trailer_id": "Nm4WbapDzDQ"

@@ -1,6 +1,6 @@
 {
   "month": "December 2026",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "source": "Box Office Mojo",
   "releases": [
     {
@@ -30,6 +30,19 @@
       "youtube_trailer_id": "I6tMFYT9s7E"
     },
     {
+      "tmdb_id": 1599230,
+      "date": "2026-12-04",
+      "title": "Elsinore",
+      "director": "Simon Stone",
+      "studio": "Focus Features",
+      "budget_usd": null,
+      "release_type": "wide",
+      "genre": "Drama",
+      "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
+      "notes": "Live. Gloriously.",
+      "youtube_trailer_id": "TpNEh5vvAns"
+    },
+    {
       "tmdb_id": 1125822,
       "date": "2026-12-04",
       "title": "Eternal Return",
@@ -53,7 +66,7 @@
       "genre": "Family / Adventure / Mystery / Comedy",
       "cast": "Molly Belle Wright, Martin Freeman, Toby Jones, Jonathan Pryce",
       "notes": "A little genius goes a long way.",
-      "youtube_trailer_id": "IXZMB2cSnls"
+      "youtube_trailer_id": "wFfvJtE4uBg"
     },
     {
       "tmdb_id": 1547524,
@@ -89,7 +102,7 @@
       "studio": "Sumerian Films",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Drama / Crime / Thriller",
+      "genre": "Drama / Crime",
       "cast": "Mason Reeves, Channing Tatum, Gemma Chan, Philip Ettinger",
       "notes": "Too young to understand. Too old to forget.",
       "youtube_trailer_id": "d7NLG3IfowQ"
@@ -102,7 +115,7 @@
       "studio": "Ketchup Entertainment",
       "budget_usd": null,
       "release_type": "limited",
-      "genre": "History / Crime / Thriller / Drama",
+      "genre": "Crime / Thriller / Drama",
       "cast": "John Travolta, Robert Carlyle, Dermot Mulroney, Jefferson White",
       "notes": "Betrayed by power. Fuelled by revenge.",
       "youtube_trailer_id": "8N9e-skJ3hw"
@@ -176,7 +189,7 @@
       "tmdb_id": 951018,
       "date": "2026-12-11",
       "title": "A Fox Under a Pink Moon",
-      "director": "Mehrdad Oskouei",
+      "director": "Mehrdad Oskouei, Soraya Akhlaghi",
       "studio": "Kino Lorber",
       "budget_usd": null,
       "release_type": "wide",
@@ -197,19 +210,6 @@
       "cast": "Sophie Okonedo, David Oyelowo, India Ria Amarteifio, Ayo Edebiri",
       "notes": "",
       "youtube_trailer_id": "sJAqmdXaM8U"
-    },
-    {
-      "tmdb_id": 1599230,
-      "date": "2026-12-11",
-      "title": "Elsinore",
-      "director": "Simon Stone",
-      "studio": "Focus Features",
-      "budget_usd": null,
-      "release_type": "wide",
-      "genre": "Drama",
-      "cast": "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn",
-      "notes": "Live. Gloriously.",
-      "youtube_trailer_id": "TpNEh5vvAns"
     },
     {
       "tmdb_id": 1649403,
@@ -238,6 +238,19 @@
       "youtube_trailer_id": "-IK_cCkRqfU"
     },
     {
+      "tmdb_id": 1213643,
+      "date": "2026-12-11",
+      "title": "Killing Castro",
+      "director": "Eif Rivera",
+      "studio": "Lionsgate",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Drama / History",
+      "cast": "Diego Boneta, Xolo Maridueña, KiKi Layne, Al Pacino",
+      "notes": "They tried to change history. Instead they set it in motion.",
+      "youtube_trailer_id": "cal1RfsmHUI"
+    },
+    {
       "tmdb_id": 1176962,
       "date": "2026-12-11",
       "title": "Rose",
@@ -260,7 +273,7 @@
       "release_type": "limited",
       "genre": "Music / Comedy / Drama",
       "cast": "Julianne Moore, Paul Giamatti, Halle Bailey, Colton Ryan",
-      "notes": "",
+      "notes": "There’s a method to the madness.",
       "youtube_trailer_id": "lF9n06SMDPU"
     },
     {
@@ -277,6 +290,19 @@
       "youtube_trailer_id": "ld465IU0NGY"
     },
     {
+      "tmdb_id": null,
+      "date": "2026-12-13",
+      "title": "THIS SYMPHONY MAY CONTAIN HOPE.",
+      "director": "—",
+      "studio": "Trafalgar Releasing",
+      "budget_usd": null,
+      "release_type": "limited",
+      "genre": "Music",
+      "cast": "Raye",
+      "notes": "",
+      "youtube_trailer_id": null
+    },
+    {
       "tmdb_id": 1003596,
       "date": "2026-12-18",
       "title": "Avengers: Doomsday",
@@ -287,7 +313,7 @@
       "genre": "Science Fiction / Action / Adventure",
       "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal",
       "notes": "Meet your doom.",
-      "youtube_trailer_id": "X1aFkAkFASk"
+      "youtube_trailer_id": "Wb8Tq_HD4E8"
     },
     {
       "tmdb_id": 1170608,
@@ -333,10 +359,10 @@
       "date": "2026-12-23",
       "title": "The Angry Birds Movie 3",
       "director": "John Rice",
-      "studio": "Paramount Pictures",
+      "studio": "Paramount Pictures International",
       "budget_usd": null,
       "release_type": "wide",
-      "genre": "Adventure / Animation / Comedy / Family / Science Fiction",
+      "genre": "Adventure / Animation / Comedy / Family",
       "cast": "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom",
       "notes": "One big angry family.",
       "youtube_trailer_id": "FjYzudbOzlY"
@@ -348,11 +374,11 @@
       "director": "Luca Guadagnino",
       "studio": "Neon",
       "budget_usd": 40000000,
-      "release_type": "wide",
-      "genre": "Comedy / Drama / History",
+      "release_type": "limited",
+      "genre": "History / Drama / Comedy",
       "cast": "Andrew Garfield, Yura Borisov, Jason Schwartzman, Cooper Koch",
       "notes": "Save. Delete.",
-      "youtube_trailer_id": "rDZplZFnbOk"
+      "youtube_trailer_id": "ufeJbTNq-BI"
     },
     {
       "tmdb_id": 1437981,
@@ -385,13 +411,13 @@
       "date": "2026-12-25",
       "title": "Mr. Irrelevant",
       "director": "Jonathan Levine",
-      "studio": "Paramount Pictures",
+      "studio": "Paramount Pictures International",
       "budget_usd": 36000000,
       "release_type": "wide",
       "genre": "Drama",
       "cast": "David Corenswet, Isabel May, Michael Shannon, David Krumholtz",
       "notes": "He will change the way you see the world.",
-      "youtube_trailer_id": "cwVE1qf6Ixs"
+      "youtube_trailer_id": "5DddMUVQ5xQ"
     },
     {
       "tmdb_id": 1421903,
@@ -417,7 +443,7 @@
       "genre": "Drama",
       "cast": "Natsuki Deguchi, Aju Makita, Fuuri Nanase, Rokka Okada",
       "notes": "\"Keep your eyes on my back and you'll grow too.\"",
-      "youtube_trailer_id": "ILBDFlYMGAY"
+      "youtube_trailer_id": "DeIUm7m_4q4"
     }
   ]
 }

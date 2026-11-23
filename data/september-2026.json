@@ -1,18 +1,18 @@
 {
   "month": "September 2026",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "source": "Box Office Mojo",
   "releases": [
     {
       "tmdb_id": 1101412,
       "date": "2026-09-02",
       "title": "Fall 2: Deadpoint",
-      "director": "Peter Spierig, Michael Spierig",
+      "director": "Michael Spierig, Peter Spierig",
       "studio": "Lionsgate",
       "budget_usd": 3000000,
       "release_type": "wide",
       "genre": "Thriller",
-      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Sahajak Boonthanakit",
+      "cast": "Harriet Slater, Arsema Thomas, Tom Brittney, Virginia Gardner",
       "notes": "Are you down?",
       "youtube_trailer_id": "Krs0VDIjhmE"
     },
@@ -180,7 +180,7 @@
       "studio": "A24",
       "budget_usd": 15000000,
       "release_type": "wide",
-      "genre": "Action / Thriller / Horror",
+      "genre": "Action / Horror / Thriller",
       "cast": "Adria Arjona, Dan Stevens, Eric Wareheim, Reginald VelJohnson",
       "notes": "They unleashed their deadliest weapon on us.",
       "youtube_trailer_id": "AMLCbpM1fRQ"
@@ -324,7 +324,7 @@
       "budget_usd": 120000,
       "release_type": "limited",
       "genre": "Drama",
-      "cast": "Bodhi Dell, J. Alphonse Nicholson, Danielle Brooks, Kelvin Adekunle",
+      "cast": "J. Alphonse Nicholson, Danielle Brooks, Bodhi Dell, Zaria Kelley",
       "notes": "",
       "youtube_trailer_id": "aej2y_BBBFs"
     },
@@ -415,7 +415,7 @@
       "budget_usd": 20000000,
       "release_type": "wide",
       "genre": "Action / Drama / History",
-      "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Tom Hollander",
+      "cast": "Andrew Garfield, Jamie Bell, Stephen Dillane, Woody Norman",
       "notes": "Rise or die.",
       "youtube_trailer_id": "lyhCxZN4Ro8"
     },
@@ -833,7 +833,7 @@
       "genre": "Comedy / Drama",
       "cast": "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott",
       "notes": "Welcome to Auk Isle. Population: one too many.",
-      "youtube_trailer_id": "vJ6TSvmnUEE"
+      "youtube_trailer_id": "0gXMYWbppNM"
     },
     {
       "tmdb_id": 1403519,
@@ -869,7 +869,7 @@
       "studio": "Orion Pictures",
       "budget_usd": 10000000,
       "release_type": "limited",
-      "genre": "Drama / Crime / Thriller",
+      "genre": "Drama / Action / Crime / Thriller",
       "cast": "Mahershala Ali, John Cho, Giancarlo Esposito, Abubakr Ali",
       "notes": "To be a parent is to be at war.",
       "youtube_trailer_id": "uEcoV-ngH38"
